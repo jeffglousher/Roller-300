@@ -1,0 +1,496 @@
+{
+  "date": "2026-09-12",
+  "status": "No physical tests performed; no hardware presence inferred",
+  "current_revision": "vehicle-integrated-drive-end-v2",
+  "observations": [],
+  "gates": {
+    "supplier_clutch_data": "OPEN",
+    "servo_model_and_permissible_envelope": "OPEN",
+    "numeric_voltage_and_current_limits": "OPEN - do not energize actuator fixture",
+    "bearing_and_fastener_coupons": "NOT RUN",
+    "independent_bidirectional_clutch_calibration": "NOT RUN",
+    "paired_timer_and_hard_cutoff_dummy_load_test": "NOT RUN",
+    "complete_one_side_detail_and_guarding": "OPEN - reusable carrier/body interface modeled; specific servo, clutch, retention, tool and guard interfaces remain held.",
+    "drivetrain_feedback_shutdown": "DESIGNED IN PLAN; NOT IMPLEMENTED",
+    "custom_PX4_pitch_control": "NOT BUILT OR FLASHED",
+    "body_pitch_and_mass_measurements": "NOT RUN",
+    "whole_vehicle_trials": "NOT RELEASED",
+    "target_obstacle_height_and_profile": "Approximately two inches rounded; height50.8 and roundover12.7 are placeholders, actual profile unmeasured",
+    "obstacle_normal_torque_and_limiter_selection": "OPEN - old PAO16/band withdrawn; SAO20 conditional on mass/load/torque and fit",
+    "loaded_body_clearance_and_crest_passage": "NOT RUN",
+    "new_clutch_retention_packaging": "Current ComInTec candidate envelope fits between output bearings; plate/bush/retention qualification still OPEN. Earlier overlap warning superseded.",
+    "harness_connectors_bends_and_service_sweep": "General reserves only; guessed camera-specific routes withdrawn. Mated plugs, bends and removal paths remain unmodeled.",
+    "printer_slicer_footprint": "Both new structural parts pass offline X2D slice and bed bounds on 2026-09-19; no physical print or full toolpath qualification.",
+    "new_torque_shutdown_energy": "OPEN -old angle/time thresholds not qualified at new torque; no vehicle powered release",
+    "indoor_acoustics": "NOT RUN - staged servo/transmission/rolling tests;35 dBA normal goal and45 dBA crossing-peak goal at1 m are provisional",
+    "normal_shock_envelope": "OPEN - repeated shocks are normal structural loads; measured force/torque/pulse/repetition envelope required",
+    "feedback_architecture": "Two wheel encoders baseline; actual input reference needed to identify internal slip, or qualified worst permitted slip duty. No detection firmware implemented.",
+    "outdoor_conversion": "DEFERRED until indoor proof; requalify material/environment/traction/load changes",
+    "cost_comparison": "OPEN - complete installed totals unknown; one purchased clutch route and one qualified RC-wear hybrid fallback",
+    "servo_feedback_interface": "PREFERRED; model, output-angle semantics, wrap, input rate/levels and fault tests open",
+    "range_array": "Exact ACEIRMC20x12 outline verified; full hood/header/solder depth and mated connector UNKNOWN. No3D fit pass.",
+    "floor_edge_detection": "Not implemented; forward sensors cannot authorize autonomous drop-edge operation",
+    "thermal_pi_compatibility": "UNVERIFIED for TOPDON TC002C Duo; direct front placement conflicts with servos",
+    "pi_camera_inventory": "Not owned; choose actual forward camera before modeling.",
+    "maintenance_retention": "Registered bolted panels planned; shock/panel cycles, joint torque and detailed openings not yet tested",
+    "self_charging": "Pack-specific charger and reverse-blocked contacts planned; mechanical capture, charge limits and autonomous docking not implemented",
+    "transmission_choice": "Amazon210-3M-09 belt verified; preferred qualification route. Supported tensioner, pulley/carrier/clutch fit, loads and acoustics OPEN. Double-helical printed pair retained as sole gear fallback.",
+    "double_helical_mesh": "NOT GENERATED OR TESTED - transverse module/pressure angle fixed, opposed hands, relief, residual thrust and combined assembly/removal required"
+  },
+  "required_each_physical_test": [
+    "date/operator",
+    "hardware IDs",
+    "firmware commit",
+    "parameter hash",
+    "surface and ambient",
+    "measuring equipment and uncertainty",
+    "numeric voltage/current/torque/temperature/time bounds",
+    "actual torque/current/speed/temperature/slip-energy traces",
+    "pass/fail and post-test inspection"
+  ],
+  "cad_evidence": "See checks.json, cad-check.json and cad-reload-check.json; no implication of physical validation",
+  "cad_observations": {
+    "native_file_reopened": true,
+    "body_count": 73,
+    "timeline_errors": [],
+    "width_mm": 300,
+    "sections_visually_inspected": true,
+    "preview_source": "Native OCCT tessellation; cutaway visualization",
+    "validation_scope": "Native geometry rebuilt/reloaded, every box bound checked against source; installation reserves/harness boxes checked. Known clutch interference FAILS drive packaging. No physical validation, no finished gear/fastener/guard details.",
+    "revision": "floor-rise-246-wheels",
+    "checked_at_utc": "2026-09-13T02:27:26.520880+00:00",
+    "parameter_sha256": "5f4b6695f252150987463f2d492d4fe0096eafd22d74e3385832ad30af64f083",
+    "native_feature_count": 259,
+    "body_diameter_mm": 160,
+    "wheel_diameter_mm": 246,
+    "nominal_ground_clearance_mm": 43,
+    "reserve_overlap_pairs": [],
+    "application_open_confirmed": true,
+    "application_screenshots": [
+      "cad-246-overall.png",
+      "cad-246-clearance.png",
+      "cad-246-cutaway.png"
+    ],
+    "previous_application_screenshots": "All cad-160 and earlier screenshots are superseded; current model246 mm wheels.",
+    "box_parameter_mismatches": []
+  },
+  "cad_builder_note": "Explicitly disabled grid snap for each sketch after the246 mm revision exposed snapping of a4 mm ledge to zero height. Rebuilt all geometry and verified every rectangular mesh bound within0.02 mm; prior screenshot geometry is superseded.",
+  "requirements_revision": "amazon-belt-first-double-helical-fallback",
+  "requirements_check": {
+    "checked_at_utc": "2026-09-13T03:01:23.337815+00:00",
+    "parameter_sha256": "5269e6537c93cabfa69100d7778bcd8ad55927d7b61030e47a8875503dc2c32f",
+    "revision": "feedback-sensing-service-docking",
+    "source_geometry_items_compared": 73,
+    "geometry_unchanged_from_native_source_map": true,
+    "new_section_proposals_not_in_native_solids": true,
+    "tof_reserved_box_conflicts": [],
+    "visible_camera_reserved_box_conflicts": [],
+    "thermal_trial_conflicts": [
+      "L U servo installation reserve",
+      "R U servo installation reserve",
+      "C battery connector exit - EMPTY HARNESS SPACE",
+      "C power service fold - EMPTY HARNESS SPACE"
+    ],
+    "physical_tests_performed": false
+  },
+  "transmission_check": {
+    "checked_at_utc": "2026-09-13T03:11:18.222229+00:00",
+    "parameter_sha256": "9b2139badfa4e467d50a353ea9ca5c00d7ef77efd7bce617c63bd9d1f7a12e47",
+    "native_geometry_unchanged": true,
+    "native_source_objects": 73,
+    "amazon_belt_offer_verified": true,
+    "purchases_made": false,
+    "native_belt_or_helical_teeth_generated": false,
+    "physical_tests_performed": false,
+    "belt_ratio": 2.0,
+    "gear_fallback_centers_mm": 50.0,
+    "native_geometry_changed": true,
+    "native_geometry_status": "24/48 pitch cylinders and continuous 210-3M-09 loop envelopes; pulley tooth/flange, tension and carrier detailing still open"
+  },
+  "camera_packaging": {
+    "status": "SUPERSEDED packaging experiment: guessed sensor boxes and optical ray origins withdrawn; not evidence of current fit.",
+    "component_box_conflicts": [],
+    "harness_box_conflicts": [],
+    "thermal_Pi_compatibility": "UNVERIFIED",
+    "charger_and_supervisor": "UNSELECTED reservations only",
+    "expanded_mass_allowance_kg": 2.29,
+    "clutch_fit": "UNCHANGED FAIL; wheel supports retained",
+    "native_geometry_matches_source": true,
+    "native_box_bound_mismatches": [],
+    "optical_aperture_screen": {
+      "thermal": {
+        "assumed_origin_xyz_axle_mm": [
+          46,
+          0,
+          56
+        ],
+        "assumed_half_angles_deg": [
+          28,
+          21
+        ],
+        "samples": 4902,
+        "cover_clipped_rays": 0,
+        "model_or_measured_FOV_confirmed": false
+      },
+      "visible": {
+        "assumed_origin_xyz_axle_mm": [
+          72,
+          0,
+          21
+        ],
+        "assumed_half_angles_deg": [
+          35,
+          25
+        ],
+        "samples": 7242,
+        "cover_clipped_rays": 0,
+        "model_or_measured_FOV_confirmed": false
+      }
+    },
+    "limitations": [
+      "Actual optical centers/FOV/connector dimensions unverified",
+      "Raised cover returns/fasteners/seals unfinished",
+      "Two post-clutch reader envelopes only; no sensing/cutoff implementation",
+      "Known SAO20 clutch/support conflict retained"
+    ]
+  },
+  "mechanical_inventory": {
+    "date": "2026-09-13",
+    "physical_tests_performed": false,
+    "received_parts_measured": false,
+    "scope": "Nominal manufacturer/distributor device envelopes and incomplete footprint references only",
+    "tof_depth": "UNKNOWN - no3Dsolid",
+    "visible_camera": "IDENTITY UNKNOWN - no3Dsolid",
+    "thermal": "Corrected device box includes built-in USB plug; mated extension pending",
+    "pi": "Nominal65x30x5 bare board; installation/access separate",
+    "clutch": "Existing interference preserved; not mounted",
+    "full_installed_packaging_complete": false,
+    "native_body_count": 76,
+    "native_reload_ok": true,
+    "native_timeline_errors": [],
+    "native_box_bound_mismatches": [],
+    "hardware_box_intersections": [],
+    "harness_box_intersections": [],
+    "thermal_nominal_shell_gap_mm": 1.676383295751819,
+    "thermal_nominal_servo_gap_mm": 2.0,
+    "native_geometry_matches_source": true
+  },
+  "inventory_confirmation": {
+    "date": "2026-09-13",
+    "source": "User statement",
+    "confirmed": {
+      "battery_small": {
+        "owned": true,
+        "cells": 3,
+        "chemistry": null,
+        "dimensions_mm": null,
+        "mass_kg": null,
+        "role": "First mechanical packaging candidate"
+      },
+      "battery_large": {
+        "owned": true,
+        "cells": null,
+        "dimensions_mm": null,
+        "mass_kg": null,
+        "role": "Alternative; not an instruction to enlarge the body"
+      },
+      "pixracer": {
+        "owned": true,
+        "family": "Original Pixracer",
+        "case_and_attached_connectors": "Unknown"
+      },
+      "pi": {
+        "owned": true,
+        "family": "Raspberry Pi Zero with Wi-Fi",
+        "exact_variant": "Zero W versus Zero 2 W not explicitly confirmed",
+        "header_case_heatsink": "Unknown"
+      },
+      "visible_camera": {
+        "owned": false,
+        "selected_model": null,
+        "orientation": "Forward only"
+      },
+      "thermal_camera_orientation": "Forward only",
+      "distance_modules": {
+        "headers_installed": false,
+        "initial_front_count": 4,
+        "rear_later_count": 4,
+        "rear_installation": "Only after front arrangement proves useful"
+      }
+    },
+    "physical_measurements_received": false,
+    "actuator_trade_status": "Published benchmarks only; no new physical validation"
+  },
+  "current_print_release": {
+    "allowed": [
+      "non-powered bearing fit coupon",
+      "P01/P02/P03 full-size wheel set for unpowered fit assessment; see drive-article-checks.json"
+    ],
+    "not_released": [
+      "powered drivetrain",
+      "roller body",
+      "pulleys",
+      "integrated drive frame and guard pending interface closure"
+    ],
+    "physical_tests_performed": false,
+    "superseded": "goBILDA servo fit gauge; do not use for owned INJORA"
+  },
+  "new_cad_checks": {
+    "supplier_servo_step_imported": true,
+    "first_prints": "first-prints/checks.json",
+    "bom": "bom-check.json",
+    "assembly": "cad-reload-check.json",
+    "scope": "CAD/workbook only; no physical fit/torque evidence"
+  },
+  "current_CAD_checks": {
+    "article": "drive-end-section-checks.json",
+    "BOM": "bom-check.json",
+    "historical_whole_vehicle": "cad-reload-check.json"
+  },
+  "owned_servo_identification": {
+    "result": "INJORA INJS035-360 / B0C9TM9X2C;25T servo and reversible19x11 spool",
+    "checked": "2026-09-13",
+    "physical_measurement": false
+  },
+  "drive_article": {
+    "cad_check_file": "drive-article-checks.json",
+    "wheel_fit_prints": [
+      "first-prints/wheel-center-246-fit.stl",
+      "first-prints/wheel-bead-retainer-fit.stl",
+      "first-prints/tpu-tread-246-fit.stl"
+    ],
+    "powered_release": false,
+    "physical_tests": "NOT PERFORMED",
+    "blocked_interfaces": [
+      "servo ears/output offset/positive torque adapter",
+      "prepared input shaft retention",
+      "clutch driven plate/bush and permissible loads",
+      "pulley flange attachment and closed guarding"
+    ],
+    "superseded_print": "first-prints/servo-fit-gobilda25-2.stl",
+    "actual_CAD_checks": {
+      "initial_export_note": "Initial reload rejected duplicate component labels. Labels repaired before loading for clearance refinement.",
+      "physical_tests": "NOT PERFORMED",
+      "powered_release": false,
+      "stl": [
+        {
+          "file": "wheel-center-246-fit.stl",
+          "triangles": 13356,
+          "nonmanifold_edges": 0,
+          "solid_volume_mm3": 318962.02799450414,
+          "bounds_mm": [
+            [
+              -117.0,
+              -117.0,
+              0.0
+            ],
+            [
+              117.0,
+              117.0,
+              32.0
+            ]
+          ],
+          "connected_mesh_components": 1
+        },
+        {
+          "file": "wheel-bead-retainer-fit.stl",
+          "triangles": 7142,
+          "nonmanifold_edges": 0,
+          "solid_volume_mm3": 64598.200117480395,
+          "bounds_mm": [
+            [
+              -117.0,
+              -117.0,
+              0.0
+            ],
+            [
+              117.0,
+              117.0,
+              8.0
+            ]
+          ],
+          "connected_mesh_components": 1
+        },
+        {
+          "file": "tpu-tread-246-fit.stl",
+          "triangles": 2644,
+          "nonmanifold_edges": 0,
+          "solid_volume_mm3": 217633.67554440035,
+          "bounds_mm": [
+            [
+              -123.0,
+              -123.0,
+              0.0
+            ],
+            [
+              123.0,
+              123.0,
+              40.0
+            ]
+          ],
+          "connected_mesh_components": 1
+        }
+      ],
+      "refined_preflight": {
+        "_disclosure": {
+          "active_focus": "print",
+          "advertised": true,
+          "mode": "dynamic",
+          "pack": "print",
+          "state": "active"
+        },
+        "appearances_assigned": 71,
+        "bodies_missing_appearance": [],
+        "body_count": 71,
+        "body_ids": [
+          1,
+          41,
+          58,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          123,
+          133,
+          143,
+          146,
+          152,
+          155,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          176,
+          177,
+          178,
+          179,
+          180,
+          181,
+          182,
+          197,
+          198,
+          199,
+          201,
+          202,
+          203,
+          204,
+          236
+        ],
+        "hints": [
+          "Ready for solid_export_3mf (preferred) or solid_export_stl / solid_export_step."
+        ],
+        "ok": true,
+        "timeline_errors": []
+      },
+      "known_clearance_corrections": [
+        "bearing-front pulley relief",
+        "outer input bearing and ring moved one mm",
+        "carriage rail relief and continuous sole",
+        "cover mating windows",
+        "schematic clutch journal/nut split",
+        "wheel captive-nut seats locally thickened to seven mm radius"
+      ],
+      "offline_slicer_estimates": {
+        "parts": [
+          {
+            "part": "wheel-center-246-fit",
+            "filament_g": 321.9554748535156,
+            "estimated_hours": 8.350365125868056,
+            "first_layer_xy_bounds_mm": [
+              8.15817,
+              8.15817,
+              247.84181,
+              247.84181
+            ],
+            "warning_message": ""
+          },
+          {
+            "part": "wheel-bead-retainer-fit",
+            "filament_g": 48.087955474853516,
+            "estimated_hours": 1.4767061360677083,
+            "first_layer_xy_bounds_mm": [
+              8.15817,
+              8.15817,
+              247.84181,
+              247.84181
+            ],
+            "warning_message": ""
+          },
+          {
+            "part": "tpu-tread-246-fit",
+            "filament_g": 134.36904907226562,
+            "estimated_hours": 10.132001953125,
+            "first_layer_xy_bounds_mm": [
+              2.15815,
+              2.15815,
+              253.84183000000002,
+              253.84183000000002
+            ],
+            "warning_message": ""
+          }
+        ],
+        "all_three_sliced": true,
+        "basis": "Installed X2D 0.4 mm profile; generic PETG/TPU, 0.2 mm layers, 15% gyroid; PETG five walls, TPU three. Explicit center (128,128), main nozzle only, 3 mm brim. Estimated consumption includes print aids. Actual nozzle/material and physical results unconfirmed.",
+        "toolpath_review": "First-layer bounds, generated support presence and native slicer thumbnails checked; not a complete layer-by-layer print qualification."
+      }
+    },
+    "sliced": true,
+    "archive": "first-prints/wheel-fit-set.zip"
+  },
+  "drive_end_section": {
+    "design": "Vehicle carrier and input spine; clamp via final body flange, retain for vehicle after qualification",
+    "current_native": "drive-end-section.nbcad",
+    "wheel_tire_work": "DEFERRED by user",
+    "CAD_check_record": "drive-end-section-checks.json",
+    "physical_tests": "NOT PERFORMED",
+    "powered_release": false,
+    "resumed_check_date": "2026-09-19",
+    "mesh_checks": "Two exports each have one connected closed manifold mesh",
+    "radial_sweep": "Checked +/-1.5 mm; saddle corner relieved to clear proposed central wall. Full interference and tool sweep still open.",
+    "offline_sliced": true,
+    "live_clearance_review": "Six structural overlaps removed; full native check retains nine documented unresolved/envelope pairs. See drive-end-section-checks.json.",
+    "prior_estimated_grams": 194.3333969116211,
+    "prior_estimated_hours": 7.141419542100694,
+    "estimated_grams": 193.6998519897461,
+    "estimated_hours": 7.131857367621528
+  }
+}

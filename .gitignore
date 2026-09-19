@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.log
+*.gcode
+node_modules/
+*.inspect.ndjson
+.local/

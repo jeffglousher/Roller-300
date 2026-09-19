@@ -1,0 +1,1130 @@
+{
+  "checked_date_local": "2026-09-13",
+  "currency": "USD unless stated",
+  "purchases_made": false,
+  "current_packaging_revision": "vehicle-integrated-drive-end-v2",
+  "obstacle_selection_gate": "Actual mass and rounded floor profile unmeasured. Normal crossing cannot require clutch slip. No useful protective band or powered vehicle release established.",
+  "obstacle_mechanics_reference": {
+    "title": "Dynamics of Step-Climing with Deformable Wheels and Applications for Mobile Robotics",
+    "authors": "Wilhelm et al.",
+    "year": 2007,
+    "source": "https://digitalcommons.calpoly.edu/csse_fac/61/",
+    "checked_date_local": "2026-09-12",
+    "evidence": "Author university repository abstract: wheel elasticity and dynamics affect step-climbing torque; the simplified screen in checks.json is our own stated moment balance, not a claimed validated robot model."
+  },
+  "other_parts": [
+    {
+      "item": "Continuous-rotation hobby servo plus matching purchased horn",
+      "quantity": 2,
+      "model": "INJORA INJS035-360",
+      "classification": "owned minimum one; second after validation",
+      "action": "Use owned actuator and matching spool; measure mounting interfaces",
+      "source": "https://www.injora.com/products/injora-injs035-360-35kg-waterproof-digital-servo-360-steering-winch-wheel-for-rc",
+      "evidence": "Ordinary continuous-rotation models use open-loop speed control; do not infer wheel feedback"
+    },
+    {
+      "item": "608 rolling bearing, nominal 8 x 22 x 7 mm",
+      "quantity": 8,
+      "model": "SKF 608-2Z reference; final shield/seal/clearance variant not selected",
+      "classification": "purchased candidate",
+      "source": "https://cdn.skfmediahub.skf.com/api/public/0901d196802809de/pdf_preview_medium/0901d196802809de_pdf_preview_medium.pdf",
+      "action": "Verify supplier drawing, batch fits and drag; no assumed press fit or price"
+    },
+    {
+      "item": "Ground 8 mm steel smooth shafts",
+      "quantity": 4,
+      "lengths_mm": [
+        110,
+        110,
+        49,
+        49
+      ],
+      "model": null,
+      "classification": "purchase candidate",
+      "source": "https://uk.misumi-ec.com/en/techblog/product-info/linear-shafts-precision-standards-for-misumi-linear-shafts/",
+      "action": "110 mm wheel shafts and 49 mm input shafts are current geometry; prepared groove/flat/retention and supplier drawing remain HOLD."
+    },
+    {
+      "item": "8 mm clamp wheel hubs/flanges and shaft collars",
+      "quantity": "2 wheel hubs plus retainers per final drawing",
+      "model": null,
+      "classification": "unresolved purchase interface",
+      "action": "Verify 8 mm bore, flange drawing, tightening access and rated torque. No 1/4 inch substitution."
+    },
+    {
+      "item": "D&D DURA-Flex / PowerDrive210-3M-09 endless timing belt",
+      "quantity": "2 belts for preferred drive, no purchase made",
+      "classification": "preferred purchased belt to qualify",
+      "source": "https://www.amazon.com/dp/B00ISC4PHG",
+      "checked_date_local": "2026-09-12",
+      "listing_price_each_USD": 7.09,
+      "listing_stock": "Product page showed Only3 left in stock (more on the way) when checked; offer/stock/shipping can change",
+      "published_dimensions_mm": {
+        "nominal_pitch_length": 210,
+        "nominal_pitch": 3,
+        "nominal_width": 9,
+        "displayed_length_inches": 8.27,
+        "displayed_width_inches": 0.35
+      },
+      "teeth": 70,
+      "published_construction": "Rubber with fiberglass tensile cords per product page; pulley profile, tension/load rating and actual thickness remain unverified",
+      "pulley_interface": "24/48 proposed; obtain actual compatible tooth geometry and ratings; broad interchangeability marketing is not accepted as engineering verification",
+      "complete_pair_cost": "14.18 USD for two at observed offer, before shipping/tax and all pulleys/carriers/tensioning/clutches; installed total unknown",
+      "fit": "Calculated centers49.672 mm and small wrap153.324 deg; radial screen improved, complete pulley/retention/tension fit not checked",
+      "previous_source_note": "GPR listing previously checked; replaced as primary sourcing route by verified Amazon offer. Geometry210-3M-09 unchanged."
+    },
+    {
+      "item": "Pixracer installation",
+      "quantity": 1,
+      "model": "User's exact variant unresolved",
+      "classification": "intended hardware, possession/version not verified",
+      "source": "https://docs.px4.io/main/en/flight_controller/pixracer",
+      "firmware_source": "https://raw.githubusercontent.com/PX4/PX4-Autopilot/main/boards/px4/fmu-v4/rover.px4board",
+      "evidence": "Original FMUv4 documented; main source enables differential rover. Custom pitch-control vehicle is not implemented; released binary/board fit unverified."
+    },
+    {
+      "item": "Raspberry Pi Zero 2 W",
+      "quantity": "1 later, not prerequisite",
+      "classification": "future option",
+      "source": "https://datasheets.raspberrypi.com/rpizero2/raspberry-pi-zero-2-w-product-brief.pdf",
+      "evidence": "Official physical drawing page 4; board 65 x 30 mm. Retain larger access reserve; fixed holes deferred."
+    },
+    {
+      "item": "Battery, compatible regulators, branch protection, power connectors and switch/disconnect",
+      "quantity": "one power system",
+      "model": null,
+      "classification": "unresolved electrical purchases",
+      "action": "Choose voltage/current from actual servo and battery; numeric current cutoff must be entered before powered testing"
+    },
+    {
+      "item": "Two post-clutch direction-sensing wheel encoders; shared fault supervisor/current monitoring; actual input-motion reference if required",
+      "quantity": "2 wheel encoders baseline; reuse valid actuator feedback or add2 pre-clutch readers for true slip detection",
+      "model": null,
+      "classification": "feedback/duty qualification required before continuous trials; not installed",
+      "action": "Wheel-only sensing does not close partial-slip heating protection. Verify board I/O and minimize boards/harness before choosing hardware; paired independent enable/watchdog remains required."
+    },
+    {
+      "item": "PETG structure/gears/carriers, TPU tires/bumpers, M4 through fasteners/captive nuts; purchased horn screws retained",
+      "quantity": "from detailed CAD and slicer later",
+      "classification": "printed plus purchased fasteners",
+      "action": "Bambu Lab X2D confirmed; actual slicer footprint and materials/fit coupons unqualified. Indoor first; outdoor conversion needs separate environment/load qualification."
+    }
+  ],
+  "retired_clutch_record": {
+    "priority": "RETIRED for new floor requirement; historical source evidence only",
+    "model": "Dynatect PAO16-8MM (requested metric configuration; order code to confirm)",
+    "sources": [
+      "https://dynatect.com/product/series-16-slip-clutches/",
+      "https://dynatect.com/wp-content/uploads/Series16Specs.pdf",
+      "https://dynatect.com/wp-content/uploads/Polyclutch-Series-16-Installation-Operation.pdf",
+      "https://dynatect.com/wp-content/uploads/Dynatect-Polyclutch-Slip-Clutches.pdf"
+    ],
+    "interface": "Shaft-through; hub set screws to 8 mm smooth shaft with flat; gear carrier grips housing boss. Metric bore must be confirmed, not PAO16-4 (6.35 mm).",
+    "published_envelope_mm": {
+      "OD": 25.4,
+      "overall_length": 26.92,
+      "boss_nominal_OD": 19.3,
+      "boss_length": 6.35
+    },
+    "published_boss_note": "0.015 inch over nominal per installation sheet; measure supplied part",
+    "adjustable_torque_range_Nm": null,
+    "published_capacity": "2 lb-in at 50 rpm (~0.226 N.m); metric table gives 0.3 N.m. Discrepancy requires supplier resolution.",
+    "minimum_stable_torque_Nm": null,
+    "torque_tolerance_and_drift": "Not found for requested setting",
+    "directionality": "Published bidirectional; horizontal axis installation",
+    "permitted_slip_speed": "No independent max found; torque, speed and duty interdependent",
+    "published_heat_guideline_W": 1,
+    "local_printed_structure_rating": "Unvalidated",
+    "adjustment": "Threaded adjusting nut; retention method for this configured unit to confirm",
+    "radial_load_and_moment_capacity": null,
+    "replacement_parts": "Availability and service kit to confirm with supplier",
+    "price_each_USD": null,
+    "stock_and_lead_time": "Unknown; manufacturer quote route, no stock claim",
+    "complete_pair_cost": "2 clutches + metric/other options + gear carriers/flanges + shaft retention/support hardware + shipping/tax + any machining; quote incomplete",
+    "release": "Supplier data plus independent two-direction thermal/torque calibration required"
+  },
+  "printer_evidence": {
+    "checked_date_local": "2026-09-12",
+    "source": "https://blog.bambulab.com/xcellence-made-simple-bambu-lab-presents-the-x2d/",
+    "published_main_xyz_mm": [
+      256,
+      256,
+      260
+    ],
+    "published_shared_dual_xyz_mm": [
+      235.5,
+      256,
+      256
+    ],
+    "proposed_finished_wheel_mm": 246,
+    "brim_radial_mm": 3,
+    "edge_margin_mm": 2,
+    "actual_slicer_checked": false,
+    "model": "Bambu Lab X2D",
+    "user_confirmed": true
+  },
+  "requirements_revision": "amazon-belt-first-double-helical-fallback",
+  "retired_belt_record": {
+    "item": "Gates PowerGrip HTD 240-3M-09 / 9293-0352",
+    "quantity": "2 only if belt fallback selected",
+    "classification": "purchased endless belt fallback",
+    "manufacturer_source": "https://www.gates.com.mx/pdf/CATALOGO%20TRANSMISION%20DE%20POTENCIA%20INDUSTRIAL%20-%20BANDAS%20SINCRONAS.pdf",
+    "seller_source": "https://www.biedlers-belts.com/gates-240-3m-09-belt.html",
+    "published_seller_price_USD": 8.73,
+    "seller_status": "Special Order; typically 5-10 business days as shown; recheck before ordering",
+    "interface": "3 mm pitch, 240 mm pitch length, 80 teeth, 9 mm wide; compatible 24/48 HTD pulley drawings still needed",
+    "status": "Retired active comparison; failed compact drum radial envelope. Old seller price not reconfirmed in latest retrieved page."
+  },
+  "acoustic_reference": {
+    "source": "https://www.gates.com/content/dam/documents-library/operating-manuals/preventive-maintenance-manual-en.pdf",
+    "checked_date_local": "2026-09-12",
+    "evidence": "Printed pp39-40: belt tension/alignment affect noise; enclosure acoustic treatment can raise temperature. No noise reduction promised for this roller."
+  },
+  "feedback_reference": {
+    "source": "https://www.pololu.com/category/143/continuous-rotation-servos",
+    "checked_date_local": "2026-09-12",
+    "evidence": "Ordinary continuous-rotation servos provide open-loop speed control; feedback-equipped models are a separate capability. No servo shopping or model selection performed."
+  },
+  "sensing_sources": {
+    "checked_date_local": "2026-09-12",
+    "tof": {
+      "user_link": "https://a.co/d/08zyZJaz",
+      "resolved_source": "https://www.amazon.com/dp/B0DC6M6G7W",
+      "model": "ACEIRMC TOF400C VL53L1X four-pack",
+      "seller_data": "3.0-5 V supply, 40 mA maximum advertised; breakout drawing, regulator/pullup/signal levels and XSHUT access not verified. No price or stock claim.",
+      "primary_sources": [
+        "https://www.st.com/resource/en/datasheet/vl53l1x.pdf",
+        "https://www.st.com/resource/en/application_note/an5231-cover-window-guidelines-for-the-vl53l1x-longdistance-ranging-timeofflight-sensor-stmicroelectronics.pdf"
+      ],
+      "primary_data": "DS12385 Rev 8: 27 degree diagonal receiver FoV, default 8-bit address 0x52 (7-bit 0x29), 20 ms minimum short-mode budget; 4 m requires favorable target/light and longer integration. AN5231 covers window crosstalk and optical barriers.",
+      "purchase_scope": "Four forward initially; second four-pack only after qualification. No purchase made."
+    },
+    "thermal": {
+      "user_link": "https://a.co/d/0bJxegTP",
+      "resolved_source": "https://www.amazon.com/dp/B0F8MZVFBJ",
+      "model": "TOPDON TC002C Duo",
+      "primary_sources": [
+        "https://www.topdon.us/products/tc002c-duo",
+        "https://m.topdon.com/products/TC002C-Duo"
+      ],
+      "evidence": "256 x 192 native IR, 25 Hz; 512 x 384 is enhanced output. Published iOS/Android/Windows; no verified Linux/Pi SDK or UVC/radiometric access. FOV conflicts between official pages (50 x 37.2 vs 56 x 42); verify exact variant.",
+      "seller_envelope": "Corrected:71x42x14 overall INCLUDING built-in USB-C plug; separate mated adapter/cable extra.",
+      "purchase_scope": "Optional higher-level sensor; no compatibility or fit selection, no purchase"
+    },
+    "camera": {
+      "source": "https://www.raspberrypi.com/documentation/accessories/camera.html",
+      "evidence": "Official camera uses 15-pin connector, Zero series uses mini 22-pin; appropriate cable required. User camera model/ownership not yet confirmed."
+    },
+    "feedback_servo_interface_example": {
+      "source": "https://www.parallax.com/product/parallax-feedback-360-high-speed-servo/",
+      "model": "900-00360",
+      "selected": false,
+      "evidence": "Continuous feedback interface example: actual angle feedback. Current page 2.2 kg-cm stall at 6 V =0.216 N.m; older v1.2 PDF says2.5 kg-cm. Neither supports current crossing torque with1.778 ratio; not a motor recommendation."
+    },
+    "charging_architecture_reference": {
+      "sources": [
+        "https://www.ti.com/product/BQ24610",
+        "https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/196/BQ24610_5F00_BQ24650_5F00_Schematic_5F00_Checklist-_2800_37_2900_.pdf"
+      ],
+      "evidence": "Example manufacturer architecture documents pack-specific charge regulation, temperature supervision, power-path options and reverse blocking. This IC is not selected and is not a purchased charger module."
+    }
+  },
+  "transmission_evidence": {
+    "checked_date_local": "2026-09-12",
+    "amazon": {
+      "source": "https://www.amazon.com/dp/B00ISC4PHG",
+      "asin": "B00ISC4PHG",
+      "title": "D&D DURA-Flex210-3M-09 Timing Belt",
+      "method": "Amazon native search and direct product page in browser",
+      "observed_price_USD": 7.09,
+      "offer": "Only3 left in stock (more on the way)",
+      "not_verified": [
+        "checkout delivery to user",
+        "manufacturer load/tension data",
+        "belt tooth profile against selected pulley drawing",
+        "installed cost"
+      ],
+      "purchased": false
+    },
+    "helical_primary": {
+      "source": "https://khkgears.net/new/gear_knowledge/gear_technical_reference/calculation_gear_dimensions.html",
+      "section": "4.3/Table4.11",
+      "retrieval": "Read manufacturer HTML after decompressing gzip response",
+      "evidence": "Transverse and normal systems differ; opposite hand for parallel mating shafts; transverse-system pitch diameter=z*mt; standard transverse addendum/whole depth preserve existing40/68 mm envelopes for18/32 at mt2."
+    },
+    "helical_primary_catalog": {
+      "source": "https://dpk3n3gg92jwt.cloudfront.net/domains/khk.us/02-helical-gears-technical.pdf",
+      "evidence": "Readable KHK manufacturer catalog distinguishes transverse/normal systems and opposite mating hand. Industrial gear performance is not a rating for printed parts."
+    }
+  },
+  "camera_packaging_update": {
+    "date_local": "2026-09-12",
+    "accepted_belt": "D&D 210-3M-09 / Amazon B00ISC4PHG; user accepted, not purchased",
+    "new_purchases": false,
+    "thermal": "TOPDON TC002C Duo, published case reservation plus inverted USB extension space; exact adapter, lens center and Pi acquisition unknown",
+    "visible": "Unidentified user camera; 20x30x30 installation reserve plus CSI bypass",
+    "auxiliary_bays": "50x35x18 per charger/input protection and shared supervisor; neither model selected",
+    "sources_rechecked": [
+      "https://www.topdon.us/products/tc002c-duo",
+      "https://www.raspberrypi.com/documentation/accessories/camera.html"
+    ],
+    "native_body_count": 99,
+    "wheel_feedback": "Two 20x10x20 reader reserves at inboard live-shaft ends; reader/target selection and air gap unverified",
+    "status": "SUPERSEDED by mechanical_envelope_evidence; old installation boxes and optical ray origins withdrawn."
+  },
+  "mechanical_envelope_evidence": {
+    "thermal_20260913": {
+      "model": "TOPDON TC002C Duo",
+      "checked_date_local": "2026-09-13",
+      "size_mm": [
+        71,
+        42,
+        14
+      ],
+      "scope": "Device overall including built-in USB-C plug, not shipping box; mated extension excluded",
+      "sources": [
+        "https://www.topdon.us/products/tc002c-duo",
+        "https://device.report/m/4186fb21802cb676dc50e20bb6ce70592a357d6fe9d11b6d86ade16b9f90748b",
+        "https://www.notebookcheck.com/Topdon-TC002C-Duo-getestet-Eine-Waermebildkamera-fuer-alle-Smartphones.1173278.0.html"
+      ],
+      "method": "TOPDON branded brochure product dimensions; firsthand review explicitly labels size with USB-C plug. No tolerance drawing."
+    },
+    "pi_20260913": {
+      "model": "Raspberry Pi Zero 2 W, bare GPIO",
+      "checked_date_local": "2026-09-13",
+      "size_mm": [
+        65,
+        30,
+        5
+      ],
+      "sources": [
+        "https://datasheets.raspberrypi.com/rpizero2/raspberry-pi-zero-2-w-mechanical-drawing.pdf",
+        "https://www.atlantikelektronik.com/en/news/raspberry-pi-zero-2-w",
+        "https://www.berrybase.at/en/product-datasheet/019234a4efa871198e5c7a4f7a8eb05e/create"
+      ],
+      "method": "Official manufacturer XY drawing; distributors specify nominal overall65x30x5. No attached plug/accessory modeled."
+    },
+    "tof_20260913": {
+      "model": "ACEIRMC TOF400C VL53L1X",
+      "checked_date_local": "2026-09-13",
+      "size_mm": [
+        20,
+        12,
+        null
+      ],
+      "sources": [
+        "https://www.amazon.com/dp/B0DC6M6G7W",
+        "https://easyelecmodule.com/product/tof400c-tof-sensor/"
+      ],
+      "method": "Inspected exact Amazon product third-thumbnail dimension image;20x12 mm shown including ear outline. Separate straight/right-angle six-pin headers visible. No total assembled depth or hole drawing published in inspected source."
+    },
+    "bearing_20260913": {
+      "model": "608 boundary dimensions; SKF608-2RSH reference",
+      "checked_date_local": "2026-09-13",
+      "bore_od_width_mm": [
+        8,
+        22,
+        7
+      ],
+      "source": "https://www.emarketplace.in.skf.com/deep-groove-ball-bearing/608-2rsh",
+      "scope": "Standard boundary envelope only; exact purchased bearing/seal and fits not selected."
+    },
+    "pi_family_20260913": {
+      "checked_date_local": "2026-09-13",
+      "model": "Bare Raspberry Pi Zero W / Zero2W nominal family envelope",
+      "size_mm": [
+        65,
+        30,
+        5
+      ],
+      "source": "https://magazine.raspberrypi.com/articles/pi-zero-w",
+      "additional_source": "https://www.atlantikelektronik.com/en/news/raspberry-pi-zero-2-w",
+      "scope": "Published nominal overall dimensions; actual owned variant and headers/case not confirmed."
+    }
+  },
+  "actuator_discussion_20260913": {
+    "scope": "Bounded architecture comparison only; no motor selection, purchase, voltage or firmware integration",
+    "servo": {
+      "model": "FEETECH FB5317M-360",
+      "source": "https://www.feetechrc.com/17kg-digital-magnetic-code-continuous-rotation-analog-feedback-actuator.html",
+      "no_load_rpm_at_7_4V": 60,
+      "rated_torque_Nm": 0.588399,
+      "stall_torque_Nm": 1.71616375,
+      "mass_kg": 0.0655,
+      "nominal_case_dimensions_mm": [
+        40.1,
+        20.1,
+        38.8
+      ],
+      "full_installed_envelope_verified": false,
+      "feedback": "Published magnetic encoder with analog output; continuous rotation",
+      "duty_and_acoustic_data": "Not verified; rated-torque test conditions/thermal mounting need supplier confirmation",
+      "price_and_stock": "Not checked; not a purchase recommendation",
+      "data_conflict": "Older manufacturer PDF lists62RPM and differing current figures; use webpage as current benchmark, confirm exact revision before selection"
+    },
+    "brushless": {
+      "model": "CubeMars AK45-10 KV75 example only",
+      "source": "https://www.cubemars.com/product/AK45-10-robotic-actuatuor.html",
+      "package": "Brushless motor +10:1 planetary gearbox +driver option",
+      "nominal_diameter_length_mm": [
+        53,
+        43
+      ],
+      "mass_kg": 0.26,
+      "rated_torque_Nm": 2.5,
+      "rated_voltage_V": 24,
+      "rated_rpm": 150,
+      "peak_torque_Nm": 7,
+      "base_display_price_USD": 119.9,
+      "price_scope": "Page shows driver YES/NO variants; complete chosen configuration and installed cost unverified",
+      "noise": "Manufacturer60dB at65cm without comparable roller test point; no very-silent claim",
+      "not_selected_because": "Comparison scale only;3-cell operation, installed dimensions and quietness not established"
+    },
+    "gearmotor_benchmark": {
+      "model": "Pololu4755,100:1 37D12V with encoder and helical first pinion",
+      "source": "https://www.pololu.com/product/4755",
+      "continuous_load_upper_limit_Nm": 0.980665,
+      "instantaneous_upper_limit_Nm": 2.4516625,
+      "no_load_rpm_at_12V": 100,
+      "mass_kg": 0.21,
+      "nominal_body_diameter_length_mm": [
+        37,
+        72.5
+      ],
+      "output_shaft_diameter_length_mm": [
+        6,
+        16
+      ],
+      "price_each_USD": 60.95,
+      "stock": "Backorders allowed; stock notification shown, no immediate availability claim",
+      "limits": "Requires separate driver and package rearrangement; published gearbox/load limits do not qualify this enclosure or low-speed duty; no very-silent claim"
+    },
+    "brushless_low_speed_reference": {
+      "source": "https://support.maxongroup.com/hc/en-us/articles/360006299293-ESCON-EC-S-Applications-and-restrictions-of-sensorless-control",
+      "evidence": "Back-EMF-only sensorless control cannot provide defined torque and speed at zero/low speed. Specialized alternatives exist; specify actual feedback/drive."
+    },
+    "smooth_drive_reference": {
+      "source": "https://support.maxongroup.com/hc/en-us/articles/360007984693-EPOS4-Sensors-start-procedure-of-sinusoidal-commutation",
+      "evidence": "Suitable encoder and sinusoidal commutation support smooth motion/low motor noise; does not remove gearbox noise."
+    }
+  },
+  "archived_clutch_candidates": [
+    {
+      "priority": "sole purchased candidate for supplier verification; NOT selected or fitted",
+      "model": "Dynatect SAO20-8MM requested metric shaft-through configuration; order code to confirm",
+      "checked_date_local": "2026-09-12",
+      "sources": [
+        "https://dynatect.com/product/slipper-slip-clutches/",
+        "https://dynatect.com/wp-content/uploads/Polyclutch-Slipper-Installation-Operation.pdf",
+        "https://dynatect.com/wp-content/uploads/Dynatect-Polyclutch-Slip-Clutches.pdf"
+      ],
+      "interface": "Shaft-through hub fixed to8 mm shaft flat; housing boss drives gear via separate carrier/flange; confirm metric drawing. SAO20-4 is6.35 mm, not8 mm.",
+      "published_envelope_mm": {
+        "OD": 31.75,
+        "overall_length": 38.1,
+        "boss_nominal_OD": 19.3,
+        "E": 6.35,
+        "EE": 12.7
+      },
+      "boss_note": "Installation sheet says0.015 inch over nominal; exact shaft-through drawing and received dimensions required.",
+      "adjustable_torque_range_Nm": null,
+      "minimum_stable_torque_Nm": null,
+      "published_capacity": "12 lb-in /1.35 N.m at50 rpm guideline; not guaranteed stable adjustment range",
+      "torque_tolerance_and_drift": "Not verified for requested band; breakaway may be below sliding per guide",
+      "directionality": "Manufacturer says bidirectional, horizontal installation",
+      "permitted_slip_speed": "No independent maximum verified; torque/speed/duty coupled",
+      "published_heat_guideline_W": 6,
+      "local_polymer_and_servo_rating": "UNVALIDATED",
+      "adjustment_retention": "Threaded adjustment; retention method and repeated reverse stability to confirm",
+      "radial_load_and_moment_capacity": null,
+      "replacement_parts": "Kit/lead time not verified",
+      "price_each_USD": null,
+      "stock_and_lead_time": "Unknown; quote route, no stock claim",
+      "complete_pair_cost": "2 configured clutches + carriers/flanges + shafts/retainers/supports + any machining + shipping/tax; total unknown",
+      "fit_gate": "38.1 mm reference atY61-99.1 versus existing27.5 mm collar-limited space;3.6 mm outer-bearing overlap. No carrier fitted; do not freeze pocket.",
+      "release": "Actual normal/protective torque separation, metric interface, mechanical repackaging, supplier duty/load data, installed quote and independent CW/CCW calibration required"
+    },
+    {
+      "priority": "only cost fallback; unvalidated hybrid",
+      "model": "Traxxas 5352X wear/spring kit plus 5351 pressure plate/hub interfaces and custom printed non-wear carriers",
+      "sources": [
+        "https://traxxas.com/5352x-slipper-clutch-rebuild-kit",
+        "https://traxxas.com/sites/default/files/68054-61_parts.pdf",
+        "https://traxxas.com/support/slipper-clutch-adjustment"
+      ],
+      "interface": "Measure actual RC hub/plate bore, pin, pad and adjuster interfaces; preserve metal preload loop. Adapter to independent 8 mm wheel shaft is not selected.",
+      "envelope_mm": null,
+      "adjustable_torque_range_Nm": null,
+      "torque_tolerance_and_drift": "Not published for robot use; calibration required",
+      "directionality": "Reverse suitability for this hybrid not established",
+      "permitted_slip_speed": null,
+      "heat_and_duty_rating": "No numeric rating verified; excess heat warning applies",
+      "adjustment_retention": "Metal spring + retained threaded adjuster; actual low preload retention to test",
+      "replacement_parts": "Named kit exists, manufacturer listing showed out of stock",
+      "kit_price_each_USD": 7.5,
+      "stock_and_lead_time": "Retrieved manufacturer page again shows7.50 USD and Out of Stock; crawl age old, availability not guaranteed;5351 stock unknown",
+      "complete_pair_cost": "At least $15 for two listed wear kits alone; add two metal hubs/plates, suitable springs, shoulder sleeves, clamp adapters, purchased retainers, carriers, shipping and any machining. Installed total unknown.",
+      "release": "Measured new normal/protective torque separation and CW/CCW sliding, drift, thermal and retention gates; old0.12-0.18 band is retired as vehicle acceptance."
+    }
+  ],
+  "clutch_candidates": [
+    {
+      "model": "ComInTec00.25 DF d8 T1",
+      "priority": "default purchased qualification candidate; HOLD order until supplier confirms complete installed assembly",
+      "sources": [
+        "https://www.comintec.com/download/cataloghi/sezioni/torque_limiters/DF_EN.pdf",
+        "https://www.hexelus.com/product-page/comintec-00-25-friction-torque-limiter-df"
+      ],
+      "checked_date_local": "2026-09-13",
+      "published_envelope_mm": {
+        "OD": 25,
+        "length": 26,
+        "hub_journal": 14,
+        "max_bore": 8,
+        "drive_plate_thickness_range": [
+          1,
+          2.5
+        ]
+      },
+      "adjustable_torque_range_Nm": [
+        1,
+        8
+      ],
+      "mass_kg": 0.1,
+      "directionality": "Published both directions; continuous relative sliding",
+      "shaft_gear_interface": "8H7 finished bore to confirm. M3 grubscrew on nut side. Ground metal driven plate between friction rings; journal/bush supports plate. Printed belt pulley bolts outside friction radius to metal plate; no plastic friction face. Bore/bush/plate pattern supplier drawing pending.",
+      "tolerance": null,
+      "minimum_running_torque_Nm": null,
+      "breakaway_sliding_ratio": null,
+      "permitted_slip_speed": null,
+      "max_rotation_rpm_not_slip_rating": 10000,
+      "thermal_duty": "No numerical continuous slip rating verified; manufacturer asks prompt shutdown at first slip. Not continuous-slip qualified.",
+      "adjustment_retention": "Locking ring shown; exact00.25 locking method, spring code and calibration retention to confirm.",
+      "replacement_parts": "Manufacturer STD/LD/LDX rings documented; exact00.25 replacement codes/stock/prices not confirmed.",
+      "indicative_reseller_price_USD": 79.8,
+      "price_status": "Search listing only; selected d8 T1 delivered price, stock and lead time unverified. Not in order-now total.",
+      "installed_cost": "At least two limiters plus prepared ground plates/bushes, shafts, adapters, fasteners, delivery and calibration. No complete quote."
+    },
+    {
+      "model": "Hybrid RC wear kit prototype, exact kit pending measurement",
+      "priority": "sole fallback if purchased low-torque installed solution is unsuitable",
+      "sources": [
+        "https://traxxas.com/support/slipper-clutch-adjustment"
+      ],
+      "checked_date_local": "2026-09-13",
+      "shaft_gear_interface": "Printed non-wear carriers, purchased metal friction faces/pads/springs and positive shaft clamp. No fixed cartridge size until hardware measured.",
+      "published_envelope_mm": null,
+      "adjustable_torque_range_Nm": null,
+      "tolerance": null,
+      "directionality": "Must bench-establish bidirectional repeated breakaway/running slip and unlimited travel",
+      "permitted_slip_speed": null,
+      "thermal_duty": null,
+      "adjustment_retention": "Metal spring plus retained adjustment; test required",
+      "replacement_parts": "Wear-kit model and local supply pending",
+      "installed_cost": null
+    }
+  ],
+  "servo_v1": {
+    "model": "INJORA INJS035-360",
+    "source": "https://www.injora.com/products/injora-injs035-360-35kg-waterproof-digital-servo-360-steering-winch-wheel-for-rc",
+    "owned_listing": "https://www.amazon.com/dp/B0C9TM9X2C",
+    "checked": "2026-09-13",
+    "case_nominal_mm": [
+      40.5,
+      20,
+      40.5
+    ],
+    "full_envelope_mm": null,
+    "mount_slot_pattern_mm": null,
+    "mount_ear_thickness_mm": null,
+    "output_axis_offset_mm": null,
+    "mass_kg": 0.06,
+    "spline": "25T, nominal 5.9 mm",
+    "spool_diameter_mm": 19,
+    "spool_width_mm": 11,
+    "spool_screw": "M3 supplied",
+    "spool_interface_note": "Reversible spool: 23T on one face, 25T on the other. Retain purchased matching spline. Root/flange details and torque attachment require sample.",
+    "published_rpm": {
+      "4.8V": 49,
+      "6.0V": 61
+    },
+    "published_stall_torque_Nm": {
+      "4.8V": 2.8439,
+      "6.0V": 3.4323
+    },
+    "continuous_permissible_torque_Nm": null,
+    "feedback_external": false,
+    "owned_qty_confirmed_minimum": 1,
+    "price_each_USD_reference": 22.98,
+    "source_scope": "Manufacturer and exact Amazon listing read 2026-09-13. Case size is not full ear/spline/boot envelope. Stall torque is not permissible running torque."
+  },
+  "bom": {
+    "purpose": "Canonical BOM source. BOM.xlsx is generated from this array; return purchase updates here before regenerating. No orders placed. Blank quantities/prices mean unknown, never free.",
+    "first_stage": "One integrated wheel/belt test article using owned INJORA. Powered release still held; order quantities do not imply complete kit.",
+    "rows": [
+      {
+        "id": "M01",
+        "group": "Actuator",
+        "item": "Continuous-mode standard servo",
+        "model": "INJORA INJS035-360",
+        "vehicle_qty": 2,
+        "first_stage_qty": 1,
+        "owned_qty": 1,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": 22.98,
+        "stage": "OWNED",
+        "source": "https://www.amazon.com/dp/B0C9TM9X2C",
+        "checked": "2026-09-13",
+        "notes": "Owned servo for first article. 40.5x20x40.5 CASE only; ears/spool measurements pending. Continuous rotation, no feedback."
+      },
+      {
+        "id": "M02",
+        "group": "Actuator",
+        "item": "One shared servo programmer",
+        "model": "3102-0001-0001",
+        "vehicle_qty": 0,
+        "first_stage_qty": 0,
+        "owned_qty": 0,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": 12.99,
+        "stage": "SUPERSEDED",
+        "source": "https://www.gobilda.com/servo-programmer-for-2000-series-dual-mode-servo/",
+        "checked": "2026-09-13",
+        "notes": "Not required for owned INJORA servo. Do not order this programmer."
+      },
+      {
+        "id": "M03",
+        "group": "Transmission",
+        "item": "Accepted endless HTD3M belt",
+        "model": "D&D210-3M-09 / B00ISC4PHG",
+        "vehicle_qty": 2,
+        "first_stage_qty": 1,
+        "owned_qty": 0,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": 7.09,
+        "stage": "BUY ONE SIDE",
+        "source": "https://www.amazon.com/dp/B00ISC4PHG",
+        "checked": "2026-09-13",
+        "notes": "Earlier checked offer; recheck checkout price. 210 mm,70 teeth,9 mm width. Not240 mm."
+      },
+      {
+        "id": "M04",
+        "group": "Support",
+        "item": "8x22x7 radial bearing",
+        "model": "1600-0722-0008",
+        "vehicle_qty": 8,
+        "first_stage_qty": 4,
+        "owned_qty": 0,
+        "ordered_qty": 0,
+        "pack_qty": 2,
+        "pack_price_usd": 3.99,
+        "stage": "BUY ONE SIDE",
+        "source": "https://www.gobilda.com/1600-series-non-flanged-ball-bearing-8mm-id-x-22mm-od-7mm-thickness-2-pack/",
+        "checked": "2026-09-13",
+        "notes": "Four each drive side. Confirm actual fit/drag on coupon; not a load rating."
+      },
+      {
+        "id": "M05",
+        "group": "Support",
+        "item": "8mm round wheel clamp hub",
+        "model": "1310-0016-0008",
+        "vehicle_qty": 2,
+        "first_stage_qty": 1,
+        "owned_qty": 0,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": 7.99,
+        "stage": "BUY ONE SIDE",
+        "source": "https://www.gobilda.com/1310-series-hyper-hub-8mm-bore/",
+        "checked": "2026-09-13",
+        "notes": "16 mm square M4 pattern;22.5 overall axial envelope,30.6 circumscribed diameter."
+      },
+      {
+        "id": "M06",
+        "group": "Support",
+        "item": "8mm round clamp collar",
+        "model": "2910-0921-0008",
+        "vehicle_qty": 4,
+        "first_stage_qty": 2,
+        "owned_qty": 0,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": 4.99,
+        "stage": "BUY ONE SIDE",
+        "source": "https://www.gobilda.com/2910-series-aluminum-clamping-collar-8mm-id-x-21mm-od-9mm-length/",
+        "checked": "2026-09-13",
+        "notes": "Two per wheel shaft; input retention separate and unresolved. Actual9 mm length."
+      },
+      {
+        "id": "M07",
+        "group": "Support",
+        "item": "Wheel shaft blanks,8mm smooth",
+        "model": "2100-0008-0150 candidate",
+        "vehicle_qty": 2,
+        "first_stage_qty": 0,
+        "owned_qty": 0,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": 4.29,
+        "stage": "HOLD",
+        "source": "https://www.gobilda.com/stainless-steel-round-shafting",
+        "checked": "2026-09-13",
+        "notes": "150 mm blank needs110 mm finished length and clutch flat. Verify purchased finish/fit and local cutting or order prepared shafts; no workshop assumed."
+      },
+      {
+        "id": "M08",
+        "group": "Support",
+        "item": "Input shafts + retention",
+        "model": "Exact finished part pending",
+        "vehicle_qty": 2,
+        "first_stage_qty": 0,
+        "owned_qty": 0,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "stage": "HOLD",
+        "source": "",
+        "checked": "2026-09-13",
+        "notes": "49 mm shaft geometry Y55..104, with prepared end groove/retaining ring. Groove, shims, adapter and supplier remain HOLD; do not order a wrong specification."
+      },
+      {
+        "id": "M09",
+        "group": "Transmission",
+        "item": "Bidirectional output slip limiter",
+        "model": "ComInTec00.25 DF d8 T1",
+        "vehicle_qty": 2,
+        "first_stage_qty": 0,
+        "owned_qty": 0,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "stage": "HOLD",
+        "source": "https://www.comintec.com/download/cataloghi/sezioni/torque_limiters/DF_EN.pdf",
+        "checked": "2026-09-13",
+        "notes": "Supplier-confirm finished bore, torque tolerance near1 Nm, slip duty, support, stock and complete installed price. $79.80 indicative listing excluded."
+      },
+      {
+        "id": "M10",
+        "group": "Transmission",
+        "item": "Ground metal drive plates / bushes",
+        "model": "Supplier prepared to00.25 DF",
+        "vehicle_qty": 2,
+        "first_stage_qty": 0,
+        "owned_qty": 0,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "stage": "HOLD",
+        "source": "",
+        "checked": "2026-09-13",
+        "notes": "Plate thickness2 mm proposed; bush bore, friction surface, fastener circle and cost pending. No printed wear face."
+      },
+      {
+        "id": "M11",
+        "group": "Transmission",
+        "item": "Supported horn bridges / input clamps",
+        "model": "Matched to included horn",
+        "vehicle_qty": 2,
+        "first_stage_qty": 0,
+        "owned_qty": 0,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "stage": "HOLD",
+        "source": "",
+        "checked": "2026-09-13",
+        "notes": "Floating torque-only bridge; measure supplied horn. Independent input bearings required."
+      },
+      {
+        "id": "P01",
+        "group": "Printed",
+        "item": "24T input and48T output pulleys",
+        "model": "HTD3M,9 mm belt",
+        "vehicle_qty": 4,
+        "first_stage_qty": 0,
+        "owned_qty": 0,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "stage": "PRINT LATER",
+        "source": "",
+        "checked": "2026-09-13",
+        "notes": "Native HTD3M tooth geometry exists. Bought belt fit, shaft attachment, clutch plate/bush and loaded operation remain unqualified."
+      },
+      {
+        "id": "P02",
+        "group": "Printed",
+        "item": "One complete 246 mm wheel print set",
+        "model": "P01 center + P02 bead ring + P03 TPU tread",
+        "vehicle_qty": 2,
+        "first_stage_qty": 0,
+        "owned_qty": 0,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "stage": "DEFER WHEEL",
+        "source": "",
+        "checked": "2026-09-13",
+        "notes": "Wheel/tire selection and printing deferred by user. Three STL parts; unpowered fit only. Offline X2D 0.4 mm slice estimates total 505 g filament / 20 h including print aids. Actual nozzle/material and physical fit unverified."
+      },
+      {
+        "id": "P03",
+        "group": "Printed",
+        "item": "Barrel, covers, lid, ribs and mounts",
+        "model": "D160x210",
+        "vehicle_qty": 1,
+        "first_stage_qty": 0,
+        "owned_qty": 0,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "stage": "PRINT LATER",
+        "source": "",
+        "checked": "2026-09-13",
+        "notes": "Current end section uses D159 shell, D151 register and four M4 body mounts. Separate main drum and electronics lid remain later prints; do not duplicate the end section."
+      },
+      {
+        "id": "P04",
+        "group": "Printed",
+        "item": "Bearing fit coupon",
+        "model": "22.05/22.15/22.25 holes",
+        "vehicle_qty": 1,
+        "first_stage_qty": 1,
+        "owned_qty": 0,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "stage": "PRINT GAUGE",
+        "source": "",
+        "checked": "2026-09-13",
+        "notes": "Non-powered PETG dimensional coupon,80x32x7; keep orientation consistent with final seats."
+      },
+      {
+        "id": "P05",
+        "group": "Printed",
+        "item": "Servo fit gauge",
+        "model": "Selected25-2 mounting frame",
+        "vehicle_qty": 0,
+        "first_stage_qty": 0,
+        "owned_qty": 0,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "stage": "SUPERSEDED",
+        "source": "",
+        "checked": "2026-09-13",
+        "notes": "goBILDA25-2 gauge does not establish owned INJORA fit. Do not print for this servo."
+      },
+      {
+        "id": "H01",
+        "group": "Hardware",
+        "item": "Major M4 bolts, captive nuts, washers",
+        "model": "Consistent metric family",
+        "vehicle_qty": null,
+        "first_stage_qty": 0,
+        "owned_qty": null,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "stage": "HOLD",
+        "source": "",
+        "checked": "2026-09-13",
+        "notes": "Per drive: four M4 body bolts, eight M4 bearing-cap bolts and four M4 carriage bolts plus nuts/washers. Four M3 cover screws and four M3 saddle screws also required. Lengths/locking/tool fit remain to verify. Wheel hardware deferred separately."
+      },
+      {
+        "id": "E01",
+        "group": "Owned",
+        "item": "Small3-cell battery",
+        "model": "Owned, identity/dimensions pending",
+        "vehicle_qty": 1,
+        "first_stage_qty": 0,
+        "owned_qty": 1,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "stage": "OWNED",
+        "source": "",
+        "checked": "2026-09-13",
+        "notes": "Measure body and lead/plug envelope plus mass;90x85x30 box is not measured."
+      },
+      {
+        "id": "E02",
+        "group": "Owned",
+        "item": "Original Pixracer",
+        "model": "Owned original",
+        "vehicle_qty": 1,
+        "first_stage_qty": 0,
+        "owned_qty": 1,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "stage": "OWNED",
+        "source": "",
+        "checked": "2026-09-13",
+        "notes": "Case, cable/plug profile and mounting must be measured; installation allowance60x60x35."
+      },
+      {
+        "id": "E03",
+        "group": "Owned",
+        "item": "Pi Zero with Wi-Fi",
+        "model": "Owned variant pending",
+        "vehicle_qty": 1,
+        "first_stage_qty": 0,
+        "owned_qty": 1,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "stage": "OWNED",
+        "source": "",
+        "checked": "2026-09-13",
+        "notes": "Bare board nominal65x30x5; headers/case/mated plugs separate. No visible camera owned."
+      },
+      {
+        "id": "S01",
+        "group": "Sensors",
+        "item": "Front distance modules",
+        "model": "ACEIRMC TOF400C/B0DC6M6G7W",
+        "vehicle_qty": 4,
+        "first_stage_qty": 0,
+        "owned_qty": null,
+        "ordered_qty": 0,
+        "pack_qty": 4,
+        "pack_price_usd": null,
+        "stage": "MEASURE",
+        "source": "https://www.amazon.com/dp/B0DC6M6G7W",
+        "checked": "2026-09-13",
+        "notes": "20x12 footprint known. Count on hand and full depth over optical hood/solder needed; no headers attached."
+      },
+      {
+        "id": "S02",
+        "group": "Sensors",
+        "item": "Forward thermal camera",
+        "model": "TOPDON TC002C Duo",
+        "vehicle_qty": 1,
+        "first_stage_qty": 0,
+        "owned_qty": null,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "stage": "MEASURE",
+        "source": "https://www.topdon.us/products/tc002c-duo",
+        "checked": "2026-09-13",
+        "notes": "71x42x14 including built-in plug; confirm possession, mated extension and lens center."
+      },
+      {
+        "id": "S03",
+        "group": "Sensors",
+        "item": "Forward visible camera",
+        "model": "Not selected / not owned",
+        "vehicle_qty": 1,
+        "first_stage_qty": 0,
+        "owned_qty": 0,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "stage": "HOLD",
+        "source": "",
+        "checked": "2026-09-13",
+        "notes": "Select exact camera/lens before solid and aperture. No guessed envelope."
+      },
+      {
+        "id": "S04",
+        "group": "Sensors",
+        "item": "Post-clutch wheel motion readers + targets",
+        "model": "Exact hardware pending",
+        "vehicle_qty": 2,
+        "first_stage_qty": 0,
+        "owned_qty": 0,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "stage": "HOLD",
+        "source": "",
+        "checked": "2026-09-13",
+        "notes": "Keep shaft-end access. Non-feedback servo also needs actual pre-clutch motion reference for direct slip measurement."
+      },
+      {
+        "id": "S05",
+        "group": "Sensors",
+        "item": "Pre-clutch readers + targets",
+        "model": "Needed with non-feedback servo",
+        "vehicle_qty": 2,
+        "first_stage_qty": 0,
+        "owned_qty": 0,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "stage": "HOLD",
+        "source": "",
+        "checked": "2026-09-13",
+        "notes": "Mechanical reader/target provision only now; a PWM command is not measured input motion."
+      },
+      {
+        "id": "H02",
+        "group": "Hardware",
+        "item": "Battery straps / harness / strain relief",
+        "model": "Exact sizes pending",
+        "vehicle_qty": null,
+        "first_stage_qty": 0,
+        "owned_qty": null,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "stage": "HOLD",
+        "source": "",
+        "checked": "2026-09-13",
+        "notes": "Wiring is a physical part of package. Use soldered sensor pigtails with remote removable connectors as starting route."
+      },
+      {
+        "id": "H03",
+        "group": "Hardware",
+        "item": "Charging contacts and retained panel",
+        "model": "Two contacts; product pending",
+        "vehicle_qty": 2,
+        "first_stage_qty": 0,
+        "owned_qty": 0,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "stage": "HOLD",
+        "source": "",
+        "checked": "2026-09-13",
+        "notes": "Rear/lower accessible inset panel; spring travel, recess and purchased contact size pending. Electrical charging design deferred."
+      },
+      {
+        "id": "E04",
+        "group": "Electronics",
+        "item": "Power and protection hardware",
+        "model": "Products intentionally deferred",
+        "vehicle_qty": null,
+        "first_stage_qty": 0,
+        "owned_qty": null,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "stage": "HOLD",
+        "source": "",
+        "checked": "2026-09-13",
+        "notes": "Actuator disconnect, protection, separate branches and charge hardware must eventually fit. Not counted as zero mass or zero cost."
+      },
+      {
+        "id": "H04",
+        "group": "Wheel hardware",
+        "item": "Wheel-to-hub socket screws",
+        "model": "M4x10, ISO4762 / goBILDA2800-0004-0010",
+        "vehicle_qty": 8,
+        "first_stage_qty": 0,
+        "owned_qty": null,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "stage": "DEFER WHEEL",
+        "source": "https://www.gobilda.com/m4-socket-head-screws",
+        "checked": "2026-09-13",
+        "notes": "Wheel/tire selection and printing deferred by user. Four per wheel. 5 mm nominal engagement with 5 mm web; verify actual hub and no bottoming. Price/pack choice pending."
+      },
+      {
+        "id": "H05",
+        "group": "Wheel hardware",
+        "item": "Recessed bead-retainer socket screws",
+        "model": "M4x35 ISO4762; Accu SSC-M4-35-A2-R360 reference",
+        "vehicle_qty": 16,
+        "first_stage_qty": 0,
+        "owned_qty": null,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "stage": "DEFER WHEEL",
+        "source": "https://www.accu.co.uk/metric-cap-head-screws/250081-SSC-M4-35-A2-R360",
+        "checked": "2026-09-13",
+        "notes": "Wheel/tire selection and printing deferred by user. Eight per wheel. Nominal7 mm head diameter and4 mm height; head ends atY149.5, shaft tipY110.5. No washers in current stack. Pack/price unconfirmed."
+      },
+      {
+        "id": "H06",
+        "group": "Wheel hardware",
+        "item": "Captured wheel bead-retainer nuts",
+        "model": "M4x0.7 ISO4032 plain hex;7 mm AF,3.2 mm thickness reference",
+        "vehicle_qty": 16,
+        "first_stage_qty": 0,
+        "owned_qty": null,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "stage": "DEFER WHEEL",
+        "source": "",
+        "checked": "2026-09-13",
+        "notes": "Wheel/tire selection and printing deferred by user. Eight per wheel. Fit in7.3 mm AF pockets; verify nut lot dimensions. Mechanical witness marks for unpowered fit; locking method for operation remains to qualify."
+      },
+      {
+        "id": "P06",
+        "group": "Printed drive",
+        "item": "Reusable vehicle drive end section + input spine",
+        "model": "drive-end-section.nbcad; PETG fit candidate",
+        "vehicle_qty": 2,
+        "first_stage_qty": 1,
+        "owned_qty": 0,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "stage": "FIT REVIEW",
+        "source": "Local native CAD: drive-end-section.nbcad",
+        "checked": "2026-09-13",
+        "notes": "Two structural meshes supplied for unpowered fit review after bearing coupon. Same carrier clamps for testing and bolts to the drum. Caps/saddle/guard/shaft interfaces still need completion before a powered assembly."
+      }
+    ]
+  },
+  "servo_v1_superseded": {
+    "model": "2000-0025-0002",
+    "source": "https://www.gobilda.com/2000-series-dual-mode-servo-25-2-torque/",
+    "checked": "2026-09-13",
+    "supplier_step": "supplier-models/2000-0025-0002/2000-0025-0002.step",
+    "supplier_bounds": "supplier-models/servo-native-bounds.json",
+    "mount_slot_pattern_mm": [
+      48,
+      9.9
+    ],
+    "mount_slot_diameter_mm": 4.5,
+    "mount_ear_thickness_mm": 2.7,
+    "case_nominal_mm": [
+      40.3,
+      20,
+      39.9
+    ],
+    "overall_source_bounds_mm": [
+      54.3,
+      20.15,
+      44.1
+    ],
+    "output_axis_x_from_mount_pattern_midpoint_mm": -9.8,
+    "mass_kg": 0.06,
+    "continuous_permissible_torque_Nm": null,
+    "feedback_external": false,
+    "included_horn": "Use supplied matching25T horn; complete horn sweep/bolt pattern measured on sample before bridge print.",
+    "price_each_USD": 36.99,
+    "programmer_model": "3102-0001-0001",
+    "programmer_price_USD": 12.99,
+    "published_no_load_rpm_at7_4V": 60,
+    "published_stall_torque_Nm": 2.47,
+    "selection_reason": "Standard replaceable continuous mode with published geometry and US supplier; sample first for acoustic and loaded-torque gate."
+  },
+  "serial_servo_alternative": {
+    "model": "Waveshare ST3215",
+    "source": "https://www.waveshare.com/wiki/ST3215_Servo",
+    "checked": "2026-09-13",
+    "dimensions_mm": [
+      45.22,
+      35,
+      24.72
+    ],
+    "reason": "Motor mode with serial feedback; separate cradle and wiring interface. Not needed to use owned servo; no compatibility work performed."
+  },
+  "pulley_profile_source": {
+    "source": "https://raw.githubusercontent.com/IanSC/openscad.pulley-generator/master/pulley-generator.scad",
+    "checked": "2026-09-13",
+    "authors": "droftarts / isc; CAD-register-derived coordinate profile",
+    "scope": "HTD3M numerical profile for unpowered fit experiment; depth1.28905, pitch offset0.381. Verify actual belt fit. D&D manufacturer table independently lists pitch3, nominal depth1.28; not a strength rating."
+  }
+}

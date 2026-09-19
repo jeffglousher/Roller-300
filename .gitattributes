@@ -1,0 +1,6 @@
+* text=auto
+*.nbcad binary
+*.stl binary
+*.xlsx binary
+*.png binary
+*.zip binary
