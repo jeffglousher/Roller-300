@@ -490,8 +490,9 @@
     "live_clearance_review": "Six structural overlaps removed; full native check retains nine documented unresolved/envelope pairs. See drive-end-section-checks.json.",
     "prior_estimated_grams": 194.3333969116211,
     "prior_estimated_hours": 7.141419542100694,
-    "estimated_grams": 193.6998519897461,
-    "estimated_hours": 7.131857367621528
+    "estimated_grams": 193.53534698486328,
+    "estimated_hours": 7.1223779296875005,
+    "servo_package_revision": "Servo, saddle, spool, clamp and adapter reserves shifted 3 mm inboard. Four spine M3 holes moved to Y9/39. Adapter clears post/cap by 1.5 mm. Matching body/carrier opening top raised from axle Z-17 to Z-14; selected structural pairs pass both +/-1.5 mm endpoints."
   },
   "workspace": {
     "master_cad": "Roller-300.nbcad",

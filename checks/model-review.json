@@ -9937,6 +9937,42 @@
           10108
         ],
         "type": "combine"
+      },
+      {
+        "body_ids": [
+          10001,
+          10070,
+          166,
+          167,
+          163
+        ],
+        "copy": false,
+        "feature_id": 10414,
+        "name": "MoveCopy191",
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "result_body_ids": [
+          10001,
+          10070,
+          166,
+          167,
+          163
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "translation": {
+          "x": 0.0,
+          "y": -3.0,
+          "z": 0.0
+        },
+        "type": "move_copy"
       }
     ],
     "cam": {
@@ -15433,11 +15469,20 @@
               "state": "ok"
             },
             "suppressed": false
+          },
+          {
+            "id": 10414,
+            "kind": "move_copy",
+            "name": "MoveCopy191",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
           }
         ],
-        "rollback_index": 599
+        "rollback_index": 600
       },
-      "name": "drive-end-section",
+      "name": "Roller-300",
       "settings": {
         "dimension_style": "aligned",
         "units": "mm"
@@ -64455,7 +64500,7 @@
               {
                 "position": {
                   "x": 73.0,
-                  "y": 106.0
+                  "y": 109.0
                 },
                 "type": "point"
               }
@@ -64465,7 +64510,7 @@
               {
                 "position": {
                   "x": 24.0,
-                  "y": 106.0
+                  "y": 109.0
                 },
                 "type": "point"
               }
@@ -71891,7 +71936,7 @@
               {
                 "center": {
                   "x": 35.172255240904605,
-                  "y": 12.0
+                  "y": 9.0
                 },
                 "radius": 1.7000000000000028,
                 "type": "circle"
@@ -72009,7 +72054,7 @@
               {
                 "center": {
                   "x": 64.1722552409046,
-                  "y": 12.0
+                  "y": 9.0
                 },
                 "radius": 1.7000000000000028,
                 "type": "circle"
@@ -72276,7 +72321,7 @@
               {
                 "center": {
                   "x": 35.172255240904605,
-                  "y": 42.0
+                  "y": 39.0
                 },
                 "radius": 1.7000000000000028,
                 "type": "circle"
@@ -72394,7 +72439,7 @@
               {
                 "center": {
                   "x": 64.1722552409046,
-                  "y": 42.0
+                  "y": 39.0
                 },
                 "radius": 1.7000000000000028,
                 "type": "circle"
@@ -75125,7 +75170,7 @@
               {
                 "position": {
                   "x": 73.0,
-                  "y": 106.0
+                  "y": 109.0
                 },
                 "type": "point"
               }
@@ -75135,7 +75180,7 @@
               {
                 "position": {
                   "x": 24.0,
-                  "y": 106.0
+                  "y": 109.0
                 },
                 "type": "point"
               }
@@ -76041,7 +76086,8 @@
     "sweeps": [],
     "visibility": {
       "hidden_body_ids": [
-        10083
+        10083,
+        10106
       ],
       "hidden_datum_plane_ids": [
         1,
@@ -76234,6 +76280,6 @@
       ]
     }
   },
-  "source_sha256": "f75461c85b51235287afc432c264ae79ef5f6fcd98335b9456707904adeb9d7e",
+  "source_sha256": "969ff8e21fe9b4012c925b8aebd7ad3b02cb6c0faa310c41caf4942fc177b2c9",
   "warning": "Generated review snapshot. Edit the native CAD document, never this file."
 }

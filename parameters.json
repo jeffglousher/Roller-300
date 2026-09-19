@@ -1225,12 +1225,12 @@
       "max_xyz_axle": [
         73,
         50,
-        -17
+        -14
       ]
     },
     "servo_case_min_xyz_axle": [
       39.672255,
-      8,
+      5,
       -30
     ],
     "servo_case_size_xyz": [
@@ -1239,7 +1239,7 @@
       40.5
     ],
     "servo_case_orientation": "90 degrees about output axis relative to previous article. Output offset and ears still unmeasured.",
-    "saddle_attachment": "4 x M3 clearance at X=input axis +/-14.5, Y12/42; measured saddle/ear retainers and locking nuts still to detail",
+    "saddle_attachment": "4 x M3 clearance at X=input axis +/-14.5, Y9/39; measured servo ears, retainers and locking nuts still to detail",
     "parent_body_status": "Matching short body-interface segment modeled. Rest of whole-body packaging has not been updated or cleared.",
     "wheel_bearing_span_mm": 48,
     "input_bearing_span_mm": 27,
@@ -1279,6 +1279,38 @@
         -28.9
       ],
       "basis": "Named native sketches and extrudes. Historical integrate_drive.py does not include these live edits and must not overwrite this source."
+    },
+    "servo_package_shift_y_mm": -3,
+    "servo_to_input_reserves_y_mm": {
+      "case": [
+        5,
+        45.5
+      ],
+      "spool": [
+        46,
+        57
+      ],
+      "adapter": [
+        56,
+        65
+      ],
+      "input_clamp": [
+        54,
+        64
+      ],
+      "saddle": [
+        4,
+        47
+      ]
+    },
+    "adapter_to_input_post_nominal_gap_mm": 1.5,
+    "structural_tension_endpoint_checks": {
+      "x_offsets_mm": [
+        -1.5,
+        1.5
+      ],
+      "overlaps": 0,
+      "scope": "Selected carrier, cover, parent interface, spine, saddle, servo case and input caps. Not a continuous swept volume or measured-hardware clearance guarantee."
     }
   },
   "workspace": {

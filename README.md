@@ -13,8 +13,10 @@ Open **[Roller-300.nbcad](Roller-300.nbcad)** in NoBS CAD. This is the only acti
 
 Use component visibility and section views within the master; use rollback for history edits. Explicitly select export bodies. Do not create separate working CAD files merely to hide parts. Commit source and corresponding decisions together. After a native save, run `python tools/cad_snapshot.py --write`; the generated `checks/model-review.json` provides Git diffs and must never be hand-edited.
 
-Current gates: servo ears/output and positive horn adapter, adapter-to-bearing support clearance, shaft retention, qualified clutch interfaces/duty, guarding and assembly access. Two simplified belt-envelope overlaps are not proof of tooth interference or correct meshing. Physical tests remain unperformed.
+Current gates: servo ears/output and positive horn adapter, shaft retention, qualified clutch interfaces/duty, guarding and assembly access. Two simplified belt-envelope overlaps are not proof of tooth interference or correct meshing. Physical tests remain unperformed.
 
-![Actual CAD application view](roller-live-corrected-outboard.png)
+![Actual CAD application view](roller-live-servo-clearance.png)
 
 The `pre-consolidation-2026-09-19` tag preserves the imported design baseline. Generated scene dumps, runtime logs and slicer caches remain in the original local backup; they are not design sources. No hardware/source license is assigned by this initial publication; linked third-party material retains its own terms.
+
+Offline fit slicing can be reproduced with `python tools/slice_fit.py carrier-end-section-fit` and `python tools/slice_fit.py input-spine-fit` on this Windows installation with Bambu Studio and the X2D profiles. This utility was restored from the archive for export verification; it does not create CAD geometry.
