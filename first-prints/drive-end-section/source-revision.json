@@ -1,0 +1,16 @@
+{
+  "status": "PRESERVED UNPOWERED FIT CANDIDATE - NOT PRINT RECOMMENDATION",
+  "source_commit": "80f06f3",
+  "source_tag": "drive-fit-candidate-2026-09-19",
+  "native_source": "Roller-300.nbcad at source commit",
+  "body_ids": {
+    "carrier": 10002,
+    "input_spine": 10052
+  },
+  "files": {
+    "carrier-end-section-fit.stl": "69eaf3c3c23252eeb5ca276e449d02b8ef1cdbfa5153c478554823b3cb314033",
+    "drive-end-fit-set.zip": "84caf9cf0447fd844ab2fd79cbabb277e0ed03200c2a8c6277d57260013ecc90",
+    "input-spine-fit.stl": "5ad90be3e3182491ea9b5d2f17d2cfc65c0d742e3850e3804289d1dae016d622",
+    "README.txt": "894b2af65ca19f37f8cc18874a2ae1832eba047937144e7f52ebfd1cb4528d31"
+  }
+}
