@@ -2817,10 +2817,31 @@
             },
             "name": "U upper cross-body harness lane - connector bends unmeasured",
             "promoted": false
+          },
+          {
+            "body_ids": [
+              10171
+            ],
+            "id": 10116,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "MASTER barrel stock - construction only, excluded from assembly exports",
+            "promoted": false
           }
         ],
-        "next_component_id": 10115,
-        "next_occurrence_id": 10115,
+        "next_component_id": 10117,
+        "next_occurrence_id": 10117,
         "occurrences": [
           {
             "component_id": 41,
@@ -5635,6 +5656,27 @@
             "name": "U upper cross-body harness lane - connector bends unmeasured",
             "parent_occurrence_id": null,
             "visible": true
+          },
+          {
+            "component_id": 10116,
+            "grounded": false,
+            "id": 10116,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "MASTER barrel stock - construction only, excluded from assembly exports",
+            "parent_occurrence_id": null,
+            "visible": true
           }
         ]
       },
@@ -6482,6 +6524,23 @@
         "filament_id": null,
         "filament_type": "REFERENCE",
         "material_name": "U upper cross-body harness lane - connector bends unmeasured",
+        "preset_id": null
+      },
+      {
+        "body_id": 10171,
+        "brand": "Generic",
+        "color": {
+          "a": 255,
+          "b": 164,
+          "g": 146,
+          "r": 81
+        },
+        "color_name": "",
+        "density_g_cm3": null,
+        "diameter_mm": 1.75,
+        "filament_id": null,
+        "filament_type": "REFERENCE",
+        "material_name": "CONSTRUCTION unsplit barrel stock - derive finished cuts before export",
         "preset_id": null
       }
     ],
@@ -12371,13 +12430,13 @@
     "chamfers": [],
     "counters": {
       "chamfer": 0,
-      "extrude": 253,
+      "extrude": 254,
       "fillet": 0,
       "hole": 0,
       "loft": 0,
       "revolve": 4,
       "rib": 0,
-      "sketch": 256,
+      "sketch": 257,
       "sweep": 0
     },
     "datum_planes": [
@@ -12829,6 +12888,41 @@
         "name": "U upper cross-body harness lane - connector bends unmeasured_plane",
         "source": {
           "distance": 96.0,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            -105.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum_id": 14,
+        "feature_id": 10459,
+        "name": "Barrel master axial start Y minus105",
+        "source": {
+          "distance": 105.0,
           "reference": {
             "plane": "xz",
             "type": "origin_plane"
@@ -18635,9 +18729,36 @@
               "state": "ok"
             },
             "suppressed": false
+          },
+          {
+            "id": 10459,
+            "kind": "construction_plane",
+            "name": "Barrel master axial start Y minus105",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10460,
+            "kind": "sketch",
+            "name": "MASTER continuous barrel D160 ID152 L210 before service and module cuts",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10461,
+            "kind": "extrude",
+            "name": "Extrude254",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
           }
         ],
-        "rollback_index": 644
+        "rollback_index": 647
       },
       "name": "Roller-300",
       "settings": {
@@ -23396,6 +23517,30 @@
           0
         ],
         "sketch_name": "U upper cross-body harness lane - connector bends unmeasured",
+        "source_face": null,
+        "source_face_basis": null,
+        "source_face_key": null,
+        "source_face_signature": null,
+        "taper_angle_deg": 0.0,
+        "target_body_ids": [],
+        "to_face_basis": null
+      },
+      {
+        "extent": {
+          "distance": 210.0,
+          "type": "distance"
+        },
+        "feature_id": 10461,
+        "flip": true,
+        "name": "Extrude254",
+        "new_body_ids": [
+          10171
+        ],
+        "operation": "new_body",
+        "profile_indices": [
+          0
+        ],
+        "sketch_name": "MASTER continuous barrel D160 ID152 L210 before service and module cuts",
         "source_face": null,
         "source_face_basis": null,
         "source_face_key": null,
@@ -81543,12 +81688,83 @@
             "params": []
           }
         }
+      },
+      {
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            -105.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "dimension_style": "aligned",
+        "feature_id": 10460,
+        "grid_snap": false,
+        "name": "MASTER continuous barrel D160 ID152 L210 before service and module cuts",
+        "plane": {
+          "datum_id": 14,
+          "type": "datum_plane"
+        },
+        "snapshot": {
+          "constraints": [],
+          "dim_modes": {},
+          "dim_params": {},
+          "dim_placements": {},
+          "entities": [
+            [
+              1,
+              {
+                "center": {
+                  "x": 0.0,
+                  "y": 123.0
+                },
+                "radius": 80.0,
+                "type": "circle"
+              }
+            ],
+            [
+              2,
+              {
+                "center": {
+                  "x": 0.0,
+                  "y": 123.0
+                },
+                "radius": 76.0,
+                "type": "circle"
+              }
+            ]
+          ],
+          "fix_targets": {},
+          "next_constraint": 0,
+          "next_entity": 2,
+          "params": {
+            "next_id": 0,
+            "next_name": 0,
+            "params": []
+          }
+        }
       }
     ],
     "sweeps": [],
     "visibility": {
       "hidden_body_ids": [
-        10170
+        10170,
+        10171
       ],
       "hidden_datum_plane_ids": [
         1,
@@ -81563,7 +81779,8 @@
         10,
         11,
         12,
-        13
+        13,
+        14
       ],
       "hidden_sketch_names": [
         "B Pi Zero WiFi 65x30x5 nominal bare envelope - plugs open",
@@ -81685,6 +81902,7 @@
         "End_Sketch99",
         "Lid_seam_0p3",
         "Lower_tub_open_top",
+        "MASTER continuous barrel D160 ID152 L210 before service and module cuts",
         "Output_flange_R25_clearance",
         "P central drum lower tub - retention detailing open",
         "P left wheel rim packaging - not print release",
@@ -81768,6 +81986,6 @@
       ]
     }
   },
-  "source_sha256": "da29f8174fbd7429d53cc8343c48c114ec21ed31e70974bdc7b69f5c43c1f9c0",
+  "source_sha256": "acba54e2ef06e757db897fd92b85a3b0960cb9a2f21dab26127c1a73b063bcaf",
   "warning": "Generated review snapshot. Edit the native CAD document, never this file."
 }

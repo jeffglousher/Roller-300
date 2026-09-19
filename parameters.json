@@ -1421,5 +1421,30 @@
       "hub_pilot_bore_mm": 14.4,
       "status": "Solid web packaging; hub bolt holes, lightening, stiffness and fastening unfinished"
     }
+  },
+  "barrel_first_revision": {
+    "status": "Continuous construction stock added; service/module cuts and joints not yet derived",
+    "outer_diameter_mm": 160,
+    "inner_diameter_mm": 152,
+    "length_mm": 210,
+    "world_y_mm": [
+      -105,
+      105
+    ],
+    "axle_z_mm": 123,
+    "printer_profile": "Installed Bambu Lab X2D 0.4 nozzle",
+    "main_build_mm": [
+      256,
+      256,
+      261
+    ],
+    "stock_print_orientation": "Axle vertical; envelope only, not sliced",
+    "stock_with_trial_brim_footprint_mm": [
+      170,
+      170
+    ],
+    "split_rule": "Largest contiguous serviceable parts; keep each pair of bearing supports in one carrier; register and bolt load-bearing joints",
+    "test_module_scope": "Complete supported and guarded servo/belt/clutch/hub drive assembly, not just carrier/spine fit prints",
+    "construction_body_id": 10171
   }
 }
