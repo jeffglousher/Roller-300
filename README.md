@@ -2,7 +2,7 @@
 
 Indoor-first, two-wheel differential-drive roller with a round rigid body. Mechanical prototype work in NoBS CAD; no caster. **Not physically validated or released for powered testing.**
 
-Open **[Roller-300.nbcad](Roller-300.nbcad)** in NoBS CAD. This is the only active CAD source. It currently contains one reusable drive end, with 38 bodies and preserved native component/feature history. Full vehicle packaging is unfinished.
+Open **[Roller-300.nbcad](Roller-300.nbcad)** in NoBS CAD. This is the only active CAD source. It now contains both reusable drive ends, wheel envelopes, central tub/lid and component packaging, with 84 bodies and preserved native feature history. This is a full-vehicle packaging proposal, not a finished printable vehicle.
 
 - [PLAN.md](PLAN.md): canonical mechanical decisions, open gates and adopted workflow.
 - [parameters.json](parameters.json): targets and measurement record, manually synchronized with native geometry.
@@ -15,8 +15,12 @@ Use component visibility and section views within the master; use rollback for h
 
 Current gates: servo ears/output and positive horn adapter, shaft retention, qualified clutch interfaces/duty, guarding and assembly access. Two simplified belt-envelope overlaps are not proof of tooth interference or correct meshing. Physical tests remain unperformed.
 
-![Actual CAD application view](roller-live-servo-clearance.png)
+![Actual CAD application overall view](roller-full-overall.jpg)
+
+![Actual CAD application open-body view](roller-full-packaging.jpg)
 
 The `pre-consolidation-2026-09-19` tag preserves the imported design baseline. Generated scene dumps, runtime logs and slicer caches remain in the original local backup; they are not design sources. No hardware/source license is assigned by this initial publication; linked third-party material retains its own terms.
 
 Offline fit slicing can be reproduced with `python tools/slice_fit.py carrier-end-section-fit` and `python tools/slice_fit.py input-spine-fit` on this Windows installation with Bambu Studio and the X2D profiles. This utility was restored from the archive for export verification; it does not create CAD geometry.
+
+The preserved test article is in `first-prints/drive-end-section/`, pinned by its hash manifest and tag `drive-fit-candidate-2026-09-19` to source commit `80f06f3`. The advancing master does not silently redefine those exports. No print has been sent.

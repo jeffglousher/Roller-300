@@ -1809,10 +1809,1018 @@
             },
             "name": "10054: End_54: 54: Body108 Part",
             "promoted": true
+          },
+          {
+            "body_ids": [
+              10118
+            ],
+            "id": 10055,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10118 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10119
+            ],
+            "id": 10056,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10119 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10120
+            ],
+            "id": 10057,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10120 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10121
+            ],
+            "id": 10058,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10121 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10122
+            ],
+            "id": 10059,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10122 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10123
+            ],
+            "id": 10060,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10123 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10124
+            ],
+            "id": 10061,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10124 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10125
+            ],
+            "id": 10062,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10125 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10126
+            ],
+            "id": 10063,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10126 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10127
+            ],
+            "id": 10064,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10127 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10128
+            ],
+            "id": 10065,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10128 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10129
+            ],
+            "id": 10066,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10129 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10130
+            ],
+            "id": 10067,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10130 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10131
+            ],
+            "id": 10068,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10131 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10132
+            ],
+            "id": 10069,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10132 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10133
+            ],
+            "id": 10070,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10133 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10134
+            ],
+            "id": 10071,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10134 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10135
+            ],
+            "id": 10072,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10135 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10136
+            ],
+            "id": 10073,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10136 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10137
+            ],
+            "id": 10074,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10137 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10138
+            ],
+            "id": 10075,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10138 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10139
+            ],
+            "id": 10076,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10139 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10140
+            ],
+            "id": 10077,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10140 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10141
+            ],
+            "id": 10078,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10141 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10142
+            ],
+            "id": 10079,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10142 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10143
+            ],
+            "id": 10080,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10143 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10144
+            ],
+            "id": 10081,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10144 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10145
+            ],
+            "id": 10082,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10145 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10146
+            ],
+            "id": 10083,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10146 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10147
+            ],
+            "id": 10084,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10147 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10148
+            ],
+            "id": 10085,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10148 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10149
+            ],
+            "id": 10086,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10149 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10150
+            ],
+            "id": 10087,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10150 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10151
+            ],
+            "id": 10088,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10151 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10152
+            ],
+            "id": 10089,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10152 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10153
+            ],
+            "id": 10090,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10153 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10154
+            ],
+            "id": 10091,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10154 Part",
+            "promoted": true
+          },
+          {
+            "body_ids": [
+              10156
+            ],
+            "id": 10094,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "P central drum lower tub - retention detailing open",
+            "promoted": false
+          },
+          {
+            "body_ids": [
+              10159
+            ],
+            "id": 10096,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "P removable central lid - fasteners and registration open",
+            "promoted": false
+          },
+          {
+            "body_ids": [
+              10162
+            ],
+            "id": 10098,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "P left wheel rim packaging - not print release",
+            "promoted": false
+          },
+          {
+            "body_ids": [
+              10163
+            ],
+            "id": 10100,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "U left tread allowance D246 - material choice open",
+            "promoted": false
+          },
+          {
+            "body_ids": [
+              10164
+            ],
+            "id": 10102,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "P left wheel web packaging - hub bolts open",
+            "promoted": false
+          },
+          {
+            "body_ids": [
+              10165
+            ],
+            "id": 10105,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "P right wheel rim packaging - not print release",
+            "promoted": false
+          },
+          {
+            "body_ids": [
+              10166
+            ],
+            "id": 10106,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "U right tread allowance D246 - material choice open",
+            "promoted": false
+          },
+          {
+            "body_ids": [
+              10167
+            ],
+            "id": 10108,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "U BATTERY 90x85x30 inherited allowance rotated - UNMEASURED",
+            "promoted": false
+          },
+          {
+            "body_ids": [
+              10168
+            ],
+            "id": 10110,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "B TOPDON TC002C Duo nominal complete device - mating cable open",
+            "promoted": false
+          },
+          {
+            "body_ids": [
+              10169
+            ],
+            "id": 10112,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "B Pi Zero WiFi 65x30x5 nominal bare envelope - plugs open",
+            "promoted": false
+          },
+          {
+            "body_ids": [
+              10170
+            ],
+            "id": 10114,
+            "local_coordinate_system": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "U upper cross-body harness lane - connector bends unmeasured",
+            "promoted": false
           }
         ],
-        "next_component_id": 10055,
-        "next_occurrence_id": 10055,
+        "next_component_id": 10115,
+        "next_occurrence_id": 10115,
         "occurrences": [
           {
             "component_id": 41,
@@ -3619,6 +4627,1014 @@
             "name": "10054: End_54: 54: Body108 Part",
             "parent_occurrence_id": null,
             "visible": true
+          },
+          {
+            "component_id": 10055,
+            "grounded": false,
+            "id": 10055,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10118",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10056,
+            "grounded": false,
+            "id": 10056,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10119",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10057,
+            "grounded": false,
+            "id": 10057,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10120",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10058,
+            "grounded": false,
+            "id": 10058,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10121",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10059,
+            "grounded": false,
+            "id": 10059,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10122",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10060,
+            "grounded": false,
+            "id": 10060,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10123",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10061,
+            "grounded": false,
+            "id": 10061,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10124",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10062,
+            "grounded": false,
+            "id": 10062,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10125",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10063,
+            "grounded": false,
+            "id": 10063,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10126",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10064,
+            "grounded": false,
+            "id": 10064,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10127",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10065,
+            "grounded": false,
+            "id": 10065,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10128",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10066,
+            "grounded": false,
+            "id": 10066,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10129",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10067,
+            "grounded": false,
+            "id": 10067,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10130",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10068,
+            "grounded": false,
+            "id": 10068,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10131",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10069,
+            "grounded": false,
+            "id": 10069,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10132",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10070,
+            "grounded": false,
+            "id": 10070,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10133",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10071,
+            "grounded": false,
+            "id": 10071,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10134",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10072,
+            "grounded": false,
+            "id": 10072,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10135",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10073,
+            "grounded": false,
+            "id": 10073,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10136",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10074,
+            "grounded": false,
+            "id": 10074,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10137",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10075,
+            "grounded": false,
+            "id": 10075,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10138",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10076,
+            "grounded": false,
+            "id": 10076,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10139",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10077,
+            "grounded": false,
+            "id": 10077,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10140",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10078,
+            "grounded": false,
+            "id": 10078,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10141",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10079,
+            "grounded": false,
+            "id": 10079,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10142",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10080,
+            "grounded": false,
+            "id": 10080,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10143",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10081,
+            "grounded": false,
+            "id": 10081,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10144",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10082,
+            "grounded": false,
+            "id": 10082,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10145",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10083,
+            "grounded": false,
+            "id": 10083,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10146",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10084,
+            "grounded": false,
+            "id": 10084,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10147",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10085,
+            "grounded": false,
+            "id": 10085,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10148",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10086,
+            "grounded": false,
+            "id": 10086,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10149",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10087,
+            "grounded": false,
+            "id": 10087,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10150",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10088,
+            "grounded": false,
+            "id": 10088,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10151",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10089,
+            "grounded": false,
+            "id": 10089,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10152",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10090,
+            "grounded": false,
+            "id": 10090,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10153",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10091,
+            "grounded": false,
+            "id": 10091,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "Body10154",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10094,
+            "grounded": false,
+            "id": 10094,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "P central drum lower tub - retention detailing open",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10096,
+            "grounded": false,
+            "id": 10096,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "P removable central lid - fasteners and registration open",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10098,
+            "grounded": false,
+            "id": 10098,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "P left wheel rim packaging - not print release",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10100,
+            "grounded": false,
+            "id": 10100,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "U left tread allowance D246 - material choice open",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10102,
+            "grounded": false,
+            "id": 10102,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "P left wheel web packaging - hub bolts open",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10105,
+            "grounded": false,
+            "id": 10105,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "P right wheel rim packaging - not print release",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10106,
+            "grounded": false,
+            "id": 10106,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "U right tread allowance D246 - material choice open",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10108,
+            "grounded": false,
+            "id": 10108,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "U BATTERY 90x85x30 inherited allowance rotated - UNMEASURED",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10110,
+            "grounded": false,
+            "id": 10110,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "B TOPDON TC002C Duo nominal complete device - mating cable open",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10112,
+            "grounded": false,
+            "id": 10112,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "B Pi Zero WiFi 65x30x5 nominal bare envelope - plugs open",
+            "parent_occurrence_id": null,
+            "visible": true
+          },
+          {
+            "component_id": 10114,
+            "grounded": false,
+            "id": 10114,
+            "local_pose": {
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "translation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "name": "U upper cross-body harness lane - connector bends unmeasured",
+            "parent_occurrence_id": null,
+            "visible": true
           }
         ]
       },
@@ -4279,6 +6295,193 @@
         "filament_id": null,
         "filament_type": "REFERENCE",
         "material_name": "C final central-body mating bulkhead / reference segment",
+        "preset_id": null
+      },
+      {
+        "body_id": 10156,
+        "brand": "Generic",
+        "color": {
+          "a": 255,
+          "b": 151,
+          "g": 141,
+          "r": 92
+        },
+        "color_name": "",
+        "density_g_cm3": null,
+        "diameter_mm": 1.75,
+        "filament_id": null,
+        "filament_type": "PETG",
+        "material_name": "P central drum lower tub - retention detailing open",
+        "preset_id": null
+      },
+      {
+        "body_id": 10159,
+        "brand": "Generic",
+        "color": {
+          "a": 255,
+          "b": 151,
+          "g": 141,
+          "r": 92
+        },
+        "color_name": "",
+        "density_g_cm3": null,
+        "diameter_mm": 1.75,
+        "filament_id": null,
+        "filament_type": "PETG",
+        "material_name": "P removable central lid - fasteners and registration open",
+        "preset_id": null
+      },
+      {
+        "body_id": 10162,
+        "brand": "Generic",
+        "color": {
+          "a": 255,
+          "b": 151,
+          "g": 141,
+          "r": 92
+        },
+        "color_name": "",
+        "density_g_cm3": null,
+        "diameter_mm": 1.75,
+        "filament_id": null,
+        "filament_type": "PETG",
+        "material_name": "P left wheel rim packaging - not print release",
+        "preset_id": null
+      },
+      {
+        "body_id": 10163,
+        "brand": "Generic",
+        "color": {
+          "a": 255,
+          "b": 76,
+          "g": 67,
+          "r": 61
+        },
+        "color_name": "",
+        "density_g_cm3": null,
+        "diameter_mm": 1.75,
+        "filament_id": null,
+        "filament_type": "REFERENCE",
+        "material_name": "U left tread allowance D246 - material choice open",
+        "preset_id": null
+      },
+      {
+        "body_id": 10164,
+        "brand": "Generic",
+        "color": {
+          "a": 255,
+          "b": 151,
+          "g": 141,
+          "r": 92
+        },
+        "color_name": "",
+        "density_g_cm3": null,
+        "diameter_mm": 1.75,
+        "filament_id": null,
+        "filament_type": "PETG",
+        "material_name": "P left wheel web packaging - hub bolts open",
+        "preset_id": null
+      },
+      {
+        "body_id": 10165,
+        "brand": "Generic",
+        "color": {
+          "a": 255,
+          "b": 151,
+          "g": 141,
+          "r": 92
+        },
+        "color_name": "",
+        "density_g_cm3": null,
+        "diameter_mm": 1.75,
+        "filament_id": null,
+        "filament_type": "PETG",
+        "material_name": "P right wheel rim packaging - not print release",
+        "preset_id": null
+      },
+      {
+        "body_id": 10166,
+        "brand": "Generic",
+        "color": {
+          "a": 255,
+          "b": 76,
+          "g": 67,
+          "r": 61
+        },
+        "color_name": "",
+        "density_g_cm3": null,
+        "diameter_mm": 1.75,
+        "filament_id": null,
+        "filament_type": "REFERENCE",
+        "material_name": "U right tread allowance D246 - material choice open",
+        "preset_id": null
+      },
+      {
+        "body_id": 10167,
+        "brand": "Generic",
+        "color": {
+          "a": 255,
+          "b": 67,
+          "g": 149,
+          "r": 214
+        },
+        "color_name": "",
+        "density_g_cm3": null,
+        "diameter_mm": 1.75,
+        "filament_id": null,
+        "filament_type": "REFERENCE",
+        "material_name": "U BATTERY 90x85x30 inherited allowance rotated - UNMEASURED",
+        "preset_id": null
+      },
+      {
+        "body_id": 10168,
+        "brand": "Generic",
+        "color": {
+          "a": 255,
+          "b": 149,
+          "g": 133,
+          "r": 123
+        },
+        "color_name": "",
+        "density_g_cm3": null,
+        "diameter_mm": 1.75,
+        "filament_id": null,
+        "filament_type": "REFERENCE",
+        "material_name": "B TOPDON TC002C Duo nominal complete device - mating cable open",
+        "preset_id": null
+      },
+      {
+        "body_id": 10169,
+        "brand": "Generic",
+        "color": {
+          "a": 255,
+          "b": 98,
+          "g": 150,
+          "r": 86
+        },
+        "color_name": "",
+        "density_g_cm3": null,
+        "diameter_mm": 1.75,
+        "filament_id": null,
+        "filament_type": "REFERENCE",
+        "material_name": "B Pi Zero WiFi 65x30x5 nominal bare envelope - plugs open",
+        "preset_id": null
+      },
+      {
+        "body_id": 10170,
+        "brand": "Generic",
+        "color": {
+          "a": 255,
+          "b": 196,
+          "g": 116,
+          "r": 184
+        },
+        "color_name": "",
+        "density_g_cm3": null,
+        "diameter_mm": 1.75,
+        "filament_id": null,
+        "filament_type": "REFERENCE",
+        "material_name": "U upper cross-body harness lane - connector bends unmeasured",
         "preset_id": null
       }
     ],
@@ -9973,6 +12176,179 @@
           "z": 0.0
         },
         "type": "move_copy"
+      },
+      {
+        "body_ids": [
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          123,
+          133,
+          146,
+          152,
+          155,
+          161,
+          162,
+          163,
+          164,
+          166,
+          167,
+          176,
+          177,
+          178,
+          179,
+          180,
+          181,
+          182,
+          197,
+          198,
+          199,
+          201,
+          202,
+          203,
+          236,
+          10001,
+          10002,
+          10052,
+          10070,
+          10083,
+          10106
+        ],
+        "feature_id": 10415,
+        "name": "Mirror1",
+        "new_body_ids": [
+          10118,
+          10119,
+          10120,
+          10121,
+          10122,
+          10123,
+          10124,
+          10125,
+          10126,
+          10127,
+          10128,
+          10129,
+          10130,
+          10131,
+          10132,
+          10133,
+          10134,
+          10135,
+          10136,
+          10137,
+          10138,
+          10139,
+          10140,
+          10141,
+          10142,
+          10143,
+          10144,
+          10145,
+          10146,
+          10147,
+          10148,
+          10149,
+          10150,
+          10151,
+          10152,
+          10153,
+          10154,
+          10155
+        ],
+        "plane": {
+          "plane": "xz",
+          "type": "origin_plane"
+        },
+        "plane_basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "type": "mirror"
+      },
+      {
+        "feature_id": 10422,
+        "keep_tools": false,
+        "name": "Combine37",
+        "operation": "join",
+        "target_body_id": 10156,
+        "tool_body_ids": [
+          10106,
+          10155
+        ],
+        "type": "combine"
+      },
+      {
+        "feature_id": 10438,
+        "keep_tools": false,
+        "name": "Combine38",
+        "operation": "join",
+        "target_body_id": 10162,
+        "tool_body_ids": [
+          10164
+        ],
+        "type": "combine"
+      },
+      {
+        "body_ids": [
+          10162,
+          10163
+        ],
+        "feature_id": 10439,
+        "name": "Mirror2",
+        "new_body_ids": [
+          10165,
+          10166
+        ],
+        "plane": {
+          "plane": "xz",
+          "type": "origin_plane"
+        },
+        "plane_basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "type": "mirror"
       }
     ],
     "cam": {
@@ -9995,13 +12371,13 @@
     "chamfers": [],
     "counters": {
       "chamfer": 0,
-      "extrude": 240,
+      "extrude": 253,
       "fillet": 0,
       "hole": 0,
       "loft": 0,
       "revolve": 4,
       "rib": 0,
-      "sketch": 240,
+      "sketch": 256,
       "sweep": 0
     },
     "datum_planes": [
@@ -10068,6 +12444,391 @@
         "name": "End_ring_carriage_clearance_Y95_5",
         "source": {
           "distance": -95.5,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            -38.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum_id": 3,
+        "feature_id": 10416,
+        "name": "P central drum lower tub - retention detailing open_plane",
+        "source": {
+          "distance": 38.0,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            -37.7,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum_id": 4,
+        "feature_id": 10423,
+        "name": "P removable central lid - fasteners and registration open_plane",
+        "source": {
+          "distance": 37.7,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            110.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum_id": 5,
+        "feature_id": 10429,
+        "name": "P left wheel rim packaging - not print release_plane",
+        "source": {
+          "distance": -110.0,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            110.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum_id": 6,
+        "feature_id": 10432,
+        "name": "U left tread allowance D246 - material choice open_plane",
+        "source": {
+          "distance": -110.0,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            133.5,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum_id": 7,
+        "feature_id": 10435,
+        "name": "P left wheel web packaging - hub bolts open_plane",
+        "source": {
+          "distance": -133.5,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            -15.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum_id": 8,
+        "feature_id": 10440,
+        "name": "U BATTERY 90x85x30 inherited allowance rotated - UNMEASURED_plane",
+        "source": {
+          "distance": 15.0,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            -35.5,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum_id": 9,
+        "feature_id": 10443,
+        "name": "B TOPDON TC002C Duo nominal complete device - mating cable open_plane",
+        "source": {
+          "distance": 35.5,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            -90.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum_id": 10,
+        "feature_id": 10446,
+        "name": "B Pi Zero WiFi 65x30x5 nominal bare envelope - plugs open_plane",
+        "source": {
+          "distance": 90.0,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            168.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "datum_id": 11,
+        "feature_id": 10449,
+        "name": "Pixracer_outline_level",
+        "source": {
+          "distance": 168.0,
+          "reference": {
+            "plane": "xy",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "origin": [
+            75.0,
+            0.0,
+            0.0
+          ],
+          "u": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum_id": 12,
+        "feature_id": 10451,
+        "name": "Forward_sensor_outline_plane",
+        "source": {
+          "distance": 75.0,
+          "reference": {
+            "plane": "yz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            -96.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum_id": 13,
+        "feature_id": 10456,
+        "name": "U upper cross-body harness lane - connector bends unmeasured_plane",
+        "source": {
+          "distance": 96.0,
           "reference": {
             "plane": "xz",
             "type": "origin_plane"
@@ -15478,9 +18239,405 @@
               "state": "ok"
             },
             "suppressed": false
+          },
+          {
+            "id": 10415,
+            "kind": "mirror",
+            "name": "Mirror1",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10416,
+            "kind": "construction_plane",
+            "name": "P central drum lower tub - retention detailing open_plane",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10417,
+            "kind": "sketch",
+            "name": "P central drum lower tub - retention detailing open",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10418,
+            "kind": "extrude",
+            "name": "Extrude241",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10419,
+            "kind": "sketch",
+            "name": "Lower_tub_open_top",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10420,
+            "kind": "extrude",
+            "name": "Extrude242",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10421,
+            "kind": "extrude",
+            "name": "Extrude243",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10422,
+            "kind": "combine",
+            "name": "Combine37",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10423,
+            "kind": "construction_plane",
+            "name": "P removable central lid - fasteners and registration open_plane",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10424,
+            "kind": "sketch",
+            "name": "P removable central lid - fasteners and registration open",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10425,
+            "kind": "extrude",
+            "name": "Extrude244",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10426,
+            "kind": "sketch",
+            "name": "Lid_seam_0p3",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10427,
+            "kind": "extrude",
+            "name": "Extrude245",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10428,
+            "kind": "extrude",
+            "name": "Extrude246",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10429,
+            "kind": "construction_plane",
+            "name": "P left wheel rim packaging - not print release_plane",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10430,
+            "kind": "sketch",
+            "name": "P left wheel rim packaging - not print release",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10431,
+            "kind": "extrude",
+            "name": "Extrude247",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10432,
+            "kind": "construction_plane",
+            "name": "U left tread allowance D246 - material choice open_plane",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10433,
+            "kind": "sketch",
+            "name": "U left tread allowance D246 - material choice open",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10434,
+            "kind": "extrude",
+            "name": "Extrude248",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10435,
+            "kind": "construction_plane",
+            "name": "P left wheel web packaging - hub bolts open_plane",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10436,
+            "kind": "sketch",
+            "name": "P left wheel web packaging - hub bolts open",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10437,
+            "kind": "extrude",
+            "name": "Extrude249",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10438,
+            "kind": "combine",
+            "name": "Combine38",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10439,
+            "kind": "mirror",
+            "name": "Mirror2",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10440,
+            "kind": "construction_plane",
+            "name": "U BATTERY 90x85x30 inherited allowance rotated - UNMEASURED_plane",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10441,
+            "kind": "sketch",
+            "name": "U BATTERY 90x85x30 inherited allowance rotated - UNMEASURED",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10442,
+            "kind": "extrude",
+            "name": "Extrude250",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10443,
+            "kind": "construction_plane",
+            "name": "B TOPDON TC002C Duo nominal complete device - mating cable open_plane",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10444,
+            "kind": "sketch",
+            "name": "B TOPDON TC002C Duo nominal complete device - mating cable open",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10445,
+            "kind": "extrude",
+            "name": "Extrude251",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10446,
+            "kind": "construction_plane",
+            "name": "B Pi Zero WiFi 65x30x5 nominal bare envelope - plugs open_plane",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10447,
+            "kind": "sketch",
+            "name": "B Pi Zero WiFi 65x30x5 nominal bare envelope - plugs open",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10448,
+            "kind": "extrude",
+            "name": "Extrude252",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10449,
+            "kind": "construction_plane",
+            "name": "Pixracer_outline_level",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10450,
+            "kind": "sketch",
+            "name": "U original Pixracer 36x36 outline ONLY - total height open",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10451,
+            "kind": "construction_plane",
+            "name": "Forward_sensor_outline_plane",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10452,
+            "kind": "sketch",
+            "name": "U forward ToF 1 20x12 outline ONLY - depth open",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10453,
+            "kind": "sketch",
+            "name": "U forward ToF 2 20x12 outline ONLY - depth open",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10454,
+            "kind": "sketch",
+            "name": "U forward ToF 3 20x12 outline ONLY - depth open",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10455,
+            "kind": "sketch",
+            "name": "U forward ToF 4 20x12 outline ONLY - depth open",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10456,
+            "kind": "construction_plane",
+            "name": "U upper cross-body harness lane - connector bends unmeasured_plane",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10457,
+            "kind": "sketch",
+            "name": "U upper cross-body harness lane - connector bends unmeasured",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10458,
+            "kind": "extrude",
+            "name": "Extrude253",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
           }
         ],
-        "rollback_index": 600
+        "rollback_index": 644
       },
       "name": "Roller-300",
       "settings": {
@@ -19929,6 +23086,322 @@
         "target_body_ids": [
           10070
         ],
+        "to_face_basis": null
+      },
+      {
+        "extent": {
+          "distance": 76.0,
+          "type": "distance"
+        },
+        "feature_id": 10418,
+        "flip": true,
+        "name": "Extrude241",
+        "new_body_ids": [
+          10156
+        ],
+        "operation": "new_body",
+        "profile_indices": [
+          0
+        ],
+        "sketch_name": "P central drum lower tub - retention detailing open",
+        "source_face": null,
+        "source_face_basis": null,
+        "source_face_key": null,
+        "source_face_signature": null,
+        "taper_angle_deg": 0.0,
+        "target_body_ids": [],
+        "to_face_basis": null
+      },
+      {
+        "extent": {
+          "type": "through_all"
+        },
+        "feature_id": 10420,
+        "flip": true,
+        "name": "Extrude242",
+        "new_body_ids": [
+          10157
+        ],
+        "operation": "cut",
+        "profile_indices": [
+          0
+        ],
+        "sketch_name": "Lower_tub_open_top",
+        "source_face": null,
+        "source_face_basis": null,
+        "source_face_key": null,
+        "source_face_signature": null,
+        "taper_angle_deg": 0.0,
+        "target_body_ids": [
+          10156
+        ],
+        "to_face_basis": null
+      },
+      {
+        "extent": {
+          "type": "through_all"
+        },
+        "feature_id": 10421,
+        "flip": false,
+        "name": "Extrude243",
+        "new_body_ids": [
+          10158
+        ],
+        "operation": "cut",
+        "profile_indices": [
+          0
+        ],
+        "sketch_name": "Lower_tub_open_top",
+        "source_face": null,
+        "source_face_basis": null,
+        "source_face_key": null,
+        "source_face_signature": null,
+        "taper_angle_deg": 0.0,
+        "target_body_ids": [
+          10156
+        ],
+        "to_face_basis": null
+      },
+      {
+        "extent": {
+          "distance": 75.4,
+          "type": "distance"
+        },
+        "feature_id": 10425,
+        "flip": true,
+        "name": "Extrude244",
+        "new_body_ids": [
+          10159
+        ],
+        "operation": "new_body",
+        "profile_indices": [
+          0
+        ],
+        "sketch_name": "P removable central lid - fasteners and registration open",
+        "source_face": null,
+        "source_face_basis": null,
+        "source_face_key": null,
+        "source_face_signature": null,
+        "taper_angle_deg": 0.0,
+        "target_body_ids": [],
+        "to_face_basis": null
+      },
+      {
+        "extent": {
+          "type": "through_all"
+        },
+        "feature_id": 10427,
+        "flip": true,
+        "name": "Extrude245",
+        "new_body_ids": [
+          10160
+        ],
+        "operation": "cut",
+        "profile_indices": [
+          0
+        ],
+        "sketch_name": "Lid_seam_0p3",
+        "source_face": null,
+        "source_face_basis": null,
+        "source_face_key": null,
+        "source_face_signature": null,
+        "taper_angle_deg": 0.0,
+        "target_body_ids": [
+          10159
+        ],
+        "to_face_basis": null
+      },
+      {
+        "extent": {
+          "type": "through_all"
+        },
+        "feature_id": 10428,
+        "flip": false,
+        "name": "Extrude246",
+        "new_body_ids": [
+          10161
+        ],
+        "operation": "cut",
+        "profile_indices": [
+          0
+        ],
+        "sketch_name": "Lid_seam_0p3",
+        "source_face": null,
+        "source_face_basis": null,
+        "source_face_key": null,
+        "source_face_signature": null,
+        "taper_angle_deg": 0.0,
+        "target_body_ids": [
+          10159
+        ],
+        "to_face_basis": null
+      },
+      {
+        "extent": {
+          "distance": 40.0,
+          "type": "distance"
+        },
+        "feature_id": 10431,
+        "flip": true,
+        "name": "Extrude247",
+        "new_body_ids": [
+          10162
+        ],
+        "operation": "new_body",
+        "profile_indices": [
+          0
+        ],
+        "sketch_name": "P left wheel rim packaging - not print release",
+        "source_face": null,
+        "source_face_basis": null,
+        "source_face_key": null,
+        "source_face_signature": null,
+        "taper_angle_deg": 0.0,
+        "target_body_ids": [],
+        "to_face_basis": null
+      },
+      {
+        "extent": {
+          "distance": 40.0,
+          "type": "distance"
+        },
+        "feature_id": 10434,
+        "flip": true,
+        "name": "Extrude248",
+        "new_body_ids": [
+          10163
+        ],
+        "operation": "new_body",
+        "profile_indices": [
+          0
+        ],
+        "sketch_name": "U left tread allowance D246 - material choice open",
+        "source_face": null,
+        "source_face_basis": null,
+        "source_face_key": null,
+        "source_face_signature": null,
+        "taper_angle_deg": 0.0,
+        "target_body_ids": [],
+        "to_face_basis": null
+      },
+      {
+        "extent": {
+          "distance": 4.0,
+          "type": "distance"
+        },
+        "feature_id": 10437,
+        "flip": true,
+        "name": "Extrude249",
+        "new_body_ids": [
+          10164
+        ],
+        "operation": "new_body",
+        "profile_indices": [
+          0
+        ],
+        "sketch_name": "P left wheel web packaging - hub bolts open",
+        "source_face": null,
+        "source_face_basis": null,
+        "source_face_key": null,
+        "source_face_signature": null,
+        "taper_angle_deg": 0.0,
+        "target_body_ids": [],
+        "to_face_basis": null
+      },
+      {
+        "extent": {
+          "distance": 30.0,
+          "type": "distance"
+        },
+        "feature_id": 10442,
+        "flip": true,
+        "name": "Extrude250",
+        "new_body_ids": [
+          10167
+        ],
+        "operation": "new_body",
+        "profile_indices": [
+          0
+        ],
+        "sketch_name": "U BATTERY 90x85x30 inherited allowance rotated - UNMEASURED",
+        "source_face": null,
+        "source_face_basis": null,
+        "source_face_key": null,
+        "source_face_signature": null,
+        "taper_angle_deg": 0.0,
+        "target_body_ids": [],
+        "to_face_basis": null
+      },
+      {
+        "extent": {
+          "distance": 71.0,
+          "type": "distance"
+        },
+        "feature_id": 10445,
+        "flip": true,
+        "name": "Extrude251",
+        "new_body_ids": [
+          10168
+        ],
+        "operation": "new_body",
+        "profile_indices": [
+          0
+        ],
+        "sketch_name": "B TOPDON TC002C Duo nominal complete device - mating cable open",
+        "source_face": null,
+        "source_face_basis": null,
+        "source_face_key": null,
+        "source_face_signature": null,
+        "taper_angle_deg": 0.0,
+        "target_body_ids": [],
+        "to_face_basis": null
+      },
+      {
+        "extent": {
+          "distance": 65.0,
+          "type": "distance"
+        },
+        "feature_id": 10448,
+        "flip": true,
+        "name": "Extrude252",
+        "new_body_ids": [
+          10169
+        ],
+        "operation": "new_body",
+        "profile_indices": [
+          0
+        ],
+        "sketch_name": "B Pi Zero WiFi 65x30x5 nominal bare envelope - plugs open",
+        "source_face": null,
+        "source_face_basis": null,
+        "source_face_key": null,
+        "source_face_signature": null,
+        "taper_angle_deg": 0.0,
+        "target_body_ids": [],
+        "to_face_basis": null
+      },
+      {
+        "extent": {
+          "distance": 192.0,
+          "type": "distance"
+        },
+        "feature_id": 10458,
+        "flip": true,
+        "name": "Extrude253",
+        "new_body_ids": [
+          10170
+        ],
+        "operation": "new_body",
+        "profile_indices": [
+          0
+        ],
+        "sketch_name": "U upper cross-body harness lane - connector bends unmeasured",
+        "source_face": null,
+        "source_face_basis": null,
+        "source_face_key": null,
+        "source_face_signature": null,
+        "taper_angle_deg": 0.0,
+        "target_body_ids": [],
         "to_face_basis": null
       }
     ],
@@ -76081,19 +79554,2020 @@
             "params": []
           }
         }
+      },
+      {
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            -38.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "dimension_style": "aligned",
+        "feature_id": 10417,
+        "grid_snap": false,
+        "name": "P central drum lower tub - retention detailing open",
+        "plane": {
+          "datum_id": 3,
+          "type": "datum_plane"
+        },
+        "snapshot": {
+          "constraints": [],
+          "dim_modes": {},
+          "dim_params": {},
+          "dim_placements": {},
+          "entities": [
+            [
+              1,
+              {
+                "center": {
+                  "x": 0.0,
+                  "y": 123.0
+                },
+                "radius": 80.0,
+                "type": "circle"
+              }
+            ],
+            [
+              2,
+              {
+                "center": {
+                  "x": 0.0,
+                  "y": 123.0
+                },
+                "radius": 76.0,
+                "type": "circle"
+              }
+            ]
+          ],
+          "fix_targets": {},
+          "next_constraint": 0,
+          "next_entity": 2,
+          "params": {
+            "next_id": 0,
+            "next_name": 0,
+            "params": []
+          }
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "dimension_style": "aligned",
+        "feature_id": 10419,
+        "grid_snap": false,
+        "name": "Lower_tub_open_top",
+        "plane": {
+          "plane": "xz",
+          "type": "origin_plane"
+        },
+        "snapshot": {
+          "constraints": [
+            [
+              1,
+              {
+                "entity": 5,
+                "type": "horizontal"
+              }
+            ],
+            [
+              2,
+              {
+                "entity": 7,
+                "type": "horizontal"
+              }
+            ],
+            [
+              3,
+              {
+                "entity": 6,
+                "type": "vertical"
+              }
+            ],
+            [
+              4,
+              {
+                "entity": 8,
+                "type": "vertical"
+              }
+            ]
+          ],
+          "dim_modes": {},
+          "dim_params": {},
+          "dim_placements": {},
+          "entities": [
+            [
+              1,
+              {
+                "position": {
+                  "x": -90.0,
+                  "y": 123.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              2,
+              {
+                "position": {
+                  "x": 90.0,
+                  "y": 123.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              3,
+              {
+                "position": {
+                  "x": 90.0,
+                  "y": 210.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              4,
+              {
+                "position": {
+                  "x": -90.0,
+                  "y": 210.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              5,
+              {
+                "end": 2,
+                "start": 1,
+                "type": "line"
+              }
+            ],
+            [
+              6,
+              {
+                "end": 3,
+                "start": 2,
+                "type": "line"
+              }
+            ],
+            [
+              7,
+              {
+                "end": 4,
+                "start": 3,
+                "type": "line"
+              }
+            ],
+            [
+              8,
+              {
+                "end": 1,
+                "start": 4,
+                "type": "line"
+              }
+            ]
+          ],
+          "fix_targets": {},
+          "next_constraint": 4,
+          "next_entity": 8,
+          "params": {
+            "next_id": 0,
+            "next_name": 0,
+            "params": []
+          }
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            -37.7,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "dimension_style": "aligned",
+        "feature_id": 10424,
+        "grid_snap": false,
+        "name": "P removable central lid - fasteners and registration open",
+        "plane": {
+          "datum_id": 4,
+          "type": "datum_plane"
+        },
+        "snapshot": {
+          "constraints": [],
+          "dim_modes": {},
+          "dim_params": {},
+          "dim_placements": {},
+          "entities": [
+            [
+              1,
+              {
+                "center": {
+                  "x": 0.0,
+                  "y": 123.0
+                },
+                "radius": 80.0,
+                "type": "circle"
+              }
+            ],
+            [
+              2,
+              {
+                "center": {
+                  "x": 0.0,
+                  "y": 123.0
+                },
+                "radius": 76.0,
+                "type": "circle"
+              }
+            ]
+          ],
+          "fix_targets": {},
+          "next_constraint": 0,
+          "next_entity": 2,
+          "params": {
+            "next_id": 0,
+            "next_name": 0,
+            "params": []
+          }
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "dimension_style": "aligned",
+        "feature_id": 10426,
+        "grid_snap": false,
+        "name": "Lid_seam_0p3",
+        "plane": {
+          "plane": "xz",
+          "type": "origin_plane"
+        },
+        "snapshot": {
+          "constraints": [
+            [
+              1,
+              {
+                "entity": 5,
+                "type": "horizontal"
+              }
+            ],
+            [
+              2,
+              {
+                "entity": 7,
+                "type": "horizontal"
+              }
+            ],
+            [
+              3,
+              {
+                "entity": 6,
+                "type": "vertical"
+              }
+            ],
+            [
+              4,
+              {
+                "entity": 8,
+                "type": "vertical"
+              }
+            ]
+          ],
+          "dim_modes": {},
+          "dim_params": {},
+          "dim_placements": {},
+          "entities": [
+            [
+              1,
+              {
+                "position": {
+                  "x": -90.0,
+                  "y": 30.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              2,
+              {
+                "position": {
+                  "x": 90.0,
+                  "y": 30.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              3,
+              {
+                "position": {
+                  "x": 90.0,
+                  "y": 123.3
+                },
+                "type": "point"
+              }
+            ],
+            [
+              4,
+              {
+                "position": {
+                  "x": -90.0,
+                  "y": 123.3
+                },
+                "type": "point"
+              }
+            ],
+            [
+              5,
+              {
+                "end": 2,
+                "start": 1,
+                "type": "line"
+              }
+            ],
+            [
+              6,
+              {
+                "end": 3,
+                "start": 2,
+                "type": "line"
+              }
+            ],
+            [
+              7,
+              {
+                "end": 4,
+                "start": 3,
+                "type": "line"
+              }
+            ],
+            [
+              8,
+              {
+                "end": 1,
+                "start": 4,
+                "type": "line"
+              }
+            ]
+          ],
+          "fix_targets": {},
+          "next_constraint": 4,
+          "next_entity": 8,
+          "params": {
+            "next_id": 0,
+            "next_name": 0,
+            "params": []
+          }
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            110.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "dimension_style": "aligned",
+        "feature_id": 10430,
+        "grid_snap": false,
+        "name": "P left wheel rim packaging - not print release",
+        "plane": {
+          "datum_id": 5,
+          "type": "datum_plane"
+        },
+        "snapshot": {
+          "constraints": [],
+          "dim_modes": {},
+          "dim_params": {},
+          "dim_placements": {},
+          "entities": [
+            [
+              1,
+              {
+                "center": {
+                  "x": 0.0,
+                  "y": 123.0
+                },
+                "radius": 115.0,
+                "type": "circle"
+              }
+            ],
+            [
+              2,
+              {
+                "center": {
+                  "x": 0.0,
+                  "y": 123.0
+                },
+                "radius": 108.0,
+                "type": "circle"
+              }
+            ]
+          ],
+          "fix_targets": {},
+          "next_constraint": 0,
+          "next_entity": 2,
+          "params": {
+            "next_id": 0,
+            "next_name": 0,
+            "params": []
+          }
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            110.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "dimension_style": "aligned",
+        "feature_id": 10433,
+        "grid_snap": false,
+        "name": "U left tread allowance D246 - material choice open",
+        "plane": {
+          "datum_id": 6,
+          "type": "datum_plane"
+        },
+        "snapshot": {
+          "constraints": [],
+          "dim_modes": {},
+          "dim_params": {},
+          "dim_placements": {},
+          "entities": [
+            [
+              1,
+              {
+                "center": {
+                  "x": 0.0,
+                  "y": 123.0
+                },
+                "radius": 123.0,
+                "type": "circle"
+              }
+            ],
+            [
+              2,
+              {
+                "center": {
+                  "x": 0.0,
+                  "y": 123.0
+                },
+                "radius": 115.0,
+                "type": "circle"
+              }
+            ]
+          ],
+          "fix_targets": {},
+          "next_constraint": 0,
+          "next_entity": 2,
+          "params": {
+            "next_id": 0,
+            "next_name": 0,
+            "params": []
+          }
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            133.5,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "dimension_style": "aligned",
+        "feature_id": 10436,
+        "grid_snap": false,
+        "name": "P left wheel web packaging - hub bolts open",
+        "plane": {
+          "datum_id": 7,
+          "type": "datum_plane"
+        },
+        "snapshot": {
+          "constraints": [],
+          "dim_modes": {},
+          "dim_params": {},
+          "dim_placements": {},
+          "entities": [
+            [
+              1,
+              {
+                "center": {
+                  "x": 0.0,
+                  "y": 123.0
+                },
+                "radius": 108.2,
+                "type": "circle"
+              }
+            ],
+            [
+              2,
+              {
+                "center": {
+                  "x": 0.0,
+                  "y": 123.0
+                },
+                "radius": 7.2,
+                "type": "circle"
+              }
+            ]
+          ],
+          "fix_targets": {},
+          "next_constraint": 0,
+          "next_entity": 2,
+          "params": {
+            "next_id": 0,
+            "next_name": 0,
+            "params": []
+          }
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            -15.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "dimension_style": "aligned",
+        "feature_id": 10441,
+        "grid_snap": false,
+        "name": "U BATTERY 90x85x30 inherited allowance rotated - UNMEASURED",
+        "plane": {
+          "datum_id": 8,
+          "type": "datum_plane"
+        },
+        "snapshot": {
+          "constraints": [
+            [
+              1,
+              {
+                "entity": 5,
+                "type": "horizontal"
+              }
+            ],
+            [
+              2,
+              {
+                "entity": 7,
+                "type": "horizontal"
+              }
+            ],
+            [
+              3,
+              {
+                "entity": 6,
+                "type": "vertical"
+              }
+            ],
+            [
+              4,
+              {
+                "entity": 8,
+                "type": "vertical"
+              }
+            ]
+          ],
+          "dim_modes": {},
+          "dim_params": {},
+          "dim_placements": {},
+          "entities": [
+            [
+              1,
+              {
+                "position": {
+                  "x": -60.0,
+                  "y": 78.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              2,
+              {
+                "position": {
+                  "x": 25.0,
+                  "y": 78.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              3,
+              {
+                "position": {
+                  "x": 25.0,
+                  "y": 168.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              4,
+              {
+                "position": {
+                  "x": -60.0,
+                  "y": 168.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              5,
+              {
+                "end": 2,
+                "start": 1,
+                "type": "line"
+              }
+            ],
+            [
+              6,
+              {
+                "end": 3,
+                "start": 2,
+                "type": "line"
+              }
+            ],
+            [
+              7,
+              {
+                "end": 4,
+                "start": 3,
+                "type": "line"
+              }
+            ],
+            [
+              8,
+              {
+                "end": 1,
+                "start": 4,
+                "type": "line"
+              }
+            ]
+          ],
+          "fix_targets": {},
+          "next_constraint": 4,
+          "next_entity": 8,
+          "params": {
+            "next_id": 0,
+            "next_name": 0,
+            "params": []
+          }
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            -35.5,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "dimension_style": "aligned",
+        "feature_id": 10444,
+        "grid_snap": false,
+        "name": "B TOPDON TC002C Duo nominal complete device - mating cable open",
+        "plane": {
+          "datum_id": 9,
+          "type": "datum_plane"
+        },
+        "snapshot": {
+          "constraints": [
+            [
+              1,
+              {
+                "entity": 5,
+                "type": "horizontal"
+              }
+            ],
+            [
+              2,
+              {
+                "entity": 7,
+                "type": "horizontal"
+              }
+            ],
+            [
+              3,
+              {
+                "entity": 6,
+                "type": "vertical"
+              }
+            ],
+            [
+              4,
+              {
+                "entity": 8,
+                "type": "vertical"
+              }
+            ]
+          ],
+          "dim_modes": {},
+          "dim_params": {},
+          "dim_placements": {},
+          "entities": [
+            [
+              1,
+              {
+                "position": {
+                  "x": 27.0,
+                  "y": 143.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              2,
+              {
+                "position": {
+                  "x": 41.0,
+                  "y": 143.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              3,
+              {
+                "position": {
+                  "x": 41.0,
+                  "y": 185.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              4,
+              {
+                "position": {
+                  "x": 27.0,
+                  "y": 185.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              5,
+              {
+                "end": 2,
+                "start": 1,
+                "type": "line"
+              }
+            ],
+            [
+              6,
+              {
+                "end": 3,
+                "start": 2,
+                "type": "line"
+              }
+            ],
+            [
+              7,
+              {
+                "end": 4,
+                "start": 3,
+                "type": "line"
+              }
+            ],
+            [
+              8,
+              {
+                "end": 1,
+                "start": 4,
+                "type": "line"
+              }
+            ]
+          ],
+          "fix_targets": {},
+          "next_constraint": 4,
+          "next_entity": 8,
+          "params": {
+            "next_id": 0,
+            "next_name": 0,
+            "params": []
+          }
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            -90.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "dimension_style": "aligned",
+        "feature_id": 10447,
+        "grid_snap": false,
+        "name": "B Pi Zero WiFi 65x30x5 nominal bare envelope - plugs open",
+        "plane": {
+          "datum_id": 10,
+          "type": "datum_plane"
+        },
+        "snapshot": {
+          "constraints": [
+            [
+              1,
+              {
+                "entity": 5,
+                "type": "horizontal"
+              }
+            ],
+            [
+              2,
+              {
+                "entity": 7,
+                "type": "horizontal"
+              }
+            ],
+            [
+              3,
+              {
+                "entity": 6,
+                "type": "vertical"
+              }
+            ],
+            [
+              4,
+              {
+                "entity": 8,
+                "type": "vertical"
+              }
+            ]
+          ],
+          "dim_modes": {},
+          "dim_params": {},
+          "dim_placements": {},
+          "entities": [
+            [
+              1,
+              {
+                "position": {
+                  "x": -30.0,
+                  "y": 161.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              2,
+              {
+                "position": {
+                  "x": 0.0,
+                  "y": 161.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              3,
+              {
+                "position": {
+                  "x": 0.0,
+                  "y": 166.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              4,
+              {
+                "position": {
+                  "x": -30.0,
+                  "y": 166.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              5,
+              {
+                "end": 2,
+                "start": 1,
+                "type": "line"
+              }
+            ],
+            [
+              6,
+              {
+                "end": 3,
+                "start": 2,
+                "type": "line"
+              }
+            ],
+            [
+              7,
+              {
+                "end": 4,
+                "start": 3,
+                "type": "line"
+              }
+            ],
+            [
+              8,
+              {
+                "end": 1,
+                "start": 4,
+                "type": "line"
+              }
+            ]
+          ],
+          "fix_targets": {},
+          "next_constraint": 4,
+          "next_entity": 8,
+          "params": {
+            "next_id": 0,
+            "next_name": 0,
+            "params": []
+          }
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            168.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "dimension_style": "aligned",
+        "feature_id": 10450,
+        "grid_snap": false,
+        "name": "U original Pixracer 36x36 outline ONLY - total height open",
+        "plane": {
+          "datum_id": 11,
+          "type": "datum_plane"
+        },
+        "snapshot": {
+          "constraints": [
+            [
+              1,
+              {
+                "entity": 5,
+                "type": "horizontal"
+              }
+            ],
+            [
+              2,
+              {
+                "entity": 7,
+                "type": "horizontal"
+              }
+            ],
+            [
+              3,
+              {
+                "entity": 6,
+                "type": "vertical"
+              }
+            ],
+            [
+              4,
+              {
+                "entity": 8,
+                "type": "vertical"
+              }
+            ]
+          ],
+          "dim_modes": {},
+          "dim_params": {},
+          "dim_placements": {},
+          "entities": [
+            [
+              1,
+              {
+                "position": {
+                  "x": -40.0,
+                  "y": 52.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              2,
+              {
+                "position": {
+                  "x": -4.0,
+                  "y": 52.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              3,
+              {
+                "position": {
+                  "x": -4.0,
+                  "y": 88.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              4,
+              {
+                "position": {
+                  "x": -40.0,
+                  "y": 88.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              5,
+              {
+                "end": 2,
+                "start": 1,
+                "type": "line"
+              }
+            ],
+            [
+              6,
+              {
+                "end": 3,
+                "start": 2,
+                "type": "line"
+              }
+            ],
+            [
+              7,
+              {
+                "end": 4,
+                "start": 3,
+                "type": "line"
+              }
+            ],
+            [
+              8,
+              {
+                "end": 1,
+                "start": 4,
+                "type": "line"
+              }
+            ]
+          ],
+          "fix_targets": {},
+          "next_constraint": 4,
+          "next_entity": 8,
+          "params": {
+            "next_id": 0,
+            "next_name": 0,
+            "params": []
+          }
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "origin": [
+            75.0,
+            0.0,
+            0.0
+          ],
+          "u": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "dimension_style": "aligned",
+        "feature_id": 10452,
+        "grid_snap": false,
+        "name": "U forward ToF 1 20x12 outline ONLY - depth open",
+        "plane": {
+          "datum_id": 12,
+          "type": "datum_plane"
+        },
+        "snapshot": {
+          "constraints": [
+            [
+              1,
+              {
+                "entity": 5,
+                "type": "horizontal"
+              }
+            ],
+            [
+              2,
+              {
+                "entity": 7,
+                "type": "horizontal"
+              }
+            ],
+            [
+              3,
+              {
+                "entity": 6,
+                "type": "vertical"
+              }
+            ],
+            [
+              4,
+              {
+                "entity": 8,
+                "type": "vertical"
+              }
+            ]
+          ],
+          "dim_modes": {},
+          "dim_params": {},
+          "dim_placements": {},
+          "entities": [
+            [
+              1,
+              {
+                "position": {
+                  "x": -46.0,
+                  "y": 113.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              2,
+              {
+                "position": {
+                  "x": -26.0,
+                  "y": 113.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              3,
+              {
+                "position": {
+                  "x": -26.0,
+                  "y": 125.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              4,
+              {
+                "position": {
+                  "x": -46.0,
+                  "y": 125.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              5,
+              {
+                "end": 2,
+                "start": 1,
+                "type": "line"
+              }
+            ],
+            [
+              6,
+              {
+                "end": 3,
+                "start": 2,
+                "type": "line"
+              }
+            ],
+            [
+              7,
+              {
+                "end": 4,
+                "start": 3,
+                "type": "line"
+              }
+            ],
+            [
+              8,
+              {
+                "end": 1,
+                "start": 4,
+                "type": "line"
+              }
+            ]
+          ],
+          "fix_targets": {},
+          "next_constraint": 4,
+          "next_entity": 8,
+          "params": {
+            "next_id": 0,
+            "next_name": 0,
+            "params": []
+          }
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "origin": [
+            75.0,
+            0.0,
+            0.0
+          ],
+          "u": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "dimension_style": "aligned",
+        "feature_id": 10453,
+        "grid_snap": false,
+        "name": "U forward ToF 2 20x12 outline ONLY - depth open",
+        "plane": {
+          "datum_id": 12,
+          "type": "datum_plane"
+        },
+        "snapshot": {
+          "constraints": [
+            [
+              1,
+              {
+                "entity": 5,
+                "type": "horizontal"
+              }
+            ],
+            [
+              2,
+              {
+                "entity": 7,
+                "type": "horizontal"
+              }
+            ],
+            [
+              3,
+              {
+                "entity": 6,
+                "type": "vertical"
+              }
+            ],
+            [
+              4,
+              {
+                "entity": 8,
+                "type": "vertical"
+              }
+            ]
+          ],
+          "dim_modes": {},
+          "dim_params": {},
+          "dim_placements": {},
+          "entities": [
+            [
+              1,
+              {
+                "position": {
+                  "x": -22.0,
+                  "y": 113.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              2,
+              {
+                "position": {
+                  "x": -2.0,
+                  "y": 113.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              3,
+              {
+                "position": {
+                  "x": -2.0,
+                  "y": 125.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              4,
+              {
+                "position": {
+                  "x": -22.0,
+                  "y": 125.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              5,
+              {
+                "end": 2,
+                "start": 1,
+                "type": "line"
+              }
+            ],
+            [
+              6,
+              {
+                "end": 3,
+                "start": 2,
+                "type": "line"
+              }
+            ],
+            [
+              7,
+              {
+                "end": 4,
+                "start": 3,
+                "type": "line"
+              }
+            ],
+            [
+              8,
+              {
+                "end": 1,
+                "start": 4,
+                "type": "line"
+              }
+            ]
+          ],
+          "fix_targets": {},
+          "next_constraint": 4,
+          "next_entity": 8,
+          "params": {
+            "next_id": 0,
+            "next_name": 0,
+            "params": []
+          }
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "origin": [
+            75.0,
+            0.0,
+            0.0
+          ],
+          "u": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "dimension_style": "aligned",
+        "feature_id": 10454,
+        "grid_snap": false,
+        "name": "U forward ToF 3 20x12 outline ONLY - depth open",
+        "plane": {
+          "datum_id": 12,
+          "type": "datum_plane"
+        },
+        "snapshot": {
+          "constraints": [
+            [
+              1,
+              {
+                "entity": 5,
+                "type": "horizontal"
+              }
+            ],
+            [
+              2,
+              {
+                "entity": 7,
+                "type": "horizontal"
+              }
+            ],
+            [
+              3,
+              {
+                "entity": 6,
+                "type": "vertical"
+              }
+            ],
+            [
+              4,
+              {
+                "entity": 8,
+                "type": "vertical"
+              }
+            ]
+          ],
+          "dim_modes": {},
+          "dim_params": {},
+          "dim_placements": {},
+          "entities": [
+            [
+              1,
+              {
+                "position": {
+                  "x": 2.0,
+                  "y": 113.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              2,
+              {
+                "position": {
+                  "x": 22.0,
+                  "y": 113.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              3,
+              {
+                "position": {
+                  "x": 22.0,
+                  "y": 125.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              4,
+              {
+                "position": {
+                  "x": 2.0,
+                  "y": 125.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              5,
+              {
+                "end": 2,
+                "start": 1,
+                "type": "line"
+              }
+            ],
+            [
+              6,
+              {
+                "end": 3,
+                "start": 2,
+                "type": "line"
+              }
+            ],
+            [
+              7,
+              {
+                "end": 4,
+                "start": 3,
+                "type": "line"
+              }
+            ],
+            [
+              8,
+              {
+                "end": 1,
+                "start": 4,
+                "type": "line"
+              }
+            ]
+          ],
+          "fix_targets": {},
+          "next_constraint": 4,
+          "next_entity": 8,
+          "params": {
+            "next_id": 0,
+            "next_name": 0,
+            "params": []
+          }
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "origin": [
+            75.0,
+            0.0,
+            0.0
+          ],
+          "u": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "dimension_style": "aligned",
+        "feature_id": 10455,
+        "grid_snap": false,
+        "name": "U forward ToF 4 20x12 outline ONLY - depth open",
+        "plane": {
+          "datum_id": 12,
+          "type": "datum_plane"
+        },
+        "snapshot": {
+          "constraints": [
+            [
+              1,
+              {
+                "entity": 5,
+                "type": "horizontal"
+              }
+            ],
+            [
+              2,
+              {
+                "entity": 7,
+                "type": "horizontal"
+              }
+            ],
+            [
+              3,
+              {
+                "entity": 6,
+                "type": "vertical"
+              }
+            ],
+            [
+              4,
+              {
+                "entity": 8,
+                "type": "vertical"
+              }
+            ]
+          ],
+          "dim_modes": {},
+          "dim_params": {},
+          "dim_placements": {},
+          "entities": [
+            [
+              1,
+              {
+                "position": {
+                  "x": 26.0,
+                  "y": 113.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              2,
+              {
+                "position": {
+                  "x": 46.0,
+                  "y": 113.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              3,
+              {
+                "position": {
+                  "x": 46.0,
+                  "y": 125.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              4,
+              {
+                "position": {
+                  "x": 26.0,
+                  "y": 125.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              5,
+              {
+                "end": 2,
+                "start": 1,
+                "type": "line"
+              }
+            ],
+            [
+              6,
+              {
+                "end": 3,
+                "start": 2,
+                "type": "line"
+              }
+            ],
+            [
+              7,
+              {
+                "end": 4,
+                "start": 3,
+                "type": "line"
+              }
+            ],
+            [
+              8,
+              {
+                "end": 1,
+                "start": 4,
+                "type": "line"
+              }
+            ]
+          ],
+          "fix_targets": {},
+          "next_constraint": 4,
+          "next_entity": 8,
+          "params": {
+            "next_id": 0,
+            "next_name": 0,
+            "params": []
+          }
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            -96.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "dimension_style": "aligned",
+        "feature_id": 10457,
+        "grid_snap": false,
+        "name": "U upper cross-body harness lane - connector bends unmeasured",
+        "plane": {
+          "datum_id": 13,
+          "type": "datum_plane"
+        },
+        "snapshot": {
+          "constraints": [
+            [
+              1,
+              {
+                "entity": 5,
+                "type": "horizontal"
+              }
+            ],
+            [
+              2,
+              {
+                "entity": 7,
+                "type": "horizontal"
+              }
+            ],
+            [
+              3,
+              {
+                "entity": 6,
+                "type": "vertical"
+              }
+            ],
+            [
+              4,
+              {
+                "entity": 8,
+                "type": "vertical"
+              }
+            ]
+          ],
+          "dim_modes": {},
+          "dim_params": {},
+          "dim_placements": {},
+          "entities": [
+            [
+              1,
+              {
+                "position": {
+                  "x": -8.0,
+                  "y": 173.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              2,
+              {
+                "position": {
+                  "x": 8.0,
+                  "y": 173.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              3,
+              {
+                "position": {
+                  "x": 8.0,
+                  "y": 185.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              4,
+              {
+                "position": {
+                  "x": -8.0,
+                  "y": 185.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              5,
+              {
+                "end": 2,
+                "start": 1,
+                "type": "line"
+              }
+            ],
+            [
+              6,
+              {
+                "end": 3,
+                "start": 2,
+                "type": "line"
+              }
+            ],
+            [
+              7,
+              {
+                "end": 4,
+                "start": 3,
+                "type": "line"
+              }
+            ],
+            [
+              8,
+              {
+                "end": 1,
+                "start": 4,
+                "type": "line"
+              }
+            ]
+          ],
+          "fix_targets": {},
+          "next_constraint": 4,
+          "next_entity": 8,
+          "params": {
+            "next_id": 0,
+            "next_name": 0,
+            "params": []
+          }
+        }
       }
     ],
     "sweeps": [],
     "visibility": {
       "hidden_body_ids": [
-        10083,
-        10106
+        10170
       ],
       "hidden_datum_plane_ids": [
         1,
-        2
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
       ],
       "hidden_sketch_names": [
+        "B Pi Zero WiFi 65x30x5 nominal bare envelope - plugs open",
+        "B TOPDON TC002C Duo nominal complete device - mating cable open",
         "Carrier_input_spine_travel_relief",
         "Cover_spine_and_rail_clearance",
         "End_Sketch1",
@@ -76209,7 +81683,13 @@
         "End_Sketch97",
         "End_Sketch98",
         "End_Sketch99",
+        "Lid_seam_0p3",
+        "Lower_tub_open_top",
         "Output_flange_R25_clearance",
+        "P central drum lower tub - retention detailing open",
+        "P left wheel rim packaging - not print release",
+        "P left wheel web packaging - hub bolts open",
+        "P removable central lid - fasteners and registration open",
         "Saddle_case_bottom_clearance",
         "Sketch123",
         "Sketch124",
@@ -76276,10 +81756,18 @@
         "Sketch80",
         "Sketch81",
         "Sketch82",
-        "Sketch83"
+        "Sketch83",
+        "U BATTERY 90x85x30 inherited allowance rotated - UNMEASURED",
+        "U forward ToF 1 20x12 outline ONLY - depth open",
+        "U forward ToF 2 20x12 outline ONLY - depth open",
+        "U forward ToF 3 20x12 outline ONLY - depth open",
+        "U forward ToF 4 20x12 outline ONLY - depth open",
+        "U left tread allowance D246 - material choice open",
+        "U original Pixracer 36x36 outline ONLY - total height open",
+        "U upper cross-body harness lane - connector bends unmeasured"
       ]
     }
   },
-  "source_sha256": "969ff8e21fe9b4012c925b8aebd7ad3b02cb6c0faa310c41caf4942fc177b2c9",
+  "source_sha256": "da29f8174fbd7429d53cc8343c48c114ec21ed31e70974bdc7b69f5c43c1f9c0",
   "warning": "Generated review snapshot. Edit the native CAD document, never this file."
 }

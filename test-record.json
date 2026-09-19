@@ -506,5 +506,203 @@
     "geometry_unchanged": true,
     "native_sha256": "f75461c85b51235287afc432c264ae79ef5f6fcd98335b9456707904adeb9d7e",
     "physical_tests": "NOT PERFORMED"
+  },
+  "full_vehicle_packaging_20260919": {
+    "native_preflight": {
+      "_disclosure": {
+        "active_focus": "print",
+        "advertised": true,
+        "mode": "dynamic",
+        "pack": "print",
+        "state": "active"
+      },
+      "appearances_assigned": 49,
+      "bodies_missing_appearance": [
+        10118,
+        10119,
+        10120,
+        10121,
+        10122,
+        10123,
+        10124,
+        10125,
+        10126,
+        10127,
+        10128,
+        10129,
+        10130,
+        10131,
+        10132,
+        10133,
+        10134,
+        10135,
+        10136,
+        10137,
+        10138,
+        10139,
+        10140,
+        10141,
+        10142,
+        10143,
+        10144,
+        10145,
+        10146,
+        10147,
+        10148,
+        10149,
+        10150,
+        10151,
+        10152,
+        10153,
+        10154
+      ],
+      "body_count": 84,
+      "body_ids": [
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        123,
+        133,
+        146,
+        152,
+        155,
+        161,
+        162,
+        163,
+        164,
+        166,
+        167,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        197,
+        198,
+        199,
+        201,
+        202,
+        203,
+        236,
+        10001,
+        10002,
+        10052,
+        10070,
+        10083,
+        10118,
+        10119,
+        10120,
+        10121,
+        10122,
+        10123,
+        10124,
+        10125,
+        10126,
+        10127,
+        10128,
+        10129,
+        10130,
+        10131,
+        10132,
+        10133,
+        10134,
+        10135,
+        10136,
+        10137,
+        10138,
+        10139,
+        10140,
+        10141,
+        10142,
+        10143,
+        10144,
+        10145,
+        10146,
+        10147,
+        10148,
+        10149,
+        10150,
+        10151,
+        10152,
+        10153,
+        10154,
+        10156,
+        10159,
+        10162,
+        10163,
+        10165,
+        10166,
+        10167,
+        10168,
+        10169,
+        10170
+      ],
+      "hints": [
+        "Ready for solid_export_3mf (preferred) or solid_export_stl / solid_export_step."
+      ],
+      "ok": true,
+      "timeline_errors": []
+    },
+    "added_parts": [
+      {
+        "body_id": 10156,
+        "name": "P central drum lower tub - retention detailing open"
+      },
+      {
+        "body_id": 10159,
+        "name": "P removable central lid - fasteners and registration open"
+      },
+      {
+        "body_id": 10162,
+        "name": "P left wheel rim packaging - not print release"
+      },
+      {
+        "body_id": 10163,
+        "name": "U left tread allowance D246 - material choice open"
+      },
+      {
+        "body_id": 10164,
+        "name": "P left wheel web packaging - hub bolts open"
+      },
+      {
+        "body_id": 10165,
+        "name": "P right wheel rim packaging - not print release"
+      },
+      {
+        "body_id": 10166,
+        "name": "U right tread allowance D246 - material choice open"
+      },
+      {
+        "body_id": 10167,
+        "name": "U BATTERY 90x85x30 inherited allowance rotated - UNMEASURED"
+      },
+      {
+        "body_id": 10168,
+        "name": "B TOPDON TC002C Duo nominal complete device - mating cable open"
+      },
+      {
+        "body_id": 10169,
+        "name": "B Pi Zero WiFi 65x30x5 nominal bare envelope - plugs open"
+      },
+      {
+        "body_id": 10170,
+        "name": "U upper cross-body harness lane - connector bends unmeasured"
+      }
+    ],
+    "method": "Native official NoBS CAD 0.2.0 operations in an attached dedicated desktop document; no external geometry generation",
+    "physical_tests": "NOT PERFORMED",
+    "exact_full_vehicle_interference": "NOT PERFORMED; earlier one-side structural checks do not qualify these additions",
+    "test_article_preserved": {
+      "commit": "80f06f3",
+      "tag": "drive-fit-candidate-2026-09-19",
+      "manifest": "first-prints/drive-end-section/source-revision.json"
+    },
+    "application_issue": "Large native mutation responses exceeded 64 MiB tool transport. Invoked same official MCP tools through local stdio client and summarized replies. Dedicated desktop avoids shared-window active-document switching."
   }
 }

@@ -757,7 +757,7 @@
     "status": "Reader/target unselected. Mounting intent at each inboard wheel shaft end; guessed reader solid withdrawn.",
     "model_in_current_cad": false
   },
-  "active_scope": "Mechanical packaging, component envelopes and access only",
+  "active_scope": "Full vehicle packaging in the sole native master; test article pinned separately to 80f06f3. Not print release.",
   "pi_status": "User owns a Pi Zero with Wi-Fi; exact version not confirmed. Both bare Zero W and Zero2W have published nominal65x30x5 envelope references. Actual header/case/accessories unknown.",
   "component_envelopes": {
     "thermal": {
@@ -818,11 +818,12 @@
       "orientation": "forward"
     },
     "servo": {
-      "status": "Selected goBILDA STEP full fixed hardware bounds, horn/lead separate",
-      "xyz": [
-        54.3,
-        44.1,
-        20.15
+      "model": "Owned INJORA INJS035-360",
+      "status": "Partial case envelope only; mounting ears, output offset, horn and wire exit require measurement. Previous goBILDA envelope superseded.",
+      "case_dimensions_mm": [
+        40.5,
+        20,
+        40.5
       ]
     }
   },
@@ -1319,5 +1320,106 @@
     "parameter_sync": "manual; not an automatic native parameter link",
     "historical_models": "archive/",
     "remote": "https://github.com/jeffglousher/Roller-300"
+  },
+  "legacy_parameter_warning": "Legacy spur-gear and old servo-reserve fields above are historical studies. Native master and current_drive/full_vehicle_packaging records govern current belt geometry; no automatic parameter link.",
+  "full_vehicle_packaging": {
+    "date": "2026-09-19",
+    "status": "Native packaging proposal; retention, wiring, purchased fits and interference qualification unfinished",
+    "coordinates": "X forward, Y left, Z up; positions below use ground frame, axle Z123",
+    "outside_width_mm": 300,
+    "wheel_diameter_mm": 246,
+    "body_diameter_mm": 160,
+    "central_tub_inner_radius_mm": 76,
+    "central_tub_y_mm": [
+      -38,
+      38
+    ],
+    "nominal_underbelly_mm": 43,
+    "lid_seam_mm": 0.3,
+    "battery": {
+      "world_min_mm": [
+        -60,
+        -15,
+        78
+      ],
+      "world_size_mm": [
+        85,
+        30,
+        90
+      ],
+      "status": "UNMEASURED inherited 90x85x30 allowance rotated upright; not confirmed low battery or COM"
+    },
+    "thermal": {
+      "world_min_mm": [
+        27,
+        -35.5,
+        143
+      ],
+      "world_size_mm": [
+        14,
+        71,
+        42
+      ],
+      "status": "Nominal complete device envelope; mating cable, mount, lens datum and aperture open"
+    },
+    "pi": {
+      "world_min_mm": [
+        -30,
+        -90,
+        161
+      ],
+      "world_size_mm": [
+        30,
+        65,
+        5
+      ],
+      "status": "Bare nominal envelope; connectors and removal open"
+    },
+    "pixracer": {
+      "world_xy_bounds_mm": [
+        -40,
+        -4,
+        52,
+        88
+      ],
+      "world_z_plane_mm": 168,
+      "status": "36x36 footprint only; total fitted height unknown"
+    },
+    "tof": {
+      "world_x_plane_mm": 75,
+      "world_y_centers_mm": [
+        -36,
+        -12,
+        12,
+        36
+      ],
+      "world_z_bounds_mm": [
+        113,
+        125
+      ],
+      "footprint_width_mm": 20,
+      "status": "Four front outlines only; depth, curvature/yaw, mount and aperture open"
+    },
+    "harness": {
+      "world_min_mm": [
+        -8,
+        -96,
+        173
+      ],
+      "world_size_mm": [
+        16,
+        192,
+        12
+      ],
+      "status": "Clearance reserve only; not verified cable bundle"
+    },
+    "wheel_web": {
+      "left_y_mm": [
+        133.5,
+        137.5
+      ],
+      "hub_pilot_bore_mm": 14.4,
+      "status": "Solid web packaging; hub bolt holes, lightening, stiffness and fastening unfinished"
+    }
   }
 }
