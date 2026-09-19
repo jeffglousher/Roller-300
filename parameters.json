@@ -1280,5 +1280,12 @@
       ],
       "basis": "Named native sketches and extrudes. Historical integrate_drive.py does not include these live edits and must not overwrite this source."
     }
+  },
+  "workspace": {
+    "master_cad": "Roller-300.nbcad",
+    "geometry_authority": "native CAD feature history",
+    "parameter_sync": "manual; not an automatic native parameter link",
+    "historical_models": "archive/",
+    "remote": "https://github.com/jeffglousher/Roller-300"
   }
 }

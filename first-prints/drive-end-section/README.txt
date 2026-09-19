@@ -2,7 +2,7 @@ Roller-300 reusable vehicle drive structure — live CAD clearance revision, 19 
 
 UNPOWERED DIMENSIONAL FIT REVIEW ONLY. Print the bearing/fastener coupon first.
 These are final-vehicle carrier/spine candidates, not a disposable bench chassis.
-Native source: drive-end-section.nbcad. Common dimensions: parameters.json.
+Native source: Roller-300.nbcad (repository root). Common dimensions: parameters.json.
 
 Carrier corrected in actual NoBS CAD 0.2.0: pulley relief and end-ring carriage clearance.
 The input spine is unchanged. Cover, saddle and outer bearing cap were also corrected in CAD but are not included in this two-part fit set.

@@ -478,7 +478,7 @@
   },
   "drive_end_section": {
     "design": "Vehicle carrier and input spine; clamp via final body flange, retain for vehicle after qualification",
-    "current_native": "drive-end-section.nbcad",
+    "current_native": "Roller-300.nbcad",
     "wheel_tire_work": "DEFERRED by user",
     "CAD_check_record": "drive-end-section-checks.json",
     "physical_tests": "NOT PERFORMED",
@@ -492,5 +492,18 @@
     "prior_estimated_hours": 7.141419542100694,
     "estimated_grams": 193.6998519897461,
     "estimated_hours": 7.131857367621528
+  },
+  "workspace": {
+    "master_cad": "Roller-300.nbcad",
+    "geometry_authority": "native CAD feature history",
+    "parameter_sync": "manual; not an automatic native parameter link",
+    "historical_models": "archive/",
+    "remote": "https://github.com/jeffglousher/Roller-300"
+  },
+  "repository_migration": {
+    "date": "2026-09-19",
+    "geometry_unchanged": true,
+    "native_sha256": "f75461c85b51235287afc432c264ae79ef5f6fcd98335b9456707904adeb9d7e",
+    "physical_tests": "NOT PERFORMED"
   }
 }
