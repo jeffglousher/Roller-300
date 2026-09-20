@@ -1,0 +1,20 @@
+// Roller-300 design_v0_1_input_carriage — modular Design Ops chapter (VERSION 0.1)
+// Role: S02 — Removable input carriage (service/tension)
+// SoT: this .nbcad.jsonc (JSONC-first). Companion: design/gen_meta.json + design/VERSION.
+// Replay: blank document only. Shared datums: origin planes XY/XZ/YZ (mm; X fwd, Y left, Z up; ground origin below axle midpoint; axle Z=123).
+// Native master Roller-300.nbcad remains editable CAD; this tree is AI-iterate SoT going forward.
+// Do not invent unverified fit numbers — nominals below from PLAN.md / parameters.json / parts-sources.json only.
+// Intended geometry (scaffold — steps empty until filled):
+//   - Per side: two bearing supports, caps, servo locating lips, strap passages — not a separate drive-end chassis (PLAN S02).
+//   - Input bearings at |Y|=70 and 96; input axial retention HOLD (parameters.bearings).
+//   - Carriage slots: size XY [7.4, 4.4], corner R1, available translation X ±1.5 mm (parameters.transmission).
+//   - Input caps use recessed M3×30 candidates; travel clearance after limiting cap outside corners to R70 and recessing M3 heads (PLAN S01).
+//   - travel_status: CAD clearance screen only; no qualified belt tension or installed stretch (parameters.transmission).
+//   - Export review candidate exists: first-prints/shell-first-review/left-input-carriage-floor-down.stl (REVIEW ONLY).
+// Prune prior design_v* only after this VERSION is proven (Design Ops).
+{
+  "version": 1,
+  "name": "Roller-300 design_v0_1_input_carriage (VERSION 0.1 scaffold)",
+  "starting_state": "empty",
+  "steps": []
+}

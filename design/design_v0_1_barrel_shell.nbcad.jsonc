@@ -1,0 +1,21 @@
+// Roller-300 design_v0_1_barrel_shell — modular Design Ops chapter (VERSION 0.1)
+// Role: S02 — Primary barrel shell
+// SoT: this .nbcad.jsonc (JSONC-first). Companion: design/gen_meta.json + design/VERSION.
+// Replay: blank document only. Shared datums: origin planes XY/XZ/YZ (mm; X fwd, Y left, Z up; ground origin below axle midpoint; axle Z=123).
+// Native master Roller-300.nbcad remains editable CAD; this tree is AI-iterate SoT going forward.
+// Do not invent unverified fit numbers — nominals below from PLAN.md / parameters.json / parts-sources.json only.
+// Intended geometry (scaffold — steps empty until filled):
+//   - Barrel OD 160 / ID 152 / length_y 210; y_bounds ±105; nominal skin 4 mm; axle_z 123 (parameters.body).
+//   - Four integral wheel-bearing saddles; short carriage rails; integral end guards; removable wheel caps.
+//   - Bearing seats D22.2 trial coupon dimensions; axial pockets 7.2 mm; shoulder clear bore 18 mm (parameters.bearings).
+//   - Wheel caps and carriage joints use M4; captive-nut fits require coupon verification (PLAN S02).
+//   - Wheel retention stack (PLAN): inboard collar + 3 mm steel inner-race spacer + outboard 0.5 mm shim + 10 mm steel spacer vs clamping hub.
+//   - Nominal belly clearance 43 mm unloaded geometric (parameters.body) — not a finger-clearance claim.
+//   - Tire inner faces Y=±110 → nominal 5 mm gap to barrel ends; deformation/runout/play consume it (PLAN datum).
+// Prune prior design_v* only after this VERSION is proven (Design Ops).
+{
+  "version": 1,
+  "name": "Roller-300 design_v0_1_barrel_shell (VERSION 0.1 scaffold)",
+  "starting_state": "empty",
+  "steps": []
+}

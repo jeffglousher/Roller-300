@@ -1,0 +1,22 @@
+// Roller-300 design_v0_1_assemble — thin orchestrator (VERSION 0.1)
+// Product .nbcad.jsonc has NO chapter include/compose primitive yet (Design Ops: chaptered includes when/if supported).
+// Assemble = ordered chapter markers for a blank-doc runner: replay each chapter path below IN ORDER on one empty document.
+// Runner (human/agent): new blank doc → apply each chapter's steps sequentially → save native .nbcad if desired.
+// Do not concatenate JSONC by hand without a runner that merges steps and remaps $ref/let bindings.
+// Chapter replay order (paths relative to design/):
+//   1. design_v0_1_hardware_refs.nbcad.jsonc
+//   2. design_v0_1_barrel_shell.nbcad.jsonc
+//   3. design_v0_1_input_carriage.nbcad.jsonc
+//   4. design_v0_1_structural_hatch.nbcad.jsonc
+//   5. design_v0_1_electronics_mounts.nbcad.jsonc
+//   6. design_v0_1_drive_stack.nbcad.jsonc
+// Shared named refs (future): origin planes + axle_z=123; barrel OD/ID/length from parameters.body; belt/pulley from parameters.transmission.
+// Belt cite only (parent handles order): D&D 210-3M-09 / Amazon B00ISC4PHG — pitch 3 / length 210 / width 9 / 70 teeth.
+// Full one-drive shell print remains HOLD (PLAN S05); coupons first.
+// CHAPTER_PATHS_JSON = ["design_v0_1_hardware_refs.nbcad.jsonc", "design_v0_1_barrel_shell.nbcad.jsonc", "design_v0_1_input_carriage.nbcad.jsonc", "design_v0_1_structural_hatch.nbcad.jsonc", "design_v0_1_electronics_mounts.nbcad.jsonc", "design_v0_1_drive_stack.nbcad.jsonc"]
+{
+  "version": 1,
+  "name": "Roller-300 design_v0_1_assemble (VERSION 0.1 orchestrator \u2014 ordered chapter replay)",
+  "starting_state": "empty",
+  "steps": []
+}

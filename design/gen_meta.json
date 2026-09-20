@@ -1,0 +1,68 @@
+{
+  "version": "0.1",
+  "architecture": "shell-first modular Design Ops cut",
+  "native_master": "Roller-300.nbcad",
+  "ai_sot": "design/*.nbcad.jsonc",
+  "revision_note": "First modular cut: scaffolds only; geometry still in native master until chapters filled.",
+  "modules": [
+    {
+      "file": "design_v0_1_hardware_refs.nbcad.jsonc",
+      "stage": "S01",
+      "role": "hardware_refs"
+    },
+    {
+      "file": "design_v0_1_barrel_shell.nbcad.jsonc",
+      "stage": "S02",
+      "role": "barrel_shell"
+    },
+    {
+      "file": "design_v0_1_input_carriage.nbcad.jsonc",
+      "stage": "S02",
+      "role": "input_carriage"
+    },
+    {
+      "file": "design_v0_1_structural_hatch.nbcad.jsonc",
+      "stage": "S03",
+      "role": "structural_hatch"
+    },
+    {
+      "file": "design_v0_1_electronics_mounts.nbcad.jsonc",
+      "stage": "S04",
+      "role": "electronics_mounts"
+    },
+    {
+      "file": "design_v0_1_drive_stack.nbcad.jsonc",
+      "stage": "S01/S05",
+      "role": "drive_stack"
+    },
+    {
+      "file": "design_v0_1_assemble.nbcad.jsonc",
+      "stage": "orchestrator",
+      "role": "assemble"
+    }
+  ],
+  "assemble": {
+    "include_supported": false,
+    "method": "blank-doc ordered chapter replay via runner",
+    "chapter_order": [
+      "design_v0_1_hardware_refs.nbcad.jsonc",
+      "design_v0_1_barrel_shell.nbcad.jsonc",
+      "design_v0_1_input_carriage.nbcad.jsonc",
+      "design_v0_1_structural_hatch.nbcad.jsonc",
+      "design_v0_1_electronics_mounts.nbcad.jsonc",
+      "design_v0_1_drive_stack.nbcad.jsonc"
+    ]
+  },
+  "belt_cite": {
+    "item": "D&D 210-3M-09 / Amazon B00ISC4PHG",
+    "status": "accepted; parent handles order messaging; not purchased by this agent",
+    "published_dimensions_mm": {
+      "nominal_pitch_length": 210,
+      "nominal_pitch": 3,
+      "nominal_width": 9
+    },
+    "teeth": 70
+  },
+  "parameters_revision": "shell-first-2026-09-19",
+  "git_pin_at_scaffold": "b85aa13"
+}

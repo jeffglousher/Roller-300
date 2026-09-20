@@ -1,0 +1,25 @@
+// Roller-300 design_v0_1_hardware_refs — modular Design Ops chapter (VERSION 0.1)
+// Role: S01 — Hardware references and load paths
+// SoT: this .nbcad.jsonc (JSONC-first). Companion: design/gen_meta.json + design/VERSION.
+// Replay: blank document only. Shared datums: origin planes XY/XZ/YZ (mm; X fwd, Y left, Z up; ground origin below axle midpoint; axle Z=123).
+// Native master Roller-300.nbcad remains editable CAD; this tree is AI-iterate SoT going forward.
+// Do not invent unverified fit numbers — nominals below from PLAN.md / parameters.json / parts-sources.json only.
+// Intended geometry (scaffold — steps empty until filled):
+//   - Owned INJORA INJS035-360 partial case reference (geometry HOLD for horn/ears/clutch details).
+//   - Accepted belt envelope: D&D 210-3M-09 / Amazon B00ISC4PHG — pitch 3 mm, pitch length 210 mm, width 9 mm, 70 teeth (parts-sources; accepted not purchased).
+//   - Pulley proposals 24/48 (ratio 2); nominal center distance 49.6723 mm; input center XZ [49.6723, 123] (parameters.transmission).
+//   - Complete pulley/belt/clutch inboard shift 4 mm together (parameters.transmission).
+//   - 8 mm independent shafts; 608 bearings nominal ID/OD/W [8, 22, 7]; seat_diameter 22.2 trial (parameters.bearings).
+//   - Wheel bearing centers Y ±51 and ±99 (span 48 mm); input bearings |Y|=70 and 96 (span 26 mm).
+//   - Wheel shaft extends inward to |Y|=35 (113 mm length) — PLAN S01; wheel/hub positions remain fixed.
+//   - Input shaft |Y|=52…101; carriage slots 3 mm total travel (±1.5 mm); slot size XY [7.4, 4.4] (parameters).
+//   - ComInTec 00.25 DF d8 T1 clutch candidate — schematic only; torque/duty HOLD.
+//   - Per side load path: horn → input shaft/pulley → belt → output pulley/limiter → live wheel shaft/clamp hub.
+//   - Do NOT invent tooth geometry, retention, or torque settings here.
+// Prune prior design_v* only after this VERSION is proven (Design Ops).
+{
+  "version": 1,
+  "name": "Roller-300 design_v0_1_hardware_refs (VERSION 0.1 scaffold)",
+  "starting_state": "empty",
+  "steps": []
+}

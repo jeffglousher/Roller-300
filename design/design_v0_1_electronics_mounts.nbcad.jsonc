@@ -1,0 +1,19 @@
+// Roller-300 design_v0_1_electronics_mounts — modular Design Ops chapter (VERSION 0.1)
+// Role: S04 — Direct mounting and service paths
+// SoT: this .nbcad.jsonc (JSONC-first). Companion: design/gen_meta.json + design/VERSION.
+// Replay: blank document only. Shared datums: origin planes XY/XZ/YZ (mm; X fwd, Y left, Z up; ground origin below axle midpoint; axle Z=123).
+// Native master Roller-300.nbcad remains editable CAD; this tree is AI-iterate SoT going forward.
+// Do not invent unverified fit numbers — nominals below from PLAN.md / parameters.json / parts-sources.json only.
+// Intended geometry (scaffold — steps empty until filled):
+//   - Shell-direct: low battery platform with strap passages/stops; Pi and Pixracer shelves; forward thermal cradle; front distance-sensor rails; rear harness saddles (PLAN S04).
+//   - Battery allowance 90×85×30 UNMEASURED; Pi bare-board nominal only; Pixracer 36×36 and distance modules 20×12 footprint-only (PLAN S04).
+//   - TOPDON TC002C Duo reference moved 3 mm forward and 3 mm down vs prior — nominal device envelope; received measurements govern (PLAN S04).
+//   - Keep wiring away from belts and shafts. Cameras forward; rear ranging future option.
+//   - Board retainers, sensor retention, cable bends, charging-contact capture remain detailing gates — do not invent fit numbers.
+// Prune prior design_v* only after this VERSION is proven (Design Ops).
+{
+  "version": 1,
+  "name": "Roller-300 design_v0_1_electronics_mounts (VERSION 0.1 scaffold)",
+  "starting_state": "empty",
+  "steps": []
+}

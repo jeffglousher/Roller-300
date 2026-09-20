@@ -1,0 +1,21 @@
+// Roller-300 design_v0_1_drive_stack — modular Design Ops chapter (VERSION 0.1)
+// Role: S01/S05 — Drive stack (one populated drive for complete test article)
+// SoT: this .nbcad.jsonc (JSONC-first). Companion: design/gen_meta.json + design/VERSION.
+// Replay: blank document only. Shared datums: origin planes XY/XZ/YZ (mm; X fwd, Y left, Z up; ground origin below axle midpoint; axle Z=123).
+// Native master Roller-300.nbcad remains editable CAD; this tree is AI-iterate SoT going forward.
+// Do not invent unverified fit numbers — nominals below from PLAN.md / parameters.json / parts-sources.json only.
+// Intended geometry (scaffold — steps empty until filled):
+//   - One-side stack for complete test article: supported input + belt + output/limiter + hub + wheel into main shell (PLAN S05).
+//   - Belt: D&D 210-3M-09 (B00ISC4PHG) — pitch 3, pitch length 210, width 9, 70 teeth; centers 49.6723 mm CAD (parts-sources / parameters).
+//   - Pulley tooth geometry HOLD — 24/48 proposed only; HTD3M numerical profile source noted in parts-sources.pulley_profile_source for unpowered fit experiment only.
+//   - Clutch candidate ComInTec 00.25 DF d8 T1 — schematic envelope; supplier assembly/duty HOLD.
+//   - Install endless belt around pulley/shaft assemblies before placing; lower through hatch; seat bearings/caps; set carriage tension; hatch last (PLAN S05).
+//   - Historical first-prints/drive-end-section/ is pinned drive-fit-candidate-2026-09-19 (old carrier/spine) — do NOT mix with shell-first article.
+//   - No powered release; retention and full guarding gates must close first.
+// Prune prior design_v* only after this VERSION is proven (Design Ops).
+{
+  "version": 1,
+  "name": "Roller-300 design_v0_1_drive_stack (VERSION 0.1 scaffold)",
+  "starting_state": "empty",
+  "steps": []
+}

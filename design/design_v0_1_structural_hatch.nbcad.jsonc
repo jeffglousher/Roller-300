@@ -1,0 +1,20 @@
+// Roller-300 design_v0_1_structural_hatch — modular Design Ops chapter (VERSION 0.1)
+// Role: S03 — Structural access hatch
+// SoT: this .nbcad.jsonc (JSONC-first). Companion: design/gen_meta.json + design/VERSION.
+// Replay: blank document only. Shared datums: origin planes XY/XZ/YZ (mm; X fwd, Y left, Z up; ground origin below axle midpoint; axle Z=123).
+// Native master Roller-300.nbcad remains editable CAD; this tree is AI-iterate SoT going forward.
+// Do not invent unverified fit numbers — nominals below from PLAN.md / parameters.json / parts-sources.json only.
+// Intended geometry (scaffold — steps empty until filled):
+//   - Upper curved panel ~120° from same barrel; opening ~180 mm long; 15 mm end bands retained (PLAN S03).
+//   - opening_xy_mm [-69.3, 69.3, -90, 90]; corner_radius_mm 8.3; panel_gap_mm 0.3; lap_mm 8 (parameters.hatch).
+//   - Eight radial M4 stations at ±55° from top and Y=−75,−25,25,75 (parameters.hatch).
+//   - Candidate screws M4×12 90° countersunk; nut_AF_clearance_mm 7.3; nut_thickness_clearance_mm 3.5 (parameters.hatch).
+//   - Both wheel-bearing pairs remain in main shell; hatch must not alter alignment/tension; electronics stay fixed when panel lifts.
+//   - Export review: first-prints/shell-first-review/curved-hatch-axle-vertical.stl — not print-released.
+// Prune prior design_v* only after this VERSION is proven (Design Ops).
+{
+  "version": 1,
+  "name": "Roller-300 design_v0_1_structural_hatch (VERSION 0.1 scaffold)",
+  "starting_state": "empty",
+  "steps": []
+}
