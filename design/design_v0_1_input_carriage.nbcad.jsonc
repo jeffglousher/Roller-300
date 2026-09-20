@@ -1,20 +1,258 @@
 // Roller-300 design_v0_1_input_carriage — modular Design Ops chapter (VERSION 0.1)
-// Role: S02 — Removable input carriage (service/tension)
-// SoT: this .nbcad.jsonc (JSONC-first). Companion: design/gen_meta.json + design/VERSION.
-// Replay: blank document only. Shared datums: origin planes XY/XZ/YZ (mm; X fwd, Y left, Z up; ground origin below axle midpoint; axle Z=123).
-// Native master Roller-300.nbcad remains editable CAD; this tree is AI-iterate SoT going forward.
-// Do not invent unverified fit numbers — nominals below from PLAN.md / parameters.json / parts-sources.json only.
-// Intended geometry (scaffold — steps empty until filled):
-//   - Per side: two bearing supports, caps, servo locating lips, strap passages — not a separate drive-end chassis (PLAN S02).
-//   - Input bearings at |Y|=70 and 96; input axial retention HOLD (parameters.bearings).
-//   - Carriage slots: size XY [7.4, 4.4], corner R1, available translation X ±1.5 mm (parameters.transmission).
-//   - Input caps use recessed M3×30 candidates; travel clearance after limiting cap outside corners to R70 and recessing M3 heads (PLAN S01).
-//   - travel_status: CAD clearance screen only; no qualified belt tension or installed stretch (parameters.transmission).
-//   - Export review candidate exists: first-prints/shell-first-review/left-input-carriage-floor-down.stl (REVIEW ONLY).
-// Prune prior design_v* only after this VERSION is proven (Design Ops).
+// Role: S02 — Removable input carriage — minimal rail/slot coupon
+// SoT: this .nbcad.jsonc. Replay: blank document only.
+// Slot travel ±1.5 and size [7.4,4.4] from parameters.transmission. Slot cut length 10.4 = 7.4+3.0.
+// VERIFY: add R1 corner (parameters.slot_corner_radius) — not applied in this coupon cut.
+// Full carriage still REVIEW STL only under first-prints/shell-first-review/.
 {
   "version": 1,
-  "name": "Roller-300 design_v0_1_input_carriage (VERSION 0.1 scaffold)",
+  "name": "Roller-300 design_v0_1_input_carriage (VERSION 0.1) \u2014 rail slot coupon",
   "starting_state": "empty",
-  "steps": []
+  "steps": [
+    {
+      "chapter": "Shared refs \u2014 carriage travel",
+      "note": "parameters.transmission: carriage_slot_size_xy [7.4, 4.4], slot_corner_radius 1, available_translation_x [-1.5, 1.5]. travel_status: CAD clearance screen only."
+    },
+    {
+      "id": "ref_rail_xy",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "carriage_rail_coupon_bed / shared",
+          "distance": 0.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "Carriage rail slot travel coupon",
+      "note": "Minimal coupon: rail block with slot 7.4\u00d74.4 (parameters) and engraved travel stops at \u00b11.5 mm intent via slot length = 7.4 + 3.0 = 10.4 along X (slot width 4.4 in Y). Corner R1 from parameters. Slot = fastener travel window; VERIFY against native carriage before locking."
+    },
+    {
+      "id": "rail_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "carriage_rail_coupon_block",
+          "plane": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "rail_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "rail_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": -15,
+            "y": -8
+          },
+          "corner_hint": {
+            "x": 15,
+            "y": 8
+          },
+          "width_mm": 30.0,
+          "height_mm": 16.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "rail_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "rail_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "rail_ex",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "carriage_rail_coupon_block",
+          "profile_indices": [
+            0
+          ],
+          "operation": "new_body",
+          "extent": {
+            "type": "distance",
+            "distance": 6.0
+          },
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": []
+        }
+      }
+    },
+    {
+      "let": {
+        "rail_feat": {
+          "$select": {
+            "from": {
+              "$ref": "rail_ex"
+            },
+            "path": "/document/features",
+            "take": "last",
+            "pointer": "/id"
+          }
+        }
+      }
+    },
+    {
+      "let": {
+        "carriage_rail_coupon_body": {
+          "$select": {
+            "from": {
+              "$ref": "rail_ex"
+            },
+            "path": "/scene/bodies",
+            "where": {
+              "/feature_id": {
+                "$ref": "rail_feat"
+              }
+            },
+            "take": "one"
+          }
+        }
+      }
+    },
+    {
+      "id": "slot_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "carriage_slot_travel",
+          "plane": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "slot_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "slot_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": -5.2,
+            "y": -2.2
+          },
+          "corner_hint": {
+            "x": 5.2,
+            "y": 2.2
+          },
+          "width_mm": 10.4,
+          "height_mm": 4.4,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "slot_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "slot_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "slot_cut",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "carriage_slot_travel",
+          "profile_indices": [
+            0
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 6.0
+          },
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": [
+            {
+              "$ref": "carriage_rail_coupon_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "VERIFY notes",
+      "note": "Slot is rectangular 10.4\u00d74.4 (= 7.4 fastener window + \u00b11.5 travel). parameters.slot_corner_radius 1 not applied yet \u2014 VERIFY/add sketch fillets to R1 before locking. Full carriage body/caps/servo lips remain empty; see first-prints/shell-first-review/left-input-carriage-*.stl for REVIEW ONLY."
+    }
+  ],
+  "checks": [
+    {
+      "id": "final_scene",
+      "call": {
+        "group": "solid/check",
+        "operation": "solid_scene",
+        "arguments": {}
+      },
+      "expect": {
+        "/errors": []
+      }
+    }
+  ]
 }

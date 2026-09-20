@@ -1,21 +1,454 @@
 // Roller-300 design_v0_1_barrel_shell — modular Design Ops chapter (VERSION 0.1)
-// Role: S02 — Primary barrel shell
+// Role: S02 — Primary barrel shell — FIRST shell-adjacent coupon (not full barrel)
 // SoT: this .nbcad.jsonc (JSONC-first). Companion: design/gen_meta.json + design/VERSION.
-// Replay: blank document only. Shared datums: origin planes XY/XZ/YZ (mm; X fwd, Y left, Z up; ground origin below axle midpoint; axle Z=123).
-// Native master Roller-300.nbcad remains editable CAD; this tree is AI-iterate SoT going forward.
-// Do not invent unverified fit numbers — nominals below from PLAN.md / parameters.json / parts-sources.json only.
-// Intended geometry (scaffold — steps empty until filled):
-//   - Barrel OD 160 / ID 152 / length_y 210; y_bounds ±105; nominal skin 4 mm; axle_z 123 (parameters.body).
-//   - Four integral wheel-bearing saddles; short carriage rails; integral end guards; removable wheel caps.
-//   - Bearing seats D22.2 trial coupon dimensions; axial pockets 7.2 mm; shoulder clear bore 18 mm (parameters.bearings).
-//   - Wheel caps and carriage joints use M4; captive-nut fits require coupon verification (PLAN S02).
-//   - Wheel retention stack (PLAN): inboard collar + 3 mm steel inner-race spacer + outboard 0.5 mm shim + 10 mm steel spacer vs clamping hub.
-//   - Nominal belly clearance 43 mm unloaded geometric (parameters.body) — not a finger-clearance claim.
-//   - Tire inner faces Y=±110 → nominal 5 mm gap to barrel ends; deformation/runout/play consume it (PLAN datum).
-// Prune prior design_v* only after this VERSION is proven (Design Ops).
+// Replay: blank document only. Shared datums: mm; X fwd, Y left, Z up; axle Z=123 vehicle.
+// Coupon: single wheel-bearing saddle at local origin; map to vehicle Y=±51 / ±99 (parameters.bearings.wheel_centers_y).
+// Seat TRIAL D22.2 × 7.2; shoulder clear bore D18 (parameters.bearings). Full OD160/ID152/L210 barrel deferred.
+// Do not invent clearances beyond parameters/PLAN.
 {
   "version": 1,
-  "name": "Roller-300 design_v0_1_barrel_shell (VERSION 0.1 scaffold)",
+  "name": "Roller-300 design_v0_1_barrel_shell (VERSION 0.1) \u2014 wheel-seat saddle coupon",
   "starting_state": "empty",
-  "steps": []
+  "steps": [
+    {
+      "chapter": "Shared refs \u2014 wheel axle & seat",
+      "note": "Coupon local origin = one wheel-bearing seat center. Vehicle mapping (PLAN/parameters): axle Z=123; wheel_centers_y \u00b151 and \u00b199 (span 48). This coupon is ONE seat at local (0,0,0); place copies at vehicle Y later. Do not invent clearances."
+    },
+    {
+      "id": "ref_saddle_mid_xy",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "wheel_seat_saddle_midplane_xy / shared",
+          "distance": 0.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_saddle_axle_xz",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "wheel_axle_plane_xz / shared",
+          "distance": 0.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_vehicle_y51_note",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "vehicle_wheel_Y_pm51_map_note / shared",
+          "distance": 51.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_vehicle_y99_note",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "vehicle_wheel_Y_pm99_map_note / shared",
+          "distance": 99.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "Wheel-bearing saddle coupon (D22.2\u00d77.2 trial)",
+      "note": "Shell-adjacent coupon \u2014 not full OD160/ID152/L210 barrel. Block ~36\u00d716\u00d728 with trial seat D22.2\u00d77.2 and shoulder clear bore D18 (parameters.bearings). TRIAL seat_status. Mapping: local Y depth = vehicle axial; local Z up matches vehicle once translated to Z=123."
+    },
+    {
+      "id": "saddle_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "wheel_seat_saddle_block",
+          "plane": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "id": "saddle_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "saddle_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": -18,
+            "y": -14
+          },
+          "corner_hint": {
+            "x": 18,
+            "y": 14
+          },
+          "width_mm": 36.0,
+          "height_mm": 28.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "saddle_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "saddle_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "saddle_ex",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "wheel_seat_saddle_block",
+          "profile_indices": [
+            0
+          ],
+          "operation": "new_body",
+          "extent": {
+            "type": "distance",
+            "distance": 16.0
+          },
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": []
+        }
+      }
+    },
+    {
+      "let": {
+        "saddle_feat": {
+          "$select": {
+            "from": {
+              "$ref": "saddle_ex"
+            },
+            "path": "/document/features",
+            "take": "last",
+            "pointer": "/id"
+          }
+        }
+      }
+    },
+    {
+      "let": {
+        "wheel_seat_saddle_body": {
+          "$select": {
+            "from": {
+              "$ref": "saddle_ex"
+            },
+            "path": "/scene/bodies",
+            "where": {
+              "/feature_id": {
+                "$ref": "saddle_feat"
+              }
+            },
+            "take": "one"
+          }
+        }
+      }
+    },
+    {
+      "id": "saddle_center_y",
+      "call": {
+        "group": "solid/body",
+        "operation": "solid_move_copy",
+        "arguments": {
+          "body_ids": [
+            {
+              "$ref": "wheel_seat_saddle_body",
+              "pointer": "/id"
+            }
+          ],
+          "translation": {
+            "x": 0.0,
+            "y": -8.0,
+            "z": 0.0
+          },
+          "pivot": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "copy": false
+        }
+      }
+    },
+    {
+      "id": "ref_saddle_outboard",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "wheel_seat_outboard_face / shared",
+          "distance": 8.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "id": "seat_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "wheel_bearing_trial_seat",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "ref_saddle_outboard"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "seat_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "seat_circ",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "edge_hint": {
+            "x": 11.1,
+            "y": 0.0
+          },
+          "diameter_text": "22.2",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "seat_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "seat_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "seat_cut",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "wheel_bearing_trial_seat",
+          "profile_indices": [
+            0
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 7.2
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {
+              "$ref": "wheel_seat_saddle_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "thru_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "wheel_shoulder_clear_bore",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "ref_saddle_outboard"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "thru_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "thru_circ",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "edge_hint": {
+            "x": 9.0,
+            "y": 0.0
+          },
+          "diameter_text": "18.0",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "thru_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "thru_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "thru_cut",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "wheel_shoulder_clear_bore",
+          "profile_indices": [
+            0
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 16.0
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {
+              "$ref": "wheel_seat_saddle_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "final_scene",
+      "call": {
+        "group": "solid/check",
+        "operation": "solid_scene",
+        "arguments": {}
+      },
+      "expect": {
+        "/errors": []
+      }
+    }
+  ]
 }

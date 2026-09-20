@@ -1,25 +1,723 @@
 // Roller-300 design_v0_1_hardware_refs — modular Design Ops chapter (VERSION 0.1)
-// Role: S01 — Hardware references and load paths
+// Role: S01 — Hardware references and load paths — FIRST PRINTABLE COUPONS
 // SoT: this .nbcad.jsonc (JSONC-first). Companion: design/gen_meta.json + design/VERSION.
 // Replay: blank document only. Shared datums: origin planes XY/XZ/YZ (mm; X fwd, Y left, Z up; ground origin below axle midpoint; axle Z=123).
 // Native master Roller-300.nbcad remains editable CAD; this tree is AI-iterate SoT going forward.
-// Do not invent unverified fit numbers — nominals below from PLAN.md / parameters.json / parts-sources.json only.
-// Intended geometry (scaffold — steps empty until filled):
-//   - Owned INJORA INJS035-360 partial case reference (geometry HOLD for horn/ears/clutch details).
-//   - Accepted belt envelope: D&D 210-3M-09 / Amazon B00ISC4PHG — pitch 3 mm, pitch length 210 mm, width 9 mm, 70 teeth (parts-sources; accepted not purchased).
-//   - Pulley proposals 24/48 (ratio 2); nominal center distance 49.6723 mm; input center XZ [49.6723, 123] (parameters.transmission).
-//   - Complete pulley/belt/clutch inboard shift 4 mm together (parameters.transmission).
-//   - 8 mm independent shafts; 608 bearings nominal ID/OD/W [8, 22, 7]; seat_diameter 22.2 trial (parameters.bearings).
-//   - Wheel bearing centers Y ±51 and ±99 (span 48 mm); input bearings |Y|=70 and 96 (span 26 mm).
-//   - Wheel shaft extends inward to |Y|=35 (113 mm length) — PLAN S01; wheel/hub positions remain fixed.
-//   - Input shaft |Y|=52…101; carriage slots 3 mm total travel (±1.5 mm); slot size XY [7.4, 4.4] (parameters).
-//   - ComInTec 00.25 DF d8 T1 clutch candidate — schematic only; torque/duty HOLD.
-//   - Per side load path: horn → input shaft/pulley → belt → output pulley/limiter → live wheel shaft/clamp hub.
-//   - Do NOT invent tooth geometry, retention, or torque settings here.
+// Nominals ONLY from PLAN.md / parameters.json — all seats labeled TRIAL/COUPON; not released fits.
+// Coupons in this chapter:
+//   1) bearing_seat_coupon — plate 40×40×8; seat D22.2 × depth 7.2 (trial); through bore D18 shoulder clear (parameters.bearings).
+//   2) m4_nut_coupon — plate; hex pocket AF 7.3 × depth 3.5 (parameters.hatch M4 hatch candidate).
+//   3) M3 captive-nut — VERIFY only (AF/depth absent from PLAN/parameters).
 // Prune prior design_v* only after this VERSION is proven (Design Ops).
 {
   "version": 1,
-  "name": "Roller-300 design_v0_1_hardware_refs (VERSION 0.1 scaffold)",
+  "name": "Roller-300 design_v0_1_hardware_refs (VERSION 0.1) \u2014 608 seat + M4 nut coupons",
   "starting_state": "empty",
-  "steps": []
+  "steps": [
+    {
+      "chapter": "Shared refs \u2014 coupon bed",
+      "note": "Named shared refs before children. Origin planes XY/XZ/YZ; mm; X fwd, Y left, Z up. Coupon printed flat on XY. Axle Z=123 is vehicle datum (comment only on this plate)."
+    },
+    {
+      "id": "ref_coupon_bed_xy",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "coupon_bed_xy / shared",
+          "distance": 0.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_axle_height_note",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "vehicle_axle_z123_note / shared",
+          "distance": 123.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "608 bearing trial seat coupon",
+      "note": "TRIAL coupon only \u2014 parameters.bearings seat_diameter 22.2, wheel_axial_seat_width 7.2, wheel_shoulder_clear_bore 18. Plate ~40\u00d740\u00d78. Shoulder: through-bore D18 leaves a locating land under the outer race within the 7.2 pocket; VERIFY contact vs purchased 608 drawing. seat_status: Trial clearance; coupon required. NOT a released fit."
+    },
+    {
+      "id": "brg_plate_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "bearing_seat_coupon_plate",
+          "plane": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "brg_plate_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "brg_plate_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": -20,
+            "y": -20
+          },
+          "corner_hint": {
+            "x": 20,
+            "y": 20
+          },
+          "width_mm": 40,
+          "height_mm": 40,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "brg_plate_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "brg_plate_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "brg_plate_ex",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "bearing_seat_coupon_plate",
+          "profile_indices": [
+            0
+          ],
+          "operation": "new_body",
+          "extent": {
+            "type": "distance",
+            "distance": 8.0
+          },
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": []
+        }
+      }
+    },
+    {
+      "let": {
+        "brg_plate_feat": {
+          "$select": {
+            "from": {
+              "$ref": "brg_plate_ex"
+            },
+            "path": "/document/features",
+            "take": "last",
+            "pointer": "/id"
+          }
+        }
+      }
+    },
+    {
+      "let": {
+        "bearing_seat_coupon_body": {
+          "$select": {
+            "from": {
+              "$ref": "brg_plate_ex"
+            },
+            "path": "/scene/bodies",
+            "where": {
+              "/feature_id": {
+                "$ref": "brg_plate_feat"
+              }
+            },
+            "take": "one"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_brg_top",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "bearing_seat_coupon_top / shared",
+          "distance": 8.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "brg_seat_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "bearing_seat_trial_pocket",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "ref_brg_top"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "brg_seat_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "brg_seat_circ",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 0,
+            "y": 0
+          },
+          "edge_hint": {
+            "x": 11.1,
+            "y": 0
+          },
+          "diameter_text": "22.2",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "brg_seat_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "brg_seat_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "brg_seat_cut",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "bearing_seat_trial_pocket",
+          "profile_indices": [
+            0
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 7.2
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {
+              "$ref": "bearing_seat_coupon_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "brg_thru_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "bearing_shoulder_clear_bore",
+          "plane": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "brg_thru_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "brg_thru_circ",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 0,
+            "y": 0
+          },
+          "edge_hint": {
+            "x": 9.0,
+            "y": 0
+          },
+          "diameter_text": "18.0",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "brg_thru_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "brg_thru_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "brg_thru_cut",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "bearing_shoulder_clear_bore",
+          "profile_indices": [
+            0
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 8.0
+          },
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": [
+            {
+              "$ref": "bearing_seat_coupon_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "M4 hatch captive-nut trial coupon",
+      "note": "COUPON \u2014 PLAN S03 / parameters.hatch: nut_AF_clearance_mm 7.3 \u00d7 nut_thickness_clearance_mm 3.5 deep; screw_candidate M4\u00d712 90\u00b0 countersunk (head/preload VERIFY). M3 captive-nut AF not in parameters/PLAN \u2014 second pad left as VERIFY scaffold only (no invented AF)."
+    },
+    {
+      "id": "nut_plate_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "m4_nut_coupon_plate",
+          "plane": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "nut_plate_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "nut_plate_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 30,
+            "y": -15
+          },
+          "corner_hint": {
+            "x": 70,
+            "y": 15
+          },
+          "width_mm": 40,
+          "height_mm": 30,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "nut_plate_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "nut_plate_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "nut_plate_ex",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "m4_nut_coupon_plate",
+          "profile_indices": [
+            0
+          ],
+          "operation": "new_body",
+          "extent": {
+            "type": "distance",
+            "distance": 6.0
+          },
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": []
+        }
+      }
+    },
+    {
+      "let": {
+        "nut_plate_feat": {
+          "$select": {
+            "from": {
+              "$ref": "nut_plate_ex"
+            },
+            "path": "/document/features",
+            "take": "last",
+            "pointer": "/id"
+          }
+        }
+      }
+    },
+    {
+      "let": {
+        "m4_nut_coupon_body": {
+          "$select": {
+            "from": {
+              "$ref": "nut_plate_ex"
+            },
+            "path": "/scene/bodies",
+            "where": {
+              "/feature_id": {
+                "$ref": "nut_plate_feat"
+              }
+            },
+            "take": "one"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_nut_top",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "m4_nut_coupon_top / shared",
+          "distance": 6.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "m4_hex_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "m4_captive_nut_hex_pocket",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "ref_nut_top"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "m4_hex_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "m4_hex_e0",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_line_locked",
+        "arguments": {
+          "from": {
+            "x": 53.65,
+            "y": 2.1073284825421337
+          },
+          "to_hint": {
+            "x": 50.0,
+            "y": 4.214656965084268
+          },
+          "length_text": "4.214656965084267",
+          "angle_text": "149.99999999999997",
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "m4_hex_e1",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_line_locked",
+        "arguments": {
+          "from": {
+            "x": 50.0,
+            "y": 4.214656965084268
+          },
+          "to_hint": {
+            "x": 46.35,
+            "y": 2.1073284825421337
+          },
+          "length_text": "4.214656965084267",
+          "angle_text": "-149.99999999999997",
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "m4_hex_e2",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_line_locked",
+        "arguments": {
+          "from": {
+            "x": 46.35,
+            "y": 2.1073284825421337
+          },
+          "to_hint": {
+            "x": 46.35,
+            "y": -2.1073284825421346
+          },
+          "length_text": "4.214656965084268",
+          "angle_text": "-90.0",
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "m4_hex_e3",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_line_locked",
+        "arguments": {
+          "from": {
+            "x": 46.35,
+            "y": -2.1073284825421346
+          },
+          "to_hint": {
+            "x": 50.0,
+            "y": -4.214656965084268
+          },
+          "length_text": "4.2146569650842665",
+          "angle_text": "-30.000000000000004",
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "m4_hex_e4",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_line_locked",
+        "arguments": {
+          "from": {
+            "x": 50.0,
+            "y": -4.214656965084268
+          },
+          "to_hint": {
+            "x": 53.65,
+            "y": -2.107328482542136
+          },
+          "length_text": "4.214656965084266",
+          "angle_text": "29.999999999999993",
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "m4_hex_e5",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_line_locked",
+        "arguments": {
+          "from": {
+            "x": 53.65,
+            "y": -2.107328482542136
+          },
+          "to_hint": {
+            "x": 53.65,
+            "y": 2.1073284825421337
+          },
+          "length_text": "4.21465696508427",
+          "angle_text": "90.0",
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "m4_hex_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "m4_hex_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "m4_hex_cut",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "m4_captive_nut_hex_pocket",
+          "profile_indices": [
+            0
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 3.5
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {
+              "$ref": "m4_nut_coupon_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "M3 captive-nut VERIFY (no geometry)",
+      "note": "VERIFY missing: M3 nut AF and pocket depth are not stated in parameters.json / PLAN.md (only M4 hatch 7.3\u00d73.5). Do not invent \u2014 measure hardware then add m3_captive_nut coupon pocket."
+    }
+  ],
+  "checks": [
+    {
+      "id": "final_scene",
+      "call": {
+        "group": "solid/check",
+        "operation": "solid_scene",
+        "arguments": {}
+      },
+      "expect": {
+        "/errors": []
+      }
+    }
+  ]
 }

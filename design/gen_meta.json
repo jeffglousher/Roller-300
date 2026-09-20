@@ -3,7 +3,7 @@
   "architecture": "shell-first modular Design Ops cut",
   "native_master": "Roller-300.nbcad",
   "ai_sot": "design/*.nbcad.jsonc",
-  "revision_note": "First modular cut: scaffolds only; geometry still in native master until chapters filled.",
+  "revision_note": "VERSION 0.1 coupon fill: hardware_refs (608 seat + M4 nut), barrel_shell (wheel-seat saddle), drive_stack (24/48 pitch envelopes + belt torus + \u00d88 stubs), input_carriage (rail/slot). structural_hatch + electronics_mounts remain empty scaffolds. Not a print release.",
   "modules": [
     {
       "file": "design_v0_1_hardware_refs.nbcad.jsonc",
@@ -64,5 +64,21 @@
     "teeth": 70
   },
   "parameters_revision": "shell-first-2026-09-19",
-  "git_pin_at_scaffold": "b85aa13"
+  "git_pin_at_scaffold": "736e106",
+  "coupon_fill": {
+    "date_local": "2026-09-20",
+    "print_today": [
+      "design_v0_1_hardware_refs.nbcad.jsonc",
+      "design_v0_1_barrel_shell.nbcad.jsonc",
+      "design_v0_1_input_carriage.nbcad.jsonc"
+    ],
+    "envelope_only": [
+      "design_v0_1_drive_stack.nbcad.jsonc"
+    ],
+    "still_empty": [
+      "design_v0_1_structural_hatch.nbcad.jsonc",
+      "design_v0_1_electronics_mounts.nbcad.jsonc"
+    ],
+    "next_fill_target": "structural_hatch curved panel + M4 stations from parameters.hatch after coupon print feedback"
+  }
 }
