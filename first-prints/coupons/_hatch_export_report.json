@@ -1,0 +1,86 @@
+{
+  "started": "2026-09-20 16:26:07 CT",
+  "script": "design_v0_1_structural_hatch.nbcad.jsonc",
+  "replay_ok": true,
+  "replay": {
+    "steps_completed": 62,
+    "checks_completed": 1,
+    "name": "Roller-300 design_v0_1_structural_hatch (VERSION 0.1) \u2014 hatch lap/M4 + panel-arc coupons",
+    "elapsed_ms": 282
+  },
+  "jobs": [
+    {
+      "stem": "hatch-lap-m4-coupon",
+      "body_id": 1,
+      "body": {
+        "bbox_max": [
+          26.0,
+          25.0,
+          8.0
+        ],
+        "bbox_min": [
+          -10.0,
+          -25.0,
+          0.0
+        ],
+        "id": 1,
+        "name": "Body1",
+        "triangle_count": 60,
+        "vertex_count": 180
+      },
+      "files": [
+        {
+          "fmt": "3mf",
+          "ok": true,
+          "path": "/workspace/Roller-300-clone/first-prints/coupons/hatch-lap-m4-coupon.3mf",
+          "size": 2253,
+          "byte_length": 2253
+        },
+        {
+          "fmt": "stl",
+          "ok": true,
+          "path": "/workspace/Roller-300-clone/first-prints/coupons/hatch-lap-m4-coupon.stl",
+          "size": 3084,
+          "byte_length": 3084
+        }
+      ]
+    },
+    {
+      "stem": "hatch-panel-arc-coupon",
+      "body_id": 5,
+      "body": {
+        "bbox_max": [
+          200.0,
+          20.0,
+          0.0
+        ],
+        "bbox_min": [
+          182.25555419921875,
+          -20.0,
+          -45.88611602783203
+        ],
+        "id": 5,
+        "name": "Body5",
+        "triangle_count": 64,
+        "vertex_count": 192
+      },
+      "files": [
+        {
+          "fmt": "3mf",
+          "ok": true,
+          "path": "/workspace/Roller-300-clone/first-prints/coupons/hatch-panel-arc-coupon.3mf",
+          "size": 2439,
+          "byte_length": 2439
+        },
+        {
+          "fmt": "stl",
+          "ok": true,
+          "path": "/workspace/Roller-300-clone/first-prints/coupons/hatch-panel-arc-coupon.stl",
+          "size": 3284,
+          "byte_length": 3284
+        }
+      ]
+    }
+  ],
+  "finished": "2026-09-20 16:26:07 CT"
+}

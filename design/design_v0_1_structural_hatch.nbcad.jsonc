@@ -1,20 +1,970 @@
 // Roller-300 design_v0_1_structural_hatch — modular Design Ops chapter (VERSION 0.1)
-// Role: S03 — Structural access hatch
+// Role: S03 — Structural access hatch — FIRST PRINTABLE hatch-adjacent coupons (not full hatch)
 // SoT: this .nbcad.jsonc (JSONC-first). Companion: design/gen_meta.json + design/VERSION.
-// Replay: blank document only. Shared datums: origin planes XY/XZ/YZ (mm; X fwd, Y left, Z up; ground origin below axle midpoint; axle Z=123).
-// Native master Roller-300.nbcad remains editable CAD; this tree is AI-iterate SoT going forward.
-// Do not invent unverified fit numbers — nominals below from PLAN.md / parameters.json / parts-sources.json only.
-// Intended geometry (scaffold — steps empty until filled):
-//   - Upper curved panel ~120° from same barrel; opening ~180 mm long; 15 mm end bands retained (PLAN S03).
-//   - opening_xy_mm [-69.3, 69.3, -90, 90]; corner_radius_mm 8.3; panel_gap_mm 0.3; lap_mm 8 (parameters.hatch).
-//   - Eight radial M4 stations at ±55° from top and Y=−75,−25,25,75 (parameters.hatch).
-//   - Candidate screws M4×12 90° countersunk; nut_AF_clearance_mm 7.3; nut_thickness_clearance_mm 3.5 (parameters.hatch).
-//   - Both wheel-bearing pairs remain in main shell; hatch must not alter alignment/tension; electronics stay fixed when panel lifts.
-//   - Export review: first-prints/shell-first-review/curved-hatch-axle-vertical.stl — not print-released.
+// Replay: blank document only. Shared datums: mm; X fwd, Y left, Z up; axle Z=123 vehicle.
+// Coupons in this chapter:
+//   1) hatch_lap_m4_coupon — developed plate ~50×36×8; lap_mm 8 ledge recess; panel_gap_mm 0.3 kerf; M4 hex AF7.3×3.5 on thick land at local (-5,0).
+//   2) hatch_panel_arc_coupon — R76→R80 × Y±20 revolved 35° (OD160/ID152 skin segment); envelope only, no fasteners.
+// Named refs match hatch params: opening ±69.3/±90, end bands vs Y±105, bolt_y ±75/±25, boss chord X at ±55° on OD, lap 8, gap 0.3.
+// M4 clearance/countersink diameters ABSENT — VERIFY (screw_candidate string only). Not print-released; full hatch HOLD (PLAN S05).
 // Prune prior design_v* only after this VERSION is proven (Design Ops).
 {
   "version": 1,
-  "name": "Roller-300 design_v0_1_structural_hatch (VERSION 0.1 scaffold)",
+  "name": "Roller-300 design_v0_1_structural_hatch (VERSION 0.1) \u2014 hatch lap/M4 + panel-arc coupons",
   "starting_state": "empty",
-  "steps": []
+  "steps": [
+    {
+      "chapter": "Shared refs \u2014 hatch params (parameters.hatch / PLAN S03)",
+      "note": "Named shared refs before children. Vehicle: mm; X fwd, Y left, Z up; axle Z=123; barrel OD160/ID152/L210 (parameters.body). Hatch: ~120\u00b0 upper panel; opening_xy_mm [-69.3,69.3,-90,90] (=R80\u00b7sin60\u00b0 chord \u00d7 Y\u00b190 with 15 mm end bands on L210); corner_radius_mm 8.3; panel_gap_mm 0.3; lap_mm 8; nut_boss_angles_deg \u00b155; bolt_y_mm [-75,-25,25,75]; nut AF7.3\u00d73.5. Coupon bodies below are TRIAL/print-today \u2014 not full 180 mm hatch, not print-released."
+    },
+    {
+      "id": "ref_hatch_bed_xy",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "hatch_coupon_bed_xy / shared",
+          "distance": 0.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_axle_z123",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "vehicle_axle_z123_note / shared",
+          "distance": 123.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_open_xmin",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "hatch_opening_xmin_yz / shared",
+          "distance": -69.3,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "yz"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_open_xmax",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "hatch_opening_xmax_yz / shared",
+          "distance": 69.3,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "yz"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_open_ymin",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "hatch_opening_ymin_xz / shared",
+          "distance": -90.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_open_ymax",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "hatch_opening_ymax_xz / shared",
+          "distance": 90.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_body_ymin",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "hatch_end_band_body_ymin_xz / shared",
+          "distance": -105.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_body_ymax",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "hatch_end_band_body_ymax_xz / shared",
+          "distance": 105.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_bolt_ym75",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "hatch_bolt_y_m75_xz / shared",
+          "distance": -75.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_bolt_ym25",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "hatch_bolt_y_m25_xz / shared",
+          "distance": -25.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_bolt_yp25",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "hatch_bolt_y_p25_xz / shared",
+          "distance": 25.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_bolt_yp75",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "hatch_bolt_y_p75_xz / shared",
+          "distance": 75.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_boss_xp55",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "hatch_boss_chord_x_p55_od_yz / shared",
+          "distance": 65.5321635431,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "yz"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_boss_xm55",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "hatch_boss_chord_x_m55_od_yz / shared",
+          "distance": -65.5321635431,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "yz"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_lap_x8",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "hatch_lap_mm8_developed_yz / shared",
+          "distance": 8.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "yz"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_gap_x03",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "hatch_panel_gap_mm03_developed_yz / shared",
+          "distance": 0.3,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "yz"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "Angle / corner / screw VERIFY notes (no invented fits)",
+      "note": "nut_boss_angles_deg \u00b155 from top: chord planes above use X=\u00b1R_od\u00b7sin(55\u00b0) on OD160 as map notes only (not seats). Full hatch span ~120\u00b0 \u2192 opening X\u00b169.3 = R80\u00b7sin(60\u00b0). corner_radius_mm 8.3 is projected opening corner \u2014 not filleted on this coupon. Screw candidate M4\u00d712 90\u00b0 countersunk: head/countersink/clearance diameters ABSENT from parameters \u2014 VERIFY with purchased hardware; this chapter cuts only the stated nut AF7.3\u00d73.5 pocket. Preload / PETG creep / repeated opening VERIFY before any structural claim (PLAN S03)."
+    },
+    {
+      "chapter": "hatch_lap_m4_coupon \u2014 printable developed lap + M4 nut station",
+      "note": "TRIAL coupon only. Plate ~50\u00d736\u00d78 on XY (print flat). Local Y maps to vehicle axial (bolt pitch 50 mm between stations). Lap ledge width lap_mm=8 at local X=0..8 (parameters.hatch) with 2 mm recess. Developed panel_gap_mm=0.3 kerf at X=8..8.3. Captive nut hex AF7.3 \u00d7 depth 3.5 centered at local (-5,0) on full-thickness land (not on thinned lap). One station represents the 8\u00d7 pattern at vehicle Y\u2208{\u221275,\u221225,25,75} \u00d7 angles \u00b155\u00b0 \u2014 place copies later. NOT released fit; NOT full curved hatch."
+    },
+    {
+      "id": "lap_plate_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "hatch_lap_m4_coupon_plate",
+          "plane": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "lap_plate_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "lap_plate_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": -10,
+            "y": -25
+          },
+          "corner_hint": {
+            "x": 26,
+            "y": 25
+          },
+          "width_mm": 36.0,
+          "height_mm": 50.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "lap_plate_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "lap_plate_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "lap_plate_ex",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "hatch_lap_m4_coupon_plate",
+          "profile_indices": [
+            0
+          ],
+          "operation": "new_body",
+          "extent": {
+            "type": "distance",
+            "distance": 8.0
+          },
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": []
+        }
+      }
+    },
+    {
+      "let": {
+        "lap_plate_feat": {
+          "$select": {
+            "from": {
+              "$ref": "lap_plate_ex"
+            },
+            "path": "/document/features",
+            "take": "last",
+            "pointer": "/id"
+          }
+        }
+      }
+    },
+    {
+      "let": {
+        "hatch_lap_m4_coupon_body": {
+          "$select": {
+            "from": {
+              "$ref": "lap_plate_ex"
+            },
+            "path": "/scene/bodies",
+            "where": {
+              "/feature_id": {
+                "$ref": "lap_plate_feat"
+              }
+            },
+            "take": "one"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_lap_top",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "hatch_lap_m4_coupon_top / shared",
+          "distance": 8.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "gap_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "hatch_panel_gap_kerf_03",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "ref_lap_top"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "gap_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "gap_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 8.0,
+            "y": -25.0
+          },
+          "corner_hint": {
+            "x": 8.3,
+            "y": 25.0
+          },
+          "width_mm": 0.3,
+          "height_mm": 50.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "gap_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "gap_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "gap_cut",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "hatch_panel_gap_kerf_03",
+          "profile_indices": [
+            0
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 4.0
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {
+              "$ref": "hatch_lap_m4_coupon_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "lap_shelf_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "hatch_lap_ledge_mm8_recess",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "ref_lap_top"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "lap_shelf_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "lap_shelf_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 0.0,
+            "y": -25.0
+          },
+          "corner_hint": {
+            "x": 8.0,
+            "y": 25.0
+          },
+          "width_mm": 8.0,
+          "height_mm": 50.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "lap_shelf_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "lap_shelf_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "lap_shelf_cut",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "hatch_lap_ledge_mm8_recess",
+          "profile_indices": [
+            0
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 2.0
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {
+              "$ref": "hatch_lap_m4_coupon_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "m4_hex_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "hatch_m4_captive_nut_hex_pocket",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "ref_lap_top"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "m4_hex_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "m4_hex_e0",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_line_locked",
+        "arguments": {
+          "from": {
+            "x": -1.35,
+            "y": 2.1073284825421337
+          },
+          "to_hint": {
+            "x": -5.0,
+            "y": 4.214656965084268
+          },
+          "length_text": "4.214656965084268",
+          "angle_text": "150.0",
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "m4_hex_e1",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_line_locked",
+        "arguments": {
+          "from": {
+            "x": -5.0,
+            "y": 4.214656965084268
+          },
+          "to_hint": {
+            "x": -8.65,
+            "y": 2.1073284825421337
+          },
+          "length_text": "4.214656965084268",
+          "angle_text": "-150.0",
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "m4_hex_e2",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_line_locked",
+        "arguments": {
+          "from": {
+            "x": -8.65,
+            "y": 2.1073284825421337
+          },
+          "to_hint": {
+            "x": -8.65,
+            "y": -2.1073284825421346
+          },
+          "length_text": "4.214656965084268",
+          "angle_text": "-90.0",
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "m4_hex_e3",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_line_locked",
+        "arguments": {
+          "from": {
+            "x": -8.65,
+            "y": -2.1073284825421346
+          },
+          "to_hint": {
+            "x": -5.0,
+            "y": -4.214656965084268
+          },
+          "length_text": "4.214656965084268",
+          "angle_text": "-29.999999999999993",
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "m4_hex_e4",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_line_locked",
+        "arguments": {
+          "from": {
+            "x": -5.0,
+            "y": -4.214656965084268
+          },
+          "to_hint": {
+            "x": -1.35,
+            "y": -2.107328482542136
+          },
+          "length_text": "4.214656965084267",
+          "angle_text": "29.99999999999998",
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "m4_hex_e5",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_line_locked",
+        "arguments": {
+          "from": {
+            "x": -1.35,
+            "y": -2.107328482542136
+          },
+          "to_hint": {
+            "x": -1.35,
+            "y": 2.1073284825421337
+          },
+          "length_text": "4.21465696508427",
+          "angle_text": "90.0",
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "m4_hex_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "m4_hex_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "m4_hex_cut",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "hatch_m4_captive_nut_hex_pocket",
+          "profile_indices": [
+            0
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 3.5
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {
+              "$ref": "hatch_lap_m4_coupon_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "M4 clearance / countersink VERIFY (no geometry)",
+      "note": "VERIFY missing: M4 through clearance and 90\u00b0 countersink head envelope are not stated in parameters.hatch (only nut_AF_clearance_mm 7.3, nut_thickness_clearance_mm 3.5, screw_candidate string). Do not invent \u2014 measure purchased M4\u00d712 90\u00b0 CSK then add clearance/countersink cuts. Eight-station circular placement on barrel (\u00b155\u00b0 \u00d7 four Y) remains vehicle mapping via named bolt_y / boss_chord refs above."
+    },
+    {
+      "chapter": "hatch_panel_arc_coupon \u2014 simplified curved skin segment",
+      "note": "TRIAL envelope only \u2014 not full 180 mm / ~120\u00b0 hatch. Radial section R76\u2192R80 (=ID152/OD160, parameters.body nominal_skin 4) \u00d7 local Y\u00b120 (40 mm \u2248 one bolt-pitch half-span). Revolve 35\u00b0 about Y (blank-doc axis). Arc length at OD \u2248 48.9 mm. No fasteners on this body (use hatch_lap_m4_coupon). Map later: vehicle axle Z=123; angular position toward nut_boss \u00b155\u00b0 / opening \u00b160\u00b0. Full hatch review STL remains first-prints/shell-first-review/curved-hatch-axle-vertical.stl (native master) \u2014 not released."
+    },
+    {
+      "id": "arc_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "hatch_panel_arc_radial_section",
+          "plane": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "arc_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "arc_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 76.0,
+            "y": -20.0
+          },
+          "corner_hint": {
+            "x": 80.0,
+            "y": 20.0
+          },
+          "width_mm": 4.0,
+          "height_mm": 40.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "arc_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "arc_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "arc_revolve",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_revolve",
+        "arguments": {
+          "sketch_name": "hatch_panel_arc_radial_section",
+          "profile_indices": [
+            0
+          ],
+          "axis_origin": {
+            "x": 0,
+            "y": 0
+          },
+          "axis_direction": {
+            "x": 0,
+            "y": 1
+          },
+          "axis_line_entity_id": null,
+          "angle_deg": 35.0,
+          "flip": false,
+          "operation": "new_body",
+          "target_body_ids": []
+        }
+      }
+    },
+    {
+      "let": {
+        "arc_feat": {
+          "$select": {
+            "from": {
+              "$ref": "arc_revolve"
+            },
+            "path": "/document/features",
+            "take": "last",
+            "pointer": "/id"
+          }
+        }
+      }
+    },
+    {
+      "let": {
+        "hatch_panel_arc_coupon_body": {
+          "$select": {
+            "from": {
+              "$ref": "arc_revolve"
+            },
+            "path": "/scene/bodies",
+            "where": {
+              "/feature_id": {
+                "$ref": "arc_feat"
+              }
+            },
+            "take": "one"
+          }
+        }
+      }
+    },
+    {
+      "id": "arc_park",
+      "call": {
+        "group": "solid/body",
+        "operation": "solid_move_copy",
+        "arguments": {
+          "body_ids": [
+            {
+              "$ref": "hatch_panel_arc_coupon_body",
+              "pointer": "/id"
+            }
+          ],
+          "translation": {
+            "x": 120.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "pivot": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "copy": false
+        }
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "final_scene",
+      "call": {
+        "group": "solid/check",
+        "operation": "solid_scene",
+        "arguments": {}
+      },
+      "expect": {
+        "/errors": []
+      }
+    }
+  ]
 }

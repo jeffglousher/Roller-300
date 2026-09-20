@@ -2,7 +2,7 @@
 
 STL/3MF exports from Design Ops coupon chapters under `design/`.
 
-**Exported:** 2026-09-20 16:23 CT via headless `nbcad-mcp` (`cad_new_project` → `cad_interface` script path → `solid_export_preflight` → `solid_export_3mf` + `solid_export_stl`). Base commit for scripts: `3de1868`.
+**Exported:** 2026-09-20 16:23 CT (S01/S02 coupons) and 16:26 CT (structural_hatch) via headless `nbcad-mcp` (`cad_new_project` → `cad_interface` script path → `solid_export_preflight` → `solid_export_3mf` + `solid_export_stl`). Base commit for scripts: `3de1868`.
 
 Prefer **3MF** for slicers; STL is the same geometry fallback. All seats are **TRIAL** — not released fits. See PLAN S05.
 
@@ -14,8 +14,10 @@ Prefer **3MF** for slicers; STL is the same geometry fallback. All seats are **T
 | `m4-nut-coupon.3mf` / `.stl` | same | OK | Body4 — M4 captive-nut AF 7.3 × depth 3.5 trial |
 | `wheel-seat-saddle-coupon.3mf` / `.stl` | `design/design_v0_1_barrel_shell.nbcad.jsonc` | OK (28 steps) | Single body saddle coupon |
 | `carriage-rail-slot-coupon.3mf` / `.stl` | `design/design_v0_1_input_carriage.nbcad.jsonc` | OK (18 steps) | Rail slot travel coupon |
+| `hatch-lap-m4-coupon.3mf` / `.stl` | `design/design_v0_1_structural_hatch.nbcad.jsonc` | OK (62 steps) | Developed lap_mm 8 + gap 0.3 + M4 AF7.3×3.5 trial |
+| `hatch-panel-arc-coupon.3mf` / `.stl` | same | OK | R76→R80 × Y±20 × 35° skin envelope (no fasteners) |
 
-`design_v0_1_drive_stack.nbcad.jsonc` skipped for print export (envelope only).
+`design_v0_1_drive_stack.nbcad.jsonc` skipped for print export (envelope only). `design_v0_1_structural_hatch.nbcad.jsonc` lap coupon is print-today TRIAL; panel-arc is envelope-only.
 
 ## Replay notes
 
