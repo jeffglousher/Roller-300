@@ -1366,7 +1366,7 @@
                 0.0
               ]
             },
-            "name": "10033: P06 input spine / belt tension and removable servo saddle",
+            "name": "P02 LEFT removable belt-tension carriage",
             "promoted": true
           },
           {
@@ -1534,7 +1534,7 @@
                 0.0
               ]
             },
-            "name": "10041: U replaceable INJORA saddle / mounting measurements required",
+            "name": "P03 LEFT servo saddle - measurements open",
             "promoted": true
           },
           {
@@ -2505,27 +2505,6 @@
           },
           {
             "body_ids": [
-              10151
-            ],
-            "id": 10088,
-            "local_coordinate_system": {
-              "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "translation": [
-                0.0,
-                0.0,
-                0.0
-              ]
-            },
-            "name": "Body10151 Part",
-            "promoted": true
-          },
-          {
-            "body_ids": [
               10152
             ],
             "id": 10089,
@@ -2542,7 +2521,7 @@
                 0.0
               ]
             },
-            "name": "Body10152 Part",
+            "name": "P02 RIGHT removable belt-tension carriage",
             "promoted": true
           },
           {
@@ -2563,28 +2542,7 @@
                 0.0
               ]
             },
-            "name": "Body10153 Part",
-            "promoted": true
-          },
-          {
-            "body_ids": [
-              10154
-            ],
-            "id": 10091,
-            "local_coordinate_system": {
-              "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "translation": [
-                0.0,
-                0.0,
-                0.0
-              ]
-            },
-            "name": "Body10154 Part",
+            "name": "P03 RIGHT servo saddle - measurements open",
             "promoted": true
           },
           {
@@ -2836,7 +2794,7 @@
                 0.0
               ]
             },
-            "name": "MASTER barrel stock - construction only, excluded from assembly exports",
+            "name": "P01 UNIBODY housing - single structural body, unfinished access",
             "promoted": false
           }
         ],
@@ -5343,27 +5301,6 @@
             "visible": true
           },
           {
-            "component_id": 10088,
-            "grounded": false,
-            "id": 10088,
-            "local_pose": {
-              "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "translation": [
-                0.0,
-                0.0,
-                0.0
-              ]
-            },
-            "name": "Body10151",
-            "parent_occurrence_id": null,
-            "visible": true
-          },
-          {
             "component_id": 10089,
             "grounded": false,
             "id": 10089,
@@ -5402,27 +5339,6 @@
               ]
             },
             "name": "Body10153",
-            "parent_occurrence_id": null,
-            "visible": true
-          },
-          {
-            "component_id": 10091,
-            "grounded": false,
-            "id": 10091,
-            "local_pose": {
-              "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "translation": [
-                0.0,
-                0.0,
-                0.0
-              ]
-            },
-            "name": "Body10154",
             "parent_occurrence_id": null,
             "visible": true
           },
@@ -6539,8 +6455,8 @@
         "density_g_cm3": null,
         "diameter_mm": 1.75,
         "filament_id": null,
-        "filament_type": "REFERENCE",
-        "material_name": "CONSTRUCTION unsplit barrel stock - derive finished cuts before export",
+        "filament_type": "PETG",
+        "material_name": "P01 UNIBODY housing - integrated fixed bearing supports - access and splits unfinished",
         "preset_id": null
       }
     ],
@@ -12408,6 +12324,22 @@
           ]
         },
         "type": "mirror"
+      },
+      {
+        "feature_id": 10463,
+        "keep_tools": false,
+        "name": "Combine39",
+        "operation": "join",
+        "target_body_id": 10171,
+        "tool_body_ids": [
+          10156,
+          10159,
+          10002,
+          10151,
+          10083,
+          10154
+        ],
+        "type": "combine"
       }
     ],
     "cam": {
@@ -12430,13 +12362,13 @@
     "chamfers": [],
     "counters": {
       "chamfer": 0,
-      "extrude": 254,
+      "extrude": 255,
       "fillet": 0,
       "hole": 0,
       "loft": 0,
       "revolve": 4,
       "rib": 0,
-      "sketch": 257,
+      "sketch": 258,
       "sweep": 0
     },
     "datum_planes": [
@@ -12923,6 +12855,76 @@
         "name": "Barrel master axial start Y minus105",
         "source": {
           "distance": 105.0,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            -105.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum_id": 15,
+        "feature_id": 10462,
+        "name": "S01 UNIBODY - continuous barrel D160 ID152 L210",
+        "source": {
+          "distance": 105.0,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      {
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            -45.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum_id": 16,
+        "feature_id": 10464,
+        "name": "S02 UNIBODY - clear legacy central rings Y minus45 to plus45",
+        "source": {
+          "distance": 45.0,
           "reference": {
             "plane": "xz",
             "type": "origin_plane"
@@ -18756,9 +18758,54 @@
               "state": "ok"
             },
             "suppressed": false
+          },
+          {
+            "id": 10462,
+            "kind": "construction_plane",
+            "name": "S01 UNIBODY - continuous barrel D160 ID152 L210",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10463,
+            "kind": "combine",
+            "name": "Combine39",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10464,
+            "kind": "construction_plane",
+            "name": "S02 UNIBODY - clear legacy central rings Y minus45 to plus45",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10465,
+            "kind": "sketch",
+            "name": "S02 clear central interior R76 - remove obsolete module flanges",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
+          },
+          {
+            "id": 10466,
+            "kind": "extrude",
+            "name": "Extrude255",
+            "status": {
+              "state": "ok"
+            },
+            "suppressed": false
           }
         ],
-        "rollback_index": 647
+        "rollback_index": 652
       },
       "name": "Roller-300",
       "settings": {
@@ -23547,6 +23594,32 @@
         "source_face_signature": null,
         "taper_angle_deg": 0.0,
         "target_body_ids": [],
+        "to_face_basis": null
+      },
+      {
+        "extent": {
+          "distance": 90.0,
+          "type": "distance"
+        },
+        "feature_id": 10466,
+        "flip": true,
+        "name": "Extrude255",
+        "new_body_ids": [
+          10172
+        ],
+        "operation": "cut",
+        "profile_indices": [
+          0
+        ],
+        "sketch_name": "S02 clear central interior R76 - remove obsolete module flanges",
+        "source_face": null,
+        "source_face_basis": null,
+        "source_face_key": null,
+        "source_face_signature": null,
+        "taper_angle_deg": 0.0,
+        "target_body_ids": [
+          10171
+        ],
         "to_face_basis": null
       }
     ],
@@ -81758,13 +81831,75 @@
             "params": []
           }
         }
+      },
+      {
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            -45.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "dimension_style": "aligned",
+        "feature_id": 10465,
+        "grid_snap": false,
+        "name": "S02 clear central interior R76 - remove obsolete module flanges",
+        "plane": {
+          "datum_id": 16,
+          "type": "datum_plane"
+        },
+        "snapshot": {
+          "constraints": [],
+          "dim_modes": {},
+          "dim_params": {},
+          "dim_placements": {},
+          "entities": [
+            [
+              1,
+              {
+                "center": {
+                  "x": 0.0,
+                  "y": 123.0
+                },
+                "radius": 76.0,
+                "type": "circle"
+              }
+            ]
+          ],
+          "fix_targets": {},
+          "next_constraint": 0,
+          "next_entity": 1,
+          "params": {
+            "next_id": 0,
+            "next_name": 0,
+            "params": []
+          }
+        }
       }
     ],
     "sweeps": [],
     "visibility": {
       "hidden_body_ids": [
-        10170,
-        10171
+        10162,
+        10163,
+        10165,
+        10166,
+        10170
       ],
       "hidden_datum_plane_ids": [
         1,
@@ -81780,7 +81915,9 @@
         11,
         12,
         13,
-        14
+        14,
+        15,
+        16
       ],
       "hidden_sketch_names": [
         "B Pi Zero WiFi 65x30x5 nominal bare envelope - plugs open",
@@ -81908,6 +82045,7 @@
         "P left wheel rim packaging - not print release",
         "P left wheel web packaging - hub bolts open",
         "P removable central lid - fasteners and registration open",
+        "S02 clear central interior R76 - remove obsolete module flanges",
         "Saddle_case_bottom_clearance",
         "Sketch123",
         "Sketch124",
@@ -81986,6 +82124,6 @@
       ]
     }
   },
-  "source_sha256": "acba54e2ef06e757db897fd92b85a3b0960cb9a2f21dab26127c1a73b063bcaf",
+  "source_sha256": "2d2582d0a9ab8acbac3150fcab7b406da3b33bc25ee5342c5b3220aaf88d056e",
   "warning": "Generated review snapshot. Edit the native CAD document, never this file."
 }

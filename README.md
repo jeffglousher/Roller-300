@@ -2,7 +2,7 @@
 
 Indoor-first, two-wheel differential-drive roller with a round rigid body. Mechanical prototype work in NoBS CAD; no caster. **Not physically validated or released for powered testing.**
 
-Open **[Roller-300.nbcad](Roller-300.nbcad)** in NoBS CAD. This is the only active CAD source. It now contains both reusable drive ends, wheel envelopes, central tub/lid and component packaging, with 84 assembly/packaging bodies plus one continuous barrel construction body and preserved native feature history. This is a full-vehicle packaging proposal, not a finished printable vehicle.
+Open **[Roller-300.nbcad](Roller-300.nbcad)** in NoBS CAD. This is the only active CAD source. It now contains both reusable drive ends, wheel envelopes, central tub/lid and component packaging, with one active unibody housing and preserved native feature history. This is a full-vehicle packaging proposal, not a finished printable vehicle.
 
 - [PLAN.md](PLAN.md): canonical mechanical decisions, open gates and adopted workflow.
 - [parameters.json](parameters.json): targets and measurement record, manually synchronized with native geometry.
@@ -25,4 +25,6 @@ Offline fit slicing can be reproduced with `python tools/slice_fit.py carrier-en
 
 The preserved test article is in `first-prints/drive-end-section/`, pinned by its hash manifest and tag `drive-fit-candidate-2026-09-19` to source commit `80f06f3`. The advancing master does not silently redefine those exports. No print has been sent.
 
-Current frame approach: start from continuous D160/ID152 x210 barrel stock (body10171), then derive the largest practical printable, registered and bolted sections. Exclude this construction stock from assembly exports and mass/interference checks. The complete motor test module is still in development; the preserved two-part fit set is not that module.
+Current frame approach: body10171 is the single structural unibody housing, built from the continuous D160/ID152 x210 barrel and integrated fixed bearing supports. Derive service openings and the complete motor module from it. The preserved two-part fit set is not that module.
+
+The current unibody revision replaces the hidden construction-envelope approach: housing10171 consumes the six earlier fixed frame/tub/lid/cover bodies. They are removed from active geometry, retained only as dependent earlier history. S01/S02 name the modeled stages; S03–S06 remain planned. Removable carriages/caps remain separate for service. See the latest PLAN section; earlier screenshots show the preceding architecture.

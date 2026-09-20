@@ -757,7 +757,7 @@
     "status": "Reader/target unselected. Mounting intent at each inboard wheel shaft end; guessed reader solid withdrawn.",
     "model_in_current_cad": false
   },
-  "active_scope": "Full vehicle packaging in the sole native master; test article pinned separately to 80f06f3. Not print release.",
+  "active_scope": "Single unibody housing10171 with integrated fixed drive supports; separate removable carriages/caps and hardware. Access and printable module splits unfinished.",
   "pi_status": "User owns a Pi Zero with Wi-Fi; exact version not confirmed. Both bare Zero W and Zero2W have published nominal65x30x5 envelope references. Actual header/case/accessories unknown.",
   "component_envelopes": {
     "thermal": {
@@ -1423,7 +1423,7 @@
     }
   },
   "barrel_first_revision": {
-    "status": "Continuous construction stock added; service/module cuts and joints not yet derived",
+    "status": "Superseded construction-stock role: body10171 is now actual unibody housing; old fixed frame bodies consumed.",
     "outer_diameter_mm": 160,
     "inner_diameter_mm": 152,
     "length_mm": 210,
@@ -1446,5 +1446,32 @@
     "split_rule": "Largest contiguous serviceable parts; keep each pair of bearing supports in one carrier; register and bolt load-bearing joints",
     "test_module_scope": "Complete supported and guarded servo/belt/clutch/hub drive assembly, not just carrier/spine fit prints",
     "construction_body_id": 10171
+  },
+  "unibody_revision": {
+    "housing_body_id": 10171,
+    "consumed_body_ids": [
+      10156,
+      10159,
+      10002,
+      10151,
+      10083,
+      10154
+    ],
+    "central_clearance_radius_mm": 76,
+    "central_clearance_y_mm": [
+      -45,
+      45
+    ],
+    "stages_modeled": [
+      "S01 continuous barrel",
+      "S02 unified fixed frame and central interior clearance"
+    ],
+    "stages_pending": [
+      "S03 component locating features",
+      "S04 service access and panels",
+      "S05 complete motor-module split and structural joint",
+      "S06 print qualification"
+    ],
+    "not_print_ready": true
   }
 }
