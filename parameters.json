@@ -1,765 +1,148 @@
 {
-  "status": "PACKAGING HYPOTHESIS - NOT PHYSICALLY VALIDATED - NOT PRINT RELEASE",
-  "brief_date": "2026-09-12",
+  "revision": "shell-first-2026-09-19",
+  "status": "CAD DEVELOPMENT \u2014 NOT PRINT OR POWERED RELEASE",
   "units": "mm, N, N.m, kg, s, degC",
-  "datum": "Origin on ground below axle midpoint; X forward, Y left, Z up. Stored component positions and mass centers use xyz_axle (Z=0 at axle); build derives ground-frame Z from wheel radius. Body is rigid, shafts independent.",
+  "datum": "Origin on nominal floor below axle midpoint; X forward, Y left, Z up; axle (0,0,123). All positions here are world coordinates.",
+  "parameter_source": "This current-value register is manually synchronized with native sketches/features in Roller-300.nbcad. It does not generate geometry.",
   "width_target": 300,
-  "body_width": 210,
-  "skin": 4,
-  "cover_skin": 3,
   "wheel_diameter": 246,
   "tire_width": 40,
-  "wheel_gap": 5,
-  "wheel_tread_radial": 8,
-  "shaft_diameter": 8,
-  "bearing_id": 8,
-  "bearing_od": 22,
-  "bearing_width": 7,
-  "bearing_seat_diametral_allowance": 0.15,
-  "output_bearing_y": [
-    51,
-    99
-  ],
-  "input_bearing_y": [
-    73,
-    99
-  ],
-  "wheel_shaft_y": [
-    38,
-    148
-  ],
-  "input_shaft_y": [
-    63,
-    104
-  ],
-  "gear_module": 2,
-  "gear_pressure_angle_deg": 20,
-  "gear_teeth": [
-    18,
-    32
-  ],
-  "gear_face_width": 12,
-  "gear_face_y0": 81.5,
-  "gear_backlash_circular": 0.25,
-  "gear_center_adjustment": [
-    0,
-    0
-  ],
-  "gear_center_adjustment_status": "Fixed registered 50 mm nominal centers for the compact drum. Set printed tooth backlash from the fixture; increasing centers can consume the input-cap-to-shell clearance.",
-  "gear_radial_clearance": 2,
-  "clutch_candidate": "ComInTec 00.25 DF d8 T1 - default qualification candidate, supplier assembly quote pending",
-  "clutch_od": 25,
-  "clutch_length": 26,
-  "clutch_y0": 63,
-  "clutch_boss_nominal_diameter": 14,
-  "clutch_boss_oversize_allowance": 0,
-  "clutch_boss_length": 5,
-  "servo_reserve_xyz": [
-    54.3,
-    44.1,
-    20.15
-  ],
-  "servo_min_abs_y": 10,
-  "servo_x_offset_from_axis": -36.95,
-  "servo_status": "Owned INJORA INJS035-360 locked. Previous goBILDA hull/gauge are historical, not INJORA dimensional evidence.",
-  "battery_size_xyz": [
-    90,
-    85,
-    30
-  ],
-  "battery_status": "User owns small3-cell pack and a larger alternative; small pack is first physical packaging candidate. Neither dimensions, chemistry nor mass supplied. Existing90x85x30 remains an unmeasured allowance.",
-  "pixracer_size_xyz": [
-    60,
-    60,
-    35
-  ],
-  "pi_size_xyz": [
-    30,
-    65,
-    5
-  ],
-  "tolerance_budget": {
-    "tire_bulge": 1,
-    "lateral_runout": 0.75,
-    "bearing_endplay": 0.25,
-    "printed_stack_error": 0.75,
-    "frame_flex": 0.5
-  },
-  "example_servo_rpm": 60,
-  "trial_speed_m_s": [
-    0.1,
-    0.15
-  ],
-  "example_forward_efficiency": 0.75,
-  "example_backdrive_efficiency": 0.9,
-  "initial_slip_seconds_max": null,
-  "initial_cooldown_seconds_min": null,
-  "initial_temperature_stop_C": null,
-  "initial_temperature_rise_stop_C": null,
-  "servo_current_limit_A": null,
-  "servo_voltage_V": null,
-  "printer_usable_xyz": null,
-  "limiter_pair_installed_budget_USD": 100,
-  "budget_status": "Provisional planning screen only; not a supplier quote or user-approved purchase",
-  "mass_estimates": [
-    {
-      "item": "Barrel, webs, caps, covers, ribs",
-      "kg": 0.55,
-      "range": [
-        0.4,
-        0.8
-      ],
-      "xyz_axle": [
-        0,
-        0,
-        0.0
-      ]
-    },
-    {
-      "item": "Two wheels and tires",
-      "kg": 0.45,
-      "range": [
-        0.3,
-        0.65
-      ],
-      "xyz_axle": [
-        0,
-        0,
-        0.0
-      ]
-    },
-    {
-      "item": "Two servos and horns",
-      "kg": 0.14,
-      "range": [
-        0.1,
-        0.24
-      ],
-      "xyz_axle": [
-        35,
-        0,
-        1.5
-      ]
-    },
-    {
-      "item": "Shafts bearings clutches gears hubs",
-      "kg": 0.34,
-      "range": [
-        0.22,
-        0.52
-      ],
-      "xyz_axle": [
-        12,
-        0,
-        0.0
-      ]
-    },
-    {
-      "item": "Battery",
-      "kg": 0.35,
-      "range": [
-        0.2,
-        0.55
-      ],
-      "xyz_axle": [
-        -3,
-        0,
-        -41.0
-      ]
-    },
-    {
-      "item": "Controller regulators cutoff",
-      "kg": 0.08,
-      "range": [
-        0.05,
-        0.13
-      ],
-      "xyz_axle": [
-        -29,
-        0,
-        10
-      ]
-    },
-    {
-      "item": "Harness connectors strain relief",
-      "kg": 0.04,
-      "range": [
-        0.03,
-        0.07
-      ],
-      "xyz_axle": [
-        12,
-        0,
-        0
-      ]
-    }
-  ],
-  "body_diameter": 160,
-  "architecture": "Two wheels only; round XZ body concentric with axle; low battery; drive-based pitch control, custom PX4 vehicle; no caster",
-  "brief_amendment": "User accepts rigid stiff-log two-wheel body, confirms Bambu Lab X2D, prioritizes very quiet cost-effective indoor function with high torque and shocks normal; outdoor parts follow indoor proof.",
-  "bearing_support_width": 46,
-  "revision": "vehicle-integrated-drive-end-v2",
-  "revision_reason": "Vehicle end section is the first substantial print; use the same registered flange for clamped tests and final body assembly. Wheel/tire work deferred.",
-  "body_lid_split_height_above_axle": 45,
-  "obstacle_target_height_mm": 50.8,
-  "obstacle_status": "Height is a translation of couple inches, not measured. Roundover radius is an illustrative upper-corner fillet, NOT a measured floor profile or ramp. Whole-body dynamics and tire compliance omitted from static screen.",
-  "ground_clearance_example_budget": {
-    "tire_compression_mm": 3,
-    "radial_runout_mm": 1,
-    "body_print_error_mm": 1,
-    "dynamic_allowance_mm": 2
-  },
-  "ground_clearance_budget_status": "Unmeasured sensitivity allowances only; not a guarantee. Worst-low features and full assembly must be checked.",
-  "gear_revision_effect": "18/32 ratio remains a packaging proposal. Actual actuator, limiter, gear strength and higher climbing load qualification are OPEN.",
-  "battery_min_xyz_axle": [
-    -48,
-    -42.5,
-    -56.0
-  ],
-  "pixracer_min_xyz_axle": [
-    -68,
-    -30,
-    -18
-  ],
-  "pi_min_xyz_axle": [
-    -30,
-    -32.5,
-    30
-  ],
-  "servo_z_from_axle": -10.15,
-  "obstacle_roundover_radius_mm": 12.7,
-  "printer_published_main_xyz": [
-    256,
-    256,
-    260
-  ],
-  "printer_published_dual_xyz": [
-    235.5,
-    256,
-    256
-  ],
-  "wheel_print_brim_radial_mm": 3,
-  "wheel_print_edge_margin_mm": 2,
-  "wheel_print_strategy": "Separate flat PETG wheel center and TPU tire, each on MAIN nozzle only; slicer keep-outs, adhesion, cooling and tire fit remain gates.",
-  "clutch_capacity_guideline_Nm": null,
-  "clutch_fit_status": "ComInTec00.25 DF envelope63..89 fits between608s with8.5/6.5 axial gaps. Plate/bush/retention still open, no print release.",
-  "historical_fixture_only": {
-    "normal_peak_wheel_torque_gate": 0.08,
-    "normal_margin_fraction": 0.25,
-    "clutch_breakaway_acceptance": [
-      0.12,
-      0.18
+  "nominal_wheel_gap": 5,
+  "body": {
+    "outside_diameter": 160,
+    "inside_diameter": 152,
+    "length_y": 210,
+    "nominal_skin": 4,
+    "y_bounds": [
+      -105,
+      105
     ],
-    "clutch_sliding_acceptance": [
-      0.1,
-      0.18
-    ],
-    "protected_wheel_equivalent_minimum": 0.24,
-    "status": "Retired low-torque coupon study, NOT vehicle torque or new-clutch acceptance. No physical test was run."
+    "axle_z": 123,
+    "nominal_unloaded_belly_clearance": 43
   },
-  "vehicle_torque_acceptance_Nm": null,
-  "powered_test_release": false,
-  "mass_status": "Earlier baseline and added scenarios are unweighed sensitivity estimates. Withdrawn extra cover/controller mass and old expanded CoM are not current fit evidence. Do not derive mass from solid packaging envelopes.",
-  "harness_reserves": [
-    {
-      "name": "battery connector exit",
-      "min_xyz_axle": [
-        44,
-        -8,
-        -43
-      ],
-      "size_xyz": [
-        18,
-        16,
-        23
-      ]
-    },
-    {
-      "name": "power service fold",
-      "min_xyz_axle": [
-        -6,
-        -14,
-        2
-      ],
-      "size_xyz": [
-        16,
-        28,
-        23
-      ]
-    },
-    {
-      "name": "rear signal trunk",
-      "min_xyz_axle": [
-        -55,
-        65,
-        -15
-      ],
-      "size_xyz": [
-        30,
-        10,
-        64
-      ]
-    },
-    {
-      "name": "upper signal link",
-      "min_xyz_axle": [
-        -25,
-        46,
-        48
-      ],
-      "size_xyz": [
-        24,
-        10,
-        20
-      ]
-    }
-  ],
-  "power_distribution_reserve": {
-    "min_xyz_axle": [
-      -55,
+  "bearings": {
+    "candidate": "608, supplier variant/fits HOLD",
+    "nominal_id_od_width": [
+      8,
+      22,
+      7
+    ],
+    "seat_diameter": 22.2,
+    "seat_status": "Trial clearance; coupon required",
+    "wheel_centers_y": [
+      -99,
+      -51,
+      51,
+      99
+    ],
+    "wheel_span_each": 48,
+    "wheel_axial_seat_width": 7.2,
+    "wheel_shoulder_clear_bore": 18,
+    "input_centers_abs_y": [
+      70,
+      96
+    ],
+    "input_span": 26,
+    "input_axial_retention": "HOLD"
+  },
+  "shafts": {
+    "diameter": 8,
+    "wheel_y_left": [
       35,
-      20
+      148
     ],
-    "size_xyz": [
-      40,
-      24,
-      20
+    "input_y_left": [
+      52,
+      101
     ],
-    "status": "Unselected board/regulator/connector installation allowance, no fixed holes."
+    "right": "Mirror in XZ plane; shafts remain independent",
+    "retention": "Actual flat/groove, spacers and collars must be detailed; no threaded rod journals"
   },
-  "harness_status": "General empty routing allowances retained, not actual harness models. Camera-specific routes withdrawn until connectors and bending requirements are known.",
-  "printer_model": "Bambu Lab X2D",
-  "printer_model_status": "Confirmed by user; actual slicer profile, plate and usable region remain unverified",
-  "requirements_revision": "servo-locked-v1-mechanics",
-  "priorities": [
-    "functional two-wheel rigid barrel",
-    "very quiet indoor operation",
-    "complete installed cost and repairability",
-    "normal climbing and repeated shock capability",
-    "outdoor conversion after indoor qualification"
-  ],
-  "belt_trial": {
-    "model": "D&D DURA-Flex / PowerDrive210-3M-09, Amazon B00ISC4PHG",
-    "pitch_length_mm": 210,
-    "pitch_mm": 3,
-    "width_mm": 9,
-    "pulley_teeth": [
+  "transmission": {
+    "type": "Purchased endless 210-3M-09 belt",
+    "teeth": [
       24,
       48
     ],
-    "status": "Preferred transmission to qualify; exact Amazon belt verified, compatible pulleys/carrier/tensioning/load/noise still open",
-    "retired_length_mm": 240,
-    "source": "https://www.amazon.com/dp/B00ISC4PHG",
-    "listing_price_each_USD": 7.09,
-    "checked_date_local": "2026-09-12",
-    "input_center_travel_proposal_mm": [
-      48.5,
-      50.0
+    "ratio": 2,
+    "nominal_center_distance": 49.6723,
+    "input_center_xz": [
+      49.6723,
+      123
     ],
-    "input_center_travel_status": "Packaging allocation only, not belt tension specification or verified installation travel; move complete supported input/cradle as a registered unit",
-    "user_accepted": true,
-    "pulley_face_y0_mm": 81.5,
-    "pulley_axial_envelope_mm": 12,
-    "belt_radial_visual_thickness_mm": 3,
-    "native_geometry_status": "Pitch cylinders and continuous loop envelopes only. Tooth form, flanges, tension mechanism and clutch carrier not detailed."
-  },
-  "acoustic_goals": {
-    "status": "Provisional product goals, not measured results or safety limits",
-    "distance_m": 1,
-    "background_max_LAeq_dBA": 30,
-    "normal_motion_max_LAeq_dBA": 35,
-    "measurement_seconds": 30,
-    "crossing_peak_max_LAFmax_dBA": 45,
-    "repeats": 3,
-    "additional_acceptance": "No obvious tonal whine, periodic clicking or cover/wiring rattle",
-    "equipment_gate": "Calibrated suitable low-noise-floor instrument for absolute claims; unknown phone AGC/noise floor supports relative comparison only",
-    "operating_gate": "Only measure after selected actuator/load/speed is electrically and thermally qualified; acoustic run does not override pulse limits"
-  },
-  "feedback_strategy": {
-    "baseline": "One non-contact post-clutch wheel encoder per side, with measured direction",
-    "baseline_limit": "Measures wheel rotation and failed command response; cannot uniquely prove clutch slip or tire-ground slip",
-    "true_clutch_slip_reference": "Use actual actuator output angular feedback if present and remaining drive is intact, reflected through signed ratio; otherwise add one pre-clutch reader per side",
-    "wiring": "One secured labeled sensor harness per drive side, fixed to chassis; reserve extra-reader branch, no wire crosses rotating interface",
-    "continuous_operation_gate": "Either qualified worst permitted clutch+servo+enclosure slip duty, or implemented measured input/output slip and energy shutdown; no current-only or PWM-only claim",
-    "persistent_fault": "Stop both, latch off, deliberate reset/rearm",
-    "short_shock_clip": "May recover without latching only within measured duration/recovery/energy envelope; repeated climbing slip remains unacceptable",
-    "installed": false,
-    "preferred_reference": "Selected non-feedback v1 requires actual pre-clutch reference plus post-clutch reader per side for direct slip comparison; future qualified servo feedback can replace upstream reader."
-  },
-  "wheel_encoder_counts_per_rev_example": 144,
-  "creep_speed_example_m_s": 0.02,
-  "normal_shock_loads": {
-    "status": "Required normal use; force/torque magnitude, pulse duration and recurrence not measured",
-    "wheel_radial_reaction_N": null,
-    "wheel_torque_peak_Nm": null,
-    "pulse_duration_s": null,
-    "repetitions": null,
-    "note": "100 N shaft example and25% static torque margin are not shock ratings; radial impacts bypass clutch. Qualify tire/compliance/supports and limiter clipping separately."
-  },
-  "outdoor_stage": {
-    "status": "Deferred until indoor qualification",
-    "replaceable_parts": [
-      "tires",
-      "wheel centers",
-      "lid and drive covers",
-      "sensor seats",
-      "harness interfaces"
+    "complete_pulley_belt_clutch_inboard_shift": 4,
+    "carriage_slot_size_xy": [
+      7.4,
+      4.4
     ],
-    "requalification": [
-      "UV and temperature",
-      "impact and changed mass",
-      "bearing/clutch grit ingress",
-      "sensor contamination",
-      "electronics and connector splash protection",
-      "corrosion",
-      "cooling and duty",
-      "traction and noise"
+    "slot_corner_radius": 1,
+    "available_translation_x": [
+      -1.5,
+      1.5
     ],
-    "weatherproof_now": false
+    "travel_status": "CAD clearance screen only; no qualified belt tension or installed belt stretch",
+    "clutch_candidate": "ComInTec 00.25 DF d8 T1 - default qualification candidate, supplier assembly quote pending",
+    "clutch_status": "Schematic envelope; exact driving/driven plates, bush, spring, retention, torque/duty and price HOLD"
   },
-  "actuator_strategy": {
-    "form": "Replaceable standard hobby form factor, bidirectional continuous rotation",
-    "feedback_preference": "Optional upgrade, not a v1 dependency. No external feedback from selected servo. Keep pre-clutch reader access and downstream wheel reader access.",
-    "model": "goBILDA 2000-0025-0002",
-    "mount": "Full enclosing STEP-derived box54.3 X x44.1 Y x20.15 Z; shaft axis parallel Y. Body39.9 plus4 spline is nominal drawing; STEP extrema44.1 deep retained. Purchased horn separate; four open mounting slots on48 x9.9 pattern.",
-    "selection_gate": "Permissible loaded torque, low-speed response, noise, temperature and fault behavior at actual voltage; stall figures are not continuous ratings",
-    "reference_only": "FEETECH FB5317M-360 is sole feedback alternative on file; price, source revision and loaded duty not qualified."
+  "hatch": {
+    "opening_xy_mm": [
+      -69.3,
+      69.3,
+      -90,
+      90
+    ],
+    "corner_radius_mm": 8.3,
+    "panel_gap_mm": 0.3,
+    "lap_mm": 8,
+    "nut_boss_angles_deg": [
+      -55,
+      55
+    ],
+    "bolt_y_mm": [
+      -75,
+      -25,
+      25,
+      75
+    ],
+    "nut_AF_clearance_mm": 7.3,
+    "nut_thickness_clearance_mm": 3.5,
+    "screw_candidate": "M4x12 90deg countersunk; actual head/nut dimensions and preload require verification"
   },
-  "sensing_layout": {
-    "status": "20x12 mm front outline confirmed on exact ACEIRMC listing dimension image. Total depth unknown; no 3D sensor solid or certified fit. Front/rear mounting locations are proposals only.",
-    "distance_module": "User link: ACEIRMC TOF400C VL53L1X four-pack, Amazon B0DC6M6G7W",
-    "initial_count": 4,
-    "rear_count_after_front_qualification": 4,
-    "array_optical_x_abs_mm": 75,
-    "array_z_from_axle_mm": -4,
-    "forward_y_mm": [
-      -36,
-      -12,
-      12,
-      36
-    ],
-    "forward_yaw_deg": [
-      -18,
-      -6,
-      6,
-      18
-    ],
-    "rear_transform": "Rotate forward array 180 degrees about body Z: x,y -> -x,-y; yaw +=180; same carrier design where fastener/connector access permits",
-    "module_reserve_local_width_height_depth_mm": [
+  "servo": {
+    "model": "INJORA INJS035-360",
+    "source": "https://www.injora.com/products/injora-injs035-360-35kg-waterproof-digital-servo-360-steering-winch-wheel-for-rc",
+    "owned_listing": "https://www.amazon.com/dp/B0C9TM9X2C",
+    "checked": "2026-09-13",
+    "case_nominal_mm": [
+      40.5,
       20,
-      12,
-      null
+      40.5
     ],
-    "reserve_basis": "No guessed depth. Optical hood, populated header, solder and chosen mating plug must all be included in measured envelope.",
-    "published_diagonal_fov_deg": 27,
-    "illustrative_horizontal_fov_deg": 18,
-    "fov_basis": "Illustration only, not measured horizontal coverage; retain adjustment and test exact module/ROI/targets/windows.",
-    "coverage_plane_from_optics_mm": 300,
-    "pitch_validation_range_deg": [
-      -30,
-      30
-    ],
-    "pitch_range_status": "Initial characterization sweep, not allowable driving pitch or proven coverage",
-    "initial_ranging_timing_budget_ms": 20,
-    "initial_timing_mode": "Short distance; sequential start/stop emissions to characterize cross-interference",
-    "processing_and_stop_latency_example_ms": 50,
-    "illustrative_braking_deceleration_m_s2": 0.2,
-    "illustrative_stop_margin_mm": 40,
-    "bus_strategy": "First verify breakout pinout, XSHUT access and pullups. Use individually sequenced XSHUT and unique 7-bit addresses if available; otherwise one isolated I2C mux channel per module. One host only; no Pi/Pix dual-master assumption.",
-    "drop_detection": "Four optional downward port positions, two looking ahead of each wheel path per direction; not yet located or modeled. Forward array is not cliff sensing. No autonomous drop-edge operation until coverage/stopping is implemented and tested.",
-    "host_strategy": "Reuse small paired-drive supervisor for short local range acquisition if resources permit; timestamp and quality to Pixracer, optional Pi gets forwarded data. No new IMU or large sensor computer implied.",
-    "headers_installed": false,
-    "header_strategy": "Proposed compact mechanical route: short directly soldered leads with independent strain relief, terminating in a removable retained connector away from the board. Connector model and full bare-module depth remain unmeasured; pin headers remain an option.",
-    "rear_installation": "Later only, after front arrangement proves useful; cameras remain forward only"
-  },
-  "camera_layout": {
-    "pi_camera": {
-      "model": null,
-      "ownership": "User confirms no visible Pi camera owned",
-      "min_xyz_axle": [
-        52,
-        -15,
-        6
-      ],
-      "size_xyz": null,
-      "status": "Camera must be selected; forward only. No guessed size model.",
-      "cable": "Physical connector and cable envelope pending camera identity.",
-      "orientation": "forward"
+    "full_envelope_mm": null,
+    "mount_slot_pattern_mm": null,
+    "mount_ear_thickness_mm": null,
+    "output_axis_offset_mm": null,
+    "mass_kg": 0.06,
+    "spline": "25T, nominal 5.9 mm",
+    "spool_diameter_mm": 19,
+    "spool_width_mm": 11,
+    "spool_screw": "M3 supplied",
+    "spool_interface_note": "Reversible spool: 23T on one face, 25T on the other. Retain purchased matching spline. Root/flange details and torque attachment require sample.",
+    "published_rpm": {
+      "4.8V": 49,
+      "6.0V": 61
     },
-    "thermal": {
-      "model": "TOPDON TC002C Duo",
-      "optional": true,
-      "seller_mass_kg": 0.03,
-      "integration_status": "Linux/Pi acquisition and radiometric data access unverified. No fixed mount or assumed UVC support.",
-      "fit_status": "Full device nominal vertical gap16 mm above selected servo hull;1.676 mm shell corner. Plug, cassette and aperture incomplete.",
-      "trial_min_xyz_axle": [
-        16,
-        -35.5,
-        26
-      ],
-      "trial_size_xyz": [
-        14,
-        71,
-        42
-      ],
-      "manufacturer_fov_conflict_deg": [
-        [
-          50,
-          37.2
-        ],
-        [
-          56,
-          42
-        ]
-      ],
-      "optics": "Separate LWIR aperture; ordinary camera window cannot be assumed transparent. Keep optional sensor away from clutch/regulator heat and quantify drift/shutter noise.",
-      "installation_min_xyz_axle": null,
-      "installation_size_xyz": null,
-      "optical_axis_xyz_axle": null,
-      "optical_axis_status": "Lens center unmeasured; no centered lens symbol or sight-cone claim.",
-      "usb_keepout_min_xyz_axle": null,
-      "usb_keepout_size_xyz": null,
-      "usb_keepout_basis": "Built-in USB-C plug already included in device dimensions. Separate mated extension plug/cable unselected and not modeled.",
-      "overall_w_h_d_mm": [
-        71,
-        42,
-        14
-      ],
-      "orientation": "forward only"
+    "published_stall_torque_Nm": {
+      "4.8V": 2.8439,
+      "6.0V": 3.4323
     },
-    "bonnet": {
-      "outer_radius_mm": 99,
-      "skin_mm": 4,
-      "half_width_mm": 48,
-      "x_min_mm": 16,
-      "z_min_axle_mm": 8,
-      "status": "WITHDRAWN: raised cover no longer justified by corrected thermal hardware envelope. No sensor apertures frozen until complete geometry is known.",
-      "enabled": false
-    },
-    "wiring_note": "Retain general wiring space. Delete guessed camera-specific routes; replace with actual mating connectors, bend envelopes and removal sweeps after part identification."
+    "continuous_permissible_torque_Nm": null,
+    "feedback_external": false,
+    "owned_qty_confirmed_minimum": 1,
+    "price_each_USD_reference": 22.98,
+    "source_scope": "Manufacturer and exact Amazon listing read 2026-09-13. Case size is not full ear/spline/boot envelope. Stall torque is not permissible running torque."
   },
-  "service_retention": {
-    "fixed_load_path": "Bearing webs and cradle tied into lower shell and fixed end rings; retain stiffness with lid/sensor cassettes removed. No load-bearing removable optical panel.",
-    "main_lid": {
-      "fastener": "M4 through bolts into captured replaceable metal nuts",
-      "count_start": 6,
-      "registration_lap_mm": 6,
-      "tongue_engagement_mm": 2,
-      "note": "Starting geometry only; compression stops, ribs and proof loads to detail. Fasteners carry clamp load, registered shoulders carry shear."
-    },
-    "small_panels": "Two captive M3 screws minimum per sensor/contact cassette, locating shoulder, recoverable nut pockets and retained connector. Preserve purchased fastener requirements.",
-    "retention": "No snap fit or magnet alone for structural/power panels; reusable prevailing-torque hardware or supplier-compatible locking method, washer load spread, witness marks. Do not apply unknown threadlocker to plastics.",
-    "access_order": "Cut actuator and battery power; release lid; unplug labeled bridge/camera harnesses; lift bridge; release independent battery straps/top restraint. Drive covers and sensor/contact cassettes separately removable.",
-    "qualification": "Panel cycling, retention torque, shock repetition, shell distortion and bearing alignment measured before release; numeric loads/cycles to follow normal shock envelope.",
-    "optics": "Separate registered upper camera cassette and curved cover with four accessible captive M3 screws into replaceable nuts. Side charger/supervisor trays lift out with electronics bridge; no camera panel carries bearing loads. Screw seats/return walls are not finished in this packaging model."
-  },
-  "charging_dock": {
-    "status": "Mechanical and electrical architecture proposal; no purchased pack/charger/contact rating or implemented autodocking",
-    "body_contact_count": 2,
-    "contact_y_centers_mm": [
-      -22,
-      22
-    ],
-    "contact_width_mm": 12,
-    "contact_arc_length_mm": 20,
-    "contact_arc_center_deg_from_positive_x_toward_positive_z": 210,
-    "contact_recess_mm": 0.5,
-    "contact_cassette_width_mm": 64,
-    "contact_cassette_arc_length_mm": 30,
-    "mechanism": "Replaceable curved metal pads on rear/lower body, recessed inside drum contour, spring-loaded purchased contacts on dock. Accessible for wiping and unpowered manual docking.",
-    "mechanical_capture": "Dock wheel pockets locate axle and resist roll-away; separate keyed padded fork engages recessed cassette shoulders to hold body pitch before drive power is removed. Spring contacts do not carry docking impact or vehicle weight.",
-    "power_path": "Purchased isolated low-voltage supply -> current-limited normally-off dock output -> contacts -> onboard reverse blocking/input protection -> purchased pack-specific charger/power-path -> protected pack. Keep actuator branch separately inhibited while charging.",
-    "undocked": "Battery must not backfeed exposed pads; verify charger/input isolation, not just a fuse.",
-    "dock_enable": "Mechanical seat/presence confirmation and correct polarity before enabling; contact loss disables charging. Independent overcurrent/temperature handling; Pi not sole charge regulator.",
-    "startup": "Dock power restoration stays charge-disabled until presence checks; actuator enable remains off. Charge termination cannot be defeated by computer load: select proper power-path or switch system load off.",
-    "undock": "Stop charge, verify current removed; verify drive control available before mechanical release; controlled departure. Manual mechanical release and battery disconnect remain accessible.",
-    "battery_chemistry": null,
-    "cell_count": null,
-    "capacity_Ah": null,
-    "charger_model": null,
-    "supply_voltage_V": null,
-    "charge_current_A": null,
-    "contact_force_N": null,
-    "contact_resistance_max_ohm": null,
-    "max_contact_temperature_degC": null,
-    "release": "Numeric battery/charger/contact/temperature/force/latency limits and supported docking trials required before energizing contacts; autonomous return requires implemented localization, final alignment and failed-dock handling."
-  },
-  "added_mass_scenarios": {
-    "basis": "Incremental unmeasured allowances beyond existing 1.95 kg mechanical baseline; no weight inferred from CAD solid envelopes.",
-    "indoor_sensing_docking": [
-      {
-        "item": "Four front modules, carrier and harness",
-        "kg": 0.045,
-        "range": [
-          0.025,
-          0.08
-        ],
-        "xyz_axle": [
-          68,
-          0,
-          -4
-        ]
-      },
-      {
-        "item": "Onboard charge/contact protection and harness",
-        "kg": 0.08,
-        "range": [
-          0.04,
-          0.16
-        ],
-        "xyz_axle": [
-          -20,
-          40,
-          2
-        ]
-      },
-      {
-        "item": "Shared feedback/range supervisor or mux allowance",
-        "kg": 0.025,
-        "range": [
-          0.01,
-          0.05
-        ],
-        "xyz_axle": [
-          3,
-          -76.5,
-          37
-        ]
-      }
-    ],
-    "later_additions": [
-      {
-        "item": "Rear array and harness",
-        "kg": 0.045,
-        "range": [
-          0.025,
-          0.08
-        ],
-        "xyz_axle": [
-          -68,
-          0,
-          -4
-        ]
-      },
-      {
-        "item": "Pi, visible camera and extra power/cables",
-        "kg": 0.06,
-        "range": [
-          0.035,
-          0.11
-        ],
-        "xyz_axle": [
-          10,
-          0,
-          37
-        ]
-      },
-      {
-        "item": "Optional thermal unit, carrier and adapter",
-        "kg": 0.045,
-        "range": [
-          0.035,
-          0.08
-        ],
-        "xyz_axle": [
-          39,
-          0,
-          56
-        ]
-      },
-      {
-        "item": "Raised optics cover, cassette and extra retained service loops",
-        "kg": 0.04,
-        "range": [
-          0.02,
-          0.08
-        ],
-        "xyz_axle": [
-          48,
-          0,
-          60
-        ]
-      }
-    ],
-    "com_status": "Do not reuse old CoM for these variants; installed positions and masses remain unmeasured. Dock itself excluded from vehicle mass."
-  },
-  "transmission_choice": {
-    "preferred": "Purchased endless HTD 3M belt,210 mm pitch length,9 mm width;24/48 pulleys",
-    "reason": "User prefers readily obtainable Amazon belt; exact210-3M-09 product/offer verified",
-    "status": "Preferred qualification route, not fitted or load/noise validated",
-    "fallback": "Printed involute double-helical18/32 pair; retains50 mm centers and existing gear envelopes",
-    "saved_native_geometry": "Accepted belt loop and 24/48 pitch envelopes; no pulley teeth, flanges or fitted clutch carrier.",
-    "same_drop_in_mount_claim": false,
-    "unchanged_requirements": "Independent supported shafts and one real torque limiter per side; no tooth skipping as protection",
-    "direction_note": "Open belt preserves input/output rotation sign; external gears reverse it. Recheck commands and slip-feedback sign/ratio for either build."
-  },
-  "gear_module_system": "transverse; existing circular geometry uses transverse module2",
-  "gear_pressure_angle_system": "transverse",
-  "double_helical_fallback": {
-    "status": "Parameterized tooth design proposal only; no finished involute/root/helix solid or strength rating",
-    "module_transverse_mm": 2,
-    "pressure_angle_transverse_deg": 20,
-    "helix_angle_magnitude_deg": 20,
-    "total_face_width_mm": 12,
-    "center_relief_width_mm": 1,
-    "addendum_transverse_coefficient": 1,
-    "dedendum_transverse_coefficient": 1.25,
-    "profile_shift_transverse": 0,
-    "total_pair_transverse_backlash_mm": 0.25,
-    "handing": "Each gear has opposite-hand halves; mating gears have opposite hand at corresponding axial positions. Mirror left/right complete assembly without breaking mating relationship.",
-    "print_concept": "One piece per gear with continuous root/hub core and narrow central tooth relief; flat shaft axis vertical. Validate apex/relief support and first-layer compensation.",
-    "assembly": "Bring pair into mesh before lowering both supported shaft assemblies into open saddles, bridge/lid/wheels removed as needed; prove combined removal sweep. Do not assume a herringbone pair can slide axially apart while meshed.",
-    "thrust": "Ideal opposite axial forces cancel only with equal half loading. Retain shafts for residual axial load in both directions; no preload through clutch or opposing bearing races.",
-    "fixture_gates": "Actual involute and root generation, correct hand/phase, backlash over full turn, tooth contact both halves, no binding through reverse, load/temperature/wear/noise, assembly/removal access"
-  },
-  "active_transmission": "belt",
-  "auxiliary_bays": [
-    {
-      "name": "Pack-specific charger and input protection",
-      "min_xyz_axle": [
-        -22,
-        59,
-        28
-      ],
-      "size_xyz": [
-        50,
-        35,
-        18
-      ],
-      "status": "Inactive prior planning allowance; no selected incoming module. Do not size the body from this box.",
-      "model_in_current_cad": false
-    },
-    {
-      "name": "Feedback and range supervisor",
-      "min_xyz_axle": [
-        -22,
-        -94,
-        28
-      ],
-      "size_xyz": [
-        50,
-        35,
-        18
-      ],
-      "status": "Inactive prior planning allowance; no selected incoming module. Do not size the body from this box.",
-      "model_in_current_cad": false
-    }
-  ],
-  "wheel_feedback_reserve": {
-    "x_min_mm": -12,
-    "z_min_axle_mm": -10,
-    "abs_y_mm": [
-      31,
-      41
-    ],
-    "size_x_mm": 20,
-    "size_z_mm": 20,
-    "status": "Reader/target unselected. Mounting intent at each inboard wheel shaft end; guessed reader solid withdrawn.",
-    "model_in_current_cad": false
-  },
-  "active_scope": "Single unibody housing10171 with integrated fixed drive supports; separate removable carriages/caps and hardware. Access and printable module splits unfinished.",
-  "pi_status": "User owns a Pi Zero with Wi-Fi; exact version not confirmed. Both bare Zero W and Zero2W have published nominal65x30x5 envelope references. Actual header/case/accessories unknown.",
-  "component_envelopes": {
+  "hardware_envelopes": {
     "thermal": {
       "model": "TOPDON TC002C Duo",
       "quantity": 1,
@@ -827,113 +210,6 @@
       ]
     }
   },
-  "inventory_confirmed_20260913": {
-    "battery_small": {
-      "owned": true,
-      "cells": 3,
-      "chemistry": null,
-      "dimensions_mm": null,
-      "mass_kg": null,
-      "role": "First mechanical packaging candidate"
-    },
-    "battery_large": {
-      "owned": true,
-      "cells": null,
-      "dimensions_mm": null,
-      "mass_kg": null,
-      "role": "Alternative; not an instruction to enlarge the body"
-    },
-    "pixracer": {
-      "owned": true,
-      "family": "Original Pixracer",
-      "case_and_attached_connectors": "Unknown"
-    },
-    "pi": {
-      "owned": true,
-      "family": "Raspberry Pi Zero with Wi-Fi",
-      "exact_variant": "Zero W versus Zero 2 W not explicitly confirmed",
-      "header_case_heatsink": "Unknown"
-    },
-    "visible_camera": {
-      "owned": false,
-      "selected_model": null,
-      "orientation": "Forward only"
-    },
-    "thermal_camera_orientation": "Forward only",
-    "distance_modules": {
-      "headers_installed": false,
-      "initial_front_count": 4,
-      "rear_later_count": 4,
-      "rear_installation": "Only after front arrangement proves useful"
-    }
-  },
-  "pixracer_status": "Original Pixracer confirmed. Case, attachments and complete connector envelope unmeasured; existing60x60x35 is installation space, not a board model.",
-  "actuator_trade": {
-    "status": "Architecture discussion, no product selected or purchased; cost ceiling pending",
-    "recommendation": "Architecture CLOSED: standard continuous hobby servo. goBILDA25-2 selected for v1 fit/noise/load fixture; brushless and gearmotor comparison archived, not active alternatives.",
-    "servo_candidate": "goBILDA2000-0025-0002 continuous mode; loaded torque qualification pending.",
-    "brushless_scope": "Complete motor, suitable low-speed feedback/drive and reduction package; not a bare high-speed RC motor/ESC assumption",
-    "remaining_mechanical_comparison": [
-      "Complete installed size including ears/horn/shafts/plugs",
-      "Sustained and repeated transient torque at required speed",
-      "Backlash, neutral response and repeated reversal",
-      "Noise at actual load; gearbox noise cannot be inferred from motor type",
-      "Complete pair cost including encoder/driver/adapters",
-      "Mass effect on obstacle torque and body pitch"
-    ],
-    "kinematic_basis": {
-      "wheel_diameter_mm": 246,
-      "external_ratio": 2,
-      "trial_vehicle_speed_m_s": [
-        0.1,
-        0.15
-      ]
-    },
-    "climb_screen_basis": {
-      "mass_kg": 1.95,
-      "floor_height_mm": 50.8,
-      "roundover_mm": 12.7,
-      "operating_margin_fraction": 0.25,
-      "example_forward_efficiency": 0.75,
-      "status": "Illustrative restrained-body static screen, not measured climbing torque or permissible continuous rating"
-    },
-    "actuator_pair_budget_USD": null,
-    "retained_mechanical_requirements": "Independent road-wheel support, one true limiter per side, accepted belt route; do not change bearing/load path just because actuator class changes."
-  },
-  "servo_mechanical": {
-    "model": "INJORA INJS035-360",
-    "source": "https://www.injora.com/products/injora-injs035-360-35kg-waterproof-digital-servo-360-steering-winch-wheel-for-rc",
-    "owned_listing": "https://www.amazon.com/dp/B0C9TM9X2C",
-    "checked": "2026-09-13",
-    "case_nominal_mm": [
-      40.5,
-      20,
-      40.5
-    ],
-    "full_envelope_mm": null,
-    "mount_slot_pattern_mm": null,
-    "mount_ear_thickness_mm": null,
-    "output_axis_offset_mm": null,
-    "mass_kg": 0.06,
-    "spline": "25T, nominal 5.9 mm",
-    "spool_diameter_mm": 19,
-    "spool_width_mm": 11,
-    "spool_screw": "M3 supplied",
-    "spool_interface_note": "Reversible spool: 23T on one face, 25T on the other. Retain purchased matching spline. Root/flange details and torque attachment require sample.",
-    "published_rpm": {
-      "4.8V": 49,
-      "6.0V": 61
-    },
-    "published_stall_torque_Nm": {
-      "4.8V": 2.8439,
-      "6.0V": 3.4323
-    },
-    "continuous_permissible_torque_Nm": null,
-    "feedback_external": false,
-    "owned_qty_confirmed_minimum": 1,
-    "price_each_USD_reference": 22.98,
-    "source_scope": "Manufacturer and exact Amazon listing read 2026-09-13. Case size is not full ear/spline/boot envelope. Stall torque is not permissible running torque."
-  },
   "wheel_hub": {
     "model": "goBILDA1310-0016-0008",
     "body_diameter_mm": 30.6,
@@ -954,44 +230,183 @@
     "diameter_mm": 21,
     "length_mm": 9,
     "inboard_y": [
-      38.5,
-      47.5
+      35.5,
+      44.5
     ],
-    "outboard_y": [
-      102.5,
-      111.5
-    ],
-    "retention": "Collars act on opposing inner races; outer races need opposing axial shoulders and measured0.10-0.25 total endplay. Clutch preload separate. No claimed floating/locating arrangement with inconsistent collar positions."
+    "outboard_y": null,
+    "retention": "One inboard collar per side; outboard retention uses clamping hub with10 mm metal spacer and0.5 mm inner-race shim. Measured endplay and retention strength HOLD."
   },
-  "fit_coupons": {
-    "bearing_diameters_mm": [
-      22.05,
-      22.15,
-      22.25
+  "layout": {
+    "servo_case_left_min": [
+      39.6723,
+      5,
+      93
     ],
-    "bearing_plate_xyz_mm": [
-      80,
-      32,
-      7
+    "servo_case_size": [
+      20,
+      40.5,
+      40.5
     ],
-    "servo_window_mm": [
-      40.8,
-      20.65
+    "battery_unmeasured_min": [
+      -60,
+      -15,
+      78
     ],
-    "servo_plate_xyz_mm": [
+    "battery_unmeasured_size": [
+      85,
+      30,
+      90
+    ],
+    "pi_min": [
+      -30,
+      -84,
+      161
+    ],
+    "pi_size": [
+      30,
       65,
-      32,
-      4
+      5
     ],
-    "servo_mount_pattern_mm": [
-      48,
-      9.9
+    "pixracer_outline_xy": [
+      -40,
+      -4,
+      46,
+      82
     ],
-    "servo_hole_diameter_mm": 4.5,
-    "status": "Bearing coupon active. goBILDA servo gauge SUPERSEDED; do not use as INJORA mount."
+    "pixracer_z": 168,
+    "pixracer_total_height": null,
+    "thermal_min": [
+      30,
+      -35.5,
+      140
+    ],
+    "thermal_size": [
+      14,
+      71,
+      42
+    ],
+    "tof_x_plane": 75,
+    "tof_y_centers": [
+      -36,
+      -12,
+      12,
+      36
+    ],
+    "tof_z_bounds": [
+      113,
+      125
+    ],
+    "tof_depth": null,
+    "sensor_connectors_and_cables": "UNRESOLVED; no guessed complete envelopes",
+    "battery_mass_and_fit": "UNMEASURED"
   },
-  "mass_ledger_current": {
-    "status": "Catalog values, not weighed vehicle. Printed envelopes cannot be used as a finished mass estimate.",
+  "direct_mount_status": {
+    "battery": "Unmeasured allowance; support and straps adjustable, no final hold-down release",
+    "pi_y_shift_mm": 6,
+    "thermal_z_shift_mm": -3,
+    "pixracer_outline_y_mm": [
+      46,
+      82
+    ],
+    "thermal_retainer_and_optical_aperture": "HOLD received contour/lens/connector measurements",
+    "sensor_depth_and_retention": "HOLD depth and solder/wire measurement",
+    "board_retention": "Locating shelves modeled; positive removable restraints and full connector access unresolved",
+    "thermal_x_shift_mm": 3
+  },
+  "assembly_parts": {
+    "L output shaft HOLD": 1,
+    "L wheel bearings 608": 2,
+    "L output collars": 3,
+    "L HyperHub envelope": 4,
+    "L input bearings 608": 5,
+    "L input shaft retention HOLD": 6,
+    "L horn adapter and retention interfaces HOLD": 7,
+    "L ComInTec clutch schematic HOLD": 8,
+    "L output pulley prototype": 9,
+    "L input pulley prototype": 10,
+    "L accepted 210-3M-09 belt envelope": 11,
+    "L owned INJORA partial case": 12,
+    "L wheel rim packaging": 13,
+    "L tread allowance": 14,
+    "TOPDON TC002C Duo nominal device": 15,
+    "Pi Zero nominal bare board": 16,
+    "Battery UNMEASURED inherited allowance": 17,
+    "R output shaft HOLD": 18,
+    "R wheel bearings 608": 19,
+    "R output collars": 20,
+    "R HyperHub envelope": 21,
+    "R input bearings 608": 22,
+    "R input shaft retention HOLD": 23,
+    "R horn adapter and retention interfaces HOLD": 24,
+    "R ComInTec clutch schematic HOLD": 25,
+    "R output pulley prototype": 26,
+    "R input pulley prototype": 27,
+    "R accepted 210-3M-09 belt envelope": 28,
+    "R owned INJORA partial case": 29,
+    "R wheel rim packaging": 30,
+    "R tread allowance": 31,
+    "housing": 32,
+    "L new carriage": 97,
+    "R new carriage": 122,
+    "hatch": 141,
+    "L inboard inner-race spacer HOLD": 224,
+    "L outboard inner-race spacer HOLD": 225,
+    "L outboard inner-race shim HOLD": 226,
+    "R inboard inner-race spacer HOLD": 227,
+    "R outboard inner-race spacer HOLD": 228,
+    "R outboard inner-race shim HOLD": 229
+  },
+  "caps": [
+    38,
+    47,
+    56,
+    65,
+    100,
+    108,
+    123,
+    124
+  ],
+  "native_stage_map": {
+    "S01 Hardware references only - no inherited frame": {
+      "last_feature_id": 18,
+      "feature_count": 18
+    },
+    "S02 Shell and direct bearing/servo support": {
+      "last_feature_id": 275,
+      "feature_count": 275
+    },
+    "S02 Shell and direct bearing/servo support - axial registration and clearance refined": {
+      "last_feature_id": 290,
+      "feature_count": 290
+    },
+    "S03 Curved structural hatch and registered bolted lap": {
+      "last_feature_id": 344,
+      "feature_count": 344
+    },
+    "S04 Direct component locating and harness features - measurement gates open": {
+      "last_feature_id": 468,
+      "feature_count": 468
+    },
+    "S02 Wheel axial retention and bearing installation path refined": {
+      "last_feature_id": 498,
+      "feature_count": 498
+    },
+    "S05 Print preparation and complete drive test \u2014 one-drive CAD review, release HOLD": {
+      "last_feature_id": 501,
+      "feature_count": 501
+    },
+    "S04 Exact-clearance corrections to native mounts and S02 transmission stack": {
+      "last_feature_id": 505,
+      "feature_count": 505
+    },
+    "S02 Input cap clearance throughout proposed tension travel": {
+      "last_feature_id": 516,
+      "feature_count": 515
+    }
+  },
+  "native_naming": "Stage names appear in sketches/datums/components; automatic operation names are not renamed.",
+  "mass_ledger": {
+    "status": "Catalog subtotal only, not weighed vehicle; new shell slice estimate is separate. Do not infer mass from solid hardware envelopes.",
     "entries": [
       {
         "item": "Two selected servos",
@@ -1006,15 +421,27 @@
         "kg": 0.048
       },
       {
-        "item": "Four selected wheel collars",
-        "kg": 0.032
+        "item": "Two inboard wheel collars",
+        "kg": 0.016
       },
       {
         "item": "Two conditional00.25 DF clutches",
         "kg": 0.2
+      },
+      {
+        "item": "Two3 mm steel spacers",
+        "kg": 0.00124
+      },
+      {
+        "item": "Two10 mm steel spacers",
+        "kg": 0.0096
+      },
+      {
+        "item": "Two0.5 mm stainless shims",
+        "kg": 0.00036
       }
     ],
-    "catalog_subtotal_kg": 0.488,
+    "catalog_subtotal_kg": 0.4832,
     "missing": [
       "printed ribbed structure and tires",
       "battery and electronics",
@@ -1022,456 +449,762 @@
       "horns, bridges, fasteners and wiring",
       "sensors, contacts, mounts and connectors"
     ],
-    "whole_vehicle_mass_kg": null
+    "whole_vehicle_mass_kg": null,
+    "shell_and_hatch_estimated_printed_kg": 0.7417171989610819,
+    "mass_estimate_basis": "Role-based extrusion tally from generic PETG axle-vertical slices; not weighed mass. Supports excluded. Other printed/hardware/pack/harness items still required.",
+    "full_printed_parts_estimate_excluding_tires_kg": 1.3294327875512262,
+    "catalog_plus_printed_partial_kg": 1.8126327875512263,
+    "partial_sum_exclusions": [
+      "tires",
+      "shafts",
+      "pulleys/drive plates and horn adapter",
+      "battery, electronics and cameras",
+      "bolts/straps/wiring/connectors/contacts"
+    ]
   },
-  "retired_thermal_trial_placeholders": {
-    "initial_slip_seconds_max": 0.25,
-    "initial_cooldown_seconds_min": 30,
-    "initial_temperature_stop_C": 40,
-    "initial_temperature_rise_stop_C": 10
-  },
-  "active_test_limits_status": "UNSET: powered tests prohibited until justified torque/current/temperature/duration limits are recorded. Old thermal values are archived examples, not permission.",
-  "servo_mechanical_superseded": {
-    "model": "2000-0025-0002",
-    "source": "https://www.gobilda.com/2000-series-dual-mode-servo-25-2-torque/",
-    "checked": "2026-09-13",
-    "supplier_step": "supplier-models/2000-0025-0002/2000-0025-0002.step",
-    "supplier_bounds": "supplier-models/servo-native-bounds.json",
-    "mount_slot_pattern_mm": [
-      48,
-      9.9
-    ],
-    "mount_slot_diameter_mm": 4.5,
-    "mount_ear_thickness_mm": 2.7,
-    "case_nominal_mm": [
-      40.3,
-      20,
-      39.9
-    ],
-    "overall_source_bounds_mm": [
-      54.3,
-      20.15,
-      44.1
-    ],
-    "output_axis_x_from_mount_pattern_midpoint_mm": -9.8,
-    "mass_kg": 0.06,
-    "continuous_permissible_torque_Nm": null,
-    "feedback_external": false,
-    "included_horn": "Use supplied matching25T horn; complete horn sweep/bolt pattern measured on sample before bridge print."
-  },
-  "drive_article": {
-    "status": "Historical wheel/bench article. Current drive structure is integrated_drive; wheel/tire printing deferred.",
-    "wheel_diameter_mm": 246,
-    "wheel_width_mm": 40,
-    "wheel_inner_y": 110,
-    "wheel_main_outer_y": 142,
-    "wheel_retainer_outer_y": 150,
-    "rim_radius_mm": 115,
-    "bead_radius_mm": 117,
-    "tread_radius_mm": 123,
-    "web_y": [
-      133.5,
-      138.5
-    ],
-    "web_thickness_mm": 5,
-    "spokes": 8,
-    "spoke_width_mm": 4,
-    "wheel_bolt_circle_mm": 216,
-    "wheel_retainer_fastener": "8 x M4x35 with recessed heads and captive nuts",
-    "hub_fastener": "4 x M4x10, verify 5 mm engagement and no bottoming",
-    "hub_register_hole_mm": 14.2,
-    "tire_fit_radial_clearance_mm": 0.15,
-    "bearing_seat_trial_mm": 22.15,
-    "bearing_axial_pocket_mm": null,
-    "bearing_axial_retention_status": "Opposed outer-race lips and shaft collars modeled; measured endplay/shims and cap registration remain to detail.",
-    "output_bearing_centers_y": [
-      51,
-      99
-    ],
-    "output_shaft_y": [
-      38,
-      148
-    ],
-    "input_bearing_centers_y": [
-      72,
-      99
-    ],
-    "input_outer_saddle_center_y": 98,
-    "input_outer_bearing_refinement_shift_y": 1,
-    "input_carriage_bottom_z_axle": -32,
-    "input_carriage_sole_thickness_mm": 7,
-    "frame_base_status": "SUPERSEDED: rectangular bench frame removed from current native assembly; no transfer to a different vehicle frame required.",
-    "input_shaft_y": [
-      55,
-      104
-    ],
-    "input_retention_status": "Outer collar replaced by requested machined groove and DIN471 8 mm shaft retaining ring inside cover. Groove specification and shaft supplier remain HOLD.",
-    "center_adjustment_mm": [
-      -1.5,
-      1.5
-    ],
-    "frame_base_xyz_mm": [
-      114,
-      100,
-      8
-    ],
-    "frame_base_min_xyz_axle": [
-      -32,
-      5,
-      -40
-    ],
-    "servo_case_xyz_mm": [
-      40.5,
-      40.5,
-      20
-    ],
-    "servo_case_min_xyz_axle": [
-      19.672255,
-      8,
-      -10
-    ],
-    "servo_ears_modelled": false,
-    "servo_output_offset_status": "Axis location inside case still a placement assumption; no fitted cradle released.",
-    "clutch": "ComInTec00.25 DF d8 T1 candidate; purchased default retained, unqualified",
-    "clutch_drive_plate_od_mm": 40,
-    "clutch_drive_plate_thickness_mm": 2,
-    "clutch_plate_bore_mm": null,
-    "clutch_pulley_attach_circle_mm": 34,
-    "clutch_pulley_attach_fastener": "4 x M3; proposed, supplier approval/thermal qualification pending",
-    "pulley_profile_status": "HTD3M traced tooth coordinates; unpowered belt-fit prototype, not certified tooth geometry",
-    "physical_validation": false,
-    "wheel_nut_seat_radius_mm": 7,
-    "offline_slice_estimates": {
-      "filament_total_g": 504.41247940063477,
-      "hours_total": 19.959073215060766,
-      "includes_print_aids": true,
-      "basis": "Installed X2D 0.4 mm, generic PETG/TPU, 0.2 mm layers, 15 percent gyroid; five PETG / three TPU walls. Not physical mass."
-    }
-  },
-  "printer_verified_reference": {
+  "printer": {
     "model": "Bambu Lab X2D",
-    "source": "https://blog.bambulab.com/xcellence-made-simple-bambu-lab-presents-the-x2d/",
-    "checked": "2026-09-13",
-    "main_nozzle_volume_mm": [
-      256,
-      256,
-      260
-    ],
-    "dual_nozzle_intersection_mm": [
-      235.5,
-      256,
-      256
-    ],
-    "wheel_process": "Historical wheel set was successfully sliced offline for X2D main nozzle; wheel/tire printing now deferred. See test-record.json."
-  },
-  "integrated_drive": {
-    "outside_diameter_mm": 159,
-    "parent_body_diameter_mm": 160,
-    "shell_mm": 3.5,
-    "body_interface_y": 44,
-    "pilot_diameter_mm": 151,
-    "pilot_depth_mm": 2,
-    "parent_socket_diameter_mm": 151.3,
-    "body_bolt_circle_mm": 138,
-    "body_bolts": "4 x M4 with captive nuts; access from central body",
-    "end_face_y": 105,
-    "carrier_y": [
-      42,
-      104.5
-    ],
-    "input_spine_y": [
-      6,
-      104
-    ],
-    "clamp_faces": "Body mounting flange/pilot faces; padded clamps on opposed upper quadrants with a reaction stop. Do not clamp bearing caps or moving carriage.",
-    "tire_status": "Deferred; printed TPU versus purchased tire not selected",
-    "powered_release": false,
-    "input_rails_y": [
-      50.5,
-      104
-    ],
-    "input_spine_x_from_axis": [
-      -23,
-      18.5
-    ],
-    "input_spine_floor_z_axle": [
-      -29,
-      -25
-    ],
-    "carriage_fastener_xy_from_input_axis": [
-      [
-        -18,
-        56
+    "source_record": {
+      "model": "Bambu Lab X2D",
+      "source": "https://blog.bambulab.com/xcellence-made-simple-bambu-lab-presents-the-x2d/",
+      "checked": "2026-09-13",
+      "main_nozzle_volume_mm": [
+        256,
+        256,
+        260
       ],
-      [
-        13,
-        56
+      "dual_nozzle_intersection_mm": [
+        235.5,
+        256,
+        256
       ],
-      [
-        -18,
-        84
-      ],
-      [
-        13,
-        84
-      ]
-    ],
-    "carriage_fastener": "4 x M4 hex-head bolts, washer and captive nut; side-wrench approach below the belt, actual tool sweep to verify",
-    "body_interface_relief": {
-      "min_xyz_axle": [
-        24,
-        38,
-        -40
-      ],
-      "max_xyz_axle": [
-        73,
-        50,
-        -14
-      ]
+      "wheel_process": "Historical wheel set was successfully sliced offline for X2D main nozzle; wheel/tire printing now deferred. See test-record.json."
     },
-    "servo_case_min_xyz_axle": [
-      39.672255,
-      5,
-      -30
-    ],
-    "servo_case_size_xyz": [
-      20,
-      40.5,
-      40.5
-    ],
-    "servo_case_orientation": "90 degrees about output axis relative to previous article. Output offset and ears still unmeasured.",
-    "saddle_attachment": "4 x M3 clearance at X=input axis +/-14.5, Y9/39; measured servo ears, retainers and locking nuts still to detail",
-    "parent_body_status": "Matching short body-interface segment modeled. Rest of whole-body packaging has not been updated or cleared.",
-    "wheel_bearing_span_mm": 48,
-    "input_bearing_span_mm": 27,
-    "print_material": "PETG starting candidate; fit review, no strength/temperature qualification",
-    "saddle_lower_forward_corner_relief_mm": 2,
-    "sweep_min_radial_clearance_to_body_inner_wall_mm": 0.5333,
-    "clearance_caution": "Small nominal margin only; measured print error, body distortion, complete servo ears and wiring not yet included.",
-    "live_clearance_revision": {
-      "native_source": "drive-end-section.nbcad",
-      "output_flange_relief_radius_mm": 25,
-      "output_flange_relief_y_mm": [
-        93.25,
-        95.5
-      ],
-      "cover_input_window_x_mm": [
-        24.8722552409046,
-        71.4722552409046
-      ],
-      "cover_input_window_z_axle_mm": [
-        -38.5,
-        16.3
-      ],
-      "carrier_ring_relief_y_mm": [
-        95.5,
-        102.25
-      ],
-      "carrier_ring_relief_z_axle_mm": [
-        -29.3,
-        16.3
-      ],
-      "saddle_case_clearance_x_from_input_axis_mm": [
-        -10.5,
-        10.5
-      ],
-      "saddle_case_clearance_z_axle_mm": [
-        -30,
-        -28.9
-      ],
-      "basis": "Named native sketches and extrudes. Historical integrate_drive.py does not include these live edits and must not overwrite this source."
-    },
-    "servo_package_shift_y_mm": -3,
-    "servo_to_input_reserves_y_mm": {
-      "case": [
-        5,
-        45.5
-      ],
-      "spool": [
-        46,
-        57
-      ],
-      "adapter": [
-        56,
-        65
-      ],
-      "input_clamp": [
-        54,
-        64
-      ],
-      "saddle": [
-        4,
-        47
-      ]
-    },
-    "adapter_to_input_post_nominal_gap_mm": 1.5,
-    "structural_tension_endpoint_checks": {
-      "x_offsets_mm": [
-        -1.5,
-        1.5
-      ],
-      "overlaps": 0,
-      "scope": "Selected carrier, cover, parent interface, spine, saddle, servo case and input caps. Not a continuous swept volume or measured-hardware clearance guarantee."
-    }
-  },
-  "workspace": {
-    "master_cad": "Roller-300.nbcad",
-    "geometry_authority": "native CAD feature history",
-    "parameter_sync": "manual; not an automatic native parameter link",
-    "historical_models": "archive/",
-    "remote": "https://github.com/jeffglousher/Roller-300"
-  },
-  "legacy_parameter_warning": "Legacy spur-gear and old servo-reserve fields above are historical studies. Native master and current_drive/full_vehicle_packaging records govern current belt geometry; no automatic parameter link.",
-  "full_vehicle_packaging": {
-    "date": "2026-09-19",
-    "status": "Native packaging proposal; retention, wiring, purchased fits and interference qualification unfinished",
-    "coordinates": "X forward, Y left, Z up; positions below use ground frame, axle Z123",
-    "outside_width_mm": 300,
-    "wheel_diameter_mm": 246,
-    "body_diameter_mm": 160,
-    "central_tub_inner_radius_mm": 76,
-    "central_tub_y_mm": [
-      -38,
-      38
-    ],
-    "nominal_underbelly_mm": 43,
-    "lid_seam_mm": 0.3,
-    "battery": {
-      "world_min_mm": [
-        -60,
-        -15,
-        78
-      ],
-      "world_size_mm": [
-        85,
-        30,
-        90
-      ],
-      "status": "UNMEASURED inherited 90x85x30 allowance rotated upright; not confirmed low battery or COM"
-    },
-    "thermal": {
-      "world_min_mm": [
-        27,
-        -35.5,
-        143
-      ],
-      "world_size_mm": [
-        14,
-        71,
-        42
-      ],
-      "status": "Nominal complete device envelope; mating cable, mount, lens datum and aperture open"
-    },
-    "pi": {
-      "world_min_mm": [
-        -30,
-        -90,
-        161
-      ],
-      "world_size_mm": [
-        30,
-        65,
-        5
-      ],
-      "status": "Bare nominal envelope; connectors and removal open"
-    },
-    "pixracer": {
-      "world_xy_bounds_mm": [
-        -40,
-        -4,
-        52,
-        88
-      ],
-      "world_z_plane_mm": 168,
-      "status": "36x36 footprint only; total fitted height unknown"
-    },
-    "tof": {
-      "world_x_plane_mm": 75,
-      "world_y_centers_mm": [
-        -36,
-        -12,
-        12,
-        36
-      ],
-      "world_z_bounds_mm": [
-        113,
-        125
-      ],
-      "footprint_width_mm": 20,
-      "status": "Four front outlines only; depth, curvature/yaw, mount and aperture open"
-    },
-    "harness": {
-      "world_min_mm": [
-        -8,
-        -96,
-        173
-      ],
-      "world_size_mm": [
-        16,
-        192,
-        12
-      ],
-      "status": "Clearance reserve only; not verified cable bundle"
-    },
-    "wheel_web": {
-      "left_y_mm": [
-        133.5,
-        137.5
-      ],
-      "hub_pilot_bore_mm": 14.4,
-      "status": "Solid web packaging; hub bolt holes, lightening, stiffness and fastening unfinished"
-    }
-  },
-  "barrel_first_revision": {
-    "status": "Superseded construction-stock role: body10171 is now actual unibody housing; old fixed frame bodies consumed.",
-    "outer_diameter_mm": 160,
-    "inner_diameter_mm": 152,
-    "length_mm": 210,
-    "world_y_mm": [
-      -105,
-      105
-    ],
-    "axle_z_mm": 123,
-    "printer_profile": "Installed Bambu Lab X2D 0.4 nozzle",
-    "main_build_mm": [
+    "installed_main_nozzle_profile_mm": [
       256,
       256,
       261
     ],
-    "stock_print_orientation": "Axle vertical; envelope only, not sliced",
-    "stock_with_trial_brim_footprint_mm": [
-      170,
-      170
-    ],
-    "split_rule": "Largest contiguous serviceable parts; keep each pair of bearing supports in one carrier; register and bolt load-bearing joints",
-    "test_module_scope": "Complete supported and guarded servo/belt/clutch/hub drive assembly, not just carrier/spine fit prints",
-    "construction_body_id": 10171
+    "primary_orientation": "Axle vertical; compare opening-down from actual slicing",
+    "release": false
   },
-  "unibody_revision": {
-    "housing_body_id": 10171,
-    "consumed_body_ids": [
-      10156,
-      10159,
-      10002,
-      10151,
-      10083,
-      10154
+  "historical_fit_exports": {
+    "folder": "first-prints/drive-end-section",
+    "tag": "drive-fit-candidate-2026-09-19",
+    "source_commit": "80f06f3",
+    "unchanged": true
+  },
+  "measurement_gates": [
+    "complete servo ears/horn and output offset",
+    "battery dimensions, mass and wire exit",
+    "input bearing and shaft axial retention",
+    "exact clutch driving/driven interface and duty",
+    "fitted controller/sensor/camera depth and mated connectors",
+    "positive board/sensor retention and optical openings",
+    "fastener dimensions, bearing and nut coupons, preload",
+    "full service/tool sweeps and support removal"
+  ],
+  "powered_test_release": false,
+  "physical_tests_performed": false,
+  "wheel_retention": {
+    "wheel_shaft_length_mm": 113,
+    "left_shaft_y_mm": [
+      35,
+      148
     ],
-    "central_clearance_radius_mm": 76,
-    "central_clearance_y_mm": [
-      -45,
-      45
+    "left_inboard_collar_y_mm": [
+      35.5,
+      44.5
     ],
-    "stages_modeled": [
-      "S01 continuous barrel",
-      "S02 unified fixed frame and central interior clearance"
+    "left_inboard_spacer_y_mm": [
+      44.5,
+      47.5
     ],
-    "stages_pending": [
-      "S03 component locating features",
-      "S04 service access and panels",
-      "S05 complete motor-module split and structural joint",
-      "S06 print qualification"
+    "left_outboard_shim_y_mm": [
+      102.5,
+      103
     ],
-    "not_print_ready": true
+    "left_outboard_spacer_y_mm": [
+      103,
+      113
+    ],
+    "nominal_spacer_ID_mm": 8,
+    "spacer_OD_mm": [
+      10,
+      12,
+      11
+    ],
+    "source_models": [
+      "inboard 3 mm 1522-0010-0030",
+      "outboard 10 mm 1529-0012-0100",
+      "outboard 0p5 shim 2807-0811-0500"
+    ],
+    "removed": "Superseded outboard collars; clamping hub now supplies outboard shaft retention",
+    "gates": [
+      "received spacer/bearing fits and tolerances; do not print bearing race spacers",
+      "confirm 608 inner-race abutment and clamp-hub retention rating",
+      "set measured total endplay0.10\u20130.25 mm without bearing preload",
+      "inner bearing floating allowance and printed bore alignment require coupon/assembly verification"
+    ],
+    "assembly": "Lower bearing/shaft/belt assembly with outboard hub/spacer removed; blind end-guard relief clears outer bearing. Fit outboard shim/spacer and hub axially after shaft seating. Slide outer cap axially inward to hatch before lifting it."
+  },
+  "wheel_holes": {
+    "pattern_square_mm": 16,
+    "clearance_diameter_mm": 4.4,
+    "candidate_fastener": "M4x10; 4 mm web and approximately6 mm thread engagement. Verify received hub and clamp access."
+  },
+  "input_cap_travel_detail": {
+    "input_cap_outer_limit_radius_mm": 70,
+    "M3_counterbore_diameter_mm": 6,
+    "M3_head_seating_z_mm": 137,
+    "input_cap_screw_candidate": "M3x30 socket head; nominal headD5.5 x3.0; receiving fit and angled tool access HOLD",
+    "evidence": "checks/shell-travel-checks.json"
+  },
+  "clearance_corrections": {
+    "reason": "Native exact check found shelf/hatch overlap268.617 mm3, cradle/battery180 mm3 and input pulley/bearing163.661 mm3.",
+    "actions": [
+      "Edit existing eight thermal mounting sketches +3 mm X and move thermal envelope with them",
+      "Conform all fresh mounting roots to the actual hatch interior without changing the hatch",
+      "Move both complete pulley/belt/clutch groups another2 mm inboard; total4 mm"
+    ],
+    "recheck": "PASS for selected static shell/hatch/component and support interfaces; simplified belt/pulley overlaps remain explicitly unqualified."
+  },
+  "wheel_rigid_rim_diameter": 230,
+  "wheel_without_tread_note": "First clamped drive review omits rubber.246 mm is the proposed tread OD; actual ground tests must use measured rolling radius.",
+  "known_motion_clearance_bounds": {
+    "input_cap_max_vehicle_radius_over_translation_mm": 71.5,
+    "lap_inner_radius_mm": 72,
+    "cap_radial_geometric_margin_mm": 0.5,
+    "floor_worst_corner_radius_mm": 75.14818693754361,
+    "shell_inside_radius_mm": 76,
+    "scope": "Conservative triangle-inequality cap bound and floor corner bound plus native -1.5/0/+1.5 mm tests. Not a complete received-part or tool swept-volume verification."
+  },
+  "native_feature_ids_by_named_stage": {
+    "S01": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      400,
+      401,
+      402,
+      439,
+      440,
+      441,
+      442,
+      443,
+      444,
+      445,
+      446
+    ],
+    "S02": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      190,
+      191,
+      192,
+      193,
+      194,
+      195,
+      196,
+      197,
+      198,
+      199,
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219,
+      220,
+      221,
+      222,
+      223,
+      224,
+      225,
+      226,
+      227,
+      228,
+      229,
+      230,
+      231,
+      232,
+      233,
+      234,
+      235,
+      236,
+      237,
+      238,
+      239,
+      240,
+      241,
+      242,
+      243,
+      244,
+      245,
+      246,
+      247,
+      248,
+      249,
+      250,
+      251,
+      252,
+      253,
+      254,
+      255,
+      256,
+      257,
+      258,
+      259,
+      260,
+      261,
+      262,
+      263,
+      264,
+      265,
+      266,
+      267,
+      268,
+      269,
+      270,
+      271,
+      272,
+      273,
+      274,
+      275,
+      276,
+      277,
+      278,
+      279,
+      280,
+      281,
+      282,
+      283,
+      284,
+      285,
+      286,
+      287,
+      288,
+      289,
+      290,
+      291,
+      469,
+      470,
+      471,
+      472,
+      473,
+      474,
+      475,
+      476,
+      477,
+      478,
+      479,
+      480,
+      481,
+      482,
+      483,
+      484,
+      485,
+      486,
+      487,
+      488,
+      489,
+      490,
+      491,
+      492,
+      493,
+      494,
+      495,
+      496,
+      497,
+      498,
+      502,
+      503,
+      507,
+      508,
+      509,
+      510,
+      511,
+      512,
+      513,
+      514,
+      515,
+      516
+    ],
+    "S03": [
+      292,
+      293,
+      294,
+      295,
+      296,
+      297,
+      298,
+      299,
+      300,
+      301,
+      302,
+      303,
+      304,
+      305,
+      306,
+      307,
+      308,
+      309,
+      310,
+      311,
+      312,
+      313,
+      314,
+      315,
+      316,
+      317,
+      318,
+      319,
+      320,
+      321,
+      322,
+      323,
+      324,
+      325,
+      326,
+      327,
+      328,
+      329,
+      330,
+      331,
+      332,
+      333,
+      334,
+      335,
+      336,
+      337,
+      338,
+      339,
+      340,
+      341,
+      342,
+      343,
+      344
+    ],
+    "S04": [
+      345,
+      346,
+      347,
+      348,
+      349,
+      350,
+      351,
+      352,
+      353,
+      354,
+      355,
+      356,
+      357,
+      358,
+      359,
+      360,
+      361,
+      362,
+      363,
+      364,
+      365,
+      366,
+      367,
+      368,
+      369,
+      370,
+      371,
+      372,
+      373,
+      374,
+      375,
+      376,
+      377,
+      378,
+      379,
+      380,
+      381,
+      382,
+      383,
+      384,
+      385,
+      386,
+      387,
+      388,
+      389,
+      390,
+      391,
+      392,
+      393,
+      394,
+      395,
+      396,
+      397,
+      398,
+      399,
+      403,
+      404,
+      405,
+      406,
+      407,
+      408,
+      409,
+      410,
+      411,
+      412,
+      413,
+      414,
+      415,
+      416,
+      417,
+      418,
+      419,
+      420,
+      421,
+      422,
+      423,
+      424,
+      425,
+      426,
+      427,
+      428,
+      429,
+      430,
+      431,
+      432,
+      433,
+      434,
+      435,
+      436,
+      437,
+      438,
+      447,
+      448,
+      449,
+      450,
+      451,
+      452,
+      453,
+      454,
+      455,
+      456,
+      457,
+      458,
+      459,
+      460,
+      461,
+      462,
+      463,
+      464,
+      465,
+      466,
+      467,
+      468,
+      504,
+      505
+    ],
+    "S05": [
+      499,
+      500,
+      501
+    ]
+  },
+  "slicer_estimates": [
+    {
+      "part": "curved-hatch-axle-vertical",
+      "material_g_including_support_and_brim": 148.0509033203125,
+      "estimated_seconds": 13612.6826171875,
+      "role_based_estimated_part_g": 145.04252248756111,
+      "role_based_estimated_support_g": 2.8226223884465615
+    },
+    {
+      "part": "input-cap-inner-axle-vertical",
+      "material_g_including_support_and_brim": 3.8901405334472656,
+      "estimated_seconds": 993.2168579101562,
+      "role_based_estimated_part_g": 3.517592555943901,
+      "role_based_estimated_support_g": 0.31104359358876554
+    },
+    {
+      "part": "input-cap-outer-axle-vertical",
+      "material_g_including_support_and_brim": 3.835928201675415,
+      "estimated_seconds": 995.6548461914062,
+      "role_based_estimated_part_g": 3.4458392982770545,
+      "role_based_estimated_support_g": 0.3316990707552573
+    },
+    {
+      "part": "left-input-carriage-floor-down",
+      "material_g_including_support_and_brim": 26.602161407470703,
+      "estimated_seconds": 4229.02197265625,
+      "role_based_estimated_part_g": 25.110949504964005,
+      "role_based_estimated_support_g": 1.3300819269262145
+    },
+    {
+      "part": "left-wheel-axle-vertical",
+      "material_g_including_support_and_brim": 399.2715759277344,
+      "estimated_seconds": 35606.203125,
+      "role_based_estimated_part_g": 249.15725744898353,
+      "role_based_estimated_support_g": 149.63012701396482
+    },
+    {
+      "part": "main-shell-axle-vertical",
+      "material_g_including_support_and_brim": 1189.536865234375,
+      "estimated_seconds": 107738.9375,
+      "role_based_estimated_part_g": 596.6746764735208,
+      "role_based_estimated_support_g": 592.636842343439
+    },
+    {
+      "part": "main-shell-opening-down",
+      "material_g_including_support_and_brim": 1099.9222412109375,
+      "estimated_seconds": 107405.03125,
+      "role_based_estimated_part_g": 622.6268738615728,
+      "role_based_estimated_support_g": 477.26554463699796
+    },
+    {
+      "part": "wheel-cap-inner-axle-vertical",
+      "material_g_including_support_and_brim": 6.585194110870361,
+      "estimated_seconds": 1273.2147216796875,
+      "role_based_estimated_part_g": 6.313077804546015,
+      "role_based_estimated_support_g": 0.19698302748652696
+    },
+    {
+      "part": "wheel-cap-outer-axle-vertical",
+      "material_g_including_support_and_brim": 6.585193634033203,
+      "estimated_seconds": 1273.2144775390625,
+      "role_based_estimated_part_g": 6.313077682357695,
+      "role_based_estimated_support_g": 0.19698299693944712
+    }
+  ],
+  "views": {
+    "single_master": "Use visibility within Roller-300.nbcad; no second CAD file",
+    "full_vehicle": "Show all active bodies; hide construction geometry",
+    "shell_interior_hide": [
+      141,
+      13,
+      14,
+      30,
+      31
+    ],
+    "one_drive_hide": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      122,
+      227,
+      228,
+      229,
+      38,
+      47,
+      123,
+      124
+    ],
+    "hatch_joint": "Hide hardware, isolate main shell and hatch; actual desktop screenshot still pending"
   }
 }

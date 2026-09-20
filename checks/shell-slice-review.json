@@ -1,0 +1,2148 @@
+{
+  "profile": "Installed X2D0.4; generic PETG;0.20 mm;5 walls;15% gyroid;normal auto supports everywhere;3 mm brim",
+  "prints_sent": false,
+  "not_print_release": true,
+  "results": [
+    {
+      "part": "curved-hatch-axle-vertical",
+      "stl_sha256": "6582bf0b34f5d96207551079d7a68ed9d866492c9ba994523c20bb8a751e8197",
+      "return_code": 0,
+      "warning": "",
+      "material_g_including_support_and_brim": 148.0509033203125,
+      "estimated_seconds": 13612.6826171875,
+      "layer_events": 1363,
+      "min_max_print_layer_z_mm": [
+        0.2,
+        179.4
+      ],
+      "toolpath_roles": {
+        "Support interface": {
+          "segments": 1645,
+          "extrusion_length_mm": 71.4655799999999,
+          "path_length_mm": 2238.6976402761634,
+          "max_segment_mm": 11.679000000000002,
+          "min_xyz": [
+            58.95,
+            133.584,
+            0.2
+          ],
+          "max_xyz": [
+            196.411,
+            154.064,
+            166.6
+          ]
+        },
+        "Support": {
+          "segments": 14677,
+          "extrusion_length_mm": 833.8085599999944,
+          "path_length_mm": 22491.505285450756,
+          "max_segment_mm": 15.317000000000007,
+          "min_xyz": [
+            57.012,
+            131.816,
+            0.2
+          ],
+          "max_xyz": [
+            198.989,
+            155.832,
+            165.85
+          ]
+        },
+        "Brim": {
+          "segments": 391,
+          "extrusion_length_mm": 60.80858000000009,
+          "path_length_mm": 1684.1671392556932,
+          "max_segment_mm": 5.9269999999999925,
+          "min_xyz": [
+            64.276,
+            101.347,
+            0.2
+          ],
+          "max_xyz": [
+            192.735,
+            139.047,
+            0.2
+          ]
+        },
+        "Outer wall": {
+          "segments": 64482,
+          "extrusion_length_mm": 9367.145070000475,
+          "path_length_mm": 314411.9745097981,
+          "max_segment_mm": 14.863468238103492,
+          "min_xyz": [
+            59.21,
+            104.164,
+            0.2
+          ],
+          "max_xyz": [
+            196.79,
+            151.12,
+            179.4
+          ]
+        },
+        "Inner wall": {
+          "segments": 238272,
+          "extrusion_length_mm": 38029.26841001448,
+          "path_length_mm": 1182532.2381522516,
+          "max_segment_mm": 13.573819175118585,
+          "min_xyz": [
+            59.602,
+            104.556,
+            0.2
+          ],
+          "max_xyz": [
+            196.398,
+            149.055,
+            179.2
+          ]
+        },
+        "Gap infill": {
+          "segments": 3098,
+          "extrusion_length_mm": 37.28903999999988,
+          "path_length_mm": 1795.2766560110654,
+          "max_segment_mm": 2.231059165508626,
+          "min_xyz": [
+            59.399,
+            112.078,
+            0.2
+          ],
+          "max_xyz": [
+            196.578,
+            150.166,
+            179.4
+          ]
+        },
+        "Overhang wall": {
+          "segments": 124,
+          "extrusion_length_mm": 4.235369999999999,
+          "path_length_mm": 131.7176300970413,
+          "max_segment_mm": 6.285109041069807,
+          "min_xyz": [
+            59.21,
+            134.104,
+            0.4
+          ],
+          "max_xyz": [
+            192.473,
+            151.107,
+            177.2
+          ]
+        },
+        "Support transition": {
+          "segments": 338,
+          "extrusion_length_mm": 18.74949999999999,
+          "path_length_mm": 532.7471751621472,
+          "max_segment_mm": 5.7549999999999955,
+          "min_xyz": [
+            58.95,
+            136.631,
+            0.8
+          ],
+          "max_xyz": [
+            197.05,
+            153.894,
+            165.85
+          ]
+        },
+        "Top surface": {
+          "segments": 378,
+          "extrusion_length_mm": 43.18808000000001,
+          "path_length_mm": 1449.9175166530579,
+          "max_segment_mm": 32.00718845821981,
+          "min_xyz": [
+            59.417,
+            104.371,
+            12.6
+          ],
+          "max_xyz": [
+            193.567,
+            149.581,
+            179.4
+          ]
+        },
+        "Bridge": {
+          "segments": 8,
+          "extrusion_length_mm": 0.30914,
+          "path_length_mm": 8.841748676662766,
+          "max_segment_mm": 2.448559780769083,
+          "min_xyz": [
+            59.359,
+            147.194,
+            124.8
+          ],
+          "max_xyz": [
+            60.637,
+            149.701,
+            138.6
+          ]
+        },
+        "Internal solid infill": {
+          "segments": 12,
+          "extrusion_length_mm": 0.19762000000000002,
+          "path_length_mm": 6.672305909847012,
+          "max_segment_mm": 1.1782172974455791,
+          "min_xyz": [
+            59.562,
+            144.551,
+            133.6
+          ],
+          "max_xyz": [
+            62.271,
+            149.498,
+            176.8
+          ]
+        }
+      },
+      "visual_support_removal_review": "HOLD \u2014 desktop security prompt blocks app inspection",
+      "physical_validation": false,
+      "role_based_estimated_part_g": 145.04252248756111,
+      "role_based_estimated_support_g": 2.8226223884465615,
+      "counted_extrusion_mass_g": 148.05089733069343,
+      "toolpath_audit_limits": "G0/G1 and XY I/J G2/G3 extrusion parsed; masses use profile1.75 mm/1.27 g per cm3. Bounds are segment endpoints, not complete arc envelopes. This is not collision or support-removal qualification."
+    },
+    {
+      "part": "input-cap-inner-axle-vertical",
+      "stl_sha256": "ea7b878c75380c98b76f9717e2c9df3f59d8717170dcdc85f4457ea803e3f9b4",
+      "return_code": 0,
+      "warning": "",
+      "material_g_including_support_and_brim": 3.8901405334472656,
+      "estimated_seconds": 993.2168579101562,
+      "layer_events": 52,
+      "min_max_print_layer_z_mm": [
+        0.2,
+        8.0
+      ],
+      "toolpath_roles": {
+        "Support": {
+          "segments": 999,
+          "extrusion_length_mm": 66.7425399999997,
+          "path_length_mm": 2028.4129525848787,
+          "max_segment_mm": 13.722000583005373,
+          "min_xyz": [
+            108.799,
+            114.553,
+            0.2
+          ],
+          "max_xyz": [
+            147.201,
+            141.447,
+            5.92
+          ]
+        },
+        "Brim": {
+          "segments": 395,
+          "extrusion_length_mm": 20.13426000000001,
+          "path_length_mm": 557.6438856382416,
+          "max_segment_mm": 18.182000000000002,
+          "min_xyz": [
+            105.886,
+            116.536,
+            0.2
+          ],
+          "max_xyz": [
+            150.114,
+            139.464,
+            0.2
+          ]
+        },
+        "Outer wall": {
+          "segments": 2485,
+          "extrusion_length_mm": 177.16330000000247,
+          "path_length_mm": 5922.268349062381,
+          "max_segment_mm": 37.272000000000006,
+          "min_xyz": [
+            108.71,
+            119.36,
+            0.2
+          ],
+          "max_xyz": [
+            147.29,
+            136.64,
+            8.0
+          ]
+        },
+        "Inner wall": {
+          "segments": 6366,
+          "extrusion_length_mm": 613.7233500000125,
+          "path_length_mm": 19031.26048321519,
+          "max_segment_mm": 36.573999999999984,
+          "min_xyz": [
+            109.102,
+            119.752,
+            0.2
+          ],
+          "max_xyz": [
+            146.898,
+            136.248,
+            7.8
+          ]
+        },
+        "Bottom surface": {
+          "segments": 153,
+          "extrusion_length_mm": 18.007260000000002,
+          "path_length_mm": 494.1829915846558,
+          "max_segment_mm": 17.59423092948368,
+          "min_xyz": [
+            111.117,
+            121.561,
+            0.2
+          ],
+          "max_xyz": [
+            144.883,
+            134.439,
+            0.2
+          ]
+        },
+        "Internal solid infill": {
+          "segments": 1241,
+          "extrusion_length_mm": 129.53624000000056,
+          "path_length_mm": 4317.237105773213,
+          "max_segment_mm": 19.171079051529674,
+          "min_xyz": [
+            110.487,
+            121.137,
+            0.4
+          ],
+          "max_xyz": [
+            145.343,
+            134.863,
+            7.8
+          ]
+        },
+        "Overhang wall": {
+          "segments": 43,
+          "extrusion_length_mm": 1.16541,
+          "path_length_mm": 36.23900027855156,
+          "max_segment_mm": 3.5900001392757668,
+          "min_xyz": [
+            108.71,
+            119.36,
+            0.6
+          ],
+          "max_xyz": [
+            144.278,
+            136.64,
+            7.6
+          ]
+        },
+        "Sparse infill": {
+          "segments": 1450,
+          "extrusion_length_mm": 75.76746000000006,
+          "path_length_mm": 2356.1528044668676,
+          "max_segment_mm": 13.159662383212776,
+          "min_xyz": [
+            110.672,
+            121.322,
+            0.8
+          ],
+          "max_xyz": [
+            145.328,
+            134.678,
+            7.0
+          ]
+        },
+        "Gap infill": {
+          "segments": 675,
+          "extrusion_length_mm": 12.489379999999995,
+          "path_length_mm": 495.9017795495268,
+          "max_segment_mm": 10.459999999999994,
+          "min_xyz": [
+            109.339,
+            119.556,
+            1.0
+          ],
+          "max_xyz": [
+            146.749,
+            135.637,
+            8.0
+          ]
+        },
+        "Top surface": {
+          "segments": 196,
+          "extrusion_length_mm": 47.47718999999997,
+          "path_length_mm": 1593.940310763648,
+          "max_segment_mm": 23.85212594298463,
+          "min_xyz": [
+            108.917,
+            119.567,
+            1.0
+          ],
+          "max_xyz": [
+            147.083,
+            136.433,
+            8.0
+          ]
+        },
+        "Floating vertical shell": {
+          "segments": 542,
+          "extrusion_length_mm": 26.935020000000048,
+          "path_length_mm": 887.2148359205429,
+          "max_segment_mm": 22.063999999999993,
+          "min_xyz": [
+            110.644,
+            121.336,
+            1.2
+          ],
+          "max_xyz": [
+            145.314,
+            134.664,
+            7.0
+          ]
+        },
+        "Support interface": {
+          "segments": 288,
+          "extrusion_length_mm": 28.529139999999995,
+          "path_length_mm": 905.139844252347,
+          "max_segment_mm": 17.432999999999993,
+          "min_xyz": [
+            111.245,
+            116.322,
+            1.4
+          ],
+          "max_xyz": [
+            144.664,
+            139.678,
+            6.8
+          ]
+        },
+        "Bridge": {
+          "segments": 407,
+          "extrusion_length_mm": 49.26691999999991,
+          "path_length_mm": 1107.782894573091,
+          "max_segment_mm": 20.762945479868677,
+          "min_xyz": [
+            110.487,
+            121.14,
+            1.8
+          ],
+          "max_xyz": [
+            145.47,
+            134.86,
+            7.2
+          ]
+        },
+        "Support transition": {
+          "segments": 103,
+          "extrusion_length_mm": 6.552649999999999,
+          "path_length_mm": 187.60256490476158,
+          "max_segment_mm": 17.26299999999999,
+          "min_xyz": [
+            110.737,
+            116.492,
+            4.52
+          ],
+          "max_xyz": [
+            145.263,
+            139.509,
+            5.92
+          ]
+        }
+      },
+      "visual_support_removal_review": "HOLD \u2014 desktop security prompt blocks app inspection",
+      "physical_validation": false,
+      "role_based_estimated_part_g": 3.517592555943901,
+      "role_based_estimated_support_g": 0.31104359358876554,
+      "counted_extrusion_mass_g": 3.890140434261577,
+      "toolpath_audit_limits": "G0/G1 and XY I/J G2/G3 extrusion parsed; masses use profile1.75 mm/1.27 g per cm3. Bounds are segment endpoints, not complete arc envelopes. This is not collision or support-removal qualification."
+    },
+    {
+      "part": "input-cap-outer-axle-vertical",
+      "stl_sha256": "b1200950442705670f89111bda1c22f06bd0ec2176675fda36a8c9478b9a8191",
+      "return_code": 0,
+      "warning": "",
+      "material_g_including_support_and_brim": 3.835928201675415,
+      "estimated_seconds": 995.6548461914062,
+      "layer_events": 50,
+      "min_max_print_layer_z_mm": [
+        0.2,
+        8.0
+      ],
+      "toolpath_roles": {
+        "Support": {
+          "segments": 1168,
+          "extrusion_length_mm": 75.90520000000012,
+          "path_length_mm": 2356.4517760676354,
+          "max_segment_mm": 9.631,
+          "min_xyz": [
+            108.799,
+            114.553,
+            0.2
+          ],
+          "max_xyz": [
+            150.078,
+            141.447,
+            5.886
+          ]
+        },
+        "Brim": {
+          "segments": 373,
+          "extrusion_length_mm": 19.114680000000003,
+          "path_length_mm": 529.4036523307104,
+          "max_segment_mm": 18.182000000000002,
+          "min_xyz": [
+            105.886,
+            116.536,
+            0.2
+          ],
+          "max_xyz": [
+            150.114,
+            139.464,
+            0.2
+          ]
+        },
+        "Outer wall": {
+          "segments": 2604,
+          "extrusion_length_mm": 178.27553000000214,
+          "path_length_mm": 5959.621489810575,
+          "max_segment_mm": 37.272000000000006,
+          "min_xyz": [
+            108.71,
+            119.36,
+            0.2
+          ],
+          "max_xyz": [
+            147.29,
+            136.64,
+            8.0
+          ]
+        },
+        "Inner wall": {
+          "segments": 6282,
+          "extrusion_length_mm": 602.4925200000135,
+          "path_length_mm": 18681.9285429846,
+          "max_segment_mm": 36.573999999999984,
+          "min_xyz": [
+            109.102,
+            119.752,
+            0.2
+          ],
+          "max_xyz": [
+            146.898,
+            136.248,
+            7.8
+          ]
+        },
+        "Bottom surface": {
+          "segments": 153,
+          "extrusion_length_mm": 18.007260000000002,
+          "path_length_mm": 494.1829915846558,
+          "max_segment_mm": 17.59423092948368,
+          "min_xyz": [
+            111.117,
+            121.561,
+            0.2
+          ],
+          "max_xyz": [
+            144.883,
+            134.439,
+            0.2
+          ]
+        },
+        "Internal solid infill": {
+          "segments": 1410,
+          "extrusion_length_mm": 146.9706099999996,
+          "path_length_mm": 4878.059062801421,
+          "max_segment_mm": 19.171079051529674,
+          "min_xyz": [
+            110.487,
+            121.137,
+            0.4
+          ],
+          "max_xyz": [
+            145.513,
+            134.863,
+            7.8
+          ]
+        },
+        "Overhang wall": {
+          "segments": 44,
+          "extrusion_length_mm": 1.64152,
+          "path_length_mm": 51.0370002785517,
+          "max_segment_mm": 3.5900001392757668,
+          "min_xyz": [
+            108.71,
+            119.36,
+            0.6
+          ],
+          "max_xyz": [
+            145.227,
+            136.64,
+            7.2
+          ]
+        },
+        "Sparse infill": {
+          "segments": 1337,
+          "extrusion_length_mm": 72.76698000000006,
+          "path_length_mm": 2262.834001779441,
+          "max_segment_mm": 13.159662383212776,
+          "min_xyz": [
+            110.672,
+            121.322,
+            0.8
+          ],
+          "max_xyz": [
+            145.328,
+            134.678,
+            7.0
+          ]
+        },
+        "Gap infill": {
+          "segments": 758,
+          "extrusion_length_mm": 10.668779999999998,
+          "path_length_mm": 502.42033716983127,
+          "max_segment_mm": 15.274000000000001,
+          "min_xyz": [
+            109.339,
+            119.556,
+            1.0
+          ],
+          "max_xyz": [
+            146.749,
+            136.044,
+            8.0
+          ]
+        },
+        "Top surface": {
+          "segments": 215,
+          "extrusion_length_mm": 49.24064999999999,
+          "path_length_mm": 1653.1513138115622,
+          "max_segment_mm": 23.85212594298463,
+          "min_xyz": [
+            108.917,
+            119.567,
+            1.0
+          ],
+          "max_xyz": [
+            147.083,
+            136.433,
+            8.0
+          ]
+        },
+        "Support interface": {
+          "segments": 261,
+          "extrusion_length_mm": 26.167569999999962,
+          "path_length_mm": 845.9904182225976,
+          "max_segment_mm": 18.50200000000001,
+          "min_xyz": [
+            111.245,
+            116.322,
+            1.4
+          ],
+          "max_xyz": [
+            147.296,
+            139.678,
+            6.8
+          ]
+        },
+        "Floating vertical shell": {
+          "segments": 219,
+          "extrusion_length_mm": 10.992029999999998,
+          "path_length_mm": 359.9782188303741,
+          "max_segment_mm": 22.063999999999993,
+          "min_xyz": [
+            110.686,
+            121.336,
+            1.4
+          ],
+          "max_xyz": [
+            145.314,
+            134.664,
+            7.0
+          ]
+        },
+        "Support transition": {
+          "segments": 114,
+          "extrusion_length_mm": 6.513409999999994,
+          "path_length_mm": 200.12393594700754,
+          "max_segment_mm": 17.26299999999999,
+          "min_xyz": [
+            110.737,
+            116.492,
+            3.8
+          ],
+          "max_xyz": [
+            148.14,
+            139.509,
+            5.886
+          ]
+        },
+        "Bridge": {
+          "segments": 309,
+          "extrusion_length_mm": 36.986250000000034,
+          "path_length_mm": 891.2196194492617,
+          "max_segment_mm": 20.762945479868677,
+          "min_xyz": [
+            110.487,
+            121.14,
+            4.8
+          ],
+          "max_xyz": [
+            145.47,
+            134.687,
+            7.2
+          ]
+        }
+      },
+      "visual_support_removal_review": "HOLD \u2014 desktop security prompt blocks app inspection",
+      "physical_validation": false,
+      "role_based_estimated_part_g": 3.4458392982770545,
+      "role_based_estimated_support_g": 0.3316990707552573,
+      "counted_extrusion_mass_g": 3.8359281345971756,
+      "toolpath_audit_limits": "G0/G1 and XY I/J G2/G3 extrusion parsed; masses use profile1.75 mm/1.27 g per cm3. Bounds are segment endpoints, not complete arc envelopes. This is not collision or support-removal qualification."
+    },
+    {
+      "part": "left-input-carriage-floor-down",
+      "stl_sha256": "7f177ecc555ffaae41e75a7ef14ba1ceb68396abc06af4451a526d6afd50f2f8",
+      "return_code": 0,
+      "warning": "",
+      "material_g_including_support_and_brim": 26.602161407470703,
+      "estimated_seconds": 4229.02197265625,
+      "layer_events": 226,
+      "min_max_print_layer_z_mm": [
+        0.2,
+        35.0
+      ],
+      "toolpath_roles": {
+        "Support interface": {
+          "segments": 715,
+          "extrusion_length_mm": 48.928689999999904,
+          "path_length_mm": 1575.6343379818575,
+          "max_segment_mm": 8.960000000000008,
+          "min_xyz": [
+            108.704,
+            78.689,
+            0.2
+          ],
+          "max_xyz": [
+            147.296,
+            177.312,
+            23.6
+          ]
+        },
+        "Support": {
+          "segments": 4193,
+          "extrusion_length_mm": 372.48847000000046,
+          "path_length_mm": 10587.896228241549,
+          "max_segment_mm": 9.631,
+          "min_xyz": [
+            105.922,
+            79.09,
+            0.2
+          ],
+          "max_xyz": [
+            150.078,
+            176.91,
+            23.0
+          ]
+        },
+        "Brim": {
+          "segments": 321,
+          "extrusion_length_mm": 52.74754,
+          "path_length_mm": 1460.9110571792733,
+          "max_segment_mm": 59.09100000000001,
+          "min_xyz": [
+            105.886,
+            75.386,
+            0.2
+          ],
+          "max_xyz": [
+            146.114,
+            180.614,
+            0.2
+          ]
+        },
+        "Outer wall": {
+          "segments": 6178,
+          "extrusion_length_mm": 1238.1731599999544,
+          "path_length_mm": 41478.0920941873,
+          "max_segment_mm": 52.663,
+          "min_xyz": [
+            108.71,
+            78.21,
+            0.2
+          ],
+          "max_xyz": [
+            147.29,
+            177.79,
+            35.0
+          ]
+        },
+        "Inner wall": {
+          "segments": 16071,
+          "extrusion_length_mm": 3872.227109999846,
+          "path_length_mm": 120242.10360516048,
+          "max_segment_mm": 51.245000000000005,
+          "min_xyz": [
+            109.102,
+            78.602,
+            0.2
+          ],
+          "max_xyz": [
+            146.898,
+            177.398,
+            34.8
+          ]
+        },
+        "Bottom surface": {
+          "segments": 502,
+          "extrusion_length_mm": 189.56928999999923,
+          "path_length_mm": 5248.6253635704925,
+          "max_segment_mm": 42.386808891446385,
+          "min_xyz": [
+            110.911,
+            80.617,
+            0.2
+          ],
+          "max_xyz": [
+            141.089,
+            175.589,
+            0.2
+          ]
+        },
+        "Gap infill": {
+          "segments": 1927,
+          "extrusion_length_mm": 65.07086999999997,
+          "path_length_mm": 2692.379354399674,
+          "max_segment_mm": 20.349999999999994,
+          "min_xyz": [
+            108.906,
+            80.0,
+            0.2
+          ],
+          "max_xyz": [
+            147.101,
+            175.594,
+            35.0
+          ]
+        },
+        "Overhang wall": {
+          "segments": 136,
+          "extrusion_length_mm": 7.694689999999998,
+          "path_length_mm": 239.29858139475803,
+          "max_segment_mm": 5.400000000000006,
+          "min_xyz": [
+            108.71,
+            79.71,
+            0.4
+          ],
+          "max_xyz": [
+            146.951,
+            177.79,
+            31.0
+          ]
+        },
+        "Internal solid infill": {
+          "segments": 7011,
+          "extrusion_length_mm": 1137.6665300000031,
+          "path_length_mm": 37983.1785001832,
+          "max_segment_mm": 43.63768079309439,
+          "min_xyz": [
+            110.375,
+            79.987,
+            0.4
+          ],
+          "max_xyz": [
+            145.417,
+            176.013,
+            34.8
+          ]
+        },
+        "Sparse infill": {
+          "segments": 14398,
+          "extrusion_length_mm": 772.8794600000107,
+          "path_length_mm": 24035.3654338341,
+          "max_segment_mm": 13.098000000000013,
+          "min_xyz": [
+            110.671,
+            80.172,
+            0.8
+          ],
+          "max_xyz": [
+            145.328,
+            175.828,
+            28.8
+          ]
+        },
+        "Support transition": {
+          "segments": 261,
+          "extrusion_length_mm": 14.00315999999999,
+          "path_length_mm": 445.12752328183944,
+          "max_segment_mm": 8.96000273437459,
+          "min_xyz": [
+            107.86,
+            79.09,
+            2.1
+          ],
+          "max_xyz": [
+            148.14,
+            176.91,
+            23.2
+          ]
+        },
+        "Floating vertical shell": {
+          "segments": 1900,
+          "extrusion_length_mm": 150.7125200000009,
+          "path_length_mm": 4911.431975195375,
+          "max_segment_mm": 30.639999999999986,
+          "min_xyz": [
+            110.686,
+            80.186,
+            3.0
+          ],
+          "max_xyz": [
+            145.36,
+            175.814,
+            28.8
+          ]
+        },
+        "Bridge": {
+          "segments": 2948,
+          "extrusion_length_mm": 440.0344500000032,
+          "path_length_mm": 10072.956180581436,
+          "max_segment_mm": 33.19260346824273,
+          "min_xyz": [
+            110.487,
+            80.193,
+            3.2
+          ],
+          "max_xyz": [
+            146.722,
+            175.807,
+            35.0
+          ]
+        },
+        "Top surface": {
+          "segments": 1762,
+          "extrusion_length_mm": 346.38108999999827,
+          "path_length_mm": 11628.897867389045,
+          "max_segment_mm": 48.31802057203916,
+          "min_xyz": [
+            108.917,
+            78.417,
+            4.0
+          ],
+          "max_xyz": [
+            147.083,
+            177.583,
+            35.0
+          ]
+        }
+      },
+      "visual_support_removal_review": "HOLD \u2014 desktop security prompt blocks app inspection",
+      "physical_validation": false,
+      "role_based_estimated_part_g": 25.110949504964005,
+      "role_based_estimated_support_g": 1.3300819269262145,
+      "counted_extrusion_mass_g": 26.602159763346638,
+      "toolpath_audit_limits": "G0/G1 and XY I/J G2/G3 extrusion parsed; masses use profile1.75 mm/1.27 g per cm3. Bounds are segment endpoints, not complete arc envelopes. This is not collision or support-removal qualification."
+    },
+    {
+      "part": "left-wheel-axle-vertical",
+      "stl_sha256": "ccbfd1f8ddaae4d5777f4d33ba8ac65f2f9f0c6452a497ec5996ea1eedb07b0e",
+      "return_code": 0,
+      "warning": "",
+      "material_g_including_support_and_brim": 399.2715759277344,
+      "estimated_seconds": 35606.203125,
+      "layer_events": 282,
+      "min_max_print_layer_z_mm": [
+        0.2,
+        40.0
+      ],
+      "toolpath_roles": {
+        "Support": {
+          "segments": 15354,
+          "extrusion_length_mm": 44013.59630000003,
+          "path_length_mm": 1113976.0607303511,
+          "max_segment_mm": 214.922,
+          "min_xyz": [
+            20.425,
+            20.45,
+            0.2
+          ],
+          "max_xyz": [
+            235.525,
+            235.55,
+            22.561
+          ]
+        },
+        "Brim": {
+          "segments": 648,
+          "extrusion_length_mm": 158.4991400000003,
+          "path_length_mm": 4389.830691379235,
+          "max_segment_mm": 7.082975928238079,
+          "min_xyz": [
+            10.411,
+            10.402,
+            0.2
+          ],
+          "max_xyz": [
+            245.588,
+            245.599,
+            0.2
+          ]
+        },
+        "Outer wall": {
+          "segments": 42932,
+          "extrusion_length_mm": 7954.367799999696,
+          "path_length_mm": 266748.45906998165,
+          "max_segment_mm": 6.921698418740869,
+          "min_xyz": [
+            13.235,
+            13.222,
+            0.2
+          ],
+          "max_xyz": [
+            242.765,
+            242.778,
+            40.0
+          ]
+        },
+        "Inner wall": {
+          "segments": 166926,
+          "extrusion_length_mm": 34254.33450999657,
+          "path_length_mm": 1064551.9439469601,
+          "max_segment_mm": 14.1958104762149,
+          "min_xyz": [
+            13.627,
+            13.615,
+            0.2
+          ],
+          "max_xyz": [
+            242.373,
+            242.385,
+            39.8
+          ]
+        },
+        "Bottom surface": {
+          "segments": 1960,
+          "extrusion_length_mm": 123.07701000000002,
+          "path_length_mm": 3404.1541082599197,
+          "max_segment_mm": 40.257003266512534,
+          "min_xyz": [
+            15.642,
+            15.634,
+            0.2
+          ],
+          "max_xyz": [
+            240.355,
+            240.364,
+            0.2
+          ]
+        },
+        "Internal solid infill": {
+          "segments": 12047,
+          "extrusion_length_mm": 15894.644330000145,
+          "path_length_mm": 534034.1796762573,
+          "max_segment_mm": 222.03435771970067,
+          "min_xyz": [
+            15.24,
+            15.228,
+            0.4
+          ],
+          "max_xyz": [
+            240.757,
+            240.772,
+            39.8
+          ]
+        },
+        "Sparse infill": {
+          "segments": 199060,
+          "extrusion_length_mm": 12023.992750001848,
+          "path_length_mm": 373921.1996058208,
+          "max_segment_mm": 9.010190796796635,
+          "min_xyz": [
+            15.196,
+            15.185,
+            0.8
+          ],
+          "max_xyz": [
+            240.802,
+            240.815,
+            39.0
+          ]
+        },
+        "Support transition": {
+          "segments": 528,
+          "extrusion_length_mm": 1657.963220000006,
+          "path_length_mm": 41714.49458497544,
+          "max_segment_mm": 214.92200000000003,
+          "min_xyz": [
+            20.514,
+            20.539,
+            22.841
+          ],
+          "max_xyz": [
+            235.437,
+            235.461,
+            22.841
+          ]
+        },
+        "Support interface": {
+          "segments": 981,
+          "extrusion_length_mm": 3311.8876400000045,
+          "path_length_mm": 83327.39442531114,
+          "max_segment_mm": 214.92200000000003,
+          "min_xyz": [
+            20.997,
+            20.539,
+            23.12
+          ],
+          "max_xyz": [
+            235.003,
+            235.461,
+            23.4
+          ]
+        },
+        "Bridge": {
+          "segments": 5775,
+          "extrusion_length_mm": 7727.611809999946,
+          "path_length_mm": 196156.26253054352,
+          "max_segment_mm": 223.73014159920427,
+          "min_xyz": [
+            15.218,
+            15.212,
+            23.8
+          ],
+          "max_xyz": [
+            240.773,
+            240.793,
+            39.2
+          ]
+        },
+        "Top surface": {
+          "segments": 2212,
+          "extrusion_length_mm": 3364.070750000002,
+          "path_length_mm": 112939.14885395902,
+          "max_segment_mm": 218.57872688118576,
+          "min_xyz": [
+            13.442,
+            13.434,
+            24.0
+          ],
+          "max_xyz": [
+            242.553,
+            242.567,
+            40.0
+          ]
+        },
+        "Gap infill": {
+          "segments": 818,
+          "extrusion_length_mm": 3.0885400000000023,
+          "path_length_mm": 270.0730289268876,
+          "max_segment_mm": 6.720385852017718,
+          "min_xyz": [
+            24.896,
+            26.493,
+            24.0
+          ],
+          "max_xyz": [
+            230.511,
+            231.077,
+            40.0
+          ]
+        },
+        "Floating vertical shell": {
+          "segments": 2384,
+          "extrusion_length_mm": 219.81279999999896,
+          "path_length_mm": 7183.546026267265,
+          "max_segment_mm": 6.9184670267335875,
+          "min_xyz": [
+            15.208,
+            15.199,
+            24.6
+          ],
+          "max_xyz": [
+            240.788,
+            240.801,
+            39.0
+          ]
+        }
+      },
+      "visual_support_removal_review": "HOLD \u2014 desktop security prompt blocks app inspection",
+      "physical_validation": false,
+      "role_based_estimated_part_g": 249.15725744898353,
+      "role_based_estimated_support_g": 149.63012701396482,
+      "counted_extrusion_mass_g": 399.2715530510091,
+      "toolpath_audit_limits": "G0/G1 and XY I/J G2/G3 extrusion parsed; masses use profile1.75 mm/1.27 g per cm3. Bounds are segment endpoints, not complete arc envelopes. This is not collision or support-removal qualification."
+    },
+    {
+      "part": "main-shell-axle-vertical",
+      "stl_sha256": "afbba25110cf3c798f4b7e743d4c4f4082bb897ccb420b778aea2a6aa488af8b",
+      "return_code": 0,
+      "warning": "",
+      "material_g_including_support_and_brim": 1189.536865234375,
+      "estimated_seconds": 107738.9375,
+      "layer_events": 1358,
+      "min_max_print_layer_z_mm": [
+        0.2,
+        210.0
+      ],
+      "toolpath_roles": {
+        "Support": {
+          "segments": 222908,
+          "extrusion_length_mm": 185161.21344998482,
+          "path_length_mm": 5578923.356546004,
+          "max_segment_mm": 150.423,
+          "min_xyz": [
+            52.52,
+            45.504,
+            0.2
+          ],
+          "max_xyz": [
+            203.436,
+            203.426,
+            207.2
+          ]
+        },
+        "Brim": {
+          "segments": 395,
+          "extrusion_length_mm": 73.77624000000007,
+          "path_length_mm": 2043.325656146405,
+          "max_segment_mm": 6.026780317881184,
+          "min_xyz": [
+            45.411,
+            86.532,
+            0.2
+          ],
+          "max_xyz": [
+            210.587,
+            210.601,
+            0.2
+          ]
+        },
+        "Outer wall": {
+          "segments": 214818,
+          "extrusion_length_mm": 29790.217320030784,
+          "path_length_mm": 999981.4677869799,
+          "max_segment_mm": 81.57999999999998,
+          "min_xyz": [
+            48.235,
+            48.223,
+            0.2
+          ],
+          "max_xyz": [
+            207.765,
+            207.777,
+            210.0
+          ]
+        },
+        "Inner wall": {
+          "segments": 739679,
+          "extrusion_length_mm": 116248.63801016002,
+          "path_length_mm": 3614758.067046637,
+          "max_segment_mm": 80.79599999999999,
+          "min_xyz": [
+            48.627,
+            48.616,
+            0.2
+          ],
+          "max_xyz": [
+            207.373,
+            207.385,
+            209.8
+          ]
+        },
+        "Bottom surface": {
+          "segments": 1066,
+          "extrusion_length_mm": 1362.106600000002,
+          "path_length_mm": 37667.46564355393,
+          "max_segment_mm": 142.8242560911836,
+          "min_xyz": [
+            50.642,
+            50.637,
+            0.2
+          ],
+          "max_xyz": [
+            205.346,
+            205.363,
+            0.2
+          ]
+        },
+        "Internal solid infill": {
+          "segments": 40041,
+          "extrusion_length_mm": 18690.245810000157,
+          "path_length_mm": 625080.6021187447,
+          "max_segment_mm": 149.99997570666469,
+          "min_xyz": [
+            50.181,
+            50.173,
+            0.4
+          ],
+          "max_xyz": [
+            205.811,
+            205.83,
+            209.8
+          ]
+        },
+        "Sparse infill": {
+          "segments": 241066,
+          "extrusion_length_mm": 13745.746249995876,
+          "path_length_mm": 427467.286372598,
+          "max_segment_mm": 22.035658030083038,
+          "min_xyz": [
+            50.196,
+            50.186,
+            0.8
+          ],
+          "max_xyz": [
+            205.794,
+            205.815,
+            209.0
+          ]
+        },
+        "Floating vertical shell": {
+          "segments": 14168,
+          "extrusion_length_mm": 912.275349999991,
+          "path_length_mm": 30213.950517197336,
+          "max_segment_mm": 60.58445769337214,
+          "min_xyz": [
+            50.211,
+            50.145,
+            1.0
+          ],
+          "max_xyz": [
+            205.788,
+            205.842,
+            209.0
+          ]
+        },
+        "Bridge": {
+          "segments": 14256,
+          "extrusion_length_mm": 7947.951860000071,
+          "path_length_mm": 191489.98069220243,
+          "max_segment_mm": 149.5439734158485,
+          "min_xyz": [
+            50.012,
+            50.176,
+            1.2
+          ],
+          "max_xyz": [
+            205.816,
+            205.829,
+            209.2
+          ]
+        },
+        "Support transition": {
+          "segments": 7933,
+          "extrusion_length_mm": 1662.0045000000007,
+          "path_length_mm": 47929.88150511379,
+          "max_segment_mm": 141.38,
+          "min_xyz": [
+            52.572,
+            47.442,
+            1.7
+          ],
+          "max_xyz": [
+            203.428,
+            203.423,
+            207.4
+          ]
+        },
+        "Support interface": {
+          "segments": 31296,
+          "extrusion_length_mm": 7184.47309000095,
+          "path_length_mm": 219106.71835015924,
+          "max_segment_mm": 142.01999999999998,
+          "min_xyz": [
+            52.572,
+            47.442,
+            1.95
+          ],
+          "max_xyz": [
+            203.428,
+            203.424,
+            207.8
+          ]
+        },
+        "Top surface": {
+          "segments": 7426,
+          "extrusion_length_mm": 4309.663930000053,
+          "path_length_mm": 144685.96806821378,
+          "max_segment_mm": 154.67607285226762,
+          "min_xyz": [
+            48.442,
+            48.433,
+            2.0
+          ],
+          "max_xyz": [
+            207.551,
+            207.567,
+            210.0
+          ]
+        },
+        "Gap infill": {
+          "segments": 21850,
+          "extrusion_length_mm": 1794.4579700000609,
+          "path_length_mm": 56648.42024763212,
+          "max_segment_mm": 79.574,
+          "min_xyz": [
+            49.411,
+            49.425,
+            2.4
+          ],
+          "max_xyz": [
+            206.58,
+            206.575,
+            210.0
+          ]
+        },
+        "Overhang wall": {
+          "segments": 3768,
+          "extrusion_length_mm": 528.2275899999973,
+          "path_length_mm": 16426.827933977147,
+          "max_segment_mm": 81.57999999999998,
+          "min_xyz": [
+            52.191,
+            48.259,
+            2.6
+          ],
+          "max_xyz": [
+            203.57,
+            202.926,
+            208.2
+          ]
+        }
+      },
+      "visual_support_removal_review": "HOLD \u2014 desktop security prompt blocks app inspection",
+      "physical_validation": false,
+      "role_based_estimated_part_g": 596.6746764735208,
+      "role_based_estimated_support_g": 592.636842343439,
+      "counted_extrusion_mass_g": 1189.5368836861524,
+      "toolpath_audit_limits": "G0/G1 and XY I/J G2/G3 extrusion parsed; masses use profile1.75 mm/1.27 g per cm3. Bounds are segment endpoints, not complete arc envelopes. This is not collision or support-removal qualification."
+    },
+    {
+      "part": "main-shell-opening-down",
+      "stl_sha256": "0f554aea7c0d58c5255c5503103b1f084a74fc8c6d20f405f03d00f94d3f666a",
+      "return_code": 0,
+      "warning": "",
+      "material_g_including_support_and_brim": 1099.9222412109375,
+      "estimated_seconds": 107405.03125,
+      "layer_events": 1025,
+      "min_max_print_layer_z_mm": [
+        0.2,
+        160.0
+      ],
+      "toolpath_roles": {
+        "Support transition": {
+          "segments": 6624,
+          "extrusion_length_mm": 1576.0131900000315,
+          "path_length_mm": 49008.79292778244,
+          "max_segment_mm": 202.92399999999998,
+          "min_xyz": [
+            53.514,
+            21.548,
+            0.2
+          ],
+          "max_xyz": [
+            202.551,
+            234.452,
+            155.4
+          ]
+        },
+        "Support interface": {
+          "segments": 25515,
+          "extrusion_length_mm": 5390.358170000249,
+          "path_length_mm": 171963.72943104085,
+          "max_segment_mm": 203.262,
+          "min_xyz": [
+            54.326,
+            21.378,
+            0.2
+          ],
+          "max_xyz": [
+            202.551,
+            234.622,
+            155.8
+          ]
+        },
+        "Support": {
+          "segments": 213533,
+          "extrusion_length_mm": 149272.96395001502,
+          "path_length_mm": 4497572.262898263,
+          "max_segment_mm": 216.164,
+          "min_xyz": [
+            53.514,
+            19.61,
+            0.2
+          ],
+          "max_xyz": [
+            203.398,
+            236.391,
+            155.2
+          ]
+        },
+        "Brim": {
+          "segments": 131,
+          "extrusion_length_mm": 9.738850000000003,
+          "path_length_mm": 269.7205933885303,
+          "max_segment_mm": 10.364642058460099,
+          "min_xyz": [
+            121.33,
+            25.029,
+            0.2
+          ],
+          "max_xyz": [
+            134.407,
+            230.971,
+            0.2
+          ]
+        },
+        "Outer wall": {
+          "segments": 129829,
+          "extrusion_length_mm": 33874.174640016514,
+          "path_length_mm": 1137221.5474377377,
+          "max_segment_mm": 209.57999999999998,
+          "min_xyz": [
+            48.235,
+            23.21,
+            0.2
+          ],
+          "max_xyz": [
+            207.762,
+            232.79,
+            160.0
+          ]
+        },
+        "Inner wall": {
+          "segments": 188447,
+          "extrusion_length_mm": 117570.01760008084,
+          "path_length_mm": 3656177.610574133,
+          "max_segment_mm": 208.796,
+          "min_xyz": [
+            48.627,
+            23.602,
+            0.2
+          ],
+          "max_xyz": [
+            207.37,
+            232.398,
+            159.8
+          ]
+        },
+        "Bottom surface": {
+          "segments": 71,
+          "extrusion_length_mm": 4.5161299999999995,
+          "path_length_mm": 121.22905314593535,
+          "max_segment_mm": 3.5334126563423047,
+          "min_xyz": [
+            126.449,
+            25.617,
+            0.2
+          ],
+          "max_xyz": [
+            129.374,
+            230.589,
+            0.2
+          ]
+        },
+        "Overhang wall": {
+          "segments": 4542,
+          "extrusion_length_mm": 1241.0742699999955,
+          "path_length_mm": 38595.062976751986,
+          "max_segment_mm": 203.60000000000002,
+          "min_xyz": [
+            53.192,
+            23.21,
+            0.4
+          ],
+          "max_xyz": [
+            202.984,
+            232.79,
+            156.0
+          ]
+        },
+        "Internal solid infill": {
+          "segments": 42332,
+          "extrusion_length_mm": 9659.150999999989,
+          "path_length_mm": 312441.29882309306,
+          "max_segment_mm": 205.62400000000002,
+          "min_xyz": [
+            50.24,
+            23.521,
+            0.4
+          ],
+          "max_xyz": [
+            205.75,
+            231.537,
+            159.6
+          ]
+        },
+        "Bridge": {
+          "segments": 31429,
+          "extrusion_length_mm": 4506.1743999999235,
+          "path_length_mm": 115312.30293738551,
+          "max_segment_mm": 93.88755905336977,
+          "min_xyz": [
+            50.015,
+            24.987,
+            0.4
+          ],
+          "max_xyz": [
+            205.751,
+            231.013,
+            159.0
+          ]
+        },
+        "Sparse infill": {
+          "segments": 241873,
+          "extrusion_length_mm": 13741.659639998594,
+          "path_length_mm": 427333.4242818857,
+          "max_segment_mm": 14.8393824390062,
+          "min_xyz": [
+            50.196,
+            25.171,
+            0.8
+          ],
+          "max_xyz": [
+            205.765,
+            230.829,
+            159.0
+          ]
+        },
+        "Floating vertical shell": {
+          "segments": 58294,
+          "extrusion_length_mm": 10354.56222000007,
+          "path_length_mm": 328412.74696815404,
+          "max_segment_mm": 205.594,
+          "min_xyz": [
+            50.106,
+            25.077,
+            3.0
+          ],
+          "max_xyz": [
+            205.85,
+            230.904,
+            159.0
+          ]
+        },
+        "Top surface": {
+          "segments": 23911,
+          "extrusion_length_mm": 3133.9712500004066,
+          "path_length_mm": 105215.24116405874,
+          "max_segment_mm": 61.045942633397026,
+          "min_xyz": [
+            50.389,
+            23.417,
+            4.0
+          ],
+          "max_xyz": [
+            205.559,
+            232.583,
+            160.0
+          ]
+        },
+        "Gap infill": {
+          "segments": 18405,
+          "extrusion_length_mm": 9740.032589999839,
+          "path_length_mm": 255481.70955608579,
+          "max_segment_mm": 205.94600000000003,
+          "min_xyz": [
+            49.397,
+            23.446,
+            4.0
+          ],
+          "max_xyz": [
+            206.576,
+            232.169,
+            156.0
+          ]
+        }
+      },
+      "visual_support_removal_review": "HOLD \u2014 desktop security prompt blocks app inspection",
+      "physical_validation": false,
+      "role_based_estimated_part_g": 622.6268738615728,
+      "role_based_estimated_support_g": 477.26554463699796,
+      "counted_extrusion_mass_g": 1099.922167841399,
+      "toolpath_audit_limits": "G0/G1 and XY I/J G2/G3 extrusion parsed; masses use profile1.75 mm/1.27 g per cm3. Bounds are segment endpoints, not complete arc envelopes. This is not collision or support-removal qualification."
+    },
+    {
+      "part": "wheel-cap-inner-axle-vertical",
+      "stl_sha256": "6774a9059bba58c074d18f2b6f754f80e18e467342e88f51d13a66b05de8c0b6",
+      "return_code": 0,
+      "warning": "",
+      "material_g_including_support_and_brim": 6.585194110870361,
+      "estimated_seconds": 1273.2147216796875,
+      "layer_events": 66,
+      "min_max_print_layer_z_mm": [
+        0.2,
+        12.0
+      ],
+      "toolpath_roles": {
+        "Support": {
+          "segments": 483,
+          "extrusion_length_mm": 33.71099999999989,
+          "path_length_mm": 938.559164224271,
+          "max_segment_mm": 9.631,
+          "min_xyz": [
+            105.922,
+            117.43,
+            0.2
+          ],
+          "max_xyz": [
+            150.078,
+            138.57,
+            7.533
+          ]
+        },
+        "Brim": {
+          "segments": 546,
+          "extrusion_length_mm": 24.595800000000036,
+          "path_length_mm": 681.2080712997921,
+          "max_segment_mm": 24.05500008314279,
+          "min_xyz": [
+            100.386,
+            117.036,
+            0.2
+          ],
+          "max_xyz": [
+            155.614,
+            138.964,
+            0.2
+          ]
+        },
+        "Outer wall": {
+          "segments": 2566,
+          "extrusion_length_mm": 288.07883000000635,
+          "path_length_mm": 9641.408524342609,
+          "max_segment_mm": 49.58,
+          "min_xyz": [
+            103.21,
+            119.86,
+            0.2
+          ],
+          "max_xyz": [
+            152.79,
+            136.14,
+            12.0
+          ]
+        },
+        "Inner wall": {
+          "segments": 8245,
+          "extrusion_length_mm": 1122.7595600000752,
+          "path_length_mm": 34851.2157844227,
+          "max_segment_mm": 48.79599999999999,
+          "min_xyz": [
+            103.602,
+            120.252,
+            0.2
+          ],
+          "max_xyz": [
+            152.398,
+            135.748,
+            11.8
+          ]
+        },
+        "Bottom surface": {
+          "segments": 180,
+          "extrusion_length_mm": 25.67949,
+          "path_length_mm": 707.9328648960262,
+          "max_segment_mm": 16.216079828367906,
+          "min_xyz": [
+            105.411,
+            122.061,
+            0.2
+          ],
+          "max_xyz": [
+            150.383,
+            133.939,
+            0.2
+          ]
+        },
+        "Internal solid infill": {
+          "segments": 1882,
+          "extrusion_length_mm": 260.4159100000033,
+          "path_length_mm": 8574.916177841353,
+          "max_segment_mm": 17.75757261001627,
+          "min_xyz": [
+            104.987,
+            121.806,
+            0.4
+          ],
+          "max_xyz": [
+            151.013,
+            134.363,
+            11.8
+          ]
+        },
+        "Sparse infill": {
+          "segments": 3678,
+          "extrusion_length_mm": 203.09122999999968,
+          "path_length_mm": 6315.504076425289,
+          "max_segment_mm": 7.285563562462054,
+          "min_xyz": [
+            105.172,
+            121.821,
+            0.8
+          ],
+          "max_xyz": [
+            150.828,
+            134.179,
+            11.0
+          ]
+        },
+        "Floating vertical shell": {
+          "segments": 136,
+          "extrusion_length_mm": 18.636510000000015,
+          "path_length_mm": 623.9346419316909,
+          "max_segment_mm": 45.31,
+          "min_xyz": [
+            105.186,
+            121.832,
+            2.8
+          ],
+          "max_xyz": [
+            150.814,
+            134.178,
+            11.0
+          ]
+        },
+        "Bridge": {
+          "segments": 427,
+          "extrusion_length_mm": 87.79623999999993,
+          "path_length_mm": 1883.0469239507381,
+          "max_segment_mm": 27.335302540853636,
+          "min_xyz": [
+            104.99,
+            121.811,
+            3.0
+          ],
+          "max_xyz": [
+            151.01,
+            134.189,
+            11.2
+          ]
+        },
+        "Top surface": {
+          "segments": 201,
+          "extrusion_length_mm": 57.95502000000003,
+          "path_length_mm": 1945.7471466449033,
+          "max_segment_mm": 22.437912380611525,
+          "min_xyz": [
+            103.417,
+            120.067,
+            3.8
+          ],
+          "max_xyz": [
+            152.583,
+            135.933,
+            12.0
+          ]
+        },
+        "Support interface": {
+          "segments": 91,
+          "extrusion_length_mm": 27.26822000000001,
+          "path_length_mm": 875.0304995192902,
+          "max_segment_mm": 17.50200000000001,
+          "min_xyz": [
+            108.532,
+            119.249,
+            4.2
+          ],
+          "max_xyz": [
+            147.504,
+            136.801,
+            8.0
+          ]
+        },
+        "Overhang wall": {
+          "segments": 31,
+          "extrusion_length_mm": 2.2369000000000003,
+          "path_length_mm": 69.56400150491383,
+          "max_segment_mm": 16.280001504913923,
+          "min_xyz": [
+            109.092,
+            119.86,
+            5.0
+          ],
+          "max_xyz": [
+            148.279,
+            136.14,
+            8.4
+          ]
+        },
+        "Support transition": {
+          "segments": 19,
+          "extrusion_length_mm": 3.50584,
+          "path_length_mm": 91.75194823134326,
+          "max_segment_mm": 17.262,
+          "min_xyz": [
+            109.16,
+            119.369,
+            7.267
+          ],
+          "max_xyz": [
+            146.905,
+            136.631,
+            7.267
+          ]
+        },
+        "Gap infill": {
+          "segments": 10,
+          "extrusion_length_mm": 0.021769999999999998,
+          "path_length_mm": 2.4927738210679973,
+          "max_segment_mm": 0.3200952983097323,
+          "min_xyz": [
+            117.55,
+            126.38,
+            12.0
+          ],
+          "max_xyz": [
+            122.758,
+            131.661,
+            12.0
+          ]
+        }
+      },
+      "visual_support_removal_review": "HOLD \u2014 desktop security prompt blocks app inspection",
+      "physical_validation": false,
+      "role_based_estimated_part_g": 6.313077804546015,
+      "role_based_estimated_support_g": 0.19698302748652696,
+      "counted_extrusion_mass_g": 6.585193818610412,
+      "toolpath_audit_limits": "G0/G1 and XY I/J G2/G3 extrusion parsed; masses use profile1.75 mm/1.27 g per cm3. Bounds are segment endpoints, not complete arc envelopes. This is not collision or support-removal qualification."
+    },
+    {
+      "part": "wheel-cap-outer-axle-vertical",
+      "stl_sha256": "1616f5922a4457817a0310b0ac388b4cade98ef609e77492a125810be6165ed8",
+      "return_code": 0,
+      "warning": "",
+      "material_g_including_support_and_brim": 6.585193634033203,
+      "estimated_seconds": 1273.2144775390625,
+      "layer_events": 66,
+      "min_max_print_layer_z_mm": [
+        0.2,
+        12.0
+      ],
+      "toolpath_roles": {
+        "Support": {
+          "segments": 483,
+          "extrusion_length_mm": 33.71099999999989,
+          "path_length_mm": 938.559164224271,
+          "max_segment_mm": 9.631,
+          "min_xyz": [
+            105.922,
+            117.43,
+            0.2
+          ],
+          "max_xyz": [
+            150.078,
+            138.57,
+            7.533
+          ]
+        },
+        "Brim": {
+          "segments": 546,
+          "extrusion_length_mm": 24.595800000000036,
+          "path_length_mm": 681.2080712997921,
+          "max_segment_mm": 24.05500008314279,
+          "min_xyz": [
+            100.386,
+            117.036,
+            0.2
+          ],
+          "max_xyz": [
+            155.614,
+            138.964,
+            0.2
+          ]
+        },
+        "Outer wall": {
+          "segments": 2566,
+          "extrusion_length_mm": 288.0788000000063,
+          "path_length_mm": 9641.404438020105,
+          "max_segment_mm": 49.58,
+          "min_xyz": [
+            103.21,
+            119.86,
+            0.2
+          ],
+          "max_xyz": [
+            152.79,
+            136.14,
+            12.0
+          ]
+        },
+        "Inner wall": {
+          "segments": 8245,
+          "extrusion_length_mm": 1122.7596100000749,
+          "path_length_mm": 34851.21613270314,
+          "max_segment_mm": 48.79599999999999,
+          "min_xyz": [
+            103.602,
+            120.252,
+            0.2
+          ],
+          "max_xyz": [
+            152.398,
+            135.748,
+            11.8
+          ]
+        },
+        "Bottom surface": {
+          "segments": 180,
+          "extrusion_length_mm": 25.67949,
+          "path_length_mm": 707.9328648960262,
+          "max_segment_mm": 16.216079828367906,
+          "min_xyz": [
+            105.411,
+            122.061,
+            0.2
+          ],
+          "max_xyz": [
+            150.383,
+            133.939,
+            0.2
+          ]
+        },
+        "Internal solid infill": {
+          "segments": 1882,
+          "extrusion_length_mm": 260.4158600000033,
+          "path_length_mm": 8574.914470755239,
+          "max_segment_mm": 17.75757261001627,
+          "min_xyz": [
+            104.987,
+            121.806,
+            0.4
+          ],
+          "max_xyz": [
+            151.013,
+            134.363,
+            11.8
+          ]
+        },
+        "Sparse infill": {
+          "segments": 3678,
+          "extrusion_length_mm": 203.09119999999965,
+          "path_length_mm": 6315.504205319373,
+          "max_segment_mm": 7.285563562462054,
+          "min_xyz": [
+            105.172,
+            121.821,
+            0.8
+          ],
+          "max_xyz": [
+            150.828,
+            134.179,
+            11.0
+          ]
+        },
+        "Floating vertical shell": {
+          "segments": 136,
+          "extrusion_length_mm": 18.636530000000015,
+          "path_length_mm": 623.9346419316909,
+          "max_segment_mm": 45.31,
+          "min_xyz": [
+            105.186,
+            121.832,
+            2.8
+          ],
+          "max_xyz": [
+            150.814,
+            134.178,
+            11.0
+          ]
+        },
+        "Bridge": {
+          "segments": 427,
+          "extrusion_length_mm": 87.79622999999992,
+          "path_length_mm": 1883.0466582588303,
+          "max_segment_mm": 27.335302540853636,
+          "min_xyz": [
+            104.99,
+            121.811,
+            3.0
+          ],
+          "max_xyz": [
+            151.01,
+            134.189,
+            11.2
+          ]
+        },
+        "Top surface": {
+          "segments": 201,
+          "extrusion_length_mm": 57.95502000000003,
+          "path_length_mm": 1945.7471466449033,
+          "max_segment_mm": 22.437912380611525,
+          "min_xyz": [
+            103.417,
+            120.067,
+            3.8
+          ],
+          "max_xyz": [
+            152.583,
+            135.933,
+            12.0
+          ]
+        },
+        "Support interface": {
+          "segments": 91,
+          "extrusion_length_mm": 27.26820000000001,
+          "path_length_mm": 875.0294996039771,
+          "max_segment_mm": 17.50200000000001,
+          "min_xyz": [
+            108.532,
+            119.249,
+            4.2
+          ],
+          "max_xyz": [
+            147.504,
+            136.801,
+            8.0
+          ]
+        },
+        "Overhang wall": {
+          "segments": 31,
+          "extrusion_length_mm": 2.23691,
+          "path_length_mm": 69.56600150491384,
+          "max_segment_mm": 16.280001504913923,
+          "min_xyz": [
+            109.092,
+            119.86,
+            5.0
+          ],
+          "max_xyz": [
+            148.28,
+            136.14,
+            8.4
+          ]
+        },
+        "Support transition": {
+          "segments": 19,
+          "extrusion_length_mm": 3.50585,
+          "path_length_mm": 91.75194823134326,
+          "max_segment_mm": 17.262,
+          "min_xyz": [
+            109.16,
+            119.369,
+            7.267
+          ],
+          "max_xyz": [
+            146.905,
+            136.631,
+            7.267
+          ]
+        },
+        "Gap infill": {
+          "segments": 10,
+          "extrusion_length_mm": 0.021769999999999998,
+          "path_length_mm": 2.4927738210679973,
+          "max_segment_mm": 0.3200952983097323,
+          "min_xyz": [
+            117.55,
+            126.38,
+            12.0
+          ],
+          "max_xyz": [
+            122.758,
+            131.661,
+            12.0
+          ]
+        }
+      },
+      "visual_support_removal_review": "HOLD \u2014 desktop security prompt blocks app inspection",
+      "physical_validation": false,
+      "role_based_estimated_part_g": 6.313077682357695,
+      "role_based_estimated_support_g": 0.19698299693944712,
+      "counted_extrusion_mass_g": 6.585193665875011,
+      "toolpath_audit_limits": "G0/G1 and XY I/J G2/G3 extrusion parsed; masses use profile1.75 mm/1.27 g per cm3. Bounds are segment endpoints, not complete arc envelopes. This is not collision or support-removal qualification."
+    }
+  ]
+}

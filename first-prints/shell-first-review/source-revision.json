@@ -1,0 +1,37 @@
+{
+  "native_source": "../../Roller-300.nbcad",
+  "source_sha256": "2070116396b8bf6b201f24a44ca7fcd33edc3982e0e6c077a94f325e25c864a2",
+  "body_ids": {
+    "main-shell": 32,
+    "curved-hatch": 141,
+    "left-input-carriage": 97,
+    "wheel-cap-outer": 65,
+    "wheel-cap-inner": 56,
+    "left-wheel": 13,
+    "input-cap-inner": 100,
+    "input-cap-outer": 108
+  },
+  "files": {
+    "curved-hatch-assembly-coordinates.stl": "6ce7eb48915f5a0ea8ab334950f5eac17f0101170b6929b5d52f876dfe3654f0",
+    "curved-hatch-axle-vertical.stl": "6582bf0b34f5d96207551079d7a68ed9d866492c9ba994523c20bb8a751e8197",
+    "input-cap-inner-assembly-coordinates.stl": "e10277c0466541d3b71ff5dc9cd268ad64e4d0c743bc0d6cb99d2c9a8856bb2e",
+    "input-cap-inner-axle-vertical.stl": "ea7b878c75380c98b76f9717e2c9df3f59d8717170dcdc85f4457ea803e3f9b4",
+    "input-cap-outer-assembly-coordinates.stl": "872313366088be2cd1873352b42bf2ae784f514af7e9b42ad29ba6ff7502d538",
+    "input-cap-outer-axle-vertical.stl": "b1200950442705670f89111bda1c22f06bd0ec2176675fda36a8c9478b9a8191",
+    "left-input-carriage-assembly-coordinates.stl": "613c418a4389c7df36332decdca25a2a0d471c82bc87f906a35dc56b528fcc64",
+    "left-input-carriage-axle-vertical.stl": "517f3d980f83b98b8b24b98290293b6f403b33f22e3eba82930f91309a8e95d6",
+    "left-input-carriage-floor-down.stl": "7f177ecc555ffaae41e75a7ef14ba1ceb68396abc06af4451a526d6afd50f2f8",
+    "left-wheel-assembly-coordinates.stl": "21f412d5055eb95031701e600149f056b53427f001518443f6611ce45fecec8e",
+    "left-wheel-axle-vertical.stl": "ccbfd1f8ddaae4d5777f4d33ba8ac65f2f9f0c6452a497ec5996ea1eedb07b0e",
+    "main-shell-assembly-coordinates.stl": "ee0d00d44bc9be25c79b7c658a252c859da937674ba5737848f875855fdb740a",
+    "main-shell-axle-vertical.stl": "afbba25110cf3c798f4b7e743d4c4f4082bb897ccb420b778aea2a6aa488af8b",
+    "main-shell-opening-down.stl": "0f554aea7c0d58c5255c5503103b1f084a74fc8c6d20f405f03d00f94d3f666a",
+    "wheel-cap-inner-assembly-coordinates.stl": "1b45c47ed4fd253217a8df4ffd57ef4c274c7e1851d1d8d8123fcadfead09b8c",
+    "wheel-cap-inner-axle-vertical.stl": "6774a9059bba58c074d18f2b6f754f80e18e467342e88f51d13a66b05de8c0b6",
+    "wheel-cap-outer-assembly-coordinates.stl": "b4bab9582aa222302de111444f8971b2b29ad16bfd05b1164c3cd2f9c561c1bd",
+    "wheel-cap-outer-axle-vertical.stl": "1616f5922a4457817a0310b0ac388b4cade98ef609e77492a125810be6165ed8"
+  },
+  "orientation": "assembly-coordinates are native; axle-vertical uses(X,123-Z,Y), floor-down uses(X,Y,Z); opening-down uses(X,-Y,203-Z). Center XY and translate lowest Z to0. Rigid transforms only.",
+  "release": false,
+  "physical_tests": false
+}

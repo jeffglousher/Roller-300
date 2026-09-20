@@ -2,7 +2,7 @@
   "checked_date_local": "2026-09-13",
   "currency": "USD unless stated",
   "purchases_made": false,
-  "current_packaging_revision": "vehicle-integrated-drive-end-v2",
+  "current_packaging_revision": "shell-first-2026-09-19",
   "obstacle_selection_gate": "Actual mass and rounded floor profile unmeasured. Normal crossing cannot require clutch slip. No useful protective band or powered vehicle release established.",
   "obstacle_mechanics_reference": {
     "title": "Dynamics of Step-Climing with Deformable Wheels and Applications for Mobile Robotics",
@@ -34,15 +34,15 @@
       "item": "Ground 8 mm steel smooth shafts",
       "quantity": 4,
       "lengths_mm": [
-        110,
-        110,
+        113,
+        113,
         49,
         49
       ],
       "model": null,
       "classification": "purchase candidate",
       "source": "https://uk.misumi-ec.com/en/techblog/product-info/linear-shafts-precision-standards-for-misumi-linear-shafts/",
-      "action": "110 mm wheel shafts and 49 mm input shafts are current geometry; prepared groove/flat/retention and supplier drawing remain HOLD."
+      "action": "113 mm wheel shafts after retention correction;49 mm input shafts. Verify journals, chamfers and retention before ordering finished lengths."
     },
     {
       "item": "8 mm clamp wheel hubs/flanges and shaft collars",
@@ -624,7 +624,7 @@
         "stage": "BUY ONE SIDE",
         "source": "https://www.gobilda.com/1600-series-non-flanged-ball-bearing-8mm-id-x-22mm-od-7mm-thickness-2-pack/",
         "checked": "2026-09-13",
-        "notes": "Four each drive side. Confirm actual fit/drag on coupon; not a load rating."
+        "notes": "Four each drive side. Confirm actual fit/drag on coupon; not a load rating. Purchased 608 batch must be checked against split seat and inner-race spacer contact."
       },
       {
         "id": "M05",
@@ -640,15 +640,15 @@
         "stage": "BUY ONE SIDE",
         "source": "https://www.gobilda.com/1310-series-hyper-hub-8mm-bore/",
         "checked": "2026-09-13",
-        "notes": "16 mm square M4 pattern;22.5 overall axial envelope,30.6 circumscribed diameter."
+        "notes": "16 mm square M4 pattern;22.5 overall axial envelope,30.6 circumscribed diameter. Hub clamps shaft and retains outboard bearing inner race through0.5 shim plus10 spacer; confirm rated clamp torque and measured endplay."
       },
       {
         "id": "M06",
         "group": "Support",
         "item": "8mm round clamp collar",
         "model": "2910-0921-0008",
-        "vehicle_qty": 4,
-        "first_stage_qty": 2,
+        "vehicle_qty": 2,
+        "first_stage_qty": 1,
         "owned_qty": 0,
         "ordered_qty": 0,
         "pack_qty": 1,
@@ -656,7 +656,7 @@
         "stage": "BUY ONE SIDE",
         "source": "https://www.gobilda.com/2910-series-aluminum-clamping-collar-8mm-id-x-21mm-od-9mm-length/",
         "checked": "2026-09-13",
-        "notes": "Two per wheel shaft; input retention separate and unresolved. Actual9 mm length."
+        "notes": "One inboard collar per drive, moved inward3 mm. Clamping wheel hub supplies outboard retention through purchased metal spacers/shim. Verify endplay without bearing preload."
       },
       {
         "id": "M07",
@@ -672,7 +672,7 @@
         "stage": "HOLD",
         "source": "https://www.gobilda.com/stainless-steel-round-shafting",
         "checked": "2026-09-13",
-        "notes": "150 mm blank needs110 mm finished length and clutch flat. Verify purchased finish/fit and local cutting or order prepared shafts; no workshop assumed."
+        "notes": "150 mm stock candidate cut to113 mm for revised wheel shaft; ends remain inside tire width. Ground journals, end finish and receiving dimensions HOLD."
       },
       {
         "id": "M08",
@@ -688,7 +688,7 @@
         "stage": "HOLD",
         "source": "",
         "checked": "2026-09-13",
-        "notes": "49 mm shaft geometry Y55..104, with prepared end groove/retaining ring. Groove, shims, adapter and supplier remain HOLD; do not order a wrong specification."
+        "notes": "Input bearing pair shifted 3 mm inward to Y70/96 on left, shaft envelope Y52..101; mirrored right. Prepared shaft length/end grooves and retention still HOLD."
       },
       {
         "id": "M09",
@@ -758,33 +758,33 @@
         "id": "P02",
         "group": "Printed",
         "item": "One complete 246 mm wheel print set",
-        "model": "P01 center + P02 bead ring + P03 TPU tread",
+        "model": "230 mm rigid rim/web,246 mm only with provisional tread",
         "vehicle_qty": 2,
-        "first_stage_qty": 0,
+        "first_stage_qty": 1,
         "owned_qty": 0,
         "ordered_qty": 0,
         "pack_qty": 1,
         "pack_price_usd": null,
-        "stage": "DEFER WHEEL",
+        "stage": "HOLD WHEEL",
         "source": "",
         "checked": "2026-09-13",
-        "notes": "Wheel/tire selection and printing deferred by user. Three STL parts; unpowered fit only. Offline X2D 0.4 mm slice estimates total 505 g filament / 20 h including print aids. Actual nozzle/material and physical fit unverified."
+        "notes": "Imported wheel packaging retained; native hub holes added. Strength, mass reduction and tire/bead retention remain unqualified. Do not use archived bead hardware as current fit evidence. First clamped drive test omits tread; actual rolling radius must be used for later ground tests."
       },
       {
         "id": "P03",
         "group": "Printed",
-        "item": "Barrel, covers, lid, ribs and mounts",
-        "model": "D160x210",
+        "item": "Single shell-first barrel housing and structural hatch",
+        "model": "Fresh native S02/S03 geometry; D160x210; no legacy frame",
         "vehicle_qty": 1,
-        "first_stage_qty": 0,
+        "first_stage_qty": 1,
         "owned_qty": 0,
         "ordered_qty": 0,
         "pack_qty": 1,
         "pack_price_usd": null,
-        "stage": "PRINT LATER",
+        "stage": "HOLD PRINT",
         "source": "",
         "checked": "2026-09-13",
-        "notes": "Current end section uses D159 shell, D151 register and four M4 body mounts. Separate main drum and electronics lid remain later prints; do not duplicate the end section."
+        "notes": "Final vehicle housing used for one populated drive bench test. Slicing, joint qualification, access and measured hardware gates apply."
       },
       {
         "id": "P04",
@@ -797,10 +797,10 @@
         "ordered_qty": 0,
         "pack_qty": 1,
         "pack_price_usd": null,
-        "stage": "PRINT GAUGE",
+        "stage": "HOLD GAUGE",
         "source": "",
         "checked": "2026-09-13",
-        "notes": "Non-powered PETG dimensional coupon,80x32x7; keep orientation consistent with final seats."
+        "notes": "Historical22.05/22.15/22.25 bearing gauge brackets current22.2 trial bore. New shell nut/shoulder/strap coupon and print orientation still require preparation and validation."
       },
       {
         "id": "P05",
@@ -829,10 +829,10 @@
         "ordered_qty": 0,
         "pack_qty": 1,
         "pack_price_usd": null,
-        "stage": "HOLD",
+        "stage": "HOLD REMAINDER",
         "source": "",
         "checked": "2026-09-13",
-        "notes": "Per drive: four M4 body bolts, eight M4 bearing-cap bolts and four M4 carriage bolts plus nuts/washers. Four M3 cover screws and four M3 saddle screws also required. Lengths/locking/tool fit remain to verify. Wheel hardware deferred separately."
+        "notes": "Specific new housing fasteners itemized below. Remaining component restraints and washers still unresolved; no complete fastener kit claimed."
       },
       {
         "id": "E01",
@@ -1016,65 +1016,227 @@
         "item": "Wheel-to-hub socket screws",
         "model": "M4x10, ISO4762 / goBILDA2800-0004-0010",
         "vehicle_qty": 8,
-        "first_stage_qty": 0,
+        "first_stage_qty": 4,
         "owned_qty": null,
         "ordered_qty": 0,
         "pack_qty": 1,
         "pack_price_usd": null,
-        "stage": "DEFER WHEEL",
+        "stage": "HOLD FIT",
         "source": "https://www.gobilda.com/m4-socket-head-screws",
         "checked": "2026-09-13",
-        "notes": "Wheel/tire selection and printing deferred by user. Four per wheel. 5 mm nominal engagement with 5 mm web; verify actual hub and no bottoming. Price/pack choice pending."
+        "notes": "Native wheel web has4x D4.4 holes on16 mm square. M4x10 gives nominal6 mm thread engagement through4 mm web; verify actual hub, head and tool access."
       },
       {
         "id": "H05",
         "group": "Wheel hardware",
         "item": "Recessed bead-retainer socket screws",
         "model": "M4x35 ISO4762; Accu SSC-M4-35-A2-R360 reference",
-        "vehicle_qty": 16,
+        "vehicle_qty": 0,
         "first_stage_qty": 0,
         "owned_qty": null,
         "ordered_qty": 0,
         "pack_qty": 1,
         "pack_price_usd": null,
-        "stage": "DEFER WHEEL",
+        "stage": "HISTORICAL",
         "source": "https://www.accu.co.uk/metric-cap-head-screws/250081-SSC-M4-35-A2-R360",
         "checked": "2026-09-13",
-        "notes": "Wheel/tire selection and printing deferred by user. Eight per wheel. Nominal7 mm head diameter and4 mm height; head ends atY149.5, shaft tipY110.5. No washers in current stack. Pack/price unconfirmed."
+        "notes": "Superseded three-piece wheel/bead concept; retained record only. No current purchase."
       },
       {
         "id": "H06",
         "group": "Wheel hardware",
         "item": "Captured wheel bead-retainer nuts",
         "model": "M4x0.7 ISO4032 plain hex;7 mm AF,3.2 mm thickness reference",
-        "vehicle_qty": 16,
+        "vehicle_qty": 0,
         "first_stage_qty": 0,
         "owned_qty": null,
         "ordered_qty": 0,
         "pack_qty": 1,
         "pack_price_usd": null,
-        "stage": "DEFER WHEEL",
+        "stage": "HISTORICAL",
         "source": "",
         "checked": "2026-09-13",
-        "notes": "Wheel/tire selection and printing deferred by user. Eight per wheel. Fit in7.3 mm AF pockets; verify nut lot dimensions. Mechanical witness marks for unpowered fit; locking method for operation remains to qualify."
+        "notes": "Superseded three-piece wheel/bead concept; retained record only. No current purchase."
       },
       {
         "id": "P06",
         "group": "Printed drive",
-        "item": "Reusable vehicle drive end section + input spine",
-        "model": "drive-end-section.nbcad; PETG fit candidate",
+        "item": "Removable input carriage and bearing-cap set",
+        "model": "Fresh native support parts; integral servo locating lips",
         "vehicle_qty": 2,
         "first_stage_qty": 1,
         "owned_qty": 0,
         "ordered_qty": 0,
         "pack_qty": 1,
         "pack_price_usd": null,
-        "stage": "FIT REVIEW",
-        "source": "Local native CAD: drive-end-section.nbcad",
+        "stage": "HOLD PRINT",
+        "source": "Local native CAD: Roller-300.nbcad",
         "checked": "2026-09-13",
-        "notes": "Two structural meshes supplied for unpowered fit review after bearing coupon. Same carrier clamps for testing and bolts to the drum. Caps/saddle/guard/shaft interfaces still need completion before a powered assembly."
+        "notes": "Per side: input carriage, two wheel caps and two input caps. Old carrier/spine STLs are preserved historical fit candidates, not this test module."
+      },
+      {
+        "id": "H07",
+        "item": "Structural hatch screws",
+        "model": "M4x12 countersunk 90deg candidate",
+        "stage": "HOLD FIT",
+        "vehicle_qty": 8,
+        "first_stage_qty": 8,
+        "owned_qty": null,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "source": null,
+        "checked": "2026-09-19",
+        "notes": "Eight radial hatch fasteners. Verify actual head diameter, seating and preload; price/source unselected.",
+        "group": "Shell fasteners"
+      },
+      {
+        "id": "H08",
+        "item": "Wheel bearing-cap screws",
+        "model": "M4x35 socket-head candidate",
+        "stage": "HOLD FIT",
+        "vehicle_qty": 8,
+        "first_stage_qty": 4,
+        "owned_qty": null,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "source": null,
+        "checked": "2026-09-19",
+        "notes": "Two per wheel cap; four caps vehicle, two first drive. Tool reach and actual thread engagement require fit check.",
+        "group": "Shell fasteners"
+      },
+      {
+        "id": "H09",
+        "item": "Carriage tension screws",
+        "model": "M4x12 socket-head candidate",
+        "stage": "HOLD FIT",
+        "vehicle_qty": 8,
+        "first_stage_qty": 4,
+        "owned_qty": null,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "source": null,
+        "checked": "2026-09-19",
+        "notes": "Four per carriage with sliding slots. Check washers/head clearance and locking.",
+        "group": "Shell fasteners"
+      },
+      {
+        "id": "H10",
+        "item": "Input bearing-cap screws",
+        "model": "M3x30 socket-head candidate",
+        "stage": "HOLD FIT",
+        "vehicle_qty": 8,
+        "first_stage_qty": 4,
+        "owned_qty": null,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "source": null,
+        "checked": "2026-09-19",
+        "notes": "Head seats at Z137 in D6 counterbore; nominal headD5.5x3.0.30 mm screw extends to Z107 through nut pocket109..111.8. Verify received fastener and printed fit.",
+        "group": "Shell fasteners"
+      },
+      {
+        "id": "H11",
+        "item": "Input-cap captive hex nuts",
+        "model": "M3 hex;5.5 mm AF reference",
+        "stage": "HOLD FIT",
+        "vehicle_qty": 8,
+        "first_stage_qty": 4,
+        "owned_qty": null,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "source": null,
+        "checked": "2026-09-19",
+        "notes": "Pocket width5.8, depth2.8; received nut and printed coupon verification required.",
+        "group": "Shell fasteners"
+      },
+      {
+        "id": "H12",
+        "item": "Housing captive hex nuts",
+        "model": "M4 hex;7 mm AF,3.2 mm reference",
+        "stage": "HOLD FIT",
+        "vehicle_qty": 24,
+        "first_stage_qty": 16,
+        "owned_qty": null,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "source": null,
+        "checked": "2026-09-19",
+        "notes": "Hatch8 + wheel caps8 + carriage8 vehicle; first populated side uses16. Nominal pockets7.3 AF /3.5 thick; check insertion and rotation restraint.",
+        "group": "Shell fasteners"
+      },
+      {
+        "id": "M12",
+        "item": "Inboard bearing inner-race spacer",
+        "model": "1522-0010-0030;8 ID x10 OD x3 mm",
+        "stage": "BUY FIT CHECK",
+        "vehicle_qty": 2,
+        "first_stage_qty": 1,
+        "owned_qty": null,
+        "ordered_qty": 0,
+        "pack_qty": 4,
+        "pack_price_usd": 2.99,
+        "source": "https://www.gobilda.com/1522-series-8mm-id-spacer-10mm-od-3mm-length-4-pack/",
+        "checked": "2026-09-19",
+        "notes": "Published nominal dimensions; steel0.62 g each. Received tolerance and endplay verification remain. Price observed, stock/delivery not guaranteed; no purchase made.",
+        "group": "Wheel retention"
+      },
+      {
+        "id": "M13",
+        "item": "Outboard wheel retention spacer",
+        "model": "1529-0012-0100;8 ID x12 OD x10 mm",
+        "stage": "BUY FIT CHECK",
+        "vehicle_qty": 2,
+        "first_stage_qty": 1,
+        "owned_qty": null,
+        "ordered_qty": 0,
+        "pack_qty": 4,
+        "pack_price_usd": 1.99,
+        "source": "https://www.gobilda.com/8mm-id-steel-spacer-12mm-od-10mm-length-4-pack/",
+        "checked": "2026-09-19",
+        "notes": "Published nominal dimensions;4.8 g each.0.5 mm shim sits against bearing; spacer extends to hub. Price observed, stock/delivery not guaranteed; no purchase made.",
+        "group": "Wheel retention"
+      },
+      {
+        "id": "M14",
+        "item": "Outboard inner-race shim",
+        "model": "2807-0811-0500;8 ID x11 OD x0.5 mm",
+        "stage": "BUY FIT CHECK",
+        "vehicle_qty": 2,
+        "first_stage_qty": 1,
+        "owned_qty": null,
+        "ordered_qty": 0,
+        "pack_qty": 12,
+        "pack_price_usd": 2.69,
+        "source": "https://www.gobilda.com/2807-series-stainless-steel-shim-8mm-id-x-11mm-od-0-50mm-thickness-12-pack/",
+        "checked": "2026-09-19",
+        "notes": "Published nominal dimensions; stainless steel0.18 g each. Confirm inner-race-only contact and endplay. Price observed, stock/delivery not guaranteed; no purchase made.",
+        "group": "Wheel retention"
+      },
+      {
+        "id": "H13",
+        "item": "Removable servo restraint straps",
+        "model": "8 mm width candidate; length measured after horn/ear check",
+        "stage": "HOLD FIT",
+        "vehicle_qty": 4,
+        "first_stage_qty": 2,
+        "owned_qty": null,
+        "ordered_qty": 0,
+        "pack_qty": 1,
+        "pack_price_usd": null,
+        "source": null,
+        "checked": "2026-09-19",
+        "notes": "Two straps per servo through native2x8 mm carriage passages. Not a substitute for verified torque reaction/positive mount.",
+        "group": "Shell fasteners"
       }
-    ]
+    ],
+    "scope": "Complete shell and hatch with one populated drive; hardware holds excluded from priced subtotal",
+    "priced_first_stage_subtotal_usd": 35.72
   },
   "servo_v1_superseded": {
     "model": "2000-0025-0002",
@@ -1126,5 +1288,7 @@
     "checked": "2026-09-13",
     "authors": "droftarts / isc; CAD-register-derived coordinate profile",
     "scope": "HTD3M numerical profile for unpowered fit experiment; depth1.28905, pitch offset0.381. Verify actual belt fit. D&D manufacturer table independently lists pitch3, nominal depth1.28; not a strength rating."
-  }
+  },
+  "shell_retention_sources_checked": "2026-09-19",
+  "shell_first_note": "Full housing and hatch with one drive first. Old carrier/spine exports are historical. New fastener prices and dimensions remain HOLD; no new purchasing quotes inferred."
 }

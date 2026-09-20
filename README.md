@@ -1,30 +1,24 @@
 # Roller-300
 
-Indoor-first, two-wheel differential-drive roller with a round rigid body. Mechanical prototype work in NoBS CAD; no caster. **Not physically validated or released for powered testing.**
+Indoor-first two-wheel roller with a round barrel exoskeleton. No caster. Mechanical development in the local NoBS CAD desktop. **Not physically validated; no print or powered-test release.**
 
-Open **[Roller-300.nbcad](Roller-300.nbcad)** in NoBS CAD. This is the only active CAD source. It now contains both reusable drive ends, wheel envelopes, central tub/lid and component packaging, with one active unibody housing and preserved native feature history. This is a full-vehicle packaging proposal, not a finished printable vehicle.
+Open [Roller-300.nbcad](Roller-300.nbcad), the only editable CAD master. The inherited frame has been removed from this master and preserved in Git. Fresh native shell, bearing supports, structural hatch and direct mounting features follow the named S01–S05 stages. Purchased-part references and incomplete envelopes are labeled separately.
 
-- [PLAN.md](PLAN.md): canonical mechanical decisions, open gates and adopted workflow.
-- [parameters.json](parameters.json): targets and measurement record, manually synchronized with native geometry.
-- [parts-sources.json](parts-sources.json) and [BOM.xlsx](BOM.xlsx): parts record and generated purchasing workbook.
-- [test-record.json](test-record.json) and [drive-end-section-checks.json](drive-end-section-checks.json): actual checks and limits.
-- `first-prints/drive-end-section/`: unpowered carrier/spine fit candidates, not a complete assembly release.
-- `archive/`: superseded studies and retired generators. Do not use as parallel working sources.
+- [PLAN.md](PLAN.md): concise canonical mechanical decisions, assembly sequence and release gates.
+- [parameters.json](parameters.json): current dimensions, native feature/stage IDs and measurement gates; manually synchronized with CAD.
+- [parts-sources.json](parts-sources.json) and [BOM.xlsx](BOM.xlsx): source record and generated purchase workbook, with one populated drive first.
+- [test-record.json](test-record.json): current CAD/slicer observations and historical results, distinguished from physical tests.
+- [checks/shell-first-checks.json](checks/shell-first-checks.json): native preflight and selected exported mesh topology.
+- [checks/shell-slice-review.json](checks/shell-slice-review.json): offline X2D orientation comparison and toolpath statistics.
+- `first-prints/shell-first-review/`: current derived review exports. These are not alternate working models or released prints.
+- `first-prints/drive-end-section/`: unchanged historical carrier/spine fit exports, pinned to tag `drive-fit-candidate-2026-09-19` and commit `80f06f3`.
 
-Use component visibility and section views within the master; use rollback for history edits. Explicitly select export bodies. Do not create separate working CAD files merely to hide parts. Commit source and corresponding decisions together. After a native save, run `python tools/cad_snapshot.py --write`; the generated `checks/model-review.json` provides Git diffs and must never be hand-edited.
+Use native visibility and sections in the master; use history to edit features. Export selected body IDs explicitly. Automatic operation names remain app-generated; named sketches, datums/components and the recorded feature IDs identify stages. Do not hand-edit the generated `checks/model-review.json` snapshot. Refresh it after saving with `python tools/cad_snapshot.py --write`.
 
-Current gates: servo ears/output and positive horn adapter, shaft retention, qualified clutch interfaces/duty, guarding and assembly access. Two simplified belt-envelope overlaps are not proof of tooth interference or correct meshing. Physical tests remain unperformed.
+The first complete bench article is the whole barrel and hatch with one supported drive and wheel. Servo/horn mounting, input axial retention, clutch interfaces, measured battery/sensor/cable sizes, positive electronics restraints, joint preload and service/tool access remain release gates. Nominal envelopes do not prove received-component fit or structural capacity.
 
-![Actual CAD application overall view](roller-full-overall.jpg)
+No print has been sent. The current desktop security prompt prevents final CAD screenshots and visual slicer/toolpath review; this does not invalidate the saved CAD but leaves those deliverables open. Earlier root-level CAD screenshots show earlier revisions and are not evidence for this shell-first design.
 
-![Actual CAD application open-body view](roller-full-packaging.jpg)
+On this installation, reproduce current offline slices by setting `ROLLER_PRINT_SET=shell-first-review`, then running `python tools/slice_fit.py main-shell-axle-vertical`, `python tools/slice_fit.py main-shell-opening-down` or `python tools/slice_fit.py curved-hatch-axle-vertical`. The utility uses the installed X2D profiles and never sends a print. The default print set remains the historical carrier/spine folder.
 
-The `pre-consolidation-2026-09-19` tag preserves the imported design baseline. Generated scene dumps, runtime logs and slicer caches remain in the original local backup; they are not design sources. No hardware/source license is assigned by this initial publication; linked third-party material retains its own terms.
-
-Offline fit slicing can be reproduced with `python tools/slice_fit.py carrier-end-section-fit` and `python tools/slice_fit.py input-spine-fit` on this Windows installation with Bambu Studio and the X2D profiles. This utility was restored from the archive for export verification; it does not create CAD geometry.
-
-The preserved test article is in `first-prints/drive-end-section/`, pinned by its hash manifest and tag `drive-fit-candidate-2026-09-19` to source commit `80f06f3`. The advancing master does not silently redefine those exports. No print has been sent.
-
-Current frame approach: body10171 is the single structural unibody housing, built from the continuous D160/ID152 x210 barrel and integrated fixed bearing supports. Derive service openings and the complete motor module from it. The preserved two-part fit set is not that module.
-
-The current unibody revision replaces the hidden construction-envelope approach: housing10171 consumes the six earlier fixed frame/tub/lid/cover bodies. They are removed from active geometry, retained only as dependent earlier history. S01/S02 name the modeled stages; S03–S06 remain planned. Removable carriages/caps remain separate for service. See the latest PLAN section; earlier screenshots show the preceding architecture.
+The public repository is https://github.com/jeffglousher/Roller-300. No hardware/source license has been assigned; linked third-party material retains its own terms.

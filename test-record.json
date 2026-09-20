@@ -1,7 +1,7 @@
 {
   "date": "2026-09-12",
-  "status": "No physical tests performed; no hardware presence inferred",
-  "current_revision": "vehicle-integrated-drive-end-v2",
+  "status": "CAD development; no physical tests, no print or powered release",
+  "current_revision": "shell-first-2026-09-19",
   "observations": [],
   "gates": {
     "supplier_clutch_data": "OPEN",
@@ -10,7 +10,7 @@
     "bearing_and_fastener_coupons": "NOT RUN",
     "independent_bidirectional_clutch_calibration": "NOT RUN",
     "paired_timer_and_hard_cutoff_dummy_load_test": "NOT RUN",
-    "complete_one_side_detail_and_guarding": "OPEN - reusable carrier/body interface modeled; specific servo, clutch, retention, tool and guard interfaces remain held.",
+    "complete_one_side_detail_and_guarding": "Main shell/hatch and one-drive packaging modeled; horn, clutch, axial retention, hardware fit and assembly qualification remain HOLD.",
     "drivetrain_feedback_shutdown": "DESIGNED IN PLAN; NOT IMPLEMENTED",
     "custom_PX4_pitch_control": "NOT BUILT OR FLASHED",
     "body_pitch_and_mass_measurements": "NOT RUN",
@@ -20,7 +20,7 @@
     "loaded_body_clearance_and_crest_passage": "NOT RUN",
     "new_clutch_retention_packaging": "Current ComInTec candidate envelope fits between output bearings; plate/bush/retention qualification still OPEN. Earlier overlap warning superseded.",
     "harness_connectors_bends_and_service_sweep": "General reserves only; guessed camera-specific routes withdrawn. Mated plugs, bends and removal paths remain unmodeled.",
-    "printer_slicer_footprint": "Both new structural parts pass offline X2D slice and bed bounds on 2026-09-19; no physical print or full toolpath qualification.",
+    "printer_slicer_footprint": "See shell-first evidence; earlier two-part slices are historical and do not qualify this housing.",
     "new_torque_shutdown_energy": "OPEN -old angle/time thresholds not qualified at new torque; no vehicle powered release",
     "indoor_acoustics": "NOT RUN - staged servo/transmission/rolling tests;35 dBA normal goal and45 dBA crossing-peak goal at1 m are provisional",
     "normal_shock_envelope": "OPEN - repeated shocks are normal structural loads; measured force/torque/pulse/repetition envelope required",
@@ -30,7 +30,7 @@
     "servo_feedback_interface": "PREFERRED; model, output-angle semantics, wrap, input rate/levels and fault tests open",
     "range_array": "Exact ACEIRMC20x12 outline verified; full hood/header/solder depth and mated connector UNKNOWN. No3D fit pass.",
     "floor_edge_detection": "Not implemented; forward sensors cannot authorize autonomous drop-edge operation",
-    "thermal_pi_compatibility": "UNVERIFIED for TOPDON TC002C Duo; direct front placement conflicts with servos",
+    "thermal_pi_compatibility": "Electrical/software out of scope; mechanical device nominal envelope retained, actual mated connector and optics HOLD.",
     "pi_camera_inventory": "Not owned; choose actual forward camera before modeling.",
     "maintenance_retention": "Registered bolted panels planned; shock/panel cycles, joint torque and detailed openings not yet tested",
     "self_charging": "Pack-specific charger and reverse-blocked contacts planned; mechanical capture, charge limits and autonomous docking not implemented",
@@ -221,20 +221,7 @@
     "physical_measurements_received": false,
     "actuator_trade_status": "Published benchmarks only; no new physical validation"
   },
-  "current_print_release": {
-    "allowed": [
-      "non-powered bearing fit coupon",
-      "P01/P02/P03 full-size wheel set for unpowered fit assessment; see drive-article-checks.json"
-    ],
-    "not_released": [
-      "powered drivetrain",
-      "roller body",
-      "pulleys",
-      "integrated drive frame and guard pending interface closure"
-    ],
-    "physical_tests_performed": false,
-    "superseded": "goBILDA servo fit gauge; do not use for owned INJORA"
-  },
+  "current_print_release": false,
   "new_cad_checks": {
     "supplier_servo_step_imported": true,
     "first_prints": "first-prints/checks.json",
@@ -1019,5 +1006,72 @@
     },
     "physical_tests": "NOT PERFORMED",
     "full_interference": "Not performed after union/central clearance"
-  }
+  },
+  "shell_first_20260919": {
+    "native_source": "Roller-300.nbcad",
+    "source_sha256": "2070116396b8bf6b201f24a44ca7fcd33edc3982e0e6c077a94f325e25c864a2",
+    "stages": {
+      "S01 Hardware references only - no inherited frame": {
+        "last_feature_id": 18,
+        "feature_count": 18
+      },
+      "S02 Shell and direct bearing/servo support": {
+        "last_feature_id": 275,
+        "feature_count": 275
+      },
+      "S02 Shell and direct bearing/servo support - axial registration and clearance refined": {
+        "last_feature_id": 290,
+        "feature_count": 290
+      },
+      "S03 Curved structural hatch and registered bolted lap": {
+        "last_feature_id": 344,
+        "feature_count": 344
+      },
+      "S04 Direct component locating and harness features - measurement gates open": {
+        "last_feature_id": 468,
+        "feature_count": 468
+      },
+      "S02 Wheel axial retention and bearing installation path refined": {
+        "last_feature_id": 498,
+        "feature_count": 498
+      },
+      "S05 Print preparation and complete drive test \u2014 one-drive CAD review, release HOLD": {
+        "last_feature_id": 501,
+        "feature_count": 501
+      },
+      "S04 Exact-clearance corrections to native mounts and S02 transmission stack": {
+        "last_feature_id": 505,
+        "feature_count": 505
+      },
+      "S02 Input cap clearance throughout proposed tension travel": {
+        "last_feature_id": 516,
+        "feature_count": 515
+      }
+    },
+    "old_frame": "Removed from new master history; S01 imported only hardware/wheel references. Prior frame preserved in Git.",
+    "evidence_file": "checks/shell-first-checks.json",
+    "measurement_gates": [
+      "complete servo ears/horn and output offset",
+      "battery dimensions, mass and wire exit",
+      "input bearing and shaft axial retention",
+      "exact clutch driving/driven interface and duty",
+      "fitted controller/sensor/camera depth and mated connectors",
+      "positive board/sensor retention and optical openings",
+      "fastener dimensions, bearing and nut coupons, preload",
+      "full service/tool sweeps and support removal"
+    ],
+    "physical_tests": [],
+    "old_fit_exports": "Unchanged; pinned by manifest/tag",
+    "slicing_is_not_physical_validation": true,
+    "evidence_files": [
+      "checks/shell-first-checks.json",
+      "checks/shell-travel-checks.json",
+      "checks/shell-slice-review.json",
+      "checks/bom-check.json"
+    ],
+    "summary": "49 active bodies match hardware/new-shell manifest; one connected closed main mesh; selected static interfaces and -1.5/0/+1.5 mm movable input checks pass after corrections. Simplified belt/pulley envelopes still overlap and do not qualify actual teeth. All review parts slice; support removal and CAD screenshots blocked by unrelated desktop security prompt. No physical tests.",
+    "historical_export_hashes_verified": true,
+    "mass_partial_estimate_kg": 1.8126327875512263
+  },
+  "historical_records_note": "Earlier revision entries below shell-first/current metadata are retained observations, not current geometry or release evidence."
 }

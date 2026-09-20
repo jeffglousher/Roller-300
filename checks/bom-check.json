@@ -1,0 +1,31 @@
+{
+  "subtotal_usd": 35.720000000000006,
+  "owned_quantity_edit_check": true,
+  "formula_errors": [],
+  "rows": 42,
+  "inspect": {
+    "recordCount": 1,
+    "truncated": false,
+    "metadata": {
+      "revision": "pczbpy",
+      "target": {
+        "id": "wb/wp8ctc",
+        "beforeLines": 0,
+        "afterLines": 0
+      },
+      "kind": {
+        "requested": "region",
+        "tokens": [
+          "region"
+        ]
+      },
+      "include": {
+        "tokens": []
+      },
+      "exclude": {
+        "tokens": []
+      },
+      "notices": []
+    }
+  }
+}
