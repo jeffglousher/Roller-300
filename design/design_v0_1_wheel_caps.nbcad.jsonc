@@ -1,0 +1,856 @@
+// Roller-300 design_v0_1_wheel_caps — modular Design Ops chapter (VERSION 0.1)
+// Role nouns: wheel_cap_inner (native body 56), wheel_cap_outer (native body 65)
+// SoT: this .nbcad.jsonc. Replay: blank document only (starting_state empty).
+// Source: design/native-port/wheel_cap_inner-56.* + wheel_cap_outer-65.* — dump-only, no invented blocks.
+// Sequence: Extrude23/24/25 (inner) → Extrude31/32/33 (outer). Skip shell cuts on Extrude25/33.
+// AABB targets: inner 50×12×16.7 @ -25/45/123.3; outer 50×12×16.7 @ -25/93/123.3.
+{
+  "version": 1,
+  "name": "Roller-300 design_v0_1_wheel_caps (VERSION 0.1) \u2014 wheel_cap_inner 56 + wheel_cap_outer 65",
+  "starting_state": "empty",
+  "steps": [
+    {
+      "chapter": "Shared refs \u2014 wheel_cap_inner (56) + wheel_cap_outer (65)",
+      "note": "VERSION 0.1. Ported from design/native-port/wheel_cap_inner-56.* + wheel_cap_outer-65.* \u2014 no invented blocks. Datum offsets use native signed distances. Extrude25/33 cut caps only here; shell chapter owns body 32. AABB targets: inner 50\u00d712\u00d716.7 @ -25/45/123.3; outer 50\u00d712\u00d716.7 @ -25/93/123.3. Assemble: replay after design_v0_1_input_caps.nbcad.jsonc (or blank-doc this chapter alone for cap exports)."
+    },
+    {
+      "id": "ref_origin_xy",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "origin_xy / shared",
+          "distance": 0.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_origin_xz",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "origin_xz / shared",
+          "distance": 0.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_origin_yz",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "origin_yz / shared",
+          "distance": 0.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "yz"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "Extrude23 \u2014 new_body wheel_cap_inner",
+      "note": "Native fid 89; sketch `S02 F removable wheel cap Y51`; extent 12.0; flip=True; profiles=[0]; new_body_ids [56]."
+    },
+    {
+      "id": "pl_cap_inner_y45",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "wheel_cap_inner_Y51 / shared",
+          "distance": -45.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "datum pl_cap_inner_y45",
+      "note": "Native basis origin [0.0, 45.0, 0.0]; source distance -45.0 from origin xz."
+    },
+    {
+      "id": "sk_Extrude23_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude23__S02 F removable wheel cap Y51",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_cap_inner_y45"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude23_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude23_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": -25.0,
+            "y": 123.3
+          },
+          "corner_hint": {
+            "x": 25.0,
+            "y": 140.0
+          },
+          "width_mm": 50.0,
+          "height_mm": 16.700000000000003,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude23_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude23_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "chapter": "Extrude23 profile",
+      "note": "Closed rectangle from dump points [(-25.0, 123.3), (25.0, 123.3), (25.0, 140.0), (-25.0, 140.0)]"
+    },
+    {
+      "id": "ex_Extrude23",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude23__S02 F removable wheel cap Y51",
+          "profile_indices": [
+            0
+          ],
+          "operation": "new_body",
+          "extent": {
+            "type": "distance",
+            "distance": 12.0
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": []
+        }
+      }
+    },
+    {
+      "let": {
+        "wheel_cap_inner_feat": {
+          "$select": {
+            "from": {
+              "$ref": "ex_Extrude23"
+            },
+            "path": "/document/features",
+            "take": "last",
+            "pointer": "/id"
+          }
+        }
+      }
+    },
+    {
+      "let": {
+        "wheel_cap_inner_body": {
+          "$select": {
+            "from": {
+              "$ref": "ex_Extrude23"
+            },
+            "path": "/scene/bodies",
+            "where": {
+              "/feature_id": {
+                "$ref": "wheel_cap_inner_feat"
+              }
+            },
+            "take": "one"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "Extrude24 \u2014 cut seat",
+      "note": "Native fid 92; sketch `S02 G cap seat Y51`; \u00d822.2 @ (0.0, 123.0); extent 12.0; flip=True; targets [56]."
+    },
+    {
+      "id": "sk_Extrude24_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude24__S02 G cap seat Y51",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_cap_inner_y45"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude24_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude24_c0",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 0.0,
+            "y": 123.0
+          },
+          "edge_hint": {
+            "x": 11.1,
+            "y": 123.0
+          },
+          "diameter_text": "22.2",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude24_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude24_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude24",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude24__S02 G cap seat Y51",
+          "profile_indices": [
+            0
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 12.0
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {
+              "$ref": "wheel_cap_inner_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "Extrude25 \u2014 cut M4 (cap 56 only)",
+      "note": "Native fid 95; sketch `S02 H M4 cap holes Y51`; extent 40.0; flip=False; profiles=[0, 1]; native targets [32, 56]. Caps chapter cuts wheel_cap_inner only; shell chapter owns main_shell."
+    },
+    {
+      "id": "pl_m4_inner_z104",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "wheel_cap_inner_m4_Z104 / shared",
+          "distance": 104.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "datum pl_m4_inner_z104",
+      "note": "Native basis origin [0.0, 0.0, 104.0]; source distance 104.0 from origin xy."
+    },
+    {
+      "id": "sk_Extrude25_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude25__S02 H M4 cap holes Y51",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_m4_inner_z104"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude25_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude25_c0",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": -18.0,
+            "y": 51.0
+          },
+          "edge_hint": {
+            "x": -15.8,
+            "y": 51.0
+          },
+          "diameter_text": "4.4",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude25_c1",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 18.0,
+            "y": 51.0
+          },
+          "edge_hint": {
+            "x": 20.23606797749979,
+            "y": 51.0
+          },
+          "diameter_text": "4.472135955",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude25_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude25_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude25",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude25__S02 H M4 cap holes Y51",
+          "profile_indices": [
+            0,
+            1
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 40.0
+          },
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": [
+            {
+              "$ref": "wheel_cap_inner_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "Extrude31 \u2014 new_body wheel_cap_outer",
+      "note": "Native fid 113; sketch `S02 F removable wheel cap Y99`; extent 12.0; flip=True; profiles=[0]; new_body_ids [65]."
+    },
+    {
+      "id": "pl_cap_outer_y93",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "wheel_cap_outer_Y99 / shared",
+          "distance": -93.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "datum pl_cap_outer_y93",
+      "note": "Native basis origin [0.0, 93.0, 0.0]; source distance -93.0 from origin xz."
+    },
+    {
+      "id": "sk_Extrude31_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude31__S02 F removable wheel cap Y99",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_cap_outer_y93"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude31_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude31_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": -25.0,
+            "y": 123.3
+          },
+          "corner_hint": {
+            "x": 25.0,
+            "y": 140.0
+          },
+          "width_mm": 50.0,
+          "height_mm": 16.700000000000003,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude31_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude31_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "chapter": "Extrude31 profile",
+      "note": "Closed rectangle from dump points [(-25.0, 123.3), (25.0, 123.3), (25.0, 140.0), (-25.0, 140.0)]"
+    },
+    {
+      "id": "ex_Extrude31",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude31__S02 F removable wheel cap Y99",
+          "profile_indices": [
+            0
+          ],
+          "operation": "new_body",
+          "extent": {
+            "type": "distance",
+            "distance": 12.0
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": []
+        }
+      }
+    },
+    {
+      "let": {
+        "wheel_cap_outer_feat": {
+          "$select": {
+            "from": {
+              "$ref": "ex_Extrude31"
+            },
+            "path": "/document/features",
+            "take": "last",
+            "pointer": "/id"
+          }
+        }
+      }
+    },
+    {
+      "let": {
+        "wheel_cap_outer_body": {
+          "$select": {
+            "from": {
+              "$ref": "ex_Extrude31"
+            },
+            "path": "/scene/bodies",
+            "where": {
+              "/feature_id": {
+                "$ref": "wheel_cap_outer_feat"
+              }
+            },
+            "take": "one"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "Extrude32 \u2014 cut seat",
+      "note": "Native fid 116; sketch `S02 G cap seat Y99`; \u00d822.2 @ (0.0, 123.0); extent 12.0; flip=True; targets [65]."
+    },
+    {
+      "id": "sk_Extrude32_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude32__S02 G cap seat Y99",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_cap_outer_y93"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude32_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude32_c0",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 0.0,
+            "y": 123.0
+          },
+          "edge_hint": {
+            "x": 11.1,
+            "y": 123.0
+          },
+          "diameter_text": "22.2",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude32_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude32_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude32",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude32__S02 G cap seat Y99",
+          "profile_indices": [
+            0
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 12.0
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {
+              "$ref": "wheel_cap_outer_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "Extrude33 \u2014 cut M4 (cap 65 only)",
+      "note": "Native fid 119; sketch `S02 H M4 cap holes Y99`; extent 40.0; flip=False; profiles=[0, 1]; native targets [32, 65]. Caps chapter cuts wheel_cap_outer only; shell chapter owns main_shell."
+    },
+    {
+      "id": "pl_m4_outer_z104",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "wheel_cap_outer_m4_Z104 / shared",
+          "distance": 104.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "datum pl_m4_outer_z104",
+      "note": "Native basis origin [0.0, 0.0, 104.0]; source distance 104.0 from origin xy."
+    },
+    {
+      "id": "sk_Extrude33_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude33__S02 H M4 cap holes Y99",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_m4_outer_z104"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude33_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude33_c0",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": -18.0,
+            "y": 99.0
+          },
+          "edge_hint": {
+            "x": -15.8,
+            "y": 99.0
+          },
+          "diameter_text": "4.4",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude33_c1",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 18.0,
+            "y": 99.0
+          },
+          "edge_hint": {
+            "x": 20.23606797749979,
+            "y": 99.0
+          },
+          "diameter_text": "4.472135955",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude33_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude33_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude33",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude33__S02 H M4 cap holes Y99",
+          "profile_indices": [
+            0,
+            1
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 40.0
+          },
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": [
+            {
+              "$ref": "wheel_cap_outer_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

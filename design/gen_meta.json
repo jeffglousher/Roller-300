@@ -3,7 +3,7 @@
   "architecture": "shell-first modular Design Ops cut",
   "native_master": "Roller-300.nbcad",
   "ai_sot": "design/*.nbcad.jsonc",
-  "revision_note": "VERSION 0.1: input_caps chapter (bodies 100/108) + carriage (97) from native-port dumps; coupons retained; one-drive DEPRECATED; native-port exports under first-prints/native-port/.",
+  "revision_note": "VERSION 0.1: wheel_caps chapter (bodies 56/65) + input_caps (100/108) + carriage (97) from native-port dumps; coupons retained; one-drive DEPRECATED; native-port exports under first-prints/native-port/.",
   "modules": [
     {
       "file": "design_v0_1_hardware_refs.nbcad.jsonc",
@@ -24,6 +24,11 @@
       "file": "design_v0_1_input_caps.nbcad.jsonc",
       "stage": "S02",
       "role": "input_caps"
+    },
+    {
+      "file": "design_v0_1_wheel_caps.nbcad.jsonc",
+      "stage": "S02",
+      "role": "wheel_caps"
     },
     {
       "file": "design_v0_1_structural_hatch.nbcad.jsonc",
@@ -54,6 +59,7 @@
       "design_v0_1_barrel_shell.nbcad.jsonc",
       "design_v0_1_input_carriage.nbcad.jsonc",
       "design_v0_1_input_caps.nbcad.jsonc",
+      "design_v0_1_wheel_caps.nbcad.jsonc",
       "design_v0_1_structural_hatch.nbcad.jsonc",
       "design_v0_1_electronics_mounts.nbcad.jsonc",
       "design_v0_1_drive_stack.nbcad.jsonc"
@@ -114,7 +120,7 @@
     "one_drive": "DEPRECATED \u2014 see first-prints/one-drive/DEPRECATED.md"
   },
   "native_port": {
-    "status": "caps_jsonc_replayed",
+    "status": "wheel_caps_jsonc_replayed",
     "path": "design/native-port/",
     "completed": [
       {
@@ -137,13 +143,28 @@
         "chapter": "design_v0_1_input_caps.nbcad.jsonc",
         "exports": "first-prints/native-port/input-cap-outer.{3mf,stl}",
         "aabb": "X30-69 Y92-100 Z123.3-141 (39x8x17.7)"
+      },
+      {
+        "role": "wheel_cap_inner",
+        "body_id": 56,
+        "chapter": "design_v0_1_wheel_caps.nbcad.jsonc",
+        "exports": "first-prints/native-port/wheel-cap-inner.{3mf,stl}",
+        "aabb": "X-25-25 Y45-57 Z123.3-140 (50x12x16.7)"
+      },
+      {
+        "role": "wheel_cap_outer",
+        "body_id": 65,
+        "chapter": "design_v0_1_wheel_caps.nbcad.jsonc",
+        "exports": "first-prints/native-port/wheel-cap-outer.{3mf,stl}",
+        "aabb": "X-25-25 Y93-105 Z123.3-140 (50x12x16.7)"
       }
     ],
     "next_body": {
-      "role": "wheel_cap_inner",
-      "body_id": 56,
-      "note": "Then wheel_cap_outer 65; hatch 141 / main_shell 32 later"
+      "role": "hatch",
+      "body_id": 141,
+      "note": "Then main_shell 32; full shell HOLD"
     },
     "note": "JSONC ported from native feature dumps only \u2014 no invented blocks."
-  }
+  },
+  "next_fill_target": "Native-port: wheel_caps (56/65) + input_caps (100/108) + carriage (97) JSONC replayed + exported. Next dump/port hatch 141 or main_shell 32; full shell HOLD."
 }

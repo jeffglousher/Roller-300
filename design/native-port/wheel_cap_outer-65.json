@@ -1,0 +1,944 @@
+{
+  "generated_from": "Roller-300.nbcad / model.json",
+  "schema_version": 7,
+  "body": {
+    "body_id": 65,
+    "role": "wheel_cap_outer",
+    "appearance": {
+      "body_id": 65,
+      "brand": "Generic",
+      "color": {
+        "a": 255,
+        "b": 164,
+        "g": 146,
+        "r": 81
+      },
+      "color_name": "",
+      "density_g_cm3": null,
+      "diameter_mm": 1.75,
+      "filament_id": null,
+      "filament_type": "PETG",
+      "material_name": "P02 wheel bearing cap Y99",
+      "preset_id": null
+    },
+    "created_by": "Extrude31 (new_body)",
+    "body_features_as_owner": null,
+    "note": "Body 65 created by Extrude31, seat-cut by Extrude32, M4-cut by Extrude33 (also targets shell 32). No combine/recess/mirror on this body."
+  },
+  "feature_sequence": [
+    {
+      "kind": "extrude",
+      "name": "Extrude31",
+      "feature_id": 113,
+      "operation": "new_body",
+      "extent": {
+        "distance": 12.0,
+        "type": "distance"
+      },
+      "flip": true,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0
+      ],
+      "sketch_name": "S02 F removable wheel cap Y99",
+      "target_body_ids": [],
+      "new_body_ids": [
+        65
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S02 F removable wheel cap Y99",
+        "feature_id": 112,
+        "plane": {
+          "datum_id": 31,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            93.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum": {
+          "datum_id": 31,
+          "name": "S02 F removable wheel cap Y99 datum",
+          "feature_id": 111,
+          "basis": {
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "origin": [
+              0.0,
+              93.0,
+              0.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "source": {
+            "distance": -93.0,
+            "reference": {
+              "plane": "xz",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "geometry": {
+          "entity_count": 8,
+          "entity_types": {
+            "point": 4,
+            "line": 4
+          },
+          "point_bbox_uv": {
+            "umin": -25.0,
+            "umax": 25.0,
+            "vmin": 123.3,
+            "vmax": 140.0,
+            "u_span": 50.0,
+            "v_span": 16.700000000000003
+          },
+          "curves": [
+            {
+              "id": 5,
+              "type": "line",
+              "start": 1,
+              "end": 2
+            },
+            {
+              "id": 6,
+              "type": "line",
+              "start": 2,
+              "end": 3
+            },
+            {
+              "id": 7,
+              "type": "line",
+              "start": 3,
+              "end": 4
+            },
+            {
+              "id": 8,
+              "type": "line",
+              "start": 4,
+              "end": 1
+            }
+          ],
+          "points": [
+            {
+              "id": 1,
+              "x": -25.0,
+              "y": 123.3
+            },
+            {
+              "id": 2,
+              "x": 25.0,
+              "y": 123.3
+            },
+            {
+              "id": 3,
+              "x": 25.0,
+              "y": 140.0
+            },
+            {
+              "id": 4,
+              "x": -25.0,
+              "y": 140.0
+            }
+          ]
+        },
+        "constraint_count": 4,
+        "constraints": [
+          {
+            "id": 1,
+            "entity": 5,
+            "type": "horizontal"
+          },
+          {
+            "id": 2,
+            "entity": 7,
+            "type": "horizontal"
+          },
+          {
+            "id": 3,
+            "entity": 6,
+            "type": "vertical"
+          },
+          {
+            "id": 4,
+            "entity": 8,
+            "type": "vertical"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "extrude",
+      "name": "Extrude32",
+      "feature_id": 116,
+      "operation": "cut",
+      "extent": {
+        "distance": 12.0,
+        "type": "distance"
+      },
+      "flip": true,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0
+      ],
+      "sketch_name": "S02 G cap seat Y99",
+      "target_body_ids": [
+        65
+      ],
+      "new_body_ids": [
+        66
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S02 G cap seat Y99",
+        "feature_id": 115,
+        "plane": {
+          "datum_id": 32,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            93.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum": {
+          "datum_id": 32,
+          "name": "S02 G cap seat Y99 datum",
+          "feature_id": 114,
+          "basis": {
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "origin": [
+              0.0,
+              93.0,
+              0.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "source": {
+            "distance": -93.0,
+            "reference": {
+              "plane": "xz",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "geometry": {
+          "entity_count": 1,
+          "entity_types": {
+            "circle": 1
+          },
+          "point_bbox_uv": {
+            "umin": -11.1,
+            "umax": 11.1,
+            "vmin": 111.9,
+            "vmax": 134.1,
+            "u_span": 22.2,
+            "v_span": 22.19999999999999
+          },
+          "curves": [
+            {
+              "id": 1,
+              "type": "circle",
+              "center": {
+                "x": 0.0,
+                "y": 123.0
+              },
+              "radius": 11.1
+            }
+          ],
+          "points": []
+        },
+        "constraint_count": 0,
+        "constraints": []
+      }
+    },
+    {
+      "kind": "extrude",
+      "name": "Extrude33",
+      "feature_id": 119,
+      "operation": "cut",
+      "extent": {
+        "distance": 40.0,
+        "type": "distance"
+      },
+      "flip": false,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0,
+        1
+      ],
+      "sketch_name": "S02 H M4 cap holes Y99",
+      "target_body_ids": [
+        32,
+        65
+      ],
+      "new_body_ids": [
+        67,
+        68
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S02 H M4 cap holes Y99",
+        "feature_id": 118,
+        "plane": {
+          "datum_id": 33,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            104.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "datum": {
+          "datum_id": 33,
+          "name": "S02 H M4 cap holes Y99 datum",
+          "feature_id": 117,
+          "basis": {
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              104.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          "source": {
+            "distance": 104.0,
+            "reference": {
+              "plane": "xy",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "geometry": {
+          "entity_count": 2,
+          "entity_types": {
+            "circle": 2
+          },
+          "point_bbox_uv": {
+            "umin": -20.2,
+            "umax": 20.23606797749979,
+            "vmin": 96.76393202250021,
+            "vmax": 101.23606797749979,
+            "u_span": 40.43606797749979,
+            "v_span": 4.4721359549995725
+          },
+          "curves": [
+            {
+              "id": 1,
+              "type": "circle",
+              "center": {
+                "x": -18.0,
+                "y": 99.0
+              },
+              "radius": 2.1999999999999993
+            },
+            {
+              "id": 2,
+              "type": "circle",
+              "center": {
+                "x": 18.0,
+                "y": 99.0
+              },
+              "radius": 2.23606797749979
+            }
+          ],
+          "points": []
+        },
+        "constraint_count": 0,
+        "constraints": []
+      }
+    }
+  ],
+  "feature_sequence_summary": [
+    {
+      "feature_id": 113,
+      "name": "Extrude31",
+      "kind": "extrude",
+      "operation": "new_body",
+      "sketch_name": "S02 F removable wheel cap Y99",
+      "extent": {
+        "distance": 12.0,
+        "type": "distance"
+      },
+      "target_body_ids": null,
+      "new_body_ids": [
+        65
+      ]
+    },
+    {
+      "feature_id": 116,
+      "name": "Extrude32",
+      "kind": "extrude",
+      "operation": "cut",
+      "sketch_name": "S02 G cap seat Y99",
+      "extent": {
+        "distance": 12.0,
+        "type": "distance"
+      },
+      "target_body_ids": [
+        65
+      ],
+      "new_body_ids": [
+        66
+      ]
+    },
+    {
+      "feature_id": 119,
+      "name": "Extrude33",
+      "kind": "extrude",
+      "operation": "cut",
+      "sketch_name": "S02 H M4 cap holes Y99",
+      "extent": {
+        "distance": 40.0,
+        "type": "distance"
+      },
+      "target_body_ids": [
+        32,
+        65
+      ],
+      "new_body_ids": [
+        67,
+        68
+      ]
+    }
+  ],
+  "sketches_used_in_order": [
+    "S02 F removable wheel cap Y99",
+    "S02 G cap seat Y99",
+    "S02 H M4 cap holes Y99"
+  ],
+  "sketches": {
+    "S02 F removable wheel cap Y99": {
+      "name": "S02 F removable wheel cap Y99",
+      "feature_id": 112,
+      "plane": {
+        "datum_id": 31,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "origin": [
+          0.0,
+          93.0,
+          0.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "datum": {
+        "datum_id": 31,
+        "name": "S02 F removable wheel cap Y99 datum",
+        "feature_id": 111,
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            93.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "source": {
+          "distance": -93.0,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 8,
+        "entity_types": {
+          "point": 4,
+          "line": 4
+        },
+        "point_bbox_uv": {
+          "umin": -25.0,
+          "umax": 25.0,
+          "vmin": 123.3,
+          "vmax": 140.0,
+          "u_span": 50.0,
+          "v_span": 16.700000000000003
+        },
+        "curves": [
+          {
+            "id": 5,
+            "type": "line",
+            "start": 1,
+            "end": 2
+          },
+          {
+            "id": 6,
+            "type": "line",
+            "start": 2,
+            "end": 3
+          },
+          {
+            "id": 7,
+            "type": "line",
+            "start": 3,
+            "end": 4
+          },
+          {
+            "id": 8,
+            "type": "line",
+            "start": 4,
+            "end": 1
+          }
+        ],
+        "points": [
+          {
+            "id": 1,
+            "x": -25.0,
+            "y": 123.3
+          },
+          {
+            "id": 2,
+            "x": 25.0,
+            "y": 123.3
+          },
+          {
+            "id": 3,
+            "x": 25.0,
+            "y": 140.0
+          },
+          {
+            "id": 4,
+            "x": -25.0,
+            "y": 140.0
+          }
+        ]
+      },
+      "constraint_count": 4,
+      "constraints": [
+        {
+          "id": 1,
+          "entity": 5,
+          "type": "horizontal"
+        },
+        {
+          "id": 2,
+          "entity": 7,
+          "type": "horizontal"
+        },
+        {
+          "id": 3,
+          "entity": 6,
+          "type": "vertical"
+        },
+        {
+          "id": 4,
+          "entity": 8,
+          "type": "vertical"
+        }
+      ]
+    },
+    "S02 G cap seat Y99": {
+      "name": "S02 G cap seat Y99",
+      "feature_id": 115,
+      "plane": {
+        "datum_id": 32,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "origin": [
+          0.0,
+          93.0,
+          0.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "datum": {
+        "datum_id": 32,
+        "name": "S02 G cap seat Y99 datum",
+        "feature_id": 114,
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            93.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "source": {
+          "distance": -93.0,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 1,
+        "entity_types": {
+          "circle": 1
+        },
+        "point_bbox_uv": {
+          "umin": -11.1,
+          "umax": 11.1,
+          "vmin": 111.9,
+          "vmax": 134.1,
+          "u_span": 22.2,
+          "v_span": 22.19999999999999
+        },
+        "curves": [
+          {
+            "id": 1,
+            "type": "circle",
+            "center": {
+              "x": 0.0,
+              "y": 123.0
+            },
+            "radius": 11.1
+          }
+        ],
+        "points": []
+      },
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "S02 H M4 cap holes Y99": {
+      "name": "S02 H M4 cap holes Y99",
+      "feature_id": 118,
+      "plane": {
+        "datum_id": 33,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin": [
+          0.0,
+          0.0,
+          104.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "datum": {
+        "datum_id": 33,
+        "name": "S02 H M4 cap holes Y99 datum",
+        "feature_id": 117,
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            104.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "source": {
+          "distance": 104.0,
+          "reference": {
+            "plane": "xy",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 2,
+        "entity_types": {
+          "circle": 2
+        },
+        "point_bbox_uv": {
+          "umin": -20.2,
+          "umax": 20.23606797749979,
+          "vmin": 96.76393202250021,
+          "vmax": 101.23606797749979,
+          "u_span": 40.43606797749979,
+          "v_span": 4.4721359549995725
+        },
+        "curves": [
+          {
+            "id": 1,
+            "type": "circle",
+            "center": {
+              "x": -18.0,
+              "y": 99.0
+            },
+            "radius": 2.1999999999999993
+          },
+          {
+            "id": 2,
+            "type": "circle",
+            "center": {
+              "x": 18.0,
+              "y": 99.0
+            },
+            "radius": 2.23606797749979
+          }
+        ],
+        "points": []
+      },
+      "constraint_count": 0,
+      "constraints": []
+    }
+  },
+  "timeline_context": {
+    "create": "Extrude31",
+    "seat_cut": "Extrude32",
+    "m4_cut": "Extrude33",
+    "also_targets_shell_on_m4": true
+  },
+  "verify_gaps": [
+    {
+      "topic": "multi_body_m4",
+      "feature": "Extrude33",
+      "detail": "Also targets body 32 (main_shell). Wheel-caps chapter should cut this cap only; shell chapter owns shell cuts."
+    },
+    {
+      "topic": "no_mirror",
+      "feature": "mirrors",
+      "detail": "No mirror copies wheel caps 56/65 in native history \u2014 left-only bodies as-is."
+    },
+    {
+      "topic": "datum_offset_sign",
+      "feature": "datums",
+      "detail": "XZ offsets negative \u2192 +Y origin (same as carriage/input caps). M4 hole datums offset +104 from origin XY."
+    },
+    {
+      "topic": "m4_radius_asymmetry",
+      "feature": "Extrude33",
+      "detail": "Native dump radii differ slightly: [2.1999999999999993, 2.23606797749979]. Port exact values; do not invent nominal M4=2.0."
+    }
+  ],
+  "jsonc_rebuild_guidance": {
+    "do_not_invent": true,
+    "chapter_suggestion": "design/design_v0_1_wheel_caps.nbcad.jsonc (both caps)",
+    "order": [
+      "Extrude31 new_body blank",
+      "Extrude32 cut seat bore \u00d822.2",
+      "Extrude33 cut M4 (cap target only; shell chapter owns body 32)",
+      "Blank-doc replay; AABB vs shell-first-review assembly-coordinates STL"
+    ],
+    "assemble_coordination": "Wheel-caps chapter after input_caps (or alone for cap exports). Extrude33: chapter cuts this/sibling wheel cap only; do not cut shell 32 here."
+  },
+  "aabb_comparison": {
+    "native_envelope_from_sketches": {
+      "note": "Heuristic from blank sketch UV + Extrude origin Y=93.0 distance 12.0 flip=True",
+      "xmin": -25.0,
+      "xmax": 25.0,
+      "ymin": 93.0,
+      "ymax": 105.0,
+      "zmin": 123.3,
+      "zmax": 140.0,
+      "dx": 50.0,
+      "dy": 12.0,
+      "dz": 16.700000000000003
+    },
+    "review_stl_assembly_coordinates": {
+      "xmin": -25.0,
+      "xmax": 25.0,
+      "ymin": 93.0,
+      "ymax": 105.0,
+      "zmin": 123.30000305175781,
+      "zmax": 140.0,
+      "dx": 50.0,
+      "dy": 12.0,
+      "dz": 16.699996948242188,
+      "tri_count": 532,
+      "path": "first-prints/shell-first-review/wheel-cap-outer-assembly-coordinates.stl"
+    },
+    "review_stl_axle_vertical": {
+      "xmin": -25.0,
+      "xmax": 25.0,
+      "ymin": -8.349998474121094,
+      "ymax": 8.349998474121094,
+      "zmin": 0.0,
+      "zmax": 12.0,
+      "dx": 50.0,
+      "dy": 16.699996948242188,
+      "dz": 12.0,
+      "tri_count": 532,
+      "path": "first-prints/shell-first-review/wheel-cap-outer-axle-vertical.stl"
+    },
+    "match": {
+      "assembly_vs_sketch_envelope_dxdydz": true,
+      "assembly_mins_match_sketch": true
+    }
+  }
+}

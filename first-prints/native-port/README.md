@@ -34,3 +34,20 @@ Shared Extrude67/74 M3: caps chapter cuts 100/108; carriage chapter cuts 97.
 Extrude144 + Combine17/18 corner-limit; Extrude145 recessed heads (left-only).
 
 See `_export_report.json` for the last export run.
+
+## wheel-cap-inner / wheel-cap-outer
+
+| Item | Inner | Outer |
+|------|-------|-------|
+| Role | `wheel_cap_inner` | `wheel_cap_outer` |
+| Native body | **56** | **65** |
+| Chapter | `design/design_v0_1_wheel_caps.nbcad.jsonc` | same |
+| Dump | `design/native-port/wheel_cap_inner-56.*` | `wheel_cap_outer-65.*` |
+| Exports | `wheel-cap-inner.{3mf,stl}` | `wheel-cap-outer.{3mf,stl}` |
+| AABB | X-25–25 Y45–57 Z123.3–140 → **50×12×16.7** | X-25–25 Y93–105 Z123.3–140 → **50×12×16.7** |
+| Review STL | `shell-first-review/wheel-cap-inner-assembly-coordinates.stl` | `.../wheel-cap-outer-assembly-coordinates.stl` |
+
+Extrude25/33 M4: wheel-caps chapter cuts 56/65; shell chapter owns body 32. No combine/recess/mirror on these bodies.
+
+See `_export_report.json` for the last export run.
+

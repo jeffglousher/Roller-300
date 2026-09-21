@@ -30,4 +30,5 @@ Repo is the SoT for location and progress. CAD/MCP sessions are transitory.
 - Inventory done (`body-inventory.json`).
 - **Carriage dump + JSONC**: `left_input_carriage-97.{json,md}` → `design/design_v0_1_input_carriage.nbcad.jsonc` — AABB **39×100×35** @ 30/2/88. Exports: `first-prints/native-port/left-input-carriage.*`.
 - **Caps dump + JSONC**: `input_cap_inner-100.{json,md}` + `input_cap_outer-108.{json,md}` → `design/design_v0_1_input_caps.nbcad.jsonc` — Extrude65/66/67 + Extrude72/73/74 + Extrude144/Combine17–18 + Extrude145 (skip Mirror2). Blank-doc AABB inner **39×8×17.7** @ 30/66/123.3; outer **39×8×17.7** @ 30/92/123.3. Exports: `first-prints/native-port/input-cap-{inner,outer}.*`.
-- **Next**: wheel caps 56/65 and/or hatch 141 / main_shell 32.
+- **Wheel caps dump + JSONC**: `wheel_cap_inner-56.{json,md}` + `wheel_cap_outer-65.{json,md}` → `design/design_v0_1_wheel_caps.nbcad.jsonc` — Extrude23/24/25 + Extrude31/32/33 (skip shell cuts). Blank-doc AABB inner **50×12×16.7** @ -25/45/123.3; outer **50×12×16.7** @ -25/93/123.3. Exports: `first-prints/native-port/wheel-cap-{inner,outer}.*`.
+- **Next**: hatch 141 and/or main_shell 32.

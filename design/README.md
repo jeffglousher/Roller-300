@@ -16,6 +16,7 @@ JSONC-first AI iterate tree. Native `../Roller-300.nbcad` remains the editable C
 | `design_v0_1_barrel_shell.nbcad.jsonc` | S02 | Barrel shell + saddles/rails/guards | **Saddle coupon** (one wheel seat); full OD160 barrel deferred |
 | `design_v0_1_input_carriage.nbcad.jsonc` | S02 | `left_input_carriage` (native body 97) | **Native-port chapter**: Extrude62→86 from dump; blank-doc AABB 39×100×35; exports `../first-prints/native-port/left-input-carriage.*`. |
 | `design_v0_1_input_caps.nbcad.jsonc` | S02 | `input_cap_inner` / `input_cap_outer` (100/108) | **Native-port chapter**: Extrude65–74 + Extrude144/Combine + Extrude145; AABB 39×8×17.7; exports `../first-prints/native-port/input-cap-{inner,outer}.*`. |
+| `design_v0_1_wheel_caps.nbcad.jsonc` | S02 | `wheel_cap_inner` / `wheel_cap_outer` (56/65) | **Native-port chapter**: Extrude23–25 + Extrude31–33; AABB 50×12×16.7; exports `../first-prints/native-port/wheel-cap-{inner,outer}.*`. |
 | `design_v0_1_structural_hatch.nbcad.jsonc` | S03 | Curved structural hatch | **Lap/M4 coupon** + **panel-arc** (R76→R80×35°); full 180 mm hatch deferred |
 | `design_v0_1_electronics_mounts.nbcad.jsonc` | S04 | Battery / boards / sensors / harness | **Shelf/standoff + allowance coupons** (Pi / Pixracer / TOF / battery tray / thermal); shell-integrated mounts deferred |
 | `design_v0_1_drive_stack.nbcad.jsonc` | S01/S05 | One-drive pulley/belt/hub stack | **Pitch envelopes** 24/48 + belt torus + Ø8 stubs |
@@ -50,6 +51,7 @@ Print **mechanic fit coupons / small articles** first — not full vehicle, not 
 | Wheel-seat saddle | `design_v0_1_barrel_shell.nbcad.jsonc` | One saddle block matching D22.2×7.2; map to vehicle Y±51/±99 |
 | left_input_carriage (native 97) | `design_v0_1_input_carriage.nbcad.jsonc` | Full left carriage from native dump; exports under `../first-prints/native-port/` |
 | input caps (native 100/108) | `design_v0_1_input_caps.nbcad.jsonc` | Inner/outer bearing caps from native dump; shared M3 + recess; exports under `../first-prints/native-port/` |
+| wheel caps (native 56/65) | `design_v0_1_wheel_caps.nbcad.jsonc` | Inner/outer wheel bearing caps from native dump; M4 pattern + Ø22.2 seat; exports under `../first-prints/native-port/` |
 | Hatch lap + M4 nut | `design_v0_1_structural_hatch.nbcad.jsonc` | Developed lap_mm 8 + gap 0.3 + AF7.3×3.5; panel-arc envelope separate |
 | Drive envelopes | `design_v0_1_drive_stack.nbcad.jsonc` | Visual/fit envelopes only — **not** a print-first article |
 | Pi / Pixracer / TOF / battery / thermal | `design_v0_1_electronics_mounts.nbcad.jsonc` | Shelf/standoff + UNMEASURED allowance tray; footprint/envelope coupons — **not** claimed 3D fits |
@@ -76,7 +78,7 @@ Open call to Jeff: measure servo ears/strap; coupon M3 shank + wheel-cap M4 patt
 ## Filling geometry next
 
 1. Prove hardware_refs + saddle coupons on printer (608 + M4 nut).
-2. ~~Flesh carriage + caps~~: **native-port** `left_input_carriage` + `input_caps` JSONC + `../first-prints/native-port/` (AABB match). Still: tension-slot R1 arcs VERIFY; full shell HOLD.
+2. ~~Flesh carriage + caps~~: **native-port** `left_input_carriage` + `input_caps` + `wheel_caps` JSONC + `../first-prints/native-port/` (AABB match). Still: tension-slot R1 arcs VERIFY; full shell HOLD.
 3. ~~`structural_hatch`~~: coupons filled (lap/M4 + panel-arc); grow toward full 180 mm / ~120° after print feedback.
 4. `barrel_shell`: grow from saddle coupons toward OD160/ID152/L210.
 5. ~~`electronics_mounts`~~: shelf/standoff + allowance coupons filled from recorded nominals; positive retainers / sensor depth / optical aperture remain HOLD until measured parts.
@@ -95,5 +97,5 @@ Repo tracks location and releases; CAD/MCP sessions are transitory.
 
 See [`native-port/README.md`](native-port/README.md) and [`native-port/body-inventory.json`](native-port/body-inventory.json).
 
-Ported: **left_input_carriage** (97) + **input_cap_inner/outer** (100/108) — JSONC + `first-prints/native-port/` exports (AABB match). Next: wheel caps **56/65**. Review STLs in `shell-first-review/` remain valid cross-check.
+Ported: **left_input_carriage** (97) + **input_cap_inner/outer** (100/108) + **wheel_cap_inner/outer** (56/65) — JSONC + `first-prints/native-port/` exports (AABB match). Next: hatch **141** / main_shell **32**. Review STLs in `shell-first-review/` remain valid cross-check.
 

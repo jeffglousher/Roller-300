@@ -76,5 +76,58 @@
       }
     ]
   },
-  "note": "Derived from native dump replay \u2014 not one-drive placeholder."
+  "note": "Derived from native dump replay \u2014 not one-drive placeholder.",
+  "wheel_caps": {
+    "source_chapter": "design/design_v0_1_wheel_caps.nbcad.jsonc",
+    "native_dumps": [
+      "design/native-port/wheel_cap_inner-56.{md,json}",
+      "design/native-port/wheel_cap_outer-65.{md,json}"
+    ],
+    "replay_ok": true,
+    "steps_completed": 62,
+    "bodies": [
+      {
+        "role": "wheel_cap_inner",
+        "native_body_id": 56,
+        "replay_body_id": 1,
+        "aabb": {
+          "xmin": -25.0,
+          "xmax": 25.0,
+          "ymin": 45.0,
+          "ymax": 57.0,
+          "zmin": 123.3,
+          "zmax": 140.0,
+          "dx": 50.0,
+          "dy": 12.0,
+          "dz": 16.7
+        },
+        "aabb_match": true,
+        "exports": [
+          "wheel-cap-inner.3mf",
+          "wheel-cap-inner.stl"
+        ]
+      },
+      {
+        "role": "wheel_cap_outer",
+        "native_body_id": 65,
+        "replay_body_id": 5,
+        "aabb": {
+          "xmin": -25.0,
+          "xmax": 25.0,
+          "ymin": 93.0,
+          "ymax": 105.0,
+          "zmin": 123.3,
+          "zmax": 140.0,
+          "dx": 50.0,
+          "dy": 12.0,
+          "dz": 16.7
+        },
+        "aabb_match": true,
+        "exports": [
+          "wheel-cap-outer.3mf",
+          "wheel-cap-outer.stl"
+        ]
+      }
+    ]
+  }
 }
