@@ -13,7 +13,7 @@ JSONC-first AI iterate tree. Native `../Roller-300.nbcad` remains the editable C
 | File | PLAN stage | Role | Geometry status |
 |------|------------|------|-----------------|
 | `design_v0_1_hardware_refs.nbcad.jsonc` | S01 | Hardware / belt / bearing / shaft refs | **Coupon geometry**: 608 seat D22.2×7.2 trial + M4 nut AF7.3×3.5 |
-| `design_v0_1_barrel_shell.nbcad.jsonc` | S02 | Barrel shell + saddles/rails/guards | **Saddle coupon** (one wheel seat); full OD160 barrel deferred |
+| `design_v0_1_barrel_shell.nbcad.jsonc` | S02 | Barrel shell + saddles/rails/guards | **Native dump** `native-port/main_shell-32.*` (329 feats); JSONC rebuild next; review AABB 159.95×210×159.98 |
 | `design_v0_1_input_carriage.nbcad.jsonc` | S02 | `left_input_carriage` (native body 97) | **Native-port chapter**: Extrude62→86 from dump; blank-doc AABB 39×100×35; exports `../first-prints/native-port/left-input-carriage.*`. |
 | `design_v0_1_input_caps.nbcad.jsonc` | S02 | `input_cap_inner` / `input_cap_outer` (100/108) | **Native-port chapter**: Extrude65–74 + Extrude144/Combine + Extrude145; AABB 39×8×17.7; exports `../first-prints/native-port/input-cap-{inner,outer}.*`. |
 | `design_v0_1_wheel_caps.nbcad.jsonc` | S02 | `wheel_cap_inner` / `wheel_cap_outer` (56/65) | **Native-port chapter**: Extrude23–25 + Extrude31–33; AABB 50×12×16.7; exports `../first-prints/native-port/wheel-cap-{inner,outer}.*`. |

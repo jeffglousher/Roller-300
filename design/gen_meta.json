@@ -3,7 +3,7 @@
   "architecture": "shell-first modular Design Ops cut",
   "native_master": "Roller-300.nbcad",
   "ai_sot": "design/*.nbcad.jsonc",
-  "revision_note": "VERSION 0.1: hatch body 141 dump complete + partial JSONC (shell-32 blocker); wheel_caps 56/65 + input_caps 100/108 + carriage 97 native-port; coupons retained; one-drive DEPRECATED; native-port exports under first-prints/native-port/.",
+  "revision_note": "VERSION 0.1: main_shell body 32 native dump complete (329 features); hatch 141 dump+partial JSONC still shell-JSONC-blocked; wheel_caps 56/65 + input_caps 100/108 + carriage 97 native-port; coupons retained; one-drive DEPRECATED.",
   "modules": [
     {
       "file": "design_v0_1_hardware_refs.nbcad.jsonc",
@@ -13,7 +13,11 @@
     {
       "file": "design_v0_1_barrel_shell.nbcad.jsonc",
       "stage": "S02",
-      "role": "barrel_shell"
+      "role": "barrel_shell",
+      "native_body_id": 32,
+      "port_status": "dump_complete_jsonc_pending",
+      "dump": "design/native-port/main_shell-32.{json,md}",
+      "note": "Native dump complete; JSONC rebuild next. Unblocks hatch MoveCopy5."
     },
     {
       "file": "design_v0_1_input_carriage.nbcad.jsonc",
@@ -37,7 +41,7 @@
       "native_body_id": 141,
       "port_status": "dump_complete_jsonc_partial_shell_blocker",
       "dump": "design/native-port/hatch-141.{json,md}",
-      "note": "Full blank-doc hatch blocked on main_shell body 32 (MoveCopy5). Legacy lap/arc coupons retained."
+      "note": "Full blank-doc hatch blocked on main_shell body 32 JSONC (MoveCopy5). Shell dump now exists (main_shell-32); finish shell JSONC then hatch replay. Legacy lap/arc coupons retained."
     },
     {
       "file": "design_v0_1_electronics_mounts.nbcad.jsonc",
@@ -99,7 +103,7 @@
       "design_v0_1_electronics_mounts.nbcad.jsonc#thermal_envelope_shelf_coupon"
     ],
     "still_empty": [],
-    "next_fill_target": "Native-port: input_caps (100/108) JSONC replayed + exported. Next dump/port wheel caps 56/65 or hatch 141; full shell HOLD."
+    "next_fill_target": "Native-port: main_shell 32 dump complete. Next: shell JSONC from dump, then hatch finish."
   },
   "one_drive": {
     "status": "deprecated_failed_placeholder",
@@ -124,7 +128,7 @@
     "one_drive": "DEPRECATED \u2014 see first-prints/one-drive/DEPRECATED.md"
   },
   "native_port": {
-    "status": "wheel_caps_jsonc_replayed",
+    "status": "main_shell_dump_complete",
     "path": "design/native-port/",
     "completed": [
       {
@@ -164,16 +168,16 @@
       }
     ],
     "next_body": {
-      "role": "hatch",
-      "body_id": 141,
-      "note": "Then main_shell 32; full shell HOLD"
+      "role": "main_shell",
+      "body_id": 32,
+      "note": "Dump complete \u2014 next is shell JSONC chapter; then finish hatch blank-doc replay"
     },
     "note": "JSONC ported from native feature dumps only \u2014 no invented blocks.",
     "hatch": {
       "body_id": 141,
       "dump": "design/native-port/hatch-141.{json,md}",
       "chapter": "design/design_v0_1_structural_hatch.nbcad.jsonc",
-      "status": "dump_complete_jsonc_partial_shell_blocker",
+      "status": "dump_complete_jsonc_partial_shell_jsonc_blocker",
       "aabb_target": {
         "dx": 138.0,
         "dy": 179.39999389648438,
@@ -184,8 +188,35 @@
         "source": "first-prints/shell-first-review/curved-hatch-assembly-coordinates.stl"
       },
       "exports": null,
-      "blocker": "MoveCopy5 identity copy of shell body 32 \u2014 needs shell chapter before blank-doc AABB match"
+      "blocker": "MoveCopy5 identity copy of shell body 32 \u2014 shell dump exists (design/native-port/main_shell-32.*); needs shell JSONC chapter before blank-doc AABB match"
+    },
+    "main_shell": {
+      "body_id": 32,
+      "dump": "design/native-port/main_shell-32.{json,md}",
+      "chapter": "design/design_v0_1_barrel_shell.nbcad.jsonc",
+      "status": "dump_complete_jsonc_pending",
+      "feature_sequence_length": 329,
+      "feature_counts": {
+        "datum_plane": 101,
+        "sketch": 101,
+        "extrude": 101,
+        "combine": 13,
+        "rectangular_pattern": 5,
+        "mirror": 4,
+        "move_copy": 4
+      },
+      "aabb_target": {
+        "dx": 159.95016479492188,
+        "dy": 210.0,
+        "dz": 159.9750747680664,
+        "xmin": -79.95016479492188,
+        "ymin": -105.0,
+        "zmin": 43.01245880126953,
+        "source": "first-prints/shell-first-review/main-shell-assembly-coordinates.stl"
+      },
+      "exports": null,
+      "blocker_cleared_for": "hatch MoveCopy5 \u2014 pending shell JSONC replay"
     }
   },
-  "next_fill_target": "Native-port: wheel_caps (56/65) + input_caps (100/108) + carriage (97) JSONC replayed + exported. Next dump/port hatch 141 or main_shell 32; full shell HOLD."
+  "next_fill_target": "Native-port: main_shell body 32 dump complete (329 features). Next: shell JSONC (design_v0_1_barrel_shell.nbcad.jsonc) from dump \u2014 no invented geometry; then finish hatch 141 blank-doc replay."
 }
