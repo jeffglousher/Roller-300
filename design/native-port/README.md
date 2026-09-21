@@ -28,6 +28,6 @@ Repo is the SoT for location and progress. CAD/MCP sessions are transitory.
 
 ## Status
 - Inventory done (`body-inventory.json`).
-- **Carriage dump done**: `left_input_carriage-97.json` + `left_input_carriage-97.md`.
-- **Carriage JSONC rebuilt**: `design/design_v0_1_input_carriage.nbcad.jsonc` — Extrude62→86 (skip Mirror2), blank-doc replay AABB **39×100×35** @ mins 30/2/88. Exports: `first-prints/native-port/left-input-carriage.{3mf,stl}`.
-- **Next**: input caps 100/108 (for shared M3 Extrude67/74) and/or next body from inventory.
+- **Carriage dump + JSONC**: `left_input_carriage-97.{json,md}` → `design/design_v0_1_input_carriage.nbcad.jsonc` — AABB **39×100×35** @ 30/2/88. Exports: `first-prints/native-port/left-input-carriage.*`.
+- **Caps dump + JSONC**: `input_cap_inner-100.{json,md}` + `input_cap_outer-108.{json,md}` → `design/design_v0_1_input_caps.nbcad.jsonc` — Extrude65/66/67 + Extrude72/73/74 + Extrude144/Combine17–18 + Extrude145 (skip Mirror2). Blank-doc AABB inner **39×8×17.7** @ 30/66/123.3; outer **39×8×17.7** @ 30/92/123.3. Exports: `first-prints/native-port/input-cap-{inner,outer}.*`.
+- **Next**: wheel caps 56/65 and/or hatch 141 / main_shell 32.

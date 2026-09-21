@@ -1,0 +1,1325 @@
+// Roller-300 design_v0_1_input_caps — modular Design Ops chapter (VERSION 0.1)
+// Role nouns: input_cap_inner (native body 100), input_cap_outer (native body 108)
+// SoT: this .nbcad.jsonc. Replay: blank document only (starting_state empty), or after carriage chapter.
+// Source: design/native-port/input_cap_inner-100.* + input_cap_outer-108.* — dump-only, no invented blocks.
+// Sequence: Extrude65/66/67 (inner) → Extrude72/73/74 (outer) → Extrude144 + Combine17/18 → Extrude145.
+// Shared M3: Extrude67/74 cut caps here; carriage chapter cuts body 97. Skip Mirror2.
+// AABB targets: inner 39×8×17.7 @ 30/66/123.3; outer 39×8×17.7 @ 30/92/123.3.
+{
+  "version": 1,
+  "name": "Roller-300 design_v0_1_input_caps (VERSION 0.1) — input_cap_inner 100 + input_cap_outer 108",
+  "starting_state": "empty",
+  "steps": [
+    {
+      "chapter": "Shared refs — input_cap_inner (100) + input_cap_outer (108)",
+      "note": "VERSION 0.1. Ported from design/native-port/input_cap_inner-100.* + input_cap_outer-108.* — no invented blocks. Datum offsets use native signed distances. Skip Mirror2 (right 123/124). Extrude67/74 cut caps only here; carriage chapter already cuts body 97. Extrude144 + Combine17/18 corner-limit; Extrude145 recessed M3 heads (left profiles). Assemble: replay after design_v0_1_input_carriage.nbcad.jsonc (or blank-doc this chapter alone for cap exports)."
+    },
+    {
+      "id": "ref_origin_xy",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "origin_xy / shared",
+          "distance": 0.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_origin_xz",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "origin_xz / shared",
+          "distance": 0.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_origin_yz",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "origin_yz / shared",
+          "distance": 0.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "yz"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "Extrude65 — new_body input_cap_inner",
+      "note": "Native fid 217; sketch `S02 R LEFT input cap Y70`; extent 8.0; flip=True; profiles=[0]; new_body_ids [100]."
+    },
+    {
+      "id": "pl_cap_inner_y66",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "input_cap_inner_Y66 / shared",
+          "distance": -66.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "datum pl_cap_inner_y66",
+      "note": "Native basis origin [0.0, 66.0, 0.0]; source distance -66.0 from origin xz."
+    },
+    {
+      "id": "sk_Extrude65_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude65__S02 R LEFT input cap Y70",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_cap_inner_y66"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude65_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude65_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 30.0,
+            "y": 123.3
+          },
+          "corner_hint": {
+            "x": 69.0,
+            "y": 141.0
+          },
+          "width_mm": 39.0,
+          "height_mm": 17.700000000000003,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude65_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude65_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "chapter": "Extrude65 profile",
+      "note": "Closed rectangle from dump points [(30.0, 123.3), (69.0, 123.3), (69.0, 141.0), (30.0, 141.0)]"
+    },
+    {
+      "id": "ex_Extrude65",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude65__S02 R LEFT input cap Y70",
+          "profile_indices": [
+            0
+          ],
+          "operation": "new_body",
+          "extent": {
+            "type": "distance",
+            "distance": 8.0
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": []
+        }
+      }
+    },
+    {
+      "let": {
+        "input_cap_inner_feat": {
+          "$select": {
+            "from": {
+              "$ref": "ex_Extrude65"
+            },
+            "path": "/document/features",
+            "take": "last",
+            "pointer": "/id"
+          }
+        }
+      }
+    },
+    {
+      "let": {
+        "input_cap_inner_body": {
+          "$select": {
+            "from": {
+              "$ref": "ex_Extrude65"
+            },
+            "path": "/scene/bodies",
+            "where": {
+              "/feature_id": {
+                "$ref": "input_cap_inner_feat"
+              }
+            },
+            "take": "one"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "Extrude66 — cut bore",
+      "note": "Native fid 220; sketch `S02 S cap bore Y70`; Ø22.2 @ (49.6723, 123); extent 8.0; flip=True; targets [100]."
+    },
+    {
+      "id": "sk_Extrude66_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude66__S02 S cap bore Y70",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_cap_inner_y66"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude66_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude66_c0",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 49.6723,
+            "y": 123.0
+          },
+          "edge_hint": {
+            "x": 60.7723,
+            "y": 123.0
+          },
+          "diameter_text": "22.2",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude66_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude66_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude66",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude66__S02 S cap bore Y70",
+          "profile_indices": [
+            0
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 8.0
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {
+              "$ref": "input_cap_inner_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "Extrude67 — cut M3 (cap 100 only)",
+      "note": "Native fid 223; sketch `S02 T input cap M3 holes Y70`; extent 36.0; flip=False; profiles=[0,1]; native targets [97,100]. Caps chapter cuts input_cap_inner only; carriage chapter already cuts left_input_carriage."
+    },
+    {
+      "id": "pl_m3_z106",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "input_cap_m3_plane_Z106 / shared",
+          "distance": 106.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "datum pl_m3_z106",
+      "note": "Native basis origin [0.0, 0.0, 106.0]; source distance 106.0 from origin xy."
+    },
+    {
+      "id": "sk_Extrude67_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude67__S02 T input cap M3 holes Y70",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_m3_z106"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude67_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude67_c0",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 35.0,
+            "y": 70.0
+          },
+          "edge_hint": {
+            "x": 36.3723,
+            "y": 70.0
+          },
+          "diameter_text": "2.7446",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude67_c1",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 65.0,
+            "y": 70.0
+          },
+          "edge_hint": {
+            "x": 66.37230000000001,
+            "y": 70.0
+          },
+          "diameter_text": "2.7446",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude67_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude67_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude67",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude67__S02 T input cap M3 holes Y70",
+          "profile_indices": [
+            0,
+            1
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 36.0
+          },
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": [
+            {
+              "$ref": "input_cap_inner_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "Extrude72 — new_body input_cap_outer",
+      "note": "Native fid 238; sketch `S02 R LEFT input cap Y96`; extent 8.0; flip=True; profiles=[0]; new_body_ids [108]."
+    },
+    {
+      "id": "pl_cap_outer_y92",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "input_cap_outer_Y92 / shared",
+          "distance": -92.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "datum pl_cap_outer_y92",
+      "note": "Native basis origin [0.0, 92.0, 0.0]; source distance -92.0 from origin xz."
+    },
+    {
+      "id": "sk_Extrude72_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude72__S02 R LEFT input cap Y96",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_cap_outer_y92"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude72_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude72_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 30.0,
+            "y": 123.3
+          },
+          "corner_hint": {
+            "x": 69.0,
+            "y": 141.0
+          },
+          "width_mm": 39.0,
+          "height_mm": 17.700000000000003,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude72_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude72_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "chapter": "Extrude72 profile",
+      "note": "Closed rectangle from dump points [(30.0, 123.3), (69.0, 123.3), (69.0, 141.0), (30.0, 141.0)]"
+    },
+    {
+      "id": "ex_Extrude72",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude72__S02 R LEFT input cap Y96",
+          "profile_indices": [
+            0
+          ],
+          "operation": "new_body",
+          "extent": {
+            "type": "distance",
+            "distance": 8.0
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": []
+        }
+      }
+    },
+    {
+      "let": {
+        "input_cap_outer_feat": {
+          "$select": {
+            "from": {
+              "$ref": "ex_Extrude72"
+            },
+            "path": "/document/features",
+            "take": "last",
+            "pointer": "/id"
+          }
+        }
+      }
+    },
+    {
+      "let": {
+        "input_cap_outer_body": {
+          "$select": {
+            "from": {
+              "$ref": "ex_Extrude72"
+            },
+            "path": "/scene/bodies",
+            "where": {
+              "/feature_id": {
+                "$ref": "input_cap_outer_feat"
+              }
+            },
+            "take": "one"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "Extrude73 — cut bore",
+      "note": "Native fid 241; sketch `S02 S cap bore Y96`; Ø22.2 @ (49.6723, 123); extent 8.0; flip=True; targets [108]."
+    },
+    {
+      "id": "sk_Extrude73_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude73__S02 S cap bore Y96",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_cap_outer_y92"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude73_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude73_c0",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 49.6723,
+            "y": 123.0
+          },
+          "edge_hint": {
+            "x": 60.7723,
+            "y": 123.0
+          },
+          "diameter_text": "22.2",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude73_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude73_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude73",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude73__S02 S cap bore Y96",
+          "profile_indices": [
+            0
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 8.0
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {
+              "$ref": "input_cap_outer_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "Extrude74 — cut M3 (cap 108 only)",
+      "note": "Native fid 244; sketch `S02 T input cap M3 holes Y96`; dump circles @ Y=95 r≈1.698 (not Y70-size); extent 36.0; flip=False; native targets [97,108]. Caps chapter cuts input_cap_outer only."
+    },
+    {
+      "id": "sk_Extrude74_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude74__S02 T input cap M3 holes Y96",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_m3_z106"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude74_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude74_c0",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 35.0,
+            "y": 95.0
+          },
+          "edge_hint": {
+            "x": 36.69800096878653,
+            "y": 95.0
+          },
+          "diameter_text": "3.39600193757",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude74_c1",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 65.0,
+            "y": 95.0
+          },
+          "edge_hint": {
+            "x": 66.69800096878654,
+            "y": 95.0
+          },
+          "diameter_text": "3.39600193757",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude74_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude74_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude74",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude74__S02 T input cap M3 holes Y96",
+          "profile_indices": [
+            0,
+            1
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 36.0
+          },
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": [
+            {
+              "$ref": "input_cap_outer_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "Extrude144 — new_body corner-limit tool",
+      "note": "Native fid 509; sketch `S02 input cap outside corner limit R70 for tension travel`; Ø140 @ (0,123); extent 210.0; flip=True; new_body_ids [234]. Tool for Combine17/18."
+    },
+    {
+      "id": "pl_corner_y_neg105",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "input_cap_corner_limit_Ym105 / shared",
+          "distance": 105.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "datum pl_corner_y_neg105",
+      "note": "Native basis origin [0.0, -105.0, 0.0]; source distance 105.0 from origin xz."
+    },
+    {
+      "id": "sk_Extrude144_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude144__S02 input cap outside corner limit R70 for tension travel",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_corner_y_neg105"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude144_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude144_c0",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 0.0,
+            "y": 123.0
+          },
+          "edge_hint": {
+            "x": 70.0,
+            "y": 123.0
+          },
+          "diameter_text": "140",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude144_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude144_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude144",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude144__S02 input cap outside corner limit R70 for tension travel",
+          "profile_indices": [
+            0
+          ],
+          "operation": "new_body",
+          "extent": {
+            "type": "distance",
+            "distance": 210.0
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": []
+        }
+      }
+    },
+    {
+      "let": {
+        "corner_limit_tool_feat": {
+          "$select": {
+            "from": {
+              "$ref": "ex_Extrude144"
+            },
+            "path": "/document/features",
+            "take": "last",
+            "pointer": "/id"
+          }
+        }
+      }
+    },
+    {
+      "let": {
+        "corner_limit_tool_body": {
+          "$select": {
+            "from": {
+              "$ref": "ex_Extrude144"
+            },
+            "path": "/scene/bodies",
+            "where": {
+              "/feature_id": {
+                "$ref": "corner_limit_tool_feat"
+              }
+            },
+            "take": "one"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "Combine17 — intersect input_cap_inner",
+      "note": "Native fid 510; intersect target 100 with tool 234; keep_tools=True."
+    },
+    {
+      "id": "ex_Combine17",
+      "call": {
+        "group": "solid/body",
+        "operation": "solid_combine",
+        "arguments": {
+          "target_body_id": {
+            "$ref": "input_cap_inner_body",
+            "pointer": "/id"
+          },
+          "tool_body_ids": [
+            {
+              "$ref": "corner_limit_tool_body",
+              "pointer": "/id"
+            }
+          ],
+          "operation": "intersect",
+          "keep_tools": true
+        }
+      }
+    },
+    {
+      "chapter": "Combine18 — intersect input_cap_outer",
+      "note": "Native fid 511; intersect target 108 with tool 234; native keep_tools=True (tool dropped later by Combine20). Left-only chapter uses keep_tools=False after both caps intersected so tool body is not exported."
+    },
+    {
+      "id": "ex_Combine18",
+      "call": {
+        "group": "solid/body",
+        "operation": "solid_combine",
+        "arguments": {
+          "target_body_id": {
+            "$ref": "input_cap_outer_body",
+            "pointer": "/id"
+          },
+          "tool_body_ids": [
+            {
+              "$ref": "corner_limit_tool_body",
+              "pointer": "/id"
+            }
+          ],
+          "operation": "intersect",
+          "keep_tools": false
+        }
+      }
+    },
+    {
+      "chapter": "Extrude145 — cut recessed M3 heads",
+      "note": "Native fid 516; sketch `S02 recessed M3 cap heads for hatch-ledge clearance`; 8× Ø6 circles; extent 5.0; flip=False; native targets [100,108,123,124]. Left-only: profiles [4,5,6,7] at Y=70/96; targets both left caps."
+    },
+    {
+      "id": "pl_recess_z137",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "input_cap_recess_Z137 / shared",
+          "distance": 137.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "datum pl_recess_z137",
+      "note": "Native basis origin [0.0, 0.0, 137.0]; source distance 137.0 from origin xy."
+    },
+    {
+      "id": "sk_Extrude145_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude145__S02 recessed M3 cap heads for hatch-ledge clearance",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_recess_z137"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude145_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude145_c0",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 34.6723,
+            "y": -96.0
+          },
+          "edge_hint": {
+            "x": 37.6723,
+            "y": -96.0
+          },
+          "diameter_text": "6",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude145_c1",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 64.6723,
+            "y": -96.0
+          },
+          "edge_hint": {
+            "x": 67.6723,
+            "y": -96.0
+          },
+          "diameter_text": "6",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude145_c2",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 34.6723,
+            "y": -70.0
+          },
+          "edge_hint": {
+            "x": 37.6723,
+            "y": -70.0
+          },
+          "diameter_text": "6",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude145_c3",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 64.6723,
+            "y": -70.0
+          },
+          "edge_hint": {
+            "x": 67.6723,
+            "y": -70.0
+          },
+          "diameter_text": "6",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude145_c4",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 34.6723,
+            "y": 70.0
+          },
+          "edge_hint": {
+            "x": 37.6723,
+            "y": 70.0
+          },
+          "diameter_text": "6",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude145_c5",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 64.6723,
+            "y": 70.0
+          },
+          "edge_hint": {
+            "x": 67.6723,
+            "y": 70.0
+          },
+          "diameter_text": "6",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude145_c6",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 34.6723,
+            "y": 96.0
+          },
+          "edge_hint": {
+            "x": 37.6723,
+            "y": 96.0
+          },
+          "diameter_text": "6",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude145_c7",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 64.6723,
+            "y": 96.0
+          },
+          "edge_hint": {
+            "x": 67.6723,
+            "y": 96.0
+          },
+          "diameter_text": "6",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude145_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude145_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude145",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude145__S02 recessed M3 cap heads for hatch-ledge clearance",
+          "profile_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 5.0
+          },
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": [
+            {
+              "$ref": "input_cap_inner_body",
+              "pointer": "/id"
+            },
+            {
+              "$ref": "input_cap_outer_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "VERIFY — AABB + remaining",
+      "note": "Expect input_cap_inner AABB X30–69 Y66–74 Z123.3–141 (39×8×17.7) matching shell-first-review/input-cap-inner-assembly-coordinates.stl. Expect input_cap_outer AABB X30–69 Y92–100 Z123.3–141 matching input-cap-outer-assembly-coordinates.stl. Remaining VERIFY: (1) Extrude67/74 also hit carriage 97 — carriage chapter owns that cut; (2) Mirror2 skipped; (3) Combine18 keep_tools=False vs native True (tool cleanup); (4) Extrude145 right-side circles present but no-op without bodies 123/124."
+    }
+  ],
+  "checks": [
+    {
+      "id": "final_scene",
+      "call": {
+        "group": "solid/check",
+        "operation": "solid_scene",
+        "arguments": {}
+      },
+      "expect": {
+        "/errors": []
+      }
+    }
+  ]
+}

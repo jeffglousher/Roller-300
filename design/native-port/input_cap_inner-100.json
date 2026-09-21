@@ -1,0 +1,1610 @@
+{
+  "generated_from": "Roller-300.nbcad / model.json",
+  "schema_version": 7,
+  "body": {
+    "body_id": 100,
+    "role": "input_cap_inner",
+    "appearance": {
+      "body_id": 100,
+      "brand": "Generic",
+      "color": {
+        "a": 255,
+        "b": 164,
+        "g": 146,
+        "r": 81
+      },
+      "color_name": "",
+      "density_g_cm3": null,
+      "diameter_mm": 1.75,
+      "filament_id": null,
+      "filament_type": "PETG",
+      "material_name": "P03 LEFT input bearing cap Y70",
+      "preset_id": null
+    },
+    "created_by": "Extrude65 (new_body)",
+    "body_features_as_owner": {
+      "feature_id": 510,
+      "keep_tools": true,
+      "name": "Combine17",
+      "operation": "intersect",
+      "target_body_id": 100,
+      "tool_body_ids": [
+        234
+      ],
+      "type": "combine"
+    },
+    "note": "Body 100 created by Extrude65, bore-cut by Extrude66, M3 cut by Extrude67 (also targets carriage 97), corner-limited by Combine17\u2229Extrude144, recessed heads by Extrude145 (also targets sibling/right caps). Mirror2 copies only."
+  },
+  "feature_sequence": [
+    {
+      "kind": "extrude",
+      "name": "Extrude65",
+      "feature_id": 217,
+      "operation": "new_body",
+      "extent": {
+        "distance": 8.0,
+        "type": "distance"
+      },
+      "flip": true,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0
+      ],
+      "sketch_name": "S02 R LEFT input cap Y70",
+      "target_body_ids": [],
+      "new_body_ids": [
+        100
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S02 R LEFT input cap Y70",
+        "feature_id": 216,
+        "plane": {
+          "datum_id": 65,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            66.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum": {
+          "datum_id": 65,
+          "name": "S02 R LEFT input cap Y70 datum",
+          "feature_id": 215,
+          "basis": {
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "origin": [
+              0.0,
+              66.0,
+              0.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "source": {
+            "distance": -66.0,
+            "reference": {
+              "plane": "xz",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "geometry": {
+          "entity_count": 8,
+          "entity_types": {
+            "point": 4,
+            "line": 4
+          },
+          "point_bbox_uv": {
+            "umin": 30.0,
+            "umax": 69.0,
+            "vmin": 123.3,
+            "vmax": 141.0,
+            "u_span": 39.0,
+            "v_span": 17.700000000000003
+          },
+          "curves": [
+            {
+              "id": 5,
+              "type": "line",
+              "start": 1,
+              "end": 2
+            },
+            {
+              "id": 6,
+              "type": "line",
+              "start": 2,
+              "end": 3
+            },
+            {
+              "id": 7,
+              "type": "line",
+              "start": 3,
+              "end": 4
+            },
+            {
+              "id": 8,
+              "type": "line",
+              "start": 4,
+              "end": 1
+            }
+          ],
+          "points": [
+            {
+              "id": 1,
+              "x": 30.0,
+              "y": 123.3
+            },
+            {
+              "id": 2,
+              "x": 69.0,
+              "y": 123.3
+            },
+            {
+              "id": 3,
+              "x": 69.0,
+              "y": 141.0
+            },
+            {
+              "id": 4,
+              "x": 30.0,
+              "y": 141.0
+            }
+          ]
+        },
+        "constraint_count": 4,
+        "constraints": [
+          {
+            "entity": 5,
+            "type": "horizontal",
+            "id": 1
+          },
+          {
+            "entity": 7,
+            "type": "horizontal",
+            "id": 2
+          },
+          {
+            "entity": 6,
+            "type": "vertical",
+            "id": 3
+          },
+          {
+            "entity": 8,
+            "type": "vertical",
+            "id": 4
+          }
+        ]
+      }
+    },
+    {
+      "kind": "extrude",
+      "name": "Extrude66",
+      "feature_id": 220,
+      "operation": "cut",
+      "extent": {
+        "distance": 8.0,
+        "type": "distance"
+      },
+      "flip": true,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0
+      ],
+      "sketch_name": "S02 S cap bore Y70",
+      "target_body_ids": [
+        100
+      ],
+      "new_body_ids": [
+        101
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S02 S cap bore Y70",
+        "feature_id": 219,
+        "plane": {
+          "datum_id": 66,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            66.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum": {
+          "datum_id": 66,
+          "name": "S02 S cap bore Y70 datum",
+          "feature_id": 218,
+          "basis": {
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "origin": [
+              0.0,
+              66.0,
+              0.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "source": {
+            "distance": -66.0,
+            "reference": {
+              "plane": "xz",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "geometry": {
+          "entity_count": 1,
+          "entity_types": {
+            "circle": 1
+          },
+          "point_bbox_uv": {
+            "umin": 38.5723,
+            "umax": 60.7723,
+            "vmin": 111.9,
+            "vmax": 134.1,
+            "u_span": 22.200000000000003,
+            "v_span": 22.19999999999999
+          },
+          "curves": [
+            {
+              "id": 1,
+              "type": "circle",
+              "center": {
+                "x": 49.6723,
+                "y": 123.0
+              },
+              "radius": 11.100000000000001
+            }
+          ],
+          "points": []
+        },
+        "constraint_count": 0,
+        "constraints": []
+      }
+    },
+    {
+      "kind": "extrude",
+      "name": "Extrude67",
+      "feature_id": 223,
+      "operation": "cut",
+      "extent": {
+        "distance": 36.0,
+        "type": "distance"
+      },
+      "flip": false,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0,
+        1
+      ],
+      "sketch_name": "S02 T input cap M3 holes Y70",
+      "target_body_ids": [
+        97,
+        100
+      ],
+      "new_body_ids": [
+        102,
+        103
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S02 T input cap M3 holes Y70",
+        "feature_id": 222,
+        "plane": {
+          "datum_id": 67,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            106.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "datum": {
+          "datum_id": 67,
+          "name": "S02 T input cap M3 holes Y70 datum",
+          "feature_id": 221,
+          "basis": {
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              106.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          "source": {
+            "distance": 106.0,
+            "reference": {
+              "plane": "xy",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "geometry": {
+          "entity_count": 2,
+          "entity_types": {
+            "circle": 2
+          },
+          "point_bbox_uv": {
+            "umin": 33.6277,
+            "umax": 66.37230000000001,
+            "vmin": 68.62769999999999,
+            "vmax": 71.37230000000001,
+            "u_span": 32.74460000000001,
+            "v_span": 2.7446000000000197
+          },
+          "curves": [
+            {
+              "id": 1,
+              "type": "circle",
+              "center": {
+                "x": 35.0,
+                "y": 70.0
+              },
+              "radius": 1.3723000000000027
+            },
+            {
+              "id": 2,
+              "type": "circle",
+              "center": {
+                "x": 65.0,
+                "y": 70.0
+              },
+              "radius": 1.3723000000000098
+            }
+          ],
+          "points": []
+        },
+        "constraint_count": 0,
+        "constraints": []
+      }
+    },
+    {
+      "kind": "combine",
+      "name": "Combine17",
+      "feature_id": 510,
+      "operation": "intersect",
+      "target_body_id": 100,
+      "tool_body_ids": [
+        234
+      ],
+      "keep_tools": true,
+      "tool_extrude": {
+        "kind": "extrude",
+        "name": "Extrude144",
+        "feature_id": 509,
+        "operation": "new_body",
+        "extent": {
+          "distance": 210.0,
+          "type": "distance"
+        },
+        "flip": true,
+        "taper_angle_deg": 0.0,
+        "profile_indices": [
+          0
+        ],
+        "sketch_name": "S02 input cap outside corner limit R70 for tension travel",
+        "target_body_ids": [],
+        "new_body_ids": [
+          234
+        ],
+        "source_face": null,
+        "source_face_key": null,
+        "source_face_basis": null,
+        "to_face_basis": null,
+        "sketch": {
+          "name": "S02 input cap outside corner limit R70 for tension travel",
+          "feature_id": 508,
+          "plane": {
+            "datum_id": 150,
+            "type": "datum_plane"
+          },
+          "basis": {
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "origin": [
+              0.0,
+              -105.0,
+              0.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "datum": {
+            "datum_id": 150,
+            "name": "S02 input cap outside corner limit R70 for tension travel datum",
+            "feature_id": 507,
+            "basis": {
+              "normal": [
+                0.0,
+                -1.0,
+                0.0
+              ],
+              "origin": [
+                0.0,
+                -105.0,
+                0.0
+              ],
+              "u": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "v": [
+                0.0,
+                0.0,
+                1.0
+              ]
+            },
+            "source": {
+              "distance": 105.0,
+              "reference": {
+                "plane": "xz",
+                "type": "origin_plane"
+              },
+              "type": "offset"
+            }
+          },
+          "geometry": {
+            "entity_count": 1,
+            "entity_types": {
+              "circle": 1
+            },
+            "point_bbox_uv": {
+              "umin": -70.0,
+              "umax": 70.0,
+              "vmin": 53.0,
+              "vmax": 193.0,
+              "u_span": 140.0,
+              "v_span": 140.0
+            },
+            "curves": [
+              {
+                "id": 1,
+                "type": "circle",
+                "center": {
+                  "x": 0.0,
+                  "y": 123.0
+                },
+                "radius": 70.0
+              }
+            ],
+            "points": []
+          },
+          "constraint_count": 0,
+          "constraints": []
+        }
+      },
+      "note": "Intersect input_cap_inner with Extrude144 (body 234) corner-limit tool"
+    },
+    {
+      "kind": "extrude",
+      "name": "Extrude145",
+      "feature_id": 516,
+      "operation": "cut",
+      "extent": {
+        "distance": 5.0,
+        "type": "distance"
+      },
+      "flip": false,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sketch_name": "S02 recessed M3 cap heads for hatch-ledge clearance",
+      "target_body_ids": [
+        100,
+        108,
+        123,
+        124
+      ],
+      "new_body_ids": [
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S02 recessed M3 cap heads for hatch-ledge clearance",
+        "feature_id": 515,
+        "plane": {
+          "datum_id": 151,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            137.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "datum": {
+          "datum_id": 151,
+          "name": "S02 recessed M3 cap heads for hatch-ledge clearance datum",
+          "feature_id": 514,
+          "basis": {
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              137.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          "source": {
+            "distance": 137.0,
+            "reference": {
+              "plane": "xy",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "geometry": {
+          "entity_count": 8,
+          "entity_types": {
+            "circle": 8
+          },
+          "point_bbox_uv": {
+            "umin": 31.6723,
+            "umax": 67.6723,
+            "vmin": -99.0,
+            "vmax": 99.0,
+            "u_span": 36.00000000000001,
+            "v_span": 198.0
+          },
+          "curves": [
+            {
+              "id": 1,
+              "type": "circle",
+              "center": {
+                "x": 34.6723,
+                "y": -96.0
+              },
+              "radius": 3.0
+            },
+            {
+              "id": 2,
+              "type": "circle",
+              "center": {
+                "x": 64.6723,
+                "y": -96.0
+              },
+              "radius": 3.0
+            },
+            {
+              "id": 3,
+              "type": "circle",
+              "center": {
+                "x": 34.6723,
+                "y": -70.0
+              },
+              "radius": 3.0
+            },
+            {
+              "id": 4,
+              "type": "circle",
+              "center": {
+                "x": 64.6723,
+                "y": -70.0
+              },
+              "radius": 3.0
+            },
+            {
+              "id": 5,
+              "type": "circle",
+              "center": {
+                "x": 34.6723,
+                "y": 70.0
+              },
+              "radius": 3.0
+            },
+            {
+              "id": 6,
+              "type": "circle",
+              "center": {
+                "x": 64.6723,
+                "y": 70.0
+              },
+              "radius": 3.0
+            },
+            {
+              "id": 7,
+              "type": "circle",
+              "center": {
+                "x": 34.6723,
+                "y": 96.0
+              },
+              "radius": 3.0
+            },
+            {
+              "id": 8,
+              "type": "circle",
+              "center": {
+                "x": 64.6723,
+                "y": 96.0
+              },
+              "radius": 3.0
+            }
+          ],
+          "points": []
+        },
+        "constraint_count": 0,
+        "constraints": []
+      }
+    }
+  ],
+  "feature_sequence_summary": [
+    {
+      "feature_id": 217,
+      "name": "Extrude65",
+      "kind": "extrude",
+      "operation": "new_body",
+      "sketch_name": "S02 R LEFT input cap Y70",
+      "extent": {
+        "distance": 8.0,
+        "type": "distance"
+      },
+      "target_body_ids": null,
+      "new_body_ids": [
+        100
+      ]
+    },
+    {
+      "feature_id": 220,
+      "name": "Extrude66",
+      "kind": "extrude",
+      "operation": "cut",
+      "sketch_name": "S02 S cap bore Y70",
+      "extent": {
+        "distance": 8.0,
+        "type": "distance"
+      },
+      "target_body_ids": [
+        100
+      ],
+      "new_body_ids": [
+        101
+      ]
+    },
+    {
+      "feature_id": 223,
+      "name": "Extrude67",
+      "kind": "extrude",
+      "operation": "cut",
+      "sketch_name": "S02 T input cap M3 holes Y70",
+      "extent": {
+        "distance": 36.0,
+        "type": "distance"
+      },
+      "target_body_ids": [
+        97,
+        100
+      ],
+      "new_body_ids": [
+        102,
+        103
+      ]
+    },
+    {
+      "feature_id": 510,
+      "name": "Combine17",
+      "kind": "combine",
+      "operation": "intersect",
+      "sketch_name": "S02 input cap outside corner limit R70 for tension travel",
+      "extent": {
+        "distance": 210.0,
+        "type": "distance"
+      },
+      "target_body_ids": [
+        100
+      ],
+      "new_body_ids": [
+        234
+      ]
+    },
+    {
+      "feature_id": 516,
+      "name": "Extrude145",
+      "kind": "extrude",
+      "operation": "cut",
+      "sketch_name": "S02 recessed M3 cap heads for hatch-ledge clearance",
+      "extent": {
+        "distance": 5.0,
+        "type": "distance"
+      },
+      "target_body_ids": [
+        100,
+        108,
+        123,
+        124
+      ],
+      "new_body_ids": [
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242
+      ]
+    }
+  ],
+  "sketches_used_in_order": [
+    "S02 R LEFT input cap Y70",
+    "S02 S cap bore Y70",
+    "S02 T input cap M3 holes Y70",
+    "S02 input cap outside corner limit R70 for tension travel",
+    "S02 recessed M3 cap heads for hatch-ledge clearance"
+  ],
+  "sketches": {
+    "S02 R LEFT input cap Y70": {
+      "name": "S02 R LEFT input cap Y70",
+      "feature_id": 216,
+      "plane": {
+        "datum_id": 65,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "origin": [
+          0.0,
+          66.0,
+          0.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "datum": {
+        "datum_id": 65,
+        "name": "S02 R LEFT input cap Y70 datum",
+        "feature_id": 215,
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            66.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "source": {
+          "distance": -66.0,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 8,
+        "entity_types": {
+          "point": 4,
+          "line": 4
+        },
+        "point_bbox_uv": {
+          "umin": 30.0,
+          "umax": 69.0,
+          "vmin": 123.3,
+          "vmax": 141.0,
+          "u_span": 39.0,
+          "v_span": 17.700000000000003
+        },
+        "curves": [
+          {
+            "id": 5,
+            "type": "line",
+            "start": 1,
+            "end": 2
+          },
+          {
+            "id": 6,
+            "type": "line",
+            "start": 2,
+            "end": 3
+          },
+          {
+            "id": 7,
+            "type": "line",
+            "start": 3,
+            "end": 4
+          },
+          {
+            "id": 8,
+            "type": "line",
+            "start": 4,
+            "end": 1
+          }
+        ],
+        "points": [
+          {
+            "id": 1,
+            "x": 30.0,
+            "y": 123.3
+          },
+          {
+            "id": 2,
+            "x": 69.0,
+            "y": 123.3
+          },
+          {
+            "id": 3,
+            "x": 69.0,
+            "y": 141.0
+          },
+          {
+            "id": 4,
+            "x": 30.0,
+            "y": 141.0
+          }
+        ]
+      },
+      "constraint_count": 4,
+      "constraints": [
+        {
+          "entity": 5,
+          "type": "horizontal",
+          "id": 1
+        },
+        {
+          "entity": 7,
+          "type": "horizontal",
+          "id": 2
+        },
+        {
+          "entity": 6,
+          "type": "vertical",
+          "id": 3
+        },
+        {
+          "entity": 8,
+          "type": "vertical",
+          "id": 4
+        }
+      ]
+    },
+    "S02 S cap bore Y70": {
+      "name": "S02 S cap bore Y70",
+      "feature_id": 219,
+      "plane": {
+        "datum_id": 66,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "origin": [
+          0.0,
+          66.0,
+          0.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "datum": {
+        "datum_id": 66,
+        "name": "S02 S cap bore Y70 datum",
+        "feature_id": 218,
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            66.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "source": {
+          "distance": -66.0,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 1,
+        "entity_types": {
+          "circle": 1
+        },
+        "point_bbox_uv": {
+          "umin": 38.5723,
+          "umax": 60.7723,
+          "vmin": 111.9,
+          "vmax": 134.1,
+          "u_span": 22.200000000000003,
+          "v_span": 22.19999999999999
+        },
+        "curves": [
+          {
+            "id": 1,
+            "type": "circle",
+            "center": {
+              "x": 49.6723,
+              "y": 123.0
+            },
+            "radius": 11.100000000000001
+          }
+        ],
+        "points": []
+      },
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "S02 T input cap M3 holes Y70": {
+      "name": "S02 T input cap M3 holes Y70",
+      "feature_id": 222,
+      "plane": {
+        "datum_id": 67,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin": [
+          0.0,
+          0.0,
+          106.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "datum": {
+        "datum_id": 67,
+        "name": "S02 T input cap M3 holes Y70 datum",
+        "feature_id": 221,
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            106.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "source": {
+          "distance": 106.0,
+          "reference": {
+            "plane": "xy",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 2,
+        "entity_types": {
+          "circle": 2
+        },
+        "point_bbox_uv": {
+          "umin": 33.6277,
+          "umax": 66.37230000000001,
+          "vmin": 68.62769999999999,
+          "vmax": 71.37230000000001,
+          "u_span": 32.74460000000001,
+          "v_span": 2.7446000000000197
+        },
+        "curves": [
+          {
+            "id": 1,
+            "type": "circle",
+            "center": {
+              "x": 35.0,
+              "y": 70.0
+            },
+            "radius": 1.3723000000000027
+          },
+          {
+            "id": 2,
+            "type": "circle",
+            "center": {
+              "x": 65.0,
+              "y": 70.0
+            },
+            "radius": 1.3723000000000098
+          }
+        ],
+        "points": []
+      },
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "S02 input cap outside corner limit R70 for tension travel": {
+      "name": "S02 input cap outside corner limit R70 for tension travel",
+      "feature_id": 508,
+      "plane": {
+        "datum_id": 150,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "origin": [
+          0.0,
+          -105.0,
+          0.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "datum": {
+        "datum_id": 150,
+        "name": "S02 input cap outside corner limit R70 for tension travel datum",
+        "feature_id": 507,
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            -105.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "source": {
+          "distance": 105.0,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 1,
+        "entity_types": {
+          "circle": 1
+        },
+        "point_bbox_uv": {
+          "umin": -70.0,
+          "umax": 70.0,
+          "vmin": 53.0,
+          "vmax": 193.0,
+          "u_span": 140.0,
+          "v_span": 140.0
+        },
+        "curves": [
+          {
+            "id": 1,
+            "type": "circle",
+            "center": {
+              "x": 0.0,
+              "y": 123.0
+            },
+            "radius": 70.0
+          }
+        ],
+        "points": []
+      },
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "S02 recessed M3 cap heads for hatch-ledge clearance": {
+      "name": "S02 recessed M3 cap heads for hatch-ledge clearance",
+      "feature_id": 515,
+      "plane": {
+        "datum_id": 151,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin": [
+          0.0,
+          0.0,
+          137.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "datum": {
+        "datum_id": 151,
+        "name": "S02 recessed M3 cap heads for hatch-ledge clearance datum",
+        "feature_id": 514,
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            137.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "source": {
+          "distance": 137.0,
+          "reference": {
+            "plane": "xy",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 8,
+        "entity_types": {
+          "circle": 8
+        },
+        "point_bbox_uv": {
+          "umin": 31.6723,
+          "umax": 67.6723,
+          "vmin": -99.0,
+          "vmax": 99.0,
+          "u_span": 36.00000000000001,
+          "v_span": 198.0
+        },
+        "curves": [
+          {
+            "id": 1,
+            "type": "circle",
+            "center": {
+              "x": 34.6723,
+              "y": -96.0
+            },
+            "radius": 3.0
+          },
+          {
+            "id": 2,
+            "type": "circle",
+            "center": {
+              "x": 64.6723,
+              "y": -96.0
+            },
+            "radius": 3.0
+          },
+          {
+            "id": 3,
+            "type": "circle",
+            "center": {
+              "x": 34.6723,
+              "y": -70.0
+            },
+            "radius": 3.0
+          },
+          {
+            "id": 4,
+            "type": "circle",
+            "center": {
+              "x": 64.6723,
+              "y": -70.0
+            },
+            "radius": 3.0
+          },
+          {
+            "id": 5,
+            "type": "circle",
+            "center": {
+              "x": 34.6723,
+              "y": 70.0
+            },
+            "radius": 3.0
+          },
+          {
+            "id": 6,
+            "type": "circle",
+            "center": {
+              "x": 64.6723,
+              "y": 70.0
+            },
+            "radius": 3.0
+          },
+          {
+            "id": 7,
+            "type": "circle",
+            "center": {
+              "x": 34.6723,
+              "y": 96.0
+            },
+            "radius": 3.0
+          },
+          {
+            "id": 8,
+            "type": "circle",
+            "center": {
+              "x": 64.6723,
+              "y": 96.0
+            },
+            "radius": 3.0
+          }
+        ],
+        "points": []
+      },
+      "constraint_count": 0,
+      "constraints": []
+    }
+  },
+  "timeline_context": {
+    "mirror2": {
+      "kind": "mirror_context",
+      "name": "Mirror2",
+      "feature_id": 275,
+      "body_ids": [
+        97,
+        100,
+        108
+      ],
+      "new_body_ids": [
+        122,
+        123,
+        124
+      ],
+      "plane": {
+        "plane": "xz",
+        "type": "origin_plane"
+      },
+      "note": "Does not mutate left caps; creates right copies 122/123/124. Skip in left-only chapter."
+    },
+    "sibling_cap_body": 108,
+    "shared_with_carriage": "Extrude67",
+    "extrude145_also_targets": [
+      100,
+      108,
+      123,
+      124
+    ]
+  },
+  "verify_gaps": [
+    {
+      "topic": "multi_body_m3",
+      "feature": "Extrude67",
+      "detail": "Also targets body 97 (carriage). Caps chapter should cut this cap; carriage chapter already cuts 97."
+    },
+    {
+      "topic": "combine_tool",
+      "feature": "Extrude144",
+      "detail": "Tool body 234 kept (keep_tools True on Combine17/18). Need tool solid in chapter then intersect."
+    },
+    {
+      "topic": "extrude145",
+      "feature": "Extrude145",
+      "detail": "Cuts all four caps (L/R inner/outer). Left-only chapter: target this body only (or both left caps)."
+    },
+    {
+      "topic": "mirror2",
+      "feature": "Mirror2",
+      "detail": "Skip for left-only; right bodies 123/124 later."
+    },
+    {
+      "topic": "datum_offset_sign",
+      "feature": "datums",
+      "detail": "XZ offsets negative \u2192 +Y origin (same as carriage). Extrude144 datum distance +105 \u2192 origin Y=-105 (unusual)."
+    }
+  ],
+  "jsonc_rebuild_guidance": {
+    "do_not_invent": true,
+    "chapter_suggestion": "design/design_v0_1_input_caps.nbcad.jsonc (both caps) or extend carriage",
+    "order": [
+      "Extrude65 new_body blank",
+      "Extrude66 cut bore",
+      "Extrude67 cut M3 (cap target; carriage already has carriage-only cut)",
+      "Extrude144 new_body corner-limit tool",
+      "Combine17 intersect cap with tool",
+      "Extrude145 cut recessed M3 heads on this cap (and optionally sibling)",
+      "Skip Mirror2",
+      "Blank-doc replay; AABB vs shell-first-review assembly-coordinates STL"
+    ],
+    "assemble_coordination": "Caps chapter after carriage blank/chapter. Extrude67/74: carriage chapter cuts 97 only; caps chapter cuts 100/108 only with same sketches. Extrude145 left-only targets 100+108."
+  },
+  "aabb_comparison": {
+    "native_envelope_from_sketches": {
+      "note": "Heuristic from blank sketch UV + Extrude origin Y=66.0 distance 8.0 flip=True",
+      "xmin": 30.0,
+      "xmax": 69.0,
+      "ymin": 66.0,
+      "ymax": 74.0,
+      "zmin": 123.3,
+      "zmax": 141.0,
+      "dx": 39.0,
+      "dy": 8.0,
+      "dz": 17.700000000000003
+    },
+    "review_stl_assembly_coordinates": {
+      "xmin": 30.0,
+      "xmax": 69.0,
+      "ymin": 66.0,
+      "ymax": 74.0,
+      "zmin": 123.30000305175781,
+      "zmax": 141.0,
+      "dx": 39.0,
+      "dy": 8.0,
+      "dz": 17.699996948242188,
+      "tri_count": 968,
+      "path": "first-prints/shell-first-review/input-cap-inner-assembly-coordinates.stl"
+    },
+    "review_stl_axle_vertical": {
+      "xmin": -19.5,
+      "xmax": 19.5,
+      "ymin": -8.849998474121094,
+      "ymax": 8.849998474121094,
+      "zmin": 0.0,
+      "zmax": 8.0,
+      "dx": 39.0,
+      "dy": 17.699996948242188,
+      "dz": 8.0,
+      "tri_count": 968,
+      "path": "first-prints/shell-first-review/input-cap-inner-axle-vertical.stl"
+    },
+    "match": {
+      "assembly_vs_sketch_envelope_dxdydz": true,
+      "assembly_mins_match_sketch": true
+    }
+  }
+}

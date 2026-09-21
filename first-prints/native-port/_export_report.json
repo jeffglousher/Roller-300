@@ -1,36 +1,80 @@
 {
-  "source_chapter": "design/design_v0_1_input_carriage.nbcad.jsonc",
-  "native_dump": "design/native-port/left_input_carriage-97.{md,json}",
-  "native_body_id": 97,
-  "role": "left_input_carriage",
-  "replay_ok": true,
-  "steps_completed": 187,
-  "aabb": {
-    "xmin": 30.0,
-    "xmax": 69.0,
-    "ymin": 2.0,
-    "ymax": 102.0,
-    "zmin": 88.0,
-    "zmax": 123.00000000000004,
-    "dx": 39.0,
-    "dy": 100.0,
-    "dz": 35.00000000000004
+  "carriage": {
+    "source_chapter": "design/design_v0_1_input_carriage.nbcad.jsonc",
+    "native_dump": "design/native-port/left_input_carriage-97.{md,json}",
+    "native_body_id": 97,
+    "role": "left_input_carriage",
+    "replay_ok": true,
+    "steps_completed": 187,
+    "aabb": {
+      "xmin": 30.0,
+      "xmax": 69.0,
+      "ymin": 2.0,
+      "ymax": 102.0,
+      "zmin": 88.0,
+      "zmax": 123.0,
+      "dx": 39.0,
+      "dy": 100.0,
+      "dz": 35.0
+    },
+    "aabb_match": true,
+    "exports": [
+      "left-input-carriage.3mf",
+      "left-input-carriage.stl"
+    ]
   },
-  "aabb_target": {
-    "xmin": 30,
-    "xmax": 69,
-    "ymin": 2,
-    "ymax": 102,
-    "zmin": 88,
-    "zmax": 123,
-    "dx": 39,
-    "dy": 100,
-    "dz": 35
+  "caps": {
+    "source_chapter": "design/design_v0_1_input_caps.nbcad.jsonc",
+    "native_dumps": [
+      "design/native-port/input_cap_inner-100.{md,json}",
+      "design/native-port/input_cap_outer-108.{md,json}"
+    ],
+    "replay_ok": true,
+    "steps_completed": 92,
+    "bodies": [
+      {
+        "role": "input_cap_inner",
+        "native_body_id": 100,
+        "replay_body_id": 1,
+        "aabb": {
+          "xmin": 30.0,
+          "xmax": 69.0,
+          "ymin": 66.0,
+          "ymax": 74.0,
+          "zmin": 123.3,
+          "zmax": 141.0,
+          "dx": 39.0,
+          "dy": 8.0,
+          "dz": 17.7
+        },
+        "aabb_match": true,
+        "exports": [
+          "input-cap-inner.3mf",
+          "input-cap-inner.stl"
+        ]
+      },
+      {
+        "role": "input_cap_outer",
+        "native_body_id": 108,
+        "replay_body_id": 5,
+        "aabb": {
+          "xmin": 30.0,
+          "xmax": 69.0,
+          "ymin": 92.0,
+          "ymax": 100.0,
+          "zmin": 123.3,
+          "zmax": 141.0,
+          "dx": 39.0,
+          "dy": 8.0,
+          "dz": 17.7
+        },
+        "aabb_match": true,
+        "exports": [
+          "input-cap-outer.3mf",
+          "input-cap-outer.stl"
+        ]
+      }
+    ]
   },
-  "aabb_match": true,
-  "exports": [
-    "left-input-carriage.3mf",
-    "left-input-carriage.stl"
-  ],
   "note": "Derived from native dump replay \u2014 not one-drive placeholder."
 }
