@@ -29,3 +29,7 @@ Prefer **3MF** for slicers; STL is the same geometry fallback. All seats are **T
 - Always blank document (`cad_new_project`); never replay over a non-blank doc.
 - Attach writeback must stay false when driving a live desktop.
 - Cursor MCP `user-nobs-cad` can replay via absolute Linux path under the agent workspace; Thunder Windows path was not readable from this MCP process. Local stdio binary: `/home/box/.local/share/nbcad/mcp/nbcad-mcp`.
+
+
+Note: \irst-prints/one-drive/\ is DEPRECATED — use \shell-first-review/\ for carriage/caps from native.
+
