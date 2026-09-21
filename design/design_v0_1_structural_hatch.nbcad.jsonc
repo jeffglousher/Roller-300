@@ -1,18 +1,33 @@
 // Roller-300 design_v0_1_structural_hatch — modular Design Ops chapter (VERSION 0.1)
-// Role: S03 — Structural access hatch — FIRST PRINTABLE hatch-adjacent coupons (not full hatch)
+// Role: S03 — curved structural hatch (native body 141) — PARTIAL native→JSONC port
 // SoT: this .nbcad.jsonc (JSONC-first). Companion: design/gen_meta.json + design/VERSION.
+// Dump: design/native-port/hatch-141.{json,md} — complete feature chain from Roller-300.nbcad.
 // Replay: blank document only. Shared datums: mm; X fwd, Y left, Z up; axle Z=123 vehicle.
-// Coupons in this chapter:
-//   1) hatch_lap_m4_coupon — developed plate ~50×36×8; lap_mm 8 ledge recess; panel_gap_mm 0.3 kerf; M4 hex AF7.3×3.5 on thick land at local (-5,0).
-//   2) hatch_panel_arc_coupon — R76→R80 × Y±20 revolved 35° (OD160/ID152 skin segment); envelope only, no fasteners.
-// Named refs match hatch params: opening ±69.3/±90, end bands vs Y±105, bolt_y ±75/±25, boss chord X at ±55° on OD, lap 8, gap 0.3.
-// M4 clearance/countersink diameters ABSENT — VERIFY (screw_candidate string only). Not print-released; full hatch HOLD (PLAN S05).
+//
+// STATUS (this pass):
+//   DUMP COMPLETE. Full blank-doc hatch solid NOT yet rebuilt — BLOCKED on shell body 32
+//   (MoveCopy5 identity copy of main_shell before Extrude88∩ / fastener cuts). No invented tube.
+//   Target AABB (review STL): 138.0000 × 179.4000 × 48.0928 mm @ X-69.0000..69.0000 Y-89.7000..89.7000 Z154.8591..202.9519
+//     first-prints/shell-first-review/curved-hatch-assembly-coordinates.stl
+//   VERIFY before full port: shell chapter through fid<291; stale S03 I/J plane.datum_id;
+//     MoveCopy8/9 quat [0, 0.4617486132350339, 0, 0.8870108331782217]; Revolve1 axis (0,123)/(0,1).
+//
+// LEGACY COUPONS (retained below until shell dependency clears — also noted in READMEs):
+//   1) hatch_lap_m4_coupon — developed plate ~50×36×8; lap_mm 8; panel_gap_mm 0.3; M4 hex AF7.3×3.5
+//   2) hatch_panel_arc_coupon — R76→R80 × Y±20 revolved 35° envelope
+// Full native sequence to port next: MoveCopy5 → Extrude88 → Combine4 → Extrude96/pattern/mirror
+//   → Combine13 → Revolve1/pattern/mirror → Combine14 (see dump). Shell-side S03 B–H stays shell chapter.
+// M4 clearance/countersink diameters still VERIFY from dump radii (Extrude96 r=2.2). Not print-released full hatch.
 // Prune prior design_v* only after this VERSION is proven (Design Ops).
 {
   "version": 1,
-  "name": "Roller-300 design_v0_1_structural_hatch (VERSION 0.1) \u2014 hatch lap/M4 + panel-arc coupons",
+  "name": "Roller-300 design_v0_1_structural_hatch (VERSION 0.1) \u2014 hatch 141 PARTIAL native port + legacy coupons",
   "starting_state": "empty",
   "steps": [
+    {
+      "chapter": "VERIFY — native hatch body 141 port status",
+      "note": "VERSION 0.1 PARTIAL. Dump design/native-port/hatch-141.{json,md} is complete (MoveCopy5 copy of shell 32 → Extrude88/Combine4 intersect → Extrude96+pattern/mirror/Combine13 → Revolve1+pattern/mirror/Combine14). Full blank-doc solid BLOCKED: needs main_shell body 32 history through fid<291 (or retained solid). Do NOT invent OD160/ID152 tube. Review AABB target 138×179.4×48.0928 @ -69/-89.7/154.859 (shell-first-review/curved-hatch-assembly-coordinates.stl). Coupon steps below are LEGACY print-today only — not the native hatch. Next: port shell chapter, then replace coupons with dump-exact hatch sequence."
+    },
     {
       "chapter": "Shared refs \u2014 hatch params (parameters.hatch / PLAN S03)",
       "note": "Named shared refs before children. Vehicle: mm; X fwd, Y left, Z up; axle Z=123; barrel OD160/ID152/L210 (parameters.body). Hatch: ~120\u00b0 upper panel; opening_xy_mm [-69.3,69.3,-90,90] (=R80\u00b7sin60\u00b0 chord \u00d7 Y\u00b190 with 15 mm end bands on L210); corner_radius_mm 8.3; panel_gap_mm 0.3; lap_mm 8; nut_boss_angles_deg \u00b155; bolt_y_mm [-75,-25,25,75]; nut AF7.3\u00d73.5. Coupon bodies below are TRIAL/print-today \u2014 not full 180 mm hatch, not print-released."

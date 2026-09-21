@@ -51,3 +51,16 @@ Extrude25/33 M4: wheel-caps chapter cuts 56/65; shell chapter owns body 32. No c
 
 See `_export_report.json` for the last export run.
 
+## curved-hatch (pending)
+
+| Item | Value |
+|------|--------|
+| Role | `hatch` |
+| Native body | **141** |
+| Chapter | `design/design_v0_1_structural_hatch.nbcad.jsonc` (VERSION 0.1 PARTIAL) |
+| Dump | `design/native-port/hatch-141.md` + `.json` |
+| Exports | **none this pass** — blank-doc replay blocked on shell body 32 (MoveCopy5) |
+| AABB target | X-69–69 Y-89.7–89.7 Z154.859–202.952 → **138 × 179.4 × 48.0928** (`shell-first-review/curved-hatch-assembly-coordinates.stl`) |
+
+Do not invent a substitute shell tube. Port `main_shell` 32 next, then rebuild hatch JSONC from dump and export here.
+

@@ -1,7 +1,7 @@
 {
   "generated_from": "Roller-300.nbcad / model.json",
   "schema_version": 7,
-  "note": "Native-derived inventory for Design Ops JSONC port. Repo tracking SoT; sessions transitory. Do not invent geometry — port from these bodies.",
+  "note": "Native-derived inventory for Design Ops JSONC port. Repo tracking SoT; sessions transitory. Do not invent geometry \u2014 port from these bodies.",
   "target_bodies": {
     "32": "main_shell",
     "56": "wheel_cap_inner",
@@ -777,9 +777,43 @@
     },
     "hatch": {
       "body_id": 141,
-      "body_features": null,
+      "body_features": {
+        "feature_id": 295,
+        "keep_tools": false,
+        "name": "Combine4",
+        "operation": "intersect",
+        "target_body_id": 141,
+        "tool_body_ids": [
+          142
+        ],
+        "type": "combine",
+        "note": "Primary shaping combine; also Combine13/14 cuts. Created by MoveCopy5 from body 32."
+      },
+      "creation": {
+        "feature": "MoveCopy5",
+        "feature_id": 291,
+        "source_body_id": 32,
+        "copy": true
+      },
       "extrude_hits": [],
-      "extrude_hit_count": 0
+      "extrude_hit_count": 0,
+      "hatch_local_features": [
+        "MoveCopy5",
+        "Extrude88",
+        "Combine4",
+        "Extrude96",
+        "MoveCopy8",
+        "RectangularPattern5",
+        "Mirror6",
+        "Combine13",
+        "Revolve1",
+        "MoveCopy9",
+        "RectangularPattern6",
+        "Mirror7",
+        "Combine14"
+      ],
+      "dump": "design/native-port/hatch-141.{json,md}",
+      "port_status": "dump_complete_jsonc_partial_shell_blocker"
     }
   },
   "sample_body_feature_keys": [

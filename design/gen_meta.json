@@ -3,7 +3,7 @@
   "architecture": "shell-first modular Design Ops cut",
   "native_master": "Roller-300.nbcad",
   "ai_sot": "design/*.nbcad.jsonc",
-  "revision_note": "VERSION 0.1: wheel_caps chapter (bodies 56/65) + input_caps (100/108) + carriage (97) from native-port dumps; coupons retained; one-drive DEPRECATED; native-port exports under first-prints/native-port/.",
+  "revision_note": "VERSION 0.1: hatch body 141 dump complete + partial JSONC (shell-32 blocker); wheel_caps 56/65 + input_caps 100/108 + carriage 97 native-port; coupons retained; one-drive DEPRECATED; native-port exports under first-prints/native-port/.",
   "modules": [
     {
       "file": "design_v0_1_hardware_refs.nbcad.jsonc",
@@ -33,7 +33,11 @@
     {
       "file": "design_v0_1_structural_hatch.nbcad.jsonc",
       "stage": "S03",
-      "role": "structural_hatch"
+      "role": "structural_hatch",
+      "native_body_id": 141,
+      "port_status": "dump_complete_jsonc_partial_shell_blocker",
+      "dump": "design/native-port/hatch-141.{json,md}",
+      "note": "Full blank-doc hatch blocked on main_shell body 32 (MoveCopy5). Legacy lap/arc coupons retained."
     },
     {
       "file": "design_v0_1_electronics_mounts.nbcad.jsonc",
@@ -164,7 +168,24 @@
       "body_id": 141,
       "note": "Then main_shell 32; full shell HOLD"
     },
-    "note": "JSONC ported from native feature dumps only \u2014 no invented blocks."
+    "note": "JSONC ported from native feature dumps only \u2014 no invented blocks.",
+    "hatch": {
+      "body_id": 141,
+      "dump": "design/native-port/hatch-141.{json,md}",
+      "chapter": "design/design_v0_1_structural_hatch.nbcad.jsonc",
+      "status": "dump_complete_jsonc_partial_shell_blocker",
+      "aabb_target": {
+        "dx": 138.0,
+        "dy": 179.39999389648438,
+        "dz": 48.092803955078125,
+        "xmin": -69.0,
+        "ymin": -89.69999694824219,
+        "zmin": 154.85906982421875,
+        "source": "first-prints/shell-first-review/curved-hatch-assembly-coordinates.stl"
+      },
+      "exports": null,
+      "blocker": "MoveCopy5 identity copy of shell body 32 \u2014 needs shell chapter before blank-doc AABB match"
+    }
   },
   "next_fill_target": "Native-port: wheel_caps (56/65) + input_caps (100/108) + carriage (97) JSONC replayed + exported. Next dump/port hatch 141 or main_shell 32; full shell HOLD."
 }

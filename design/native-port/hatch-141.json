@@ -1,0 +1,4393 @@
+{
+  "generated_from": "Roller-300.nbcad / model.json",
+  "schema_version": 7,
+  "body": {
+    "body_id": 141,
+    "role": "hatch",
+    "appearance": {
+      "body_id": 141,
+      "brand": "Generic",
+      "color": {
+        "a": 255,
+        "b": 164,
+        "g": 146,
+        "r": 81
+      },
+      "color_name": "",
+      "density_g_cm3": null,
+      "diameter_mm": 1.75,
+      "filament_id": null,
+      "filament_type": "PETG",
+      "material_name": "P05 curved structural hatch - eight radial M4 screws",
+      "preset_id": null
+    },
+    "created_by": "MoveCopy5 (copy of body 32 \u2192 141, identity transform)",
+    "body_features_as_owner": [
+      {
+        "name": "Combine4",
+        "feature_id": 295,
+        "operation": "intersect",
+        "tool_body_ids": [
+          142
+        ],
+        "keep_tools": false
+      },
+      {
+        "name": "Combine13",
+        "feature_id": 337,
+        "operation": "cut",
+        "tool_body_ids": [
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171
+        ],
+        "keep_tools": false
+      },
+      {
+        "name": "Combine14",
+        "feature_id": 344,
+        "operation": "cut",
+        "tool_body_ids": [
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179
+        ],
+        "keep_tools": false
+      }
+    ],
+    "used_as_tool_on": [
+      {
+        "name": "Combine8",
+        "feature_id": 311,
+        "target_body_id": 144,
+        "operation": "cut",
+        "keep_tools": true
+      },
+      {
+        "name": "Combine16",
+        "feature_id": 505,
+        "target_body_id": 32,
+        "operation": "cut",
+        "keep_tools": true
+      }
+    ],
+    "note": "Body 141 is not a simple new_body extrude. MoveCopy5 copies main_shell body 32 (identity). Combine4 intersects with Extrude88 boundary tool 142. Combine13/14 cut eight radial M4 clearances + eight countersinks (patterned from Extrude96 / Revolve1). Blank-doc JSONC port requires full shell history through fid<291 or equivalent shell solid \u2014 do not invent a substitute tube."
+  },
+  "feature_sequence": [
+    {
+      "kind": "move_copy",
+      "name": "MoveCopy5",
+      "feature_id": 291,
+      "body_ids": [
+        32
+      ],
+      "copy": true,
+      "pivot": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "result_body_ids": [
+        141
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "type": "move_copy"
+    },
+    {
+      "kind": "datum_plane",
+      "name": "S03 A rounded curved hatch boundary 180L 120deg datum",
+      "feature_id": 292,
+      "basis": {
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin": [
+          0.0,
+          0.0,
+          123.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "source": {
+        "distance": 123.0,
+        "reference": {
+          "plane": "xy",
+          "type": "origin_plane"
+        },
+        "type": "offset"
+      },
+      "payload_full": {
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            123.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "datum_id": 88,
+        "feature_id": 292,
+        "name": "S03 A rounded curved hatch boundary 180L 120deg datum",
+        "source": {
+          "distance": 123.0,
+          "reference": {
+            "plane": "xy",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      }
+    },
+    {
+      "kind": "sketch",
+      "name": "S03 A rounded curved hatch boundary 180L 120deg",
+      "feature_id": 293,
+      "sketch": {
+        "name": "S03 A rounded curved hatch boundary 180L 120deg",
+        "feature_id": 293,
+        "plane": {
+          "datum_id": 88,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            123.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "datum": {
+          "datum_id": 292,
+          "name": "S03 A rounded curved hatch boundary 180L 120deg datum",
+          "feature_id": 292,
+          "basis": {
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              123.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          "source": {
+            "distance": 123.0,
+            "reference": {
+              "plane": "xy",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          },
+          "note": "Chain datum 292; sketch.basis.origin z=123 matches. Prefer sketch.basis + datum 292 if plane.datum_id stale."
+        },
+        "geometry": {
+          "entity_count": 21,
+          "entity_types": {
+            "point": 13,
+            "line": 4,
+            "arc": 4
+          },
+          "point_bbox_uv": {
+            "umin": -69.0,
+            "umax": 69.0,
+            "vmin": -89.7,
+            "vmax": 89.7,
+            "du": 138.0,
+            "dv": 179.4
+          },
+          "curves": [
+            {
+              "id": 3,
+              "end": 2,
+              "start": 1,
+              "type": "line"
+            },
+            {
+              "id": 4,
+              "center": {
+                "x": 61.00000000000013,
+                "y": -81.70000000000023
+              },
+              "end_angle": 2.842170943040446e-14,
+              "radius": 7.999999999999773,
+              "start_angle": -1.5707963267949125,
+              "type": "arc"
+            },
+            {
+              "id": 8,
+              "end": 7,
+              "start": 6,
+              "type": "line"
+            },
+            {
+              "id": 9,
+              "center": {
+                "x": 61.0000000000002,
+                "y": 81.70000000000017
+              },
+              "end_angle": 1.5707963267949214,
+              "radius": 7.999999999999801,
+              "start_angle": -2.1316282072803536e-14,
+              "type": "arc"
+            },
+            {
+              "id": 13,
+              "end": 12,
+              "start": 11,
+              "type": "line"
+            },
+            {
+              "id": 14,
+              "center": {
+                "x": -61.00000000000013,
+                "y": 81.70000000000023
+              },
+              "end_angle": -3.1415926535897647,
+              "radius": 7.999999999999773,
+              "start_angle": 1.5707963267948806,
+              "type": "arc"
+            },
+            {
+              "id": 18,
+              "end": 17,
+              "start": 16,
+              "type": "line"
+            },
+            {
+              "id": 19,
+              "center": {
+                "x": -61.0000000000002,
+                "y": -81.70000000000017
+              },
+              "end_angle": -1.5707963267948717,
+              "radius": 7.999999999999801,
+              "start_angle": 3.141592653589772,
+              "type": "arc"
+            }
+          ],
+          "points": [
+            {
+              "id": 1,
+              "x": -61.0,
+              "y": -89.7
+            },
+            {
+              "id": 2,
+              "x": 61.0,
+              "y": -89.7
+            },
+            {
+              "id": 5,
+              "x": 61.0,
+              "y": -89.7
+            },
+            {
+              "id": 6,
+              "x": 69.0,
+              "y": -81.7
+            },
+            {
+              "id": 7,
+              "x": 69.0,
+              "y": 81.7
+            },
+            {
+              "id": 10,
+              "x": 69.0,
+              "y": 81.7
+            },
+            {
+              "id": 11,
+              "x": 61.0,
+              "y": 89.7
+            },
+            {
+              "id": 12,
+              "x": -61.0,
+              "y": 89.7
+            },
+            {
+              "id": 15,
+              "x": -61.0,
+              "y": 89.7
+            },
+            {
+              "id": 16,
+              "x": -69.0,
+              "y": 81.7
+            },
+            {
+              "id": 17,
+              "x": -69.0,
+              "y": -81.7
+            },
+            {
+              "id": 20,
+              "x": -69.0,
+              "y": -81.7
+            },
+            {
+              "id": 21,
+              "x": -61.0,
+              "y": -89.7
+            }
+          ]
+        },
+        "constraint_count": 8,
+        "constraints": [
+          {
+            "id": 1,
+            "arc": 4,
+            "end": "start",
+            "point": 5,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 2,
+            "arc": 4,
+            "end": "end",
+            "point": 6,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 3,
+            "arc": 9,
+            "end": "start",
+            "point": 10,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 4,
+            "arc": 9,
+            "end": "end",
+            "point": 11,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 5,
+            "arc": 14,
+            "end": "start",
+            "point": 15,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 6,
+            "arc": 14,
+            "end": "end",
+            "point": 16,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 7,
+            "arc": 19,
+            "end": "start",
+            "point": 20,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 8,
+            "arc": 19,
+            "end": "end",
+            "point": 21,
+            "type": "arc_endpoint_coincident"
+          }
+        ],
+        "snapshot_full": {
+          "constraints": [
+            [
+              1,
+              {
+                "arc": 4,
+                "end": "start",
+                "point": 5,
+                "type": "arc_endpoint_coincident"
+              }
+            ],
+            [
+              2,
+              {
+                "arc": 4,
+                "end": "end",
+                "point": 6,
+                "type": "arc_endpoint_coincident"
+              }
+            ],
+            [
+              3,
+              {
+                "arc": 9,
+                "end": "start",
+                "point": 10,
+                "type": "arc_endpoint_coincident"
+              }
+            ],
+            [
+              4,
+              {
+                "arc": 9,
+                "end": "end",
+                "point": 11,
+                "type": "arc_endpoint_coincident"
+              }
+            ],
+            [
+              5,
+              {
+                "arc": 14,
+                "end": "start",
+                "point": 15,
+                "type": "arc_endpoint_coincident"
+              }
+            ],
+            [
+              6,
+              {
+                "arc": 14,
+                "end": "end",
+                "point": 16,
+                "type": "arc_endpoint_coincident"
+              }
+            ],
+            [
+              7,
+              {
+                "arc": 19,
+                "end": "start",
+                "point": 20,
+                "type": "arc_endpoint_coincident"
+              }
+            ],
+            [
+              8,
+              {
+                "arc": 19,
+                "end": "end",
+                "point": 21,
+                "type": "arc_endpoint_coincident"
+              }
+            ]
+          ],
+          "dim_modes": {},
+          "dim_params": {},
+          "dim_placements": {},
+          "entities": [
+            [
+              1,
+              {
+                "position": {
+                  "x": -61.0,
+                  "y": -89.7
+                },
+                "type": "point"
+              }
+            ],
+            [
+              2,
+              {
+                "position": {
+                  "x": 61.0,
+                  "y": -89.7
+                },
+                "type": "point"
+              }
+            ],
+            [
+              3,
+              {
+                "end": 2,
+                "start": 1,
+                "type": "line"
+              }
+            ],
+            [
+              4,
+              {
+                "center": {
+                  "x": 61.00000000000013,
+                  "y": -81.70000000000023
+                },
+                "end_angle": 2.842170943040446e-14,
+                "radius": 7.999999999999773,
+                "start_angle": -1.5707963267949125,
+                "type": "arc"
+              }
+            ],
+            [
+              5,
+              {
+                "position": {
+                  "x": 61.0,
+                  "y": -89.7
+                },
+                "type": "point"
+              }
+            ],
+            [
+              6,
+              {
+                "position": {
+                  "x": 69.0,
+                  "y": -81.7
+                },
+                "type": "point"
+              }
+            ],
+            [
+              7,
+              {
+                "position": {
+                  "x": 69.0,
+                  "y": 81.7
+                },
+                "type": "point"
+              }
+            ],
+            [
+              8,
+              {
+                "end": 7,
+                "start": 6,
+                "type": "line"
+              }
+            ],
+            [
+              9,
+              {
+                "center": {
+                  "x": 61.0000000000002,
+                  "y": 81.70000000000017
+                },
+                "end_angle": 1.5707963267949214,
+                "radius": 7.999999999999801,
+                "start_angle": -2.1316282072803536e-14,
+                "type": "arc"
+              }
+            ],
+            [
+              10,
+              {
+                "position": {
+                  "x": 69.0,
+                  "y": 81.7
+                },
+                "type": "point"
+              }
+            ],
+            [
+              11,
+              {
+                "position": {
+                  "x": 61.0,
+                  "y": 89.7
+                },
+                "type": "point"
+              }
+            ],
+            [
+              12,
+              {
+                "position": {
+                  "x": -61.0,
+                  "y": 89.7
+                },
+                "type": "point"
+              }
+            ],
+            [
+              13,
+              {
+                "end": 12,
+                "start": 11,
+                "type": "line"
+              }
+            ],
+            [
+              14,
+              {
+                "center": {
+                  "x": -61.00000000000013,
+                  "y": 81.70000000000023
+                },
+                "end_angle": -3.1415926535897647,
+                "radius": 7.999999999999773,
+                "start_angle": 1.5707963267948806,
+                "type": "arc"
+              }
+            ],
+            [
+              15,
+              {
+                "position": {
+                  "x": -61.0,
+                  "y": 89.7
+                },
+                "type": "point"
+              }
+            ],
+            [
+              16,
+              {
+                "position": {
+                  "x": -69.0,
+                  "y": 81.7
+                },
+                "type": "point"
+              }
+            ],
+            [
+              17,
+              {
+                "position": {
+                  "x": -69.0,
+                  "y": -81.7
+                },
+                "type": "point"
+              }
+            ],
+            [
+              18,
+              {
+                "end": 17,
+                "start": 16,
+                "type": "line"
+              }
+            ],
+            [
+              19,
+              {
+                "center": {
+                  "x": -61.0000000000002,
+                  "y": -81.70000000000017
+                },
+                "end_angle": -1.5707963267948717,
+                "radius": 7.999999999999801,
+                "start_angle": 3.141592653589772,
+                "type": "arc"
+              }
+            ],
+            [
+              20,
+              {
+                "position": {
+                  "x": -69.0,
+                  "y": -81.7
+                },
+                "type": "point"
+              }
+            ],
+            [
+              21,
+              {
+                "position": {
+                  "x": -61.0,
+                  "y": -89.7
+                },
+                "type": "point"
+              }
+            ]
+          ],
+          "fix_targets": {},
+          "next_constraint": 8,
+          "next_entity": 21,
+          "params": {
+            "next_id": 0,
+            "next_name": 0,
+            "params": []
+          }
+        },
+        "grid_snap": false,
+        "dimension_style": "aligned",
+        "plane_datum_id_field": 88
+      }
+    },
+    {
+      "kind": "extrude",
+      "name": "Extrude88",
+      "feature_id": 294,
+      "operation": "new_body",
+      "extent": {
+        "distance": 110.0,
+        "type": "distance"
+      },
+      "flip": false,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0
+      ],
+      "sketch_name": "S03 A rounded curved hatch boundary 180L 120deg",
+      "target_body_ids": [],
+      "new_body_ids": [
+        142
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S03 A rounded curved hatch boundary 180L 120deg",
+        "feature_id": 293,
+        "plane": {
+          "datum_id": 88,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            123.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "datum": {
+          "datum_id": 292,
+          "name": "S03 A rounded curved hatch boundary 180L 120deg datum",
+          "feature_id": 292,
+          "basis": {
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              123.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          "source": {
+            "distance": 123.0,
+            "reference": {
+              "plane": "xy",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          },
+          "note": "Chain datum 292; sketch.basis.origin z=123 matches. Prefer sketch.basis + datum 292 if plane.datum_id stale."
+        },
+        "geometry": {
+          "entity_count": 21,
+          "entity_types": {
+            "point": 13,
+            "line": 4,
+            "arc": 4
+          },
+          "point_bbox_uv": {
+            "umin": -69.0,
+            "umax": 69.0,
+            "vmin": -89.7,
+            "vmax": 89.7,
+            "du": 138.0,
+            "dv": 179.4
+          },
+          "curves": [
+            {
+              "id": 3,
+              "end": 2,
+              "start": 1,
+              "type": "line"
+            },
+            {
+              "id": 4,
+              "center": {
+                "x": 61.00000000000013,
+                "y": -81.70000000000023
+              },
+              "end_angle": 2.842170943040446e-14,
+              "radius": 7.999999999999773,
+              "start_angle": -1.5707963267949125,
+              "type": "arc"
+            },
+            {
+              "id": 8,
+              "end": 7,
+              "start": 6,
+              "type": "line"
+            },
+            {
+              "id": 9,
+              "center": {
+                "x": 61.0000000000002,
+                "y": 81.70000000000017
+              },
+              "end_angle": 1.5707963267949214,
+              "radius": 7.999999999999801,
+              "start_angle": -2.1316282072803536e-14,
+              "type": "arc"
+            },
+            {
+              "id": 13,
+              "end": 12,
+              "start": 11,
+              "type": "line"
+            },
+            {
+              "id": 14,
+              "center": {
+                "x": -61.00000000000013,
+                "y": 81.70000000000023
+              },
+              "end_angle": -3.1415926535897647,
+              "radius": 7.999999999999773,
+              "start_angle": 1.5707963267948806,
+              "type": "arc"
+            },
+            {
+              "id": 18,
+              "end": 17,
+              "start": 16,
+              "type": "line"
+            },
+            {
+              "id": 19,
+              "center": {
+                "x": -61.0000000000002,
+                "y": -81.70000000000017
+              },
+              "end_angle": -1.5707963267948717,
+              "radius": 7.999999999999801,
+              "start_angle": 3.141592653589772,
+              "type": "arc"
+            }
+          ],
+          "points": [
+            {
+              "id": 1,
+              "x": -61.0,
+              "y": -89.7
+            },
+            {
+              "id": 2,
+              "x": 61.0,
+              "y": -89.7
+            },
+            {
+              "id": 5,
+              "x": 61.0,
+              "y": -89.7
+            },
+            {
+              "id": 6,
+              "x": 69.0,
+              "y": -81.7
+            },
+            {
+              "id": 7,
+              "x": 69.0,
+              "y": 81.7
+            },
+            {
+              "id": 10,
+              "x": 69.0,
+              "y": 81.7
+            },
+            {
+              "id": 11,
+              "x": 61.0,
+              "y": 89.7
+            },
+            {
+              "id": 12,
+              "x": -61.0,
+              "y": 89.7
+            },
+            {
+              "id": 15,
+              "x": -61.0,
+              "y": 89.7
+            },
+            {
+              "id": 16,
+              "x": -69.0,
+              "y": 81.7
+            },
+            {
+              "id": 17,
+              "x": -69.0,
+              "y": -81.7
+            },
+            {
+              "id": 20,
+              "x": -69.0,
+              "y": -81.7
+            },
+            {
+              "id": 21,
+              "x": -61.0,
+              "y": -89.7
+            }
+          ]
+        },
+        "constraint_count": 8,
+        "constraints": [
+          {
+            "id": 1,
+            "arc": 4,
+            "end": "start",
+            "point": 5,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 2,
+            "arc": 4,
+            "end": "end",
+            "point": 6,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 3,
+            "arc": 9,
+            "end": "start",
+            "point": 10,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 4,
+            "arc": 9,
+            "end": "end",
+            "point": 11,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 5,
+            "arc": 14,
+            "end": "start",
+            "point": 15,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 6,
+            "arc": 14,
+            "end": "end",
+            "point": 16,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 7,
+            "arc": 19,
+            "end": "start",
+            "point": 20,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 8,
+            "arc": 19,
+            "end": "end",
+            "point": 21,
+            "type": "arc_endpoint_coincident"
+          }
+        ],
+        "snapshot_full": {
+          "constraints": [
+            [
+              1,
+              {
+                "arc": 4,
+                "end": "start",
+                "point": 5,
+                "type": "arc_endpoint_coincident"
+              }
+            ],
+            [
+              2,
+              {
+                "arc": 4,
+                "end": "end",
+                "point": 6,
+                "type": "arc_endpoint_coincident"
+              }
+            ],
+            [
+              3,
+              {
+                "arc": 9,
+                "end": "start",
+                "point": 10,
+                "type": "arc_endpoint_coincident"
+              }
+            ],
+            [
+              4,
+              {
+                "arc": 9,
+                "end": "end",
+                "point": 11,
+                "type": "arc_endpoint_coincident"
+              }
+            ],
+            [
+              5,
+              {
+                "arc": 14,
+                "end": "start",
+                "point": 15,
+                "type": "arc_endpoint_coincident"
+              }
+            ],
+            [
+              6,
+              {
+                "arc": 14,
+                "end": "end",
+                "point": 16,
+                "type": "arc_endpoint_coincident"
+              }
+            ],
+            [
+              7,
+              {
+                "arc": 19,
+                "end": "start",
+                "point": 20,
+                "type": "arc_endpoint_coincident"
+              }
+            ],
+            [
+              8,
+              {
+                "arc": 19,
+                "end": "end",
+                "point": 21,
+                "type": "arc_endpoint_coincident"
+              }
+            ]
+          ],
+          "dim_modes": {},
+          "dim_params": {},
+          "dim_placements": {},
+          "entities": [
+            [
+              1,
+              {
+                "position": {
+                  "x": -61.0,
+                  "y": -89.7
+                },
+                "type": "point"
+              }
+            ],
+            [
+              2,
+              {
+                "position": {
+                  "x": 61.0,
+                  "y": -89.7
+                },
+                "type": "point"
+              }
+            ],
+            [
+              3,
+              {
+                "end": 2,
+                "start": 1,
+                "type": "line"
+              }
+            ],
+            [
+              4,
+              {
+                "center": {
+                  "x": 61.00000000000013,
+                  "y": -81.70000000000023
+                },
+                "end_angle": 2.842170943040446e-14,
+                "radius": 7.999999999999773,
+                "start_angle": -1.5707963267949125,
+                "type": "arc"
+              }
+            ],
+            [
+              5,
+              {
+                "position": {
+                  "x": 61.0,
+                  "y": -89.7
+                },
+                "type": "point"
+              }
+            ],
+            [
+              6,
+              {
+                "position": {
+                  "x": 69.0,
+                  "y": -81.7
+                },
+                "type": "point"
+              }
+            ],
+            [
+              7,
+              {
+                "position": {
+                  "x": 69.0,
+                  "y": 81.7
+                },
+                "type": "point"
+              }
+            ],
+            [
+              8,
+              {
+                "end": 7,
+                "start": 6,
+                "type": "line"
+              }
+            ],
+            [
+              9,
+              {
+                "center": {
+                  "x": 61.0000000000002,
+                  "y": 81.70000000000017
+                },
+                "end_angle": 1.5707963267949214,
+                "radius": 7.999999999999801,
+                "start_angle": -2.1316282072803536e-14,
+                "type": "arc"
+              }
+            ],
+            [
+              10,
+              {
+                "position": {
+                  "x": 69.0,
+                  "y": 81.7
+                },
+                "type": "point"
+              }
+            ],
+            [
+              11,
+              {
+                "position": {
+                  "x": 61.0,
+                  "y": 89.7
+                },
+                "type": "point"
+              }
+            ],
+            [
+              12,
+              {
+                "position": {
+                  "x": -61.0,
+                  "y": 89.7
+                },
+                "type": "point"
+              }
+            ],
+            [
+              13,
+              {
+                "end": 12,
+                "start": 11,
+                "type": "line"
+              }
+            ],
+            [
+              14,
+              {
+                "center": {
+                  "x": -61.00000000000013,
+                  "y": 81.70000000000023
+                },
+                "end_angle": -3.1415926535897647,
+                "radius": 7.999999999999773,
+                "start_angle": 1.5707963267948806,
+                "type": "arc"
+              }
+            ],
+            [
+              15,
+              {
+                "position": {
+                  "x": -61.0,
+                  "y": 89.7
+                },
+                "type": "point"
+              }
+            ],
+            [
+              16,
+              {
+                "position": {
+                  "x": -69.0,
+                  "y": 81.7
+                },
+                "type": "point"
+              }
+            ],
+            [
+              17,
+              {
+                "position": {
+                  "x": -69.0,
+                  "y": -81.7
+                },
+                "type": "point"
+              }
+            ],
+            [
+              18,
+              {
+                "end": 17,
+                "start": 16,
+                "type": "line"
+              }
+            ],
+            [
+              19,
+              {
+                "center": {
+                  "x": -61.0000000000002,
+                  "y": -81.70000000000017
+                },
+                "end_angle": -1.5707963267948717,
+                "radius": 7.999999999999801,
+                "start_angle": 3.141592653589772,
+                "type": "arc"
+              }
+            ],
+            [
+              20,
+              {
+                "position": {
+                  "x": -69.0,
+                  "y": -81.7
+                },
+                "type": "point"
+              }
+            ],
+            [
+              21,
+              {
+                "position": {
+                  "x": -61.0,
+                  "y": -89.7
+                },
+                "type": "point"
+              }
+            ]
+          ],
+          "fix_targets": {},
+          "next_constraint": 8,
+          "next_entity": 21,
+          "params": {
+            "next_id": 0,
+            "next_name": 0,
+            "params": []
+          }
+        },
+        "grid_snap": false,
+        "dimension_style": "aligned",
+        "plane_datum_id_field": 88
+      }
+    },
+    {
+      "kind": "combine",
+      "name": "Combine4",
+      "feature_id": 295,
+      "keep_tools": false,
+      "operation": "intersect",
+      "target_body_id": 141,
+      "tool_body_ids": [
+        142
+      ],
+      "type": "combine"
+    },
+    {
+      "kind": "datum_plane",
+      "name": "S03 I radial screw clearance master datum",
+      "feature_id": 330,
+      "basis": {
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin": [
+          0.0,
+          0.0,
+          190.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "source": {
+        "distance": 190.0,
+        "reference": {
+          "plane": "xy",
+          "type": "origin_plane"
+        },
+        "type": "offset"
+      },
+      "payload_full": {
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            190.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "datum_id": 96,
+        "feature_id": 330,
+        "name": "S03 I radial screw clearance master datum",
+        "source": {
+          "distance": 190.0,
+          "reference": {
+            "plane": "xy",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      }
+    },
+    {
+      "kind": "sketch",
+      "name": "S03 I radial screw clearance master",
+      "feature_id": 331,
+      "sketch": {
+        "name": "S03 I radial screw clearance master",
+        "feature_id": 331,
+        "plane": {
+          "datum_id": 96,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            190.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "datum": {
+          "datum_id": 330,
+          "name": "S03 I radial screw clearance master datum",
+          "feature_id": 330,
+          "basis": {
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              190.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          "source": {
+            "distance": 190.0,
+            "reference": {
+              "plane": "xy",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          },
+          "note": "Authoritative for this sketch: sketch.basis.origin z=190 matches datum 330. plane.datum_id=96 is STALE (S02 I)."
+        },
+        "geometry": {
+          "entity_count": 1,
+          "entity_types": {
+            "circle": 1
+          },
+          "point_bbox_uv": null,
+          "curves": [
+            {
+              "id": 1,
+              "center": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "radius": 2.2,
+              "type": "circle"
+            }
+          ],
+          "points": []
+        },
+        "constraint_count": 0,
+        "constraints": [],
+        "snapshot_full": {
+          "constraints": [],
+          "dim_modes": {},
+          "dim_params": {},
+          "dim_placements": {},
+          "entities": [
+            [
+              1,
+              {
+                "center": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "radius": 2.2,
+                "type": "circle"
+              }
+            ]
+          ],
+          "fix_targets": {},
+          "next_constraint": 0,
+          "next_entity": 1,
+          "params": {
+            "next_id": 0,
+            "next_name": 0,
+            "params": []
+          }
+        },
+        "grid_snap": false,
+        "dimension_style": "aligned",
+        "datum_plane_id_stale": 96,
+        "datum_from_plane_field": {
+          "datum_id": 96,
+          "name": "S02 I side-load nut pocket (-18, 51) datum",
+          "feature_id": 96,
+          "basis": {
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "origin": [
+              0.0,
+              44.9,
+              0.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "source": {
+            "distance": -44.9,
+            "reference": {
+              "plane": "xz",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "verify_stale_plane_datum_id": {
+          "plane_datum_id": 96,
+          "correct_chain_datum_id": 330,
+          "sketch_basis_origin": [
+            0.0,
+            0.0,
+            190.0
+          ]
+        }
+      }
+    },
+    {
+      "kind": "extrude",
+      "name": "Extrude96",
+      "feature_id": 332,
+      "operation": "new_body",
+      "extent": {
+        "distance": 18.0,
+        "type": "distance"
+      },
+      "flip": false,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0
+      ],
+      "sketch_name": "S03 I radial screw clearance master",
+      "target_body_ids": [],
+      "new_body_ids": [
+        164
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S03 I radial screw clearance master",
+        "feature_id": 331,
+        "plane": {
+          "datum_id": 96,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            190.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "datum": {
+          "datum_id": 330,
+          "name": "S03 I radial screw clearance master datum",
+          "feature_id": 330,
+          "basis": {
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              190.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          "source": {
+            "distance": 190.0,
+            "reference": {
+              "plane": "xy",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          },
+          "note": "Authoritative for this sketch: sketch.basis.origin z=190 matches datum 330. plane.datum_id=96 is STALE (S02 I)."
+        },
+        "geometry": {
+          "entity_count": 1,
+          "entity_types": {
+            "circle": 1
+          },
+          "point_bbox_uv": null,
+          "curves": [
+            {
+              "id": 1,
+              "center": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "radius": 2.2,
+              "type": "circle"
+            }
+          ],
+          "points": []
+        },
+        "constraint_count": 0,
+        "constraints": [],
+        "snapshot_full": {
+          "constraints": [],
+          "dim_modes": {},
+          "dim_params": {},
+          "dim_placements": {},
+          "entities": [
+            [
+              1,
+              {
+                "center": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "radius": 2.2,
+                "type": "circle"
+              }
+            ]
+          ],
+          "fix_targets": {},
+          "next_constraint": 0,
+          "next_entity": 1,
+          "params": {
+            "next_id": 0,
+            "next_name": 0,
+            "params": []
+          }
+        },
+        "grid_snap": false,
+        "dimension_style": "aligned",
+        "datum_plane_id_stale": 96,
+        "datum_from_plane_field": {
+          "datum_id": 96,
+          "name": "S02 I side-load nut pocket (-18, 51) datum",
+          "feature_id": 96,
+          "basis": {
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "origin": [
+              0.0,
+              44.9,
+              0.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "source": {
+            "distance": -44.9,
+            "reference": {
+              "plane": "xz",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "verify_stale_plane_datum_id": {
+          "plane_datum_id": 96,
+          "correct_chain_datum_id": 330,
+          "sketch_basis_origin": [
+            0.0,
+            0.0,
+            190.0
+          ]
+        }
+      }
+    },
+    {
+      "kind": "move_copy",
+      "name": "MoveCopy8",
+      "feature_id": 333,
+      "body_ids": [
+        164
+      ],
+      "copy": false,
+      "pivot": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 123.0
+      },
+      "result_body_ids": [
+        164
+      ],
+      "rotation": [
+        0.0,
+        0.4617486132350339,
+        0.0,
+        0.8870108331782217
+      ],
+      "translation": {
+        "x": 0.0,
+        "y": -75.0,
+        "z": 0.0
+      },
+      "type": "move_copy"
+    },
+    {
+      "kind": "rectangular_pattern",
+      "name": "RectangularPattern5",
+      "feature_id": 334,
+      "body_ids": [
+        164
+      ],
+      "count": 4,
+      "direction": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "new_body_ids": [
+        165,
+        166,
+        167
+      ],
+      "second_count": 1,
+      "second_direction": null,
+      "second_spacing": 0.0,
+      "spacing": 50.0,
+      "type": "rectangular_pattern"
+    },
+    {
+      "kind": "mirror",
+      "name": "Mirror6",
+      "feature_id": 335,
+      "body_ids": [
+        164,
+        165,
+        166,
+        167
+      ],
+      "new_body_ids": [
+        168,
+        169,
+        170,
+        171
+      ],
+      "plane": {
+        "plane": "yz",
+        "type": "origin_plane"
+      },
+      "plane_basis": {
+        "normal": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "u": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "type": "mirror"
+    },
+    {
+      "kind": "combine",
+      "name": "Combine13",
+      "feature_id": 337,
+      "keep_tools": false,
+      "operation": "cut",
+      "target_body_id": 141,
+      "tool_body_ids": [
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171
+      ],
+      "type": "combine"
+    },
+    {
+      "kind": "datum_plane",
+      "name": "S03 J 90 degree countersink master datum",
+      "feature_id": 338,
+      "basis": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "source": {
+        "distance": 0.0,
+        "reference": {
+          "plane": "xz",
+          "type": "origin_plane"
+        },
+        "type": "offset"
+      },
+      "payload_full": {
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum_id": 97,
+        "feature_id": 338,
+        "name": "S03 J 90 degree countersink master datum",
+        "source": {
+          "distance": 0.0,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      }
+    },
+    {
+      "kind": "sketch",
+      "name": "S03 J 90 degree countersink master",
+      "feature_id": 339,
+      "sketch": {
+        "name": "S03 J 90 degree countersink master",
+        "feature_id": 339,
+        "plane": {
+          "datum_id": 97,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum": {
+          "datum_id": 338,
+          "name": "S03 J 90 degree countersink master datum",
+          "feature_id": 338,
+          "basis": {
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "source": {
+            "distance": 0.0,
+            "reference": {
+              "plane": "xz",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          },
+          "note": "Chain datum for S03 J; prefer sketch.basis + datum 338 source over stale plane.datum_id if mismatched."
+        },
+        "geometry": {
+          "entity_count": 9,
+          "entity_types": {
+            "point": 5,
+            "line": 4
+          },
+          "point_bbox_uv": {
+            "umin": 0.0,
+            "umax": 4.4,
+            "vmin": 201.0,
+            "vmax": 203.2,
+            "du": 4.4,
+            "dv": 2.1999999999999886
+          },
+          "curves": [
+            {
+              "id": 3,
+              "end": 2,
+              "start": 1,
+              "type": "line"
+            },
+            {
+              "id": 5,
+              "end": 4,
+              "start": 2,
+              "type": "line"
+            },
+            {
+              "id": 7,
+              "end": 6,
+              "start": 4,
+              "type": "line"
+            },
+            {
+              "id": 9,
+              "end": 8,
+              "start": 6,
+              "type": "line"
+            }
+          ],
+          "points": [
+            {
+              "id": 1,
+              "x": 0.0,
+              "y": 201.0
+            },
+            {
+              "id": 2,
+              "x": 2.2,
+              "y": 201.0
+            },
+            {
+              "id": 4,
+              "x": 4.4,
+              "y": 203.2
+            },
+            {
+              "id": 6,
+              "x": 0.0,
+              "y": 203.2
+            },
+            {
+              "id": 8,
+              "x": 0.0,
+              "y": 201.0
+            }
+          ]
+        },
+        "constraint_count": 0,
+        "constraints": [],
+        "snapshot_full": {
+          "constraints": [],
+          "dim_modes": {},
+          "dim_params": {},
+          "dim_placements": {},
+          "entities": [
+            [
+              1,
+              {
+                "position": {
+                  "x": 0.0,
+                  "y": 201.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              2,
+              {
+                "position": {
+                  "x": 2.2,
+                  "y": 201.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              3,
+              {
+                "end": 2,
+                "start": 1,
+                "type": "line"
+              }
+            ],
+            [
+              4,
+              {
+                "position": {
+                  "x": 4.4,
+                  "y": 203.2
+                },
+                "type": "point"
+              }
+            ],
+            [
+              5,
+              {
+                "end": 4,
+                "start": 2,
+                "type": "line"
+              }
+            ],
+            [
+              6,
+              {
+                "position": {
+                  "x": 0.0,
+                  "y": 203.2
+                },
+                "type": "point"
+              }
+            ],
+            [
+              7,
+              {
+                "end": 6,
+                "start": 4,
+                "type": "line"
+              }
+            ],
+            [
+              8,
+              {
+                "position": {
+                  "x": 0.0,
+                  "y": 201.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              9,
+              {
+                "end": 8,
+                "start": 6,
+                "type": "line"
+              }
+            ]
+          ],
+          "fix_targets": {},
+          "next_constraint": 0,
+          "next_entity": 9,
+          "params": {
+            "next_id": 0,
+            "next_name": 0,
+            "params": []
+          }
+        },
+        "grid_snap": false,
+        "dimension_style": "aligned",
+        "datum_plane_id_in_plane_field": 97
+      }
+    },
+    {
+      "kind": "revolve",
+      "name": "Revolve1",
+      "feature_id": 340,
+      "operation": "new_body",
+      "angle_deg": 360.0,
+      "axis_origin": {
+        "x": 0.0,
+        "y": 123.0
+      },
+      "axis_direction": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "flip": false,
+      "profile_indices": [
+        0
+      ],
+      "sketch_name": "S03 J 90 degree countersink master",
+      "target_body_ids": [],
+      "new_body_ids": [
+        172
+      ],
+      "sketch": {
+        "name": "S03 J 90 degree countersink master",
+        "feature_id": 339,
+        "plane": {
+          "datum_id": 97,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum": {
+          "datum_id": 338,
+          "name": "S03 J 90 degree countersink master datum",
+          "feature_id": 338,
+          "basis": {
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "source": {
+            "distance": 0.0,
+            "reference": {
+              "plane": "xz",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          },
+          "note": "Chain datum for S03 J; prefer sketch.basis + datum 338 source over stale plane.datum_id if mismatched."
+        },
+        "geometry": {
+          "entity_count": 9,
+          "entity_types": {
+            "point": 5,
+            "line": 4
+          },
+          "point_bbox_uv": {
+            "umin": 0.0,
+            "umax": 4.4,
+            "vmin": 201.0,
+            "vmax": 203.2,
+            "du": 4.4,
+            "dv": 2.1999999999999886
+          },
+          "curves": [
+            {
+              "id": 3,
+              "end": 2,
+              "start": 1,
+              "type": "line"
+            },
+            {
+              "id": 5,
+              "end": 4,
+              "start": 2,
+              "type": "line"
+            },
+            {
+              "id": 7,
+              "end": 6,
+              "start": 4,
+              "type": "line"
+            },
+            {
+              "id": 9,
+              "end": 8,
+              "start": 6,
+              "type": "line"
+            }
+          ],
+          "points": [
+            {
+              "id": 1,
+              "x": 0.0,
+              "y": 201.0
+            },
+            {
+              "id": 2,
+              "x": 2.2,
+              "y": 201.0
+            },
+            {
+              "id": 4,
+              "x": 4.4,
+              "y": 203.2
+            },
+            {
+              "id": 6,
+              "x": 0.0,
+              "y": 203.2
+            },
+            {
+              "id": 8,
+              "x": 0.0,
+              "y": 201.0
+            }
+          ]
+        },
+        "constraint_count": 0,
+        "constraints": [],
+        "snapshot_full": {
+          "constraints": [],
+          "dim_modes": {},
+          "dim_params": {},
+          "dim_placements": {},
+          "entities": [
+            [
+              1,
+              {
+                "position": {
+                  "x": 0.0,
+                  "y": 201.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              2,
+              {
+                "position": {
+                  "x": 2.2,
+                  "y": 201.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              3,
+              {
+                "end": 2,
+                "start": 1,
+                "type": "line"
+              }
+            ],
+            [
+              4,
+              {
+                "position": {
+                  "x": 4.4,
+                  "y": 203.2
+                },
+                "type": "point"
+              }
+            ],
+            [
+              5,
+              {
+                "end": 4,
+                "start": 2,
+                "type": "line"
+              }
+            ],
+            [
+              6,
+              {
+                "position": {
+                  "x": 0.0,
+                  "y": 203.2
+                },
+                "type": "point"
+              }
+            ],
+            [
+              7,
+              {
+                "end": 6,
+                "start": 4,
+                "type": "line"
+              }
+            ],
+            [
+              8,
+              {
+                "position": {
+                  "x": 0.0,
+                  "y": 201.0
+                },
+                "type": "point"
+              }
+            ],
+            [
+              9,
+              {
+                "end": 8,
+                "start": 6,
+                "type": "line"
+              }
+            ]
+          ],
+          "fix_targets": {},
+          "next_constraint": 0,
+          "next_entity": 9,
+          "params": {
+            "next_id": 0,
+            "next_name": 0,
+            "params": []
+          }
+        },
+        "grid_snap": false,
+        "dimension_style": "aligned",
+        "datum_plane_id_in_plane_field": 97
+      }
+    },
+    {
+      "kind": "move_copy",
+      "name": "MoveCopy9",
+      "feature_id": 341,
+      "body_ids": [
+        172
+      ],
+      "copy": false,
+      "pivot": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 123.0
+      },
+      "result_body_ids": [
+        172
+      ],
+      "rotation": [
+        0.0,
+        0.4617486132350339,
+        0.0,
+        0.8870108331782217
+      ],
+      "translation": {
+        "x": 0.0,
+        "y": -75.0,
+        "z": 0.0
+      },
+      "type": "move_copy"
+    },
+    {
+      "kind": "rectangular_pattern",
+      "name": "RectangularPattern6",
+      "feature_id": 342,
+      "body_ids": [
+        172
+      ],
+      "count": 4,
+      "direction": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "new_body_ids": [
+        173,
+        174,
+        175
+      ],
+      "second_count": 1,
+      "second_direction": null,
+      "second_spacing": 0.0,
+      "spacing": 50.0,
+      "type": "rectangular_pattern"
+    },
+    {
+      "kind": "mirror",
+      "name": "Mirror7",
+      "feature_id": 343,
+      "body_ids": [
+        172,
+        173,
+        174,
+        175
+      ],
+      "new_body_ids": [
+        176,
+        177,
+        178,
+        179
+      ],
+      "plane": {
+        "plane": "yz",
+        "type": "origin_plane"
+      },
+      "plane_basis": {
+        "normal": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "u": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "type": "mirror"
+    },
+    {
+      "kind": "combine",
+      "name": "Combine14",
+      "feature_id": 344,
+      "keep_tools": false,
+      "operation": "cut",
+      "target_body_id": 141,
+      "tool_body_ids": [
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179
+      ],
+      "type": "combine"
+    }
+  ],
+  "feature_sequence_summary": [
+    {
+      "feature_id": 291,
+      "name": "MoveCopy5",
+      "kind": "move_copy",
+      "operation": null,
+      "sketch_name": null,
+      "extent": null,
+      "angle_deg": null,
+      "flip": null,
+      "target_body_ids": null,
+      "tool_body_ids": null,
+      "new_body_ids": [
+        141
+      ],
+      "body_ids": [
+        32
+      ],
+      "copy": true,
+      "translation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "pivot": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "count": null,
+      "spacing": null,
+      "direction": null,
+      "plane": null,
+      "axis_origin": null,
+      "axis_direction": null
+    },
+    {
+      "feature_id": 292,
+      "name": "S03 A rounded curved hatch boundary 180L 120deg datum",
+      "kind": "datum_plane",
+      "operation": null,
+      "sketch_name": null,
+      "extent": null,
+      "angle_deg": null,
+      "flip": null,
+      "target_body_ids": null,
+      "tool_body_ids": null,
+      "new_body_ids": null,
+      "body_ids": null,
+      "copy": null,
+      "translation": null,
+      "rotation": null,
+      "pivot": null,
+      "count": null,
+      "spacing": null,
+      "direction": null,
+      "plane": null,
+      "axis_origin": null,
+      "axis_direction": null
+    },
+    {
+      "feature_id": 293,
+      "name": "S03 A rounded curved hatch boundary 180L 120deg",
+      "kind": "sketch",
+      "operation": null,
+      "sketch_name": "S03 A rounded curved hatch boundary 180L 120deg",
+      "extent": null,
+      "angle_deg": null,
+      "flip": null,
+      "target_body_ids": null,
+      "tool_body_ids": null,
+      "new_body_ids": null,
+      "body_ids": null,
+      "copy": null,
+      "translation": null,
+      "rotation": null,
+      "pivot": null,
+      "count": null,
+      "spacing": null,
+      "direction": null,
+      "plane": null,
+      "axis_origin": null,
+      "axis_direction": null
+    },
+    {
+      "feature_id": 294,
+      "name": "Extrude88",
+      "kind": "extrude",
+      "operation": "new_body",
+      "sketch_name": "S03 A rounded curved hatch boundary 180L 120deg",
+      "extent": {
+        "distance": 110.0,
+        "type": "distance"
+      },
+      "angle_deg": null,
+      "flip": false,
+      "target_body_ids": null,
+      "tool_body_ids": null,
+      "new_body_ids": [
+        142
+      ],
+      "body_ids": null,
+      "copy": null,
+      "translation": null,
+      "rotation": null,
+      "pivot": null,
+      "count": null,
+      "spacing": null,
+      "direction": null,
+      "plane": null,
+      "axis_origin": null,
+      "axis_direction": null
+    },
+    {
+      "feature_id": 295,
+      "name": "Combine4",
+      "kind": "combine",
+      "operation": "intersect",
+      "sketch_name": null,
+      "extent": null,
+      "angle_deg": null,
+      "flip": null,
+      "target_body_ids": [
+        141
+      ],
+      "tool_body_ids": [
+        142
+      ],
+      "new_body_ids": null,
+      "body_ids": null,
+      "copy": null,
+      "translation": null,
+      "rotation": null,
+      "pivot": null,
+      "count": null,
+      "spacing": null,
+      "direction": null,
+      "plane": null,
+      "axis_origin": null,
+      "axis_direction": null
+    },
+    {
+      "feature_id": 330,
+      "name": "S03 I radial screw clearance master datum",
+      "kind": "datum_plane",
+      "operation": null,
+      "sketch_name": null,
+      "extent": null,
+      "angle_deg": null,
+      "flip": null,
+      "target_body_ids": null,
+      "tool_body_ids": null,
+      "new_body_ids": null,
+      "body_ids": null,
+      "copy": null,
+      "translation": null,
+      "rotation": null,
+      "pivot": null,
+      "count": null,
+      "spacing": null,
+      "direction": null,
+      "plane": null,
+      "axis_origin": null,
+      "axis_direction": null
+    },
+    {
+      "feature_id": 331,
+      "name": "S03 I radial screw clearance master",
+      "kind": "sketch",
+      "operation": null,
+      "sketch_name": "S03 I radial screw clearance master",
+      "extent": null,
+      "angle_deg": null,
+      "flip": null,
+      "target_body_ids": null,
+      "tool_body_ids": null,
+      "new_body_ids": null,
+      "body_ids": null,
+      "copy": null,
+      "translation": null,
+      "rotation": null,
+      "pivot": null,
+      "count": null,
+      "spacing": null,
+      "direction": null,
+      "plane": null,
+      "axis_origin": null,
+      "axis_direction": null
+    },
+    {
+      "feature_id": 332,
+      "name": "Extrude96",
+      "kind": "extrude",
+      "operation": "new_body",
+      "sketch_name": "S03 I radial screw clearance master",
+      "extent": {
+        "distance": 18.0,
+        "type": "distance"
+      },
+      "angle_deg": null,
+      "flip": false,
+      "target_body_ids": null,
+      "tool_body_ids": null,
+      "new_body_ids": [
+        164
+      ],
+      "body_ids": null,
+      "copy": null,
+      "translation": null,
+      "rotation": null,
+      "pivot": null,
+      "count": null,
+      "spacing": null,
+      "direction": null,
+      "plane": null,
+      "axis_origin": null,
+      "axis_direction": null
+    },
+    {
+      "feature_id": 333,
+      "name": "MoveCopy8",
+      "kind": "move_copy",
+      "operation": null,
+      "sketch_name": null,
+      "extent": null,
+      "angle_deg": null,
+      "flip": null,
+      "target_body_ids": null,
+      "tool_body_ids": null,
+      "new_body_ids": [
+        164
+      ],
+      "body_ids": [
+        164
+      ],
+      "copy": false,
+      "translation": {
+        "x": 0.0,
+        "y": -75.0,
+        "z": 0.0
+      },
+      "rotation": [
+        0.0,
+        0.4617486132350339,
+        0.0,
+        0.8870108331782217
+      ],
+      "pivot": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 123.0
+      },
+      "count": null,
+      "spacing": null,
+      "direction": null,
+      "plane": null,
+      "axis_origin": null,
+      "axis_direction": null
+    },
+    {
+      "feature_id": 334,
+      "name": "RectangularPattern5",
+      "kind": "rectangular_pattern",
+      "operation": null,
+      "sketch_name": null,
+      "extent": null,
+      "angle_deg": null,
+      "flip": null,
+      "target_body_ids": null,
+      "tool_body_ids": null,
+      "new_body_ids": [
+        165,
+        166,
+        167
+      ],
+      "body_ids": [
+        164
+      ],
+      "copy": null,
+      "translation": null,
+      "rotation": null,
+      "pivot": null,
+      "count": 4,
+      "spacing": 50.0,
+      "direction": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "plane": null,
+      "axis_origin": null,
+      "axis_direction": null
+    },
+    {
+      "feature_id": 335,
+      "name": "Mirror6",
+      "kind": "mirror",
+      "operation": null,
+      "sketch_name": null,
+      "extent": null,
+      "angle_deg": null,
+      "flip": null,
+      "target_body_ids": null,
+      "tool_body_ids": null,
+      "new_body_ids": [
+        168,
+        169,
+        170,
+        171
+      ],
+      "body_ids": [
+        164,
+        165,
+        166,
+        167
+      ],
+      "copy": null,
+      "translation": null,
+      "rotation": null,
+      "pivot": null,
+      "count": null,
+      "spacing": null,
+      "direction": null,
+      "plane": {
+        "plane": "yz",
+        "type": "origin_plane"
+      },
+      "axis_origin": null,
+      "axis_direction": null
+    },
+    {
+      "feature_id": 337,
+      "name": "Combine13",
+      "kind": "combine",
+      "operation": "cut",
+      "sketch_name": null,
+      "extent": null,
+      "angle_deg": null,
+      "flip": null,
+      "target_body_ids": [
+        141
+      ],
+      "tool_body_ids": [
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171
+      ],
+      "new_body_ids": null,
+      "body_ids": null,
+      "copy": null,
+      "translation": null,
+      "rotation": null,
+      "pivot": null,
+      "count": null,
+      "spacing": null,
+      "direction": null,
+      "plane": null,
+      "axis_origin": null,
+      "axis_direction": null
+    },
+    {
+      "feature_id": 338,
+      "name": "S03 J 90 degree countersink master datum",
+      "kind": "datum_plane",
+      "operation": null,
+      "sketch_name": null,
+      "extent": null,
+      "angle_deg": null,
+      "flip": null,
+      "target_body_ids": null,
+      "tool_body_ids": null,
+      "new_body_ids": null,
+      "body_ids": null,
+      "copy": null,
+      "translation": null,
+      "rotation": null,
+      "pivot": null,
+      "count": null,
+      "spacing": null,
+      "direction": null,
+      "plane": null,
+      "axis_origin": null,
+      "axis_direction": null
+    },
+    {
+      "feature_id": 339,
+      "name": "S03 J 90 degree countersink master",
+      "kind": "sketch",
+      "operation": null,
+      "sketch_name": "S03 J 90 degree countersink master",
+      "extent": null,
+      "angle_deg": null,
+      "flip": null,
+      "target_body_ids": null,
+      "tool_body_ids": null,
+      "new_body_ids": null,
+      "body_ids": null,
+      "copy": null,
+      "translation": null,
+      "rotation": null,
+      "pivot": null,
+      "count": null,
+      "spacing": null,
+      "direction": null,
+      "plane": null,
+      "axis_origin": null,
+      "axis_direction": null
+    },
+    {
+      "feature_id": 340,
+      "name": "Revolve1",
+      "kind": "revolve",
+      "operation": "new_body",
+      "sketch_name": "S03 J 90 degree countersink master",
+      "extent": null,
+      "angle_deg": 360.0,
+      "flip": false,
+      "target_body_ids": null,
+      "tool_body_ids": null,
+      "new_body_ids": [
+        172
+      ],
+      "body_ids": null,
+      "copy": null,
+      "translation": null,
+      "rotation": null,
+      "pivot": null,
+      "count": null,
+      "spacing": null,
+      "direction": null,
+      "plane": null,
+      "axis_origin": {
+        "x": 0.0,
+        "y": 123.0
+      },
+      "axis_direction": {
+        "x": 0.0,
+        "y": 1.0
+      }
+    },
+    {
+      "feature_id": 341,
+      "name": "MoveCopy9",
+      "kind": "move_copy",
+      "operation": null,
+      "sketch_name": null,
+      "extent": null,
+      "angle_deg": null,
+      "flip": null,
+      "target_body_ids": null,
+      "tool_body_ids": null,
+      "new_body_ids": [
+        172
+      ],
+      "body_ids": [
+        172
+      ],
+      "copy": false,
+      "translation": {
+        "x": 0.0,
+        "y": -75.0,
+        "z": 0.0
+      },
+      "rotation": [
+        0.0,
+        0.4617486132350339,
+        0.0,
+        0.8870108331782217
+      ],
+      "pivot": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 123.0
+      },
+      "count": null,
+      "spacing": null,
+      "direction": null,
+      "plane": null,
+      "axis_origin": null,
+      "axis_direction": null
+    },
+    {
+      "feature_id": 342,
+      "name": "RectangularPattern6",
+      "kind": "rectangular_pattern",
+      "operation": null,
+      "sketch_name": null,
+      "extent": null,
+      "angle_deg": null,
+      "flip": null,
+      "target_body_ids": null,
+      "tool_body_ids": null,
+      "new_body_ids": [
+        173,
+        174,
+        175
+      ],
+      "body_ids": [
+        172
+      ],
+      "copy": null,
+      "translation": null,
+      "rotation": null,
+      "pivot": null,
+      "count": 4,
+      "spacing": 50.0,
+      "direction": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "plane": null,
+      "axis_origin": null,
+      "axis_direction": null
+    },
+    {
+      "feature_id": 343,
+      "name": "Mirror7",
+      "kind": "mirror",
+      "operation": null,
+      "sketch_name": null,
+      "extent": null,
+      "angle_deg": null,
+      "flip": null,
+      "target_body_ids": null,
+      "tool_body_ids": null,
+      "new_body_ids": [
+        176,
+        177,
+        178,
+        179
+      ],
+      "body_ids": [
+        172,
+        173,
+        174,
+        175
+      ],
+      "copy": null,
+      "translation": null,
+      "rotation": null,
+      "pivot": null,
+      "count": null,
+      "spacing": null,
+      "direction": null,
+      "plane": {
+        "plane": "yz",
+        "type": "origin_plane"
+      },
+      "axis_origin": null,
+      "axis_direction": null
+    },
+    {
+      "feature_id": 344,
+      "name": "Combine14",
+      "kind": "combine",
+      "operation": "cut",
+      "sketch_name": null,
+      "extent": null,
+      "angle_deg": null,
+      "flip": null,
+      "target_body_ids": [
+        141
+      ],
+      "tool_body_ids": [
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179
+      ],
+      "new_body_ids": null,
+      "body_ids": null,
+      "copy": null,
+      "translation": null,
+      "rotation": null,
+      "pivot": null,
+      "count": null,
+      "spacing": null,
+      "direction": null,
+      "plane": null,
+      "axis_origin": null,
+      "axis_direction": null
+    }
+  ],
+  "sketches_used_in_order": [
+    "S03 A rounded curved hatch boundary 180L 120deg",
+    "S03 I radial screw clearance master",
+    "S03 J 90 degree countersink master"
+  ],
+  "sketches": {
+    "S03 A rounded curved hatch boundary 180L 120deg": {
+      "name": "S03 A rounded curved hatch boundary 180L 120deg",
+      "feature_id": 293,
+      "plane": {
+        "datum_id": 88,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin": [
+          0.0,
+          0.0,
+          123.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "datum": {
+        "datum_id": 292,
+        "name": "S03 A rounded curved hatch boundary 180L 120deg datum",
+        "feature_id": 292,
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            123.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "source": {
+          "distance": 123.0,
+          "reference": {
+            "plane": "xy",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        },
+        "note": "Chain datum 292; sketch.basis.origin z=123 matches. Prefer sketch.basis + datum 292 if plane.datum_id stale."
+      },
+      "geometry": {
+        "entity_count": 21,
+        "entity_types": {
+          "point": 13,
+          "line": 4,
+          "arc": 4
+        },
+        "point_bbox_uv": {
+          "umin": -69.0,
+          "umax": 69.0,
+          "vmin": -89.7,
+          "vmax": 89.7,
+          "du": 138.0,
+          "dv": 179.4
+        },
+        "curves": [
+          {
+            "id": 3,
+            "end": 2,
+            "start": 1,
+            "type": "line"
+          },
+          {
+            "id": 4,
+            "center": {
+              "x": 61.00000000000013,
+              "y": -81.70000000000023
+            },
+            "end_angle": 2.842170943040446e-14,
+            "radius": 7.999999999999773,
+            "start_angle": -1.5707963267949125,
+            "type": "arc"
+          },
+          {
+            "id": 8,
+            "end": 7,
+            "start": 6,
+            "type": "line"
+          },
+          {
+            "id": 9,
+            "center": {
+              "x": 61.0000000000002,
+              "y": 81.70000000000017
+            },
+            "end_angle": 1.5707963267949214,
+            "radius": 7.999999999999801,
+            "start_angle": -2.1316282072803536e-14,
+            "type": "arc"
+          },
+          {
+            "id": 13,
+            "end": 12,
+            "start": 11,
+            "type": "line"
+          },
+          {
+            "id": 14,
+            "center": {
+              "x": -61.00000000000013,
+              "y": 81.70000000000023
+            },
+            "end_angle": -3.1415926535897647,
+            "radius": 7.999999999999773,
+            "start_angle": 1.5707963267948806,
+            "type": "arc"
+          },
+          {
+            "id": 18,
+            "end": 17,
+            "start": 16,
+            "type": "line"
+          },
+          {
+            "id": 19,
+            "center": {
+              "x": -61.0000000000002,
+              "y": -81.70000000000017
+            },
+            "end_angle": -1.5707963267948717,
+            "radius": 7.999999999999801,
+            "start_angle": 3.141592653589772,
+            "type": "arc"
+          }
+        ],
+        "points": [
+          {
+            "id": 1,
+            "x": -61.0,
+            "y": -89.7
+          },
+          {
+            "id": 2,
+            "x": 61.0,
+            "y": -89.7
+          },
+          {
+            "id": 5,
+            "x": 61.0,
+            "y": -89.7
+          },
+          {
+            "id": 6,
+            "x": 69.0,
+            "y": -81.7
+          },
+          {
+            "id": 7,
+            "x": 69.0,
+            "y": 81.7
+          },
+          {
+            "id": 10,
+            "x": 69.0,
+            "y": 81.7
+          },
+          {
+            "id": 11,
+            "x": 61.0,
+            "y": 89.7
+          },
+          {
+            "id": 12,
+            "x": -61.0,
+            "y": 89.7
+          },
+          {
+            "id": 15,
+            "x": -61.0,
+            "y": 89.7
+          },
+          {
+            "id": 16,
+            "x": -69.0,
+            "y": 81.7
+          },
+          {
+            "id": 17,
+            "x": -69.0,
+            "y": -81.7
+          },
+          {
+            "id": 20,
+            "x": -69.0,
+            "y": -81.7
+          },
+          {
+            "id": 21,
+            "x": -61.0,
+            "y": -89.7
+          }
+        ]
+      },
+      "constraint_count": 8,
+      "constraints": [
+        {
+          "id": 1,
+          "arc": 4,
+          "end": "start",
+          "point": 5,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 2,
+          "arc": 4,
+          "end": "end",
+          "point": 6,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 3,
+          "arc": 9,
+          "end": "start",
+          "point": 10,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 4,
+          "arc": 9,
+          "end": "end",
+          "point": 11,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 5,
+          "arc": 14,
+          "end": "start",
+          "point": 15,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 6,
+          "arc": 14,
+          "end": "end",
+          "point": 16,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 7,
+          "arc": 19,
+          "end": "start",
+          "point": 20,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 8,
+          "arc": 19,
+          "end": "end",
+          "point": 21,
+          "type": "arc_endpoint_coincident"
+        }
+      ],
+      "snapshot_full": {
+        "constraints": [
+          [
+            1,
+            {
+              "arc": 4,
+              "end": "start",
+              "point": 5,
+              "type": "arc_endpoint_coincident"
+            }
+          ],
+          [
+            2,
+            {
+              "arc": 4,
+              "end": "end",
+              "point": 6,
+              "type": "arc_endpoint_coincident"
+            }
+          ],
+          [
+            3,
+            {
+              "arc": 9,
+              "end": "start",
+              "point": 10,
+              "type": "arc_endpoint_coincident"
+            }
+          ],
+          [
+            4,
+            {
+              "arc": 9,
+              "end": "end",
+              "point": 11,
+              "type": "arc_endpoint_coincident"
+            }
+          ],
+          [
+            5,
+            {
+              "arc": 14,
+              "end": "start",
+              "point": 15,
+              "type": "arc_endpoint_coincident"
+            }
+          ],
+          [
+            6,
+            {
+              "arc": 14,
+              "end": "end",
+              "point": 16,
+              "type": "arc_endpoint_coincident"
+            }
+          ],
+          [
+            7,
+            {
+              "arc": 19,
+              "end": "start",
+              "point": 20,
+              "type": "arc_endpoint_coincident"
+            }
+          ],
+          [
+            8,
+            {
+              "arc": 19,
+              "end": "end",
+              "point": 21,
+              "type": "arc_endpoint_coincident"
+            }
+          ]
+        ],
+        "dim_modes": {},
+        "dim_params": {},
+        "dim_placements": {},
+        "entities": [
+          [
+            1,
+            {
+              "position": {
+                "x": -61.0,
+                "y": -89.7
+              },
+              "type": "point"
+            }
+          ],
+          [
+            2,
+            {
+              "position": {
+                "x": 61.0,
+                "y": -89.7
+              },
+              "type": "point"
+            }
+          ],
+          [
+            3,
+            {
+              "end": 2,
+              "start": 1,
+              "type": "line"
+            }
+          ],
+          [
+            4,
+            {
+              "center": {
+                "x": 61.00000000000013,
+                "y": -81.70000000000023
+              },
+              "end_angle": 2.842170943040446e-14,
+              "radius": 7.999999999999773,
+              "start_angle": -1.5707963267949125,
+              "type": "arc"
+            }
+          ],
+          [
+            5,
+            {
+              "position": {
+                "x": 61.0,
+                "y": -89.7
+              },
+              "type": "point"
+            }
+          ],
+          [
+            6,
+            {
+              "position": {
+                "x": 69.0,
+                "y": -81.7
+              },
+              "type": "point"
+            }
+          ],
+          [
+            7,
+            {
+              "position": {
+                "x": 69.0,
+                "y": 81.7
+              },
+              "type": "point"
+            }
+          ],
+          [
+            8,
+            {
+              "end": 7,
+              "start": 6,
+              "type": "line"
+            }
+          ],
+          [
+            9,
+            {
+              "center": {
+                "x": 61.0000000000002,
+                "y": 81.70000000000017
+              },
+              "end_angle": 1.5707963267949214,
+              "radius": 7.999999999999801,
+              "start_angle": -2.1316282072803536e-14,
+              "type": "arc"
+            }
+          ],
+          [
+            10,
+            {
+              "position": {
+                "x": 69.0,
+                "y": 81.7
+              },
+              "type": "point"
+            }
+          ],
+          [
+            11,
+            {
+              "position": {
+                "x": 61.0,
+                "y": 89.7
+              },
+              "type": "point"
+            }
+          ],
+          [
+            12,
+            {
+              "position": {
+                "x": -61.0,
+                "y": 89.7
+              },
+              "type": "point"
+            }
+          ],
+          [
+            13,
+            {
+              "end": 12,
+              "start": 11,
+              "type": "line"
+            }
+          ],
+          [
+            14,
+            {
+              "center": {
+                "x": -61.00000000000013,
+                "y": 81.70000000000023
+              },
+              "end_angle": -3.1415926535897647,
+              "radius": 7.999999999999773,
+              "start_angle": 1.5707963267948806,
+              "type": "arc"
+            }
+          ],
+          [
+            15,
+            {
+              "position": {
+                "x": -61.0,
+                "y": 89.7
+              },
+              "type": "point"
+            }
+          ],
+          [
+            16,
+            {
+              "position": {
+                "x": -69.0,
+                "y": 81.7
+              },
+              "type": "point"
+            }
+          ],
+          [
+            17,
+            {
+              "position": {
+                "x": -69.0,
+                "y": -81.7
+              },
+              "type": "point"
+            }
+          ],
+          [
+            18,
+            {
+              "end": 17,
+              "start": 16,
+              "type": "line"
+            }
+          ],
+          [
+            19,
+            {
+              "center": {
+                "x": -61.0000000000002,
+                "y": -81.70000000000017
+              },
+              "end_angle": -1.5707963267948717,
+              "radius": 7.999999999999801,
+              "start_angle": 3.141592653589772,
+              "type": "arc"
+            }
+          ],
+          [
+            20,
+            {
+              "position": {
+                "x": -69.0,
+                "y": -81.7
+              },
+              "type": "point"
+            }
+          ],
+          [
+            21,
+            {
+              "position": {
+                "x": -61.0,
+                "y": -89.7
+              },
+              "type": "point"
+            }
+          ]
+        ],
+        "fix_targets": {},
+        "next_constraint": 8,
+        "next_entity": 21,
+        "params": {
+          "next_id": 0,
+          "next_name": 0,
+          "params": []
+        }
+      },
+      "grid_snap": false,
+      "dimension_style": "aligned",
+      "plane_datum_id_field": 88
+    },
+    "S03 I radial screw clearance master": {
+      "name": "S03 I radial screw clearance master",
+      "feature_id": 331,
+      "plane": {
+        "datum_id": 96,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin": [
+          0.0,
+          0.0,
+          190.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "datum": {
+        "datum_id": 330,
+        "name": "S03 I radial screw clearance master datum",
+        "feature_id": 330,
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            190.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "source": {
+          "distance": 190.0,
+          "reference": {
+            "plane": "xy",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        },
+        "note": "Authoritative for this sketch: sketch.basis.origin z=190 matches datum 330. plane.datum_id=96 is STALE (S02 I)."
+      },
+      "geometry": {
+        "entity_count": 1,
+        "entity_types": {
+          "circle": 1
+        },
+        "point_bbox_uv": null,
+        "curves": [
+          {
+            "id": 1,
+            "center": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "radius": 2.2,
+            "type": "circle"
+          }
+        ],
+        "points": []
+      },
+      "constraint_count": 0,
+      "constraints": [],
+      "snapshot_full": {
+        "constraints": [],
+        "dim_modes": {},
+        "dim_params": {},
+        "dim_placements": {},
+        "entities": [
+          [
+            1,
+            {
+              "center": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "radius": 2.2,
+              "type": "circle"
+            }
+          ]
+        ],
+        "fix_targets": {},
+        "next_constraint": 0,
+        "next_entity": 1,
+        "params": {
+          "next_id": 0,
+          "next_name": 0,
+          "params": []
+        }
+      },
+      "grid_snap": false,
+      "dimension_style": "aligned",
+      "datum_plane_id_stale": 96,
+      "datum_from_plane_field": {
+        "datum_id": 96,
+        "name": "S02 I side-load nut pocket (-18, 51) datum",
+        "feature_id": 96,
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            44.9,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "source": {
+          "distance": -44.9,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "verify_stale_plane_datum_id": {
+        "plane_datum_id": 96,
+        "correct_chain_datum_id": 330,
+        "sketch_basis_origin": [
+          0.0,
+          0.0,
+          190.0
+        ]
+      }
+    },
+    "S03 J 90 degree countersink master": {
+      "name": "S03 J 90 degree countersink master",
+      "feature_id": 339,
+      "plane": {
+        "datum_id": 97,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "datum": {
+        "datum_id": 338,
+        "name": "S03 J 90 degree countersink master datum",
+        "feature_id": 338,
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "source": {
+          "distance": 0.0,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        },
+        "note": "Chain datum for S03 J; prefer sketch.basis + datum 338 source over stale plane.datum_id if mismatched."
+      },
+      "geometry": {
+        "entity_count": 9,
+        "entity_types": {
+          "point": 5,
+          "line": 4
+        },
+        "point_bbox_uv": {
+          "umin": 0.0,
+          "umax": 4.4,
+          "vmin": 201.0,
+          "vmax": 203.2,
+          "du": 4.4,
+          "dv": 2.1999999999999886
+        },
+        "curves": [
+          {
+            "id": 3,
+            "end": 2,
+            "start": 1,
+            "type": "line"
+          },
+          {
+            "id": 5,
+            "end": 4,
+            "start": 2,
+            "type": "line"
+          },
+          {
+            "id": 7,
+            "end": 6,
+            "start": 4,
+            "type": "line"
+          },
+          {
+            "id": 9,
+            "end": 8,
+            "start": 6,
+            "type": "line"
+          }
+        ],
+        "points": [
+          {
+            "id": 1,
+            "x": 0.0,
+            "y": 201.0
+          },
+          {
+            "id": 2,
+            "x": 2.2,
+            "y": 201.0
+          },
+          {
+            "id": 4,
+            "x": 4.4,
+            "y": 203.2
+          },
+          {
+            "id": 6,
+            "x": 0.0,
+            "y": 203.2
+          },
+          {
+            "id": 8,
+            "x": 0.0,
+            "y": 201.0
+          }
+        ]
+      },
+      "constraint_count": 0,
+      "constraints": [],
+      "snapshot_full": {
+        "constraints": [],
+        "dim_modes": {},
+        "dim_params": {},
+        "dim_placements": {},
+        "entities": [
+          [
+            1,
+            {
+              "position": {
+                "x": 0.0,
+                "y": 201.0
+              },
+              "type": "point"
+            }
+          ],
+          [
+            2,
+            {
+              "position": {
+                "x": 2.2,
+                "y": 201.0
+              },
+              "type": "point"
+            }
+          ],
+          [
+            3,
+            {
+              "end": 2,
+              "start": 1,
+              "type": "line"
+            }
+          ],
+          [
+            4,
+            {
+              "position": {
+                "x": 4.4,
+                "y": 203.2
+              },
+              "type": "point"
+            }
+          ],
+          [
+            5,
+            {
+              "end": 4,
+              "start": 2,
+              "type": "line"
+            }
+          ],
+          [
+            6,
+            {
+              "position": {
+                "x": 0.0,
+                "y": 203.2
+              },
+              "type": "point"
+            }
+          ],
+          [
+            7,
+            {
+              "end": 6,
+              "start": 4,
+              "type": "line"
+            }
+          ],
+          [
+            8,
+            {
+              "position": {
+                "x": 0.0,
+                "y": 201.0
+              },
+              "type": "point"
+            }
+          ],
+          [
+            9,
+            {
+              "end": 8,
+              "start": 6,
+              "type": "line"
+            }
+          ]
+        ],
+        "fix_targets": {},
+        "next_constraint": 0,
+        "next_entity": 9,
+        "params": {
+          "next_id": 0,
+          "next_name": 0,
+          "params": []
+        }
+      },
+      "grid_snap": false,
+      "dimension_style": "aligned",
+      "datum_plane_id_in_plane_field": 97
+    }
+  },
+  "timeline_context": {
+    "shell_dependency": {
+      "move_copy5": {
+        "body_ids": [
+          32
+        ],
+        "copy": true,
+        "feature_id": 291,
+        "name": "MoveCopy5",
+        "pivot": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "result_body_ids": [
+          141
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "translation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "type": "move_copy"
+      },
+      "source_body_id": 32,
+      "source_seed_extrude1": {
+        "name": "Extrude1",
+        "feature_id": 23,
+        "operation": "new_body",
+        "extent": {
+          "distance": 210.0,
+          "type": "distance"
+        },
+        "sketch_name": "S02 A continuous exoskeleton 160OD 152ID 210L",
+        "new_body_ids": [
+          32
+        ],
+        "flip": true
+      },
+      "note": "Body 32 at fid 291 includes Extrude1 plus all shell joins/cuts before MoveCopy5 \u2014 not Extrude1 alone."
+    },
+    "hatch_local_create": "MoveCopy5 \u2192 Extrude88 \u2192 Combine4 (intersect)",
+    "hatch_fastener_cuts": "Extrude96\u2192MoveCopy8\u2192RectPattern5\u2192Mirror6\u2192Combine13; Revolve1\u2192MoveCopy9\u2192RectPattern6\u2192Mirror7\u2192Combine14",
+    "shell_side_s03_not_modifying_141": {
+      "fids": [
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        328,
+        329,
+        336
+      ],
+      "note": "S03 B\u2013H and Combine5/9\u201312 modify shell 32 / lap ledge 144, not hatch 141. Hatch chapter must not re-cut shell."
+    }
+  },
+  "verify_gaps": [
+    {
+      "topic": "stale_sketch_plane_datum_id",
+      "feature": "S03 I radial screw clearance master",
+      "detail": "Native sketch.plane.datum_id=96 (S02 I side-load nut pocket Y44.9) but sketch.basis.origin=[0,0,190] matches datum 330 (offset 190 from origin XY). JSONC must use datum 330 / Z=190, not datum 96."
+    },
+    {
+      "topic": "shell_copy_dependency",
+      "feature": "MoveCopy5",
+      "detail": "Hatch starts as identity copy of body 32 at fid 291. Full blank-doc port needs complete shell feature history through that point (large \u2014 Extrude1 + many S02 features). Do NOT invent OD160/ID152 tube as substitute without proving AABB match."
+    },
+    {
+      "topic": "intersect_tool",
+      "feature": "Extrude88 / Combine4",
+      "detail": "Boundary tool sketch S03 A + extent 110 \u2014 fully dumped; intersect needs shell-copy solid."
+    },
+    {
+      "topic": "pattern_mirror_tooling",
+      "feature": "RectangularPattern5/6 + Mirror6/7",
+      "detail": "Eight screw-clearance tools (164\u2013171) and eight countersink tools (172\u2013179) from masters Extrude96 / Revolve1 via MoveCopy (quat+Y-75), pattern count=4 spacing=50 along +Y, mirror YZ."
+    },
+    {
+      "topic": "revolve_countersink",
+      "feature": "Revolve1",
+      "detail": "Only revolve in document; 360\u00b0 about axis_origin (0,123) dir (0,1) \u2014 port exact."
+    },
+    {
+      "topic": "quat_rotation_movecopy",
+      "feature": "MoveCopy8/9",
+      "detail": "rotation quat [0, 0.4617486132350339, 0, 0.8870108331782217] + translation Y-75, pivot Z123. Port exact quaternion; do not invent angle."
+    },
+    {
+      "topic": "coupon_chapter_partial",
+      "feature": "design_v0_1_structural_hatch.nbcad.jsonc",
+      "detail": "Prior chapter = lap/M4 + panel-arc coupons only. This pass: dump complete; JSONC partial until shell dependency resolved. Keep coupons as README note under first-prints/coupons."
+    }
+  ],
+  "jsonc_rebuild_guidance": {
+    "do_not_invent": true,
+    "chapter_suggestion": "design/design_v0_1_structural_hatch.nbcad.jsonc",
+    "order": [
+      "VERIFY BLOCKER: shell body 32 replay through fid<291 (or import retained shell solid)",
+      "MoveCopy5 copy body 32 \u2192 hatch (identity)",
+      "Extrude88 new_body from S03 A (boundary tool 142)",
+      "Combine4 intersect hatch \u2229 142",
+      "Extrude96 master \u2192 MoveCopy8 \u2192 RectangularPattern5 \u2192 Mirror6 \u2192 Combine13 cut hatch",
+      "Revolve1 master \u2192 MoveCopy9 \u2192 RectangularPattern6 \u2192 Mirror7 \u2192 Combine14 cut hatch",
+      "Blank-doc replay; AABB vs first-prints/shell-first-review/curved-hatch-assembly-coordinates.stl"
+    ],
+    "partial_port_ok": "Shell chain too large this pass: land dump + partial JSONC (native sketch/pattern params + VERIFY blockers). Retain coupon note in README; still push dump.",
+    "assemble_coordination": "After barrel_shell (when shell JSONC exists). Hatch chapter must not re-cut shell 32 (Combine12/16 stay shell chapter)."
+  },
+  "aabb_comparison": {
+    "s03a_sketch_point_bbox_uv": {
+      "umin": -69.0,
+      "umax": 69.0,
+      "vmin": -89.7,
+      "vmax": 89.7,
+      "du": 138.0,
+      "dv": 179.4
+    },
+    "review_stl_assembly_coordinates": {
+      "xmin": -69.0,
+      "xmax": 69.0,
+      "ymin": -89.69999694824219,
+      "ymax": 89.69999694824219,
+      "zmin": 154.85906982421875,
+      "zmax": 202.95187377929688,
+      "dx": 138.0,
+      "dy": 179.39999389648438,
+      "dz": 48.092803955078125,
+      "tri_count": 4296,
+      "path": "first-prints/shell-first-review/curved-hatch-assembly-coordinates.stl"
+    },
+    "review_stl_axle_vertical": {
+      "xmin": -69.0,
+      "xmax": 69.0,
+      "ymin": -24.046401977539062,
+      "ymax": 24.046401977539062,
+      "zmin": 0.0,
+      "zmax": 179.39999389648438,
+      "dx": 138.0,
+      "dy": 48.092803955078125,
+      "dz": 179.39999389648438,
+      "tri_count": 4296,
+      "path": "first-prints/shell-first-review/curved-hatch-axle-vertical.stl"
+    },
+    "note": "Final hatch AABB is shell\u2229boundary minus fasteners \u2014 not Extrude88 alone.",
+    "match": {
+      "blank_doc_replay_aabb": null,
+      "status": "pending_shell_dependency"
+    }
+  }
+}

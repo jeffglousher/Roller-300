@@ -76,7 +76,7 @@
       }
     ]
   },
-  "note": "Derived from native dump replay \u2014 not one-drive placeholder.",
+  "note": "Carriage/caps/wheel_caps from native dump replay. Hatch dump complete; export pending shell port.",
   "wheel_caps": {
     "source_chapter": "design/design_v0_1_wheel_caps.nbcad.jsonc",
     "native_dumps": [
@@ -129,5 +129,26 @@
         ]
       }
     ]
+  },
+  "hatch": {
+    "source_chapter": "design/design_v0_1_structural_hatch.nbcad.jsonc",
+    "native_dump": "design/native-port/hatch-141.{md,json}",
+    "native_body_id": 141,
+    "role": "hatch",
+    "replay_ok": false,
+    "status": "dump_complete_jsonc_partial_shell_blocker",
+    "blocker": "MoveCopy5 identity copy of shell body 32 \u2014 blank-doc AABB match deferred",
+    "aabb_target": {
+      "xmin": -69.0,
+      "xmax": 69.0,
+      "ymin": -89.7,
+      "ymax": 89.7,
+      "zmin": 154.85906982421875,
+      "zmax": 202.95187377929688,
+      "dx": 138.0,
+      "dy": 179.4,
+      "dz": 48.092803955078125
+    },
+    "exports": null
   }
 }
