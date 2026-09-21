@@ -3,7 +3,7 @@
   "architecture": "shell-first modular Design Ops cut",
   "native_master": "Roller-300.nbcad",
   "ai_sot": "design/*.nbcad.jsonc",
-  "revision_note": "VERSION 0.1: coupons retained; one-drive placeholder DEPRECATED; native-port inventory added for body-accurate JSONC. Print SoT shell-first-review. Repo tracks; sessions transitory.",
+  "revision_note": "VERSION 0.1: left_input_carriage chapter rebuilt from native-port dump (body 97); coupons retained; one-drive DEPRECATED; native-port exports under first-prints/native-port/.",
   "modules": [
     {
       "file": "design_v0_1_hardware_refs.nbcad.jsonc",
@@ -18,7 +18,7 @@
     {
       "file": "design_v0_1_input_carriage.nbcad.jsonc",
       "stage": "S02",
-      "role": "input_carriage"
+      "role": "left_input_carriage"
     },
     {
       "file": "design_v0_1_structural_hatch.nbcad.jsonc",
@@ -82,7 +82,7 @@
       "design_v0_1_electronics_mounts.nbcad.jsonc#thermal_envelope_shelf_coupon"
     ],
     "still_empty": [],
-    "next_fill_target": "one_drive open call: ear/strap/M3/M4 pattern coupons from Jeff measurements; then grow barrel_shell from saddle toward OD160 only after one-drive fit feedback. Full assembly still HOLD."
+    "next_fill_target": "Native-port: left_input_carriage JSONC replayed + exported. Next dump/port input_cap_inner (100) then outer (108) for shared M3; full shell HOLD."
   },
   "one_drive": {
     "status": "deprecated_failed_placeholder",
@@ -104,15 +104,25 @@
     "native_master": "Roller-300.nbcad",
     "shell_first_review": "first-prints/shell-first-review/",
     "coupons": "first-prints/coupons/",
-    "one_drive": "DEPRECATED — see first-prints/one-drive/DEPRECATED.md"
+    "one_drive": "DEPRECATED \u2014 see first-prints/one-drive/DEPRECATED.md"
   },
   "native_port": {
-    "status": "inventory",
+    "status": "carriage_jsonc_replayed",
     "path": "design/native-port/",
+    "completed": [
+      {
+        "role": "left_input_carriage",
+        "body_id": 97,
+        "chapter": "design_v0_1_input_carriage.nbcad.jsonc",
+        "exports": "first-prints/native-port/left-input-carriage.{3mf,stl}",
+        "aabb": "X30-69 Y2-102 Z88-123 (39x100x35)"
+      }
+    ],
     "next_body": {
-      "role": "left_input_carriage",
-      "body_id": 97
+      "role": "input_cap_inner",
+      "body_id": 100,
+      "note": "Needed for shared Extrude67 M3 with carriage; then input_cap_outer 108 / Extrude74"
     },
-    "note": "Inventory from Roller-300.nbcad model.json; JSONC chapters to be ported from native feature params, not invented blocks."
+    "note": "JSONC ported from native feature dumps only \u2014 no invented blocks."
   }
 }

@@ -1,0 +1,36 @@
+{
+  "source_chapter": "design/design_v0_1_input_carriage.nbcad.jsonc",
+  "native_dump": "design/native-port/left_input_carriage-97.{md,json}",
+  "native_body_id": 97,
+  "role": "left_input_carriage",
+  "replay_ok": true,
+  "steps_completed": 187,
+  "aabb": {
+    "xmin": 30.0,
+    "xmax": 69.0,
+    "ymin": 2.0,
+    "ymax": 102.0,
+    "zmin": 88.0,
+    "zmax": 123.00000000000004,
+    "dx": 39.0,
+    "dy": 100.0,
+    "dz": 35.00000000000004
+  },
+  "aabb_target": {
+    "xmin": 30,
+    "xmax": 69,
+    "ymin": 2,
+    "ymax": 102,
+    "zmin": 88,
+    "zmax": 123,
+    "dx": 39,
+    "dy": 100,
+    "dz": 35
+  },
+  "aabb_match": true,
+  "exports": [
+    "left-input-carriage.3mf",
+    "left-input-carriage.stl"
+  ],
+  "note": "Derived from native dump replay \u2014 not one-drive placeholder."
+}

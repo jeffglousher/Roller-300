@@ -1,25 +1,25 @@
-﻿// Roller-300 design_v0_1_input_carriage ΓÇö modular Design Ops chapter (VERSION 0.1)
-// Role: S02 ΓÇö Removable input carriage ΓÇö minimal rail/slot coupon
-// SoT: this .nbcad.jsonc. Replay: blank document only.
-// Slot travel ┬▒1.5 and size [7.4,4.4] from parameters.transmission. Slot cut length 10.4 = 7.4+3.0.
-// VERIFY: add R1 corner (parameters.slot_corner_radius) ΓÇö not applied in this coupon cut.
-// Full carriage still REVIEW STL only under first-prints/shell-first-review/.
+// Roller-300 design_v0_1_input_carriage — modular Design Ops chapter (VERSION 0.1)
+// Role noun: left_input_carriage (native body 97)
+// SoT: this .nbcad.jsonc. Replay: blank document only (starting_state empty).
+// Source: design/native-port/left_input_carriage-97.md + .json — dump-only, no invented blocks.
+// Sequence: Extrude62→86 in fid order; Mirror2 skipped (left-only). Carriage-only M3 cuts.
+// Shared named refs + $ref/$select. AABB target: X30–69 Y2–102 Z88–123 (39×100×35).
 {
   "version": 1,
-  "name": "Roller-300 design_v0_1_input_carriage (VERSION 0.1) \u2014 rail slot coupon",
+  "name": "Roller-300 design_v0_1_input_carriage (VERSION 0.1) \u2014 left_input_carriage native body 97",
   "starting_state": "empty",
   "steps": [
     {
-      "chapter": "Shared refs \u2014 carriage travel",
-      "note": "parameters.transmission: carriage_slot_size_xy [7.4, 4.4], slot_corner_radius 1, available_translation_x [-1.5, 1.5]. travel_status: CAD clearance screen only."
+      "chapter": "Shared refs \u2014 left_input_carriage (native body 97)",
+      "note": "VERSION 0.1. Ported from design/native-port/left_input_carriage-97.* \u2014 no invented blocks. Datum offsets use native signed distances (XZ negatives \u2192 +Y origin). Skip Mirror2 (right copies 122\u2013124). Extrude67/74 cut carriage only; shared M3 through caps 100/108 deferred to cap chapters / assemble. Transient new_body_ids are tool solids \u2014 not SoT bodies."
     },
     {
-      "id": "ref_rail_xy",
+      "id": "ref_origin_xy",
       "call": {
         "group": "solid/reference",
         "operation": "construction_plane_offset",
         "arguments": {
-          "name": "carriage_rail_coupon_bed / shared",
+          "name": "origin_xy / shared",
           "distance": 0.0,
           "reference": {
             "type": "origin_plane",
@@ -29,25 +29,84 @@
       }
     },
     {
-      "chapter": "Carriage rail slot travel coupon",
-      "note": "Minimal coupon: rail block with slot 7.4\u00d74.4 (parameters) and engraved travel stops at \u00b11.5 mm intent via slot length = 7.4 + 3.0 = 10.4 along X (slot width 4.4 in Y). Corner R1 from parameters. Slot = fastener travel window; VERIFY against native carriage before locking."
-    },
-    {
-      "id": "rail_begin",
+      "id": "ref_origin_xz",
       "call": {
-        "group": "sketch/draw",
-        "operation": "sketch_begin",
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
         "arguments": {
-          "name": "carriage_rail_coupon_block",
-          "plane": {
+          "name": "origin_xz / shared",
+          "distance": 0.0,
+          "reference": {
             "type": "origin_plane",
-            "plane": "xy"
+            "plane": "xz"
           }
         }
       }
     },
     {
-      "id": "rail_nosnap",
+      "id": "ref_origin_yz",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "origin_yz / shared",
+          "distance": 0.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "yz"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "Extrude62 \u2014 new_body",
+      "note": "Native fid 208; sketch `S02 O LEFT adjustable input carriage`; extent 100.0; flip=True; profiles=[0]; native targets []; new_body_ids tool solids [97] (not SoT). "
+    },
+    {
+      "id": "pl_carriage_y2",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "left_input_carriage_rail_Y2 / shared",
+          "distance": -2.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "datum pl_carriage_y2",
+      "note": "Native basis origin [0.0, 2.0, 0.0]; source distance -2.0 from origin xz."
+    },
+    {
+      "id": "sk_Extrude62_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude62__S02 O LEFT adjustable input carriage",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_carriage_y2"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude62_nosnap",
       "call": {
         "group": "sketch/selection",
         "operation": "sketch_set_grid_snap",
@@ -57,28 +116,28 @@
       }
     },
     {
-      "id": "rail_rect",
+      "id": "sk_Extrude62_rect",
       "call": {
         "group": "sketch/draw",
         "operation": "sketch_add_rectangle_locked",
         "arguments": {
           "mode": "two_point",
           "anchor": {
-            "x": -15,
-            "y": -8
+            "x": 30.0,
+            "y": 88.0
           },
           "corner_hint": {
-            "x": 15,
-            "y": 8
+            "x": 65.0,
+            "y": 92.0
           },
-          "width_mm": 30.0,
-          "height_mm": 16.0,
+          "width_mm": 35.0,
+          "height_mm": 4.0,
           "ctrl_held": true
         }
       }
     },
     {
-      "id": "rail_snap",
+      "id": "sk_Extrude62_snap",
       "call": {
         "group": "sketch/selection",
         "operation": "sketch_set_grid_snap",
@@ -88,7 +147,7 @@
       }
     },
     {
-      "id": "rail_finish",
+      "id": "sk_Extrude62_finish",
       "call": {
         "group": "sketch/draw",
         "operation": "sketch_finish",
@@ -96,32 +155,32 @@
       }
     },
     {
-      "id": "rail_ex",
+      "id": "ex_Extrude62",
       "call": {
         "group": "solid/build",
         "operation": "solid_extrude",
         "arguments": {
-          "sketch_name": "carriage_rail_coupon_block",
+          "sketch_name": "Extrude62__S02 O LEFT adjustable input carriage",
           "profile_indices": [
             0
           ],
           "operation": "new_body",
           "extent": {
             "type": "distance",
-            "distance": 6.0
+            "distance": 100.0
           },
           "taper_angle_deg": 0,
-          "flip": false,
+          "flip": true,
           "target_body_ids": []
         }
       }
     },
     {
       "let": {
-        "rail_feat": {
+        "left_input_carriage_feat": {
           "$select": {
             "from": {
-              "$ref": "rail_ex"
+              "$ref": "ex_Extrude62"
             },
             "path": "/document/features",
             "take": "last",
@@ -132,15 +191,15 @@
     },
     {
       "let": {
-        "carriage_rail_coupon_body": {
+        "left_input_carriage_body": {
           "$select": {
             "from": {
-              "$ref": "rail_ex"
+              "$ref": "ex_Extrude62"
             },
             "path": "/scene/bodies",
             "where": {
               "/feature_id": {
-                "$ref": "rail_feat"
+                "$ref": "left_input_carriage_feat"
               }
             },
             "take": "one"
@@ -149,21 +208,54 @@
       }
     },
     {
-      "id": "slot_begin",
+      "chapter": "Extrude63 \u2014 join",
+      "note": "Native fid 211; sketch `S02 P supported input post Y70`; extent 8.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [98] (not SoT). "
+    },
+    {
+      "id": "pl_post_y66",
       "call": {
-        "group": "sketch/draw",
-        "operation": "sketch_begin",
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
         "arguments": {
-          "name": "carriage_slot_travel",
-          "plane": {
+          "name": "left_input_post_Y66 / shared",
+          "distance": -66.0,
+          "reference": {
             "type": "origin_plane",
-            "plane": "xy"
+            "plane": "xz"
           }
         }
       }
     },
     {
-      "id": "slot_nosnap",
+      "chapter": "datum pl_post_y66",
+      "note": "Native basis origin [0.0, 66.0, 0.0]; source distance -66.0 from origin xz."
+    },
+    {
+      "id": "sk_Extrude63_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude63__S02 P supported input post Y70",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_post_y66"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude63_nosnap",
       "call": {
         "group": "sketch/selection",
         "operation": "sketch_set_grid_snap",
@@ -173,28 +265,101 @@
       }
     },
     {
-      "id": "slot_rect",
+      "chapter": "Extrude63 post loop",
+      "note": "Closed 5-gon from dump points [(30.0, 92.0), (65.0, 92.0), (69.0, 109.0), (69.0, 123.0), (30.0, 123.0)]"
+    },
+    {
+      "id": "sk_Extrude63_L0",
       "call": {
         "group": "sketch/draw",
-        "operation": "sketch_add_rectangle_locked",
+        "operation": "sketch_add_line",
         "arguments": {
-          "mode": "two_point",
-          "anchor": {
-            "x": -5.2,
-            "y": -2.2
+          "ctrl_held": true,
+          "from": {
+            "x": 30.0,
+            "y": 92.0
           },
-          "corner_hint": {
-            "x": 5.2,
-            "y": 2.2
-          },
-          "width_mm": 10.4,
-          "height_mm": 4.4,
-          "ctrl_held": true
+          "to_raw": {
+            "x": 65.0,
+            "y": 92.0
+          }
         }
       }
     },
     {
-      "id": "slot_snap",
+      "id": "sk_Extrude63_L1",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_line",
+        "arguments": {
+          "ctrl_held": true,
+          "from": {
+            "x": 65.0,
+            "y": 92.0
+          },
+          "to_raw": {
+            "x": 69.0,
+            "y": 109.0
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude63_L2",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_line",
+        "arguments": {
+          "ctrl_held": true,
+          "from": {
+            "x": 69.0,
+            "y": 109.0
+          },
+          "to_raw": {
+            "x": 69.0,
+            "y": 123.0
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude63_L3",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_line",
+        "arguments": {
+          "ctrl_held": true,
+          "from": {
+            "x": 69.0,
+            "y": 123.0
+          },
+          "to_raw": {
+            "x": 30.0,
+            "y": 123.0
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude63_L4",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_line",
+        "arguments": {
+          "ctrl_held": true,
+          "from": {
+            "x": 30.0,
+            "y": 123.0
+          },
+          "to_raw": {
+            "x": 30.0,
+            "y": 92.0
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude63_snap",
       "call": {
         "group": "sketch/selection",
         "operation": "sketch_set_grid_snap",
@@ -204,7 +369,7 @@
       }
     },
     {
-      "id": "slot_finish",
+      "id": "sk_Extrude63_finish",
       "call": {
         "group": "sketch/draw",
         "operation": "sketch_finish",
@@ -212,12 +377,1252 @@
       }
     },
     {
-      "id": "slot_cut",
+      "id": "ex_Extrude63",
       "call": {
         "group": "solid/build",
         "operation": "solid_extrude",
         "arguments": {
-          "sketch_name": "carriage_slot_travel",
+          "sketch_name": "Extrude63__S02 P supported input post Y70",
+          "profile_indices": [
+            0
+          ],
+          "operation": "join",
+          "extent": {
+            "type": "distance",
+            "distance": 8.0
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {
+              "$ref": "left_input_carriage_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "Extrude64 \u2014 cut",
+      "note": "Native fid 214; sketch `S02 Q input bearing seat Y70`; extent 8.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [99] (not SoT). "
+    },
+    {
+      "id": "sk_Extrude64_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude64__S02 Q input bearing seat Y70",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_post_y66"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude64_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude64_c0",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 49.6723,
+            "y": 123.0
+          },
+          "edge_hint": {
+            "x": 60.7723,
+            "y": 123.0
+          },
+          "diameter_text": "22.2",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude64_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude64_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude64",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude64__S02 Q input bearing seat Y70",
+          "profile_indices": [
+            0
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 8.0
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {
+              "$ref": "left_input_carriage_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "Extrude67 \u2014 cut",
+      "note": "Native fid 223; sketch `S02 T input cap M3 holes Y70`; extent 36.0; flip=False; profiles=[0, 1]; native targets [97, 100]; new_body_ids tool solids [102, 103] (not SoT). VERIFY: native also targeted input caps \u2014 carriage-only chapter cuts left_input_carriage only; shared holes need cap chapters / later assemble."
+    },
+    {
+      "id": "pl_m3_z106",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "left_input_m3_plane_Z106 / shared",
+          "distance": 106.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "datum pl_m3_z106",
+      "note": "Native basis origin [0.0, 0.0, 106.0]; source distance 106.0 from origin xy."
+    },
+    {
+      "id": "sk_Extrude67_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude67__S02 T input cap M3 holes Y70",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_m3_z106"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude67_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude67_c0",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 35.0,
+            "y": 70.0
+          },
+          "edge_hint": {
+            "x": 36.3723,
+            "y": 70.0
+          },
+          "diameter_text": "2.7446",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude67_c1",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 65.0,
+            "y": 70.0
+          },
+          "edge_hint": {
+            "x": 66.37230000000001,
+            "y": 70.0
+          },
+          "diameter_text": "2.7446",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude67_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude67_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude67",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude67__S02 T input cap M3 holes Y70",
+          "profile_indices": [
+            0,
+            1
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 36.0
+          },
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": [
+            {
+              "$ref": "left_input_carriage_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "Extrude68 \u2014 cut",
+      "note": "Native fid 226; sketch `S02 U input cap nut pocket (34.6723, 70)`; extent 7.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [104] (not SoT). "
+    },
+    {
+      "id": "pl_nut_y65_9",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "left_input_nut_pocket_Y65_9 / shared",
+          "distance": -65.9,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "datum pl_nut_y65_9",
+      "note": "Native basis origin [0.0, 65.9, 0.0]; source distance -65.9 from origin xz."
+    },
+    {
+      "id": "sk_Extrude68_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude68__S02 U input cap nut pocket (34.6723, 70)",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_nut_y65_9"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude68_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude68_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 31.7723,
+            "y": 109.0
+          },
+          "corner_hint": {
+            "x": 37.5723,
+            "y": 111.8
+          },
+          "width_mm": 5.799999999999997,
+          "height_mm": 2.799999999999997,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude68_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude68_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude68",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude68__S02 U input cap nut pocket (34.6723, 70)",
+          "profile_indices": [
+            0
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 7.0
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {
+              "$ref": "left_input_carriage_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "Extrude69 \u2014 cut",
+      "note": "Native fid 229; sketch `S02 U input cap nut pocket (64.6723, 70)`; extent 7.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [105] (not SoT). "
+    },
+    {
+      "id": "sk_Extrude69_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude69__S02 U input cap nut pocket (64.6723, 70)",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_nut_y65_9"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude69_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude69_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 61.77230000000001,
+            "y": 109.0
+          },
+          "corner_hint": {
+            "x": 67.57230000000001,
+            "y": 111.8
+          },
+          "width_mm": 5.800000000000004,
+          "height_mm": 2.799999999999997,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude69_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude69_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude69",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude69__S02 U input cap nut pocket (64.6723, 70)",
+          "profile_indices": [
+            0
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 7.0
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {
+              "$ref": "left_input_carriage_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "Extrude70 \u2014 join",
+      "note": "Native fid 232; sketch `S02 P supported input post Y96`; extent 8.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [106] (not SoT). "
+    },
+    {
+      "id": "pl_post_y92",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "left_input_post_Y92 / shared",
+          "distance": -92.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "datum pl_post_y92",
+      "note": "Native basis origin [0.0, 92.0, 0.0]; source distance -92.0 from origin xz."
+    },
+    {
+      "id": "sk_Extrude70_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude70__S02 P supported input post Y96",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_post_y92"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude70_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "chapter": "Extrude70 post loop",
+      "note": "Closed 5-gon from dump points [(30.0, 92.0), (65.0, 92.0), (69.0, 109.0), (69.0, 123.0), (30.0, 123.0)]"
+    },
+    {
+      "id": "sk_Extrude70_L0",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_line",
+        "arguments": {
+          "ctrl_held": true,
+          "from": {
+            "x": 30.0,
+            "y": 92.0
+          },
+          "to_raw": {
+            "x": 65.0,
+            "y": 92.0
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude70_L1",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_line",
+        "arguments": {
+          "ctrl_held": true,
+          "from": {
+            "x": 65.0,
+            "y": 92.0
+          },
+          "to_raw": {
+            "x": 69.0,
+            "y": 109.0
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude70_L2",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_line",
+        "arguments": {
+          "ctrl_held": true,
+          "from": {
+            "x": 69.0,
+            "y": 109.0
+          },
+          "to_raw": {
+            "x": 69.0,
+            "y": 123.0
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude70_L3",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_line",
+        "arguments": {
+          "ctrl_held": true,
+          "from": {
+            "x": 69.0,
+            "y": 123.0
+          },
+          "to_raw": {
+            "x": 30.0,
+            "y": 123.0
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude70_L4",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_line",
+        "arguments": {
+          "ctrl_held": true,
+          "from": {
+            "x": 30.0,
+            "y": 123.0
+          },
+          "to_raw": {
+            "x": 30.0,
+            "y": 92.0
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude70_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude70_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude70",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude70__S02 P supported input post Y96",
+          "profile_indices": [
+            0
+          ],
+          "operation": "join",
+          "extent": {
+            "type": "distance",
+            "distance": 8.0
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {
+              "$ref": "left_input_carriage_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "Extrude71 \u2014 cut",
+      "note": "Native fid 235; sketch `S02 Q input bearing seat Y96`; extent 8.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [107] (not SoT). "
+    },
+    {
+      "id": "sk_Extrude71_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude71__S02 Q input bearing seat Y96",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_post_y92"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude71_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude71_c0",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 49.6723,
+            "y": 123.0
+          },
+          "edge_hint": {
+            "x": 60.7723,
+            "y": 123.0
+          },
+          "diameter_text": "22.2",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude71_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude71_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude71",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude71__S02 Q input bearing seat Y96",
+          "profile_indices": [
+            0
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 8.0
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {
+              "$ref": "left_input_carriage_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "Extrude74 \u2014 cut",
+      "note": "Native fid 244; sketch `S02 T input cap M3 holes Y96`; extent 36.0; flip=False; profiles=[0, 1]; native targets [97, 108]; new_body_ids tool solids [110, 111] (not SoT). VERIFY: native also targeted input caps \u2014 carriage-only chapter cuts left_input_carriage only; shared holes need cap chapters / later assemble."
+    },
+    {
+      "id": "sk_Extrude74_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude74__S02 T input cap M3 holes Y96",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_m3_z106"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude74_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude74_c0",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 35.0,
+            "y": 95.0
+          },
+          "edge_hint": {
+            "x": 36.69800096878653,
+            "y": 95.0
+          },
+          "diameter_text": "3.396001938",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude74_c1",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 65.0,
+            "y": 95.0
+          },
+          "edge_hint": {
+            "x": 66.69800096878654,
+            "y": 95.0
+          },
+          "diameter_text": "3.396001938",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude74_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude74_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude74",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude74__S02 T input cap M3 holes Y96",
+          "profile_indices": [
+            0,
+            1
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 36.0
+          },
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": [
+            {
+              "$ref": "left_input_carriage_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "Extrude75 \u2014 cut",
+      "note": "Native fid 247; sketch `S02 U input cap nut pocket (34.6723, 96)`; extent 7.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [112] (not SoT). "
+    },
+    {
+      "id": "pl_nut_y91_9",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "left_input_nut_pocket_Y91_9 / shared",
+          "distance": -91.9,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "datum pl_nut_y91_9",
+      "note": "Native basis origin [0.0, 91.9, 0.0]; source distance -91.9 from origin xz."
+    },
+    {
+      "id": "sk_Extrude75_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude75__S02 U input cap nut pocket (34.6723, 96)",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_nut_y91_9"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude75_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude75_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 31.7723,
+            "y": 109.0
+          },
+          "corner_hint": {
+            "x": 37.5723,
+            "y": 111.8
+          },
+          "width_mm": 5.799999999999997,
+          "height_mm": 2.799999999999997,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude75_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude75_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude75",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude75__S02 U input cap nut pocket (34.6723, 96)",
+          "profile_indices": [
+            0
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 7.0
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {
+              "$ref": "left_input_carriage_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "Extrude76 \u2014 cut",
+      "note": "Native fid 250; sketch `S02 U input cap nut pocket (64.6723, 96)`; extent 7.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [113] (not SoT). "
+    },
+    {
+      "id": "sk_Extrude76_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude76__S02 U input cap nut pocket (64.6723, 96)",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_nut_y91_9"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude76_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude76_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 61.77230000000001,
+            "y": 109.0
+          },
+          "corner_hint": {
+            "x": 67.57230000000001,
+            "y": 111.8
+          },
+          "width_mm": 5.800000000000004,
+          "height_mm": 2.799999999999997,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude76_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude76_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude76",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude76__S02 U input cap nut pocket (64.6723, 96)",
+          "profile_indices": [
+            0
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 7.0
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {
+              "$ref": "left_input_carriage_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "Extrude77 \u2014 cut",
+      "note": "Native fid 253; sketch `S02 V tension slot (34, 56)`; extent 6.0; flip=False; profiles=[0]; native targets [97]; new_body_ids tool solids [114] (not SoT). "
+    },
+    {
+      "id": "pl_slot_strap_z87",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "left_input_slot_strap_Z87 / shared",
+          "distance": 87.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "datum pl_slot_strap_z87",
+      "note": "Native basis origin [0.0, 0.0, 87.0]; source distance 87.0 from origin xy."
+    },
+    {
+      "id": "sk_Extrude77_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude77__S02 V tension slot (34, 56)",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_slot_strap_z87"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude77_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "chapter": "Extrude77 slot profile",
+      "note": "Dump bbox UV {'umin': 30.3, 'umax': 37.7, 'vmin': 53.8, 'vmax': 58.2, 'u_span': 7.4, 'v_span': 4.4}; entity_types={'point': 13, 'line': 4, 'arc': 4}. Recovered as rectangle_locked outer box. VERIFY: dump has R1 corner arcs \u2014 not applied in this port (match dump extents; add fillets later if needed)."
+    },
+    {
+      "id": "sk_Extrude77_slot",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 30.3,
+            "y": 53.8
+          },
+          "corner_hint": {
+            "x": 37.7,
+            "y": 58.2
+          },
+          "width_mm": 7.400000000000002,
+          "height_mm": 4.400000000000006,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude77_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude77_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude77",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude77__S02 V tension slot (34, 56)",
           "profile_indices": [
             0
           ],
@@ -230,7 +1635,7 @@
           "flip": false,
           "target_body_ids": [
             {
-              "$ref": "carriage_rail_coupon_body",
+              "$ref": "left_input_carriage_body",
               "pointer": "/id"
             }
           ]
@@ -238,8 +1643,971 @@
       }
     },
     {
-      "chapter": "VERIFY notes",
-      "note": "Slot is rectangular 10.4\u00d74.4 (= 7.4 fastener window + \u00b11.5 travel). parameters.slot_corner_radius 1 not applied yet \u2014 VERIFY/add sketch fillets to R1 before locking. Full carriage body/caps/servo lips remain empty; see first-prints/shell-first-review/left-input-carriage-*.stl for REVIEW ONLY."
+      "chapter": "Extrude78 \u2014 cut",
+      "note": "Native fid 256; sketch `S02 V tension slot (61, 56)`; extent 6.0; flip=False; profiles=[0]; native targets [97]; new_body_ids tool solids [115] (not SoT). "
+    },
+    {
+      "id": "sk_Extrude78_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude78__S02 V tension slot (61, 56)",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_slot_strap_z87"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude78_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "chapter": "Extrude78 slot profile",
+      "note": "Dump bbox UV {'umin': 57.3, 'umax': 64.7, 'vmin': 53.8, 'vmax': 58.2, 'u_span': 7.4, 'v_span': 4.4}; entity_types={'point': 13, 'line': 4, 'arc': 4}. Recovered as rectangle_locked outer box. VERIFY: dump has R1 corner arcs \u2014 not applied in this port (match dump extents; add fillets later if needed)."
+    },
+    {
+      "id": "sk_Extrude78_slot",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 57.3,
+            "y": 53.8
+          },
+          "corner_hint": {
+            "x": 64.7,
+            "y": 58.2
+          },
+          "width_mm": 7.400000000000006,
+          "height_mm": 4.400000000000006,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude78_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude78_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude78",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude78__S02 V tension slot (61, 56)",
+          "profile_indices": [
+            0
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 6.0
+          },
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": [
+            {
+              "$ref": "left_input_carriage_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "Extrude79 \u2014 cut",
+      "note": "Native fid 259; sketch `S02 V tension slot (34, 84)`; extent 6.0; flip=False; profiles=[0]; native targets [97]; new_body_ids tool solids [116] (not SoT). "
+    },
+    {
+      "id": "sk_Extrude79_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude79__S02 V tension slot (34, 84)",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_slot_strap_z87"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude79_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "chapter": "Extrude79 slot profile",
+      "note": "Dump bbox UV {'umin': 30.3, 'umax': 37.7, 'vmin': 81.8, 'vmax': 86.2, 'u_span': 7.4, 'v_span': 4.4}; entity_types={'point': 13, 'line': 4, 'arc': 4}. Recovered as rectangle_locked outer box. VERIFY: dump has R1 corner arcs \u2014 not applied in this port (match dump extents; add fillets later if needed)."
+    },
+    {
+      "id": "sk_Extrude79_slot",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 30.3,
+            "y": 81.8
+          },
+          "corner_hint": {
+            "x": 37.7,
+            "y": 86.2
+          },
+          "width_mm": 7.400000000000002,
+          "height_mm": 4.400000000000006,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude79_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude79_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude79",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude79__S02 V tension slot (34, 84)",
+          "profile_indices": [
+            0
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 6.0
+          },
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": [
+            {
+              "$ref": "left_input_carriage_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "Extrude80 \u2014 cut",
+      "note": "Native fid 262; sketch `S02 V tension slot (61, 84)`; extent 6.0; flip=False; profiles=[0]; native targets [97]; new_body_ids tool solids [117] (not SoT). "
+    },
+    {
+      "id": "sk_Extrude80_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude80__S02 V tension slot (61, 84)",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_slot_strap_z87"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude80_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "chapter": "Extrude80 slot profile",
+      "note": "Dump bbox UV {'umin': 57.3, 'umax': 64.7, 'vmin': 81.8, 'vmax': 86.2, 'u_span': 7.4, 'v_span': 4.4}; entity_types={'point': 13, 'line': 4, 'arc': 4}. Recovered as rectangle_locked outer box. VERIFY: dump has R1 corner arcs \u2014 not applied in this port (match dump extents; add fillets later if needed)."
+    },
+    {
+      "id": "sk_Extrude80_slot",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 57.3,
+            "y": 81.8
+          },
+          "corner_hint": {
+            "x": 64.7,
+            "y": 86.2
+          },
+          "width_mm": 7.400000000000006,
+          "height_mm": 4.400000000000006,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude80_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude80_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude80",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude80__S02 V tension slot (61, 84)",
+          "profile_indices": [
+            0
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 6.0
+          },
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": [
+            {
+              "$ref": "left_input_carriage_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "Extrude81 \u2014 join",
+      "note": "Native fid 265; sketch `S02 W servo case locating lip X37.6723`; extent 40.5; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [118] (not SoT). "
+    },
+    {
+      "id": "pl_servo_lip_y5",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "left_input_servo_lip_Y5 / shared",
+          "distance": -5.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "datum pl_servo_lip_y5",
+      "note": "Native basis origin [0.0, 5.0, 0.0]; source distance -5.0 from origin xz."
+    },
+    {
+      "id": "sk_Extrude81_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude81__S02 W servo case locating lip X37.6723",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_servo_lip_y5"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude81_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude81_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 37.6723,
+            "y": 92.0
+          },
+          "corner_hint": {
+            "x": 39.1723,
+            "y": 97.0
+          },
+          "width_mm": 1.5,
+          "height_mm": 5.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude81_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude81_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude81",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude81__S02 W servo case locating lip X37.6723",
+          "profile_indices": [
+            0
+          ],
+          "operation": "join",
+          "extent": {
+            "type": "distance",
+            "distance": 40.5
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {
+              "$ref": "left_input_carriage_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "Extrude82 \u2014 join",
+      "note": "Native fid 268; sketch `S02 W servo case locating lip X60.1723`; extent 40.5; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [119] (not SoT). "
+    },
+    {
+      "id": "sk_Extrude82_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude82__S02 W servo case locating lip X60.1723",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_servo_lip_y5"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude82_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude82_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 60.1723,
+            "y": 92.0
+          },
+          "corner_hint": {
+            "x": 61.6723,
+            "y": 97.0
+          },
+          "width_mm": 1.5,
+          "height_mm": 5.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude82_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude82_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude82",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude82__S02 W servo case locating lip X60.1723",
+          "profile_indices": [
+            0
+          ],
+          "operation": "join",
+          "extent": {
+            "type": "distance",
+            "distance": 40.5
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {
+              "$ref": "left_input_carriage_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "Extrude83 \u2014 join",
+      "note": "Native fid 271; sketch `S02 X servo case end stop Y3.5`; extent 1.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [120] (not SoT). "
+    },
+    {
+      "id": "pl_endstop_y3_5",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "left_input_endstop_Y3_5 / shared",
+          "distance": -3.5,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "datum pl_endstop_y3_5",
+      "note": "Native basis origin [0.0, 3.5, 0.0]; source distance -3.5 from origin xz."
+    },
+    {
+      "id": "sk_Extrude83_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude83__S02 X servo case end stop Y3.5",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_endstop_y3_5"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude83_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude83_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 39.1723,
+            "y": 92.0
+          },
+          "corner_hint": {
+            "x": 60.1723,
+            "y": 97.0
+          },
+          "width_mm": 21.0,
+          "height_mm": 5.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude83_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude83_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude83",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude83__S02 X servo case end stop Y3.5",
+          "profile_indices": [
+            0
+          ],
+          "operation": "join",
+          "extent": {
+            "type": "distance",
+            "distance": 1.0
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {
+              "$ref": "left_input_carriage_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "Extrude84 \u2014 join",
+      "note": "Native fid 274; sketch `S02 X servo case end stop Y46`; extent 1.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [121] (not SoT). "
+    },
+    {
+      "id": "pl_endstop_y46",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "left_input_endstop_Y46 / shared",
+          "distance": -46.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "datum pl_endstop_y46",
+      "note": "Native basis origin [0.0, 46.0, 0.0]; source distance -46.0 from origin xz."
+    },
+    {
+      "id": "sk_Extrude84_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude84__S02 X servo case end stop Y46",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_endstop_y46"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude84_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude84_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 39.1723,
+            "y": 92.0
+          },
+          "corner_hint": {
+            "x": 60.1723,
+            "y": 97.0
+          },
+          "width_mm": 21.0,
+          "height_mm": 5.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude84_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude84_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude84",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude84__S02 X servo case end stop Y46",
+          "profile_indices": [
+            0
+          ],
+          "operation": "join",
+          "extent": {
+            "type": "distance",
+            "distance": 1.0
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {
+              "$ref": "left_input_carriage_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "Extrude86 \u2014 cut",
+      "note": "Native fid 287; sketch `S02 Z L removable servo strap passages`; extent 6.0; flip=False; profiles=[0, 1, 2, 3]; native targets [97]; new_body_ids tool solids [133, 134, 135, 136] (not SoT). "
+    },
+    {
+      "id": "sk_Extrude86_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "Extrude86__S02 Z L removable servo strap passages",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "pl_slot_strap_z87"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude86_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "chapter": "Extrude86 strap rects",
+      "note": "Four rectangles from dump: [(33.0, 16.0, 35.0, 24.0), (33.0, 31.0, 35.0, 39.0), (61.5, 16.0, 63.5, 24.0), (61.5, 31.0, 63.5, 39.0)]"
+    },
+    {
+      "id": "sk_Extrude86_r0",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 33.0,
+            "y": 16.0
+          },
+          "corner_hint": {
+            "x": 35.0,
+            "y": 24.0
+          },
+          "width_mm": 2.0,
+          "height_mm": 8.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude86_r1",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 33.0,
+            "y": 31.0
+          },
+          "corner_hint": {
+            "x": 35.0,
+            "y": 39.0
+          },
+          "width_mm": 2.0,
+          "height_mm": 8.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude86_r2",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 61.5,
+            "y": 16.0
+          },
+          "corner_hint": {
+            "x": 63.5,
+            "y": 24.0
+          },
+          "width_mm": 2.0,
+          "height_mm": 8.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude86_r3",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 61.5,
+            "y": 31.0
+          },
+          "corner_hint": {
+            "x": 63.5,
+            "y": 39.0
+          },
+          "width_mm": 2.0,
+          "height_mm": 8.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude86_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "sk_Extrude86_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "ex_Extrude86",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "Extrude86__S02 Z L removable servo strap passages",
+          "profile_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 6.0
+          },
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": [
+            {
+              "$ref": "left_input_carriage_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "VERIFY \u2014 AABB + remaining",
+      "note": "Expect AABB X30\u201369 Y2\u2013102 Z88\u2013123 (39\u00d7100\u00d735) matching shell-first-review left-input-carriage-assembly-coordinates.stl. Remaining VERIFY: (1) Extrude67/74 M3 also need caps 100/108; (2) Mirror2 skipped \u2014 right 122\u2013124 later; (3) tension-slot R1 arcs not applied; (4) Extrude86 after Mirror2 in native \u2014 left-only OK; (5) datum offset sign vs Design Ops positive-Y convention \u2014 used native signed distances."
     }
   ],
   "checks": [
