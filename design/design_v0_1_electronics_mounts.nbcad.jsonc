@@ -1,19 +1,1123 @@
 // Roller-300 design_v0_1_electronics_mounts — modular Design Ops chapter (VERSION 0.1)
-// Role: S04 — Direct mounting and service paths
+// Role: S04 — Direct mounting and service paths — FIRST PRINTABLE shelf/standoff + allowance coupons
 // SoT: this .nbcad.jsonc (JSONC-first). Companion: design/gen_meta.json + design/VERSION.
-// Replay: blank document only. Shared datums: origin planes XY/XZ/YZ (mm; X fwd, Y left, Z up; ground origin below axle midpoint; axle Z=123).
+// Replay: blank document only. Shared datums: mm; X fwd, Y left, Z up; ground origin below axle midpoint; axle Z=123.
 // Native master Roller-300.nbcad remains editable CAD; this tree is AI-iterate SoT going forward.
-// Do not invent unverified fit numbers — nominals below from PLAN.md / parameters.json / parts-sources.json only.
-// Intended geometry (scaffold — steps empty until filled):
-//   - Shell-direct: low battery platform with strap passages/stops; Pi and Pixracer shelves; forward thermal cradle; front distance-sensor rails; rear harness saddles (PLAN S04).
-//   - Battery allowance 90×85×30 UNMEASURED; Pi bare-board nominal only; Pixracer 36×36 and distance modules 20×12 footprint-only (PLAN S04).
-//   - TOPDON TC002C Duo reference moved 3 mm forward and 3 mm down vs prior — nominal device envelope; received measurements govern (PLAN S04).
-//   - Keep wiring away from belts and shafts. Cameras forward; rear ranging future option.
-//   - Board retainers, sensor retention, cable bends, charging-contact capture remain detailing gates — do not invent fit numbers.
+// Coupons in this chapter (print flat on XY; NOT vehicle-posed fit solids):
+//   1) pi_shelf_standoff_coupon — shelf 70×40×2 + four 5×5×5 corner posts at 65×30 bare-board corners (parameters.hardware_envelopes.pi size_mm / PLAN S04 nominal).
+//   2) pixracer_shelf_coupon — plate 42×42×3 with 36×36×0.8 footprint recess (PLAN S04 + layout.pixracer_outline_xy as [xmin,xmax,ymin,ymax]=36×36; height UNMEASURED).
+//   3) tof_rail_coupon — block with 20×12×3 locating channel (parameters.hardware_envelopes.tof footprint-only; depth null).
+//   4) battery_allowance_tray_coupon — open tray inner 85×30, walls 2, height 8 (layout.battery_unmeasured_size X×Y; Z=90 UNMEASURED — VERIFY; PLAN 90×85×30).
+//   5) thermal_envelope_shelf_coupon — plate 80×50×4 with 71×42×2 recess (TOPDON TC002C Duo nominal envelope; retainer/optical aperture HOLD).
+// Named vehicle refs (comment/placement only): battery min Z78, pi Z161, pixracer Z168, thermal min Z140, tof X plane 75 / Y centers — from parameters.layout / direct_mount_status.
+// Do NOT invent: board retainers, sensor depth, cable bends, charging contacts, strap passage sizes, optical aperture, Pi/Pixracer hole patterns.
 // Prune prior design_v* only after this VERSION is proven (Design Ops).
 {
   "version": 1,
-  "name": "Roller-300 design_v0_1_electronics_mounts (VERSION 0.1 scaffold)",
+  "name": "Roller-300 design_v0_1_electronics_mounts (VERSION 0.1) — shelf/standoff + allowance coupons",
   "starting_state": "empty",
-  "steps": []
+  "steps": [
+    {
+      "chapter": "Shared refs — S04 layout datums (parameters.layout / direct_mount_status / PLAN S04)",
+      "note": "Named shared refs before children. Vehicle: mm; X fwd, Y left, Z up; axle Z=123. Battery allowance UNMEASURED (layout.battery_unmeasured_min/size + mass_and_fit). Pi bare-board nominal 65×30×5. Pixracer 36×36 footprint-only (outline_xy / outline_y_mm; total_height null). Thermal TOPDON 71×42×14 nominal; x_shift +3 / z_shift −3 already reflected in layout.thermal_* — VERIFY vs native. TOF 20×12 footprint; depth null. Coupons below are TRIAL/print-today shelves — not shell-integrated mounts, not 3D fit passes."
+    },
+    {
+      "id": "ref_elec_bed_xy",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "electronics_coupon_bed_xy / shared",
+          "distance": 0.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_axle_z123",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "vehicle_axle_z123_note / shared",
+          "distance": 123.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_battery_z_min",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "battery_allowance_z_min_78 / shared UNMEASURED",
+          "distance": 78.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_pi_z",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "pi_shelf_z_161 / shared nominal",
+          "distance": 161.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_pixracer_z",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "pixracer_shelf_z_168 / shared footprint-only",
+          "distance": 168.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_thermal_z_min",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "thermal_cradle_z_min_140 / shared nominal VERIFY shift",
+          "distance": 140.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_tof_x",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "tof_front_x_75 / shared footprint-only",
+          "distance": 75.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "yz"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_battery_xmin",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "battery_allowance_xmin_-60 / shared UNMEASURED",
+          "distance": -60.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "yz"
+          }
+        }
+      }
+    },
+
+    {
+      "chapter": "Pi Zero shelf + corner standoff coupon",
+      "note": "TRIAL shelf/standoff — parameters.hardware_envelopes.pi size_mm [65,30,5] nominal bare board (Zero W / Zero 2 W family). Plate 70×40×2; four 5×5×5 posts at board-corner centers (±32.5, ±15). NO mounting-hole pattern (not in parameters). GPIO/header/heatsink excluded. direct_mount_status.board_retention: locating shelves only — positive restraints UNRESOLVED. NOT a released fit."
+    },
+    {
+      "id": "pi_plate_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "pi_shelf_standoff_plate",
+          "plane": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "pi_plate_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "pi_plate_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {"x": -35, "y": -20},
+          "corner_hint": {"x": 35, "y": 20},
+          "width_mm": 70.0,
+          "height_mm": 40.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "pi_plate_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "pi_plate_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "pi_plate_ex",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "pi_shelf_standoff_plate",
+          "profile_indices": [0],
+          "operation": "new_body",
+          "extent": {"type": "distance", "distance": 2.0},
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": []
+        }
+      }
+    },
+    {
+      "let": {
+        "pi_plate_feat": {
+          "$select": {
+            "from": {"$ref": "pi_plate_ex"},
+            "path": "/document/features",
+            "take": "last",
+            "pointer": "/id"
+          }
+        }
+      }
+    },
+    {
+      "let": {
+        "pi_shelf_standoff_coupon_body": {
+          "$select": {
+            "from": {"$ref": "pi_plate_ex"},
+            "path": "/scene/bodies",
+            "where": {"/feature_id": {"$ref": "pi_plate_feat"}},
+            "take": "one"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_pi_shelf_top",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "pi_shelf_plate_top / shared",
+          "distance": 2.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "pi_posts_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "pi_corner_standoff_posts",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {"$ref": "ref_pi_shelf_top"},
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "pi_posts_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {"enabled": false}
+      }
+    },
+    {
+      "id": "pi_post_fl",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {"x": -35, "y": -17.5},
+          "corner_hint": {"x": -30, "y": -12.5},
+          "width_mm": 5.0,
+          "height_mm": 5.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "pi_post_fr",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {"x": 30, "y": -17.5},
+          "corner_hint": {"x": 35, "y": -12.5},
+          "width_mm": 5.0,
+          "height_mm": 5.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "pi_post_bl",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {"x": -35, "y": 12.5},
+          "corner_hint": {"x": -30, "y": 17.5},
+          "width_mm": 5.0,
+          "height_mm": 5.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "pi_post_br",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {"x": 30, "y": 12.5},
+          "corner_hint": {"x": 35, "y": 17.5},
+          "width_mm": 5.0,
+          "height_mm": 5.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "pi_posts_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {"enabled": true}
+      }
+    },
+    {
+      "id": "pi_posts_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "pi_posts_ex",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "pi_corner_standoff_posts",
+          "profile_indices": [0, 1, 2, 3],
+          "operation": "join",
+          "extent": {"type": "distance", "distance": 5.0},
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": [
+            {"$ref": "pi_shelf_standoff_coupon_body", "pointer": "/id"}
+          ]
+        }
+      }
+    },
+
+    {
+      "chapter": "Pixracer shelf coupon (36×36 footprint-only)",
+      "note": "FOOTPRINT-ONLY — PLAN S04 / parameters.layout.pixracer_outline_xy [-40,-4,46,82] (=36×36) at Z168; pixracer_total_height null. Plate at coupon bed X≈90..132. Shallow 36×36×0.8 recess is locating sketch only — NOT a 3D fit. Connectors/height UNMEASURED."
+    },
+    {
+      "id": "px_plate_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "pixracer_shelf_plate",
+          "plane": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "px_plate_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {"enabled": false}
+      }
+    },
+    {
+      "id": "px_plate_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {"x": 90, "y": -21},
+          "corner_hint": {"x": 132, "y": 21},
+          "width_mm": 42.0,
+          "height_mm": 42.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "px_plate_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {"enabled": true}
+      }
+    },
+    {
+      "id": "px_plate_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "px_plate_ex",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "pixracer_shelf_plate",
+          "profile_indices": [0],
+          "operation": "new_body",
+          "extent": {"type": "distance", "distance": 3.0},
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": []
+        }
+      }
+    },
+    {
+      "let": {
+        "px_plate_feat": {
+          "$select": {
+            "from": {"$ref": "px_plate_ex"},
+            "path": "/document/features",
+            "take": "last",
+            "pointer": "/id"
+          }
+        }
+      }
+    },
+    {
+      "let": {
+        "pixracer_shelf_coupon_body": {
+          "$select": {
+            "from": {"$ref": "px_plate_ex"},
+            "path": "/scene/bodies",
+            "where": {"/feature_id": {"$ref": "px_plate_feat"}},
+            "take": "one"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_px_top",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "pixracer_shelf_coupon_top / shared",
+          "distance": 3.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "px_pocket_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "pixracer_36x36_footprint_recess",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {"$ref": "ref_px_top"},
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "px_pocket_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {"enabled": false}
+      }
+    },
+    {
+      "id": "px_pocket_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {"x": 93, "y": -18},
+          "corner_hint": {"x": 129, "y": 18},
+          "width_mm": 36.0,
+          "height_mm": 36.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "px_pocket_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {"enabled": true}
+      }
+    },
+    {
+      "id": "px_pocket_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "px_pocket_cut",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "pixracer_36x36_footprint_recess",
+          "profile_indices": [0],
+          "operation": "cut",
+          "extent": {"type": "distance", "distance": 0.8},
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {"$ref": "pixracer_shelf_coupon_body", "pointer": "/id"}
+          ]
+        }
+      }
+    },
+
+    {
+      "chapter": "TOF distance-module locating-rail coupon (20×12 footprint-only)",
+      "note": "FOOTPRINT-ONLY — parameters.hardware_envelopes.tof size_mm [20,12,null]; layout.tof_depth null; sensor_depth_and_retention HOLD. Coupon bed X≈150..178. Channel 20×12×3 is locating sketch — NOT fitted depth/connector. Four vehicle Y centers (−36/−12/12/36) are named intent only."
+    },
+    {
+      "id": "tof_block_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "tof_rail_coupon_block",
+          "plane": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "tof_block_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {"enabled": false}
+      }
+    },
+    {
+      "id": "tof_block_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {"x": 150, "y": -9},
+          "corner_hint": {"x": 178, "y": 9},
+          "width_mm": 28.0,
+          "height_mm": 18.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "tof_block_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {"enabled": true}
+      }
+    },
+    {
+      "id": "tof_block_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "tof_block_ex",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "tof_rail_coupon_block",
+          "profile_indices": [0],
+          "operation": "new_body",
+          "extent": {"type": "distance", "distance": 5.0},
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": []
+        }
+      }
+    },
+    {
+      "let": {
+        "tof_block_feat": {
+          "$select": {
+            "from": {"$ref": "tof_block_ex"},
+            "path": "/document/features",
+            "take": "last",
+            "pointer": "/id"
+          }
+        }
+      }
+    },
+    {
+      "let": {
+        "tof_rail_coupon_body": {
+          "$select": {
+            "from": {"$ref": "tof_block_ex"},
+            "path": "/scene/bodies",
+            "where": {"/feature_id": {"$ref": "tof_block_feat"}},
+            "take": "one"
+          }
+        }
+      }
+    },
+    {
+      "id": "tof_chan_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "tof_20x12_locating_channel",
+          "plane": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "tof_chan_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {"enabled": false}
+      }
+    },
+    {
+      "id": "tof_chan_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {"x": 154, "y": -6},
+          "corner_hint": {"x": 174, "y": 6},
+          "width_mm": 20.0,
+          "height_mm": 12.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "tof_chan_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {"enabled": true}
+      }
+    },
+    {
+      "id": "tof_chan_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "tof_chan_cut",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "tof_20x12_locating_channel",
+          "profile_indices": [0],
+          "operation": "cut",
+          "extent": {"type": "distance", "distance": 3.0},
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": [
+            {"$ref": "tof_rail_coupon_body", "pointer": "/id"}
+          ]
+        }
+      }
+    },
+
+    {
+      "chapter": "Battery UNMEASURED allowance tray coupon",
+      "note": "ALLOWANCE ONLY — PLAN S04 battery 90×85×30 UNMEASURED; layout.battery_unmeasured_size [85,30,90] (=X,Y,Z) + battery_mass_and_fit UNMEASURED; direct_mount_status.battery: support/straps adjustable, no final hold-down. Coupon: open tray inner 85×30, wall 2, height 8 on bed Y≈50 (footprint only). Do NOT extrude Z=90 as claimed fit — VERIFY received pack dims/mass/wire exit before shell platform."
+    },
+    {
+      "id": "bat_outer_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "battery_allowance_tray_outer",
+          "plane": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "bat_outer_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {"enabled": false}
+      }
+    },
+    {
+      "id": "bat_outer_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {"x": -44.5, "y": 45},
+          "corner_hint": {"x": 44.5, "y": 79},
+          "width_mm": 89.0,
+          "height_mm": 34.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "bat_outer_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {"enabled": true}
+      }
+    },
+    {
+      "id": "bat_outer_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "bat_outer_ex",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "battery_allowance_tray_outer",
+          "profile_indices": [0],
+          "operation": "new_body",
+          "extent": {"type": "distance", "distance": 8.0},
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": []
+        }
+      }
+    },
+    {
+      "let": {
+        "bat_outer_feat": {
+          "$select": {
+            "from": {"$ref": "bat_outer_ex"},
+            "path": "/document/features",
+            "take": "last",
+            "pointer": "/id"
+          }
+        }
+      }
+    },
+    {
+      "let": {
+        "battery_allowance_tray_coupon_body": {
+          "$select": {
+            "from": {"$ref": "bat_outer_ex"},
+            "path": "/scene/bodies",
+            "where": {"/feature_id": {"$ref": "bat_outer_feat"}},
+            "take": "one"
+          }
+        }
+      }
+    },
+    {
+      "id": "bat_inner_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "battery_allowance_tray_inner",
+          "plane": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "bat_inner_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {"enabled": false}
+      }
+    },
+    {
+      "id": "bat_inner_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {"x": -42.5, "y": 47},
+          "corner_hint": {"x": 42.5, "y": 77},
+          "width_mm": 85.0,
+          "height_mm": 30.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "bat_inner_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {"enabled": true}
+      }
+    },
+    {
+      "id": "bat_inner_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "bat_inner_cut",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "battery_allowance_tray_inner",
+          "profile_indices": [0],
+          "operation": "cut",
+          "extent": {"type": "distance", "distance": 7.0},
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": [
+            {"$ref": "battery_allowance_tray_coupon_body", "pointer": "/id"}
+          ]
+        }
+      }
+    },
+
+    {
+      "chapter": "Thermal (TOPDON) nominal envelope shelf coupon",
+      "note": "NOMINAL device envelope — parameters.hardware_envelopes.thermal size_mm [71,42,14] (width×height×depth); measured_received_part false. Plate 80×50×4 with 71×42×2 recess (footprint of published exterior). Optical aperture, retainer, USB-C cable envelope HOLD (direct_mount_status). Vehicle placement shifts +3 X / −3 Z are layout/status notes only — coupon is bed-local."
+    },
+    {
+      "id": "th_plate_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "thermal_envelope_shelf_plate",
+          "plane": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "th_plate_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {"enabled": false}
+      }
+    },
+    {
+      "id": "th_plate_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {"x": -40, "y": -80},
+          "corner_hint": {"x": 40, "y": -30},
+          "width_mm": 80.0,
+          "height_mm": 50.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "th_plate_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {"enabled": true}
+      }
+    },
+    {
+      "id": "th_plate_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "th_plate_ex",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "thermal_envelope_shelf_plate",
+          "profile_indices": [0],
+          "operation": "new_body",
+          "extent": {"type": "distance", "distance": 4.0},
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": []
+        }
+      }
+    },
+    {
+      "let": {
+        "th_plate_feat": {
+          "$select": {
+            "from": {"$ref": "th_plate_ex"},
+            "path": "/document/features",
+            "take": "last",
+            "pointer": "/id"
+          }
+        }
+      }
+    },
+    {
+      "let": {
+        "thermal_envelope_shelf_coupon_body": {
+          "$select": {
+            "from": {"$ref": "th_plate_ex"},
+            "path": "/scene/bodies",
+            "where": {"/feature_id": {"$ref": "th_plate_feat"}},
+            "take": "one"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_th_top",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "thermal_envelope_shelf_top / shared",
+          "distance": 4.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "th_pocket_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "thermal_71x42_envelope_recess",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {"$ref": "ref_th_top"},
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "th_pocket_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {"enabled": false}
+      }
+    },
+    {
+      "id": "th_pocket_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {"x": -35.5, "y": -76},
+          "corner_hint": {"x": 35.5, "y": -34},
+          "width_mm": 71.0,
+          "height_mm": 42.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "th_pocket_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {"enabled": true}
+      }
+    },
+    {
+      "id": "th_pocket_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "th_pocket_cut",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "thermal_71x42_envelope_recess",
+          "profile_indices": [0],
+          "operation": "cut",
+          "extent": {"type": "distance", "distance": 2.0},
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {"$ref": "thermal_envelope_shelf_coupon_body", "pointer": "/id"}
+          ]
+        }
+      }
+    },
+
+    {
+      "chapter": "VERIFY / HOLD notes (not modeled)",
+      "note": "HELD: strap passage sizes; positive board retainers; Pixracer height; TOF assembled depth/connectors; thermal optical aperture + retainer + cable; charging-contact capture; rear harness saddles; visible camera (unowned). pi_y_shift_mm 6 is vehicle layout note only. Prefer measuring received parts before growing these coupons into shell-integrated mounts."
+    }
+  ],
+  "checks": [
+    {
+      "id": "final_scene",
+      "call": {
+        "group": "solid/check",
+        "operation": "solid_scene",
+        "arguments": {}
+      }
+    }
+  ]
 }

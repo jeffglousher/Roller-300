@@ -1,0 +1,116 @@
+{
+  "started": "2026-09-20 16:31:20 CT",
+  "script": "design_v0_1_electronics_mounts.nbcad.jsonc",
+  "replay": {
+    "checks_completed": 1,
+    "elapsed_ms": 450,
+    "exports": {},
+    "name": "Roller-300 design_v0_1_electronics_mounts (VERSION 0.1) \u2014 shelf/standoff + allowance coupons",
+    "steps_completed": 91
+  },
+  "preflight": {
+    "ok": true,
+    "body_count": 5,
+    "body_ids": [
+      1,
+      6,
+      8,
+      10,
+      12
+    ],
+    "timeline_errors": []
+  },
+  "jobs": [
+    {
+      "stem": "pi-shelf-standoff-coupon",
+      "body_id": 1,
+      "files": [
+        {
+          "fmt": "3mf",
+          "ok": true,
+          "path": "/workspace/Roller-300-clone/first-prints/coupons/pi-shelf-standoff-coupon.3mf",
+          "size": 2331
+        },
+        {
+          "fmt": "stl",
+          "ok": true,
+          "path": "/workspace/Roller-300-clone/first-prints/coupons/pi-shelf-standoff-coupon.stl",
+          "size": 3884
+        }
+      ]
+    },
+    {
+      "stem": "pixracer-shelf-coupon",
+      "body_id": 6,
+      "files": [
+        {
+          "fmt": "3mf",
+          "ok": true,
+          "path": "/workspace/Roller-300-clone/first-prints/coupons/pixracer-shelf-coupon.3mf",
+          "size": 1997
+        },
+        {
+          "fmt": "stl",
+          "ok": true,
+          "path": "/workspace/Roller-300-clone/first-prints/coupons/pixracer-shelf-coupon.stl",
+          "size": 1484
+        }
+      ]
+    },
+    {
+      "stem": "tof-rail-coupon",
+      "body_id": 8,
+      "files": [
+        {
+          "fmt": "3mf",
+          "ok": true,
+          "path": "/workspace/Roller-300-clone/first-prints/coupons/tof-rail-coupon.3mf",
+          "size": 1988
+        },
+        {
+          "fmt": "stl",
+          "ok": true,
+          "path": "/workspace/Roller-300-clone/first-prints/coupons/tof-rail-coupon.stl",
+          "size": 1484
+        }
+      ]
+    },
+    {
+      "stem": "battery-allowance-tray-coupon",
+      "body_id": 10,
+      "files": [
+        {
+          "fmt": "3mf",
+          "ok": true,
+          "path": "/workspace/Roller-300-clone/first-prints/coupons/battery-allowance-tray-coupon.3mf",
+          "size": 1996
+        },
+        {
+          "fmt": "stl",
+          "ok": true,
+          "path": "/workspace/Roller-300-clone/first-prints/coupons/battery-allowance-tray-coupon.stl",
+          "size": 1484
+        }
+      ]
+    },
+    {
+      "stem": "thermal-envelope-shelf-coupon",
+      "body_id": 12,
+      "files": [
+        {
+          "fmt": "3mf",
+          "ok": true,
+          "path": "/workspace/Roller-300-clone/first-prints/coupons/thermal-envelope-shelf-coupon.3mf",
+          "size": 1990
+        },
+        {
+          "fmt": "stl",
+          "ok": true,
+          "path": "/workspace/Roller-300-clone/first-prints/coupons/thermal-envelope-shelf-coupon.stl",
+          "size": 1484
+        }
+      ]
+    }
+  ],
+  "finished": "2026-09-20 16:31:20 CT"
+}

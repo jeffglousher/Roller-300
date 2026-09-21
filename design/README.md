@@ -16,7 +16,7 @@ JSONC-first AI iterate tree. Native `../Roller-300.nbcad` remains the editable C
 | `design_v0_1_barrel_shell.nbcad.jsonc` | S02 | Barrel shell + saddles/rails/guards | **Saddle coupon** (one wheel seat); full OD160 barrel deferred |
 | `design_v0_1_input_carriage.nbcad.jsonc` | S02 | Removable input carriage + caps | **Rail/slot coupon** (±1.5 / 7.4×4.4); full carriage empty |
 | `design_v0_1_structural_hatch.nbcad.jsonc` | S03 | Curved structural hatch | **Lap/M4 coupon** + **panel-arc** (R76→R80×35°); full 180 mm hatch deferred |
-| `design_v0_1_electronics_mounts.nbcad.jsonc` | S04 | Battery / boards / sensors / harness | Scaffold empty |
+| `design_v0_1_electronics_mounts.nbcad.jsonc` | S04 | Battery / boards / sensors / harness | **Shelf/standoff + allowance coupons** (Pi / Pixracer / TOF / battery tray / thermal); shell-integrated mounts deferred |
 | `design_v0_1_drive_stack.nbcad.jsonc` | S01/S05 | One-drive pulley/belt/hub stack | **Pitch envelopes** 24/48 + belt torus + Ø8 stubs |
 | `design_v0_1_assemble.nbcad.jsonc` | orchestrator | Ordered chapter compose notes | Orchestrator only |
 
@@ -26,7 +26,7 @@ Product JSONC has **no include/compose** yet (Design Ops: chaptered includes whe
 
 1. Open a **blank** document (`starting_state: empty`).
 2. Replay chapters in the order listed in `design_v0_1_assemble.nbcad.jsonc` / `gen_meta.json` → `assemble.chapter_order`.
-3. For **print-today coupons**, prefer replaying a **single** chapter (hardware_refs / barrel_shell saddle / input_carriage rail / structural_hatch lap) rather than full assemble.
+3. For **print-today coupons**, prefer replaying a **single** chapter (hardware_refs / barrel_shell saddle / input_carriage rail / structural_hatch lap / electronics_mounts shelves) rather than full assemble.
 4. A runner (agent or Scripts UI) applies each chapter's `steps` onto the same doc; do not naive-concatenate JSON without remapping `$ref` / `let`.
 5. After proven, prune older `design_v*` only intentionally.
 
@@ -50,6 +50,7 @@ Print **mechanic fit coupons / small articles** first — not full vehicle, not 
 | Carriage rail slot | `design_v0_1_input_carriage.nbcad.jsonc` | Slot travel ±1.5 intent; size from parameters |
 | Hatch lap + M4 nut | `design_v0_1_structural_hatch.nbcad.jsonc` | Developed lap_mm 8 + gap 0.3 + AF7.3×3.5; panel-arc envelope separate |
 | Drive envelopes | `design_v0_1_drive_stack.nbcad.jsonc` | Visual/fit envelopes only — **not** a print-first article |
+| Pi / Pixracer / TOF / battery / thermal | `design_v0_1_electronics_mounts.nbcad.jsonc` | Shelf/standoff + UNMEASURED allowance tray; footprint/envelope coupons — **not** claimed 3D fits |
 
 Replay one coupon chapter on a blank doc in noBS CAD, then export STL/3MF to `../first-prints/coupons/` when export is available.
 
@@ -68,4 +69,4 @@ See `../first-prints/shell-first-review/README.md` and `../first-prints/coupons/
 2. Add R1 to carriage slot; flesh carriage body from native / parameters.
 3. ~~`structural_hatch`~~: coupons filled (lap/M4 + panel-arc); grow toward full 180 mm / ~120° after print feedback.
 4. `barrel_shell`: grow from saddle coupons toward OD160/ID152/L210.
-5. `electronics_mounts`: only measured envelopes from parameters.hardware_envelopes.
+5. ~~`electronics_mounts`~~: shelf/standoff + allowance coupons filled from recorded nominals; positive retainers / sensor depth / optical aperture remain HOLD until measured parts.
