@@ -51,6 +51,21 @@ Extrude25/33 M4: wheel-caps chapter cuts 56/65; shell chapter owns body 32. No c
 
 See `_export_report.json` for the last export run.
 
+## main-shell
+
+| Item | Value |
+|------|--------|
+| Role | `main_shell` |
+| Native body | **32** |
+| Chapter | `design/design_v0_1_barrel_shell.nbcad.jsonc` (VERSION 0.1) |
+| Dump | `design/native-port/main_shell-32.md` + `.json` |
+| Generator | `tools/dump_to_jsonc.py` |
+| Exports | `main-shell.3mf`, `main-shell.stl` (body 1 only; Combine12 keep_tools leftovers omitted) |
+| AABB (replay) | X[-79.926,80] Y[-105,105] Z[43.019,202.981] → **~159.93 × 210 × 159.96** |
+| AABB target (w/ Combine16) | **159.95 × 210 × 159.98** @ mins (-79.95, -105, 43.01) (`shell-first-review/main-shell-assembly-coordinates.stl`) |
+
+Blank-doc replay 1001 steps / 746 calls. Skipped hatch-only **MoveCopy5**, **Combine8**, **Combine16** (need body 141). Pre-Combine16 shell matches dump-without-hatch-cut; final review AABB needs hatch chapter then Combine16.
+
 ## curved-hatch (pending)
 
 | Item | Value |
@@ -62,5 +77,5 @@ See `_export_report.json` for the last export run.
 | Exports | **none this pass** — blank-doc replay blocked on shell body 32 (MoveCopy5) |
 | AABB target | X-69–69 Y-89.7–89.7 Z154.859–202.952 → **138 × 179.4 × 48.0928** (`shell-first-review/curved-hatch-assembly-coordinates.stl`) |
 
-Do not invent a substitute shell tube. Port `main_shell` 32 next, then rebuild hatch JSONC from dump and export here.
+Shell JSONC ready (`main-shell.*`). Rebuild hatch blank-doc from `hatch-141.*` using MoveCopy5 from shell, then export here; run Combine16 on shell for final AABB.
 

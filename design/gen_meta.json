@@ -3,7 +3,7 @@
   "architecture": "shell-first modular Design Ops cut",
   "native_master": "Roller-300.nbcad",
   "ai_sot": "design/*.nbcad.jsonc",
-  "revision_note": "VERSION 0.1: main_shell body 32 native dump complete (329 features); hatch 141 dump+partial JSONC still shell-JSONC-blocked; wheel_caps 56/65 + input_caps 100/108 + carriage 97 native-port; coupons retained; one-drive DEPRECATED.",
+  "revision_note": "VERSION 0.1: main_shell body 32 dump\u2192JSONC via tools/dump_to_jsonc.py (skip MoveCopy5/Combine8/Combine16); blank-doc AABB pre-Combine16 ~159.93\u00d7210\u00d7159.96; exports first-prints/native-port/main-shell.*; hatch blank-doc unblocked for MoveCopy5; coupons remain under first-prints/coupons/.",
   "modules": [
     {
       "file": "design_v0_1_hardware_refs.nbcad.jsonc",
@@ -15,9 +15,23 @@
       "stage": "S02",
       "role": "barrel_shell",
       "native_body_id": 32,
-      "port_status": "dump_complete_jsonc_pending",
+      "port_status": "jsonc_replay_ok_pre_combine16",
       "dump": "design/native-port/main_shell-32.{json,md}",
-      "note": "Native dump complete; JSONC rebuild next. Unblocks hatch MoveCopy5."
+      "note": "Native dump\u2192JSONC (dump_to_jsonc.py). Skipped hatch-only MoveCopy5/Combine8/Combine16. Blank-doc AABB ~159.93\u00d7210\u00d7159.96 @ mins(-79.93,-105,43.02). Exports first-prints/native-port/main-shell.*. Coupons under first-prints/coupons/.",
+      "exports": [
+        "first-prints/native-port/main-shell.3mf",
+        "first-prints/native-port/main-shell.stl"
+      ],
+      "aabb_pre_combine16": {
+        "dx": 159.9259,
+        "dy": 210.0,
+        "dz": 159.963,
+        "mins": [
+          -79.9259,
+          -105.0,
+          43.0185
+        ]
+      }
     },
     {
       "file": "design_v0_1_input_carriage.nbcad.jsonc",
@@ -39,9 +53,9 @@
       "stage": "S03",
       "role": "structural_hatch",
       "native_body_id": 141,
-      "port_status": "dump_complete_jsonc_partial_shell_blocker",
+      "port_status": "dump_complete_jsonc_partial_shell_ready",
       "dump": "design/native-port/hatch-141.{json,md}",
-      "note": "Full blank-doc hatch blocked on main_shell body 32 JSONC (MoveCopy5). Shell dump now exists (main_shell-32); finish shell JSONC then hatch replay. Legacy lap/arc coupons retained."
+      "note": "Shell JSONC now exists (pre-Combine16). Finish hatch blank-doc: MoveCopy5 from shell, then Extrude88\u2229/fastener patterns; Combine16 back on shell when hatch solid ready. Legacy lap/arc coupons retained."
     },
     {
       "file": "design_v0_1_electronics_mounts.nbcad.jsonc",
@@ -103,7 +117,7 @@
       "design_v0_1_electronics_mounts.nbcad.jsonc#thermal_envelope_shelf_coupon"
     ],
     "still_empty": [],
-    "next_fill_target": "Native-port: main_shell 32 dump complete. Next: shell JSONC from dump, then hatch finish."
+    "next_fill_target": "Finish hatch blank-doc replay using shell chapter solid; then Combine16 on shell for final AABB."
   },
   "one_drive": {
     "status": "deprecated_failed_placeholder",

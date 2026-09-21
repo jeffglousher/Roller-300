@@ -86416,8 +86416,19 @@
       "path": "first-prints/shell-first-review/main-shell-axle-vertical.stl"
     },
     "match": {
-      "blank_doc_replay_aabb": null,
-      "status": "pending_jsonc_rebuild"
+      "blank_doc_replay_aabb": {
+        "xmin": -79.9259262084961,
+        "xmax": 80.0,
+        "ymin": -105.0,
+        "ymax": 105.0,
+        "zmin": 43.01852035522461,
+        "zmax": 202.98147583007812,
+        "dx": 159.9259262084961,
+        "dy": 210.0,
+        "dz": 159.96295547485352
+      },
+      "status": "pre_combine16_ok",
+      "note": "Skipped MoveCopy5/Combine8/Combine16 (hatch 141). Review STL includes Combine16."
     },
     "seed_sketch_bbox_uv": {
       "umin": -80.0,
@@ -86449,6 +86460,6 @@
     ],
     "partial_port_ok": "Dump is SoT this pass. JSONC rebuild is follow-up \u2014 do not invent blocks; may stage seed Extrude1 only as scaffold if dump is complete.",
     "assemble_coordination": "barrel_shell before structural_hatch. Hatch MoveCopy5 requires shell solid.",
-    "next_after_dump": "shell JSONC chapter from this dump (design_v0_1_barrel_shell.nbcad.jsonc); then finish hatch blank-doc replay"
+    "next_after_dump": "hatch blank-doc finish; then Combine16 on shell"
   }
 }

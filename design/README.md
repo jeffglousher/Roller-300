@@ -13,7 +13,7 @@ JSONC-first AI iterate tree. Native `../Roller-300.nbcad` remains the editable C
 | File | PLAN stage | Role | Geometry status |
 |------|------------|------|-----------------|
 | `design_v0_1_hardware_refs.nbcad.jsonc` | S01 | Hardware / belt / bearing / shaft refs | **Coupon geometry**: 608 seat D22.2×7.2 trial + M4 nut AF7.3×3.5 |
-| `design_v0_1_barrel_shell.nbcad.jsonc` | S02 | Barrel shell + saddles/rails/guards | **Native dump** `native-port/main_shell-32.*` (329 feats); JSONC rebuild next; review AABB 159.95×210×159.98 |
+| `design_v0_1_barrel_shell.nbcad.jsonc` | S02 | `main_shell` (native body 32) | **Native-port chapter** via `tools/dump_to_jsonc.py`; skip hatch MoveCopy5/Combine8/Combine16; blank-doc AABB ~159.93×210×159.96 (pre-Combine16); exports `../first-prints/native-port/main-shell.*`; coupons under `../first-prints/coupons/` |
 | `design_v0_1_input_carriage.nbcad.jsonc` | S02 | `left_input_carriage` (native body 97) | **Native-port chapter**: Extrude62→86 from dump; blank-doc AABB 39×100×35; exports `../first-prints/native-port/left-input-carriage.*`. |
 | `design_v0_1_input_caps.nbcad.jsonc` | S02 | `input_cap_inner` / `input_cap_outer` (100/108) | **Native-port chapter**: Extrude65–74 + Extrude144/Combine + Extrude145; AABB 39×8×17.7; exports `../first-prints/native-port/input-cap-{inner,outer}.*`. |
 | `design_v0_1_wheel_caps.nbcad.jsonc` | S02 | `wheel_cap_inner` / `wheel_cap_outer` (56/65) | **Native-port chapter**: Extrude23–25 + Extrude31–33; AABB 50×12×16.7; exports `../first-prints/native-port/wheel-cap-{inner,outer}.*`. |
@@ -48,7 +48,7 @@ Print **mechanic fit coupons / small articles** first — not full vehicle, not 
 |--------|--------|--------|
 | 608 bearing trial seat | `design_v0_1_hardware_refs.nbcad.jsonc` | Plate ~40×40×8; seat D22.2×7.2 trial; through D18 shoulder clear |
 | M4 captive-nut hatch | same | Hex pocket AF 7.3 × depth 3.5 (PLAN hatch candidate) |
-| Wheel-seat saddle | `design_v0_1_barrel_shell.nbcad.jsonc` | One saddle block matching D22.2×7.2; map to vehicle Y±51/±99 |
+| main_shell (native 32) | `design_v0_1_barrel_shell.nbcad.jsonc` | Full shell from native dump (pre-Combine16); saddle coupons remain under `../first-prints/coupons/` |
 | left_input_carriage (native 97) | `design_v0_1_input_carriage.nbcad.jsonc` | Full left carriage from native dump; exports under `../first-prints/native-port/` |
 | input caps (native 100/108) | `design_v0_1_input_caps.nbcad.jsonc` | Inner/outer bearing caps from native dump; shared M3 + recess; exports under `../first-prints/native-port/` |
 | wheel caps (native 56/65) | `design_v0_1_wheel_caps.nbcad.jsonc` | Inner/outer wheel bearing caps from native dump; M4 pattern + Ø22.2 seat; exports under `../first-prints/native-port/` |
