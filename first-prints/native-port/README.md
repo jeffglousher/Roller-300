@@ -61,10 +61,10 @@ See `_export_report.json` for the last export run.
 | Dump | `design/native-port/main_shell-32.md` + `.json` |
 | Generator | `tools/dump_to_jsonc.py` |
 | Exports | `main-shell.3mf`, `main-shell.stl` (body 1 only; Combine12 keep_tools leftovers omitted) |
-| AABB (replay) | X[-79.926,80] Y[-105,105] Z[43.019,202.981] → **~159.93 × 210 × 159.96** |
-| AABB target (w/ Combine16) | **159.95 × 210 × 159.98** @ mins (-79.95, -105, 43.01) (`shell-first-review/main-shell-assembly-coordinates.stl`) |
+| AABB (replay, w/ Combine16) | X[-79.926,80] Y[-105,105] Z[43.019,202.981] → **~159.93 × 210 × 159.96** |
+| AABB review | **159.95 × 210 × 159.98** @ mins (-79.95, -105, 43.01) (`shell-first-review/main-shell-assembly-coordinates.stl`) |
 
-Blank-doc replay 1001 steps / 746 calls. Skipped hatch-only **MoveCopy5**, **Combine8**, **Combine16** (need body 141). Pre-Combine16 shell matches dump-without-hatch-cut; final review AABB needs hatch chapter then Combine16.
+Assemble-order blank-doc: shell through Combine3 → hatch → shell remainder + **Combine8** + **Combine16**. Outer envelope matches review (Combine5 already opens aperture; Combine16 keeps hatch tool). Standalone barrel_shell chapter still skips hatch-only ops.
 
 ## curved-hatch
 
@@ -76,8 +76,7 @@ Blank-doc replay 1001 steps / 746 calls. Skipped hatch-only **MoveCopy5**, **Com
 | Dump | `design/native-port/hatch-141.md` + `.json` |
 | Generator | `tools/dump_to_jsonc.py --role hatch` |
 | Exports | `curved-hatch.3mf`, `curved-hatch.stl` (body after Combine14) |
-| AABB (replay) | X[-69,69] Y[-89.7,89.7] Z[123,202.932] → **138 × 179.4 × 79.932** |
-| AABB target | X-69–69 Y-89.7–89.7 Z154.859–202.952 → **138 × 179.4 × 48.0928** (`shell-first-review/curved-hatch-assembly-coordinates.stl`) |
+| AABB (replay / native) | X[-69,69] Y[-89.7,89.7] Z[123,202.932] → **138 × 179.4 × 79.932** |
+| AABB review STL (trimmed) | X-69–69 Y-89.7–89.7 Z154.859–202.952 → **138 × 179.4 × 48.0928** (`shell-first-review/curved-hatch-assembly-coordinates.stl`) |
 
-Replay (A): blank doc → barrel_shell `--max-fid 290` (through Combine3, before MoveCopy5) → hatch chapter on same doc (or `--embed-shell`). XY match; **Z VERIFY** (replay zmin 123 vs review 154.859 — Extrude88 datum / Combine3 shoulders). Combine16 on shell deferred until Z VERIFY clears. Legacy lap/arc coupons not in chapter steps.
-
+Replay (A): blank doc → barrel_shell through Combine3 → hatch chapter (or assemble-order with Combine16). XY match. **Z CLOSED**: native Extrude88 @ Z123 + Combine3 shoulders → tall solid matches dump; review STL zmin 154.859 is trimmed ID-R76 chord at |X|=69 (`123+sqrt(76²-69²)`) — do not invent cuts. Combine16 applied in assemble-order for main-shell opening.

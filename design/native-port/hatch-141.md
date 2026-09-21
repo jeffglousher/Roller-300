@@ -2,7 +2,7 @@
 
 Source: `Roller-300.nbcad` → `model.json` (schema 7). Structured twin: `hatch-141.json`.
 
-**This pass: dump complete + full hatch JSONC.** Replay path (A): barrel_shell through fid&lt;291 (Combine3) → MoveCopy5+hatch chapter on same doc (or `dump_to_jsonc.py --embed-shell` with `--max-fid 290`). XY AABB match; Z VERIFY vs review STL. No invented geometry.
+**Dump + JSONC complete; Z closed.** Replay (A): barrel_shell through Combine3 → hatch; assemble-order adds Combine16 on shell. XY match. Z: native/replay tall Z[123,202.932] matches Extrude88@Z123; review STL zmin 154.859 is trimmed ID-chord export — no invented cuts.
 
 ## Creation
 - **MoveCopy5** (`copy: true`) of **body 32** (main_shell) → **body 141**, identity transform
@@ -39,7 +39,7 @@ Source: `Roller-300.nbcad` → `model.json` (schema 7). Structured twin: `hatch-
 |--------|-----------|
 | S03 A sketch UV envelope | X ±69 × Y ±89.7 → **138 × 179.4** (2D only; Extrude88 alone ≠ final hatch) |
 | `first-prints/shell-first-review/curved-hatch-assembly-coordinates.stl` | X[-69.0000,69.0000] Y[-89.7000,89.7000] Z[154.8591,202.9519] → **138.0000 × 179.4000 × 48.0928** (tris 4296) |
-| Blank-doc JSONC replay (shell@fid≤290 → hatch) | X[-69,69] Y[-89.7,89.7] Z[123,202.932] → **138 × 179.4 × 79.932** (tris 3068). XY match. **Z VERIFY**: review zmin 154.859 (outer-wall at |X|=69); replay includes Extrude88 plane / Combine3 shoulder material down to Z123. |
+| Blank-doc JSONC replay (shell@fid≤290 → hatch) | X[-69,69] Y[-89.7,89.7] Z[123,202.932] → **138 × 179.4 × 79.932** (tris 3068). XY match. **Z CLOSED**: native matches tall replay; review zmin 154.859 = ID R76 chord at |X|=69 (trimmed export). |X|=69); replay includes Extrude88 plane / Combine3 shoulder material down to Z123. |
 
 ## VERIFY gaps (before full JSONC rebuild)
 1. **shell_copy_dependency** (MoveCopy5): Hatch starts as identity copy of body **32** at fid 291. Full blank-doc port needs shell history through that fid (or retained solid). **Do not invent OD160/ID152 tube.**

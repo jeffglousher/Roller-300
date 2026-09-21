@@ -13,11 +13,11 @@ JSONC-first AI iterate tree. Native `../Roller-300.nbcad` remains the editable C
 | File | PLAN stage | Role | Geometry status |
 |------|------------|------|-----------------|
 | `design_v0_1_hardware_refs.nbcad.jsonc` | S01 | Hardware / belt / bearing / shaft refs | **Coupon geometry**: 608 seat D22.2×7.2 trial + M4 nut AF7.3×3.5 |
-| `design_v0_1_barrel_shell.nbcad.jsonc` | S02 | `main_shell` (native body 32) | **Native-port chapter** via `tools/dump_to_jsonc.py`; skip hatch MoveCopy5/Combine8/Combine16; blank-doc AABB ~159.93×210×159.96 (pre-Combine16); exports `../first-prints/native-port/main-shell.*`; coupons under `../first-prints/coupons/` |
+| `design_v0_1_barrel_shell.nbcad.jsonc` | S02 | `main_shell` (native body 32) | **Native-port chapter** via `tools/dump_to_jsonc.py`; standalone skips hatch MoveCopy5/Combine8/Combine16; assemble-order AABB ~159.93×210×159.96; exports `../first-prints/native-port/main-shell.*`; coupons under `../first-prints/coupons/` |
 | `design_v0_1_input_carriage.nbcad.jsonc` | S02 | `left_input_carriage` (native body 97) | **Native-port chapter**: Extrude62→86 from dump; blank-doc AABB 39×100×35; exports `../first-prints/native-port/left-input-carriage.*`. |
 | `design_v0_1_input_caps.nbcad.jsonc` | S02 | `input_cap_inner` / `input_cap_outer` (100/108) | **Native-port chapter**: Extrude65–74 + Extrude144/Combine + Extrude145; AABB 39×8×17.7; exports `../first-prints/native-port/input-cap-{inner,outer}.*`. |
 | `design_v0_1_wheel_caps.nbcad.jsonc` | S02 | `wheel_cap_inner` / `wheel_cap_outer` (56/65) | **Native-port chapter**: Extrude23–25 + Extrude31–33; AABB 50×12×16.7; exports `../first-prints/native-port/wheel-cap-{inner,outer}.*`. |
-| `design_v0_1_structural_hatch.nbcad.jsonc` | S03 | `hatch` (native body 141) | **Native-port chapter** via `dump_to_jsonc.py --role hatch`; replay after shell@fid≤290; AABB XY 138×179.4 match, Z VERIFY; exports `../first-prints/native-port/curved-hatch.*` |
+| `design_v0_1_structural_hatch.nbcad.jsonc` | S03 | `hatch` (native body 141) | **Native-port chapter** via `dump_to_jsonc.py --role hatch`; replay after shell through Combine3; AABB XY 138×179.4 match, Z CLOSED (review STL trimmed); exports `../first-prints/native-port/curved-hatch.*` |
 | `design_v0_1_electronics_mounts.nbcad.jsonc` | S04 | Battery / boards / sensors / harness | **Shelf/standoff + allowance coupons** (Pi / Pixracer / TOF / battery tray / thermal); shell-integrated mounts deferred |
 | `design_v0_1_drive_stack.nbcad.jsonc` | S01/S05 | One-drive pulley/belt/hub stack | **Pitch envelopes** 24/48 + belt torus + Ø8 stubs |
 | `design_v0_1_assemble.nbcad.jsonc` | orchestrator | Ordered chapter compose notes | Orchestrator only |
@@ -48,11 +48,11 @@ Print **mechanic fit coupons / small articles** first — not full vehicle, not 
 |--------|--------|--------|
 | 608 bearing trial seat | `design_v0_1_hardware_refs.nbcad.jsonc` | Plate ~40×40×8; seat D22.2×7.2 trial; through D18 shoulder clear |
 | M4 captive-nut hatch | same | Hex pocket AF 7.3 × depth 3.5 (PLAN hatch candidate) |
-| main_shell (native 32) | `design_v0_1_barrel_shell.nbcad.jsonc` | Full shell from native dump (pre-Combine16); saddle coupons remain under `../first-prints/coupons/` |
+| main_shell (native 32) | `design_v0_1_barrel_shell.nbcad.jsonc` | Full shell from native dump; Combine16 via assemble-order; saddle coupons remain under `../first-prints/coupons/` |
 | left_input_carriage (native 97) | `design_v0_1_input_carriage.nbcad.jsonc` | Full left carriage from native dump; exports under `../first-prints/native-port/` |
 | input caps (native 100/108) | `design_v0_1_input_caps.nbcad.jsonc` | Inner/outer bearing caps from native dump; shared M3 + recess; exports under `../first-prints/native-port/` |
 | wheel caps (native 56/65) | `design_v0_1_wheel_caps.nbcad.jsonc` | Inner/outer wheel bearing caps from native dump; M4 pattern + Ø22.2 seat; exports under `../first-prints/native-port/` |
-| Hatch (native 141) | `design_v0_1_structural_hatch.nbcad.jsonc` | Full hatch from dump; exports `../first-prints/native-port/curved-hatch.*`; Z VERIFY vs review STL |
+| Hatch (native 141) | `design_v0_1_structural_hatch.nbcad.jsonc` | Full hatch from dump; exports `../first-prints/native-port/curved-hatch.*`; Z CLOSED (review STL trimmed ID-chord) |
 | Drive envelopes | `design_v0_1_drive_stack.nbcad.jsonc` | Visual/fit envelopes only — **not** a print-first article |
 | Pi / Pixracer / TOF / battery / thermal | `design_v0_1_electronics_mounts.nbcad.jsonc` | Shelf/standoff + UNMEASURED allowance tray; footprint/envelope coupons — **not** claimed 3D fits |
 
@@ -79,8 +79,8 @@ Open call to Jeff: measure servo ears/strap; coupon M3 shank + wheel-cap M4 patt
 
 1. Prove hardware_refs + saddle coupons on printer (608 + M4 nut).
 2. ~~Flesh carriage + caps~~: **native-port** `left_input_carriage` + `input_caps` + `wheel_caps` JSONC + `../first-prints/native-port/` (AABB match). Still: tension-slot R1 arcs VERIFY; full shell HOLD.
-3. ~~`structural_hatch`~~: native-port JSONC + `curved-hatch.*` exports (XY AABB match; Z VERIFY).
-4. `barrel_shell`: Combine16 after hatch Z VERIFY; coupons remain under `../first-prints/coupons/`.
+3. ~~`structural_hatch`~~: native-port JSONC + `curved-hatch.*` exports (XY match; Z CLOSED).
+4. ~~`barrel_shell` Combine16~~: assemble-order shell→hatch→Combine16; coupons under `../first-prints/coupons/`.
 5. ~~`electronics_mounts`~~: shelf/standoff + allowance coupons filled from recorded nominals; positive retainers / sensor depth / optical aperture remain HOLD until measured parts.
 
 
@@ -97,5 +97,5 @@ Repo tracks location and releases; CAD/MCP sessions are transitory.
 
 See [`native-port/README.md`](native-port/README.md) and [`native-port/body-inventory.json`](native-port/body-inventory.json).
 
-Ported: **left_input_carriage** (97) + **input_cap_inner/outer** (100/108) + **wheel_cap_inner/outer** (56/65) + **main_shell** (32, pre-Combine16) + **hatch** (141, XY match / Z VERIFY) — JSONC + `first-prints/native-port/` exports. Next: hatch Z VERIFY then Combine16. Review STLs in `shell-first-review/` remain valid cross-check.
+Ported: **left_input_carriage** (97) + **input_cap_inner/outer** (100/108) + **wheel_cap_inner/outer** (56/65) + **main_shell** (32, Combine16 via assemble-order) + **hatch** (141, XY match / Z CLOSED) — JSONC + `first-prints/native-port/` exports. Hatch Z + Combine16 VERIFYs closed. Review STLs in `shell-first-review/` remain cross-check (hatch review STL is trimmed).
 

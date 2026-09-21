@@ -76,7 +76,7 @@
       }
     ]
   },
-  "note": "Carriage/caps/wheel_caps/main_shell/hatch from native dump replay. Hatch XY AABB match; Z VERIFY (zmin 123 vs review 154.859). Combine16 deferred.",
+  "note": "Carriage/caps/wheel_caps/main_shell/hatch from native dump replay. Hatch XY AABB match; Z closed: native/replay tall Z[123,202.932] matches Extrude88@Z123; review STL zmin 154.859 is trimmed ID-chord export. Combine16 applied (assemble shell\u2192hatch\u2192Combine8/16); shell AABB matches review envelope.",
   "wheel_caps": {
     "source_chapter": "design/design_v0_1_wheel_caps.nbcad.jsonc",
     "native_dumps": [
@@ -136,9 +136,9 @@
     "native_body_id": 141,
     "role": "hatch",
     "generator": "tools/dump_to_jsonc.py --role hatch",
-    "replay_path": "shell --max-fid 290 then hatch (embed-shell)",
+    "replay_path": "assemble: shell through Combine3 \u2192 hatch \u2192 shell remainder + Combine8/16",
     "replay_ok": true,
-    "steps_completed": 584,
+    "steps_completed": 1093,
     "aabb": {
       "xmin": -69.0,
       "xmax": 69.0,
@@ -162,12 +162,14 @@
       "dz": 48.092803955078125
     },
     "aabb_xy_match": true,
-    "aabb_z_verify": true,
+    "aabb_z_verify": false,
     "exports": [
       "curved-hatch.3mf",
       "curved-hatch.stl"
     ],
-    "export_body_id": 66
+    "export_body_id": 66,
+    "aabb_z_status": "closed_native_tall_matches_replay_review_stl_trimmed",
+    "aabb_z_note": "Review STL zmin 154.859 = ID R76 chord at |X|=69 (123+sqrt(76^2-69^2)). Native Extrude88 datum Z123 + Combine3 shoulders \u2192 tall replay; do not invent cuts."
   },
   "main_shell": {
     "source_chapter": "design/design_v0_1_barrel_shell.nbcad.jsonc",
@@ -176,13 +178,9 @@
     "role": "main_shell",
     "generator": "tools/dump_to_jsonc.py",
     "replay_ok": true,
-    "steps_completed": 1001,
-    "calls": 746,
-    "skipped_hatch_ops": [
-      "MoveCopy5",
-      "Combine8",
-      "Combine16"
-    ],
+    "steps_completed": 1093,
+    "calls": 791,
+    "skipped_hatch_ops": [],
     "aabb": {
       "xmin": -79.9259262084961,
       "xmax": 80.0,
@@ -204,13 +202,19 @@
         43.01
       ]
     },
-    "aabb_note": "Pre-Combine16 (hatch 141 skipped). Matches dump-without-hatch-cut; review STL includes Combine16 hatch opening.",
-    "aabb_match_pre_combine16": true,
+    "aabb_note": "After Combine16 (assemble-order). Outer envelope \u2248 review STL 159.95\u00d7210\u00d7159.98 @ (-79.95,-105,43.01); Combine5 already opens hatch aperture so Combine16 does not change outer AABB. Opening present per native dump.",
+    "aabb_match_pre_combine16": null,
     "retained_tool_bodies_from_Combine12": 8,
     "exports": [
       "main-shell.3mf",
       "main-shell.stl"
     ],
-    "export_body_id": 1
+    "export_body_id": 1,
+    "assemble_ops_applied": [
+      "MoveCopy5",
+      "Combine8",
+      "Combine16"
+    ],
+    "aabb_match_with_combine16": true
   }
 }

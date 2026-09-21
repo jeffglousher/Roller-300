@@ -15,8 +15,8 @@
 // Shared named refs (future): origin planes + axle_z=123; barrel OD/ID/length from parameters.body; belt/pulley from parameters.transmission.
 // Belt cite only (parent handles order): D&D 210-3M-09 / Amazon B00ISC4PHG — pitch 3 / length 210 / width 9 / 70 teeth.
 // Chapter status: electronics_mounts now has shelf/standoff + allowance coupons (VERSION 0.1); shell-integrated mounts still HOLD.
-// Barrel shell: native-port JSONC (pre-Combine16); exports first-prints/native-port/main-shell.*.
-// Hatch chapter: replay after barrel_shell through fid<291 (MoveCopy5); Z VERIFY; Combine16 deferred; legacy coupons README-only.
+// Barrel shell: native-port JSONC; Combine16 in assemble-order; exports first-prints/native-port/main-shell.*.
+// Hatch chapter: replay after barrel_shell through Combine3 (MoveCopy5); Z CLOSED (review STL trimmed); Combine16 via assemble-order; legacy coupons README-only.
 // Full one-drive shell print remains HOLD (PLAN S05); native-port meshes + coupons first.
 // CHAPTER_PATHS_JSON = ["design_v0_1_hardware_refs.nbcad.jsonc", "design_v0_1_barrel_shell.nbcad.jsonc", "design_v0_1_input_carriage.nbcad.jsonc", "design_v0_1_input_caps.nbcad.jsonc", "design_v0_1_wheel_caps.nbcad.jsonc", "design_v0_1_structural_hatch.nbcad.jsonc", "design_v0_1_electronics_mounts.nbcad.jsonc", "design_v0_1_drive_stack.nbcad.jsonc"]
 {

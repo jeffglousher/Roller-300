@@ -3,7 +3,7 @@
   "architecture": "shell-first modular Design Ops cut",
   "native_master": "Roller-300.nbcad",
   "ai_sot": "design/*.nbcad.jsonc",
-  "revision_note": "VERSION 0.1: hatch body 141 dump\u2192JSONC via tools/dump_to_jsonc.py --role hatch; replay shell@max_fid 290 then hatch; AABB XY 138\u00d7179.4 match, Z VERIFY (123 vs review 154.859); exports first-prints/native-port/curved-hatch.*; Combine16 deferred; legacy hatch coupons removed from steps.",
+  "revision_note": "VERSION 0.1: hatch Z closed (native/replay tall Z123 matches Extrude88; review STL zmin 154.859 = trimmed ID-R76 chord) + Combine16 applied assemble-order (shell\u2192hatch\u2192Combine8/16); re-exported main-shell.*; curved-hatch AABB unchanged.",
   "modules": [
     {
       "file": "design_v0_1_hardware_refs.nbcad.jsonc",
@@ -15,14 +15,24 @@
       "stage": "S02",
       "role": "barrel_shell",
       "native_body_id": 32,
-      "port_status": "jsonc_replay_ok_pre_combine16",
+      "port_status": "jsonc_replay_ok_combine16_assemble",
       "dump": "design/native-port/main_shell-32.{json,md}",
-      "note": "Native dump\u2192JSONC (dump_to_jsonc.py). Skipped hatch-only MoveCopy5/Combine8/Combine16. Blank-doc AABB ~159.93\u00d7210\u00d7159.96 @ mins(-79.93,-105,43.02). Exports first-prints/native-port/main-shell.*. Coupons under first-prints/coupons/.",
+      "note": "Native dump\u2192JSONC. Standalone skips MoveCopy5/Combine8/Combine16; assemble-order applies them. AABB ~159.93\u00d7210\u00d7159.96 @ mins(-79.93,-105,43.02) \u2248 review w/ opening. Exports first-prints/native-port/main-shell.*",
       "exports": [
         "first-prints/native-port/main-shell.3mf",
         "first-prints/native-port/main-shell.stl"
       ],
       "aabb_pre_combine16": {
+        "dx": 159.9259,
+        "dy": 210.0,
+        "dz": 159.963,
+        "mins": [
+          -79.9259,
+          -105.0,
+          43.0185
+        ]
+      },
+      "aabb_with_combine16": {
         "dx": 159.9259,
         "dy": 210.0,
         "dz": 159.963,
@@ -53,9 +63,9 @@
       "stage": "S03",
       "role": "structural_hatch",
       "native_body_id": 141,
-      "port_status": "jsonc_replay_ok_xy_z_verify",
+      "port_status": "jsonc_replay_ok_z_closed",
       "dump": "design/native-port/hatch-141.{json,md}",
-      "note": "Native dump\u2192JSONC (dump_to_jsonc.py --role hatch). Replay after barrel_shell --max-fid 290 (MoveCopy5). Blank-doc AABB 138\u00d7179.4\u00d779.932 @ mins(-69,-89.7,123). XY match; Z VERIFY vs review 48.0928 dz / zmin 154.859. Exports first-prints/native-port/curved-hatch.*. Legacy coupons removed from steps.",
+      "note": "Native dump\u2192JSONC. Replay after barrel_shell through Combine3 (MoveCopy5). AABB 138\u00d7179.4\u00d779.932 @ mins(-69,-89.7,123). XY match. Z CLOSED: review 48.0928 dz / zmin 154.859 is trimmed ID-chord export. Exports first-prints/native-port/curved-hatch.*",
       "exports": [
         "first-prints/native-port/curved-hatch.3mf",
         "first-prints/native-port/curved-hatch.stl"
@@ -70,7 +80,7 @@
           123.0
         ]
       },
-      "aabb_target": {
+      "aabb_review_trimmed": {
         "dx": 138.0,
         "dy": 179.4,
         "dz": 48.0928,
@@ -78,7 +88,8 @@
           -69.0,
           -89.7,
           154.859
-        ]
+        ],
+        "note": "trimmed export; not native solid AABB"
       }
     },
     {
@@ -141,7 +152,7 @@
       "design_v0_1_electronics_mounts.nbcad.jsonc#thermal_envelope_shelf_coupon"
     ],
     "still_empty": [],
-    "next_fill_target": "Resolve hatch Z VERIFY (zmin 123 vs review 154.859); then Combine16 on shell."
+    "next_fill_target": "Hatch Z + Combine16 closed; next electronics_mounts / drive_stack native-port."
   },
   "one_drive": {
     "status": "deprecated_failed_placeholder",
@@ -209,7 +220,7 @@
         "body_id": 141,
         "chapter": "design_v0_1_structural_hatch.nbcad.jsonc",
         "exports": "first-prints/native-port/curved-hatch.{3mf,stl}",
-        "aabb": "X-69-69 Y-89.7-89.7 Z123-202.932 (138x179.4x79.932) XY match; Z VERIFY"
+        "aabb": "X-69-69 Y-89.7-89.7 Z123-202.932 (138x179.4x79.932) XY match; Z CLOSED (review STL trimmed)"
       },
       {
         "role": "main_shell",
@@ -222,7 +233,7 @@
     "next_body": {
       "role": "hatch_z_verify_then_combine16",
       "body_id": 141,
-      "note": "Hatch JSONC+exports done; Z VERIFY before Combine16 final shell AABB"
+      "note": "Hatch Z CLOSED (native tall; review STL trimmed ID-chord); Combine16 applied assemble-order; main-shell envelope \u2248 review."
     },
     "note": "JSONC ported from native feature dumps only \u2014 no invented blocks.",
     "hatch": {
@@ -281,5 +292,5 @@
       "blocker_cleared_for": "hatch MoveCopy5 \u2014 pending shell JSONC replay"
     }
   },
-  "next_fill_target": "Native-port: main_shell body 32 dump complete (329 features). Next: shell JSONC (design_v0_1_barrel_shell.nbcad.jsonc) from dump \u2014 no invented geometry; then finish hatch 141 blank-doc replay."
+  "next_fill_target": "Native-port next: electronics_mounts / drive_stack (hatch Z + Combine16 closed)."
 }
