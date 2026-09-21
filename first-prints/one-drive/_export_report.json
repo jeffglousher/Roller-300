@@ -1,0 +1,209 @@
+{
+  "started": "2026-09-20 22:09:11 CT",
+  "script": "design/design_v0_1_input_carriage.nbcad.jsonc",
+  "replay": {
+    "checks_completed": 1,
+    "elapsed_ms": 828,
+    "exports": {},
+    "name": "Roller-300 design_v0_1_input_carriage (VERSION 0.1) \u2014 rail coupon + one_drive printable set",
+    "steps_completed": 122
+  },
+  "bodies": [
+    {
+      "bbox_max": [
+        15.0,
+        8.0,
+        6.0
+      ],
+      "bbox_min": [
+        -15.0,
+        -8.0,
+        0.0
+      ],
+      "id": 1,
+      "name": "Body1",
+      "triangle_count": 32,
+      "vertex_count": 96
+    },
+    {
+      "bbox_max": [
+        99.5,
+        50.0,
+        35.0
+      ],
+      "bbox_min": [
+        60.5,
+        -50.0,
+        0.0
+      ],
+      "id": 3,
+      "name": "Body3",
+      "triangle_count": 576,
+      "vertex_count": 1728
+    },
+    {
+      "bbox_max": [
+        159.5,
+        4.0,
+        12.0
+      ],
+      "bbox_min": [
+        120.5,
+        -4.0,
+        0.0
+      ],
+      "id": 11,
+      "name": "Body11",
+      "triangle_count": 304,
+      "vertex_count": 912
+    },
+    {
+      "bbox_max": [
+        209.5,
+        4.0,
+        12.0
+      ],
+      "bbox_min": [
+        170.5,
+        -4.0,
+        0.0
+      ],
+      "id": 14,
+      "name": "Body14",
+      "triangle_count": 304,
+      "vertex_count": 912
+    },
+    {
+      "bbox_max": [
+        265.0,
+        6.0,
+        10.0
+      ],
+      "bbox_min": [
+        215.0,
+        -6.0,
+        0.0
+      ],
+      "id": 15,
+      "name": "Body15",
+      "triangle_count": 448,
+      "vertex_count": 1344
+    },
+    {
+      "bbox_max": [
+        325.0,
+        6.0,
+        10.0
+      ],
+      "bbox_min": [
+        275.0,
+        -6.0,
+        0.0
+      ],
+      "id": 20,
+      "name": "Body20",
+      "triangle_count": 448,
+      "vertex_count": 1344
+    }
+  ],
+  "exports": [
+    {
+      "stem": "carriage-rail-slot-coupon",
+      "body_id": 1,
+      "format": "3mf",
+      "path": "first-prints/one-drive/carriage-rail-slot-coupon.3mf",
+      "bytes": 1320,
+      "ok": true
+    },
+    {
+      "stem": "carriage-rail-slot-coupon",
+      "body_id": 1,
+      "format": "stl",
+      "path": "first-prints/one-drive/carriage-rail-slot-coupon.stl",
+      "bytes": 1684,
+      "ok": true
+    },
+    {
+      "stem": "left-input-carriage",
+      "body_id": 3,
+      "format": "3mf",
+      "path": "first-prints/one-drive/left-input-carriage.3mf",
+      "bytes": 6344,
+      "ok": true
+    },
+    {
+      "stem": "left-input-carriage",
+      "body_id": 3,
+      "format": "stl",
+      "path": "first-prints/one-drive/left-input-carriage.stl",
+      "bytes": 28884,
+      "ok": true
+    },
+    {
+      "stem": "input-cap-inner",
+      "body_id": 11,
+      "format": "3mf",
+      "path": "first-prints/one-drive/input-cap-inner.3mf",
+      "bytes": 3603,
+      "ok": true
+    },
+    {
+      "stem": "input-cap-inner",
+      "body_id": 11,
+      "format": "stl",
+      "path": "first-prints/one-drive/input-cap-inner.stl",
+      "bytes": 15284,
+      "ok": true
+    },
+    {
+      "stem": "input-cap-outer",
+      "body_id": 14,
+      "format": "3mf",
+      "path": "first-prints/one-drive/input-cap-outer.3mf",
+      "bytes": 3605,
+      "ok": true
+    },
+    {
+      "stem": "input-cap-outer",
+      "body_id": 14,
+      "format": "stl",
+      "path": "first-prints/one-drive/input-cap-outer.stl",
+      "bytes": 15284,
+      "ok": true
+    },
+    {
+      "stem": "wheel-cap-inner",
+      "body_id": 15,
+      "format": "3mf",
+      "path": "first-prints/one-drive/wheel-cap-inner.3mf",
+      "bytes": 4811,
+      "ok": true
+    },
+    {
+      "stem": "wheel-cap-inner",
+      "body_id": 15,
+      "format": "stl",
+      "path": "first-prints/one-drive/wheel-cap-inner.stl",
+      "bytes": 22484,
+      "ok": true
+    },
+    {
+      "stem": "wheel-cap-outer",
+      "body_id": 20,
+      "format": "3mf",
+      "path": "first-prints/one-drive/wheel-cap-outer.3mf",
+      "bytes": 4817,
+      "ok": true
+    },
+    {
+      "stem": "wheel-cap-outer",
+      "body_id": 20,
+      "format": "stl",
+      "path": "first-prints/one-drive/wheel-cap-outer.stl",
+      "bytes": 22484,
+      "ok": true
+    }
+  ],
+  "status": "one_drive_in_progress",
+  "note": "Prefer 3MF. Full main-shell HOLD. VERSION 0.1."
+}

@@ -1,16 +1,17 @@
 // Roller-300 design_v0_1_input_carriage — modular Design Ops chapter (VERSION 0.1)
-// Role: S02 — Removable input carriage — minimal rail/slot coupon
+// Role: S02 — Removable input carriage — rail/slot coupon + one_drive printable service set
 // SoT: this .nbcad.jsonc. Replay: blank document only.
-// Slot travel ±1.5 and size [7.4,4.4] from parameters.transmission. Slot cut length 10.4 = 7.4+3.0.
-// VERIFY: add R1 corner (parameters.slot_corner_radius) — not applied in this coupon cut.
-// Full carriage still REVIEW STL only under first-prints/shell-first-review/.
+// Coupon: slot travel ±1.5 and size [7.4,4.4] from parameters.transmission. Slot cut length 10.4 = 7.4+3.0.
+// one_drive: left_input_carriage + input caps (M3 CB D6) + wheel caps (M4 D4.4) — NOT full barrel shell.
+// Nominals ONLY from PLAN.md / parameters.json. Ears/horn/clutch/strap dims / unverified clearances = VERIFY/HOLD.
+// Full OD160×L210 shell remains HOLD — do not claim print release of main-shell.
 {
   "version": 1,
-  "name": "Roller-300 design_v0_1_input_carriage (VERSION 0.1) \u2014 rail slot coupon",
+  "name": "Roller-300 design_v0_1_input_carriage (VERSION 0.1) — rail coupon + one_drive printable set",
   "starting_state": "empty",
   "steps": [
     {
-      "chapter": "Shared refs \u2014 carriage travel",
+      "chapter": "Shared refs — carriage travel",
       "note": "parameters.transmission: carriage_slot_size_xy [7.4, 4.4], slot_corner_radius 1, available_translation_x [-1.5, 1.5]. travel_status: CAD clearance screen only."
     },
     {
@@ -30,7 +31,7 @@
     },
     {
       "chapter": "Carriage rail slot travel coupon",
-      "note": "Minimal coupon: rail block with slot 7.4\u00d74.4 (parameters) and engraved travel stops at \u00b11.5 mm intent via slot length = 7.4 + 3.0 = 10.4 along X (slot width 4.4 in Y). Corner R1 from parameters. Slot = fastener travel window; VERIFY against native carriage before locking."
+      "note": "Minimal coupon: rail block with slot 7.4×4.4 (parameters) and engraved travel stops at ±1.5 mm intent via slot length = 7.4 + 3.0 = 10.4 along X (slot width 4.4 in Y). Corner R1 from parameters. Slot = fastener travel window; VERIFY against native carriage before locking."
     },
     {
       "id": "rail_begin",
@@ -239,7 +240,1513 @@
     },
     {
       "chapter": "VERIFY notes",
-      "note": "Slot is rectangular 10.4\u00d74.4 (= 7.4 fastener window + \u00b11.5 travel). parameters.slot_corner_radius 1 not applied yet \u2014 VERIFY/add sketch fillets to R1 before locking. Full carriage body/caps/servo lips remain empty; see first-prints/shell-first-review/left-input-carriage-*.stl for REVIEW ONLY."
+      "note": "Slot is rectangular 10.4×4.4 (= 7.4 fastener window + ±1.5 travel). parameters.slot_corner_radius 1 not applied yet — VERIFY/add sketch fillets to R1 before locking. Full carriage body/caps/servo lips remain empty; see first-prints/shell-first-review/left-input-carriage-*.stl for REVIEW ONLY."
+    },
+    {
+      "chapter": "one_drive — left_input_carriage (printable service article)",
+      "note": "VERSION 0.1. Floor-down envelope ~39×100×35 matches native left-input-carriage review bbox (assembly X30–69 Y2–102 Z88–123). NOT full OD160×L210 shell. Rails/slots from parameters.transmission (±1.5 travel; slot 7.4×4.4; R1 VERIFY). Two input bearing supports: D22.2×7.2 trial + D18 shoulder clear (parameters.bearings; cite hardware_refs coupon). Servo locating lips from case nominal 40.5×20×40.5 / layout.servo_case_size [20,40.5,40.5] only — ears/horn/mount pattern HOLD. Strap passages: no dimensions in PLAN/parameters — VERIFY/HOLD (do not invent). Clutch/unverified clearances HOLD. Full assembly still HOLD."
+    },
+    {
+      "id": "ref_od_bed",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "one_drive_carriage_bed_xy / shared",
+          "distance": 0.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_od_top",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "one_drive_carriage_top_z35 / shared",
+          "distance": 35.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_od_brg_y18",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "one_drive_input_bearing_Y18_map / shared",
+          "distance": 18.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_od_brg_y44",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "one_drive_input_bearing_Y44_map / shared",
+          "distance": 44.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xz"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_od_servo_note",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "one_drive_servo_case_nominal_note / shared",
+          "distance": 5.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "one_drive_left_input_carriage body blank",
+      "note": "Blank 39×100×35 at local print origin shifted +X80 from coupon so rail coupon remains. Later cuts: bearing seats, travel slots, servo lips. Strap passages VERIFY — omitted."
+    },
+    {
+      "id": "car_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "left_input_carriage_blank",
+          "plane": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "car_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "car_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 60.5,
+            "y": -50.0
+          },
+          "corner_hint": {
+            "x": 99.5,
+            "y": 50.0
+          },
+          "width_mm": 39.0,
+          "height_mm": 100.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "car_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "car_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "car_ex",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "left_input_carriage_blank",
+          "profile_indices": [
+            0
+          ],
+          "operation": "new_body",
+          "extent": {
+            "type": "distance",
+            "distance": 35.0
+          },
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": []
+        }
+      }
+    },
+    {
+      "let": {
+        "left_input_carriage_body_feat": {
+          "$select": {
+            "from": {
+              "$ref": "car_ex"
+            },
+            "path": "/document/features",
+            "take": "last",
+            "pointer": "/id"
+          }
+        }
+      }
+    },
+    {
+      "let": {
+        "left_input_carriage_body": {
+          "$select": {
+            "from": {
+              "$ref": "car_ex"
+            },
+            "path": "/scene/bodies",
+            "where": {
+              "/feature_id": {
+                "$ref": "left_input_carriage_body_feat"
+              }
+            },
+            "take": "one"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "one_drive input bearing supports (D22.2×7.2 trial)",
+      "note": "Two seats at local Y=+18 and +44 (vehicle |Y|=70,96 with floor-down mid Y=52). Seat D22.2 × depth 7.2 trial; through D18 shoulder clear — same nominals as hardware_refs 608 coupon / parameters.bearings. input_axial_retention HOLD."
+    },
+    {
+      "id": "car_seat_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "left_input_carriage_bearing_seats",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "ref_od_top"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "car_seat_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "car_seat_c1",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 80.0,
+            "y": 18.0
+          },
+          "edge_hint": {
+            "x": 91.1,
+            "y": 18.0
+          },
+          "diameter_text": "22.2",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "car_seat_c2",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 80.0,
+            "y": 44.0
+          },
+          "edge_hint": {
+            "x": 91.1,
+            "y": 44.0
+          },
+          "diameter_text": "22.2",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "car_seat_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "car_seat_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "car_seat_cut",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "left_input_carriage_bearing_seats",
+          "profile_indices": [
+            0,
+            1
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 7.2
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {
+              "$ref": "left_input_carriage_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "car_thru_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "left_input_carriage_shoulder_clear",
+          "plane": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "car_thru_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "car_thru_c1",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 80.0,
+            "y": 18.0
+          },
+          "edge_hint": {
+            "x": 89.0,
+            "y": 18.0
+          },
+          "diameter_text": "18.0",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "car_thru_c2",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 80.0,
+            "y": 44.0
+          },
+          "edge_hint": {
+            "x": 89.0,
+            "y": 44.0
+          },
+          "diameter_text": "18.0",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "car_thru_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "car_thru_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "car_thru_cut",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "left_input_carriage_shoulder_clear",
+          "profile_indices": [
+            0,
+            1
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 35.0
+          },
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": [
+            {
+              "$ref": "left_input_carriage_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "one_drive carriage travel slots (±1.5 / 7.4×4.4)",
+      "note": "Cut windows 10.4×4.4 (= 7.4 fastener window + 3.0 travel from available_translation_x ±1.5). parameters.slot_corner_radius 1 not applied — VERIFY/add R1 before locking. Two slots on servo-side half at local Y=-35 and Y=-15; along-X travel. Exact native rail Y locations VERIFY against shell rails."
+    },
+    {
+      "id": "car_slot_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "left_input_carriage_travel_slots",
+          "plane": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "car_slot_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "car_slot_r1",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 74.8,
+            "y": -37.2
+          },
+          "corner_hint": {
+            "x": 85.2,
+            "y": -32.8
+          },
+          "width_mm": 10.4,
+          "height_mm": 4.4,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "car_slot_r2",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 74.8,
+            "y": -17.2
+          },
+          "corner_hint": {
+            "x": 85.2,
+            "y": -12.8
+          },
+          "width_mm": 10.4,
+          "height_mm": 4.4,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "car_slot_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "car_slot_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "car_slot_cut",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "left_input_carriage_travel_slots",
+          "profile_indices": [
+            0,
+            1
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 35.0
+          },
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": [
+            {
+              "$ref": "left_input_carriage_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "one_drive servo locating lips (case nominal only)",
+      "note": "Rectangular locating pocket matching layout.servo_case_size [20, 40.5, 40.5] footprint (X×Y) and case_nominal_mm 40.5×20×40.5. Pocket placed on servo-side half (local Y≈-47…-6.5 mapped). Ears / mount_slot_pattern / horn HOLD — not modeled. Full ear envelope and wire exit require sample measurement (parameters.servo)."
+    },
+    {
+      "id": "car_servo_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "left_input_carriage_servo_lips",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "ref_od_top"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "car_servo_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "car_servo_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 70.0,
+            "y": -47.0
+          },
+          "corner_hint": {
+            "x": 90.0,
+            "y": -6.5
+          },
+          "width_mm": 20.0,
+          "height_mm": 40.5,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "car_servo_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "car_servo_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "car_servo_cut",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "left_input_carriage_servo_lips",
+          "profile_indices": [
+            0
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 30.0
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {
+              "$ref": "left_input_carriage_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "one_drive strap passages",
+      "note": "VERIFY/HOLD: PLAN mentions strap passages on carriage but parameters.json has no strap width/height/pitch for the input carriage. Not invented."
+    },
+    {
+      "chapter": "one_drive input caps (M3 recessed, trial)",
+      "note": "Per PLAN: input caps use recessed M3x30 candidates. parameters.input_cap_travel_detail: M3_counterbore_diameter_mm 6; head D5.5×3.0; outer_limit_radius_mm 70. Bodies ~39×8×12 trial plates (native review ~39×8×17.7). Through shank diameter VERIFY (not in parameters). Trial only — receiving fit and angled tool access HOLD. Place at X=140 and X=190 for export separation."
+    },
+    {
+      "id": "icap_in_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "input_cap_inner_blank",
+          "plane": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "icap_in_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "icap_in_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 120.5,
+            "y": -4.0
+          },
+          "corner_hint": {
+            "x": 159.5,
+            "y": 4.0
+          },
+          "width_mm": 39.0,
+          "height_mm": 8.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "icap_in_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "icap_in_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "icap_in_ex",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "input_cap_inner_blank",
+          "profile_indices": [
+            0
+          ],
+          "operation": "new_body",
+          "extent": {
+            "type": "distance",
+            "distance": 12.0
+          },
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": []
+        }
+      }
+    },
+    {
+      "let": {
+        "input_cap_inner_body_feat": {
+          "$select": {
+            "from": {
+              "$ref": "icap_in_ex"
+            },
+            "path": "/document/features",
+            "take": "last",
+            "pointer": "/id"
+          }
+        }
+      }
+    },
+    {
+      "let": {
+        "input_cap_inner_body": {
+          "$select": {
+            "from": {
+              "$ref": "icap_in_ex"
+            },
+            "path": "/scene/bodies",
+            "where": {
+              "/feature_id": {
+                "$ref": "input_cap_inner_body_feat"
+              }
+            },
+            "take": "one"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_icap_in_top",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "input_cap_inner_top_z12 / shared",
+          "distance": 12.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "icap_in_cb_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "input_cap_inner_m3_cb",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "ref_icap_in_top"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "icap_in_cb_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "icap_in_cb",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 140.0,
+            "y": 0.0
+          },
+          "edge_hint": {
+            "x": 143.0,
+            "y": 0.0
+          },
+          "diameter_text": "6.0",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "icap_in_cb_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "icap_in_cb_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "icap_in_cb_cut",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "input_cap_inner_m3_cb",
+          "profile_indices": [
+            0
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 3.0
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {
+              "$ref": "input_cap_inner_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "icap_in_thru_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "input_cap_inner_m3_thru_VERIFY",
+          "plane": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "icap_in_thru_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "icap_in_thru",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 140.0,
+            "y": 0.0
+          },
+          "edge_hint": {
+            "x": 141.6,
+            "y": 0.0
+          },
+          "diameter_text": "3.2",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "icap_in_thru_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "icap_in_thru_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "icap_in_thru_cut",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "input_cap_inner_m3_thru_VERIFY",
+          "profile_indices": [
+            0
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 12.0
+          },
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": [
+            {
+              "$ref": "input_cap_inner_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "VERIFY input_cap M3 shank through",
+      "note": "D3.2 through is TRIAL only — not in PLAN/parameters (only CB D6 and head D5.5×3.0 are recorded). Confirm clearance on coupon before lock."
+    },
+    {
+      "id": "icap_out_copy",
+      "call": {
+        "group": "solid/body",
+        "operation": "solid_move_copy",
+        "arguments": {
+          "body_ids": [
+            {
+              "$ref": "input_cap_inner_body",
+              "pointer": "/id"
+            }
+          ],
+          "translation": {
+            "x": 50.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "pivot": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "copy": true
+        }
+      }
+    },
+    {
+      "let": {
+        "input_cap_outer_body": {
+          "$select": {
+            "from": {
+              "$ref": "icap_out_copy"
+            },
+            "path": "/scene/bodies",
+            "take": "last"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "one_drive wheel caps (M4, trial seats)",
+      "note": "Per PLAN: wheel caps use M4. parameters.wheel_holes.clearance_diameter_mm 4.4; candidate M4x10. Native review bbox ~50×12×16.7. Trial plate 50×12×10 with optional D22.2×7.2 seat land (same bearing trial). Captive-nut / preload VERIFY. Full shell still HOLD."
+    },
+    {
+      "id": "wcap_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "wheel_cap_inner_blank",
+          "plane": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "wcap_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "wcap_rect",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_rectangle_locked",
+        "arguments": {
+          "mode": "two_point",
+          "anchor": {
+            "x": 215.0,
+            "y": -6.0
+          },
+          "corner_hint": {
+            "x": 265.0,
+            "y": 6.0
+          },
+          "width_mm": 50.0,
+          "height_mm": 12.0,
+          "ctrl_held": true
+        }
+      }
+    },
+    {
+      "id": "wcap_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "wcap_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "wcap_ex",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "wheel_cap_inner_blank",
+          "profile_indices": [
+            0
+          ],
+          "operation": "new_body",
+          "extent": {
+            "type": "distance",
+            "distance": 10.0
+          },
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": []
+        }
+      }
+    },
+    {
+      "let": {
+        "wheel_cap_inner_body_feat": {
+          "$select": {
+            "from": {
+              "$ref": "wcap_ex"
+            },
+            "path": "/document/features",
+            "take": "last",
+            "pointer": "/id"
+          }
+        }
+      }
+    },
+    {
+      "let": {
+        "wheel_cap_inner_body": {
+          "$select": {
+            "from": {
+              "$ref": "wcap_ex"
+            },
+            "path": "/scene/bodies",
+            "where": {
+              "/feature_id": {
+                "$ref": "wheel_cap_inner_body_feat"
+              }
+            },
+            "take": "one"
+          }
+        }
+      }
+    },
+    {
+      "id": "ref_wcap_top",
+      "call": {
+        "group": "solid/reference",
+        "operation": "construction_plane_offset",
+        "arguments": {
+          "name": "wheel_cap_inner_top_z10 / shared",
+          "distance": 10.0,
+          "reference": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "wcap_seat_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "wheel_cap_inner_bearing_trial",
+          "plane": {
+            "type": "datum_plane",
+            "datum_id": {
+              "$select": {
+                "from": {
+                  "$ref": "ref_wcap_top"
+                },
+                "path": "/planes",
+                "pointer": "/datum_id",
+                "take": "last",
+                "where": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "wcap_seat_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "wcap_seat",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 240.0,
+            "y": 0.0
+          },
+          "edge_hint": {
+            "x": 251.1,
+            "y": 0.0
+          },
+          "diameter_text": "22.2",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "wcap_seat_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "wcap_seat_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "wcap_seat_cut",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "wheel_cap_inner_bearing_trial",
+          "profile_indices": [
+            0
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 7.2
+          },
+          "taper_angle_deg": 0,
+          "flip": true,
+          "target_body_ids": [
+            {
+              "$ref": "wheel_cap_inner_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "wcap_thru_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "wheel_cap_inner_shoulder_clear",
+          "plane": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "wcap_thru_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "wcap_thru",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 240.0,
+            "y": 0.0
+          },
+          "edge_hint": {
+            "x": 249.0,
+            "y": 0.0
+          },
+          "diameter_text": "18.0",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "wcap_thru_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "wcap_thru_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "wcap_thru_cut",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "wheel_cap_inner_shoulder_clear",
+          "profile_indices": [
+            0
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 10.0
+          },
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": [
+            {
+              "$ref": "wheel_cap_inner_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "chapter": "wheel_cap M4 clearance holes",
+      "note": "Two D4.4 holes (parameters.wheel_holes.clearance_diameter_mm) at ±18 mm X from cap center — trial layout outside D22.2 seat. Exact native wheel-cap fastener count/pattern VERIFY (not fully recorded as cap-specific in parameters)."
+    },
+    {
+      "id": "wcap_m4_begin",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_begin",
+        "arguments": {
+          "name": "wheel_cap_inner_m4_clearance",
+          "plane": {
+            "type": "origin_plane",
+            "plane": "xy"
+          }
+        }
+      }
+    },
+    {
+      "id": "wcap_m4_nosnap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "id": "wcap_m4_a",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 222.0,
+            "y": 0.0
+          },
+          "edge_hint": {
+            "x": 224.2,
+            "y": 0.0
+          },
+          "diameter_text": "4.4",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "wcap_m4_b",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_add_circle_locked",
+        "arguments": {
+          "mode": "center_diameter",
+          "anchor": {
+            "x": 258.0,
+            "y": 0.0
+          },
+          "edge_hint": {
+            "x": 260.2,
+            "y": 0.0
+          },
+          "diameter_text": "4.4",
+          "ctrl_held": false
+        }
+      }
+    },
+    {
+      "id": "wcap_m4_snap",
+      "call": {
+        "group": "sketch/selection",
+        "operation": "sketch_set_grid_snap",
+        "arguments": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "id": "wcap_m4_finish",
+      "call": {
+        "group": "sketch/draw",
+        "operation": "sketch_finish",
+        "arguments": {}
+      }
+    },
+    {
+      "id": "wcap_m4_cut",
+      "call": {
+        "group": "solid/build",
+        "operation": "solid_extrude",
+        "arguments": {
+          "sketch_name": "wheel_cap_inner_m4_clearance",
+          "profile_indices": [
+            0,
+            1
+          ],
+          "operation": "cut",
+          "extent": {
+            "type": "distance",
+            "distance": 10.0
+          },
+          "taper_angle_deg": 0,
+          "flip": false,
+          "target_body_ids": [
+            {
+              "$ref": "wheel_cap_inner_body",
+              "pointer": "/id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "wcap_out_copy",
+      "call": {
+        "group": "solid/body",
+        "operation": "solid_move_copy",
+        "arguments": {
+          "body_ids": [
+            {
+              "$ref": "wheel_cap_inner_body",
+              "pointer": "/id"
+            }
+          ],
+          "translation": {
+            "x": 60.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "pivot": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "copy": true
+        }
+      }
+    },
+    {
+      "let": {
+        "wheel_cap_outer_body": {
+          "$select": {
+            "from": {
+              "$ref": "wcap_out_copy"
+            },
+            "path": "/scene/bodies",
+            "take": "last"
+          }
+        }
+      }
+    },
+    {
+      "chapter": "one_drive HOLD / open call",
+      "note": "Printable one-drive service set (left carriage + input caps + wheel caps) is in_progress — not a print release of main-shell. Still HOLD: full OD160×L210 barrel, servo ears/horn, clutch, strap passage dims, input axial retention, R1 slot corners, M3 shank clearance lock, wheel-cap screw pattern lock, powered assembly. Jeff open call: measure ears/strap/fit coupons then decide print."
     }
   ],
   "checks": [

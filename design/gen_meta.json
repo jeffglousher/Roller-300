@@ -3,7 +3,7 @@
   "architecture": "shell-first modular Design Ops cut",
   "native_master": "Roller-300.nbcad",
   "ai_sot": "design/*.nbcad.jsonc",
-  "revision_note": "VERSION 0.1 coupon fill: hardware_refs (608 seat + M4 nut), barrel_shell (wheel-seat saddle), drive_stack (24/48 pitch envelopes + belt torus + \u00d88 stubs), input_carriage (rail/slot), structural_hatch (developed lap/M4 + R76\u2013R80 panel-arc), electronics_mounts (Pi/Pixracer/TOF shelves + battery UNMEASURED tray + thermal nominal envelope). Not a print release.",
+  "revision_note": "VERSION 0.1 one_drive_in_progress: input_carriage expanded beyond rail coupon to printable left_input_carriage + M3 input caps + M4 wheel caps (trial seats). Full OD160\u00d7L210 main-shell and full assembly still HOLD. Not a print release.",
   "modules": [
     {
       "file": "design_v0_1_hardware_refs.nbcad.jsonc",
@@ -82,6 +82,29 @@
       "design_v0_1_electronics_mounts.nbcad.jsonc#thermal_envelope_shelf_coupon"
     ],
     "still_empty": [],
-    "next_fill_target": "Measure received battery/boards/TOF depth/thermal lens+connector; then positive retainers, strap passages, optical aperture, and shell-integrated shelves from coupon feedback"
+    "next_fill_target": "one_drive open call: ear/strap/M3/M4 pattern coupons from Jeff measurements; then grow barrel_shell from saddle toward OD160 only after one-drive fit feedback. Full assembly still HOLD."
+  },
+  "one_drive": {
+    "status": "one_drive_in_progress",
+    "date_local": "2026-09-20",
+    "chapter": "design_v0_1_input_carriage.nbcad.jsonc",
+    "export_dir": "first-prints/one-drive/",
+    "bodies": [
+      "left-input-carriage",
+      "input-cap-inner",
+      "input-cap-outer",
+      "wheel-cap-inner",
+      "wheel-cap-outer",
+      "carriage-rail-slot-coupon"
+    ],
+    "full_main_shell": "HOLD",
+    "full_assembly": "HOLD",
+    "open_call": [
+      "Measure servo ears/horn/mounts before locking lips",
+      "Confirm strap passage dims or keep VERIFY omit",
+      "Coupon M3 shank + wheel-cap M4 pattern",
+      "Add R1 to slots; VERIFY rail Y vs shell",
+      "Do not print full shell until orientation/support gates close"
+    ]
   }
 }
