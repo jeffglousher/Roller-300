@@ -3,7 +3,7 @@
   "architecture": "shell-first modular Design Ops cut",
   "native_master": "Roller-300.nbcad",
   "ai_sot": "design/*.nbcad.jsonc",
-  "revision_note": "VERSION 0.1: main_shell body 32 dump\u2192JSONC via tools/dump_to_jsonc.py (skip MoveCopy5/Combine8/Combine16); blank-doc AABB pre-Combine16 ~159.93\u00d7210\u00d7159.96; exports first-prints/native-port/main-shell.*; hatch blank-doc unblocked for MoveCopy5; coupons remain under first-prints/coupons/.",
+  "revision_note": "VERSION 0.1: hatch body 141 dump\u2192JSONC via tools/dump_to_jsonc.py --role hatch; replay shell@max_fid 290 then hatch; AABB XY 138\u00d7179.4 match, Z VERIFY (123 vs review 154.859); exports first-prints/native-port/curved-hatch.*; Combine16 deferred; legacy hatch coupons removed from steps.",
   "modules": [
     {
       "file": "design_v0_1_hardware_refs.nbcad.jsonc",
@@ -53,9 +53,33 @@
       "stage": "S03",
       "role": "structural_hatch",
       "native_body_id": 141,
-      "port_status": "dump_complete_jsonc_partial_shell_ready",
+      "port_status": "jsonc_replay_ok_xy_z_verify",
       "dump": "design/native-port/hatch-141.{json,md}",
-      "note": "Shell JSONC now exists (pre-Combine16). Finish hatch blank-doc: MoveCopy5 from shell, then Extrude88\u2229/fastener patterns; Combine16 back on shell when hatch solid ready. Legacy lap/arc coupons retained."
+      "note": "Native dump\u2192JSONC (dump_to_jsonc.py --role hatch). Replay after barrel_shell --max-fid 290 (MoveCopy5). Blank-doc AABB 138\u00d7179.4\u00d779.932 @ mins(-69,-89.7,123). XY match; Z VERIFY vs review 48.0928 dz / zmin 154.859. Exports first-prints/native-port/curved-hatch.*. Legacy coupons removed from steps.",
+      "exports": [
+        "first-prints/native-port/curved-hatch.3mf",
+        "first-prints/native-port/curved-hatch.stl"
+      ],
+      "aabb_replay": {
+        "dx": 138.0,
+        "dy": 179.4,
+        "dz": 79.9318,
+        "mins": [
+          -69.0,
+          -89.7,
+          123.0
+        ]
+      },
+      "aabb_target": {
+        "dx": 138.0,
+        "dy": 179.4,
+        "dz": 48.0928,
+        "mins": [
+          -69.0,
+          -89.7,
+          154.859
+        ]
+      }
     },
     {
       "file": "design_v0_1_electronics_mounts.nbcad.jsonc",
@@ -117,7 +141,7 @@
       "design_v0_1_electronics_mounts.nbcad.jsonc#thermal_envelope_shelf_coupon"
     ],
     "still_empty": [],
-    "next_fill_target": "Finish hatch blank-doc replay using shell chapter solid; then Combine16 on shell for final AABB."
+    "next_fill_target": "Resolve hatch Z VERIFY (zmin 123 vs review 154.859); then Combine16 on shell."
   },
   "one_drive": {
     "status": "deprecated_failed_placeholder",
@@ -142,7 +166,7 @@
     "one_drive": "DEPRECATED \u2014 see first-prints/one-drive/DEPRECATED.md"
   },
   "native_port": {
-    "status": "main_shell_dump_complete",
+    "status": "hatch_jsonc_replay_xy_ok_z_verify",
     "path": "design/native-port/",
     "completed": [
       {
@@ -179,19 +203,33 @@
         "chapter": "design_v0_1_wheel_caps.nbcad.jsonc",
         "exports": "first-prints/native-port/wheel-cap-outer.{3mf,stl}",
         "aabb": "X-25-25 Y93-105 Z123.3-140 (50x12x16.7)"
+      },
+      {
+        "role": "hatch",
+        "body_id": 141,
+        "chapter": "design_v0_1_structural_hatch.nbcad.jsonc",
+        "exports": "first-prints/native-port/curved-hatch.{3mf,stl}",
+        "aabb": "X-69-69 Y-89.7-89.7 Z123-202.932 (138x179.4x79.932) XY match; Z VERIFY"
+      },
+      {
+        "role": "main_shell",
+        "body_id": 32,
+        "chapter": "design_v0_1_barrel_shell.nbcad.jsonc",
+        "exports": "first-prints/native-port/main-shell.{3mf,stl}",
+        "aabb": "pre-Combine16 ~159.93x210x159.96"
       }
     ],
     "next_body": {
-      "role": "main_shell",
-      "body_id": 32,
-      "note": "Dump complete \u2014 next is shell JSONC chapter; then finish hatch blank-doc replay"
+      "role": "hatch_z_verify_then_combine16",
+      "body_id": 141,
+      "note": "Hatch JSONC+exports done; Z VERIFY before Combine16 final shell AABB"
     },
     "note": "JSONC ported from native feature dumps only \u2014 no invented blocks.",
     "hatch": {
       "body_id": 141,
       "dump": "design/native-port/hatch-141.{json,md}",
       "chapter": "design/design_v0_1_structural_hatch.nbcad.jsonc",
-      "status": "dump_complete_jsonc_partial_shell_jsonc_blocker",
+      "status": "jsonc_replay_ok_xy_z_verify",
       "aabb_target": {
         "dx": 138.0,
         "dy": 179.39999389648438,
@@ -201,8 +239,19 @@
         "zmin": 154.85906982421875,
         "source": "first-prints/shell-first-review/curved-hatch-assembly-coordinates.stl"
       },
-      "exports": null,
-      "blocker": "MoveCopy5 identity copy of shell body 32 \u2014 shell dump exists (design/native-port/main_shell-32.*); needs shell JSONC chapter before blank-doc AABB match"
+      "exports": "first-prints/native-port/curved-hatch.{3mf,stl}",
+      "blocker": "MoveCopy5 identity copy of shell body 32 \u2014 shell dump exists (design/native-port/main_shell-32.*); needs shell JSONC chapter before blank-doc AABB match",
+      "aabb_replay": {
+        "dx": 138.0,
+        "dy": 179.39999389648438,
+        "dz": 79.93180847167969,
+        "xmin": -69.0,
+        "ymin": -89.69999694824219,
+        "zmin": 123.0,
+        "xmax": 69.0,
+        "ymax": 89.69999694824219,
+        "zmax": 202.9318084716797
+      }
     },
     "main_shell": {
       "body_id": 32,

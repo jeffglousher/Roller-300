@@ -59,7 +59,10 @@ def parse_entities(sk: dict) -> tuple[dict[int, tuple[float, float]], list[dict]
     geo = sk.get("geometry") or {}
     if geo.get("points"):
         for p in geo["points"]:
-            points[int(p["id"])] = (float(p["u"]), float(p["v"]))
+            points[int(p["id"])] = (
+                float(p.get("u", p.get("x", 0.0))),
+                float(p.get("v", p.get("y", 0.0))),
+            )
     if geo.get("curves"):
         byid = {c["id"]: c for c in curves}
         for c in geo["curves"]:
@@ -401,17 +404,31 @@ class Generator:
         primary_body_id: int,
         skip_hatch: bool,
         max_fid: int | None = None,
+        step_prefix: str = "",
+        seed_bodies: dict[int, str] | None = None,
+        chapter_file: str | None = None,
     ):
         self.dump = dump
         self.role = role
         self.primary_body_id = primary_body_id
         self.skip_hatch = skip_hatch
         self.max_fid = max_fid
+        self.step_prefix = step_prefix
+        self.chapter_file = chapter_file or (
+            "design_v0_1_structural_hatch.nbcad.jsonc"
+            if role == "hatch"
+            else "design_v0_1_barrel_shell.nbcad.jsonc"
+        )
         self.steps: list[dict] = []
         self.native_body_let: dict[int, str] = {}  # native body id -> let name
         self.plane_lets: dict[tuple[str, float], str] = {}  # (plane, dist) -> step id
         self.skipped: list[str] = []
         self.verify: list[str] = []
+        if seed_bodies:
+            self.native_body_let.update(seed_bodies)
+
+    def sid(self, name: str) -> str:
+        return f"{self.step_prefix}{name}"
 
     def add(self, step: dict) -> None:
         self.steps.append(step)
@@ -427,7 +444,7 @@ class Generator:
         if key in self.plane_lets:
             return self.plane_lets[key]
         name = datum.get("name") or f"datum_{datum.get('feature_id')}"
-        step_id = f"pl_{slug(name)}"
+        step_id = self.sid(f"pl_{slug(name)}")
         # uniquify
         base = step_id
         n = 2
@@ -442,7 +459,11 @@ class Generator:
                     "group": "solid/reference",
                     "operation": "construction_plane_offset",
                     "arguments": {
-                        "name": f"{name} / shared",
+                        "name": (
+                            f"{self.step_prefix}{name} / shared"
+                            if self.step_prefix
+                            else f"{name} / shared"
+                        ),
                         "distance": fmt_num(dist),
                         "reference": {"type": "origin_plane", "plane": plane},
                     },
@@ -458,7 +479,7 @@ class Generator:
         return step_id
 
     def bind_body(self, native_id: int, step_id: str, let_name: str | None = None) -> str:
-        let_name = let_name or f"body_{native_id}"
+        let_name = let_name or f"{self.step_prefix}body_{native_id}"
         feat_let = f"{let_name}_feat"
         for s in feat_body_lets(step_id, feat_let, let_name):
             self.add(s)
@@ -469,7 +490,7 @@ class Generator:
         self, native_ids: list[int], step_id: str, feat_prefix: str
     ) -> list[str]:
         feat_let = f"{feat_prefix}_feat"
-        body_lets = [f"body_{nid}" for nid in native_ids]
+        body_lets = [f"{self.step_prefix}body_{nid}" for nid in native_ids]
         for s in multi_body_lets(step_id, feat_let, body_lets):
             self.add(s)
         for nid, bl in zip(native_ids, body_lets):
@@ -510,7 +531,7 @@ class Generator:
         sk = feat["sketch"]
         datum = sk["datum"]
         plane_id = self.ensure_plane(datum)
-        sketch_name = f"{name}__{sk['name']}"
+        sketch_name = f"{self.step_prefix}{name}__{sk['name']}"
         points, curves = parse_entities(sk)
 
         self.chapter(
@@ -520,7 +541,7 @@ class Generator:
             f"native targets {feat.get('target_body_ids')}; "
             f"new_body_ids {feat.get('new_body_ids')}.",
         )
-        prefix = f"sk_{name}"
+        prefix = self.sid(f"sk_{name}")
         self.add(
             {
                 "id": f"{prefix}_begin",
@@ -561,7 +582,7 @@ class Generator:
                 f"{name}: dropped unbound target bodies {dropped} (foreign timeline)"
             )
 
-        ex_id = f"ex_{name}"
+        ex_id = self.sid(f"ex_{name}")
         self.add(
             {
                 "id": ex_id,
@@ -590,11 +611,14 @@ class Generator:
             # Bind each new body. Usually one; if multiple, multi-bind.
             if len(new_ids) == 1:
                 nid = new_ids[0]
-                let = (
-                    "main_shell_body"
-                    if nid == self.primary_body_id
-                    else f"body_{nid}"
-                )
+                if nid == self.primary_body_id:
+                    let = (
+                        "hatch_body"
+                        if self.role == "hatch"
+                        else "main_shell_body"
+                    )
+                else:
+                    let = f"{self.step_prefix}body_{nid}"
                 self.bind_body(nid, ex_id, let)
             elif len(new_ids) > 1:
                 self.bind_bodies_multi(new_ids, ex_id, ex_id)
@@ -603,6 +627,98 @@ class Generator:
             # usually consumed. If join target is a tool body we track (e.g. 155),
             # no rebind needed.
             pass
+
+
+    def emit_revolve(self, feat: dict) -> None:
+        name = feat["name"]
+        fid = feat["feature_id"]
+        sk = feat["sketch"]
+        datum = sk["datum"]
+        plane_id = self.ensure_plane(datum)
+        sketch_name = f"{self.step_prefix}{name}__{sk['name']}"
+        points, curves = parse_entities(sk)
+
+        self.chapter(
+            f"{name} — {feat['operation']}",
+            f"Native fid {fid}; sketch `{sk['name']}`; angle {feat.get('angle_deg')}; "
+            f"axis_origin {feat.get('axis_origin')}; axis_dir {feat.get('axis_direction')}; "
+            f"flip={feat.get('flip')}; profiles={feat.get('profile_indices')}; "
+            f"new_body_ids {feat.get('new_body_ids')}.",
+        )
+        prefix = self.sid(f"sk_{name}")
+        self.add(
+            {
+                "id": f"{prefix}_begin",
+                "call": {
+                    "group": "sketch/draw",
+                    "operation": "sketch_begin",
+                    "arguments": {
+                        "name": sketch_name,
+                        "plane": plane_select(plane_id),
+                    },
+                },
+            }
+        )
+        for s in emit_sketch_geometry(prefix, points, curves):
+            self.add(s)
+        self.add(
+            {
+                "id": f"{prefix}_finish",
+                "call": {
+                    "group": "sketch/draw",
+                    "operation": "sketch_finish",
+                    "arguments": {},
+                },
+            }
+        )
+
+        raw_targets = list(feat.get("target_body_ids") or [])
+        targets: list[dict] = []
+        for tid in raw_targets:
+            if tid in self.native_body_let:
+                targets.append(self.resolve_body(tid))
+            else:
+                self.verify.append(f"{name}: dropped unbound target {tid}")
+
+        ex_id = self.sid(f"ex_{name}")
+        self.add(
+            {
+                "id": ex_id,
+                "call": {
+                    "group": "solid/build",
+                    "operation": "solid_revolve",
+                    "arguments": {
+                        "sketch_name": sketch_name,
+                        "profile_indices": list(feat.get("profile_indices") or [0]),
+                        "operation": feat["operation"],
+                        "angle_deg": fmt_num(float(feat["angle_deg"])),
+                        "axis_origin": {
+                            "x": fmt_num(float(feat["axis_origin"]["x"])),
+                            "y": fmt_num(float(feat["axis_origin"]["y"])),
+                        },
+                        "axis_direction": {
+                            "x": fmt_num(float(feat["axis_direction"]["x"])),
+                            "y": fmt_num(float(feat["axis_direction"]["y"])),
+                        },
+                        "flip": bool(feat.get("flip")),
+                        "target_body_ids": targets,
+                    },
+                },
+            }
+        )
+
+        new_ids = list(feat.get("new_body_ids") or [])
+        if feat["operation"] == "new_body" and new_ids:
+            if len(new_ids) == 1:
+                nid = new_ids[0]
+                let = (
+                    "hatch_body"
+                    if self.role == "hatch" and nid == self.primary_body_id
+                    else f"{self.step_prefix}body_{nid}"
+                )
+                self.bind_body(nid, ex_id, let)
+            else:
+                self.bind_bodies_multi(new_ids, ex_id, ex_id)
 
     def emit_combine(self, feat: dict) -> None:
         name = feat["name"]
@@ -616,7 +732,7 @@ class Generator:
         tool_refs = [self.resolve_body(t) for t in tools]
         self.add(
             {
-                "id": f"ex_{name}",
+                "id": self.sid(f"ex_{name}"),
                 "call": {
                     "group": "solid/body",
                     "operation": "solid_combine",
@@ -640,7 +756,7 @@ class Generator:
             f"Native fid {fid}; from {src}; new {new_ids}; count {feat['count']}; "
             f"spacing {feat['spacing']}; dir {feat['direction']}.",
         )
-        step_id = f"ex_{name}"
+        step_id = self.sid(f"ex_{name}")
         args: dict[str, Any] = {
             "body_ids": [self.resolve_body(b) for b in src],
             "direction": {
@@ -684,7 +800,7 @@ class Generator:
             f"{name} — mirror",
             f"Native fid {fid}; from {src}; new {new_ids}; plane {plane}.",
         )
-        step_id = f"ex_{name}"
+        step_id = self.sid(f"ex_{name}")
         self.add(
             {
                 "id": step_id,
@@ -711,7 +827,7 @@ class Generator:
             f"Native fid {fid}; from {src}; result {result}; copy={feat.get('copy')}; "
             f"T {feat.get('translation')}; quat {feat.get('rotation')}.",
         )
-        step_id = f"ex_{name}"
+        step_id = self.sid(f"ex_{name}")
         self.add(
             {
                 "id": step_id,
@@ -740,14 +856,163 @@ class Generator:
         if feat.get("copy"):
             if result:
                 if len(result) == 1:
-                    self.bind_body(result[0], step_id, f"body_{result[0]}")
+                    let = (
+                        "hatch_body"
+                        if self.role == "hatch" and result[0] == self.primary_body_id
+                        else f"{self.step_prefix}body_{result[0]}"
+                    )
+                    self.bind_body(result[0], step_id, let)
                 else:
                     self.bind_bodies_multi(result, step_id, step_id)
         else:
             # in-place move — body lets remain valid
             pass
 
+
     def build(self) -> dict:
+        if self.role == "hatch":
+            return self.build_hatch()
+        return self.build_shell()
+
+    def build_hatch(self) -> dict:
+        role = self.role
+        primary = self.primary_body_id
+        self.header_notes = [
+            "// Roller-300 design_v0_1_structural_hatch — modular Design Ops chapter (VERSION 0.1)",
+            f"// Role noun: {role} (native body {primary})",
+            "// SoT: this .nbcad.jsonc. Companion: design/gen_meta.json + design/VERSION.",
+            "// Source: design/native-port/hatch-141.md + .json — dump-only, no invented blocks.",
+            "// Replay (A): blank doc → design_v0_1_barrel_shell.nbcad.jsonc → this chapter on same doc.",
+            "//   MoveCopy5 copies main_shell_body (native 32). Shell chapter must run first (lets persist in runner).",
+            "//   Blank-doc single-file proof: concatenate shell steps + this chapter (see tools/dump_to_jsonc.py --embed-shell).",
+            "// Sequence: MoveCopy5 → Extrude88∩Combine4 → Extrude96/pattern/mirror/Combine13 → Revolve1/pattern/mirror/Combine14.",
+            "// Do NOT re-cut shell (Combine12/16 stay shell chapter). Legacy lap/arc coupons removed from steps (README only).",
+            "// AABB target: 138×179.4×48.0928 @ mins (-69, -89.7, 154.859) curved-hatch-assembly-coordinates.stl",
+            "// Generated by tools/dump_to_jsonc.py — do not hand-edit geometry values.",
+        ]
+
+        self.chapter(
+            f"Shared refs — {role} (native body {primary})",
+            "VERSION 0.1 full native port from hatch-141.*. Requires main_shell_body from barrel_shell "
+            "chapter (MoveCopy5 identity copy of native body 32). Datum offsets from dump "
+            "(S03 A Z123, S03 I Z190, S03 J origin XZ). Stale plane.datum_id ignored — use chain datum. "
+            "Quat MoveCopy8/9 exact [0, 0.4617486132350339, 0, 0.8870108331782217]. Legacy coupons not in steps.",
+        )
+        # Seed shell body binding name — runner/combined script must define main_shell_body first.
+        if 32 not in self.native_body_let:
+            self.native_body_let[32] = "main_shell_body"
+        self.chapter(
+            "Prerequisite — main_shell_body",
+            "Expect let main_shell_body from prior barrel_shell chapter (native body 32 pre-Combine16). "
+            "MoveCopy5 copies it → hatch_body. Do not invent OD160 tube.",
+        )
+
+        for plane, dist, pid in (
+            ("xy", 0.0, self.sid("ref_origin_xy")),
+            ("xz", 0.0, self.sid("ref_origin_xz")),
+            ("yz", 0.0, self.sid("ref_origin_yz")),
+        ):
+            if (plane, dist) in self.plane_lets:
+                continue
+            self.add(
+                {
+                    "id": pid,
+                    "call": {
+                        "group": "solid/reference",
+                        "operation": "construction_plane_offset",
+                        "arguments": {
+                            "name": f"origin_{plane} / hatch shared",
+                            "distance": 0.0,
+                            "reference": {"type": "origin_plane", "plane": plane},
+                        },
+                    },
+                }
+            )
+            self.plane_lets[(plane, dist)] = pid
+
+        for feat in self.dump["feature_sequence"]:
+            kind = feat["kind"]
+            if kind in ("datum_plane", "sketch"):
+                continue
+            if self.max_fid is not None and int(feat.get("feature_id", 0)) > self.max_fid:
+                self.chapter(
+                    f"PREFIX stop before {feat.get('name')}",
+                    f"max_fid={self.max_fid}; remaining dump features not emitted.",
+                )
+                break
+            try:
+                if kind == "extrude":
+                    self.emit_extrude(feat)
+                elif kind == "revolve":
+                    self.emit_revolve(feat)
+                elif kind == "combine":
+                    self.emit_combine(feat)
+                elif kind == "rectangular_pattern":
+                    self.emit_pattern(feat)
+                elif kind == "mirror":
+                    self.emit_mirror(feat)
+                elif kind == "move_copy":
+                    self.emit_move_copy(feat)
+                    # After MoveCopy5 copy→141, prefer hatch_body let name
+                    if feat.get("name") == "MoveCopy5" and 141 in self.native_body_let:
+                        # re-alias if bound as body_141
+                        if self.native_body_let[141] != "hatch_body":
+                            # already bound; keep pointer — emit alias let
+                            src_let = self.native_body_let[141]
+                            self.add({"let": {"hatch_body": {"$ref": src_let}}})
+                            self.native_body_let[141] = "hatch_body"
+                else:
+                    self.verify.append(f"unhandled kind {kind} for {feat.get('name')}")
+            except Exception as e:
+                self.chapter(
+                    f"BLOCKED at {feat.get('name')}",
+                    f"Generator error: {e}. Prefix ends before this feature.",
+                )
+                self.verify.append(f"blocked at {feat.get('name')}: {e}")
+                break
+
+        gaps = self.dump.get("verify_gaps") or []
+        self.verify.extend(
+            [
+                g.get("detail") if isinstance(g, dict) else str(g)
+                for g in gaps
+                if not (
+                    isinstance(g, dict)
+                    and g.get("topic") in ("shell_copy_dependency", "coupon_chapter_partial")
+                )
+            ]
+        )
+
+        self.chapter(
+            "VERIFY — hatch AABB",
+            "Target review STL 138.0000×179.4000×48.0928 @ mins (-69.0000, -89.7000, 154.8591) "
+            "(first-prints/shell-first-review/curved-hatch-assembly-coordinates.stl). "
+            "Replay after barrel_shell on same doc (or combined shell+hatch script). "
+            f"Extra VERIFY: {' | '.join(self.verify[:8]) if self.verify else 'none'}",
+        )
+
+        return {
+            "version": 1,
+            "name": (
+                "Roller-300 design_v0_1_structural_hatch (VERSION 0.1) — "
+                f"{role} native body {primary}"
+            ),
+            "starting_state": "empty",
+            "steps": self.steps,
+            "checks": [
+                {
+                    "id": "final_scene",
+                    "call": {
+                        "group": "solid/check",
+                        "operation": "solid_scene",
+                        "arguments": {},
+                    },
+                    "expect": {"/errors": []},
+                }
+            ],
+        }
+
+    def build_shell(self) -> dict:
         role = self.role
         primary = self.primary_body_id
         header_notes = [
@@ -788,7 +1053,7 @@ class Generator:
                     },
                 }
             )
-            self.plane_lets[(plane, 0.0)] = pid
+            self.plane_lets[(plane, dist)] = pid
 
         # Walk feature_sequence; skip standalone datum/sketch (emitted with extrude)
         for feat in self.dump["feature_sequence"]:
@@ -812,6 +1077,8 @@ class Generator:
             try:
                 if kind == "extrude":
                     self.emit_extrude(feat)
+                elif kind == "revolve":
+                    self.emit_revolve(feat)
                 elif kind == "combine":
                     self.emit_combine(feat)
                 elif kind == "rectangular_pattern":
@@ -873,21 +1140,66 @@ def main() -> None:
     ap.add_argument("dump_json")
     ap.add_argument("-o", "--output", required=True)
     ap.add_argument("--role", default="main_shell")
-    ap.add_argument("--body-id", type=int, default=32)
+    ap.add_argument("--body-id", type=int, default=None)
     ap.add_argument("--skip-hatch", action="store_true", default=True)
     ap.add_argument("--no-skip-hatch", action="store_true")
     ap.add_argument("--max-fid", type=int, default=None)
+    ap.add_argument("--step-prefix", default="")
+    ap.add_argument(
+        "--embed-shell",
+        metavar="SHELL_JSONC",
+        help="For hatch role: prepend barrel_shell steps so blank-doc replay works",
+    )
     args = ap.parse_args()
     dump = json.loads(Path(args.dump_json).read_text())
     skip = not args.no_skip_hatch
+    role = args.role
+    body_id = args.body_id
+    if body_id is None:
+        body_id = 141 if role == "hatch" else 32
+    prefix = args.step_prefix
+    if role == "hatch" and not prefix:
+        prefix = "h_"
+    # Hatch should not skip its own MoveCopy5
+    if role == "hatch":
+        skip = False
     gen = Generator(
         dump,
-        role=args.role,
-        primary_body_id=args.body_id,
+        role=role,
+        primary_body_id=body_id,
         skip_hatch=skip,
         max_fid=args.max_fid,
+        step_prefix=prefix,
+        seed_bodies={32: "main_shell_body"} if role == "hatch" else None,
     )
     doc = gen.build()
+
+    if args.embed_shell:
+        shell_path = Path(args.embed_shell)
+        # Strip // comments for json load of shell chapter
+        raw = shell_path.read_text()
+        lines = []
+        for ln in raw.splitlines():
+            s = ln.lstrip()
+            if s.startswith("//"):
+                continue
+            lines.append(ln)
+        shell_doc = json.loads("\n".join(lines))
+        # Drop shell final VERIFY chapter noise is fine; keep all steps
+        shell_steps = shell_doc.get("steps") or []
+        # Drop hatch starting_state empty origin planes that collide? hatch uses h_ prefix.
+        doc["steps"] = shell_steps + doc["steps"]
+        doc["name"] = (
+            "Roller-300 shell+hatch blank-doc replay (VERSION 0.1) — "
+            "barrel_shell then structural_hatch"
+        )
+        # Rewrite header
+        gen.header_notes = [
+            "// Combined blank-doc replay: barrel_shell steps + structural_hatch steps.",
+            "// Generated by tools/dump_to_jsonc.py --embed-shell. Not a Design Ops chapter.",
+            "// Hatch MoveCopy5 uses main_shell_body from shell chapter.",
+        ]
+
     text = gen.render(doc)
     out = Path(args.output)
     out.parent.mkdir(parents=True, exist_ok=True)

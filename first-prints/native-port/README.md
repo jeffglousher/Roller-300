@@ -66,16 +66,18 @@ See `_export_report.json` for the last export run.
 
 Blank-doc replay 1001 steps / 746 calls. Skipped hatch-only **MoveCopy5**, **Combine8**, **Combine16** (need body 141). Pre-Combine16 shell matches dump-without-hatch-cut; final review AABB needs hatch chapter then Combine16.
 
-## curved-hatch (pending)
+## curved-hatch
 
 | Item | Value |
 |------|--------|
 | Role | `hatch` |
 | Native body | **141** |
-| Chapter | `design/design_v0_1_structural_hatch.nbcad.jsonc` (VERSION 0.1 PARTIAL) |
+| Chapter | `design/design_v0_1_structural_hatch.nbcad.jsonc` (VERSION 0.1) |
 | Dump | `design/native-port/hatch-141.md` + `.json` |
-| Exports | **none this pass** — blank-doc replay blocked on shell body 32 (MoveCopy5) |
+| Generator | `tools/dump_to_jsonc.py --role hatch` |
+| Exports | `curved-hatch.3mf`, `curved-hatch.stl` (body after Combine14) |
+| AABB (replay) | X[-69,69] Y[-89.7,89.7] Z[123,202.932] → **138 × 179.4 × 79.932** |
 | AABB target | X-69–69 Y-89.7–89.7 Z154.859–202.952 → **138 × 179.4 × 48.0928** (`shell-first-review/curved-hatch-assembly-coordinates.stl`) |
 
-Shell JSONC ready (`main-shell.*`). Rebuild hatch blank-doc from `hatch-141.*` using MoveCopy5 from shell, then export here; run Combine16 on shell for final AABB.
+Replay (A): blank doc → barrel_shell `--max-fid 290` (through Combine3, before MoveCopy5) → hatch chapter on same doc (or `--embed-shell`). XY match; **Z VERIFY** (replay zmin 123 vs review 154.859 — Extrude88 datum / Combine3 shoulders). Combine16 on shell deferred until Z VERIFY clears. Legacy lap/arc coupons not in chapter steps.
 

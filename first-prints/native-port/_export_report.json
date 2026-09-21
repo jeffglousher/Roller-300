@@ -76,7 +76,7 @@
       }
     ]
   },
-  "note": "Carriage/caps/wheel_caps/main_shell from native dump replay. Hatch blank-doc still needs MoveCopy5 of shell; Combine16 deferred.",
+  "note": "Carriage/caps/wheel_caps/main_shell/hatch from native dump replay. Hatch XY AABB match; Z VERIFY (zmin 123 vs review 154.859). Combine16 deferred.",
   "wheel_caps": {
     "source_chapter": "design/design_v0_1_wheel_caps.nbcad.jsonc",
     "native_dumps": [
@@ -135,21 +135,39 @@
     "native_dump": "design/native-port/hatch-141.{md,json}",
     "native_body_id": 141,
     "role": "hatch",
-    "replay_ok": false,
-    "status": "dump_complete_jsonc_partial_shell_blocker",
-    "blocker": "MoveCopy5 identity copy of shell body 32 \u2014 blank-doc AABB match deferred",
+    "generator": "tools/dump_to_jsonc.py --role hatch",
+    "replay_path": "shell --max-fid 290 then hatch (embed-shell)",
+    "replay_ok": true,
+    "steps_completed": 584,
+    "aabb": {
+      "xmin": -69.0,
+      "xmax": 69.0,
+      "ymin": -89.69999694824219,
+      "ymax": 89.69999694824219,
+      "zmin": 123.0,
+      "zmax": 202.9318084716797,
+      "dx": 138.0,
+      "dy": 179.39999389648438,
+      "dz": 79.93180847167969
+    },
     "aabb_target": {
       "xmin": -69.0,
       "xmax": 69.0,
-      "ymin": -89.7,
-      "ymax": 89.7,
+      "ymin": -89.69999694824219,
+      "ymax": 89.69999694824219,
       "zmin": 154.85906982421875,
       "zmax": 202.95187377929688,
       "dx": 138.0,
-      "dy": 179.4,
+      "dy": 179.39999389648438,
       "dz": 48.092803955078125
     },
-    "exports": null
+    "aabb_xy_match": true,
+    "aabb_z_verify": true,
+    "exports": [
+      "curved-hatch.3mf",
+      "curved-hatch.stl"
+    ],
+    "export_body_id": 66
   },
   "main_shell": {
     "source_chapter": "design/design_v0_1_barrel_shell.nbcad.jsonc",
