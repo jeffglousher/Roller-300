@@ -1,0 +1,8248 @@
+{
+  "generated_from": "Roller-300.nbcad / model.json",
+  "schema_version": 7,
+  "body": {
+    "body_id": 97,
+    "role": "left_input_carriage",
+    "appearance": {
+      "body_id": 97,
+      "brand": "Generic",
+      "color": {
+        "a": 255,
+        "b": 164,
+        "g": 146,
+        "r": 81
+      },
+      "color_name": "",
+      "density_g_cm3": null,
+      "diameter_mm": 1.75,
+      "filament_id": null,
+      "filament_type": "PETG",
+      "material_name": "P04 LEFT input carriage with direct servo locating lips - hold-down HOLD",
+      "preset_id": null
+    },
+    "created_by": "Extrude62 (new_body)",
+    "body_features_as_owner": null,
+    "note": "Body 97 is created by Extrude62 and modified by subsequent joins/cuts. Mirror2 uses it as a source body (does not mutate 97). No combine owns this body."
+  },
+  "feature_sequence": [
+    {
+      "kind": "extrude",
+      "name": "Extrude62",
+      "feature_id": 208,
+      "operation": "new_body",
+      "extent": {
+        "distance": 100.0,
+        "type": "distance"
+      },
+      "flip": true,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0
+      ],
+      "sketch_name": "S02 O LEFT adjustable input carriage",
+      "target_body_ids": [],
+      "new_body_ids": [
+        97
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S02 O LEFT adjustable input carriage",
+        "feature_id": 207,
+        "plane": {
+          "datum_id": 62,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            2.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum": {
+          "datum_id": 62,
+          "name": "S02 O LEFT adjustable input carriage datum",
+          "feature_id": 206,
+          "basis": {
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "origin": [
+              0.0,
+              2.0,
+              0.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "source": {
+            "distance": -2.0,
+            "reference": {
+              "plane": "xz",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "geometry": {
+          "entity_count": 8,
+          "entity_types": {
+            "point": 4,
+            "line": 4
+          },
+          "point_bbox_uv": {
+            "umin": 30.0,
+            "umax": 65.0,
+            "vmin": 88.0,
+            "vmax": 92.0,
+            "u_span": 35.0,
+            "v_span": 4.0
+          },
+          "curves": [
+            {
+              "id": 5,
+              "type": "line",
+              "start": 1,
+              "end": 2
+            },
+            {
+              "id": 6,
+              "type": "line",
+              "start": 2,
+              "end": 3
+            },
+            {
+              "id": 7,
+              "type": "line",
+              "start": 3,
+              "end": 4
+            },
+            {
+              "id": 8,
+              "type": "line",
+              "start": 4,
+              "end": 1
+            }
+          ],
+          "points": [
+            {
+              "id": 1,
+              "u": 30.0,
+              "v": 88.0
+            },
+            {
+              "id": 2,
+              "u": 65.0,
+              "v": 88.0
+            },
+            {
+              "id": 3,
+              "u": 65.0,
+              "v": 92.0
+            },
+            {
+              "id": 4,
+              "u": 30.0,
+              "v": 92.0
+            }
+          ]
+        },
+        "constraint_count": 4,
+        "constraints": [
+          {
+            "id": 1,
+            "entity": 5,
+            "type": "horizontal"
+          },
+          {
+            "id": 2,
+            "entity": 7,
+            "type": "horizontal"
+          },
+          {
+            "id": 3,
+            "entity": 6,
+            "type": "vertical"
+          },
+          {
+            "id": 4,
+            "entity": 8,
+            "type": "vertical"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "extrude",
+      "name": "Extrude63",
+      "feature_id": 211,
+      "operation": "join",
+      "extent": {
+        "distance": 8.0,
+        "type": "distance"
+      },
+      "flip": true,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0
+      ],
+      "sketch_name": "S02 P supported input post Y70",
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        98
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S02 P supported input post Y70",
+        "feature_id": 210,
+        "plane": {
+          "datum_id": 63,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            66.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum": {
+          "datum_id": 63,
+          "name": "S02 P supported input post Y70 datum",
+          "feature_id": 209,
+          "basis": {
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "origin": [
+              0.0,
+              66.0,
+              0.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "source": {
+            "distance": -66.0,
+            "reference": {
+              "plane": "xz",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "geometry": {
+          "entity_count": 11,
+          "entity_types": {
+            "point": 6,
+            "line": 5
+          },
+          "point_bbox_uv": {
+            "umin": 30.0,
+            "umax": 69.0,
+            "vmin": 92.0,
+            "vmax": 123.0,
+            "u_span": 39.0,
+            "v_span": 31.0
+          },
+          "curves": [
+            {
+              "id": 3,
+              "type": "line",
+              "start": 1,
+              "end": 2
+            },
+            {
+              "id": 5,
+              "type": "line",
+              "start": 2,
+              "end": 4
+            },
+            {
+              "id": 7,
+              "type": "line",
+              "start": 4,
+              "end": 6
+            },
+            {
+              "id": 9,
+              "type": "line",
+              "start": 6,
+              "end": 8
+            },
+            {
+              "id": 11,
+              "type": "line",
+              "start": 8,
+              "end": 10
+            }
+          ],
+          "points": [
+            {
+              "id": 1,
+              "u": 30.0,
+              "v": 92.0
+            },
+            {
+              "id": 2,
+              "u": 65.0,
+              "v": 92.0
+            },
+            {
+              "id": 4,
+              "u": 69.0,
+              "v": 109.0
+            },
+            {
+              "id": 6,
+              "u": 69.0,
+              "v": 123.0
+            },
+            {
+              "id": 8,
+              "u": 30.0,
+              "v": 123.0
+            },
+            {
+              "id": 10,
+              "u": 30.0,
+              "v": 92.0
+            }
+          ]
+        },
+        "constraint_count": 0,
+        "constraints": []
+      }
+    },
+    {
+      "kind": "extrude",
+      "name": "Extrude64",
+      "feature_id": 214,
+      "operation": "cut",
+      "extent": {
+        "distance": 8.0,
+        "type": "distance"
+      },
+      "flip": true,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0
+      ],
+      "sketch_name": "S02 Q input bearing seat Y70",
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        99
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S02 Q input bearing seat Y70",
+        "feature_id": 213,
+        "plane": {
+          "datum_id": 64,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            66.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum": {
+          "datum_id": 64,
+          "name": "S02 Q input bearing seat Y70 datum",
+          "feature_id": 212,
+          "basis": {
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "origin": [
+              0.0,
+              66.0,
+              0.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "source": {
+            "distance": -66.0,
+            "reference": {
+              "plane": "xz",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "geometry": {
+          "entity_count": 1,
+          "entity_types": {
+            "circle": 1
+          },
+          "point_bbox_uv": null,
+          "curves": [
+            {
+              "id": 1,
+              "type": "circle",
+              "center": {
+                "x": 49.6723,
+                "y": 123.0
+              },
+              "radius": 11.100000000000001
+            }
+          ],
+          "points": []
+        },
+        "constraint_count": 0,
+        "constraints": []
+      }
+    },
+    {
+      "kind": "extrude",
+      "name": "Extrude67",
+      "feature_id": 223,
+      "operation": "cut",
+      "extent": {
+        "distance": 36.0,
+        "type": "distance"
+      },
+      "flip": false,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0,
+        1
+      ],
+      "sketch_name": "S02 T input cap M3 holes Y70",
+      "target_body_ids": [
+        97,
+        100
+      ],
+      "new_body_ids": [
+        102,
+        103
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S02 T input cap M3 holes Y70",
+        "feature_id": 222,
+        "plane": {
+          "datum_id": 67,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            106.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "datum": {
+          "datum_id": 67,
+          "name": "S02 T input cap M3 holes Y70 datum",
+          "feature_id": 221,
+          "basis": {
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              106.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          "source": {
+            "distance": 106.0,
+            "reference": {
+              "plane": "xy",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "geometry": {
+          "entity_count": 2,
+          "entity_types": {
+            "circle": 2
+          },
+          "point_bbox_uv": null,
+          "curves": [
+            {
+              "id": 1,
+              "type": "circle",
+              "center": {
+                "x": 35.0,
+                "y": 70.0
+              },
+              "radius": 1.3723000000000027
+            },
+            {
+              "id": 2,
+              "type": "circle",
+              "center": {
+                "x": 65.0,
+                "y": 70.0
+              },
+              "radius": 1.3723000000000098
+            }
+          ],
+          "points": []
+        },
+        "constraint_count": 0,
+        "constraints": []
+      }
+    },
+    {
+      "kind": "extrude",
+      "name": "Extrude68",
+      "feature_id": 226,
+      "operation": "cut",
+      "extent": {
+        "distance": 7.0,
+        "type": "distance"
+      },
+      "flip": true,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0
+      ],
+      "sketch_name": "S02 U input cap nut pocket (34.6723, 70)",
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        104
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S02 U input cap nut pocket (34.6723, 70)",
+        "feature_id": 225,
+        "plane": {
+          "datum_id": 68,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            65.9,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum": {
+          "datum_id": 68,
+          "name": "S02 U input cap nut pocket (34.6723, 70) datum",
+          "feature_id": 224,
+          "basis": {
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "origin": [
+              0.0,
+              65.9,
+              0.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "source": {
+            "distance": -65.9,
+            "reference": {
+              "plane": "xz",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "geometry": {
+          "entity_count": 8,
+          "entity_types": {
+            "point": 4,
+            "line": 4
+          },
+          "point_bbox_uv": {
+            "umin": 31.7723,
+            "umax": 37.5723,
+            "vmin": 109.0,
+            "vmax": 111.8,
+            "u_span": 5.8,
+            "v_span": 2.8
+          },
+          "curves": [
+            {
+              "id": 5,
+              "type": "line",
+              "start": 1,
+              "end": 2
+            },
+            {
+              "id": 6,
+              "type": "line",
+              "start": 2,
+              "end": 3
+            },
+            {
+              "id": 7,
+              "type": "line",
+              "start": 3,
+              "end": 4
+            },
+            {
+              "id": 8,
+              "type": "line",
+              "start": 4,
+              "end": 1
+            }
+          ],
+          "points": [
+            {
+              "id": 1,
+              "u": 31.7723,
+              "v": 109.0
+            },
+            {
+              "id": 2,
+              "u": 37.5723,
+              "v": 109.0
+            },
+            {
+              "id": 3,
+              "u": 37.5723,
+              "v": 111.8
+            },
+            {
+              "id": 4,
+              "u": 31.7723,
+              "v": 111.8
+            }
+          ]
+        },
+        "constraint_count": 4,
+        "constraints": [
+          {
+            "id": 1,
+            "entity": 5,
+            "type": "horizontal"
+          },
+          {
+            "id": 2,
+            "entity": 7,
+            "type": "horizontal"
+          },
+          {
+            "id": 3,
+            "entity": 6,
+            "type": "vertical"
+          },
+          {
+            "id": 4,
+            "entity": 8,
+            "type": "vertical"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "extrude",
+      "name": "Extrude69",
+      "feature_id": 229,
+      "operation": "cut",
+      "extent": {
+        "distance": 7.0,
+        "type": "distance"
+      },
+      "flip": true,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0
+      ],
+      "sketch_name": "S02 U input cap nut pocket (64.6723, 70)",
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        105
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S02 U input cap nut pocket (64.6723, 70)",
+        "feature_id": 228,
+        "plane": {
+          "datum_id": 69,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            65.9,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum": {
+          "datum_id": 69,
+          "name": "S02 U input cap nut pocket (64.6723, 70) datum",
+          "feature_id": 227,
+          "basis": {
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "origin": [
+              0.0,
+              65.9,
+              0.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "source": {
+            "distance": -65.9,
+            "reference": {
+              "plane": "xz",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "geometry": {
+          "entity_count": 8,
+          "entity_types": {
+            "point": 4,
+            "line": 4
+          },
+          "point_bbox_uv": {
+            "umin": 61.77230000000001,
+            "umax": 67.57230000000001,
+            "vmin": 109.0,
+            "vmax": 111.8,
+            "u_span": 5.8,
+            "v_span": 2.8
+          },
+          "curves": [
+            {
+              "id": 5,
+              "type": "line",
+              "start": 1,
+              "end": 2
+            },
+            {
+              "id": 6,
+              "type": "line",
+              "start": 2,
+              "end": 3
+            },
+            {
+              "id": 7,
+              "type": "line",
+              "start": 3,
+              "end": 4
+            },
+            {
+              "id": 8,
+              "type": "line",
+              "start": 4,
+              "end": 1
+            }
+          ],
+          "points": [
+            {
+              "id": 1,
+              "u": 61.77230000000001,
+              "v": 109.0
+            },
+            {
+              "id": 2,
+              "u": 67.57230000000001,
+              "v": 109.0
+            },
+            {
+              "id": 3,
+              "u": 67.57230000000001,
+              "v": 111.8
+            },
+            {
+              "id": 4,
+              "u": 61.77230000000001,
+              "v": 111.8
+            }
+          ]
+        },
+        "constraint_count": 4,
+        "constraints": [
+          {
+            "id": 1,
+            "entity": 5,
+            "type": "horizontal"
+          },
+          {
+            "id": 2,
+            "entity": 7,
+            "type": "horizontal"
+          },
+          {
+            "id": 3,
+            "entity": 6,
+            "type": "vertical"
+          },
+          {
+            "id": 4,
+            "entity": 8,
+            "type": "vertical"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "extrude",
+      "name": "Extrude70",
+      "feature_id": 232,
+      "operation": "join",
+      "extent": {
+        "distance": 8.0,
+        "type": "distance"
+      },
+      "flip": true,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0
+      ],
+      "sketch_name": "S02 P supported input post Y96",
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        106
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S02 P supported input post Y96",
+        "feature_id": 231,
+        "plane": {
+          "datum_id": 70,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            92.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum": {
+          "datum_id": 70,
+          "name": "S02 P supported input post Y96 datum",
+          "feature_id": 230,
+          "basis": {
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "origin": [
+              0.0,
+              92.0,
+              0.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "source": {
+            "distance": -92.0,
+            "reference": {
+              "plane": "xz",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "geometry": {
+          "entity_count": 11,
+          "entity_types": {
+            "point": 6,
+            "line": 5
+          },
+          "point_bbox_uv": {
+            "umin": 30.0,
+            "umax": 69.0,
+            "vmin": 92.0,
+            "vmax": 123.0,
+            "u_span": 39.0,
+            "v_span": 31.0
+          },
+          "curves": [
+            {
+              "id": 3,
+              "type": "line",
+              "start": 1,
+              "end": 2
+            },
+            {
+              "id": 5,
+              "type": "line",
+              "start": 2,
+              "end": 4
+            },
+            {
+              "id": 7,
+              "type": "line",
+              "start": 4,
+              "end": 6
+            },
+            {
+              "id": 9,
+              "type": "line",
+              "start": 6,
+              "end": 8
+            },
+            {
+              "id": 11,
+              "type": "line",
+              "start": 8,
+              "end": 10
+            }
+          ],
+          "points": [
+            {
+              "id": 1,
+              "u": 30.0,
+              "v": 92.0
+            },
+            {
+              "id": 2,
+              "u": 65.0,
+              "v": 92.0
+            },
+            {
+              "id": 4,
+              "u": 69.0,
+              "v": 109.0
+            },
+            {
+              "id": 6,
+              "u": 69.0,
+              "v": 123.0
+            },
+            {
+              "id": 8,
+              "u": 30.0,
+              "v": 123.0
+            },
+            {
+              "id": 10,
+              "u": 30.0,
+              "v": 92.0
+            }
+          ]
+        },
+        "constraint_count": 0,
+        "constraints": []
+      }
+    },
+    {
+      "kind": "extrude",
+      "name": "Extrude71",
+      "feature_id": 235,
+      "operation": "cut",
+      "extent": {
+        "distance": 8.0,
+        "type": "distance"
+      },
+      "flip": true,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0
+      ],
+      "sketch_name": "S02 Q input bearing seat Y96",
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        107
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S02 Q input bearing seat Y96",
+        "feature_id": 234,
+        "plane": {
+          "datum_id": 71,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            92.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum": {
+          "datum_id": 71,
+          "name": "S02 Q input bearing seat Y96 datum",
+          "feature_id": 233,
+          "basis": {
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "origin": [
+              0.0,
+              92.0,
+              0.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "source": {
+            "distance": -92.0,
+            "reference": {
+              "plane": "xz",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "geometry": {
+          "entity_count": 1,
+          "entity_types": {
+            "circle": 1
+          },
+          "point_bbox_uv": null,
+          "curves": [
+            {
+              "id": 1,
+              "type": "circle",
+              "center": {
+                "x": 49.6723,
+                "y": 123.0
+              },
+              "radius": 11.100000000000001
+            }
+          ],
+          "points": []
+        },
+        "constraint_count": 0,
+        "constraints": []
+      }
+    },
+    {
+      "kind": "extrude",
+      "name": "Extrude74",
+      "feature_id": 244,
+      "operation": "cut",
+      "extent": {
+        "distance": 36.0,
+        "type": "distance"
+      },
+      "flip": false,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0,
+        1
+      ],
+      "sketch_name": "S02 T input cap M3 holes Y96",
+      "target_body_ids": [
+        97,
+        108
+      ],
+      "new_body_ids": [
+        110,
+        111
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S02 T input cap M3 holes Y96",
+        "feature_id": 243,
+        "plane": {
+          "datum_id": 74,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            106.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "datum": {
+          "datum_id": 74,
+          "name": "S02 T input cap M3 holes Y96 datum",
+          "feature_id": 242,
+          "basis": {
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              106.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          "source": {
+            "distance": 106.0,
+            "reference": {
+              "plane": "xy",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "geometry": {
+          "entity_count": 2,
+          "entity_types": {
+            "circle": 2
+          },
+          "point_bbox_uv": null,
+          "curves": [
+            {
+              "id": 1,
+              "type": "circle",
+              "center": {
+                "x": 35.0,
+                "y": 95.0
+              },
+              "radius": 1.6980009687865338
+            },
+            {
+              "id": 2,
+              "type": "circle",
+              "center": {
+                "x": 65.0,
+                "y": 95.0
+              },
+              "radius": 1.6980009687865396
+            }
+          ],
+          "points": []
+        },
+        "constraint_count": 0,
+        "constraints": []
+      }
+    },
+    {
+      "kind": "extrude",
+      "name": "Extrude75",
+      "feature_id": 247,
+      "operation": "cut",
+      "extent": {
+        "distance": 7.0,
+        "type": "distance"
+      },
+      "flip": true,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0
+      ],
+      "sketch_name": "S02 U input cap nut pocket (34.6723, 96)",
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        112
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S02 U input cap nut pocket (34.6723, 96)",
+        "feature_id": 246,
+        "plane": {
+          "datum_id": 75,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            91.9,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum": {
+          "datum_id": 75,
+          "name": "S02 U input cap nut pocket (34.6723, 96) datum",
+          "feature_id": 245,
+          "basis": {
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "origin": [
+              0.0,
+              91.9,
+              0.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "source": {
+            "distance": -91.9,
+            "reference": {
+              "plane": "xz",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "geometry": {
+          "entity_count": 8,
+          "entity_types": {
+            "point": 4,
+            "line": 4
+          },
+          "point_bbox_uv": {
+            "umin": 31.7723,
+            "umax": 37.5723,
+            "vmin": 109.0,
+            "vmax": 111.8,
+            "u_span": 5.8,
+            "v_span": 2.8
+          },
+          "curves": [
+            {
+              "id": 5,
+              "type": "line",
+              "start": 1,
+              "end": 2
+            },
+            {
+              "id": 6,
+              "type": "line",
+              "start": 2,
+              "end": 3
+            },
+            {
+              "id": 7,
+              "type": "line",
+              "start": 3,
+              "end": 4
+            },
+            {
+              "id": 8,
+              "type": "line",
+              "start": 4,
+              "end": 1
+            }
+          ],
+          "points": [
+            {
+              "id": 1,
+              "u": 31.7723,
+              "v": 109.0
+            },
+            {
+              "id": 2,
+              "u": 37.5723,
+              "v": 109.0
+            },
+            {
+              "id": 3,
+              "u": 37.5723,
+              "v": 111.8
+            },
+            {
+              "id": 4,
+              "u": 31.7723,
+              "v": 111.8
+            }
+          ]
+        },
+        "constraint_count": 4,
+        "constraints": [
+          {
+            "id": 1,
+            "entity": 5,
+            "type": "horizontal"
+          },
+          {
+            "id": 2,
+            "entity": 7,
+            "type": "horizontal"
+          },
+          {
+            "id": 3,
+            "entity": 6,
+            "type": "vertical"
+          },
+          {
+            "id": 4,
+            "entity": 8,
+            "type": "vertical"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "extrude",
+      "name": "Extrude76",
+      "feature_id": 250,
+      "operation": "cut",
+      "extent": {
+        "distance": 7.0,
+        "type": "distance"
+      },
+      "flip": true,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0
+      ],
+      "sketch_name": "S02 U input cap nut pocket (64.6723, 96)",
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        113
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S02 U input cap nut pocket (64.6723, 96)",
+        "feature_id": 249,
+        "plane": {
+          "datum_id": 76,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            91.9,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum": {
+          "datum_id": 76,
+          "name": "S02 U input cap nut pocket (64.6723, 96) datum",
+          "feature_id": 248,
+          "basis": {
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "origin": [
+              0.0,
+              91.9,
+              0.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "source": {
+            "distance": -91.9,
+            "reference": {
+              "plane": "xz",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "geometry": {
+          "entity_count": 8,
+          "entity_types": {
+            "point": 4,
+            "line": 4
+          },
+          "point_bbox_uv": {
+            "umin": 61.77230000000001,
+            "umax": 67.57230000000001,
+            "vmin": 109.0,
+            "vmax": 111.8,
+            "u_span": 5.8,
+            "v_span": 2.8
+          },
+          "curves": [
+            {
+              "id": 5,
+              "type": "line",
+              "start": 1,
+              "end": 2
+            },
+            {
+              "id": 6,
+              "type": "line",
+              "start": 2,
+              "end": 3
+            },
+            {
+              "id": 7,
+              "type": "line",
+              "start": 3,
+              "end": 4
+            },
+            {
+              "id": 8,
+              "type": "line",
+              "start": 4,
+              "end": 1
+            }
+          ],
+          "points": [
+            {
+              "id": 1,
+              "u": 61.77230000000001,
+              "v": 109.0
+            },
+            {
+              "id": 2,
+              "u": 67.57230000000001,
+              "v": 109.0
+            },
+            {
+              "id": 3,
+              "u": 67.57230000000001,
+              "v": 111.8
+            },
+            {
+              "id": 4,
+              "u": 61.77230000000001,
+              "v": 111.8
+            }
+          ]
+        },
+        "constraint_count": 4,
+        "constraints": [
+          {
+            "id": 1,
+            "entity": 5,
+            "type": "horizontal"
+          },
+          {
+            "id": 2,
+            "entity": 7,
+            "type": "horizontal"
+          },
+          {
+            "id": 3,
+            "entity": 6,
+            "type": "vertical"
+          },
+          {
+            "id": 4,
+            "entity": 8,
+            "type": "vertical"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "extrude",
+      "name": "Extrude77",
+      "feature_id": 253,
+      "operation": "cut",
+      "extent": {
+        "distance": 6.0,
+        "type": "distance"
+      },
+      "flip": false,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0
+      ],
+      "sketch_name": "S02 V tension slot (34, 56)",
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        114
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S02 V tension slot (34, 56)",
+        "feature_id": 252,
+        "plane": {
+          "datum_id": 77,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            87.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "datum": {
+          "datum_id": 77,
+          "name": "S02 V tension slot (34, 56) datum",
+          "feature_id": 251,
+          "basis": {
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              87.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          "source": {
+            "distance": 87.0,
+            "reference": {
+              "plane": "xy",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "geometry": {
+          "entity_count": 21,
+          "entity_types": {
+            "point": 13,
+            "line": 4,
+            "arc": 4
+          },
+          "point_bbox_uv": {
+            "umin": 30.3,
+            "umax": 37.7,
+            "vmin": 53.8,
+            "vmax": 58.2,
+            "u_span": 7.4,
+            "v_span": 4.4
+          },
+          "curves": [
+            {
+              "id": 21,
+              "type": "line",
+              "start": 19,
+              "end": 20
+            },
+            {
+              "id": 22,
+              "type": "arc",
+              "center": {
+                "x": 36.70000000000065,
+                "y": 54.79999999999959
+              },
+              "radius": 0.999999999999595,
+              "start_angle": -1.5707963267955432,
+              "end_angle": 4.05009359383519e-13
+            },
+            {
+              "id": 26,
+              "type": "line",
+              "start": 24,
+              "end": 25
+            },
+            {
+              "id": 27,
+              "type": "arc",
+              "center": {
+                "x": 36.700000000000216,
+                "y": 57.200000000000095
+              },
+              "radius": 0.9999999999997868,
+              "start_angle": -9.237055564883271e-14,
+              "end_angle": 1.5707963267951097
+            },
+            {
+              "id": 31,
+              "type": "line",
+              "start": 29,
+              "end": 30
+            },
+            {
+              "id": 32,
+              "type": "arc",
+              "center": {
+                "x": 31.299999999999645,
+                "y": 57.20000000000064
+              },
+              "radius": 0.9999999999993605,
+              "start_angle": 1.5707963267945413,
+              "end_angle": -3.1415926535891536
+            },
+            {
+              "id": 36,
+              "type": "line",
+              "start": 34,
+              "end": 35
+            },
+            {
+              "id": 37,
+              "type": "arc",
+              "center": {
+                "x": 31.299999999999923,
+                "y": 54.79999999999936
+              },
+              "radius": 0.9999999999999218,
+              "start_angle": 3.1415926535891536,
+              "end_angle": -1.5707963267948184
+            }
+          ],
+          "points": [
+            {
+              "id": 19,
+              "u": 31.3,
+              "v": 53.8
+            },
+            {
+              "id": 20,
+              "u": 36.7,
+              "v": 53.8
+            },
+            {
+              "id": 23,
+              "u": 36.7,
+              "v": 53.8
+            },
+            {
+              "id": 24,
+              "u": 37.7,
+              "v": 54.8
+            },
+            {
+              "id": 25,
+              "u": 37.7,
+              "v": 57.2
+            },
+            {
+              "id": 28,
+              "u": 37.7,
+              "v": 57.2
+            },
+            {
+              "id": 29,
+              "u": 36.7,
+              "v": 58.2
+            },
+            {
+              "id": 30,
+              "u": 31.3,
+              "v": 58.2
+            },
+            {
+              "id": 33,
+              "u": 31.3,
+              "v": 58.2
+            },
+            {
+              "id": 34,
+              "u": 30.3,
+              "v": 57.2
+            },
+            {
+              "id": 35,
+              "u": 30.3,
+              "v": 54.8
+            },
+            {
+              "id": 38,
+              "u": 30.3,
+              "v": 54.8
+            },
+            {
+              "id": 39,
+              "u": 31.3,
+              "v": 53.8
+            }
+          ]
+        },
+        "constraint_count": 8,
+        "constraints": [
+          {
+            "id": 7,
+            "arc": 22,
+            "end": "start",
+            "point": 23,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 8,
+            "arc": 22,
+            "end": "end",
+            "point": 24,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 9,
+            "arc": 27,
+            "end": "start",
+            "point": 28,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 10,
+            "arc": 27,
+            "end": "end",
+            "point": 29,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 11,
+            "arc": 32,
+            "end": "start",
+            "point": 33,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 12,
+            "arc": 32,
+            "end": "end",
+            "point": 34,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 13,
+            "arc": 37,
+            "end": "start",
+            "point": 38,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 14,
+            "arc": 37,
+            "end": "end",
+            "point": 39,
+            "type": "arc_endpoint_coincident"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "extrude",
+      "name": "Extrude78",
+      "feature_id": 256,
+      "operation": "cut",
+      "extent": {
+        "distance": 6.0,
+        "type": "distance"
+      },
+      "flip": false,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0
+      ],
+      "sketch_name": "S02 V tension slot (61, 56)",
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        115
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S02 V tension slot (61, 56)",
+        "feature_id": 255,
+        "plane": {
+          "datum_id": 78,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            87.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "datum": {
+          "datum_id": 78,
+          "name": "S02 V tension slot (61, 56) datum",
+          "feature_id": 254,
+          "basis": {
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              87.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          "source": {
+            "distance": 87.0,
+            "reference": {
+              "plane": "xy",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "geometry": {
+          "entity_count": 21,
+          "entity_types": {
+            "point": 13,
+            "line": 4,
+            "arc": 4
+          },
+          "point_bbox_uv": {
+            "umin": 57.3,
+            "umax": 64.7,
+            "vmin": 53.8,
+            "vmax": 58.2,
+            "u_span": 7.4,
+            "v_span": 4.4
+          },
+          "curves": [
+            {
+              "id": 3,
+              "type": "line",
+              "start": 1,
+              "end": 2
+            },
+            {
+              "id": 4,
+              "type": "arc",
+              "center": {
+                "x": 63.70000000000115,
+                "y": 54.79999999999897
+              },
+              "radius": 0.9999999999989697,
+              "start_angle": -1.5707963267960405,
+              "end_angle": 1.0302869668533238e-12
+            },
+            {
+              "id": 8,
+              "type": "line",
+              "start": 6,
+              "end": 7
+            },
+            {
+              "id": 9,
+              "type": "arc",
+              "center": {
+                "x": 63.70000000000005,
+                "y": 57.20000000000076
+              },
+              "radius": 0.9999999999999503,
+              "start_angle": -7.602807272633451e-13,
+              "end_angle": 1.5707963267949463
+            },
+            {
+              "id": 13,
+              "type": "line",
+              "start": 11,
+              "end": 12
+            },
+            {
+              "id": 14,
+              "type": "arc",
+              "center": {
+                "x": 58.29999999999975,
+                "y": 57.20000000000064
+              },
+              "radius": 0.9999999999993605,
+              "start_angle": 1.5707963267946479,
+              "end_angle": -3.1415926535891536
+            },
+            {
+              "id": 18,
+              "type": "line",
+              "start": 16,
+              "end": 17
+            },
+            {
+              "id": 19,
+              "type": "arc",
+              "center": {
+                "x": 58.30000000000085,
+                "y": 54.79999999999963
+              },
+              "radius": 1.0000000000008527,
+              "start_angle": 3.1415926535894236,
+              "end_angle": -1.5707963267957492
+            }
+          ],
+          "points": [
+            {
+              "id": 1,
+              "u": 58.3,
+              "v": 53.8
+            },
+            {
+              "id": 2,
+              "u": 63.7,
+              "v": 53.8
+            },
+            {
+              "id": 5,
+              "u": 63.7,
+              "v": 53.8
+            },
+            {
+              "id": 6,
+              "u": 64.7,
+              "v": 54.8
+            },
+            {
+              "id": 7,
+              "u": 64.7,
+              "v": 57.2
+            },
+            {
+              "id": 10,
+              "u": 64.7,
+              "v": 57.2
+            },
+            {
+              "id": 11,
+              "u": 63.7,
+              "v": 58.2
+            },
+            {
+              "id": 12,
+              "u": 58.3,
+              "v": 58.2
+            },
+            {
+              "id": 15,
+              "u": 58.3,
+              "v": 58.2
+            },
+            {
+              "id": 16,
+              "u": 57.3,
+              "v": 57.2
+            },
+            {
+              "id": 17,
+              "u": 57.3,
+              "v": 54.8
+            },
+            {
+              "id": 20,
+              "u": 57.3,
+              "v": 54.8
+            },
+            {
+              "id": 21,
+              "u": 58.3,
+              "v": 53.8
+            }
+          ]
+        },
+        "constraint_count": 8,
+        "constraints": [
+          {
+            "id": 1,
+            "arc": 4,
+            "end": "start",
+            "point": 5,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 2,
+            "arc": 4,
+            "end": "end",
+            "point": 6,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 3,
+            "arc": 9,
+            "end": "start",
+            "point": 10,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 4,
+            "arc": 9,
+            "end": "end",
+            "point": 11,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 5,
+            "arc": 14,
+            "end": "start",
+            "point": 15,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 6,
+            "arc": 14,
+            "end": "end",
+            "point": 16,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 7,
+            "arc": 19,
+            "end": "start",
+            "point": 20,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 8,
+            "arc": 19,
+            "end": "end",
+            "point": 21,
+            "type": "arc_endpoint_coincident"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "extrude",
+      "name": "Extrude79",
+      "feature_id": 259,
+      "operation": "cut",
+      "extent": {
+        "distance": 6.0,
+        "type": "distance"
+      },
+      "flip": false,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0
+      ],
+      "sketch_name": "S02 V tension slot (34, 84)",
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        116
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S02 V tension slot (34, 84)",
+        "feature_id": 258,
+        "plane": {
+          "datum_id": 79,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            87.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "datum": {
+          "datum_id": 79,
+          "name": "S02 V tension slot (34, 84) datum",
+          "feature_id": 257,
+          "basis": {
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              87.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          "source": {
+            "distance": 87.0,
+            "reference": {
+              "plane": "xy",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "geometry": {
+          "entity_count": 21,
+          "entity_types": {
+            "point": 13,
+            "line": 4,
+            "arc": 4
+          },
+          "point_bbox_uv": {
+            "umin": 30.3,
+            "umax": 37.7,
+            "vmin": 81.8,
+            "vmax": 86.2,
+            "u_span": 7.4,
+            "v_span": 4.4
+          },
+          "curves": [
+            {
+              "id": 3,
+              "type": "line",
+              "start": 1,
+              "end": 2
+            },
+            {
+              "id": 4,
+              "type": "arc",
+              "center": {
+                "x": 36.70000000000014,
+                "y": 82.79999999999835
+              },
+              "radius": 0.9999999999983515,
+              "start_angle": -1.5707963267950316,
+              "end_angle": 1.648459146963655e-12
+            },
+            {
+              "id": 8,
+              "type": "line",
+              "start": 6,
+              "end": 7
+            },
+            {
+              "id": 9,
+              "type": "arc",
+              "center": {
+                "x": 36.69999999999904,
+                "y": 85.19999999999794
+              },
+              "radius": 1.0000000000009663,
+              "start_angle": 2.0605739337022993e-12,
+              "end_angle": 1.5707963267939302
+            },
+            {
+              "id": 13,
+              "type": "line",
+              "start": 11,
+              "end": 12
+            },
+            {
+              "id": 14,
+              "type": "arc",
+              "center": {
+                "x": 31.299999999999798,
+                "y": 85.19999999999978
+              },
+              "radius": 1.0000000000002274,
+              "start_angle": 1.570796326794694,
+              "end_angle": 3.1415926535895657
+            },
+            {
+              "id": 18,
+              "type": "line",
+              "start": 16,
+              "end": 17
+            },
+            {
+              "id": 19,
+              "type": "arc",
+              "center": {
+                "x": 31.30000000000103,
+                "y": 82.79999999999944
+              },
+              "radius": 1.0000000000010303,
+              "start_angle": 3.141592653589239,
+              "end_angle": -1.5707963267959268
+            }
+          ],
+          "points": [
+            {
+              "id": 1,
+              "u": 31.3,
+              "v": 81.8
+            },
+            {
+              "id": 2,
+              "u": 36.7,
+              "v": 81.8
+            },
+            {
+              "id": 5,
+              "u": 36.7,
+              "v": 81.8
+            },
+            {
+              "id": 6,
+              "u": 37.7,
+              "v": 82.8
+            },
+            {
+              "id": 7,
+              "u": 37.7,
+              "v": 85.2
+            },
+            {
+              "id": 10,
+              "u": 37.7,
+              "v": 85.2
+            },
+            {
+              "id": 11,
+              "u": 36.7,
+              "v": 86.2
+            },
+            {
+              "id": 12,
+              "u": 31.3,
+              "v": 86.2
+            },
+            {
+              "id": 15,
+              "u": 31.3,
+              "v": 86.2
+            },
+            {
+              "id": 16,
+              "u": 30.3,
+              "v": 85.2
+            },
+            {
+              "id": 17,
+              "u": 30.3,
+              "v": 82.8
+            },
+            {
+              "id": 20,
+              "u": 30.3,
+              "v": 82.8
+            },
+            {
+              "id": 21,
+              "u": 31.3,
+              "v": 81.8
+            }
+          ]
+        },
+        "constraint_count": 8,
+        "constraints": [
+          {
+            "id": 1,
+            "arc": 4,
+            "end": "start",
+            "point": 5,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 2,
+            "arc": 4,
+            "end": "end",
+            "point": 6,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 3,
+            "arc": 9,
+            "end": "start",
+            "point": 10,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 4,
+            "arc": 9,
+            "end": "end",
+            "point": 11,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 5,
+            "arc": 14,
+            "end": "start",
+            "point": 15,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 6,
+            "arc": 14,
+            "end": "end",
+            "point": 16,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 7,
+            "arc": 19,
+            "end": "start",
+            "point": 20,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 8,
+            "arc": 19,
+            "end": "end",
+            "point": 21,
+            "type": "arc_endpoint_coincident"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "extrude",
+      "name": "Extrude80",
+      "feature_id": 262,
+      "operation": "cut",
+      "extent": {
+        "distance": 6.0,
+        "type": "distance"
+      },
+      "flip": false,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0
+      ],
+      "sketch_name": "S02 V tension slot (61, 84)",
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        117
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S02 V tension slot (61, 84)",
+        "feature_id": 261,
+        "plane": {
+          "datum_id": 80,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            87.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "datum": {
+          "datum_id": 80,
+          "name": "S02 V tension slot (61, 84) datum",
+          "feature_id": 260,
+          "basis": {
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              87.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          "source": {
+            "distance": 87.0,
+            "reference": {
+              "plane": "xy",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "geometry": {
+          "entity_count": 21,
+          "entity_types": {
+            "point": 13,
+            "line": 4,
+            "arc": 4
+          },
+          "point_bbox_uv": {
+            "umin": 57.3,
+            "umax": 64.7,
+            "vmin": 81.8,
+            "vmax": 86.2,
+            "u_span": 7.4,
+            "v_span": 4.4
+          },
+          "curves": [
+            {
+              "id": 3,
+              "type": "line",
+              "start": 1,
+              "end": 2
+            },
+            {
+              "id": 4,
+              "type": "arc",
+              "center": {
+                "x": 63.70000000000006,
+                "y": 82.7999999999984
+              },
+              "radius": 0.9999999999984084,
+              "start_angle": -1.5707963267949534,
+              "end_angle": 1.5916157281027149e-12
+            },
+            {
+              "id": 8,
+              "type": "line",
+              "start": 6,
+              "end": 7
+            },
+            {
+              "id": 9,
+              "type": "arc",
+              "center": {
+                "x": 63.70000000000006,
+                "y": 85.19999999999942
+              },
+              "radius": 0.9999999999999432,
+              "start_angle": 5.826450433233153e-13,
+              "end_angle": 1.5707963267949534
+            },
+            {
+              "id": 13,
+              "type": "line",
+              "start": 11,
+              "end": 12
+            },
+            {
+              "id": 14,
+              "type": "arc",
+              "center": {
+                "x": 58.29999999999825,
+                "y": 85.20000000000051
+              },
+              "radius": 0.9999999999994884,
+              "start_angle": 1.5707963267931486,
+              "end_angle": -3.1415926535892815
+            },
+            {
+              "id": 18,
+              "type": "line",
+              "start": 16,
+              "end": 17
+            },
+            {
+              "id": 19,
+              "type": "arc",
+              "center": {
+                "x": 58.29999999999875,
+                "y": 82.79999999999889
+              },
+              "radius": 0.9999999999987494,
+              "start_angle": 3.1415926535886847,
+              "end_angle": -1.570796326793646
+            }
+          ],
+          "points": [
+            {
+              "id": 1,
+              "u": 58.3,
+              "v": 81.8
+            },
+            {
+              "id": 2,
+              "u": 63.7,
+              "v": 81.8
+            },
+            {
+              "id": 5,
+              "u": 63.7,
+              "v": 81.8
+            },
+            {
+              "id": 6,
+              "u": 64.7,
+              "v": 82.8
+            },
+            {
+              "id": 7,
+              "u": 64.7,
+              "v": 85.2
+            },
+            {
+              "id": 10,
+              "u": 64.7,
+              "v": 85.2
+            },
+            {
+              "id": 11,
+              "u": 63.7,
+              "v": 86.2
+            },
+            {
+              "id": 12,
+              "u": 58.3,
+              "v": 86.2
+            },
+            {
+              "id": 15,
+              "u": 58.3,
+              "v": 86.2
+            },
+            {
+              "id": 16,
+              "u": 57.3,
+              "v": 85.2
+            },
+            {
+              "id": 17,
+              "u": 57.3,
+              "v": 82.8
+            },
+            {
+              "id": 20,
+              "u": 57.3,
+              "v": 82.8
+            },
+            {
+              "id": 21,
+              "u": 58.3,
+              "v": 81.8
+            }
+          ]
+        },
+        "constraint_count": 8,
+        "constraints": [
+          {
+            "id": 1,
+            "arc": 4,
+            "end": "start",
+            "point": 5,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 2,
+            "arc": 4,
+            "end": "end",
+            "point": 6,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 3,
+            "arc": 9,
+            "end": "start",
+            "point": 10,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 4,
+            "arc": 9,
+            "end": "end",
+            "point": 11,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 5,
+            "arc": 14,
+            "end": "start",
+            "point": 15,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 6,
+            "arc": 14,
+            "end": "end",
+            "point": 16,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 7,
+            "arc": 19,
+            "end": "start",
+            "point": 20,
+            "type": "arc_endpoint_coincident"
+          },
+          {
+            "id": 8,
+            "arc": 19,
+            "end": "end",
+            "point": 21,
+            "type": "arc_endpoint_coincident"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "extrude",
+      "name": "Extrude81",
+      "feature_id": 265,
+      "operation": "join",
+      "extent": {
+        "distance": 40.5,
+        "type": "distance"
+      },
+      "flip": true,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0
+      ],
+      "sketch_name": "S02 W servo case locating lip X37.6723",
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        118
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S02 W servo case locating lip X37.6723",
+        "feature_id": 264,
+        "plane": {
+          "datum_id": 81,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            5.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum": {
+          "datum_id": 81,
+          "name": "S02 W servo case locating lip X37.6723 datum",
+          "feature_id": 263,
+          "basis": {
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "origin": [
+              0.0,
+              5.0,
+              0.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "source": {
+            "distance": -5.0,
+            "reference": {
+              "plane": "xz",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "geometry": {
+          "entity_count": 8,
+          "entity_types": {
+            "point": 4,
+            "line": 4
+          },
+          "point_bbox_uv": {
+            "umin": 37.6723,
+            "umax": 39.1723,
+            "vmin": 92.0,
+            "vmax": 97.0,
+            "u_span": 1.5,
+            "v_span": 5.0
+          },
+          "curves": [
+            {
+              "id": 5,
+              "type": "line",
+              "start": 1,
+              "end": 2
+            },
+            {
+              "id": 6,
+              "type": "line",
+              "start": 2,
+              "end": 3
+            },
+            {
+              "id": 7,
+              "type": "line",
+              "start": 3,
+              "end": 4
+            },
+            {
+              "id": 8,
+              "type": "line",
+              "start": 4,
+              "end": 1
+            }
+          ],
+          "points": [
+            {
+              "id": 1,
+              "u": 37.6723,
+              "v": 92.0
+            },
+            {
+              "id": 2,
+              "u": 39.1723,
+              "v": 92.0
+            },
+            {
+              "id": 3,
+              "u": 39.1723,
+              "v": 97.0
+            },
+            {
+              "id": 4,
+              "u": 37.6723,
+              "v": 97.0
+            }
+          ]
+        },
+        "constraint_count": 4,
+        "constraints": [
+          {
+            "id": 1,
+            "entity": 5,
+            "type": "horizontal"
+          },
+          {
+            "id": 2,
+            "entity": 7,
+            "type": "horizontal"
+          },
+          {
+            "id": 3,
+            "entity": 6,
+            "type": "vertical"
+          },
+          {
+            "id": 4,
+            "entity": 8,
+            "type": "vertical"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "extrude",
+      "name": "Extrude82",
+      "feature_id": 268,
+      "operation": "join",
+      "extent": {
+        "distance": 40.5,
+        "type": "distance"
+      },
+      "flip": true,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0
+      ],
+      "sketch_name": "S02 W servo case locating lip X60.1723",
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        119
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S02 W servo case locating lip X60.1723",
+        "feature_id": 267,
+        "plane": {
+          "datum_id": 82,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            5.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum": {
+          "datum_id": 82,
+          "name": "S02 W servo case locating lip X60.1723 datum",
+          "feature_id": 266,
+          "basis": {
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "origin": [
+              0.0,
+              5.0,
+              0.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "source": {
+            "distance": -5.0,
+            "reference": {
+              "plane": "xz",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "geometry": {
+          "entity_count": 8,
+          "entity_types": {
+            "point": 4,
+            "line": 4
+          },
+          "point_bbox_uv": {
+            "umin": 60.1723,
+            "umax": 61.6723,
+            "vmin": 92.0,
+            "vmax": 97.0,
+            "u_span": 1.5,
+            "v_span": 5.0
+          },
+          "curves": [
+            {
+              "id": 5,
+              "type": "line",
+              "start": 1,
+              "end": 2
+            },
+            {
+              "id": 6,
+              "type": "line",
+              "start": 2,
+              "end": 3
+            },
+            {
+              "id": 7,
+              "type": "line",
+              "start": 3,
+              "end": 4
+            },
+            {
+              "id": 8,
+              "type": "line",
+              "start": 4,
+              "end": 1
+            }
+          ],
+          "points": [
+            {
+              "id": 1,
+              "u": 60.1723,
+              "v": 92.0
+            },
+            {
+              "id": 2,
+              "u": 61.6723,
+              "v": 92.0
+            },
+            {
+              "id": 3,
+              "u": 61.6723,
+              "v": 97.0
+            },
+            {
+              "id": 4,
+              "u": 60.1723,
+              "v": 97.0
+            }
+          ]
+        },
+        "constraint_count": 4,
+        "constraints": [
+          {
+            "id": 1,
+            "entity": 5,
+            "type": "horizontal"
+          },
+          {
+            "id": 2,
+            "entity": 7,
+            "type": "horizontal"
+          },
+          {
+            "id": 3,
+            "entity": 6,
+            "type": "vertical"
+          },
+          {
+            "id": 4,
+            "entity": 8,
+            "type": "vertical"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "extrude",
+      "name": "Extrude83",
+      "feature_id": 271,
+      "operation": "join",
+      "extent": {
+        "distance": 1.0,
+        "type": "distance"
+      },
+      "flip": true,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0
+      ],
+      "sketch_name": "S02 X servo case end stop Y3.5",
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        120
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S02 X servo case end stop Y3.5",
+        "feature_id": 270,
+        "plane": {
+          "datum_id": 83,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            3.5,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum": {
+          "datum_id": 83,
+          "name": "S02 X servo case end stop Y3.5 datum",
+          "feature_id": 269,
+          "basis": {
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "origin": [
+              0.0,
+              3.5,
+              0.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "source": {
+            "distance": -3.5,
+            "reference": {
+              "plane": "xz",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "geometry": {
+          "entity_count": 8,
+          "entity_types": {
+            "point": 4,
+            "line": 4
+          },
+          "point_bbox_uv": {
+            "umin": 39.1723,
+            "umax": 60.1723,
+            "vmin": 92.0,
+            "vmax": 97.0,
+            "u_span": 21.0,
+            "v_span": 5.0
+          },
+          "curves": [
+            {
+              "id": 5,
+              "type": "line",
+              "start": 1,
+              "end": 2
+            },
+            {
+              "id": 6,
+              "type": "line",
+              "start": 2,
+              "end": 3
+            },
+            {
+              "id": 7,
+              "type": "line",
+              "start": 3,
+              "end": 4
+            },
+            {
+              "id": 8,
+              "type": "line",
+              "start": 4,
+              "end": 1
+            }
+          ],
+          "points": [
+            {
+              "id": 1,
+              "u": 39.1723,
+              "v": 92.0
+            },
+            {
+              "id": 2,
+              "u": 60.1723,
+              "v": 92.0
+            },
+            {
+              "id": 3,
+              "u": 60.1723,
+              "v": 97.0
+            },
+            {
+              "id": 4,
+              "u": 39.1723,
+              "v": 97.0
+            }
+          ]
+        },
+        "constraint_count": 4,
+        "constraints": [
+          {
+            "id": 1,
+            "entity": 5,
+            "type": "horizontal"
+          },
+          {
+            "id": 2,
+            "entity": 7,
+            "type": "horizontal"
+          },
+          {
+            "id": 3,
+            "entity": 6,
+            "type": "vertical"
+          },
+          {
+            "id": 4,
+            "entity": 8,
+            "type": "vertical"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "extrude",
+      "name": "Extrude84",
+      "feature_id": 274,
+      "operation": "join",
+      "extent": {
+        "distance": 1.0,
+        "type": "distance"
+      },
+      "flip": true,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0
+      ],
+      "sketch_name": "S02 X servo case end stop Y46",
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        121
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S02 X servo case end stop Y46",
+        "feature_id": 273,
+        "plane": {
+          "datum_id": 84,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            46.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "datum": {
+          "datum_id": 84,
+          "name": "S02 X servo case end stop Y46 datum",
+          "feature_id": 272,
+          "basis": {
+            "normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "origin": [
+              0.0,
+              46.0,
+              0.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "source": {
+            "distance": -46.0,
+            "reference": {
+              "plane": "xz",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "geometry": {
+          "entity_count": 8,
+          "entity_types": {
+            "point": 4,
+            "line": 4
+          },
+          "point_bbox_uv": {
+            "umin": 39.1723,
+            "umax": 60.1723,
+            "vmin": 92.0,
+            "vmax": 97.0,
+            "u_span": 21.0,
+            "v_span": 5.0
+          },
+          "curves": [
+            {
+              "id": 5,
+              "type": "line",
+              "start": 1,
+              "end": 2
+            },
+            {
+              "id": 6,
+              "type": "line",
+              "start": 2,
+              "end": 3
+            },
+            {
+              "id": 7,
+              "type": "line",
+              "start": 3,
+              "end": 4
+            },
+            {
+              "id": 8,
+              "type": "line",
+              "start": 4,
+              "end": 1
+            }
+          ],
+          "points": [
+            {
+              "id": 1,
+              "u": 39.1723,
+              "v": 92.0
+            },
+            {
+              "id": 2,
+              "u": 60.1723,
+              "v": 92.0
+            },
+            {
+              "id": 3,
+              "u": 60.1723,
+              "v": 97.0
+            },
+            {
+              "id": 4,
+              "u": 39.1723,
+              "v": 97.0
+            }
+          ]
+        },
+        "constraint_count": 4,
+        "constraints": [
+          {
+            "id": 1,
+            "entity": 5,
+            "type": "horizontal"
+          },
+          {
+            "id": 2,
+            "entity": 7,
+            "type": "horizontal"
+          },
+          {
+            "id": 3,
+            "entity": 6,
+            "type": "vertical"
+          },
+          {
+            "id": 4,
+            "entity": 8,
+            "type": "vertical"
+          }
+        ]
+      }
+    },
+    {
+      "body_ids": [
+        97,
+        100,
+        108
+      ],
+      "feature_id": 275,
+      "name": "Mirror2",
+      "new_body_ids": [
+        122,
+        123,
+        124
+      ],
+      "plane": {
+        "plane": "xz",
+        "type": "origin_plane"
+      },
+      "plane_basis": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "type": "mirror",
+      "kind": "body_feature",
+      "role_wrt_97": "source_for_mirror_copy_does_not_modify_97"
+    },
+    {
+      "kind": "extrude",
+      "name": "Extrude86",
+      "feature_id": 287,
+      "operation": "cut",
+      "extent": {
+        "distance": 6.0,
+        "type": "distance"
+      },
+      "flip": false,
+      "taper_angle_deg": 0.0,
+      "profile_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sketch_name": "S02 Z L removable servo strap passages",
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        133,
+        134,
+        135,
+        136
+      ],
+      "source_face": null,
+      "source_face_key": null,
+      "source_face_basis": null,
+      "to_face_basis": null,
+      "sketch": {
+        "name": "S02 Z L removable servo strap passages",
+        "feature_id": 286,
+        "plane": {
+          "datum_id": 86,
+          "type": "datum_plane"
+        },
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            87.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "datum": {
+          "datum_id": 86,
+          "name": "S02 Z L removable servo strap passages datum",
+          "feature_id": 285,
+          "basis": {
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              87.0
+            ],
+            "u": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "v": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          "source": {
+            "distance": 87.0,
+            "reference": {
+              "plane": "xy",
+              "type": "origin_plane"
+            },
+            "type": "offset"
+          }
+        },
+        "geometry": {
+          "entity_count": 32,
+          "entity_types": {
+            "point": 16,
+            "line": 16
+          },
+          "point_bbox_uv": {
+            "umin": 33.0,
+            "umax": 63.5,
+            "vmin": 16.0,
+            "vmax": 39.0,
+            "u_span": 30.5,
+            "v_span": 23.0
+          },
+          "curves": [
+            {
+              "id": 5,
+              "type": "line",
+              "start": 1,
+              "end": 2
+            },
+            {
+              "id": 6,
+              "type": "line",
+              "start": 2,
+              "end": 3
+            },
+            {
+              "id": 7,
+              "type": "line",
+              "start": 3,
+              "end": 4
+            },
+            {
+              "id": 8,
+              "type": "line",
+              "start": 4,
+              "end": 1
+            },
+            {
+              "id": 13,
+              "type": "line",
+              "start": 9,
+              "end": 10
+            },
+            {
+              "id": 14,
+              "type": "line",
+              "start": 10,
+              "end": 11
+            },
+            {
+              "id": 15,
+              "type": "line",
+              "start": 11,
+              "end": 12
+            },
+            {
+              "id": 16,
+              "type": "line",
+              "start": 12,
+              "end": 9
+            },
+            {
+              "id": 21,
+              "type": "line",
+              "start": 17,
+              "end": 18
+            },
+            {
+              "id": 22,
+              "type": "line",
+              "start": 18,
+              "end": 19
+            },
+            {
+              "id": 23,
+              "type": "line",
+              "start": 19,
+              "end": 20
+            },
+            {
+              "id": 24,
+              "type": "line",
+              "start": 20,
+              "end": 17
+            },
+            {
+              "id": 29,
+              "type": "line",
+              "start": 25,
+              "end": 26
+            },
+            {
+              "id": 30,
+              "type": "line",
+              "start": 26,
+              "end": 27
+            },
+            {
+              "id": 31,
+              "type": "line",
+              "start": 27,
+              "end": 28
+            },
+            {
+              "id": 32,
+              "type": "line",
+              "start": 28,
+              "end": 25
+            }
+          ],
+          "points": [
+            {
+              "id": 1,
+              "u": 33.0,
+              "v": 16.0
+            },
+            {
+              "id": 2,
+              "u": 35.0,
+              "v": 16.0
+            },
+            {
+              "id": 3,
+              "u": 35.0,
+              "v": 24.0
+            },
+            {
+              "id": 4,
+              "u": 33.0,
+              "v": 24.0
+            },
+            {
+              "id": 9,
+              "u": 33.0,
+              "v": 31.0
+            },
+            {
+              "id": 10,
+              "u": 35.0,
+              "v": 31.0
+            },
+            {
+              "id": 11,
+              "u": 35.0,
+              "v": 39.0
+            },
+            {
+              "id": 12,
+              "u": 33.0,
+              "v": 39.0
+            },
+            {
+              "id": 17,
+              "u": 61.5,
+              "v": 16.0
+            },
+            {
+              "id": 18,
+              "u": 63.5,
+              "v": 16.0
+            },
+            {
+              "id": 19,
+              "u": 63.5,
+              "v": 24.0
+            },
+            {
+              "id": 20,
+              "u": 61.5,
+              "v": 24.0
+            },
+            {
+              "id": 25,
+              "u": 61.5,
+              "v": 31.0
+            },
+            {
+              "id": 26,
+              "u": 63.5,
+              "v": 31.0
+            },
+            {
+              "id": 27,
+              "u": 63.5,
+              "v": 39.0
+            },
+            {
+              "id": 28,
+              "u": 61.5,
+              "v": 39.0
+            }
+          ]
+        },
+        "constraint_count": 16,
+        "constraints": [
+          {
+            "id": 1,
+            "entity": 5,
+            "type": "horizontal"
+          },
+          {
+            "id": 2,
+            "entity": 7,
+            "type": "horizontal"
+          },
+          {
+            "id": 3,
+            "entity": 6,
+            "type": "vertical"
+          },
+          {
+            "id": 4,
+            "entity": 8,
+            "type": "vertical"
+          },
+          {
+            "id": 5,
+            "entity": 13,
+            "type": "horizontal"
+          },
+          {
+            "id": 6,
+            "entity": 15,
+            "type": "horizontal"
+          },
+          {
+            "id": 7,
+            "entity": 14,
+            "type": "vertical"
+          },
+          {
+            "id": 8,
+            "entity": 16,
+            "type": "vertical"
+          },
+          {
+            "id": 9,
+            "entity": 21,
+            "type": "horizontal"
+          },
+          {
+            "id": 10,
+            "entity": 23,
+            "type": "horizontal"
+          },
+          {
+            "id": 11,
+            "entity": 22,
+            "type": "vertical"
+          },
+          {
+            "id": 12,
+            "entity": 24,
+            "type": "vertical"
+          },
+          {
+            "id": 13,
+            "entity": 29,
+            "type": "horizontal"
+          },
+          {
+            "id": 14,
+            "entity": 31,
+            "type": "horizontal"
+          },
+          {
+            "id": 15,
+            "entity": 30,
+            "type": "vertical"
+          },
+          {
+            "id": 16,
+            "entity": 32,
+            "type": "vertical"
+          }
+        ]
+      }
+    }
+  ],
+  "feature_sequence_summary": [
+    {
+      "feature_id": 208,
+      "name": "Extrude62",
+      "kind": "extrude",
+      "operation": "new_body",
+      "sketch_name": "S02 O LEFT adjustable input carriage",
+      "extent": {
+        "distance": 100.0,
+        "type": "distance"
+      },
+      "target_body_ids": null,
+      "new_body_ids": [
+        97
+      ]
+    },
+    {
+      "feature_id": 211,
+      "name": "Extrude63",
+      "kind": "extrude",
+      "operation": "join",
+      "sketch_name": "S02 P supported input post Y70",
+      "extent": {
+        "distance": 8.0,
+        "type": "distance"
+      },
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        98
+      ]
+    },
+    {
+      "feature_id": 214,
+      "name": "Extrude64",
+      "kind": "extrude",
+      "operation": "cut",
+      "sketch_name": "S02 Q input bearing seat Y70",
+      "extent": {
+        "distance": 8.0,
+        "type": "distance"
+      },
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        99
+      ]
+    },
+    {
+      "feature_id": 223,
+      "name": "Extrude67",
+      "kind": "extrude",
+      "operation": "cut",
+      "sketch_name": "S02 T input cap M3 holes Y70",
+      "extent": {
+        "distance": 36.0,
+        "type": "distance"
+      },
+      "target_body_ids": [
+        97,
+        100
+      ],
+      "new_body_ids": [
+        102,
+        103
+      ]
+    },
+    {
+      "feature_id": 226,
+      "name": "Extrude68",
+      "kind": "extrude",
+      "operation": "cut",
+      "sketch_name": "S02 U input cap nut pocket (34.6723, 70)",
+      "extent": {
+        "distance": 7.0,
+        "type": "distance"
+      },
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        104
+      ]
+    },
+    {
+      "feature_id": 229,
+      "name": "Extrude69",
+      "kind": "extrude",
+      "operation": "cut",
+      "sketch_name": "S02 U input cap nut pocket (64.6723, 70)",
+      "extent": {
+        "distance": 7.0,
+        "type": "distance"
+      },
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        105
+      ]
+    },
+    {
+      "feature_id": 232,
+      "name": "Extrude70",
+      "kind": "extrude",
+      "operation": "join",
+      "sketch_name": "S02 P supported input post Y96",
+      "extent": {
+        "distance": 8.0,
+        "type": "distance"
+      },
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        106
+      ]
+    },
+    {
+      "feature_id": 235,
+      "name": "Extrude71",
+      "kind": "extrude",
+      "operation": "cut",
+      "sketch_name": "S02 Q input bearing seat Y96",
+      "extent": {
+        "distance": 8.0,
+        "type": "distance"
+      },
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        107
+      ]
+    },
+    {
+      "feature_id": 244,
+      "name": "Extrude74",
+      "kind": "extrude",
+      "operation": "cut",
+      "sketch_name": "S02 T input cap M3 holes Y96",
+      "extent": {
+        "distance": 36.0,
+        "type": "distance"
+      },
+      "target_body_ids": [
+        97,
+        108
+      ],
+      "new_body_ids": [
+        110,
+        111
+      ]
+    },
+    {
+      "feature_id": 247,
+      "name": "Extrude75",
+      "kind": "extrude",
+      "operation": "cut",
+      "sketch_name": "S02 U input cap nut pocket (34.6723, 96)",
+      "extent": {
+        "distance": 7.0,
+        "type": "distance"
+      },
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        112
+      ]
+    },
+    {
+      "feature_id": 250,
+      "name": "Extrude76",
+      "kind": "extrude",
+      "operation": "cut",
+      "sketch_name": "S02 U input cap nut pocket (64.6723, 96)",
+      "extent": {
+        "distance": 7.0,
+        "type": "distance"
+      },
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        113
+      ]
+    },
+    {
+      "feature_id": 253,
+      "name": "Extrude77",
+      "kind": "extrude",
+      "operation": "cut",
+      "sketch_name": "S02 V tension slot (34, 56)",
+      "extent": {
+        "distance": 6.0,
+        "type": "distance"
+      },
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        114
+      ]
+    },
+    {
+      "feature_id": 256,
+      "name": "Extrude78",
+      "kind": "extrude",
+      "operation": "cut",
+      "sketch_name": "S02 V tension slot (61, 56)",
+      "extent": {
+        "distance": 6.0,
+        "type": "distance"
+      },
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        115
+      ]
+    },
+    {
+      "feature_id": 259,
+      "name": "Extrude79",
+      "kind": "extrude",
+      "operation": "cut",
+      "sketch_name": "S02 V tension slot (34, 84)",
+      "extent": {
+        "distance": 6.0,
+        "type": "distance"
+      },
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        116
+      ]
+    },
+    {
+      "feature_id": 262,
+      "name": "Extrude80",
+      "kind": "extrude",
+      "operation": "cut",
+      "sketch_name": "S02 V tension slot (61, 84)",
+      "extent": {
+        "distance": 6.0,
+        "type": "distance"
+      },
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        117
+      ]
+    },
+    {
+      "feature_id": 265,
+      "name": "Extrude81",
+      "kind": "extrude",
+      "operation": "join",
+      "sketch_name": "S02 W servo case locating lip X37.6723",
+      "extent": {
+        "distance": 40.5,
+        "type": "distance"
+      },
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        118
+      ]
+    },
+    {
+      "feature_id": 268,
+      "name": "Extrude82",
+      "kind": "extrude",
+      "operation": "join",
+      "sketch_name": "S02 W servo case locating lip X60.1723",
+      "extent": {
+        "distance": 40.5,
+        "type": "distance"
+      },
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        119
+      ]
+    },
+    {
+      "feature_id": 271,
+      "name": "Extrude83",
+      "kind": "extrude",
+      "operation": "join",
+      "sketch_name": "S02 X servo case end stop Y3.5",
+      "extent": {
+        "distance": 1.0,
+        "type": "distance"
+      },
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        120
+      ]
+    },
+    {
+      "feature_id": 274,
+      "name": "Extrude84",
+      "kind": "extrude",
+      "operation": "join",
+      "sketch_name": "S02 X servo case end stop Y46",
+      "extent": {
+        "distance": 1.0,
+        "type": "distance"
+      },
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        121
+      ]
+    },
+    {
+      "feature_id": 275,
+      "name": "Mirror2",
+      "kind": "body_feature",
+      "operation": "mirror",
+      "sketch_name": null,
+      "extent": null,
+      "target_body_ids": [
+        97,
+        100,
+        108
+      ],
+      "new_body_ids": [
+        122,
+        123,
+        124
+      ]
+    },
+    {
+      "feature_id": 287,
+      "name": "Extrude86",
+      "kind": "extrude",
+      "operation": "cut",
+      "sketch_name": "S02 Z L removable servo strap passages",
+      "extent": {
+        "distance": 6.0,
+        "type": "distance"
+      },
+      "target_body_ids": [
+        97
+      ],
+      "new_body_ids": [
+        133,
+        134,
+        135,
+        136
+      ]
+    }
+  ],
+  "sketches_used_in_order": [
+    "S02 O LEFT adjustable input carriage",
+    "S02 P supported input post Y70",
+    "S02 Q input bearing seat Y70",
+    "S02 T input cap M3 holes Y70",
+    "S02 U input cap nut pocket (34.6723, 70)",
+    "S02 U input cap nut pocket (64.6723, 70)",
+    "S02 P supported input post Y96",
+    "S02 Q input bearing seat Y96",
+    "S02 T input cap M3 holes Y96",
+    "S02 U input cap nut pocket (34.6723, 96)",
+    "S02 U input cap nut pocket (64.6723, 96)",
+    "S02 V tension slot (34, 56)",
+    "S02 V tension slot (61, 56)",
+    "S02 V tension slot (34, 84)",
+    "S02 V tension slot (61, 84)",
+    "S02 W servo case locating lip X37.6723",
+    "S02 W servo case locating lip X60.1723",
+    "S02 X servo case end stop Y3.5",
+    "S02 X servo case end stop Y46",
+    "S02 Z L removable servo strap passages"
+  ],
+  "sketches": {
+    "S02 O LEFT adjustable input carriage": {
+      "name": "S02 O LEFT adjustable input carriage",
+      "feature_id": 207,
+      "plane": {
+        "datum_id": 62,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "origin": [
+          0.0,
+          2.0,
+          0.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "datum": {
+        "datum_id": 62,
+        "name": "S02 O LEFT adjustable input carriage datum",
+        "feature_id": 206,
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            2.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "source": {
+          "distance": -2.0,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 8,
+        "entity_types": {
+          "point": 4,
+          "line": 4
+        },
+        "point_bbox_uv": {
+          "umin": 30.0,
+          "umax": 65.0,
+          "vmin": 88.0,
+          "vmax": 92.0,
+          "u_span": 35.0,
+          "v_span": 4.0
+        },
+        "curves": [
+          {
+            "id": 5,
+            "type": "line",
+            "start": 1,
+            "end": 2
+          },
+          {
+            "id": 6,
+            "type": "line",
+            "start": 2,
+            "end": 3
+          },
+          {
+            "id": 7,
+            "type": "line",
+            "start": 3,
+            "end": 4
+          },
+          {
+            "id": 8,
+            "type": "line",
+            "start": 4,
+            "end": 1
+          }
+        ],
+        "points": [
+          {
+            "id": 1,
+            "u": 30.0,
+            "v": 88.0
+          },
+          {
+            "id": 2,
+            "u": 65.0,
+            "v": 88.0
+          },
+          {
+            "id": 3,
+            "u": 65.0,
+            "v": 92.0
+          },
+          {
+            "id": 4,
+            "u": 30.0,
+            "v": 92.0
+          }
+        ]
+      },
+      "constraint_count": 4,
+      "constraints": [
+        {
+          "id": 1,
+          "entity": 5,
+          "type": "horizontal"
+        },
+        {
+          "id": 2,
+          "entity": 7,
+          "type": "horizontal"
+        },
+        {
+          "id": 3,
+          "entity": 6,
+          "type": "vertical"
+        },
+        {
+          "id": 4,
+          "entity": 8,
+          "type": "vertical"
+        }
+      ]
+    },
+    "S02 P supported input post Y70": {
+      "name": "S02 P supported input post Y70",
+      "feature_id": 210,
+      "plane": {
+        "datum_id": 63,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "origin": [
+          0.0,
+          66.0,
+          0.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "datum": {
+        "datum_id": 63,
+        "name": "S02 P supported input post Y70 datum",
+        "feature_id": 209,
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            66.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "source": {
+          "distance": -66.0,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 11,
+        "entity_types": {
+          "point": 6,
+          "line": 5
+        },
+        "point_bbox_uv": {
+          "umin": 30.0,
+          "umax": 69.0,
+          "vmin": 92.0,
+          "vmax": 123.0,
+          "u_span": 39.0,
+          "v_span": 31.0
+        },
+        "curves": [
+          {
+            "id": 3,
+            "type": "line",
+            "start": 1,
+            "end": 2
+          },
+          {
+            "id": 5,
+            "type": "line",
+            "start": 2,
+            "end": 4
+          },
+          {
+            "id": 7,
+            "type": "line",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "id": 9,
+            "type": "line",
+            "start": 6,
+            "end": 8
+          },
+          {
+            "id": 11,
+            "type": "line",
+            "start": 8,
+            "end": 10
+          }
+        ],
+        "points": [
+          {
+            "id": 1,
+            "u": 30.0,
+            "v": 92.0
+          },
+          {
+            "id": 2,
+            "u": 65.0,
+            "v": 92.0
+          },
+          {
+            "id": 4,
+            "u": 69.0,
+            "v": 109.0
+          },
+          {
+            "id": 6,
+            "u": 69.0,
+            "v": 123.0
+          },
+          {
+            "id": 8,
+            "u": 30.0,
+            "v": 123.0
+          },
+          {
+            "id": 10,
+            "u": 30.0,
+            "v": 92.0
+          }
+        ]
+      },
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "S02 Q input bearing seat Y70": {
+      "name": "S02 Q input bearing seat Y70",
+      "feature_id": 213,
+      "plane": {
+        "datum_id": 64,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "origin": [
+          0.0,
+          66.0,
+          0.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "datum": {
+        "datum_id": 64,
+        "name": "S02 Q input bearing seat Y70 datum",
+        "feature_id": 212,
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            66.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "source": {
+          "distance": -66.0,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 1,
+        "entity_types": {
+          "circle": 1
+        },
+        "point_bbox_uv": null,
+        "curves": [
+          {
+            "id": 1,
+            "type": "circle",
+            "center": {
+              "x": 49.6723,
+              "y": 123.0
+            },
+            "radius": 11.100000000000001
+          }
+        ],
+        "points": []
+      },
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "S02 T input cap M3 holes Y70": {
+      "name": "S02 T input cap M3 holes Y70",
+      "feature_id": 222,
+      "plane": {
+        "datum_id": 67,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin": [
+          0.0,
+          0.0,
+          106.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "datum": {
+        "datum_id": 67,
+        "name": "S02 T input cap M3 holes Y70 datum",
+        "feature_id": 221,
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            106.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "source": {
+          "distance": 106.0,
+          "reference": {
+            "plane": "xy",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 2,
+        "entity_types": {
+          "circle": 2
+        },
+        "point_bbox_uv": null,
+        "curves": [
+          {
+            "id": 1,
+            "type": "circle",
+            "center": {
+              "x": 35.0,
+              "y": 70.0
+            },
+            "radius": 1.3723000000000027
+          },
+          {
+            "id": 2,
+            "type": "circle",
+            "center": {
+              "x": 65.0,
+              "y": 70.0
+            },
+            "radius": 1.3723000000000098
+          }
+        ],
+        "points": []
+      },
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "S02 U input cap nut pocket (34.6723, 70)": {
+      "name": "S02 U input cap nut pocket (34.6723, 70)",
+      "feature_id": 225,
+      "plane": {
+        "datum_id": 68,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "origin": [
+          0.0,
+          65.9,
+          0.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "datum": {
+        "datum_id": 68,
+        "name": "S02 U input cap nut pocket (34.6723, 70) datum",
+        "feature_id": 224,
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            65.9,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "source": {
+          "distance": -65.9,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 8,
+        "entity_types": {
+          "point": 4,
+          "line": 4
+        },
+        "point_bbox_uv": {
+          "umin": 31.7723,
+          "umax": 37.5723,
+          "vmin": 109.0,
+          "vmax": 111.8,
+          "u_span": 5.8,
+          "v_span": 2.8
+        },
+        "curves": [
+          {
+            "id": 5,
+            "type": "line",
+            "start": 1,
+            "end": 2
+          },
+          {
+            "id": 6,
+            "type": "line",
+            "start": 2,
+            "end": 3
+          },
+          {
+            "id": 7,
+            "type": "line",
+            "start": 3,
+            "end": 4
+          },
+          {
+            "id": 8,
+            "type": "line",
+            "start": 4,
+            "end": 1
+          }
+        ],
+        "points": [
+          {
+            "id": 1,
+            "u": 31.7723,
+            "v": 109.0
+          },
+          {
+            "id": 2,
+            "u": 37.5723,
+            "v": 109.0
+          },
+          {
+            "id": 3,
+            "u": 37.5723,
+            "v": 111.8
+          },
+          {
+            "id": 4,
+            "u": 31.7723,
+            "v": 111.8
+          }
+        ]
+      },
+      "constraint_count": 4,
+      "constraints": [
+        {
+          "id": 1,
+          "entity": 5,
+          "type": "horizontal"
+        },
+        {
+          "id": 2,
+          "entity": 7,
+          "type": "horizontal"
+        },
+        {
+          "id": 3,
+          "entity": 6,
+          "type": "vertical"
+        },
+        {
+          "id": 4,
+          "entity": 8,
+          "type": "vertical"
+        }
+      ]
+    },
+    "S02 U input cap nut pocket (64.6723, 70)": {
+      "name": "S02 U input cap nut pocket (64.6723, 70)",
+      "feature_id": 228,
+      "plane": {
+        "datum_id": 69,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "origin": [
+          0.0,
+          65.9,
+          0.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "datum": {
+        "datum_id": 69,
+        "name": "S02 U input cap nut pocket (64.6723, 70) datum",
+        "feature_id": 227,
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            65.9,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "source": {
+          "distance": -65.9,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 8,
+        "entity_types": {
+          "point": 4,
+          "line": 4
+        },
+        "point_bbox_uv": {
+          "umin": 61.77230000000001,
+          "umax": 67.57230000000001,
+          "vmin": 109.0,
+          "vmax": 111.8,
+          "u_span": 5.8,
+          "v_span": 2.8
+        },
+        "curves": [
+          {
+            "id": 5,
+            "type": "line",
+            "start": 1,
+            "end": 2
+          },
+          {
+            "id": 6,
+            "type": "line",
+            "start": 2,
+            "end": 3
+          },
+          {
+            "id": 7,
+            "type": "line",
+            "start": 3,
+            "end": 4
+          },
+          {
+            "id": 8,
+            "type": "line",
+            "start": 4,
+            "end": 1
+          }
+        ],
+        "points": [
+          {
+            "id": 1,
+            "u": 61.77230000000001,
+            "v": 109.0
+          },
+          {
+            "id": 2,
+            "u": 67.57230000000001,
+            "v": 109.0
+          },
+          {
+            "id": 3,
+            "u": 67.57230000000001,
+            "v": 111.8
+          },
+          {
+            "id": 4,
+            "u": 61.77230000000001,
+            "v": 111.8
+          }
+        ]
+      },
+      "constraint_count": 4,
+      "constraints": [
+        {
+          "id": 1,
+          "entity": 5,
+          "type": "horizontal"
+        },
+        {
+          "id": 2,
+          "entity": 7,
+          "type": "horizontal"
+        },
+        {
+          "id": 3,
+          "entity": 6,
+          "type": "vertical"
+        },
+        {
+          "id": 4,
+          "entity": 8,
+          "type": "vertical"
+        }
+      ]
+    },
+    "S02 P supported input post Y96": {
+      "name": "S02 P supported input post Y96",
+      "feature_id": 231,
+      "plane": {
+        "datum_id": 70,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "origin": [
+          0.0,
+          92.0,
+          0.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "datum": {
+        "datum_id": 70,
+        "name": "S02 P supported input post Y96 datum",
+        "feature_id": 230,
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            92.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "source": {
+          "distance": -92.0,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 11,
+        "entity_types": {
+          "point": 6,
+          "line": 5
+        },
+        "point_bbox_uv": {
+          "umin": 30.0,
+          "umax": 69.0,
+          "vmin": 92.0,
+          "vmax": 123.0,
+          "u_span": 39.0,
+          "v_span": 31.0
+        },
+        "curves": [
+          {
+            "id": 3,
+            "type": "line",
+            "start": 1,
+            "end": 2
+          },
+          {
+            "id": 5,
+            "type": "line",
+            "start": 2,
+            "end": 4
+          },
+          {
+            "id": 7,
+            "type": "line",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "id": 9,
+            "type": "line",
+            "start": 6,
+            "end": 8
+          },
+          {
+            "id": 11,
+            "type": "line",
+            "start": 8,
+            "end": 10
+          }
+        ],
+        "points": [
+          {
+            "id": 1,
+            "u": 30.0,
+            "v": 92.0
+          },
+          {
+            "id": 2,
+            "u": 65.0,
+            "v": 92.0
+          },
+          {
+            "id": 4,
+            "u": 69.0,
+            "v": 109.0
+          },
+          {
+            "id": 6,
+            "u": 69.0,
+            "v": 123.0
+          },
+          {
+            "id": 8,
+            "u": 30.0,
+            "v": 123.0
+          },
+          {
+            "id": 10,
+            "u": 30.0,
+            "v": 92.0
+          }
+        ]
+      },
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "S02 Q input bearing seat Y96": {
+      "name": "S02 Q input bearing seat Y96",
+      "feature_id": 234,
+      "plane": {
+        "datum_id": 71,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "origin": [
+          0.0,
+          92.0,
+          0.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "datum": {
+        "datum_id": 71,
+        "name": "S02 Q input bearing seat Y96 datum",
+        "feature_id": 233,
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            92.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "source": {
+          "distance": -92.0,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 1,
+        "entity_types": {
+          "circle": 1
+        },
+        "point_bbox_uv": null,
+        "curves": [
+          {
+            "id": 1,
+            "type": "circle",
+            "center": {
+              "x": 49.6723,
+              "y": 123.0
+            },
+            "radius": 11.100000000000001
+          }
+        ],
+        "points": []
+      },
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "S02 T input cap M3 holes Y96": {
+      "name": "S02 T input cap M3 holes Y96",
+      "feature_id": 243,
+      "plane": {
+        "datum_id": 74,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin": [
+          0.0,
+          0.0,
+          106.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "datum": {
+        "datum_id": 74,
+        "name": "S02 T input cap M3 holes Y96 datum",
+        "feature_id": 242,
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            106.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "source": {
+          "distance": 106.0,
+          "reference": {
+            "plane": "xy",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 2,
+        "entity_types": {
+          "circle": 2
+        },
+        "point_bbox_uv": null,
+        "curves": [
+          {
+            "id": 1,
+            "type": "circle",
+            "center": {
+              "x": 35.0,
+              "y": 95.0
+            },
+            "radius": 1.6980009687865338
+          },
+          {
+            "id": 2,
+            "type": "circle",
+            "center": {
+              "x": 65.0,
+              "y": 95.0
+            },
+            "radius": 1.6980009687865396
+          }
+        ],
+        "points": []
+      },
+      "constraint_count": 0,
+      "constraints": []
+    },
+    "S02 U input cap nut pocket (34.6723, 96)": {
+      "name": "S02 U input cap nut pocket (34.6723, 96)",
+      "feature_id": 246,
+      "plane": {
+        "datum_id": 75,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "origin": [
+          0.0,
+          91.9,
+          0.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "datum": {
+        "datum_id": 75,
+        "name": "S02 U input cap nut pocket (34.6723, 96) datum",
+        "feature_id": 245,
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            91.9,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "source": {
+          "distance": -91.9,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 8,
+        "entity_types": {
+          "point": 4,
+          "line": 4
+        },
+        "point_bbox_uv": {
+          "umin": 31.7723,
+          "umax": 37.5723,
+          "vmin": 109.0,
+          "vmax": 111.8,
+          "u_span": 5.8,
+          "v_span": 2.8
+        },
+        "curves": [
+          {
+            "id": 5,
+            "type": "line",
+            "start": 1,
+            "end": 2
+          },
+          {
+            "id": 6,
+            "type": "line",
+            "start": 2,
+            "end": 3
+          },
+          {
+            "id": 7,
+            "type": "line",
+            "start": 3,
+            "end": 4
+          },
+          {
+            "id": 8,
+            "type": "line",
+            "start": 4,
+            "end": 1
+          }
+        ],
+        "points": [
+          {
+            "id": 1,
+            "u": 31.7723,
+            "v": 109.0
+          },
+          {
+            "id": 2,
+            "u": 37.5723,
+            "v": 109.0
+          },
+          {
+            "id": 3,
+            "u": 37.5723,
+            "v": 111.8
+          },
+          {
+            "id": 4,
+            "u": 31.7723,
+            "v": 111.8
+          }
+        ]
+      },
+      "constraint_count": 4,
+      "constraints": [
+        {
+          "id": 1,
+          "entity": 5,
+          "type": "horizontal"
+        },
+        {
+          "id": 2,
+          "entity": 7,
+          "type": "horizontal"
+        },
+        {
+          "id": 3,
+          "entity": 6,
+          "type": "vertical"
+        },
+        {
+          "id": 4,
+          "entity": 8,
+          "type": "vertical"
+        }
+      ]
+    },
+    "S02 U input cap nut pocket (64.6723, 96)": {
+      "name": "S02 U input cap nut pocket (64.6723, 96)",
+      "feature_id": 249,
+      "plane": {
+        "datum_id": 76,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "origin": [
+          0.0,
+          91.9,
+          0.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "datum": {
+        "datum_id": 76,
+        "name": "S02 U input cap nut pocket (64.6723, 96) datum",
+        "feature_id": 248,
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            91.9,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "source": {
+          "distance": -91.9,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 8,
+        "entity_types": {
+          "point": 4,
+          "line": 4
+        },
+        "point_bbox_uv": {
+          "umin": 61.77230000000001,
+          "umax": 67.57230000000001,
+          "vmin": 109.0,
+          "vmax": 111.8,
+          "u_span": 5.8,
+          "v_span": 2.8
+        },
+        "curves": [
+          {
+            "id": 5,
+            "type": "line",
+            "start": 1,
+            "end": 2
+          },
+          {
+            "id": 6,
+            "type": "line",
+            "start": 2,
+            "end": 3
+          },
+          {
+            "id": 7,
+            "type": "line",
+            "start": 3,
+            "end": 4
+          },
+          {
+            "id": 8,
+            "type": "line",
+            "start": 4,
+            "end": 1
+          }
+        ],
+        "points": [
+          {
+            "id": 1,
+            "u": 61.77230000000001,
+            "v": 109.0
+          },
+          {
+            "id": 2,
+            "u": 67.57230000000001,
+            "v": 109.0
+          },
+          {
+            "id": 3,
+            "u": 67.57230000000001,
+            "v": 111.8
+          },
+          {
+            "id": 4,
+            "u": 61.77230000000001,
+            "v": 111.8
+          }
+        ]
+      },
+      "constraint_count": 4,
+      "constraints": [
+        {
+          "id": 1,
+          "entity": 5,
+          "type": "horizontal"
+        },
+        {
+          "id": 2,
+          "entity": 7,
+          "type": "horizontal"
+        },
+        {
+          "id": 3,
+          "entity": 6,
+          "type": "vertical"
+        },
+        {
+          "id": 4,
+          "entity": 8,
+          "type": "vertical"
+        }
+      ]
+    },
+    "S02 V tension slot (34, 56)": {
+      "name": "S02 V tension slot (34, 56)",
+      "feature_id": 252,
+      "plane": {
+        "datum_id": 77,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin": [
+          0.0,
+          0.0,
+          87.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "datum": {
+        "datum_id": 77,
+        "name": "S02 V tension slot (34, 56) datum",
+        "feature_id": 251,
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            87.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "source": {
+          "distance": 87.0,
+          "reference": {
+            "plane": "xy",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 21,
+        "entity_types": {
+          "point": 13,
+          "line": 4,
+          "arc": 4
+        },
+        "point_bbox_uv": {
+          "umin": 30.3,
+          "umax": 37.7,
+          "vmin": 53.8,
+          "vmax": 58.2,
+          "u_span": 7.4,
+          "v_span": 4.4
+        },
+        "curves": [
+          {
+            "id": 21,
+            "type": "line",
+            "start": 19,
+            "end": 20
+          },
+          {
+            "id": 22,
+            "type": "arc",
+            "center": {
+              "x": 36.70000000000065,
+              "y": 54.79999999999959
+            },
+            "radius": 0.999999999999595,
+            "start_angle": -1.5707963267955432,
+            "end_angle": 4.05009359383519e-13
+          },
+          {
+            "id": 26,
+            "type": "line",
+            "start": 24,
+            "end": 25
+          },
+          {
+            "id": 27,
+            "type": "arc",
+            "center": {
+              "x": 36.700000000000216,
+              "y": 57.200000000000095
+            },
+            "radius": 0.9999999999997868,
+            "start_angle": -9.237055564883271e-14,
+            "end_angle": 1.5707963267951097
+          },
+          {
+            "id": 31,
+            "type": "line",
+            "start": 29,
+            "end": 30
+          },
+          {
+            "id": 32,
+            "type": "arc",
+            "center": {
+              "x": 31.299999999999645,
+              "y": 57.20000000000064
+            },
+            "radius": 0.9999999999993605,
+            "start_angle": 1.5707963267945413,
+            "end_angle": -3.1415926535891536
+          },
+          {
+            "id": 36,
+            "type": "line",
+            "start": 34,
+            "end": 35
+          },
+          {
+            "id": 37,
+            "type": "arc",
+            "center": {
+              "x": 31.299999999999923,
+              "y": 54.79999999999936
+            },
+            "radius": 0.9999999999999218,
+            "start_angle": 3.1415926535891536,
+            "end_angle": -1.5707963267948184
+          }
+        ],
+        "points": [
+          {
+            "id": 19,
+            "u": 31.3,
+            "v": 53.8
+          },
+          {
+            "id": 20,
+            "u": 36.7,
+            "v": 53.8
+          },
+          {
+            "id": 23,
+            "u": 36.7,
+            "v": 53.8
+          },
+          {
+            "id": 24,
+            "u": 37.7,
+            "v": 54.8
+          },
+          {
+            "id": 25,
+            "u": 37.7,
+            "v": 57.2
+          },
+          {
+            "id": 28,
+            "u": 37.7,
+            "v": 57.2
+          },
+          {
+            "id": 29,
+            "u": 36.7,
+            "v": 58.2
+          },
+          {
+            "id": 30,
+            "u": 31.3,
+            "v": 58.2
+          },
+          {
+            "id": 33,
+            "u": 31.3,
+            "v": 58.2
+          },
+          {
+            "id": 34,
+            "u": 30.3,
+            "v": 57.2
+          },
+          {
+            "id": 35,
+            "u": 30.3,
+            "v": 54.8
+          },
+          {
+            "id": 38,
+            "u": 30.3,
+            "v": 54.8
+          },
+          {
+            "id": 39,
+            "u": 31.3,
+            "v": 53.8
+          }
+        ]
+      },
+      "constraint_count": 8,
+      "constraints": [
+        {
+          "id": 7,
+          "arc": 22,
+          "end": "start",
+          "point": 23,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 8,
+          "arc": 22,
+          "end": "end",
+          "point": 24,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 9,
+          "arc": 27,
+          "end": "start",
+          "point": 28,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 10,
+          "arc": 27,
+          "end": "end",
+          "point": 29,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 11,
+          "arc": 32,
+          "end": "start",
+          "point": 33,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 12,
+          "arc": 32,
+          "end": "end",
+          "point": 34,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 13,
+          "arc": 37,
+          "end": "start",
+          "point": 38,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 14,
+          "arc": 37,
+          "end": "end",
+          "point": 39,
+          "type": "arc_endpoint_coincident"
+        }
+      ]
+    },
+    "S02 V tension slot (61, 56)": {
+      "name": "S02 V tension slot (61, 56)",
+      "feature_id": 255,
+      "plane": {
+        "datum_id": 78,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin": [
+          0.0,
+          0.0,
+          87.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "datum": {
+        "datum_id": 78,
+        "name": "S02 V tension slot (61, 56) datum",
+        "feature_id": 254,
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            87.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "source": {
+          "distance": 87.0,
+          "reference": {
+            "plane": "xy",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 21,
+        "entity_types": {
+          "point": 13,
+          "line": 4,
+          "arc": 4
+        },
+        "point_bbox_uv": {
+          "umin": 57.3,
+          "umax": 64.7,
+          "vmin": 53.8,
+          "vmax": 58.2,
+          "u_span": 7.4,
+          "v_span": 4.4
+        },
+        "curves": [
+          {
+            "id": 3,
+            "type": "line",
+            "start": 1,
+            "end": 2
+          },
+          {
+            "id": 4,
+            "type": "arc",
+            "center": {
+              "x": 63.70000000000115,
+              "y": 54.79999999999897
+            },
+            "radius": 0.9999999999989697,
+            "start_angle": -1.5707963267960405,
+            "end_angle": 1.0302869668533238e-12
+          },
+          {
+            "id": 8,
+            "type": "line",
+            "start": 6,
+            "end": 7
+          },
+          {
+            "id": 9,
+            "type": "arc",
+            "center": {
+              "x": 63.70000000000005,
+              "y": 57.20000000000076
+            },
+            "radius": 0.9999999999999503,
+            "start_angle": -7.602807272633451e-13,
+            "end_angle": 1.5707963267949463
+          },
+          {
+            "id": 13,
+            "type": "line",
+            "start": 11,
+            "end": 12
+          },
+          {
+            "id": 14,
+            "type": "arc",
+            "center": {
+              "x": 58.29999999999975,
+              "y": 57.20000000000064
+            },
+            "radius": 0.9999999999993605,
+            "start_angle": 1.5707963267946479,
+            "end_angle": -3.1415926535891536
+          },
+          {
+            "id": 18,
+            "type": "line",
+            "start": 16,
+            "end": 17
+          },
+          {
+            "id": 19,
+            "type": "arc",
+            "center": {
+              "x": 58.30000000000085,
+              "y": 54.79999999999963
+            },
+            "radius": 1.0000000000008527,
+            "start_angle": 3.1415926535894236,
+            "end_angle": -1.5707963267957492
+          }
+        ],
+        "points": [
+          {
+            "id": 1,
+            "u": 58.3,
+            "v": 53.8
+          },
+          {
+            "id": 2,
+            "u": 63.7,
+            "v": 53.8
+          },
+          {
+            "id": 5,
+            "u": 63.7,
+            "v": 53.8
+          },
+          {
+            "id": 6,
+            "u": 64.7,
+            "v": 54.8
+          },
+          {
+            "id": 7,
+            "u": 64.7,
+            "v": 57.2
+          },
+          {
+            "id": 10,
+            "u": 64.7,
+            "v": 57.2
+          },
+          {
+            "id": 11,
+            "u": 63.7,
+            "v": 58.2
+          },
+          {
+            "id": 12,
+            "u": 58.3,
+            "v": 58.2
+          },
+          {
+            "id": 15,
+            "u": 58.3,
+            "v": 58.2
+          },
+          {
+            "id": 16,
+            "u": 57.3,
+            "v": 57.2
+          },
+          {
+            "id": 17,
+            "u": 57.3,
+            "v": 54.8
+          },
+          {
+            "id": 20,
+            "u": 57.3,
+            "v": 54.8
+          },
+          {
+            "id": 21,
+            "u": 58.3,
+            "v": 53.8
+          }
+        ]
+      },
+      "constraint_count": 8,
+      "constraints": [
+        {
+          "id": 1,
+          "arc": 4,
+          "end": "start",
+          "point": 5,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 2,
+          "arc": 4,
+          "end": "end",
+          "point": 6,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 3,
+          "arc": 9,
+          "end": "start",
+          "point": 10,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 4,
+          "arc": 9,
+          "end": "end",
+          "point": 11,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 5,
+          "arc": 14,
+          "end": "start",
+          "point": 15,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 6,
+          "arc": 14,
+          "end": "end",
+          "point": 16,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 7,
+          "arc": 19,
+          "end": "start",
+          "point": 20,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 8,
+          "arc": 19,
+          "end": "end",
+          "point": 21,
+          "type": "arc_endpoint_coincident"
+        }
+      ]
+    },
+    "S02 V tension slot (34, 84)": {
+      "name": "S02 V tension slot (34, 84)",
+      "feature_id": 258,
+      "plane": {
+        "datum_id": 79,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin": [
+          0.0,
+          0.0,
+          87.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "datum": {
+        "datum_id": 79,
+        "name": "S02 V tension slot (34, 84) datum",
+        "feature_id": 257,
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            87.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "source": {
+          "distance": 87.0,
+          "reference": {
+            "plane": "xy",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 21,
+        "entity_types": {
+          "point": 13,
+          "line": 4,
+          "arc": 4
+        },
+        "point_bbox_uv": {
+          "umin": 30.3,
+          "umax": 37.7,
+          "vmin": 81.8,
+          "vmax": 86.2,
+          "u_span": 7.4,
+          "v_span": 4.4
+        },
+        "curves": [
+          {
+            "id": 3,
+            "type": "line",
+            "start": 1,
+            "end": 2
+          },
+          {
+            "id": 4,
+            "type": "arc",
+            "center": {
+              "x": 36.70000000000014,
+              "y": 82.79999999999835
+            },
+            "radius": 0.9999999999983515,
+            "start_angle": -1.5707963267950316,
+            "end_angle": 1.648459146963655e-12
+          },
+          {
+            "id": 8,
+            "type": "line",
+            "start": 6,
+            "end": 7
+          },
+          {
+            "id": 9,
+            "type": "arc",
+            "center": {
+              "x": 36.69999999999904,
+              "y": 85.19999999999794
+            },
+            "radius": 1.0000000000009663,
+            "start_angle": 2.0605739337022993e-12,
+            "end_angle": 1.5707963267939302
+          },
+          {
+            "id": 13,
+            "type": "line",
+            "start": 11,
+            "end": 12
+          },
+          {
+            "id": 14,
+            "type": "arc",
+            "center": {
+              "x": 31.299999999999798,
+              "y": 85.19999999999978
+            },
+            "radius": 1.0000000000002274,
+            "start_angle": 1.570796326794694,
+            "end_angle": 3.1415926535895657
+          },
+          {
+            "id": 18,
+            "type": "line",
+            "start": 16,
+            "end": 17
+          },
+          {
+            "id": 19,
+            "type": "arc",
+            "center": {
+              "x": 31.30000000000103,
+              "y": 82.79999999999944
+            },
+            "radius": 1.0000000000010303,
+            "start_angle": 3.141592653589239,
+            "end_angle": -1.5707963267959268
+          }
+        ],
+        "points": [
+          {
+            "id": 1,
+            "u": 31.3,
+            "v": 81.8
+          },
+          {
+            "id": 2,
+            "u": 36.7,
+            "v": 81.8
+          },
+          {
+            "id": 5,
+            "u": 36.7,
+            "v": 81.8
+          },
+          {
+            "id": 6,
+            "u": 37.7,
+            "v": 82.8
+          },
+          {
+            "id": 7,
+            "u": 37.7,
+            "v": 85.2
+          },
+          {
+            "id": 10,
+            "u": 37.7,
+            "v": 85.2
+          },
+          {
+            "id": 11,
+            "u": 36.7,
+            "v": 86.2
+          },
+          {
+            "id": 12,
+            "u": 31.3,
+            "v": 86.2
+          },
+          {
+            "id": 15,
+            "u": 31.3,
+            "v": 86.2
+          },
+          {
+            "id": 16,
+            "u": 30.3,
+            "v": 85.2
+          },
+          {
+            "id": 17,
+            "u": 30.3,
+            "v": 82.8
+          },
+          {
+            "id": 20,
+            "u": 30.3,
+            "v": 82.8
+          },
+          {
+            "id": 21,
+            "u": 31.3,
+            "v": 81.8
+          }
+        ]
+      },
+      "constraint_count": 8,
+      "constraints": [
+        {
+          "id": 1,
+          "arc": 4,
+          "end": "start",
+          "point": 5,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 2,
+          "arc": 4,
+          "end": "end",
+          "point": 6,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 3,
+          "arc": 9,
+          "end": "start",
+          "point": 10,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 4,
+          "arc": 9,
+          "end": "end",
+          "point": 11,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 5,
+          "arc": 14,
+          "end": "start",
+          "point": 15,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 6,
+          "arc": 14,
+          "end": "end",
+          "point": 16,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 7,
+          "arc": 19,
+          "end": "start",
+          "point": 20,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 8,
+          "arc": 19,
+          "end": "end",
+          "point": 21,
+          "type": "arc_endpoint_coincident"
+        }
+      ]
+    },
+    "S02 V tension slot (61, 84)": {
+      "name": "S02 V tension slot (61, 84)",
+      "feature_id": 261,
+      "plane": {
+        "datum_id": 80,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin": [
+          0.0,
+          0.0,
+          87.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "datum": {
+        "datum_id": 80,
+        "name": "S02 V tension slot (61, 84) datum",
+        "feature_id": 260,
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            87.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "source": {
+          "distance": 87.0,
+          "reference": {
+            "plane": "xy",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 21,
+        "entity_types": {
+          "point": 13,
+          "line": 4,
+          "arc": 4
+        },
+        "point_bbox_uv": {
+          "umin": 57.3,
+          "umax": 64.7,
+          "vmin": 81.8,
+          "vmax": 86.2,
+          "u_span": 7.4,
+          "v_span": 4.4
+        },
+        "curves": [
+          {
+            "id": 3,
+            "type": "line",
+            "start": 1,
+            "end": 2
+          },
+          {
+            "id": 4,
+            "type": "arc",
+            "center": {
+              "x": 63.70000000000006,
+              "y": 82.7999999999984
+            },
+            "radius": 0.9999999999984084,
+            "start_angle": -1.5707963267949534,
+            "end_angle": 1.5916157281027149e-12
+          },
+          {
+            "id": 8,
+            "type": "line",
+            "start": 6,
+            "end": 7
+          },
+          {
+            "id": 9,
+            "type": "arc",
+            "center": {
+              "x": 63.70000000000006,
+              "y": 85.19999999999942
+            },
+            "radius": 0.9999999999999432,
+            "start_angle": 5.826450433233153e-13,
+            "end_angle": 1.5707963267949534
+          },
+          {
+            "id": 13,
+            "type": "line",
+            "start": 11,
+            "end": 12
+          },
+          {
+            "id": 14,
+            "type": "arc",
+            "center": {
+              "x": 58.29999999999825,
+              "y": 85.20000000000051
+            },
+            "radius": 0.9999999999994884,
+            "start_angle": 1.5707963267931486,
+            "end_angle": -3.1415926535892815
+          },
+          {
+            "id": 18,
+            "type": "line",
+            "start": 16,
+            "end": 17
+          },
+          {
+            "id": 19,
+            "type": "arc",
+            "center": {
+              "x": 58.29999999999875,
+              "y": 82.79999999999889
+            },
+            "radius": 0.9999999999987494,
+            "start_angle": 3.1415926535886847,
+            "end_angle": -1.570796326793646
+          }
+        ],
+        "points": [
+          {
+            "id": 1,
+            "u": 58.3,
+            "v": 81.8
+          },
+          {
+            "id": 2,
+            "u": 63.7,
+            "v": 81.8
+          },
+          {
+            "id": 5,
+            "u": 63.7,
+            "v": 81.8
+          },
+          {
+            "id": 6,
+            "u": 64.7,
+            "v": 82.8
+          },
+          {
+            "id": 7,
+            "u": 64.7,
+            "v": 85.2
+          },
+          {
+            "id": 10,
+            "u": 64.7,
+            "v": 85.2
+          },
+          {
+            "id": 11,
+            "u": 63.7,
+            "v": 86.2
+          },
+          {
+            "id": 12,
+            "u": 58.3,
+            "v": 86.2
+          },
+          {
+            "id": 15,
+            "u": 58.3,
+            "v": 86.2
+          },
+          {
+            "id": 16,
+            "u": 57.3,
+            "v": 85.2
+          },
+          {
+            "id": 17,
+            "u": 57.3,
+            "v": 82.8
+          },
+          {
+            "id": 20,
+            "u": 57.3,
+            "v": 82.8
+          },
+          {
+            "id": 21,
+            "u": 58.3,
+            "v": 81.8
+          }
+        ]
+      },
+      "constraint_count": 8,
+      "constraints": [
+        {
+          "id": 1,
+          "arc": 4,
+          "end": "start",
+          "point": 5,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 2,
+          "arc": 4,
+          "end": "end",
+          "point": 6,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 3,
+          "arc": 9,
+          "end": "start",
+          "point": 10,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 4,
+          "arc": 9,
+          "end": "end",
+          "point": 11,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 5,
+          "arc": 14,
+          "end": "start",
+          "point": 15,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 6,
+          "arc": 14,
+          "end": "end",
+          "point": 16,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 7,
+          "arc": 19,
+          "end": "start",
+          "point": 20,
+          "type": "arc_endpoint_coincident"
+        },
+        {
+          "id": 8,
+          "arc": 19,
+          "end": "end",
+          "point": 21,
+          "type": "arc_endpoint_coincident"
+        }
+      ]
+    },
+    "S02 W servo case locating lip X37.6723": {
+      "name": "S02 W servo case locating lip X37.6723",
+      "feature_id": 264,
+      "plane": {
+        "datum_id": 81,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "origin": [
+          0.0,
+          5.0,
+          0.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "datum": {
+        "datum_id": 81,
+        "name": "S02 W servo case locating lip X37.6723 datum",
+        "feature_id": 263,
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            5.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "source": {
+          "distance": -5.0,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 8,
+        "entity_types": {
+          "point": 4,
+          "line": 4
+        },
+        "point_bbox_uv": {
+          "umin": 37.6723,
+          "umax": 39.1723,
+          "vmin": 92.0,
+          "vmax": 97.0,
+          "u_span": 1.5,
+          "v_span": 5.0
+        },
+        "curves": [
+          {
+            "id": 5,
+            "type": "line",
+            "start": 1,
+            "end": 2
+          },
+          {
+            "id": 6,
+            "type": "line",
+            "start": 2,
+            "end": 3
+          },
+          {
+            "id": 7,
+            "type": "line",
+            "start": 3,
+            "end": 4
+          },
+          {
+            "id": 8,
+            "type": "line",
+            "start": 4,
+            "end": 1
+          }
+        ],
+        "points": [
+          {
+            "id": 1,
+            "u": 37.6723,
+            "v": 92.0
+          },
+          {
+            "id": 2,
+            "u": 39.1723,
+            "v": 92.0
+          },
+          {
+            "id": 3,
+            "u": 39.1723,
+            "v": 97.0
+          },
+          {
+            "id": 4,
+            "u": 37.6723,
+            "v": 97.0
+          }
+        ]
+      },
+      "constraint_count": 4,
+      "constraints": [
+        {
+          "id": 1,
+          "entity": 5,
+          "type": "horizontal"
+        },
+        {
+          "id": 2,
+          "entity": 7,
+          "type": "horizontal"
+        },
+        {
+          "id": 3,
+          "entity": 6,
+          "type": "vertical"
+        },
+        {
+          "id": 4,
+          "entity": 8,
+          "type": "vertical"
+        }
+      ]
+    },
+    "S02 W servo case locating lip X60.1723": {
+      "name": "S02 W servo case locating lip X60.1723",
+      "feature_id": 267,
+      "plane": {
+        "datum_id": 82,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "origin": [
+          0.0,
+          5.0,
+          0.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "datum": {
+        "datum_id": 82,
+        "name": "S02 W servo case locating lip X60.1723 datum",
+        "feature_id": 266,
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            5.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "source": {
+          "distance": -5.0,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 8,
+        "entity_types": {
+          "point": 4,
+          "line": 4
+        },
+        "point_bbox_uv": {
+          "umin": 60.1723,
+          "umax": 61.6723,
+          "vmin": 92.0,
+          "vmax": 97.0,
+          "u_span": 1.5,
+          "v_span": 5.0
+        },
+        "curves": [
+          {
+            "id": 5,
+            "type": "line",
+            "start": 1,
+            "end": 2
+          },
+          {
+            "id": 6,
+            "type": "line",
+            "start": 2,
+            "end": 3
+          },
+          {
+            "id": 7,
+            "type": "line",
+            "start": 3,
+            "end": 4
+          },
+          {
+            "id": 8,
+            "type": "line",
+            "start": 4,
+            "end": 1
+          }
+        ],
+        "points": [
+          {
+            "id": 1,
+            "u": 60.1723,
+            "v": 92.0
+          },
+          {
+            "id": 2,
+            "u": 61.6723,
+            "v": 92.0
+          },
+          {
+            "id": 3,
+            "u": 61.6723,
+            "v": 97.0
+          },
+          {
+            "id": 4,
+            "u": 60.1723,
+            "v": 97.0
+          }
+        ]
+      },
+      "constraint_count": 4,
+      "constraints": [
+        {
+          "id": 1,
+          "entity": 5,
+          "type": "horizontal"
+        },
+        {
+          "id": 2,
+          "entity": 7,
+          "type": "horizontal"
+        },
+        {
+          "id": 3,
+          "entity": 6,
+          "type": "vertical"
+        },
+        {
+          "id": 4,
+          "entity": 8,
+          "type": "vertical"
+        }
+      ]
+    },
+    "S02 X servo case end stop Y3.5": {
+      "name": "S02 X servo case end stop Y3.5",
+      "feature_id": 270,
+      "plane": {
+        "datum_id": 83,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "origin": [
+          0.0,
+          3.5,
+          0.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "datum": {
+        "datum_id": 83,
+        "name": "S02 X servo case end stop Y3.5 datum",
+        "feature_id": 269,
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            3.5,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "source": {
+          "distance": -3.5,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 8,
+        "entity_types": {
+          "point": 4,
+          "line": 4
+        },
+        "point_bbox_uv": {
+          "umin": 39.1723,
+          "umax": 60.1723,
+          "vmin": 92.0,
+          "vmax": 97.0,
+          "u_span": 21.0,
+          "v_span": 5.0
+        },
+        "curves": [
+          {
+            "id": 5,
+            "type": "line",
+            "start": 1,
+            "end": 2
+          },
+          {
+            "id": 6,
+            "type": "line",
+            "start": 2,
+            "end": 3
+          },
+          {
+            "id": 7,
+            "type": "line",
+            "start": 3,
+            "end": 4
+          },
+          {
+            "id": 8,
+            "type": "line",
+            "start": 4,
+            "end": 1
+          }
+        ],
+        "points": [
+          {
+            "id": 1,
+            "u": 39.1723,
+            "v": 92.0
+          },
+          {
+            "id": 2,
+            "u": 60.1723,
+            "v": 92.0
+          },
+          {
+            "id": 3,
+            "u": 60.1723,
+            "v": 97.0
+          },
+          {
+            "id": 4,
+            "u": 39.1723,
+            "v": 97.0
+          }
+        ]
+      },
+      "constraint_count": 4,
+      "constraints": [
+        {
+          "id": 1,
+          "entity": 5,
+          "type": "horizontal"
+        },
+        {
+          "id": 2,
+          "entity": 7,
+          "type": "horizontal"
+        },
+        {
+          "id": 3,
+          "entity": 6,
+          "type": "vertical"
+        },
+        {
+          "id": 4,
+          "entity": 8,
+          "type": "vertical"
+        }
+      ]
+    },
+    "S02 X servo case end stop Y46": {
+      "name": "S02 X servo case end stop Y46",
+      "feature_id": 273,
+      "plane": {
+        "datum_id": 84,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "origin": [
+          0.0,
+          46.0,
+          0.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "datum": {
+        "datum_id": 84,
+        "name": "S02 X servo case end stop Y46 datum",
+        "feature_id": 272,
+        "basis": {
+          "normal": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            46.0,
+            0.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "source": {
+          "distance": -46.0,
+          "reference": {
+            "plane": "xz",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 8,
+        "entity_types": {
+          "point": 4,
+          "line": 4
+        },
+        "point_bbox_uv": {
+          "umin": 39.1723,
+          "umax": 60.1723,
+          "vmin": 92.0,
+          "vmax": 97.0,
+          "u_span": 21.0,
+          "v_span": 5.0
+        },
+        "curves": [
+          {
+            "id": 5,
+            "type": "line",
+            "start": 1,
+            "end": 2
+          },
+          {
+            "id": 6,
+            "type": "line",
+            "start": 2,
+            "end": 3
+          },
+          {
+            "id": 7,
+            "type": "line",
+            "start": 3,
+            "end": 4
+          },
+          {
+            "id": 8,
+            "type": "line",
+            "start": 4,
+            "end": 1
+          }
+        ],
+        "points": [
+          {
+            "id": 1,
+            "u": 39.1723,
+            "v": 92.0
+          },
+          {
+            "id": 2,
+            "u": 60.1723,
+            "v": 92.0
+          },
+          {
+            "id": 3,
+            "u": 60.1723,
+            "v": 97.0
+          },
+          {
+            "id": 4,
+            "u": 39.1723,
+            "v": 97.0
+          }
+        ]
+      },
+      "constraint_count": 4,
+      "constraints": [
+        {
+          "id": 1,
+          "entity": 5,
+          "type": "horizontal"
+        },
+        {
+          "id": 2,
+          "entity": 7,
+          "type": "horizontal"
+        },
+        {
+          "id": 3,
+          "entity": 6,
+          "type": "vertical"
+        },
+        {
+          "id": 4,
+          "entity": 8,
+          "type": "vertical"
+        }
+      ]
+    },
+    "S02 Z L removable servo strap passages": {
+      "name": "S02 Z L removable servo strap passages",
+      "feature_id": 286,
+      "plane": {
+        "datum_id": 86,
+        "type": "datum_plane"
+      },
+      "basis": {
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin": [
+          0.0,
+          0.0,
+          87.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "datum": {
+        "datum_id": 86,
+        "name": "S02 Z L removable servo strap passages datum",
+        "feature_id": 285,
+        "basis": {
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            87.0
+          ],
+          "u": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "source": {
+          "distance": 87.0,
+          "reference": {
+            "plane": "xy",
+            "type": "origin_plane"
+          },
+          "type": "offset"
+        }
+      },
+      "geometry": {
+        "entity_count": 32,
+        "entity_types": {
+          "point": 16,
+          "line": 16
+        },
+        "point_bbox_uv": {
+          "umin": 33.0,
+          "umax": 63.5,
+          "vmin": 16.0,
+          "vmax": 39.0,
+          "u_span": 30.5,
+          "v_span": 23.0
+        },
+        "curves": [
+          {
+            "id": 5,
+            "type": "line",
+            "start": 1,
+            "end": 2
+          },
+          {
+            "id": 6,
+            "type": "line",
+            "start": 2,
+            "end": 3
+          },
+          {
+            "id": 7,
+            "type": "line",
+            "start": 3,
+            "end": 4
+          },
+          {
+            "id": 8,
+            "type": "line",
+            "start": 4,
+            "end": 1
+          },
+          {
+            "id": 13,
+            "type": "line",
+            "start": 9,
+            "end": 10
+          },
+          {
+            "id": 14,
+            "type": "line",
+            "start": 10,
+            "end": 11
+          },
+          {
+            "id": 15,
+            "type": "line",
+            "start": 11,
+            "end": 12
+          },
+          {
+            "id": 16,
+            "type": "line",
+            "start": 12,
+            "end": 9
+          },
+          {
+            "id": 21,
+            "type": "line",
+            "start": 17,
+            "end": 18
+          },
+          {
+            "id": 22,
+            "type": "line",
+            "start": 18,
+            "end": 19
+          },
+          {
+            "id": 23,
+            "type": "line",
+            "start": 19,
+            "end": 20
+          },
+          {
+            "id": 24,
+            "type": "line",
+            "start": 20,
+            "end": 17
+          },
+          {
+            "id": 29,
+            "type": "line",
+            "start": 25,
+            "end": 26
+          },
+          {
+            "id": 30,
+            "type": "line",
+            "start": 26,
+            "end": 27
+          },
+          {
+            "id": 31,
+            "type": "line",
+            "start": 27,
+            "end": 28
+          },
+          {
+            "id": 32,
+            "type": "line",
+            "start": 28,
+            "end": 25
+          }
+        ],
+        "points": [
+          {
+            "id": 1,
+            "u": 33.0,
+            "v": 16.0
+          },
+          {
+            "id": 2,
+            "u": 35.0,
+            "v": 16.0
+          },
+          {
+            "id": 3,
+            "u": 35.0,
+            "v": 24.0
+          },
+          {
+            "id": 4,
+            "u": 33.0,
+            "v": 24.0
+          },
+          {
+            "id": 9,
+            "u": 33.0,
+            "v": 31.0
+          },
+          {
+            "id": 10,
+            "u": 35.0,
+            "v": 31.0
+          },
+          {
+            "id": 11,
+            "u": 35.0,
+            "v": 39.0
+          },
+          {
+            "id": 12,
+            "u": 33.0,
+            "v": 39.0
+          },
+          {
+            "id": 17,
+            "u": 61.5,
+            "v": 16.0
+          },
+          {
+            "id": 18,
+            "u": 63.5,
+            "v": 16.0
+          },
+          {
+            "id": 19,
+            "u": 63.5,
+            "v": 24.0
+          },
+          {
+            "id": 20,
+            "u": 61.5,
+            "v": 24.0
+          },
+          {
+            "id": 25,
+            "u": 61.5,
+            "v": 31.0
+          },
+          {
+            "id": 26,
+            "u": 63.5,
+            "v": 31.0
+          },
+          {
+            "id": 27,
+            "u": 63.5,
+            "v": 39.0
+          },
+          {
+            "id": 28,
+            "u": 61.5,
+            "v": 39.0
+          }
+        ]
+      },
+      "constraint_count": 16,
+      "constraints": [
+        {
+          "id": 1,
+          "entity": 5,
+          "type": "horizontal"
+        },
+        {
+          "id": 2,
+          "entity": 7,
+          "type": "horizontal"
+        },
+        {
+          "id": 3,
+          "entity": 6,
+          "type": "vertical"
+        },
+        {
+          "id": 4,
+          "entity": 8,
+          "type": "vertical"
+        },
+        {
+          "id": 5,
+          "entity": 13,
+          "type": "horizontal"
+        },
+        {
+          "id": 6,
+          "entity": 15,
+          "type": "horizontal"
+        },
+        {
+          "id": 7,
+          "entity": 14,
+          "type": "vertical"
+        },
+        {
+          "id": 8,
+          "entity": 16,
+          "type": "vertical"
+        },
+        {
+          "id": 9,
+          "entity": 21,
+          "type": "horizontal"
+        },
+        {
+          "id": 10,
+          "entity": 23,
+          "type": "horizontal"
+        },
+        {
+          "id": 11,
+          "entity": 22,
+          "type": "vertical"
+        },
+        {
+          "id": 12,
+          "entity": 24,
+          "type": "vertical"
+        },
+        {
+          "id": 13,
+          "entity": 29,
+          "type": "horizontal"
+        },
+        {
+          "id": 14,
+          "entity": 31,
+          "type": "horizontal"
+        },
+        {
+          "id": 15,
+          "entity": 30,
+          "type": "vertical"
+        },
+        {
+          "id": 16,
+          "entity": 32,
+          "type": "vertical"
+        }
+      ]
+    }
+  },
+  "timeline_context_extrudes_not_targeting_97": [
+    {
+      "kind": "extrude_context",
+      "name": "Extrude65",
+      "feature_id": 217,
+      "operation": "new_body",
+      "extent": {
+        "distance": 8.0,
+        "type": "distance"
+      },
+      "flip": true,
+      "sketch_name": "S02 R LEFT input cap Y70",
+      "target_body_ids": [],
+      "new_body_ids": [
+        100
+      ],
+      "note": "Same S02 block timeline; does not target body 97"
+    },
+    {
+      "kind": "extrude_context",
+      "name": "Extrude66",
+      "feature_id": 220,
+      "operation": "cut",
+      "extent": {
+        "distance": 8.0,
+        "type": "distance"
+      },
+      "flip": true,
+      "sketch_name": "S02 S cap bore Y70",
+      "target_body_ids": [
+        100
+      ],
+      "new_body_ids": [
+        101
+      ],
+      "note": "Same S02 block timeline; does not target body 97"
+    },
+    {
+      "kind": "extrude_context",
+      "name": "Extrude72",
+      "feature_id": 238,
+      "operation": "new_body",
+      "extent": {
+        "distance": 8.0,
+        "type": "distance"
+      },
+      "flip": true,
+      "sketch_name": "S02 R LEFT input cap Y96",
+      "target_body_ids": [],
+      "new_body_ids": [
+        108
+      ],
+      "note": "Same S02 block timeline; does not target body 97"
+    },
+    {
+      "kind": "extrude_context",
+      "name": "Extrude73",
+      "feature_id": 241,
+      "operation": "cut",
+      "extent": {
+        "distance": 8.0,
+        "type": "distance"
+      },
+      "flip": true,
+      "sketch_name": "S02 S cap bore Y96",
+      "target_body_ids": [
+        108
+      ],
+      "new_body_ids": [
+        109
+      ],
+      "note": "Same S02 block timeline; does not target body 97"
+    },
+    {
+      "kind": "extrude_context",
+      "name": "Extrude85",
+      "feature_id": 280,
+      "operation": "new_body",
+      "extent": {
+        "distance": 2.4,
+        "type": "distance"
+      },
+      "flip": true,
+      "sketch_name": "S02 Y wheel outer-race axial shoulder master",
+      "target_body_ids": [],
+      "new_body_ids": [
+        125
+      ],
+      "note": "Same S02 block timeline; does not target body 97"
+    }
+  ],
+  "related_body_features": [
+    {
+      "body_ids": [
+        97,
+        100,
+        108
+      ],
+      "feature_id": 275,
+      "name": "Mirror2",
+      "new_body_ids": [
+        122,
+        123,
+        124
+      ],
+      "plane": {
+        "plane": "xz",
+        "type": "origin_plane"
+      },
+      "plane_basis": {
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "u": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "type": "mirror",
+      "kind": "body_feature",
+      "role_wrt_97": "source_for_mirror_copy_does_not_modify_97"
+    }
+  ],
+  "verify_gaps": [
+    {
+      "topic": "join_with_new_body_ids",
+      "feature": "Extrude63",
+      "detail": "operation=join targets=[97] also new_body_ids=[98]. Native may create tool solid then auto-join; JSONC rebuild should treat as join onto 97 (not keep separate body)."
+    },
+    {
+      "topic": "join_with_new_body_ids",
+      "feature": "Extrude70",
+      "detail": "operation=join targets=[97] also new_body_ids=[106]. Native may create tool solid then auto-join; JSONC rebuild should treat as join onto 97 (not keep separate body)."
+    },
+    {
+      "topic": "join_with_new_body_ids",
+      "feature": "Extrude81",
+      "detail": "operation=join targets=[97] also new_body_ids=[118]. Native may create tool solid then auto-join; JSONC rebuild should treat as join onto 97 (not keep separate body)."
+    },
+    {
+      "topic": "join_with_new_body_ids",
+      "feature": "Extrude82",
+      "detail": "operation=join targets=[97] also new_body_ids=[119]. Native may create tool solid then auto-join; JSONC rebuild should treat as join onto 97 (not keep separate body)."
+    },
+    {
+      "topic": "join_with_new_body_ids",
+      "feature": "Extrude83",
+      "detail": "operation=join targets=[97] also new_body_ids=[120]. Native may create tool solid then auto-join; JSONC rebuild should treat as join onto 97 (not keep separate body)."
+    },
+    {
+      "topic": "join_with_new_body_ids",
+      "feature": "Extrude84",
+      "detail": "operation=join targets=[97] also new_body_ids=[121]. Native may create tool solid then auto-join; JSONC rebuild should treat as join onto 97 (not keep separate body)."
+    },
+    {
+      "topic": "cut_with_new_body_ids",
+      "feature": "Extrude64",
+      "detail": "cut targets=[97] new_body_ids=[99]. Likely transient cut-tool solids; do not port as kept bodies unless appearance/visibility says otherwise."
+    },
+    {
+      "topic": "cut_with_new_body_ids",
+      "feature": "Extrude67",
+      "detail": "cut targets=[97, 100] new_body_ids=[102, 103]. Likely transient cut-tool solids; do not port as kept bodies unless appearance/visibility says otherwise."
+    },
+    {
+      "topic": "cut_with_new_body_ids",
+      "feature": "Extrude68",
+      "detail": "cut targets=[97] new_body_ids=[104]. Likely transient cut-tool solids; do not port as kept bodies unless appearance/visibility says otherwise."
+    },
+    {
+      "topic": "cut_with_new_body_ids",
+      "feature": "Extrude69",
+      "detail": "cut targets=[97] new_body_ids=[105]. Likely transient cut-tool solids; do not port as kept bodies unless appearance/visibility says otherwise."
+    },
+    {
+      "topic": "cut_with_new_body_ids",
+      "feature": "Extrude71",
+      "detail": "cut targets=[97] new_body_ids=[107]. Likely transient cut-tool solids; do not port as kept bodies unless appearance/visibility says otherwise."
+    },
+    {
+      "topic": "cut_with_new_body_ids",
+      "feature": "Extrude74",
+      "detail": "cut targets=[97, 108] new_body_ids=[110, 111]. Likely transient cut-tool solids; do not port as kept bodies unless appearance/visibility says otherwise."
+    },
+    {
+      "topic": "cut_with_new_body_ids",
+      "feature": "Extrude75",
+      "detail": "cut targets=[97] new_body_ids=[112]. Likely transient cut-tool solids; do not port as kept bodies unless appearance/visibility says otherwise."
+    },
+    {
+      "topic": "cut_with_new_body_ids",
+      "feature": "Extrude76",
+      "detail": "cut targets=[97] new_body_ids=[113]. Likely transient cut-tool solids; do not port as kept bodies unless appearance/visibility says otherwise."
+    },
+    {
+      "topic": "cut_with_new_body_ids",
+      "feature": "Extrude77",
+      "detail": "cut targets=[97] new_body_ids=[114]. Likely transient cut-tool solids; do not port as kept bodies unless appearance/visibility says otherwise."
+    },
+    {
+      "topic": "cut_with_new_body_ids",
+      "feature": "Extrude78",
+      "detail": "cut targets=[97] new_body_ids=[115]. Likely transient cut-tool solids; do not port as kept bodies unless appearance/visibility says otherwise."
+    },
+    {
+      "topic": "cut_with_new_body_ids",
+      "feature": "Extrude79",
+      "detail": "cut targets=[97] new_body_ids=[116]. Likely transient cut-tool solids; do not port as kept bodies unless appearance/visibility says otherwise."
+    },
+    {
+      "topic": "cut_with_new_body_ids",
+      "feature": "Extrude80",
+      "detail": "cut targets=[97] new_body_ids=[117]. Likely transient cut-tool solids; do not port as kept bodies unless appearance/visibility says otherwise."
+    },
+    {
+      "topic": "cut_with_new_body_ids",
+      "feature": "Extrude86",
+      "detail": "cut targets=[97] new_body_ids=[133, 134, 135, 136]. Likely transient cut-tool solids; do not port as kept bodies unless appearance/visibility says otherwise."
+    },
+    {
+      "topic": "mirror2_timing",
+      "feature": "Mirror2",
+      "detail": "Mirror2 (fid 275) mirrors bodies [97,100,108] \u2192 [122,123,124] about origin XZ. Does not modify 97; right-side copies. Extrude86 (strap passages) runs after mirror on left 97 only \u2014 confirm right carriage 122 gets equivalent cuts or was mirrored before Extrude86 intentionally."
+    },
+    {
+      "topic": "multi_body_cut",
+      "feature": "Extrude67",
+      "detail": "Cut also hits [100]; when porting carriage alone, either include cap bodies in same chapter or defer shared hole features until caps exist."
+    },
+    {
+      "topic": "multi_body_cut",
+      "feature": "Extrude74",
+      "detail": "Cut also hits [108]; when porting carriage alone, either include cap bodies in same chapter or defer shared hole features until caps exist."
+    },
+    {
+      "topic": "profile_indices_only",
+      "feature": null,
+      "detail": "Extrudes store profile_indices but not labeled profile topology. Rebuild must recover closed loops from sketch entities; most carriage sketches look like simple rectangles/circles \u2014 VERIFY each sketch closes and matches intended profile_indices=[0] (or listed)."
+    },
+    {
+      "topic": "no_fillet_chamfer_hole_features",
+      "feature": null,
+      "detail": "Model has zero fillets/chamfers/holes globally. All carriage detail is extrude join/cut from sketches \u2014 including bearing seats, nut pockets, tension slots, strap passages."
+    },
+    {
+      "topic": "datum_offset_sign",
+      "feature": "Extrude62 sketch datum",
+      "detail": "S02 O datum source.distance=-2 from XZ with basis origin Y=2. Confirm JSONC offset plane convention (sign/flip) matches native before replaying 100mm flip extrude."
+    }
+  ],
+  "jsonc_rebuild_guidance": {
+    "do_not_invent": true,
+    "chapter_suggestion": "design/design_v0_1_input_carriage.nbcad.jsonc (or role-named left_input_carriage chapter)",
+    "order": [
+      "Create offset datum + sketch S02 O; Extrude62 new_body distance 100 flip \u2192 body left_input_carriage",
+      "For each subsequent extrude in feature_id order: recreate datum/sketch from dump, extrude with same operation/extent/flip/profile_indices onto carriage (and caps when multi-target)",
+      "Skip Mirror2 in left-only chapter (or emit right copies as separate bodies if full assembly)",
+      "Finish with Extrude86 strap passages",
+      "Replay blank-doc; compare AABB to shell-first-review STL before any first-prints export"
+    ],
+    "shared_with_caps": [
+      "Extrude67 targets 97+100",
+      "Extrude74 targets 97+108"
+    ]
+  },
+  "aabb_comparison": {
+    "native_envelope_from_sketches": {
+      "note": "Heuristic from sketch UV bboxes + Extrude62 (Y origin 2, distance 100, flip). Not a solid AABB from B-rep.",
+      "xmin": 30.0,
+      "xmax": 69.0,
+      "ymin": 2.0,
+      "ymax": 102.0,
+      "zmin": 88.0,
+      "zmax": 123.0,
+      "dx": 39.0,
+      "dy": 100.0,
+      "dz": 35.0
+    },
+    "review_stl_assembly_coordinates": {
+      "xmin": 30.0,
+      "xmax": 69.0,
+      "ymin": 2.0,
+      "ymax": 102.0,
+      "zmin": 88.0,
+      "zmax": 123.0,
+      "dx": 39.0,
+      "dy": 100.0,
+      "dz": 35.0,
+      "tri_count": 3052,
+      "path": "first-prints/shell-first-review/left-input-carriage-assembly-coordinates.stl"
+    },
+    "review_stl_floor_down": {
+      "xmin": -19.5,
+      "xmax": 19.5,
+      "ymin": -50.0,
+      "ymax": 50.0,
+      "zmin": 0.0,
+      "zmax": 35.0,
+      "dx": 39.0,
+      "dy": 100.0,
+      "dz": 35.0,
+      "tri_count": 3052,
+      "path": "first-prints/shell-first-review/left-input-carriage-floor-down.stl",
+      "note": "Print reorient of same solid; extents permute to 39 x 100 x 35."
+    },
+    "match": {
+      "assembly_vs_sketch_envelope_dxdydz": true,
+      "assembly_mins_match_sketch": true,
+      "floor_down_extents": [
+        39.0,
+        100.0,
+        35.0
+      ]
+    }
+  }
+}

@@ -21,10 +21,11 @@ Repo is the SoT for location and progress. CAD/MCP sessions are transitory.
 
 ## Method
 1. Inventory native `model.json` (see `body-inventory.json`).
-2. Port one body at a time into `design/design_v0_1_<role>.nbcad.jsonc` with Design Ops naming/refs.
-3. Blank-doc replay + export under `first-prints/` only after inspect matches native bounds.
-4. Never invent block geometry that is not derived from native feature params.
+2. Dump one body at a time (features/sketches/datums) under `design/native-port/`.
+3. Port from that dump into `design/design_v0_1_<role>.nbcad.jsonc` with Design Ops naming/refs — **no invented geometry**.
+4. Blank-doc replay + export under `first-prints/` only after inspect matches native bounds.
 
 ## Status
-- Inventory generated from current native master.
-- Next port target: **left_input_carriage (97)**.
+- Inventory done (`body-inventory.json`).
+- **Carriage dump done**: `left_input_carriage-97.json` + `left_input_carriage-97.md` (body 97 feature sequence, sketches, VERIFY gaps, AABB vs review STL).
+- **Next**: JSONC rebuild of left_input_carriage from the dump (still no invented geometry).
