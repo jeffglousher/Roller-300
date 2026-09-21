@@ -3,7 +3,7 @@
   "architecture": "shell-first modular Design Ops cut",
   "native_master": "Roller-300.nbcad",
   "ai_sot": "design/*.nbcad.jsonc",
-  "revision_note": "VERSION 0.1: coupon chapters retained; failed one-drive JSONC block export DEPRECATED (meshes removed). Print SoT for carriage/caps = first-prints/shell-first-review/ from native Roller-300.nbcad. Full main-shell HOLD. Repo is tracking SoT; CAD sessions are transitory.",
+  "revision_note": "VERSION 0.1: coupons retained; one-drive placeholder DEPRECATED; native-port inventory added for body-accurate JSONC. Print SoT shell-first-review. Repo tracks; sessions transitory.",
   "modules": [
     {
       "file": "design_v0_1_hardware_refs.nbcad.jsonc",
@@ -105,5 +105,14 @@
     "shell_first_review": "first-prints/shell-first-review/",
     "coupons": "first-prints/coupons/",
     "one_drive": "DEPRECATED — see first-prints/one-drive/DEPRECATED.md"
+  },
+  "native_port": {
+    "status": "inventory",
+    "path": "design/native-port/",
+    "next_body": {
+      "role": "left_input_carriage",
+      "body_id": 97
+    },
+    "note": "Inventory from Roller-300.nbcad model.json; JSONC chapters to be ported from native feature params, not invented blocks."
   }
 }

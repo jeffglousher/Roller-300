@@ -88,3 +88,10 @@ Open call to Jeff: measure servo ears/strap; coupon M3 shank + wheel-cap M4 patt
 
 Repo tracks location and releases; CAD/MCP sessions are transitory.
 
+
+## Native → JSONC port
+
+See [`native-port/README.md`](native-port/README.md) and [`native-port/body-inventory.json`](native-port/body-inventory.json).
+
+Next port target: **left_input_carriage** (native body **97**). Print meshes remain `first-prints/shell-first-review/` until a replayed chapter matches native bounds.
+

@@ -1,0 +1,815 @@
+{
+  "generated_from": "Roller-300.nbcad / model.json",
+  "schema_version": 7,
+  "note": "Native-derived inventory for Design Ops JSONC port. Repo tracking SoT; sessions transitory. Do not invent geometry — port from these bodies.",
+  "target_bodies": {
+    "32": "main_shell",
+    "56": "wheel_cap_inner",
+    "65": "wheel_cap_outer",
+    "97": "left_input_carriage",
+    "100": "input_cap_inner",
+    "108": "input_cap_outer",
+    "141": "hatch"
+  },
+  "counts": {
+    "sketches": 151,
+    "extrudes": 145,
+    "holes": 0,
+    "fillets": 0,
+    "chamfers": 0,
+    "datum_planes": 151,
+    "body_feature_keys": 67
+  },
+  "bodies": {
+    "main_shell": {
+      "body_id": 32,
+      "body_features": {
+        "feature_id": 306,
+        "keep_tools": false,
+        "name": "Combine6",
+        "operation": "intersect",
+        "target_body_id": 144,
+        "tool_body_ids": [
+          145
+        ],
+        "type": "combine"
+      },
+      "extrude_hits": [
+        {
+          "name": "Extrude2",
+          "operation": "join",
+          "target_body_ids": [
+            32
+          ],
+          "extent": {
+            "distance": 3,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude3",
+          "operation": "join",
+          "target_body_ids": [
+            32
+          ],
+          "extent": {
+            "distance": 3,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude4",
+          "operation": "join",
+          "target_body_ids": [
+            32
+          ],
+          "extent": {
+            "distance": 12,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude5",
+          "operation": "cut",
+          "target_body_ids": [
+            32
+          ],
+          "extent": {
+            "distance": 12,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude6",
+          "operation": "cut",
+          "target_body_ids": [
+            32
+          ],
+          "extent": {
+            "distance": 12.4,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude9",
+          "operation": "cut",
+          "target_body_ids": [
+            32,
+            38
+          ],
+          "extent": {
+            "distance": 40,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude10",
+          "operation": "cut",
+          "target_body_ids": [
+            32
+          ],
+          "extent": {
+            "distance": 10,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude11",
+          "operation": "cut",
+          "target_body_ids": [
+            32
+          ],
+          "extent": {
+            "distance": 10,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude12",
+          "operation": "join",
+          "target_body_ids": [
+            32
+          ],
+          "extent": {
+            "distance": 12,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude13",
+          "operation": "cut",
+          "target_body_ids": [
+            32
+          ],
+          "extent": {
+            "distance": 12,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude14",
+          "operation": "cut",
+          "target_body_ids": [
+            32
+          ],
+          "extent": {
+            "distance": 12.4,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude17",
+          "operation": "cut",
+          "target_body_ids": [
+            32,
+            47
+          ],
+          "extent": {
+            "distance": 40,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude18",
+          "operation": "cut",
+          "target_body_ids": [
+            32
+          ],
+          "extent": {
+            "distance": 10,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude19",
+          "operation": "cut",
+          "target_body_ids": [
+            32
+          ],
+          "extent": {
+            "distance": 10,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude20",
+          "operation": "join",
+          "target_body_ids": [
+            32
+          ],
+          "extent": {
+            "distance": 12,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude21",
+          "operation": "cut",
+          "target_body_ids": [
+            32
+          ],
+          "extent": {
+            "distance": 12,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude22",
+          "operation": "cut",
+          "target_body_ids": [
+            32
+          ],
+          "extent": {
+            "distance": 12.4,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude25",
+          "operation": "cut",
+          "target_body_ids": [
+            32,
+            56
+          ],
+          "extent": {
+            "distance": 40,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude26",
+          "operation": "cut",
+          "target_body_ids": [
+            32
+          ],
+          "extent": {
+            "distance": 10,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude27",
+          "operation": "cut",
+          "target_body_ids": [
+            32
+          ],
+          "extent": {
+            "distance": 10,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude28",
+          "operation": "join",
+          "target_body_ids": [
+            32
+          ],
+          "extent": {
+            "distance": 12,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude29",
+          "operation": "cut",
+          "target_body_ids": [
+            32
+          ],
+          "extent": {
+            "distance": 12,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude30",
+          "operation": "cut",
+          "target_body_ids": [
+            32
+          ],
+          "extent": {
+            "distance": 12.4,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude33",
+          "operation": "cut",
+          "target_body_ids": [
+            32,
+            65
+          ],
+          "extent": {
+            "distance": 40,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude34",
+          "operation": "cut",
+          "target_body_ids": [
+            32
+          ],
+          "extent": {
+            "distance": 10,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude35",
+          "operation": "cut",
+          "target_body_ids": [
+            32
+          ],
+          "extent": {
+            "distance": 10,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude37",
+          "operation": "join",
+          "target_body_ids": [
+            32
+          ],
+          "extent": {
+            "distance": 12,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude38",
+          "operation": "cut",
+          "target_body_ids": [
+            32
+          ],
+          "extent": {
+            "distance": 10,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude39",
+          "operation": "cut",
+          "target_body_ids": [
+            32
+          ],
+          "extent": {
+            "distance": 10,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude40",
+          "operation": "join",
+          "target_body_ids": [
+            32
+          ],
+          "extent": {
+            "distance": 12,
+            "type": "distance"
+          }
+        }
+      ],
+      "extrude_hit_count": 88
+    },
+    "wheel_cap_inner": {
+      "body_id": 56,
+      "body_features": {
+        "body_ids": [
+          3
+        ],
+        "copy": false,
+        "feature_id": 472,
+        "name": "MoveCopy12",
+        "pivot": {
+          "x": 0,
+          "y": 0,
+          "z": 123
+        },
+        "result_body_ids": [
+          3
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "translation": {
+          "x": 0,
+          "y": -3,
+          "z": 0
+        },
+        "type": "move_copy"
+      },
+      "extrude_hits": [
+        {
+          "name": "Extrude24",
+          "operation": "cut",
+          "target_body_ids": [
+            56
+          ],
+          "extent": {
+            "distance": 12,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude25",
+          "operation": "cut",
+          "target_body_ids": [
+            32,
+            56
+          ],
+          "extent": {
+            "distance": 40,
+            "type": "distance"
+          }
+        }
+      ],
+      "extrude_hit_count": 2
+    },
+    "wheel_cap_outer": {
+      "body_id": 65,
+      "body_features": {
+        "feature_id": 512,
+        "keep_tools": true,
+        "name": "Combine19",
+        "operation": "intersect",
+        "target_body_id": 123,
+        "tool_body_ids": [
+          234
+        ],
+        "type": "combine"
+      },
+      "extrude_hits": [
+        {
+          "name": "Extrude32",
+          "operation": "cut",
+          "target_body_ids": [
+            65
+          ],
+          "extent": {
+            "distance": 12,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude33",
+          "operation": "cut",
+          "target_body_ids": [
+            32,
+            65
+          ],
+          "extent": {
+            "distance": 40,
+            "type": "distance"
+          }
+        }
+      ],
+      "extrude_hit_count": 2
+    },
+    "left_input_carriage": {
+      "body_id": 97,
+      "body_features": null,
+      "extrude_hits": [
+        {
+          "name": "Extrude63",
+          "operation": "join",
+          "target_body_ids": [
+            97
+          ],
+          "extent": {
+            "distance": 8,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude64",
+          "operation": "cut",
+          "target_body_ids": [
+            97
+          ],
+          "extent": {
+            "distance": 8,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude67",
+          "operation": "cut",
+          "target_body_ids": [
+            97,
+            100
+          ],
+          "extent": {
+            "distance": 36,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude68",
+          "operation": "cut",
+          "target_body_ids": [
+            97
+          ],
+          "extent": {
+            "distance": 7,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude69",
+          "operation": "cut",
+          "target_body_ids": [
+            97
+          ],
+          "extent": {
+            "distance": 7,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude70",
+          "operation": "join",
+          "target_body_ids": [
+            97
+          ],
+          "extent": {
+            "distance": 8,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude71",
+          "operation": "cut",
+          "target_body_ids": [
+            97
+          ],
+          "extent": {
+            "distance": 8,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude74",
+          "operation": "cut",
+          "target_body_ids": [
+            97,
+            108
+          ],
+          "extent": {
+            "distance": 36,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude75",
+          "operation": "cut",
+          "target_body_ids": [
+            97
+          ],
+          "extent": {
+            "distance": 7,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude76",
+          "operation": "cut",
+          "target_body_ids": [
+            97
+          ],
+          "extent": {
+            "distance": 7,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude77",
+          "operation": "cut",
+          "target_body_ids": [
+            97
+          ],
+          "extent": {
+            "distance": 6,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude78",
+          "operation": "cut",
+          "target_body_ids": [
+            97
+          ],
+          "extent": {
+            "distance": 6,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude79",
+          "operation": "cut",
+          "target_body_ids": [
+            97
+          ],
+          "extent": {
+            "distance": 6,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude80",
+          "operation": "cut",
+          "target_body_ids": [
+            97
+          ],
+          "extent": {
+            "distance": 6,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude81",
+          "operation": "join",
+          "target_body_ids": [
+            97
+          ],
+          "extent": {
+            "distance": 40.5,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude82",
+          "operation": "join",
+          "target_body_ids": [
+            97
+          ],
+          "extent": {
+            "distance": 40.5,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude83",
+          "operation": "join",
+          "target_body_ids": [
+            97
+          ],
+          "extent": {
+            "distance": 1,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude84",
+          "operation": "join",
+          "target_body_ids": [
+            97
+          ],
+          "extent": {
+            "distance": 1,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude86",
+          "operation": "cut",
+          "target_body_ids": [
+            97
+          ],
+          "extent": {
+            "distance": 6,
+            "type": "distance"
+          }
+        }
+      ],
+      "extrude_hit_count": 19
+    },
+    "input_cap_inner": {
+      "body_id": 100,
+      "body_features": null,
+      "extrude_hits": [
+        {
+          "name": "Extrude66",
+          "operation": "cut",
+          "target_body_ids": [
+            100
+          ],
+          "extent": {
+            "distance": 8,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude67",
+          "operation": "cut",
+          "target_body_ids": [
+            97,
+            100
+          ],
+          "extent": {
+            "distance": 36,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude145",
+          "operation": "cut",
+          "target_body_ids": [
+            100,
+            108,
+            123,
+            124
+          ],
+          "extent": {
+            "distance": 5,
+            "type": "distance"
+          }
+        }
+      ],
+      "extrude_hit_count": 3
+    },
+    "input_cap_outer": {
+      "body_id": 108,
+      "body_features": null,
+      "extrude_hits": [
+        {
+          "name": "Extrude73",
+          "operation": "cut",
+          "target_body_ids": [
+            108
+          ],
+          "extent": {
+            "distance": 8,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude74",
+          "operation": "cut",
+          "target_body_ids": [
+            97,
+            108
+          ],
+          "extent": {
+            "distance": 36,
+            "type": "distance"
+          }
+        },
+        {
+          "name": "Extrude145",
+          "operation": "cut",
+          "target_body_ids": [
+            100,
+            108,
+            123,
+            124
+          ],
+          "extent": {
+            "distance": 5,
+            "type": "distance"
+          }
+        }
+      ],
+      "extrude_hit_count": 3
+    },
+    "hatch": {
+      "body_id": 141,
+      "body_features": null,
+      "extrude_hits": [],
+      "extrude_hit_count": 0
+    }
+  },
+  "sample_body_feature_keys": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19"
+  ],
+  "sample_body_feature": {
+    "body_id": 1,
+    "data_base64": "SVNPLTEwMzAzLTIxOwpIRUFERVI7CkZJTEVfREVTQ1JJUFRJT04oKCdPcGVuIENBU0NBREUgTW9kZWwnKSwnMjsxJyk7CkZJTEVfTkFNRSgnT3BlbiBDQVNDQURFIFNoYXBlIE1vZGVsJywnMjAyNi0wOS0xOVQxOTo0OToyMicsKCdBdXRob3InKSwoCiAgICAnT3BlbiBDQVNDQURFJyksJ09wZW4gQ0FTQ0FERSBTVEVQIHByb2Nlc3NvciA3LjknLCdPcGVuIENBU0NBREUgNy45JwogICwnVW5rbm93bicpOwpGSUxFX1NDSEVNQSgoCidBUDI0Ml9NQU5BR0VEX01PREVMX0JBU0VEXzNEX0VOR0lORUVSSU5HX01JTV9MRiB7MSAwIDEwMzAzIDQ0MiAxIDEgNCB9JwogICAgKSk7CkVORFNFQzsKREFUQTsKIzEgPSBBUFBMSUNBVElPTl9QUk9UT0NPTF9ERUZJTklUSU9OKCdpbnRlcm5hdGlvbmFsIHN0YW5kYXJkJywKICAnYXAyNDJfbWFuYWdlZF9tb2RlbF9iYXNlZF8zZF9lbmdpbmVlcmluZycsMjAxMywjMik7CiMyID0gQVBQTElDQVRJT05fQ09OVEVYVCgnTWFuYWdlZCBtb2RlbCBiYXNlZCAzZCBlbmdpbmVlcmluZycpOwojMyA9IFNIQVBFX0RFRklOSVRJT05fUkVQUkVTRU5UQVRJT04oIzQsIzEwKTsKIzQgPSBQUk9EVUNUX0RFRklOSVRJT05fU0hBUEUoJycsJycsIzUpOwojNSA9IFBST0RVQ1RfREVGSU5JVElPTignZGVzaWduJywnJywjNiwjOSk7CiM2ID0gUFJPRFVDVF9ERUZJTklUSU9OX0ZPUk1BVElPTignJywnJywjNyk7CiM3ID0gUFJPRFVDVCgnT3BlbiBDQVNDQURFIFNURVAgdHJhbnNsYXRvciA3LjkgMScsCiAgJ09wZW4gQ0FTQ0FERSBTVEVQIHRyYW5zbGF0b3IgNy45IDEnLCcnLCgjOCkpOwojOCA9IFBST0RVQ1RfQ09OVEVYVCgnJywjMiwnbWVjaGFuaWNhbCcpOwojOSA9IFBST0RVQ1RfREVGSU5JVElPTl9DT05URVhUKCdwYXJ0IGRlZmluaXRpb24nLCMyLCdkZXNpZ24nKTsKIzEwID0gQURWQU5DRURfQlJFUF9TSEFQRV9SRVBSRVNFTlRBVElPTignJywoIzExLCMxNSksIzExMyk7CiMxMSA9IEFYSVMyX1BMQUNFTUVOVF8zRCgnJywjMTIsIzEzLCMxNCk7CiMxMiA9IENBUlRFU0lBTl9QT0lOVCgnJywoMC4sMC4sMC4pKTsKIzEzID0gRElSRUNUSU9OKCcnLCgwLiwwLiwxLikpOwojMTQgPSBESVJFQ1RJT04oJycsKDEuLDAuLC0wLikpOwojMTUgPSBNQU5JRk9MRF9TT0xJRF9CUkVQKCcnLCMxNik7CiMxNiA9IENMT1NFRF9TSEVMTCgnJywoIzE3LCMxMDUsIzEwOSkpOwojMTcgPSBBRFZBTkNFRF9GQUNFKCcnLCgjMTgpLCMzMiwuVC4pOwojMTggPSBGQUNFX0JPVU5EKCcnLCMxOSwuRi4pOwojMTkgPSBFREdFX0xPT1AoJycsKCMyMCwjNTAsIzc3LCM3OCkpOwojMjAgPSBPUklFTlRFRF9FREdFKCcnLCosKiwjMjEsLlQuKTsKIzIxID0gRURHRV9DVVJWRSgnJywjMjIsIzI0LCMyNiwuVC4pOwojMjIgPSBWRVJURVhfUE9JTlQoJycsIzIzKTsKIzIzID0gQ0FSVEVTSUFOX1BPSU5UKCcnLCg0LiwxNDguLDEyMy4pKTsKIzI0ID0gVkVSVEVYX1BPSU5UKCcnLCMyNSk7CiMyNSA9IENBUlRFU0lBTl9QT0lOVCgnJywoNC4sMzguLDEyMy4pKTsKIzI2ID0gU0VBTV9DVVJWRSgnJywjMjcsKCMzMSwjNDMpLC5QQ1VSVkVfUzEuKTsKIzI3ID0gTElORSgnJywjMjgsIzI5KTsKIzI4ID0gQ0FSVEVTSUFOX1BPSU5UKCcnLCg0LiwxNDguLDEyMy4pKTsKIzI5ID0gVkVDVE9SKCcnLCMzMCwxLik7CiMzMCA9IERJUkVDVElPTignJywoMC4sLTEuLDAuKSk7CiMzMSA9IFBDVVJWRSgnJywjMzIsIzM3KTsKIzMyID0gQ1lMSU5EUklDQUxfU1VSRkFDRSgnJywjMzMsNC4pOwojMzMgPSBBWElTMl9QTEFDRU1FTlRfM0QoJycsIzM0LCMzNSwjMzYpOwojMzQgPSBDQVJURVNJQU5fUE9JTlQoJycsKDAuLDE0OC4sMTIzLikpOwojMzUgPSBESVJFQ1RJT04oJycsKDAuLDEuLDAuKSk7CiMzNiA9IERJUkVDVElPTignJywoMS4sMC4sMC4pKTsKIzM3ID0gREVGSU5JVElPTkFMX1JFUFJFU0VOVEFUSU9OKCcnLCgjMzgpLCM0Mik7CiMzOCA9IExJTkUoJycsIzM5LCM0MCk7CiMzOSA9IENBUlRFU0lBTl9QT0lOVCgnJywoLTAuLDAuKSk7CiM0MCA9IFZFQ1RPUignJywjNDEsMS4pOwojNDEgPSBESVJFQ1RJT04oJycsKC0wLiwtMS4pKTsKIzQyID0gKCBHRU9NRVRSSUNfUkVQUkVTRU5UQVRJT05fQ09OVEVYVCgyKSAKUEFSQU1FVFJJQ19SRVBSRVNFTlRBVElPTl9DT05URVhUKCkgUkVQUkVTRU5UQVRJT05fQ09OVEVYVCgnMkQgU1BBQ0UnLCcnCiAgKSApOwojNDMgPSBQQ1VSVkUoJycsIzMyLCM0NCk7CiM0NCA9IERFRklOSVRJT05BTF9SRVBSRVNFTlRBVElPTignJywoIzQ1KSwjNDkpOwojNDUgPSBMSU5FKCcnLCM0NiwjNDcpOwojNDYgPSBDQVJURVNJQU5fUE9JTlQoJycsKC02LjI4MzE4NTMwNzE4LDAuKSk7CiM0NyA9IFZFQ1RPUignJywjNDgsMS4pOwojNDggPSBESVJFQ1RJT04oJycsKC0wLiwtMS4pKTsKIzQ5ID0gKCBHRU9NRVRSSUNfUkVQUkVTRU5UQVRJT05fQ09OVEVYVCgyKSAKUEFSQU1FVFJJQ19SRVBSRVNFTlRBVElPTl9DT05URVhUKCkgUkVQUkVTRU5UQVRJT05fQ09OVEVYVCgnMkQgU1BBQ0UnLCcnCiAgKSApOwojNTAgPSBPUklFTlRFRF9FREdFKCcnLCosKiwjNTEsLlQuKTsKIzUxID0gRURHRV9DVVJWRSgnJywjMjQsIzI0LCM1MiwuVC4pOwojNTIgPSBTVVJGQUNFX0NVUlZFKCcnLCM1MywoIzU4LCM2NSksLlBDVVJWRV9TMS4pOwojNTMgPSBDSVJDTEUoJycsIzU0LDQuKTsKIzU0ID0gQVhJUzJfUExBQ0VNRU5UXzNEKCcnLCM1NSwjNTYsIzU3KTsKIzU1ID0gQ0FSVEVTSUFOX1BPSU5UKCcnLCgwLiwzOC4sMTIzLikpOwojNTYgPSBESVJFQ1RJT04oJycsKDAuLC0xLiwwLikpOwojNTcgPSBESVJFQ1RJT04oJycsKDEuLDAuLDAuKSk7CiM1OCA9IFBDVVJWRSgnJywjMzIsIzU5KTsKIzU5ID0gREVGSU5JVElPTkFMX1JFUFJFU0VOVEFUSU9OKCcnLCgjNjApLCM2NCk7CiM2MCA9IExJTkUoJycsIzYxLCM2Mik7CiM2MSA9IENBUlRFU0lBTl9QT0lOVCgnJywoLTAuLC0xMTAuKSk7CiM2MiA9IFZFQ1RPUignJywjNjMsMS4pOwojNjMgPSBESVJFQ1RJT04oJycsKC0xLiwwLikpOwojNjQgPSAoIEdFT01FVFJJQ19SRVBSRVNFTlRBVElPTl9DT05URVhUKDIpIApQQVJBTUVUUklDX1JFUFJFU0VOVEFUSU9OX0NPTlRFWFQoKSBSRVBSRVNFTlRBVElPTl9DT05URVhUKCcyRCBTUEFDRScsJycKICApICk7CiM2NSA9IFBDVVJWRSgnJywjNjYsIzcxKTsKIzY2ID0gUExBTkUoJycsIzY3KTsKIzY3ID0gQVhJUzJfUExBQ0VNRU5UXzNEKCcnLCM2OCwjNjksIzcwKTsKIzY4ID0gQ0FSVEVTSUFOX1BPSU5UKCcnLCgzLjQxODYwMDMzMTM0OUUtMTYsMzguLDEyMy4pKTsKIzY5ID0gRElSRUNUSU9OKCcnLCgtMC4sLTEuLC0wLikpOwojNzAgPSBESVJFQ1RJT04oJycsKDAuLDAuLC0xLikpOwojNzEgPSBERUZJTklUSU9OQUxfUkVQUkVTRU5UQVRJT04oJycsKCM3MiksIzc2KTsKIzcyID0gQ0lSQ0xFKCcnLCM3Myw0Lik7CiM3MyA9IEFYSVMyX1BMQUNFTUVOVF8yRCgnJywjNzQsIzc1KTsKIzc0ID0gQ0FSVEVTSUFOX1BPSU5UKCcnLCgwLiwtMy40MTg2MDAzMzEzNDlFLTE2KSk7CiM3NSA9IERJUkVDVElPTignJywoMC4sMS4pKTsKIzc2ID0gKCBHRU9NRVRSSUNfUkVQUkVTRU5UQVRJT05fQ09OVEVYVCgyKSAKUEFSQU1FVFJJQ19SRVBSRVNFTlRBVElPTl9DT05URVhUKCkgUkVQUkVTRU5UQVRJT05fQ09OVEVYVCgnMkQgU1BBQ0UnLCcnCiAgKSApOwojNzcgPSBPUklFTlRFRF9FREdFKCcnLCosKiwjMjEsLkYuKTsKIzc4ID0gT1JJRU5URURfRURHRSgnJywqLCosIzc5LC5GLik7CiM3OSA9IEVER0VfQ1VSVkUoJycsIzIyLCMyMiwjODAsLlQuKTsKIzgwID0gU1VSRkFDRV9DVVJWRSgnJywjODEsKCM4NiwjOTMpLC5QQ1VSVkVfUzEuKTsKIzgxID0gQ0lSQ0xFKCcnLCM4Miw0Lik7CiM4MiA9IEFYSVMyX1BMQUNFTUVOVF8zRCgnJywjODMsIzg0LCM4NSk7CiM4MyA9IENBUlRFU0lBTl9QT0lOVCgnJywoMC4sMTQ4LiwxMjMuKSk7CiM4NCA9IERJUkVDVElPTignJywoMC4sLTEuLDAuKSk7CiM4NSA9IERJUkVDVElPTignJywoMS4sMC4sMC4pKTsKIzg2ID0gUENVUlZFKCcnLCMzMiwjODcpOwojODcgPSBERUZJTklUSU9OQUxfUkVQUkVTRU5UQVRJT04oJycsKCM4OCksIzkyKTsKIzg4ID0gTElORSgnJywjODksIzkwKTsKIzg5ID0gQ0FSVEVTSUFOX1BPSU5UKCcnLCgtMC4sMC4pKTsKIzkwID0gVkVDVE9SKCcnLCM5MSwxLik7CiM5MSA9IERJUkVDVElPTignJywoLTEuLDAuKSk7CiM5MiA9ICggR0VPTUVUUklDX1JFUFJFU0VOVEFUSU9OX0NPTlRFWFQoMikgClBBUkFNRVRSSUNfUkVQUkVTRU5UQVRJT05fQ09OVEVYVCgpIFJFUFJFU0VOVEFUSU9OX0NPTlRFWFQoJzJEIFNQQUNFJywnJwogICkgKTsKIzkzID0gUENVUlZFKCcnLCM5NCwjOTkpOwojOTQgPSBQTEFORSgnJywjOTUpOwojOTUgPSBBWElTMl9QTEFDRU1FTlRfM0QoJycsIzk2LCM5NywjOTgpOwojOTYgPSBDQVJURVNJQU5fUE9JTlQoJycsKDMuNDE4NjAwMzMxMzQ5RS0xNiwxNDguLDEyMy4pKTsKIzk3ID0gRElSRUNUSU9OKCcnLCgtMC4sLTEuLC0wLikpOwojOTggPSBESVJFQ1RJT04oJycsKDAuLDAuLC0xLikpOwojOTkgPSBERUZJTklUSU9OQUxfUkVQUkVTRU5UQVRJT04oJycsKCMxMDApLCMxMDQpOwojMTAwID0gQ0lSQ0xFKCcnLCMxMDEsNC4pOwojMTAxID0gQVhJUzJfUExBQ0VNRU5UXzJEKCcnLCMxMDIsIzEwMyk7CiMxMDIgPSBDQVJURVNJQU5fUE9JTlQoJycsKDAuLC0zLjQxODYwMDMzMTM0OUUtMTYpKTsKIzEwMyA9IERJUkVDVElPTignJywoMC4sMS4pKTsKIzEwNCA9ICggR0VPTUVUUklDX1JFUFJFU0VOVEFUSU9OX0NPTlRFWFQoMikgClBBUkFNRVRSSUNfUkVQUkVTRU5UQVRJT05fQ09OVEVYVCgpIFJFUFJFU0VOVEFUSU9OX0NPTlRFWFQoJzJEIFNQQUNFJywnJwogICkgKTsKIzEwNSA9IEFEVkFOQ0VEX0ZBQ0UoJycsKCMxMDYpLCM5NCwuRi4pOwojMTA2ID0gRkFDRV9CT1VORCgnJywjMTA3LC5GLik7CiMxMDcgPSBFREdFX0xPT1AoJycsKCMxMDgpKTsKIzEwOCA9IE9SSUVOVEVEX0VER0UoJycsKiwqLCM3OSwuVC4pOwojMTA5ID0gQURWQU5DRURfRkFDRSgnJywoIzExMCksIzY2LC5ULik7CiMxMTAgPSBGQUNFX0JPVU5EKCcnLCMxMTEsLlQuKTsKIzExMSA9IEVER0VfTE9PUCgnJywoIzExMikpOwojMTEyID0gT1JJRU5URURfRURHRSgnJywqLCosIzUxLC5ULik7CiMxMTMgPSAoIEdFT01FVFJJQ19SRVBSRVNFTlRBVElPTl9DT05URVhUKDMpIApHTE9CQUxfVU5DRVJUQUlOVFlfQVNTSUdORURfQ09OVEVYVCgoIzExNykpIEdMT0JBTF9VTklUX0FTU0lHTkVEX0NPTlRFWFQKKCgjMTE0LCMxMTUsIzExNikpIFJFUFJFU0VOVEFUSU9OX0NPTlRFWFQoJ0NvbnRleHQgIzEnLAogICczRCBDb250ZXh0IHdpdGggVU5JVCBhbmQgVU5DRVJUQUlOVFknKSApOwojMTE0ID0gKCBMRU5HVEhfVU5JVCgpIE5BTUVEX1VOSVQoKikgU0lfVU5JVCguTUlMTEkuLC5NRVRSRS4pICk7CiMxMTUgPSAoIE5BTUVEX1VOSVQoKikgUExBTkVfQU5HTEVfVU5JVCgpIFNJX1VOSVQoJCwuUkFESUFOLikgKTsKIzExNiA9ICggTkFNRURfVU5JVCgqKSBTSV9VTklUKCQsLlNURVJBRElBTi4pIFNPTElEX0FOR0xFX1VOSVQoKSApOwojMTE3ID0gVU5DRVJUQUlOVFlfTUVBU1VSRV9XSVRIX1VOSVQoTEVOR1RIX01FQVNVUkUoMS5FLTA3KSwjMTE0LAogICdkaXN0YW5jZV9hY2N1cmFjeV92YWx1ZScsJ2NvbmZ1c2lvbiBhY2N1cmFjeScpOwojMTE4ID0gUFJPRFVDVF9SRUxBVEVEX1BST0RVQ1RfQ0FURUdPUlkoJ3BhcnQnLCQsKCM3KSk7CkVORFNFQzsKRU5ELUlTTy0xMDMwMy0yMTsK",
+    "feature_id": 1,
+    "file_name": "S01 L output shaft HOLD.step",
+    "name": "Import1",
+    "type": "import_step"
+  }
+}
