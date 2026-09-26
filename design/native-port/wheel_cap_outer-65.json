@@ -864,39 +864,6 @@
     "m4_cut": "Extrude33",
     "also_targets_shell_on_m4": true
   },
-  "verify_gaps": [
-    {
-      "topic": "multi_body_m4",
-      "feature": "Extrude33",
-      "detail": "Also targets body 32 (main_shell). Wheel-caps chapter should cut this cap only; shell chapter owns shell cuts."
-    },
-    {
-      "topic": "no_mirror",
-      "feature": "mirrors",
-      "detail": "No mirror copies wheel caps 56/65 in native history \u2014 left-only bodies as-is."
-    },
-    {
-      "topic": "datum_offset_sign",
-      "feature": "datums",
-      "detail": "XZ offsets negative \u2192 +Y origin (same as carriage/input caps). M4 hole datums offset +104 from origin XY."
-    },
-    {
-      "topic": "m4_radius_asymmetry",
-      "feature": "Extrude33",
-      "detail": "Native dump radii differ slightly: [2.1999999999999993, 2.23606797749979]. Port exact values; do not invent nominal M4=2.0."
-    }
-  ],
-  "jsonc_rebuild_guidance": {
-    "do_not_invent": true,
-    "chapter_suggestion": "design/design_v0_1_wheel_caps.nbcad.jsonc (both caps)",
-    "order": [
-      "Extrude31 new_body blank",
-      "Extrude32 cut seat bore \u00d822.2",
-      "Extrude33 cut M4 (cap target only; shell chapter owns body 32)",
-      "Blank-doc replay; AABB vs shell-first-review assembly-coordinates STL"
-    ],
-    "assemble_coordination": "Wheel-caps chapter after input_caps (or alone for cap exports). Extrude33: chapter cuts this/sibling wheel cap only; do not cut shell 32 here."
-  },
   "aabb_comparison": {
     "native_envelope_from_sketches": {
       "note": "Heuristic from blank sketch UV + Extrude origin Y=93.0 distance 12.0 flip=True",

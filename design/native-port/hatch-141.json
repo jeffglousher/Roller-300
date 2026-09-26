@@ -81,7 +81,7 @@
         "keep_tools": true
       }
     ],
-    "note": "Body 141 is not a simple new_body extrude. MoveCopy5 copies main_shell body 32 (identity). Combine4 intersects with Extrude88 boundary tool 142. Combine13/14 cut eight radial M4 clearances + eight countersinks (patterned from Extrude96 / Revolve1). Blank-doc JSONC port requires full shell history through fid<291 or equivalent shell solid \u2014 do not invent a substitute tube."
+    "note": "Body 141 is copied from main shell body 32 by MoveCopy5. Combine4 intersects that copy with Extrude88. Combine13 and Combine14 cut the radial clearances and countersinks. MoveCopy5 needs the shell solid from features before fid 291."
   },
   "feature_sequence": [
     {
@@ -4296,58 +4296,6 @@
       ],
       "note": "S03 B\u2013H and Combine5/9\u201312 modify shell 32 / lap ledge 144, not hatch 141. Hatch chapter must not re-cut shell."
     }
-  },
-  "verify_gaps": [
-    {
-      "topic": "stale_sketch_plane_datum_id",
-      "feature": "S03 I radial screw clearance master",
-      "detail": "Native sketch.plane.datum_id=96 (S02 I side-load nut pocket Y44.9) but sketch.basis.origin=[0,0,190] matches datum 330 (offset 190 from origin XY). JSONC must use datum 330 / Z=190, not datum 96."
-    },
-    {
-      "topic": "shell_copy_dependency",
-      "feature": "MoveCopy5",
-      "detail": "Hatch starts as identity copy of body 32 at fid 291. Full blank-doc port needs complete shell feature history through that point (large \u2014 Extrude1 + many S02 features). Do NOT invent OD160/ID152 tube as substitute without proving AABB match."
-    },
-    {
-      "topic": "intersect_tool",
-      "feature": "Extrude88 / Combine4",
-      "detail": "Boundary tool sketch S03 A + extent 110 \u2014 fully dumped; intersect needs shell-copy solid."
-    },
-    {
-      "topic": "pattern_mirror_tooling",
-      "feature": "RectangularPattern5/6 + Mirror6/7",
-      "detail": "Eight screw-clearance tools (164\u2013171) and eight countersink tools (172\u2013179) from masters Extrude96 / Revolve1 via MoveCopy (quat+Y-75), pattern count=4 spacing=50 along +Y, mirror YZ."
-    },
-    {
-      "topic": "revolve_countersink",
-      "feature": "Revolve1",
-      "detail": "Only revolve in document; 360\u00b0 about axis_origin (0,123) dir (0,1) \u2014 port exact."
-    },
-    {
-      "topic": "quat_rotation_movecopy",
-      "feature": "MoveCopy8/9",
-      "detail": "rotation quat [0, 0.4617486132350339, 0, 0.8870108331782217] + translation Y-75, pivot Z123. Port exact quaternion; do not invent angle."
-    },
-    {
-      "topic": "coupon_chapter_partial",
-      "feature": "design_v0_1_structural_hatch.nbcad.jsonc",
-      "detail": "Prior chapter = lap/M4 + panel-arc coupons only. This pass: dump complete; JSONC partial until shell dependency resolved. Keep coupons as README note under first-prints/coupons."
-    }
-  ],
-  "jsonc_rebuild_guidance": {
-    "do_not_invent": true,
-    "chapter_suggestion": "design/design_v0_1_structural_hatch.nbcad.jsonc",
-    "order": [
-      "VERIFY BLOCKER: shell body 32 replay through fid<291 (or import retained shell solid)",
-      "MoveCopy5 copy body 32 \u2192 hatch (identity)",
-      "Extrude88 new_body from S03 A (boundary tool 142)",
-      "Combine4 intersect hatch \u2229 142",
-      "Extrude96 master \u2192 MoveCopy8 \u2192 RectangularPattern5 \u2192 Mirror6 \u2192 Combine13 cut hatch",
-      "Revolve1 master \u2192 MoveCopy9 \u2192 RectangularPattern6 \u2192 Mirror7 \u2192 Combine14 cut hatch",
-      "Blank-doc replay; AABB vs first-prints/shell-first-review/curved-hatch-assembly-coordinates.stl"
-    ],
-    "partial_port_ok": "Shell chain too large this pass: land dump + partial JSONC (native sketch/pattern params + VERIFY blockers). Retain coupon note in README; still push dump.",
-    "assemble_coordination": "After barrel_shell (when shell JSONC exists). Hatch chapter must not re-cut shell 32 (Combine12/16 stay shell chapter)."
   },
   "aabb_comparison": {
     "s03a_sketch_point_bbox_uv": {

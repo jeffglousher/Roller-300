@@ -3,7 +3,7 @@ from pathlib import Path
 import json,subprocess,sys,struct,zipfile,os,xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1]
 PROFILE=Path(r'C:\Program Files\Bambu Studio\resources\profiles\BBL')
-PRINT_SET=os.environ.get('ROLLER_PRINT_SET','drive-end-section')
+PRINT_SET=os.environ.get('ROLLER_PRINT_SET','shell-first-review')
 if PRINT_SET not in ['drive-end-section','shell-first-review']:raise SystemExit('Unknown print set')
 PARTS=ROOT/'first-prints'/PRINT_SET
 OUT=PARTS/'slicer-check'/sys.argv[1];OUT.mkdir(parents=True,exist_ok=True)

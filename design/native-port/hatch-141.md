@@ -2,8 +2,6 @@
 
 Source: `Roller-300.nbcad` → `model.json` (schema 7). Structured twin: `hatch-141.json`.
 
-**Dump + JSONC complete; Z closed.** Replay (A): barrel_shell through Combine3 → hatch; assemble-order adds Combine16 on shell. XY match. Z: native/replay tall Z[123,202.932] matches Extrude88@Z123; review STL zmin 154.859 is trimmed ID-chord export — no invented cuts.
-
 ## Creation
 - **MoveCopy5** (`copy: true`) of **body 32** (main_shell) → **body 141**, identity transform
 - Owning combines: **Combine4** intersect tool 142; **Combine13** cut tools 164–171; **Combine14** cut tools 172–179
@@ -40,22 +38,3 @@ Source: `Roller-300.nbcad` → `model.json` (schema 7). Structured twin: `hatch-
 | S03 A sketch UV envelope | X ±69 × Y ±89.7 → **138 × 179.4** (2D only; Extrude88 alone ≠ final hatch) |
 | `first-prints/shell-first-review/curved-hatch-assembly-coordinates.stl` | X[-69.0000,69.0000] Y[-89.7000,89.7000] Z[154.8591,202.9519] → **138.0000 × 179.4000 × 48.0928** (tris 4296) |
 | Blank-doc JSONC replay (shell@fid≤290 → hatch) | X[-69,69] Y[-89.7,89.7] Z[123,202.932] → **138 × 179.4 × 79.932** (tris 3068). XY match. **Z CLOSED**: native matches tall replay; review zmin 154.859 = ID R76 chord at |X|=69 (trimmed export). |X|=69); replay includes Extrude88 plane / Combine3 shoulder material down to Z123. |
-
-## VERIFY gaps (before full JSONC rebuild)
-1. **shell_copy_dependency** (MoveCopy5): Hatch starts as identity copy of body **32** at fid 291. Full blank-doc port needs shell history through that fid (or retained solid). **Do not invent OD160/ID152 tube.**
-2. **stale_sketch_plane_datum_id** (S03 I): `plane.datum_id=96` but `basis.origin z=190` matches datum **330**. Port Z=190.
-3. **stale_sketch_plane_datum_id** (S03 J): prefer chain datum **338** / sketch.basis over plane.datum_id=97.
-4. **quat_rotation_movecopy** (MoveCopy8/9): Port exact quat `[0, 0.4617486132350339, 0, 0.8870108331782217]` — do not invent angle.
-5. **revolve_countersink** (Revolve1): Only revolve in document; axis_origin (0,123), axis_dir (0,1), 360°.
-6. **shell_side_s03**: Extrude89–95 / Combine5,9–12 modify shell 32 / lap 144 — not hatch chapter.
-7. **coupon_partial**: Prior lap/M4 + panel-arc coupons remain print-today until shell dependency clears.
-
-## How the JSONC chapter should be rebuilt
-1. **BLOCKER**: Shell body 32 through fid < 291 (barrel_shell chapter) — or retained solid ≡ native body 32 at MoveCopy5.
-2. MoveCopy5 copy → hatch (identity).
-3. Extrude88 new_body from S03 A (datum Z123, extent 110) → Combine4 intersect.
-4. Extrude96 → MoveCopy8 → RectangularPattern5 → Mirror6 → Combine13 cut.
-5. Revolve1 → MoveCopy9 → RectangularPattern6 → Mirror7 → Combine14 cut.
-6. Blank-doc replay; AABB vs review STL **138.0000×179.4000×48.0928** @ (-69.0000, -89.7000, 154.8591).
-
-See `hatch-141.json` for full sketch entities, datums, and payloads.

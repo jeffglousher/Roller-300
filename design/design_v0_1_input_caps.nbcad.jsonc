@@ -1,10 +1,8 @@
 // Roller-300 design_v0_1_input_caps — modular Design Ops chapter (VERSION 0.1)
 // Role nouns: input_cap_inner (native body 100), input_cap_outer (native body 108)
-// SoT: this .nbcad.jsonc. Replay: blank document only (starting_state empty), or after carriage chapter.
-// Source: design/native-port/input_cap_inner-100.* + input_cap_outer-108.* — dump-only, no invented blocks.
-// Sequence: Extrude65/66/67 (inner) → Extrude72/73/74 (outer) → Extrude144 + Combine17/18 → Extrude145.
-// Shared M3: Extrude67/74 cut caps here; carriage chapter cuts body 97. Skip Mirror2.
-// AABB targets: inner 39×8×17.7 @ 30/66/123.3; outer 39×8×17.7 @ 30/92/123.3.
+// Replay on a blank document, or after the carriage chapter.
+// Sequence: Extrude65/66/67, Extrude72/73/74, Extrude144, Combine17/18, Extrude145. Mirror2 is omitted.
+// AABB: inner 39×8×17.7 at 30/66/123.3; outer 39×8×17.7 at 30/92/123.3.
 {
   "version": 1,
   "name": "Roller-300 design_v0_1_input_caps (VERSION 0.1) — input_cap_inner 100 + input_cap_outer 108",
@@ -12,7 +10,7 @@
   "steps": [
     {
       "chapter": "Shared refs — input_cap_inner (100) + input_cap_outer (108)",
-      "note": "VERSION 0.1. Ported from design/native-port/input_cap_inner-100.* + input_cap_outer-108.* — no invented blocks. Datum offsets use native signed distances. Skip Mirror2 (right 123/124). Extrude67/74 cut caps only here; carriage chapter already cuts body 97. Extrude144 + Combine17/18 corner-limit; Extrude145 recessed M3 heads (left profiles). Assemble: replay after design_v0_1_input_carriage.nbcad.jsonc (or blank-doc this chapter alone for cap exports)."
+      "note": "Datum offsets use native signed distances. Skip Mirror2 (right 123/124). Extrude67/74 cut caps only here; carriage chapter already cuts body 97. Extrude144 + Combine17/18 corner-limit; Extrude145 recessed M3 heads (left profiles). Assemble: replay after design_v0_1_input_carriage.nbcad.jsonc (or blank-doc this chapter alone for cap exports)."
     },
     {
       "id": "ref_origin_xy",
@@ -1305,8 +1303,8 @@
       }
     },
     {
-      "chapter": "VERIFY — AABB + remaining",
-      "note": "Expect input_cap_inner AABB X30–69 Y66–74 Z123.3–141 (39×8×17.7) matching shell-first-review/input-cap-inner-assembly-coordinates.stl. Expect input_cap_outer AABB X30–69 Y92–100 Z123.3–141 matching input-cap-outer-assembly-coordinates.stl. Remaining VERIFY: (1) Extrude67/74 also hit carriage 97 — carriage chapter owns that cut; (2) Mirror2 skipped; (3) Combine18 keep_tools=False vs native True (tool cleanup); (4) Extrude145 right-side circles present but no-op without bodies 123/124."
+      "chapter": "AABB",
+      "note": "Expect input_cap_inner AABB X30–69 Y66–74 Z123.3–141 (39×8×17.7) matching shell-first-review/input-cap-inner-assembly-coordinates.stl. Expect input_cap_outer AABB X30–69 Y92–100 Z123.3–141 matching input-cap-outer-assembly-coordinates.stl."
     }
   ],
   "checks": [

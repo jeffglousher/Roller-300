@@ -169,7 +169,7 @@
     ],
     "export_body_id": 66,
     "aabb_z_status": "closed_native_tall_matches_replay_review_stl_trimmed",
-    "aabb_z_note": "Review STL zmin 154.859 = ID R76 chord at |X|=69 (123+sqrt(76^2-69^2)). Native Extrude88 datum Z123 + Combine3 shoulders \u2192 tall replay; do not invent cuts."
+    "aabb_z_note": "Review STL zmin 154.859 is the ID R76 chord at |X|=69 (123+sqrt(76^2-69^2)). Native Extrude88 datum Z123 plus Combine3 shoulders is the tall replay."
   },
   "main_shell": {
     "source_chapter": "design/design_v0_1_barrel_shell.nbcad.jsonc",

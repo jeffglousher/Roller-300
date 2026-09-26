@@ -1,9 +1,7 @@
 // Roller-300 design_v0_1_input_carriage — modular Design Ops chapter (VERSION 0.1)
 // Role noun: left_input_carriage (native body 97)
-// SoT: this .nbcad.jsonc. Replay: blank document only (starting_state empty).
-// Source: design/native-port/left_input_carriage-97.md + .json — dump-only, no invented blocks.
-// Sequence: Extrude62→86 in fid order; Mirror2 skipped (left-only). Carriage-only M3 cuts.
-// Shared named refs + $ref/$select. AABB target: X30–69 Y2–102 Z88–123 (39×100×35).
+// Replay on a blank document. Sequence Extrude62 through Extrude86. Mirror2 is omitted (left side only).
+// AABB X30–69 Y2–102 Z88–123 (39×100×35).
 {
   "version": 1,
   "name": "Roller-300 design_v0_1_input_carriage (VERSION 0.1) \u2014 left_input_carriage native body 97",
@@ -11,7 +9,7 @@
   "steps": [
     {
       "chapter": "Shared refs \u2014 left_input_carriage (native body 97)",
-      "note": "VERSION 0.1. Ported from design/native-port/left_input_carriage-97.* \u2014 no invented blocks. Datum offsets use native signed distances (XZ negatives \u2192 +Y origin). Skip Mirror2 (right copies 122\u2013124). Extrude67/74 cut carriage only; shared M3 through caps 100/108 deferred to cap chapters / assemble. Transient new_body_ids are tool solids \u2014 not SoT bodies."
+      "note": "Left input carriage, native body 97. Mirror2 is omitted. Extrude67 and Extrude74 cut this carriage only; the cap chapters cut bodies 100 and 108."
     },
     {
       "id": "ref_origin_xy",
@@ -60,7 +58,7 @@
     },
     {
       "chapter": "Extrude62 \u2014 new_body",
-      "note": "Native fid 208; sketch `S02 O LEFT adjustable input carriage`; extent 100.0; flip=True; profiles=[0]; native targets []; new_body_ids tool solids [97] (not SoT). "
+      "note": "Native fid 208; sketch `S02 O LEFT adjustable input carriage`; extent 100.0; flip=True; profiles=[0]; native targets []; new_body_ids tool solids [97]. "
     },
     {
       "id": "pl_carriage_y2",
@@ -209,7 +207,7 @@
     },
     {
       "chapter": "Extrude63 \u2014 join",
-      "note": "Native fid 211; sketch `S02 P supported input post Y70`; extent 8.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [98] (not SoT). "
+      "note": "Native fid 211; sketch `S02 P supported input post Y70`; extent 8.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [98]. "
     },
     {
       "id": "pl_post_y66",
@@ -404,7 +402,7 @@
     },
     {
       "chapter": "Extrude64 \u2014 cut",
-      "note": "Native fid 214; sketch `S02 Q input bearing seat Y70`; extent 8.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [99] (not SoT). "
+      "note": "Native fid 214; sketch `S02 Q input bearing seat Y70`; extent 8.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [99]. "
     },
     {
       "id": "sk_Extrude64_begin",
@@ -506,7 +504,7 @@
     },
     {
       "chapter": "Extrude67 \u2014 cut",
-      "note": "Native fid 223; sketch `S02 T input cap M3 holes Y70`; extent 36.0; flip=False; profiles=[0, 1]; native targets [97, 100]; new_body_ids tool solids [102, 103] (not SoT). VERIFY: native also targeted input caps \u2014 carriage-only chapter cuts left_input_carriage only; shared holes need cap chapters / later assemble."
+      "note": "Native fid 223; sketch `S02 T input cap M3 holes Y70`; extent 36.0; flip=False; profiles=[0, 1]; native targets [97, 100]; new_body_ids tool solids [102, 103]. This step cuts the carriage. The cap chapters cut the mating caps."
     },
     {
       "id": "pl_m3_z106",
@@ -648,7 +646,7 @@
     },
     {
       "chapter": "Extrude68 \u2014 cut",
-      "note": "Native fid 226; sketch `S02 U input cap nut pocket (34.6723, 70)`; extent 7.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [104] (not SoT). "
+      "note": "Native fid 226; sketch `S02 U input cap nut pocket (34.6723, 70)`; extent 7.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [104]. "
     },
     {
       "id": "pl_nut_y65_9",
@@ -770,7 +768,7 @@
     },
     {
       "chapter": "Extrude69 \u2014 cut",
-      "note": "Native fid 229; sketch `S02 U input cap nut pocket (64.6723, 70)`; extent 7.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [105] (not SoT). "
+      "note": "Native fid 229; sketch `S02 U input cap nut pocket (64.6723, 70)`; extent 7.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [105]. "
     },
     {
       "id": "sk_Extrude69_begin",
@@ -873,7 +871,7 @@
     },
     {
       "chapter": "Extrude70 \u2014 join",
-      "note": "Native fid 232; sketch `S02 P supported input post Y96`; extent 8.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [106] (not SoT). "
+      "note": "Native fid 232; sketch `S02 P supported input post Y96`; extent 8.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [106]. "
     },
     {
       "id": "pl_post_y92",
@@ -1068,7 +1066,7 @@
     },
     {
       "chapter": "Extrude71 \u2014 cut",
-      "note": "Native fid 235; sketch `S02 Q input bearing seat Y96`; extent 8.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [107] (not SoT). "
+      "note": "Native fid 235; sketch `S02 Q input bearing seat Y96`; extent 8.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [107]. "
     },
     {
       "id": "sk_Extrude71_begin",
@@ -1170,7 +1168,7 @@
     },
     {
       "chapter": "Extrude74 \u2014 cut",
-      "note": "Native fid 244; sketch `S02 T input cap M3 holes Y96`; extent 36.0; flip=False; profiles=[0, 1]; native targets [97, 108]; new_body_ids tool solids [110, 111] (not SoT). VERIFY: native also targeted input caps \u2014 carriage-only chapter cuts left_input_carriage only; shared holes need cap chapters / later assemble."
+      "note": "Native fid 244; sketch `S02 T input cap M3 holes Y96`; extent 36.0; flip=False; profiles=[0, 1]; native targets [97, 108]; new_body_ids tool solids [110, 111]. This step cuts the carriage. The cap chapters cut the mating caps."
     },
     {
       "id": "sk_Extrude74_begin",
@@ -1293,7 +1291,7 @@
     },
     {
       "chapter": "Extrude75 \u2014 cut",
-      "note": "Native fid 247; sketch `S02 U input cap nut pocket (34.6723, 96)`; extent 7.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [112] (not SoT). "
+      "note": "Native fid 247; sketch `S02 U input cap nut pocket (34.6723, 96)`; extent 7.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [112]. "
     },
     {
       "id": "pl_nut_y91_9",
@@ -1415,7 +1413,7 @@
     },
     {
       "chapter": "Extrude76 \u2014 cut",
-      "note": "Native fid 250; sketch `S02 U input cap nut pocket (64.6723, 96)`; extent 7.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [113] (not SoT). "
+      "note": "Native fid 250; sketch `S02 U input cap nut pocket (64.6723, 96)`; extent 7.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [113]. "
     },
     {
       "id": "sk_Extrude76_begin",
@@ -1518,7 +1516,7 @@
     },
     {
       "chapter": "Extrude77 \u2014 cut",
-      "note": "Native fid 253; sketch `S02 V tension slot (34, 56)`; extent 6.0; flip=False; profiles=[0]; native targets [97]; new_body_ids tool solids [114] (not SoT). "
+      "note": "Native fid 253; sketch `S02 V tension slot (34, 56)`; extent 6.0; flip=False; profiles=[0]; native targets [97]; new_body_ids tool solids [114]. "
     },
     {
       "id": "pl_slot_strap_z87",
@@ -1575,7 +1573,7 @@
     },
     {
       "chapter": "Extrude77 slot profile",
-      "note": "Dump bbox UV {'umin': 30.3, 'umax': 37.7, 'vmin': 53.8, 'vmax': 58.2, 'u_span': 7.4, 'v_span': 4.4}; entity_types={'point': 13, 'line': 4, 'arc': 4}. Recovered as rectangle_locked outer box. VERIFY: dump has R1 corner arcs \u2014 not applied in this port (match dump extents; add fillets later if needed)."
+      "note": "Dump bbox UV {'umin': 30.3, 'umax': 37.7, 'vmin': 53.8, 'vmax': 58.2, 'u_span': 7.4, 'v_span': 4.4}; entity_types={'point': 13, 'line': 4, 'arc': 4}. This step uses the outer rectangle. The native sketch also has R1 corner arcs."
     },
     {
       "id": "sk_Extrude77_slot",
@@ -1644,7 +1642,7 @@
     },
     {
       "chapter": "Extrude78 \u2014 cut",
-      "note": "Native fid 256; sketch `S02 V tension slot (61, 56)`; extent 6.0; flip=False; profiles=[0]; native targets [97]; new_body_ids tool solids [115] (not SoT). "
+      "note": "Native fid 256; sketch `S02 V tension slot (61, 56)`; extent 6.0; flip=False; profiles=[0]; native targets [97]; new_body_ids tool solids [115]. "
     },
     {
       "id": "sk_Extrude78_begin",
@@ -1682,7 +1680,7 @@
     },
     {
       "chapter": "Extrude78 slot profile",
-      "note": "Dump bbox UV {'umin': 57.3, 'umax': 64.7, 'vmin': 53.8, 'vmax': 58.2, 'u_span': 7.4, 'v_span': 4.4}; entity_types={'point': 13, 'line': 4, 'arc': 4}. Recovered as rectangle_locked outer box. VERIFY: dump has R1 corner arcs \u2014 not applied in this port (match dump extents; add fillets later if needed)."
+      "note": "Dump bbox UV {'umin': 57.3, 'umax': 64.7, 'vmin': 53.8, 'vmax': 58.2, 'u_span': 7.4, 'v_span': 4.4}; entity_types={'point': 13, 'line': 4, 'arc': 4}. This step uses the outer rectangle. The native sketch also has R1 corner arcs."
     },
     {
       "id": "sk_Extrude78_slot",
@@ -1751,7 +1749,7 @@
     },
     {
       "chapter": "Extrude79 \u2014 cut",
-      "note": "Native fid 259; sketch `S02 V tension slot (34, 84)`; extent 6.0; flip=False; profiles=[0]; native targets [97]; new_body_ids tool solids [116] (not SoT). "
+      "note": "Native fid 259; sketch `S02 V tension slot (34, 84)`; extent 6.0; flip=False; profiles=[0]; native targets [97]; new_body_ids tool solids [116]. "
     },
     {
       "id": "sk_Extrude79_begin",
@@ -1789,7 +1787,7 @@
     },
     {
       "chapter": "Extrude79 slot profile",
-      "note": "Dump bbox UV {'umin': 30.3, 'umax': 37.7, 'vmin': 81.8, 'vmax': 86.2, 'u_span': 7.4, 'v_span': 4.4}; entity_types={'point': 13, 'line': 4, 'arc': 4}. Recovered as rectangle_locked outer box. VERIFY: dump has R1 corner arcs \u2014 not applied in this port (match dump extents; add fillets later if needed)."
+      "note": "Dump bbox UV {'umin': 30.3, 'umax': 37.7, 'vmin': 81.8, 'vmax': 86.2, 'u_span': 7.4, 'v_span': 4.4}; entity_types={'point': 13, 'line': 4, 'arc': 4}. This step uses the outer rectangle. The native sketch also has R1 corner arcs."
     },
     {
       "id": "sk_Extrude79_slot",
@@ -1858,7 +1856,7 @@
     },
     {
       "chapter": "Extrude80 \u2014 cut",
-      "note": "Native fid 262; sketch `S02 V tension slot (61, 84)`; extent 6.0; flip=False; profiles=[0]; native targets [97]; new_body_ids tool solids [117] (not SoT). "
+      "note": "Native fid 262; sketch `S02 V tension slot (61, 84)`; extent 6.0; flip=False; profiles=[0]; native targets [97]; new_body_ids tool solids [117]. "
     },
     {
       "id": "sk_Extrude80_begin",
@@ -1896,7 +1894,7 @@
     },
     {
       "chapter": "Extrude80 slot profile",
-      "note": "Dump bbox UV {'umin': 57.3, 'umax': 64.7, 'vmin': 81.8, 'vmax': 86.2, 'u_span': 7.4, 'v_span': 4.4}; entity_types={'point': 13, 'line': 4, 'arc': 4}. Recovered as rectangle_locked outer box. VERIFY: dump has R1 corner arcs \u2014 not applied in this port (match dump extents; add fillets later if needed)."
+      "note": "Dump bbox UV {'umin': 57.3, 'umax': 64.7, 'vmin': 81.8, 'vmax': 86.2, 'u_span': 7.4, 'v_span': 4.4}; entity_types={'point': 13, 'line': 4, 'arc': 4}. This step uses the outer rectangle. The native sketch also has R1 corner arcs."
     },
     {
       "id": "sk_Extrude80_slot",
@@ -1965,7 +1963,7 @@
     },
     {
       "chapter": "Extrude81 \u2014 join",
-      "note": "Native fid 265; sketch `S02 W servo case locating lip X37.6723`; extent 40.5; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [118] (not SoT). "
+      "note": "Native fid 265; sketch `S02 W servo case locating lip X37.6723`; extent 40.5; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [118]. "
     },
     {
       "id": "pl_servo_lip_y5",
@@ -2087,7 +2085,7 @@
     },
     {
       "chapter": "Extrude82 \u2014 join",
-      "note": "Native fid 268; sketch `S02 W servo case locating lip X60.1723`; extent 40.5; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [119] (not SoT). "
+      "note": "Native fid 268; sketch `S02 W servo case locating lip X60.1723`; extent 40.5; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [119]. "
     },
     {
       "id": "sk_Extrude82_begin",
@@ -2190,7 +2188,7 @@
     },
     {
       "chapter": "Extrude83 \u2014 join",
-      "note": "Native fid 271; sketch `S02 X servo case end stop Y3.5`; extent 1.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [120] (not SoT). "
+      "note": "Native fid 271; sketch `S02 X servo case end stop Y3.5`; extent 1.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [120]. "
     },
     {
       "id": "pl_endstop_y3_5",
@@ -2312,7 +2310,7 @@
     },
     {
       "chapter": "Extrude84 \u2014 join",
-      "note": "Native fid 274; sketch `S02 X servo case end stop Y46`; extent 1.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [121] (not SoT). "
+      "note": "Native fid 274; sketch `S02 X servo case end stop Y46`; extent 1.0; flip=True; profiles=[0]; native targets [97]; new_body_ids tool solids [121]. "
     },
     {
       "id": "pl_endstop_y46",
@@ -2434,7 +2432,7 @@
     },
     {
       "chapter": "Extrude86 \u2014 cut",
-      "note": "Native fid 287; sketch `S02 Z L removable servo strap passages`; extent 6.0; flip=False; profiles=[0, 1, 2, 3]; native targets [97]; new_body_ids tool solids [133, 134, 135, 136] (not SoT). "
+      "note": "Native fid 287; sketch `S02 Z L removable servo strap passages`; extent 6.0; flip=False; profiles=[0, 1, 2, 3]; native targets [97]; new_body_ids tool solids [133, 134, 135, 136]. "
     },
     {
       "id": "sk_Extrude86_begin",
@@ -2606,8 +2604,8 @@
       }
     },
     {
-      "chapter": "VERIFY \u2014 AABB + remaining",
-      "note": "Expect AABB X30\u201369 Y2\u2013102 Z88\u2013123 (39\u00d7100\u00d735) matching shell-first-review left-input-carriage-assembly-coordinates.stl. Remaining VERIFY: (1) Extrude67/74 M3 also need caps 100/108; (2) Mirror2 skipped \u2014 right 122\u2013124 later; (3) tension-slot R1 arcs not applied; (4) Extrude86 after Mirror2 in native \u2014 left-only OK; (5) datum offset sign vs Design Ops positive-Y convention \u2014 used native signed distances."
+      "chapter": "AABB",
+      "note": "AABB X30-69 Y2-102 Z88-123 (39x100x35), matching first-prints/shell-first-review/left-input-carriage-assembly-coordinates.stl. Tension slots use the outer rectangle; the native sketches also have R1 corner arcs."
     }
   ],
   "checks": [

@@ -2,8 +2,6 @@
 
 Source: `Roller-300.nbcad` → `model.json` (schema 7). Structured twin: `main_shell-32.json`.
 
-**Dump + JSONC complete; Combine16 closed via assemble-order.** Standalone `design_v0_1_barrel_shell.nbcad.jsonc` still skips hatch-only ops; assemble shell→hatch→Combine8/16 yields review envelope. **No invented geometry.**
-
 ## Creation
 - **Extrude1** (`new_body`) from sketch **S02 A continuous exoskeleton 160OD 152ID 210L**
 - Datum 21: offset **105** from origin **XZ** (basis origin `[0, -105, 0]`, normal −Y)
@@ -367,21 +365,3 @@ Source: `Roller-300.nbcad` → `model.json` (schema 7). Structured twin: `main_s
 | `first-prints/shell-first-review/main-shell-assembly-coordinates.stl` | X[-79.9502,80.0000] Y[-105.0000,105.0000] Z[43.0125,202.9875] → **159.9502 × 210.0000 × 159.9751** (tris 18188) |
 | `first-prints/shell-first-review/main-shell-axle-vertical.stl` | X[-79.9751,79.9751] Y[-79.9875,79.9875] Z[0.0000,210.0000] → **159.9502 × 159.9751 × 210.0000** (tris 18188) |
 | Assemble-order replay (w/ Combine16) | X[-79.9259,80] Y[-105,105] Z[43.0185,202.9815] → **159.9259 × 210 × 159.9630** (tris ~13458); MoveCopy5+Combine8+Combine16 applied |
-
-## VERIFY gaps (before JSONC rebuild)
-1. **hatch_tool_dependency** (Combine16): **CLOSED** via assemble-order (shell→hatch→Combine16). Outer AABB ≈ review; Combine5 already opens aperture.
-2. **transient_new_body_ids** (join/cut extrudes): Join/cut extrudes list transient new_body_ids auto-booleaned into 32. Do not keep as SoT bodies unless visibility says so.
-3. **no_fillet_chamfer_hole_features** (document): Native file has zero fillet/chamfer/hole features — all detail is sketch+extrude(+combine/pattern).
-4. **quat_rotation_movecopy** (MoveCopy6): Port exact quat [0.0, 0.4617486132350339, 0.0, 0.8870108331782217] and translation {'x': 0.0, 'y': -75.0, 'z': 0.0} — do not invent angle.
-5. **quat_rotation_movecopy** (MoveCopy7): Port exact quat [0.0, 0.4617486132350339, 0.0, 0.8870108331782217] and translation {'x': 0.0, 'y': -75.0, 'z': 0.0} — do not invent angle.
-6. **quat_rotation_movecopy** (MoveCopy8): Port exact quat [0.0, 0.4617486132350339, 0.0, 0.8870108331782217] and translation {'x': 0.0, 'y': -75.0, 'z': 0.0} — do not invent angle.
-
-## How the JSONC chapter should be rebuilt
-1. Port Extrude1 seed tube (S02 A) exactly — OD160/ID152, extent 210, flip true
-2. Replay all join/cut extrudes targeting body 32 in fid order with exact sketch entities
-3. Replay combines targeting 32 with tool bodies created in-chapter (or retained)
-4. S03 shell-side features (lap ledge / radial cuts) after hatch copy timing — see fids in summary
-5. Combine16 needs hatch body 141 (keep_tools) — coordinate with hatch chapter or retain solid
-6. Blank-doc replay; AABB vs first-prints/shell-first-review/main-shell-assembly-coordinates.stl
-
-See `main_shell-32.json` for full sketch entity lists, datums, and per-feature payloads.

@@ -1,14 +1,11 @@
 // Roller-300 design_v0_1_hardware_refs — modular Design Ops chapter (VERSION 0.1)
-// Role: S01 — Hardware references and load paths — FIRST PRINTABLE COUPONS
-// SoT: this .nbcad.jsonc (JSONC-first). Companion: design/gen_meta.json + design/VERSION.
-// Replay: blank document only. Shared datums: origin planes XY/XZ/YZ (mm; X fwd, Y left, Z up; ground origin below axle midpoint; axle Z=123).
-// Native master Roller-300.nbcad remains editable CAD; this tree is AI-iterate SoT going forward.
+// Role: S01 bearing-seat and M4-nut coupons
+// Replay on a blank document. Millimeters; X forward, Y left, Z up; axle Z=123.
 // Nominals ONLY from PLAN.md / parameters.json — all seats labeled TRIAL/COUPON; not released fits.
 // Coupons in this chapter:
 //   1) bearing_seat_coupon — plate 40×40×8; seat D22.2 × depth 7.2 (trial); through bore D18 shoulder clear (parameters.bearings).
 //   2) m4_nut_coupon — plate; hex pocket AF 7.3 × depth 3.5 (parameters.hatch M4 hatch candidate).
-//   3) M3 captive-nut — VERIFY only (AF/depth absent from PLAN/parameters).
-// Prune prior design_v* only after this VERSION is proven (Design Ops).
+// M3 captive-nut across-flats and depth are not in PLAN.md or parameters.json, so this chapter has no M3 nut coupon.
 {
   "version": 1,
   "name": "Roller-300 design_v0_1_hardware_refs (VERSION 0.1) \u2014 608 seat + M4 nut coupons",
@@ -371,7 +368,7 @@
     },
     {
       "chapter": "M4 hatch captive-nut trial coupon",
-      "note": "COUPON \u2014 PLAN S03 / parameters.hatch: nut_AF_clearance_mm 7.3 \u00d7 nut_thickness_clearance_mm 3.5 deep; screw_candidate M4\u00d712 90\u00b0 countersunk (head/preload VERIFY). M3 captive-nut AF not in parameters/PLAN \u2014 second pad left as VERIFY scaffold only (no invented AF)."
+      "note": "COUPON \u2014 PLAN S03 / parameters.hatch: nut_AF_clearance_mm 7.3 \u00d7 nut_thickness_clearance_mm 3.5 deep; screw_candidate M4\u00d712 90\u00b0 countersunk (head/preload VERIFY). M3 captive-nut AF not in parameters/PLAN \u2014 the second pad has no M3 across-flats because that dimension is not recorded."
     },
     {
       "id": "nut_plate_begin",
@@ -704,7 +701,7 @@
     },
     {
       "chapter": "M3 captive-nut VERIFY (no geometry)",
-      "note": "VERIFY missing: M3 nut AF and pocket depth are not stated in parameters.json / PLAN.md (only M4 hatch 7.3\u00d73.5). Do not invent \u2014 measure hardware then add m3_captive_nut coupon pocket."
+      "note": "M3 nut across-flats and pocket depth are not in parameters.json or PLAN.md (M4 hatch pocket is 7.3 by 3.5). Measure the hardware before adding an M3 nut coupon."
     }
   ],
   "checks": [

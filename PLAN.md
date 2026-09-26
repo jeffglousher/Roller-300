@@ -48,9 +48,7 @@ The complete test article is this main shell and hatch with ONE populated suppor
 
 Assembly: install nuts; fit endless belt around pulley/shaft assemblies before placing them; lower assemblies through hatch; seat bearings and install caps; secure verified shaft retainers/hub; set carriage tension; secure horn/servo restraint; route restrained wiring; install hatch last. Verify reverse removal with wheel fitted and removed. Retention and full guarding gates must close before claiming a complete test-ready assembly.
 
-Evaluate axle-vertical first (nominal160×160×210), then opening-down. Use installed X2D0.4 profiles and actual slices to compare supports, removal access, bearing-seat finish, pocket roofs and layer-load directions. Footprint alone cannot release a print. Print bearing/nut/strap coupons first. Both housing orientations slice: axle-vertical1189.5 g/~29.9 h; opening-down1099.9 g/~29.8 h including supports. Estimated actual shell plastic is596.7 g versus622.6 g; hatch145.0 g plus~2.8 g supports. The support burden is substantial and visual removal review is still blocked by the desktop security prompt. No orientation is released. Carriage review uses floor-down; caps and rim have separate bed-oriented review exports.
-
-Historical `first-prints/drive-end-section/` exports remain unchanged, pinned to `drive-fit-candidate-2026-09-19`. They are not the new complete test unit. New review exports are derived artifacts, not alternate CAD masters.
+Evaluate axle-vertical first (nominal160×160×210), then opening-down. Use installed X2D0.4 profiles and actual slices to compare supports, removal access, bearing-seat finish, pocket roofs and layer-load directions. Footprint alone cannot release a print. Print bearing/nut/strap coupons first. Both housing orientations slice: axle-vertical1189.5 g/~29.9 h; opening-down1099.9 g/~29.8 h including supports. Estimated actual shell plastic is596.7 g versus622.6 g; hatch145.0 g plus~2.8 g supports. The support burden is substantial. No orientation is released. Carriage review uses floor-down; caps and rim have separate bed-oriented review exports.
 
 ## Release gates and records
 
