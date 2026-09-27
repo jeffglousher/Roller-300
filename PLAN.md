@@ -26,7 +26,7 @@ Left wheel bearings are at Y 98–105 and Y 146–153, with the tire (Y 110–15
 
 The shell is still the Ø160 / Ø152 × 210 mm barrel. The old saddles, rails, caps, and shelves stay suppressed. Three supports are added on each side, and each one is only where a load enters the tube.
 
-At the mouth, a 32 mm boss with a 22.2 mm seat holds the inner wheel bearing (left Y 97–105) and an 8 mm web drops from that boss to the belly. The outer wheel bearing is out past the tire, so the barrel does not reach it. Beside that, the same boss-and-web holds the outer input bearing (left Y 92.5–99.5) on the input axis. Under the servo, a foot runs from the case bottom at Z 89 down to the shell. The right side repeats at negative Y.
+At the mouth, a 32 mm boss with a 22.2 mm seat holds the inner wheel bearing (left Y 97–105) and an 8 mm web drops from that boss to the belly. The outer wheel bearing is out past the tire, so the barrel does not reach it. On the input axis, one 8 mm spine runs from the servo foot to the mouth. It carries both input bearings: left Y 65.5–72.5 and Y 92.5–99.5, each in a 32 mm boss with a 22.2 mm seat. A short bridge under the shafts ties the wheel boss to the input boss. The servo foot still runs from Z 89 down to the shell and now meets that spine. The right side repeats at negative Y.
 
 Wheel retention hardware stays: one inboard collar, a 3 mm steel inner-race spacer, then on the outboard side a 10 mm spacer and a 0.5 mm shim filling from the hub tip to the outer bearing. Set measured endplay without bearing preload. The 8 mm sidewalls are the wheel's structure. Positive input-shaft axial retention remains a gate.
 
