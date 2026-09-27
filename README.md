@@ -14,7 +14,7 @@ Indoor-first two-wheel roller with a round barrel exoskeleton. No caster. Mechan
 - `first-prints/coupons/`: fit coupons.
 - `first-prints/native-port/`: meshes replayed from the design chapters.
 
-The first complete bench article is the barrel and hatch with one supported drive and wheel. Servo and horn mounting, input axial retention, clutch interfaces, measured battery, sensor, and cable sizes, positive electronics restraints, joint preload, and service access remain release gates. Nominal envelopes do not prove received-component fit or structural capacity.
+The active model is the barrel skin and the load-path hardware. Internal saddles, carriage, hatch, and electronics mounts are suppressed until the structure is designed around those positions. Servo and horn mounting, input axial retention, clutch interfaces, measured battery, sensor, and cable sizes, and service access remain release gates. Nominal envelopes do not prove received-component fit or structural capacity.
 
 No print has been sent. Offline slices use the installed X2D profiles and do not send a print:
 

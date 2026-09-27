@@ -470,7 +470,7 @@
   "clutch_candidates": [
     {
       "model": "ComInTec00.25 DF d8 T1",
-      "priority": "default purchased qualification candidate; HOLD order until supplier confirms complete installed assembly",
+      "priority": "RETIRED. About $80 each before plates and bushes. Replaced by the collar-adjusted washer slipper on the wheel shaft.",
       "sources": [
         "https://www.comintec.com/download/cataloghi/sezioni/torque_limiters/DF_EN.pdf",
         "https://www.hexelus.com/product-page/comintec-00-25-friction-torque-limiter-df"
