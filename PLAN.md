@@ -24,7 +24,11 @@ Left wheel bearings are at Y 98–105 and Y 146–153, with the tire (Y 110–15
 
 ## S02 — Barrel envelope
 
-The active shell is the Ø160 / Ø152 × 210 mm barrel only. End guards, wheel saddles, bearing seats, caps, carriage rails, and the input carriage are suppressed. They are not the structure to build on. Wheel retention hardware stays: one inboard collar, a 3 mm steel inner-race spacer, then on the outboard side a 10 mm spacer and a 0.5 mm shim filling from the hub tip to the outer bearing. Set measured endplay without bearing preload. The 8 mm sidewalls are the wheel's structure; the old 4 mm mid web is no longer the only disk. Positive input-shaft and input-bearing axial retention remain explicit gates.
+The shell is still the Ø160 / Ø152 × 210 mm barrel. The old saddles, rails, caps, and shelves stay suppressed. Three supports are added on each side, and each one is only where a load enters the tube.
+
+At the mouth, a 32 mm boss with a 22.2 mm seat holds the inner wheel bearing (left Y 97–105) and an 8 mm web drops from that boss to the belly. The outer wheel bearing is out past the tire, so the barrel does not reach it. Beside that, the same boss-and-web holds the outer input bearing (left Y 92.5–99.5) on the input axis. Under the servo, a foot runs from the case bottom at Z 89 down to the shell. The right side repeats at negative Y.
+
+Wheel retention hardware stays: one inboard collar, a 3 mm steel inner-race spacer, then on the outboard side a 10 mm spacer and a 0.5 mm shim filling from the hub tip to the outer bearing. Set measured endplay without bearing preload. The 8 mm sidewalls are the wheel's structure. Positive input-shaft axial retention remains a gate.
 
 ## S03 — Access
 
