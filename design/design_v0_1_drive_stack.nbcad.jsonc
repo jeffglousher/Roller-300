@@ -1,6 +1,6 @@
 // Roller-300 design_v0_1_drive_stack — modular Design Ops chapter (VERSION 0.1)
 // Role: S01/S05 — Drive stack envelopes (not tooth-qualified)
-// SoT: this .nbcad.jsonc. Replay: blank document only.
+// Replay on a blank document.
 // Centers from parameters.transmission: input X=49.6723 Z=123.0; output at X=0 Z=123.0 (one-side Y=0).
 // Pitch cylinders: PD24=22.9183 PD48=45.8366 (= N×3/π HTD3M). ENVELOPE ≠ tooth qualification.
 // Belt: simplified torus cite 210-3M-09 width 9 — envelope ≠ tooth qualification.

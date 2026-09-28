@@ -616,7 +616,7 @@ def dump_body(
     aabb = {
         "review_stl_assembly_coordinates": stl_aabb(review_stl) if review_stl else None,
         "review_stl_alt": stl_aabb(review_stl_alt) if review_stl_alt else None,
-        "match": {"blank_doc_replay_aabb": None, "status": "pending_jsonc_rebuild"},
+        "match": {"blank_doc_replay_aabb": None},
     }
     # seed sketch bbox if Extrude1 present
     seed_sk = sketches_dict.get("S02 A continuous exoskeleton 160OD 152ID 210L")
@@ -640,8 +640,7 @@ def dump_body(
             "excluded_bodies": sorted(exclude_bodies),
             "note": (
                 f"Body {body_id} ({role}) dump includes create/modify features plus tool-body "
-                f"prerequisites (excluding {sorted(exclude_bodies) if exclude_bodies else 'none'}). "
-                "Do not invent geometry — port from this dump only."
+                f"prerequisites (excluding {sorted(exclude_bodies) if exclude_bodies else 'none'})."
             ),
         },
         "feature_sequence": feature_sequence,
@@ -674,61 +673,14 @@ def main():
     dump["timeline_context"] = {
         "seed": "Extrude1 new_body from S02 A (OD160/ID152 × 210L)",
         "hatch_dependency": {
-            "note": "MoveCopy5 copies body 32 → 141 (identity). Hatch chapter blocked until this shell dump is JSONC-ported.",
-            "combine16": "Combine16 cut tgt=32 tools=[141] keep_tools=true — shell opening for hatch; tool 141 is hatch chapter (excluded from transitive expand).",
+            "note": "MoveCopy5 copies body 32 to 141 (identity).",
+            "combine16": "Combine16 cut tgt=32 tools=[141] keep_tools=true. Tool 141 is the hatch.",
         },
         "excluded_hatch_chain": (
             "Body 141 and its local Extrude88/Combine4/fastener patterns are in hatch-141 dump; "
             "shell dump records Combine16 reference only."
         ),
     }
-    dump["jsonc_rebuild_guidance"] = {
-        "do_not_invent": True,
-        "chapter_suggestion": "design/design_v0_1_barrel_shell.nbcad.jsonc",
-        "order": [
-            "Port Extrude1 seed tube (S02 A) exactly — OD160/ID152, extent 210, flip true",
-            "Replay all join/cut extrudes targeting body 32 in fid order with exact sketch entities",
-            "Replay combines targeting 32 with tool bodies created in-chapter (or retained)",
-            "S03 shell-side features (lap ledge / radial cuts) after hatch copy timing — see fids in summary",
-            "Combine16 needs hatch body 141 (keep_tools) — coordinate with hatch chapter or retain solid",
-            "Blank-doc replay; AABB vs first-prints/shell-first-review/main-shell-assembly-coordinates.stl",
-        ],
-        "partial_port_ok": (
-            "Dump is SoT this pass. JSONC rebuild is follow-up — do not invent blocks; "
-            "may stage seed Extrude1 only as scaffold if dump is complete."
-        ),
-        "assemble_coordination": "barrel_shell before structural_hatch. Hatch MoveCopy5 requires shell solid.",
-        "next_after_dump": "shell JSONC chapter from this dump; then finish hatch blank-doc replay",
-    }
-
-    # Extra VERIFY for shell
-    dump["verify_gaps"].extend(
-        [
-            {
-                "topic": "hatch_tool_dependency",
-                "feature": "Combine16",
-                "detail": (
-                    "Combine16 cuts shell 32 with hatch body 141 (keep_tools). "
-                    "Full final shell AABB matching review STL needs hatch solid or hatch chapter first. "
-                    "Early shell port may compare pre-Combine16 AABB separately."
-                ),
-            },
-            {
-                "topic": "transient_new_body_ids",
-                "feature": "join/cut extrudes",
-                "detail": (
-                    "Join/cut extrudes list transient new_body_ids auto-booleaned into 32. "
-                    "Do not keep as SoT bodies unless visibility says so."
-                ),
-            },
-            {
-                "topic": "no_fillet_chamfer_hole_features",
-                "feature": "document",
-                "detail": "Native file has zero fillet/chamfer/hole features — all detail is sketch+extrude(+combine/pattern).",
-            },
-        ]
-    )
-
     out_json = args.out_json or ROOT / f"design/native-port/{args.role}-{args.body}.json"
     out_md = args.out_md or ROOT / f"design/native-port/{args.role}-{args.body}.md"
     out_json.parent.mkdir(parents=True, exist_ok=True)
@@ -847,17 +799,8 @@ def render_md(dump: dict, role: str, body_id: int) -> str:
             f"Y[{alt['ymin']:.4f},{alt['ymax']:.4f}] Z[{alt['zmin']:.4f},{alt['zmax']:.4f}] → "
             f"**{alt['dx']:.4f} × {alt['dy']:.4f} × {alt['dz']:.4f}** (tris {alt['tri_count']}) |"
         )
-    lines.append("| Blank-doc JSONC replay | **PENDING** — dump-only this pass |")
     lines.append("")
-    lines.append("## VERIFY gaps (before JSONC rebuild)")
-    for i, g in enumerate(dump["verify_gaps"], 1):
-        lines.append(f"{i}. **{g['topic']}** ({g.get('feature')}): {g['detail']}")
-    lines.append("")
-    lines.append("## How the JSONC chapter should be rebuilt")
-    for i, step in enumerate(dump["jsonc_rebuild_guidance"]["order"], 1):
-        lines.append(f"{i}. {step}")
-    lines.append("")
-    lines.append(f"See `{role}-{body_id}.json` for full sketch entities, datums, and payloads.")
+    lines.append(f"Sketch entities are in `{role}-{body_id}.json`.")
     lines.append("")
     return "\n".join(lines)
 

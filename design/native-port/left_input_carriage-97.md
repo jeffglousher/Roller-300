@@ -1,7 +1,6 @@
 # left_input_carriage (body 97) — native feature dump
 
 Source: `Roller-300.nbcad` → `model.json` (schema 7). Structured twin: `left_input_carriage-97.json`.
-**This pass is dump-only — no invented JSONC geometry.**
 
 ## Creation
 - **Extrude62** (`new_body`) from sketch **S02 O LEFT adjustable input carriage**
@@ -44,21 +43,3 @@ Between these, same S02 block also builds caps (Extrude65/66 → 100, Extrude72/
 | Sketch envelope heuristic | X 30–69, Y 2–102, Z 88–123 → **39 × 100 × 35** |
 | `shell-first-review/left-input-carriage-assembly-coordinates.stl` | **exact match** (30–69, 2–102, 88–123) |
 | `.../left-input-carriage-floor-down.stl` | −19.5–19.5, −50–50, 0–35 → same extents **39 × 100 × 35** (reoriented) |
-
-## VERIFY gaps (before JSONC rebuild)
-1. **Join/cut `new_body_ids`**: every join/cut also lists transient `new_body_ids` (98, 99, …). Treat as tool solids auto-booleaned into 97 — do **not** keep as SoT bodies unless visibility says otherwise.
-2. **Multi-body cuts**: Extrude67 (97+100) and Extrude74 (97+108). Carriage-only chapter must either stub-include caps or defer shared M3 hole cuts until caps exist.
-3. **Mirror2 timing**: right copies mirrored **before** Extrude86 strap cuts on left 97 — confirm whether body 122 needs a mirrored Extrude86 or was intentionally pre-cut-free.
-4. **Datum offset sign**: native uses negative offset from XZ with positive Y origin (e.g. −2 → Y=2). Match Design Ops plane convention before replaying flip extrudes.
-5. **Profiles**: only `profile_indices` stored; recover closed loops from sketch entities (rects/circles). Bearing seats are single circles; M3 sketches are two circles; strap passages are four rectangles.
-6. **No fillet/chamfer/hole features** in the whole native file — all detail is sketch+extrude.
-
-## How the JSONC chapter should be rebuilt
-1. Port **in fid order** from this dump — datums → sketches (entities + constraints) → extrudes with exact operation / extent / flip / profile_indices.
-2. Name the body `left_input_carriage` (Design Ops); map native id 97 only in comments/meta.
-3. Skip Mirror2 for a left-only chapter; note right-side bodies 122–124 for a later assembly pass.
-4. Do **not** invent blocks, lips, or holes that are not in the dump.
-5. Blank-doc replay → compare AABB to assembly-coordinates STL (**39×100×35** at mins 30/2/88) before any `first-prints/` export.
-6. Next status after rebuild: inspect match, then export.
-
-See `left_input_carriage-97.json` for full sketch entity lists, datum sources, and per-feature payloads.

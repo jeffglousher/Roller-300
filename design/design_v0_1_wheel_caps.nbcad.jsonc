@@ -1,9 +1,8 @@
 // Roller-300 design_v0_1_wheel_caps — modular Design Ops chapter (VERSION 0.1)
 // Role nouns: wheel_cap_inner (native body 56), wheel_cap_outer (native body 65)
-// SoT: this .nbcad.jsonc. Replay: blank document only (starting_state empty).
-// Source: design/native-port/wheel_cap_inner-56.* + wheel_cap_outer-65.* — dump-only, no invented blocks.
-// Sequence: Extrude23/24/25 (inner) → Extrude31/32/33 (outer). Skip shell cuts on Extrude25/33.
-// AABB targets: inner 50×12×16.7 @ -25/45/123.3; outer 50×12×16.7 @ -25/93/123.3.
+// Replay on a blank document.
+// Sequence: Extrude23/24/25 (inner), Extrude31/32/33 (outer). Extrude25 and Extrude33 cut these caps only.
+// AABB: inner 50×12×16.7 at -25/45/123.3; outer 50×12×16.7 at -25/93/123.3.
 {
   "version": 1,
   "name": "Roller-300 design_v0_1_wheel_caps (VERSION 0.1) \u2014 wheel_cap_inner 56 + wheel_cap_outer 65",
@@ -11,7 +10,7 @@
   "steps": [
     {
       "chapter": "Shared refs \u2014 wheel_cap_inner (56) + wheel_cap_outer (65)",
-      "note": "VERSION 0.1. Ported from design/native-port/wheel_cap_inner-56.* + wheel_cap_outer-65.* \u2014 no invented blocks. Datum offsets use native signed distances. Extrude25/33 cut caps only here; shell chapter owns body 32. AABB targets: inner 50\u00d712\u00d716.7 @ -25/45/123.3; outer 50\u00d712\u00d716.7 @ -25/93/123.3. Assemble: replay after design_v0_1_input_caps.nbcad.jsonc (or blank-doc this chapter alone for cap exports)."
+      "note": "Datum offsets use native signed distances. Extrude25/33 cut caps only here; shell chapter owns body 32. AABB targets: inner 50\u00d712\u00d716.7 @ -25/45/123.3; outer 50\u00d712\u00d716.7 @ -25/93/123.3. Assemble: replay after design_v0_1_input_caps.nbcad.jsonc (or blank-doc this chapter alone for cap exports)."
     },
     {
       "id": "ref_origin_xy",

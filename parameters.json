@@ -30,10 +30,10 @@
     "seat_diameter": 22.2,
     "seat_status": "Trial clearance; coupon required",
     "wheel_centers_y": [
-      -99,
-      -51,
-      51,
-      99
+      -149.5,
+      -101.5,
+      101.5,
+      149.5
     ],
     "wheel_span_each": 48,
     "wheel_axial_seat_width": 7.2,
@@ -49,7 +49,7 @@
     "diameter": 8,
     "wheel_y_left": [
       35,
-      148
+      160
     ],
     "input_y_left": [
       52,
@@ -70,7 +70,15 @@
       49.6723,
       123
     ],
-    "complete_pulley_belt_clutch_inboard_shift": 4,
+    "left_pulley_y_mm": [
+      75.75,
+      90.25
+    ],
+    "left_belt_y_mm": [
+      78.5,
+      87.5
+    ],
+    "position_note": "Both pulleys stay at Y 75.75-90.25. The 48T bore is 27 mm. A sleeve Y 75.75-90.25, OD 26.8, ID 8.2, fills it. Slipper, inboard of that face: pulley washer 74.25-75.75, fiber 72.25-74.25, shaft washer 70.75-72.25, Belleville stack 64.75-70.75, adjuster collar 55.75-64.75. Servo cradle occupies Y 1-45.5 around the known case. Coupler Y 45.5-56.5 on the input axis. Wheel bearings Y 98-105 and Y 146-153. Hub, 10 mm spacer, 0.5 mm shim, and outer bearing meet at Y 135.5, 145.5, and 146.",
     "carriage_slot_size_xy": [
       7.4,
       4.4
@@ -81,8 +89,8 @@
       1.5
     ],
     "travel_status": "CAD clearance screen only; no qualified belt tension or installed belt stretch",
-    "clutch_candidate": "ComInTec 00.25 DF d8 T1 - default qualification candidate, supplier assembly quote pending",
-    "clutch_status": "Schematic envelope; exact driving/driven plates, bush, spring, retention, torque/duty and price HOLD"
+    "clutch_candidate": "Collar-adjusted friction slipper on the wheel shaft. Retired ComInTec 00.25 as too expensive.",
+    "clutch_status": "Adjuster collar, Belleville stack, two steel washers, one fiber washer, 12 mm bush under the 48T. Slip torque is bench-set. 25T tooth form and servo ear holes remain unmeasured."
   },
   "hatch": {
     "opening_xy_mm": [
@@ -507,10 +515,10 @@
   "powered_test_release": false,
   "physical_tests_performed": false,
   "wheel_retention": {
-    "wheel_shaft_length_mm": 113,
+    "wheel_shaft_length_mm": 125,
     "left_shaft_y_mm": [
       35,
-      148
+      160
     ],
     "left_inboard_collar_y_mm": [
       35.5,
@@ -521,12 +529,12 @@
       47.5
     ],
     "left_outboard_shim_y_mm": [
-      102.5,
-      103
+      145.5,
+      146
     ],
     "left_outboard_spacer_y_mm": [
-      103,
-      113
+      135.5,
+      145.5
     ],
     "nominal_spacer_ID_mm": 8,
     "spacer_OD_mm": [

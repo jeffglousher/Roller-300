@@ -1,7 +1,7 @@
 {
   "generated_from": "Roller-300.nbcad / model.json",
   "schema_version": 7,
-  "note": "Native-derived inventory for Design Ops JSONC port. Repo tracking SoT; sessions transitory. Do not invent geometry \u2014 port from these bodies.",
+  "note": "Inventory of bodies in Roller-300.nbcad.",
   "target_bodies": {
     "32": "main_shell",
     "56": "wheel_cap_inner",

@@ -188,7 +188,7 @@
     "excluded_bodies": [
       141
     ],
-    "note": "Body 32 (main_shell) dump includes create/modify features plus tool-body prerequisites (excluding [141]). Do not invent geometry \u2014 port from this dump only."
+    "note": "Body 32 (main_shell) dump includes create/modify features plus tool-body prerequisites (excluding [141])."
   },
   "feature_sequence": [
     {
@@ -86356,38 +86356,6 @@
       "plane_datum_id_field": 145
     }
   },
-  "verify_gaps": [
-    {
-      "topic": "hatch_tool_dependency",
-      "feature": "Combine16",
-      "detail": "Combine16 cuts shell 32 with hatch body 141 (keep_tools). Full final shell AABB matching review STL needs hatch solid or hatch chapter first. Early shell port may compare pre-Combine16 AABB separately."
-    },
-    {
-      "topic": "transient_new_body_ids",
-      "feature": "join/cut extrudes",
-      "detail": "Join/cut extrudes list transient new_body_ids auto-booleaned into 32. Do not keep as SoT bodies unless visibility says so."
-    },
-    {
-      "topic": "no_fillet_chamfer_hole_features",
-      "feature": "document",
-      "detail": "Native file has zero fillet/chamfer/hole features \u2014 all detail is sketch+extrude(+combine/pattern)."
-    },
-    {
-      "topic": "quat_rotation_movecopy",
-      "feature": "MoveCopy6",
-      "detail": "Port exact quat [0.0, 0.4617486132350339, 0.0, 0.8870108331782217] and translation {'x': 0.0, 'y': -75.0, 'z': 0.0} \u2014 do not invent angle."
-    },
-    {
-      "topic": "quat_rotation_movecopy",
-      "feature": "MoveCopy7",
-      "detail": "Port exact quat [0.0, 0.4617486132350339, 0.0, 0.8870108331782217] and translation {'x': 0.0, 'y': -75.0, 'z': 0.0} \u2014 do not invent angle."
-    },
-    {
-      "topic": "quat_rotation_movecopy",
-      "feature": "MoveCopy8",
-      "detail": "Port exact quat [0.0, 0.4617486132350339, 0.0, 0.8870108331782217] and translation {'x': 0.0, 'y': -75.0, 'z': 0.0} \u2014 do not invent angle."
-    }
-  ],
   "aabb_comparison": {
     "review_stl_assembly_coordinates": {
       "xmin": -79.95016479492188,
@@ -86442,24 +86410,9 @@
   "timeline_context": {
     "seed": "Extrude1 new_body from S02 A (OD160/ID152 \u00d7 210L)",
     "hatch_dependency": {
-      "note": "MoveCopy5 copies body 32 \u2192 141 (identity). Hatch chapter blocked until this shell dump is JSONC-ported.",
+      "note": "MoveCopy5 copies body 32 to 141 (identity).",
       "combine16": "Combine16 cut tgt=32 tools=[141] keep_tools=true \u2014 shell opening for hatch; tool 141 is hatch chapter (excluded from transitive expand)."
     },
     "excluded_hatch_chain": "Body 141 and its local Extrude88/Combine4/fastener patterns are in hatch-141 dump; shell dump records Combine16 reference only."
-  },
-  "jsonc_rebuild_guidance": {
-    "do_not_invent": true,
-    "chapter_suggestion": "design/design_v0_1_barrel_shell.nbcad.jsonc",
-    "order": [
-      "Port Extrude1 seed tube (S02 A) exactly \u2014 OD160/ID152, extent 210, flip true",
-      "Replay all join/cut extrudes targeting body 32 in fid order with exact sketch entities",
-      "Replay combines targeting 32 with tool bodies created in-chapter (or retained)",
-      "S03 shell-side features (lap ledge / radial cuts) after hatch copy timing \u2014 see fids in summary",
-      "Combine16 needs hatch body 141 (keep_tools) \u2014 coordinate with hatch chapter or retain solid",
-      "Blank-doc replay; AABB vs first-prints/shell-first-review/main-shell-assembly-coordinates.stl"
-    ],
-    "partial_port_ok": "Dump is SoT this pass. JSONC rebuild is follow-up \u2014 do not invent blocks; may stage seed Extrude1 only as scaffold if dump is complete.",
-    "assemble_coordination": "barrel_shell before structural_hatch. Hatch MoveCopy5 requires shell solid.",
-    "next_after_dump": "hatch blank-doc finish; then Combine16 on shell"
   }
 }

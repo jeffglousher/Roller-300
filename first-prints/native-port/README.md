@@ -1,8 +1,6 @@
 # Native-port first prints
 
-Meshes here are **replayed from Design Ops JSONC chapters that were ported from
-`design/native-port/` dumps** of `Roller-300.nbcad` — **not** from the deprecated
-`first-prints/one-drive/` placeholder blocks.
+Meshes replayed from the VERSION 0.1 chapters in `design/`.
 
 ## left-input-carriage
 
@@ -79,4 +77,4 @@ Assemble-order blank-doc: shell through Combine3 → hatch → shell remainder +
 | AABB (replay / native) | X[-69,69] Y[-89.7,89.7] Z[123,202.932] → **138 × 179.4 × 79.932** |
 | AABB review STL (trimmed) | X-69–69 Y-89.7–89.7 Z154.859–202.952 → **138 × 179.4 × 48.0928** (`shell-first-review/curved-hatch-assembly-coordinates.stl`) |
 
-Replay (A): blank doc → barrel_shell through Combine3 → hatch chapter (or assemble-order with Combine16). XY match. **Z CLOSED**: native Extrude88 @ Z123 + Combine3 shoulders → tall solid matches dump; review STL zmin 154.859 is trimmed ID-R76 chord at |X|=69 (`123+sqrt(76²-69²)`) — do not invent cuts. Combine16 applied in assemble-order for main-shell opening.
+Replay: blank document, barrel shell through Combine3, then the hatch chapter. Assemble order applies Combine16 on the shell. XY matches the review mesh. Native and replay height is Z 123 to 202.932. The review STL zmin 154.859 is the trimmed inner-diameter chord at |X|=69 (`123+sqrt(76²-69²)`).

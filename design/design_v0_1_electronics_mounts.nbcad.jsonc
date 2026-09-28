@@ -1,8 +1,6 @@
 // Roller-300 design_v0_1_electronics_mounts — modular Design Ops chapter (VERSION 0.1)
-// Role: S04 — Direct mounting and service paths — FIRST PRINTABLE shelf/standoff + allowance coupons
-// SoT: this .nbcad.jsonc (JSONC-first). Companion: design/gen_meta.json + design/VERSION.
-// Replay: blank document only. Shared datums: mm; X fwd, Y left, Z up; ground origin below axle midpoint; axle Z=123.
-// Native master Roller-300.nbcad remains editable CAD; this tree is AI-iterate SoT going forward.
+// Role: S04 shelf, standoff, and allowance coupons
+// Replay on a blank document. Millimeters; X forward, Y left, Z up; axle Z=123.
 // Coupons in this chapter (print flat on XY; NOT vehicle-posed fit solids):
 //   1) pi_shelf_standoff_coupon — shelf 70×40×2 + four 5×5×5 corner posts at 65×30 bare-board corners (parameters.hardware_envelopes.pi size_mm / PLAN S04 nominal).
 //   2) pixracer_shelf_coupon — plate 42×42×3 with 36×36×0.8 footprint recess (PLAN S04 + layout.pixracer_outline_xy as [xmin,xmax,ymin,ymax]=36×36; height UNMEASURED).
@@ -10,8 +8,7 @@
 //   4) battery_allowance_tray_coupon — open tray inner 85×30, walls 2, height 8 (layout.battery_unmeasured_size X×Y; Z=90 UNMEASURED — VERIFY; PLAN 90×85×30).
 //   5) thermal_envelope_shelf_coupon — plate 80×50×4 with 71×42×2 recess (TOPDON TC002C Duo nominal envelope; retainer/optical aperture HOLD).
 // Named vehicle refs (comment/placement only): battery min Z78, pi Z161, pixracer Z168, thermal min Z140, tof X plane 75 / Y centers — from parameters.layout / direct_mount_status.
-// Do NOT invent: board retainers, sensor depth, cable bends, charging contacts, strap passage sizes, optical aperture, Pi/Pixracer hole patterns.
-// Prune prior design_v* only after this VERSION is proven (Design Ops).
+// Unmeasured, and absent from these coupons: board retainers, sensor depth, cable bends, charging contacts, strap passage sizes, optical aperture, Pi and Pixracer hole patterns.
 {
   "version": 1,
   "name": "Roller-300 design_v0_1_electronics_mounts (VERSION 0.1) — shelf/standoff + allowance coupons",

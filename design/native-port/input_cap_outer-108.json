@@ -1521,48 +1521,6 @@
       124
     ]
   },
-  "verify_gaps": [
-    {
-      "topic": "multi_body_m3",
-      "feature": "Extrude74",
-      "detail": "Also targets body 97 (carriage). Caps chapter should cut this cap; carriage chapter already cuts 97."
-    },
-    {
-      "topic": "combine_tool",
-      "feature": "Extrude144",
-      "detail": "Tool body 234 kept (keep_tools True on Combine17/18). Need tool solid in chapter then intersect."
-    },
-    {
-      "topic": "extrude145",
-      "feature": "Extrude145",
-      "detail": "Cuts all four caps (L/R inner/outer). Left-only chapter: target this body only (or both left caps)."
-    },
-    {
-      "topic": "mirror2",
-      "feature": "Mirror2",
-      "detail": "Skip for left-only; right bodies 123/124 later."
-    },
-    {
-      "topic": "datum_offset_sign",
-      "feature": "datums",
-      "detail": "XZ offsets negative \u2192 +Y origin (same as carriage). Extrude144 datum distance +105 \u2192 origin Y=-105 (unusual)."
-    }
-  ],
-  "jsonc_rebuild_guidance": {
-    "do_not_invent": true,
-    "chapter_suggestion": "design/design_v0_1_input_caps.nbcad.jsonc (both caps) or extend carriage",
-    "order": [
-      "Extrude72 new_body blank",
-      "Extrude73 cut bore",
-      "Extrude74 cut M3 (cap target; carriage already has carriage-only cut)",
-      "Extrude144 new_body corner-limit tool",
-      "Combine18 intersect cap with tool",
-      "Extrude145 cut recessed M3 heads on this cap (and optionally sibling)",
-      "Skip Mirror2",
-      "Blank-doc replay; AABB vs shell-first-review assembly-coordinates STL"
-    ],
-    "assemble_coordination": "Caps chapter after carriage blank/chapter. Extrude67/74: carriage chapter cuts 97 only; caps chapter cuts 100/108 only with same sketches. Extrude145 left-only targets 100+108."
-  },
   "aabb_comparison": {
     "native_envelope_from_sketches": {
       "note": "Heuristic from blank sketch UV + Extrude origin Y=92.0 distance 8.0 flip=True",

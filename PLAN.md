@@ -2,7 +2,7 @@
 
 ## Source and status
 
-`Roller-300.nbcad` is the only editable CAD master. Use native visibility, sections and history within it. `parameters.json` is the manually synchronized dimension/measurement record, not another geometry generator. New shell, saddle, carriage, hatch and mounting features replace the inherited frame. Earlier frame versions remain in Git; S01 retains only hardware and wheel references.
+`Roller-300.nbcad` is the only editable CAD master. Use native visibility, sections and history within it. `parameters.json` is the manually synchronized dimension/measurement record, not another geometry generator. The active model is the barrel skin plus the load-path hardware. Saddles, caps, carriage, rails, hatch, and electronics mounts stay in history and are suppressed until a structure is designed around these positions.
 
 This is a mechanical development model, not a print release, structural qualification or powered-test release. No physical tests have been performed. Electrical/software compatibility is outside this revision. Two wheels without a caster remain the accepted architecture; active pitch control is a separate unimplemented requirement.
 
@@ -14,43 +14,35 @@ Millimeters; X forward, Y left, Z up. Ground origin below axle midpoint; axle Z=
 
 ## S01 — Hardware references and load paths
 
-Owned INJORA INJS035-360 partial case, purchased 210-3M-09 belt candidate, 24/48 pulley proposals, 8 mm independent shafts, 608 bearings and wheel/hub references remain. Matching horn, ears, clutch details, shaft retention and manufactured pulley tooth geometry remain HOLD. The ComInTec 00.25 DF d8 T1 is a qualification candidate; see `parts-sources.json` for actual evidence and limitations. No torque setting is qualified.
+Owned INJORA INJS035-360, the 210-3M-09 belt, 24/48 pulleys, 8 mm shafts, 608 bearings, and the wheel hub stay. The ComInTec 00.25 limiter is retired: about $80 each before plates and bushes, and the installed pair was never quoted. Slip is a collar-adjusted stack of ordinary metal washers on the wheel shaft.
 
-Per side: purchased horn → supported input shaft/pulley → belt → output pulley/limiter → live wheel shaft and clamp hub. Wheel forces pass through both wheel bearings into integral saddles and shell. Input-pulley forces pass through carriage bearings into the fixed shell. Neither wheel suspension nor sole pinion support uses the servo bearings.
+Per side the printed parts are the servo cradle, the 19 mm coupler, the two pulleys, and the wheel. Everything else in the drive is purchased metal. The cradle clamps the known 20 × 40.5 × 40.5 case. The coupler runs from the case face at Y 45.5 onto the input shaft, 8 mm bore, 11 mm long. Ear holes and the 25T tooth form stay uncut until the sample is measured; the cradle does not need them.
 
-Wheel bearings remain at |Y|=51 and99, span48 mm. The wheel shaft now extends inward to |Y|=35 (113 mm length); wheel/hub positions remain fixed. Input bearings shift to |Y|=70 and96, shaft |Y|=52…101. Pulley pair, belt and clutch move inward4 mm together for support clearance. Input center X=49.6723, Z=123. Slots provide3 mm total carriage travel. Exact checks at -1.5,0,+1.5 mm pass for the modeled movable input group after limiting cap outside corners to R70 and recessing M3 heads. Belt tension, received hardware and complete tool sweeps remain unqualified.
+The 24T is fixed on the input shaft. The 48T prototype bore is 27 mm. A sleeve, OD 26.8 and ID 8.2, fills that bore and is the running fit on the shaft, so the pulley is not floating on a loose bush. Inboard of that pulley, on the wheel shaft: adjuster collar Y 55.75–64.75, Belleville stack Y 64.75–70.75 (OD 23), shaft washer Y 70.75–72.25, fiber washer Y 72.25–74.25, pulley washer Y 74.25–75.75 bolted to the pulley outside the fiber. The shaft washer is locked by a filed flat. Tightening the collar raises the slip torque. A locked wheel slips here and the servo keeps turning. The belt and the 24T are still upstream of the slip.
 
-## S02 — Primary barrel shell
+Left wheel bearings are at Y 98–105 and Y 146–153, with the tire (Y 110–150) between them. The hub tip, the 10 mm spacer, the 0.5 mm shim, and the outer bearing meet at Y 135.5, 145.5, and 146. Each tire face has an 8 mm sidewall. The shaft runs Y 35–160. Input bearings stay at |Y|=70 and 96. Both pulleys stay at Y 75.75–90.25. Input center X=49.6723, Z=123. The right side is the mirror. Slip torque is set on the bench. No number is qualified yet.
 
-The new main shell carries four wheel-bearing saddles, short carriage rails and integral end guards. Wheel caps are removable. D22.2 bearing seats are trial coupon dimensions. Lower wheel-seat shoulders locate outer races within7.2 mm axial pockets; verify contact against the purchased bearing drawing. Clutch adjustment must never clamp inner and outer races together.
+## S02 — Barrel envelope
 
-Each removable input carriage has two bearing supports, caps, servo locating lips and strap passages. It is a service/tension part, not a separate drive-end chassis. Wheel caps and carriage joints use M4; input caps use recessed M3x30 candidates. Captive-nut fits, screw lengths and preload require verification. Wheel retention uses one inboard collar, a3 mm steel inner-race spacer, and an outboard0.5 mm shim plus10 mm steel spacer against the clamping hub. Set measured endplay without bearing preload. Positive input-shaft and input-bearing axial retention remain explicit gates.
+The shell is still the Ø160 / Ø152 × 210 mm barrel. The old saddles, rails, caps, and shelves stay suppressed. Three supports are added on each side, and each one is only where a load enters the tube.
 
-## S03 — Structural access hatch
+At the mouth, a 32 mm boss with a 22.2 mm seat holds the inner wheel bearing (left Y 97–105) and an 8 mm web drops from that boss to the belly. The outer wheel bearing is out past the tire, so the barrel does not reach it. On the input axis, one 8 mm spine runs from the servo foot to the mouth. It carries both input bearings: left Y 65.5–72.5 and Y 92.5–99.5, each in a 32 mm boss with a 22.2 mm seat. A short bridge under the shafts ties the wheel boss to the input boss. The servo foot still runs from Z 89 down to the shell and now meets that spine. The right side repeats at negative Y.
 
-The upper curved panel comes from the same barrel: approximately120°, opening180 mm long, leaving15 mm end bands. Projected opening corners R8.3; nominal projected panel gap0.3 mm. An approximately8 mm curved lap ledge registers the panel and supplies load-transfer contact surfaces.
+Wheel retention hardware stays: one inboard collar, a 3 mm steel inner-race spacer, then on the outboard side a 10 mm spacer and a 0.5 mm shim filling from the hub tip to the outer bearing. Set measured endplay without bearing preload. The 8 mm sidewalls are the wheel's structure. Positive input-shaft axial retention remains a gate.
 
-Eight radial M4 stations at ±55° from top and Y=−75,−25,25,75 clamp the joint. Candidate screws M4×12,90° countersunk; nut cavities7.3 mm across flats ×3.5 mm deep. Source actual hardware and validate contact, countersink ligaments, preload, PETG creep and repeated opening before any structural claim.
+## S03 — Access
 
-Both wheel-bearing pairs remain in the main shell. Hatch closure must not alter alignment or tension. Electronics remain fixed when the panel lifts away. Outer cap tool access with a wheel installed needs a long angled hex tool through the hatch. Once unbolted, slide the outer cap inward before lifting through the opening. A blind relief behind the end guard clears the outer bearing during lowering. Board-shelf driver holes expose the inner cap screws after board removal. Actual swept-tool/physical verification remains necessary.
+The curved hatch, lap ledge, and radial nut bosses are suppressed. Access and how the shell closes get decided after the load path is fixed. Hatch closure must not be what locates the shafts.
 
-## S04 — Direct mounting and service paths
+## S04 — Devices that are not in the load path
 
-The shell directly supports a low battery platform with strap passages/stops; Pi and Pixracer shelves; a forward thermal cradle; front distance-sensor locating rails; and rear harness saddles with tie passages. Keep wiring away from belts and shafts. Cameras stay forward; rear ranging is a future option.
+Battery, Pi, Pixracer, thermal camera, distance-sensor, and harness plastic are suppressed, along with those nominal envelopes. They come back only after the mechanical positions are settled and the real parts are measured. Keep future wiring away from belts and shafts.
 
-The battery90×85×30 allowance is UNMEASURED. Pi geometry is nominal bare-board only. Original Pixracer36×36 and four distance modules20×12 are footprint-only sketches: fitted height, sensor depth and connectors are unknown. These do not constitute3D fit passes. The TOPDON TC002C Duo reference has moved3 mm forward and3 mm down to clear the battery allowance and hatch. It uses its nominal device envelope; received lens, contour and connector measurements govern final retention and optical opening. No guessed aperture or cable envelope is modeled.
+Battery size, fitted boards, sensor depth, and the thermal camera remain unmeasured. No shelf or strap in this model is a fit.
 
-Board positive retainers, exact sensor retention, cable bends and charging-contact capture remain detailing gates. Broad shelves and strap passages allow measured adjustments without reviving the old frame.
+## S05 — Print preparation
 
-## S05 — Print preparation and complete drive test
-
-The complete test article is this main shell and hatch with ONE populated supported drive, hub and wheel. Add the other drive to the same housing later. There is no structural drive-end split solely for testing.
-
-Assembly: install nuts; fit endless belt around pulley/shaft assemblies before placing them; lower assemblies through hatch; seat bearings and install caps; secure verified shaft retainers/hub; set carriage tension; secure horn/servo restraint; route restrained wiring; install hatch last. Verify reverse removal with wheel fitted and removed. Retention and full guarding gates must close before claiming a complete test-ready assembly.
-
-Evaluate axle-vertical first (nominal160×160×210), then opening-down. Use installed X2D0.4 profiles and actual slices to compare supports, removal access, bearing-seat finish, pocket roofs and layer-load directions. Footprint alone cannot release a print. Print bearing/nut/strap coupons first. Both housing orientations slice: axle-vertical1189.5 g/~29.9 h; opening-down1099.9 g/~29.8 h including supports. Estimated actual shell plastic is596.7 g versus622.6 g; hatch145.0 g plus~2.8 g supports. The support burden is substantial and visual removal review is still blocked by the desktop security prompt. No orientation is released. Carriage review uses floor-down; caps and rim have separate bed-oriented review exports.
-
-Historical `first-prints/drive-end-section/` exports remain unchanged, pinned to `drive-fit-candidate-2026-09-19`. They are not the new complete test unit. New review exports are derived artifacts, not alternate CAD masters.
+No print of the suppressed structure. The next article is whatever integrated shell is built around the positions above, with one drive first. Wheel retention and shaft endplay still have to be set on the real bearings before that shell is released.
 
 ## Release gates and records
 
