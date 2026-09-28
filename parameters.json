@@ -90,7 +90,7 @@
     ],
     "travel_status": "CAD clearance screen only; no qualified belt tension or installed belt stretch",
     "clutch_candidate": "Collar-adjusted friction slipper on the wheel shaft. Retired ComInTec 00.25 as too expensive.",
-    "clutch_status": "Adjuster collar, Belleville stack, two steel washers, one fiber washer, 12 mm bush under the 48T. Slip torque is bench-set. 25T tooth form and servo ear holes remain unmeasured."
+    "clutch_status": "Adjuster collar with an M3 set-screw bore, Belleville stack, shaft washer with a D bore on a 0.8 mm shaft flat, fiber washer, pulley washer with three M3 holes into the 48T, sleeve in the 27 mm bore. Servo retainer ring screws to the cradle. Slip torque is bench-set. 25T tooth form and servo ear holes remain unmeasured."
   },
   "hatch": {
     "opening_xy_mm": [
