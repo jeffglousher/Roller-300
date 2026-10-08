@@ -1,0 +1,75 @@
+﻿{
+    "exit_code":  0,
+    "physical_print":  false,
+    "parts":  [
+                  "mouth-bearing-retainer",
+                  "center-bearing-retainer",
+                  "input-inboard-bearing-retainer",
+                  "input-outboard-bearing-retainer",
+                  "input-sliding-carrier",
+                  "servo-upper-bridge",
+                  "one-drive-fit-section",
+                  "rigid-output-pulley",
+                  "input-pulley-clamp-trial",
+                  "servo-horn-shaft-adapter"
+              ],
+    "slice_result":  {
+                         "error_string":  "Success.",
+                         "export_time":  2728,
+                         "layer_height":  0.20000000298023224,
+                         "plate_index":  0,
+                         "prepare_time":  910,
+                         "return_code":  0,
+                         "sliced_plates":  [
+                                               {
+                                                   "feature_type_times":  {
+                                                                              "Bottom surface":  416.1192626953125,
+                                                                              "Bridge":  627.4375610351562,
+                                                                              "Brim":  174.84869384765625,
+                                                                              "Custom":  282.2998962402344,
+                                                                              "Flush":  29.0,
+                                                                              "Gap infill":  1145.104248046875,
+                                                                              "Inner wall":  11866.244140625,
+                                                                              "Internal solid infill":  1791.8673095703125,
+                                                                              "Outer wall":  3898.651611328125,
+                                                                              "Overhang wall":  691.79296875,
+                                                                              "Sparse infill":  1663.969482421875,
+                                                                              "Support":  5156.16552734375,
+                                                                              "Support interface":  623.009521484375,
+                                                                              "Support transition":  233.50323486328125,
+                                                                              "Top surface":  533.6270751953125,
+                                                                              "Travel":  5005.9052734375,
+                                                                              "Undefined":  5003.18896484375
+                                                                          },
+                                                   "filament_change_times":  0,
+                                                   "filaments":  [
+                                                                     {
+                                                                         "filament_id":  "GFG99",
+                                                                         "id":  1,
+                                                                         "main_used_g":  290.0541687011719,
+                                                                         "total_used_g":  290.0541687011719
+                                                                     }
+                                                                 ],
+                                                   "generate_support_material_time":  3290,
+                                                   "id":  1,
+                                                   "infill_time":  2189,
+                                                   "layer_filament_change":  0,
+                                                   "main_predication":  33746.2890625,
+                                                   "make_perimeters_time":  3649,
+                                                   "obj_cached_cnt":  0,
+                                                   "sliced_time":  36436,
+                                                   "sliced_time_with_cache":  12373,
+                                                   "total_predication":  34083.87109375,
+                                                   "triangle_count":  55304,
+                                                   "warning_message":  ""
+                                               }
+                                           ],
+                         "sparse_infill_density":  15.0,
+                         "wall_loops":  5
+                     },
+    "source_sha256":  "275c0ee72ed4d664b6b3e345c6845327a1078b50f98131b0f49352d2464567da",
+    "gui_open_verified":  true,
+    "gui_window_id":  2294538,
+    "gui_verified_date":  "2026-10-06",
+    "project":  "C:\\Users\\jeffg\\dev\\Roller-300\\first-prints\\bambu-servo-horn-review-2026-10-06\\Roller-300-servo-horn-first-fit.3mf"
+}

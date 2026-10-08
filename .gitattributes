@@ -1,6 +1,11 @@
 * text=auto
 *.nbcad binary
 *.stl binary
+*.step binary
+*.stp binary
+*.3mf binary
 *.xlsx binary
 *.png binary
 *.zip binary
+design/native-fixes-2026-10-03/body-* binary
+design/vendor/** binary

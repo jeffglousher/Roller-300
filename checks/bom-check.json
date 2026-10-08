@@ -1,15 +1,31 @@
 {
-  "subtotal_usd": 35.720000000000006,
+  "date": "2026-10-07",
+  "subtotal_usd": 100.12,
+  "independent_subtotal_usd": 100.12,
+  "two_drive_purchase_subtotal_usd": 173.58999999999997,
+  "independent_two_drive_subtotal_usd": 173.58999999999997,
+  "material_consumed_estimate_usd": 15.770692443847656,
   "owned_quantity_edit_check": true,
+  "two_pack_rounding_check": true,
+  "kit_charged_once_check": true,
+  "preferred_vendor_check": true,
+  "bearing_and_servo_ear_screw_separation_check": true,
   "formula_errors": [],
-  "rows": 42,
+  "rows": 64,
+  "unresolved_source_rows": [
+    "P04",
+    "H04",
+    "H19",
+    "H23",
+    "H27"
+  ],
   "inspect": {
     "recordCount": 1,
     "truncated": false,
     "metadata": {
-      "revision": "pczbpy",
+      "revision": "ryf1bn",
       "target": {
-        "id": "wb/wp8ctc",
+        "id": "wb/fq4aua",
         "beforeLines": 0,
         "afterLines": 0
       },

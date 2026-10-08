@@ -1,0 +1,49 @@
+{
+  "checked_date_local": "2026-10-06",
+  "status": "INTEGRATED NOMINAL FIT DESIGN; receiving seating/retention untested",
+  "manufacturer": "goBILDA / ServoCity",
+  "sku": "1906-0025-0032",
+  "name": "1906 Series Low-Profile Servo Hub (25 Tooth Spline, 32mm Diameter)",
+  "purchase_url": "https://www.servocity.com/1906-series-lightweight-servo-hub-25-tooth-spline-32mm-diameter/",
+  "cad_url": "https://www.servocity.com/content/step_files/1906-0025-0032.zip",
+  "price_observed_usd": 4.99,
+  "availability_observed": "Product page offer schema InStock; enabled Add to Cart control. Shipping and tax not checked.",
+  "amazon_exact_listing": "Not located/verified",
+  "quantity_first_one_drive_test": 1,
+  "quantity_complete_two_drive_build": 2,
+  "purchases_made": false,
+  "manufacturer_drawing_dimensions_mm": {
+    "outside_diameter": 32,
+    "centering_boss_diameter": 14,
+    "centering_boss_projection": 2.6,
+    "disc_thickness": 2,
+    "mounting_pattern": "Four M4 x 0.7 tapped holes on 16 x 16 square",
+    "additional_clearance_holes": "Four diameter4 holes on diameter24 circle",
+    "central_clearance_hole_diameter": 3,
+    "spline": "H25T"
+  },
+  "servo_compatibility_basis": {
+    "servo": "INJORA INJS035-360",
+    "published_spline": "diameter5.9,25T",
+    "source": "https://www.injora.com/products/injora-injs035-360-35kg-waterproof-digital-servo-360-steering-winch-wheel-for-rc",
+    "assessment": "Nominal standard H25T candidate; cross-brand physical seating not verified."
+  },
+  "step_file": "1906-0025-0032.STEP",
+  "step_sha256": "ad985e243fe504ea7cacd92caad7afffbd1124737c9bdfc11ec0ea5547fcc01d",
+  "native_cad_import": "Successful in isolated native CAD document; one body, no timeline errors, solid_export_preflight ok. Main assembly not modified.",
+  "remaining": [
+    "Physical 25T seating, actual case/ear height variant, center screw length without bottoming and cable clearance",
+    "Hand rotation and bearing endplay before any powered qualification"
+  ],
+  "manufacturer_step_interface_dimensions_mm": {
+    "disc_mounting_face_y": 2.6,
+    "front_pilot_end_y": 4.6,
+    "pilot_projection_from_mounting_face": 2,
+    "thread_boss_back_y": -0.9,
+    "tapped_pattern": "Four M4 holes at11.3137 radius, rotated45deg in assembly",
+    "spline_entry_y": 0,
+    "spline_depth": 3,
+    "front_center_screw_head_seat_y": 4.6
+  },
+  "dimension_reconciliation": "Drawing indicates2.6mm projection; official STEP gives2.0mm pilot projection from outer mounting face. Adapter recess is2.8mm to clear both. Assembled axial datum follows STEP; verify on receipt."
+}

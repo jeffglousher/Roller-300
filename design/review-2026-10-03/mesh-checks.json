@@ -1,0 +1,2154 @@
+[
+  {
+    "body_id": 1,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 7501.604337155004,
+    "bbox_min": [
+      -4.0,
+      8.0,
+      119.0
+    ],
+    "bbox_max": [
+      4.0,
+      158.0,
+      127.0
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 7501.604337155004,
+        "bounds": [
+          [
+            -4.0,
+            8.0,
+            119.0
+          ],
+          [
+            4.0,
+            158.0,
+            127.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 2,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 2,
+    "volume_mm3": 4594.7302805888485,
+    "bbox_min": [
+      -11.0,
+      98.0,
+      112.0
+    ],
+    "bbox_max": [
+      11.0,
+      153.0,
+      134.0
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 2297.3651402944242,
+        "bounds": [
+          [
+            -11.0,
+            98.0,
+            112.0
+          ],
+          [
+            11.0,
+            105.0,
+            134.0
+          ]
+        ]
+      },
+      {
+        "watertight": true,
+        "volume_mm3": 2297.3651402944242,
+        "bounds": [
+          [
+            -11.0,
+            146.0,
+            112.0
+          ],
+          [
+            11.0,
+            153.0,
+            134.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 3,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 2651.3472731036254,
+    "bbox_min": [
+      -10.5,
+      86.0,
+      112.5
+    ],
+    "bbox_max": [
+      10.5,
+      95.0,
+      133.5
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 2651.3472731036254,
+        "bounds": [
+          [
+            -10.5,
+            86.0,
+            112.5
+          ],
+          [
+            10.5,
+            95.0,
+            133.5
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 4,
+    "watertight": false,
+    "winding_consistent": true,
+    "connected_components": 2,
+    "volume_mm3": 14180.66826778512,
+    "bbox_min": [
+      -15.300000190734863,
+      113.0,
+      107.69999694824219
+    ],
+    "bbox_max": [
+      15.300000190734863,
+      135.5,
+      138.3000030517578
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 13974.37423434861,
+        "bounds": [
+          [
+            -15.300000190734863,
+            113.0,
+            107.69999694824219
+          ],
+          [
+            15.300000190734863,
+            133.5,
+            138.3000030517578
+          ]
+        ]
+      },
+      {
+        "watertight": true,
+        "volume_mm3": 206.29403343650847,
+        "bounds": [
+          [
+            -7.0,
+            133.5,
+            116.0
+          ],
+          [
+            7.0,
+            135.5,
+            130.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 5,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 2,
+    "volume_mm3": 4594.7302983932605,
+    "bbox_min": [
+      38.67225646972656,
+      55.0,
+      112.0
+    ],
+    "bbox_max": [
+      60.67225646972656,
+      89.0,
+      134.0
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 2297.3651491966302,
+        "bounds": [
+          [
+            38.67225646972656,
+            55.0,
+            112.0
+          ],
+          [
+            60.67225646972656,
+            62.0,
+            134.0
+          ]
+        ]
+      },
+      {
+        "watertight": true,
+        "volume_mm3": 2297.3651491966302,
+        "bounds": [
+          [
+            38.67225646972656,
+            82.0,
+            112.0
+          ],
+          [
+            60.67225646972656,
+            89.0,
+            134.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 6,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 2500.5341906086055,
+    "bbox_min": [
+      45.67225646972656,
+      46.0,
+      119.0
+    ],
+    "bbox_max": [
+      53.672298431396484,
+      96.0,
+      127.0
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 2500.5341906086055,
+        "bounds": [
+          [
+            45.67225646972656,
+            46.0,
+            119.0
+          ],
+          [
+            53.672298431396484,
+            96.0,
+            127.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 9,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 12929.49483331691,
+    "bbox_min": [
+      -24.465314865112305,
+      61.150001525878906,
+      98.48069763183594
+    ],
+    "bbox_max": [
+      24.537311553955078,
+      79.75,
+      147.51930236816406
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 12929.49483331691,
+        "bounds": [
+          [
+            -24.465314865112305,
+            61.150001525878906,
+            98.48069763183594
+          ],
+          [
+            24.537311553955078,
+            79.75,
+            147.51930236816406
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 10,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 4640.477059962815,
+    "bbox_min": [
+      36.59410095214844,
+      65.25,
+      109.92184448242188
+    ],
+    "bbox_max": [
+      62.75041198730469,
+      79.75,
+      136.07815551757812
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 4640.477059962815,
+        "bounds": [
+          [
+            36.59410095214844,
+            65.25,
+            109.92184448242188
+          ],
+          [
+            62.75041198730469,
+            79.75,
+            136.07815551757812
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 11,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 5139.3795737634455,
+    "bbox_min": [
+      -24.518312454223633,
+      68.0,
+      98.48241424560547
+    ],
+    "bbox_max": [
+      62.73141098022461,
+      77.0,
+      147.51759338378906
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 5139.3795737634455,
+        "bounds": [
+          [
+            -24.518312454223633,
+            68.0,
+            98.48241424560547
+          ],
+          [
+            62.73141098022461,
+            77.0,
+            147.51759338378906
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 12,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 32805.0,
+    "bbox_min": [
+      39.67225646972656,
+      5.0,
+      93.0
+    ],
+    "bbox_max": [
+      59.67225646972656,
+      45.5,
+      133.5
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 32805.0,
+        "bounds": [
+          [
+            39.67225646972656,
+            5.0,
+            93.0
+          ],
+          [
+            59.67225646972656,
+            45.5,
+            133.5
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 13,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 2,
+    "volume_mm3": 917219.4913674159,
+    "bbox_min": [
+      -114.92503356933594,
+      110.0,
+      8.018743515014648
+    ],
+    "bbox_max": [
+      115.0,
+      158.0,
+      237.98126220703125
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 6058.447856112502,
+        "bounds": [
+          [
+            -19.927949905395508,
+            151.0,
+            103.01802062988281
+          ],
+          [
+            20.0,
+            158.0,
+            142.9819793701172
+          ]
+        ]
+      },
+      {
+        "watertight": true,
+        "volume_mm3": 911161.0435113033,
+        "bounds": [
+          [
+            -114.92503356933594,
+            110.0,
+            8.018743515014648
+          ],
+          [
+            115.0,
+            150.0,
+            237.98126220703125
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 14,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 239164.0404279142,
+    "bbox_min": [
+      -123.0,
+      110.0,
+      0.07492827624082565
+    ],
+    "bbox_max": [
+      123.0,
+      150.0,
+      245.92507934570312
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 239164.0404279142,
+        "bounds": [
+          [
+            -123.0,
+            110.0,
+            0.07492827624082565
+          ],
+          [
+            123.0,
+            150.0,
+            245.92507934570312
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 18,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 7501.604337155004,
+    "bbox_min": [
+      -4.0,
+      -158.0,
+      119.0
+    ],
+    "bbox_max": [
+      4.0,
+      -8.0,
+      127.0
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 7501.604337155004,
+        "bounds": [
+          [
+            -4.0,
+            -158.0,
+            119.0
+          ],
+          [
+            4.0,
+            -8.0,
+            127.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 19,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 2,
+    "volume_mm3": 4594.7302805888485,
+    "bbox_min": [
+      -11.0,
+      -153.0,
+      112.0
+    ],
+    "bbox_max": [
+      11.0,
+      -98.0,
+      134.0
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 2297.3651402944242,
+        "bounds": [
+          [
+            -11.0,
+            -105.0,
+            112.0
+          ],
+          [
+            11.0,
+            -98.0,
+            134.0
+          ]
+        ]
+      },
+      {
+        "watertight": true,
+        "volume_mm3": 2297.3651402944242,
+        "bounds": [
+          [
+            -11.0,
+            -153.0,
+            112.0
+          ],
+          [
+            11.0,
+            -146.0,
+            134.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 20,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 2651.3472731036254,
+    "bbox_min": [
+      -10.5,
+      -95.0,
+      112.5
+    ],
+    "bbox_max": [
+      10.5,
+      -86.0,
+      133.5
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 2651.3472731036254,
+        "bounds": [
+          [
+            -10.5,
+            -95.0,
+            112.5
+          ],
+          [
+            10.5,
+            -86.0,
+            133.5
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 21,
+    "watertight": false,
+    "winding_consistent": true,
+    "connected_components": 2,
+    "volume_mm3": 14180.66826778512,
+    "bbox_min": [
+      -15.300000190734863,
+      -135.5,
+      107.69999694824219
+    ],
+    "bbox_max": [
+      15.300000190734863,
+      -113.0,
+      138.3000030517578
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 13974.37423434861,
+        "bounds": [
+          [
+            -15.300000190734863,
+            -133.5,
+            107.69999694824219
+          ],
+          [
+            15.300000190734863,
+            -113.0,
+            138.3000030517578
+          ]
+        ]
+      },
+      {
+        "watertight": true,
+        "volume_mm3": 206.29403343650847,
+        "bounds": [
+          [
+            -7.0,
+            -135.5,
+            116.0
+          ],
+          [
+            7.0,
+            -133.5,
+            130.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 22,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 2,
+    "volume_mm3": 4594.7302983932605,
+    "bbox_min": [
+      38.67225646972656,
+      -89.0,
+      112.0
+    ],
+    "bbox_max": [
+      60.67225646972656,
+      -55.0,
+      134.0
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 2297.3651491966302,
+        "bounds": [
+          [
+            38.67225646972656,
+            -62.0,
+            112.0
+          ],
+          [
+            60.67225646972656,
+            -55.0,
+            134.0
+          ]
+        ]
+      },
+      {
+        "watertight": true,
+        "volume_mm3": 2297.3651491966302,
+        "bounds": [
+          [
+            38.67225646972656,
+            -89.0,
+            112.0
+          ],
+          [
+            60.67225646972656,
+            -82.0,
+            134.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 23,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 2500.5341906086055,
+    "bbox_min": [
+      45.67225646972656,
+      -96.0,
+      119.0
+    ],
+    "bbox_max": [
+      53.672298431396484,
+      -46.0,
+      127.0
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 2500.5341906086055,
+        "bounds": [
+          [
+            45.67225646972656,
+            -96.0,
+            119.0
+          ],
+          [
+            53.672298431396484,
+            -46.0,
+            127.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 26,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 12929.49483331691,
+    "bbox_min": [
+      -24.465314865112305,
+      -79.75,
+      98.48069763183594
+    ],
+    "bbox_max": [
+      24.537311553955078,
+      -61.150001525878906,
+      147.51930236816406
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 12929.49483331691,
+        "bounds": [
+          [
+            -24.465314865112305,
+            -79.75,
+            98.48069763183594
+          ],
+          [
+            24.537311553955078,
+            -61.150001525878906,
+            147.51930236816406
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 27,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 4640.477059962815,
+    "bbox_min": [
+      36.59410095214844,
+      -79.75,
+      109.92184448242188
+    ],
+    "bbox_max": [
+      62.75041198730469,
+      -65.25,
+      136.07815551757812
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 4640.477059962815,
+        "bounds": [
+          [
+            36.59410095214844,
+            -79.75,
+            109.92184448242188
+          ],
+          [
+            62.75041198730469,
+            -65.25,
+            136.07815551757812
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 28,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 5139.3795737634455,
+    "bbox_min": [
+      -24.518312454223633,
+      -77.0,
+      98.48241424560547
+    ],
+    "bbox_max": [
+      62.73141098022461,
+      -68.0,
+      147.51759338378906
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 5139.3795737634455,
+        "bounds": [
+          [
+            -24.518312454223633,
+            -77.0,
+            98.48241424560547
+          ],
+          [
+            62.73141098022461,
+            -68.0,
+            147.51759338378906
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 29,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 32805.0,
+    "bbox_min": [
+      39.67225646972656,
+      -45.5,
+      93.0
+    ],
+    "bbox_max": [
+      59.67225646972656,
+      -5.0,
+      133.5
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 32805.0,
+        "bounds": [
+          [
+            39.67225646972656,
+            -45.5,
+            93.0
+          ],
+          [
+            59.67225646972656,
+            -5.0,
+            133.5
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 30,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 2,
+    "volume_mm3": 917219.4913674159,
+    "bbox_min": [
+      -114.92503356933594,
+      -158.0,
+      8.018743515014648
+    ],
+    "bbox_max": [
+      115.0,
+      -110.0,
+      237.98126220703125
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 6058.447856112502,
+        "bounds": [
+          [
+            -19.927949905395508,
+            -158.0,
+            103.01802062988281
+          ],
+          [
+            20.0,
+            -151.0,
+            142.9819793701172
+          ]
+        ]
+      },
+      {
+        "watertight": true,
+        "volume_mm3": 911161.0435113033,
+        "bounds": [
+          [
+            -114.92503356933594,
+            -150.0,
+            8.018743515014648
+          ],
+          [
+            115.0,
+            -110.0,
+            237.98126220703125
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 31,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 239164.0404279142,
+    "bbox_min": [
+      -123.0,
+      -150.0,
+      0.07492827624082565
+    ],
+    "bbox_max": [
+      123.0,
+      -110.0,
+      245.92507934570312
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 239164.0404279142,
+        "bounds": [
+          [
+            -123.0,
+            -150.0,
+            0.07492827624082565
+          ],
+          [
+            123.0,
+            -110.0,
+            245.92507934570312
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 32,
+    "watertight": false,
+    "winding_consistent": true,
+    "connected_components": 5,
+    "volume_mm3": 549545.2610997203,
+    "bbox_min": [
+      -79.9259262084961,
+      -105.0,
+      43.01852035522461
+    ],
+    "bbox_max": [
+      80.0,
+      105.0,
+      202.98147583007812
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 535414.4587647928,
+        "bounds": [
+          [
+            -79.9259262084961,
+            -105.0,
+            43.01852035522461
+          ],
+          [
+            80.0,
+            105.0,
+            202.98147583007812
+          ]
+        ]
+      },
+      {
+        "watertight": true,
+        "volume_mm3": 4160.0,
+        "bounds": [
+          [
+            12.0,
+            -102.0,
+            100.0
+          ],
+          [
+            38.0,
+            -94.0,
+            120.0
+          ]
+        ]
+      },
+      {
+        "watertight": true,
+        "volume_mm3": 2905.401167463322,
+        "bounds": [
+          [
+            33.672298431396484,
+            -62.0,
+            107.0
+          ],
+          [
+            65.67230224609375,
+            -55.0,
+            139.0
+          ]
+        ]
+      },
+      {
+        "watertight": true,
+        "volume_mm3": 4160.0,
+        "bounds": [
+          [
+            12.0,
+            94.0,
+            100.0
+          ],
+          [
+            38.0,
+            102.0,
+            120.0
+          ]
+        ]
+      },
+      {
+        "watertight": true,
+        "volume_mm3": 2905.401167463322,
+        "bounds": [
+          [
+            33.672298431396484,
+            55.0,
+            107.0
+          ],
+          [
+            65.67230224609375,
+            62.0,
+            139.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 224,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 84.39294243443237,
+    "bbox_min": [
+      -5.0,
+      95.0,
+      118.0
+    ],
+    "bbox_max": [
+      5.0,
+      98.0,
+      128.0
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 84.39294243443237,
+        "bounds": [
+          [
+            -5.0,
+            95.0,
+            118.0
+          ],
+          [
+            5.0,
+            98.0,
+            128.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 225,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 625.1331065421255,
+    "bbox_min": [
+      -6.0,
+      135.5,
+      117.0
+    ],
+    "bbox_max": [
+      6.0,
+      145.5,
+      129.0
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 625.1331065421255,
+        "bounds": [
+          [
+            -6.0,
+            135.5,
+            117.0
+          ],
+          [
+            6.0,
+            145.5,
+            129.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 226,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 22.270359182585935,
+    "bbox_min": [
+      -5.5,
+      145.5,
+      117.5
+    ],
+    "bbox_max": [
+      5.5,
+      146.0,
+      128.5
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 22.270359182585935,
+        "bounds": [
+          [
+            -5.5,
+            145.5,
+            117.5
+          ],
+          [
+            5.5,
+            146.0,
+            128.5
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 227,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 84.39294243443237,
+    "bbox_min": [
+      -5.0,
+      -47.5,
+      118.0
+    ],
+    "bbox_max": [
+      5.0,
+      -44.5,
+      128.0
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 84.39294243443237,
+        "bounds": [
+          [
+            -5.0,
+            -47.5,
+            118.0
+          ],
+          [
+            5.0,
+            -44.5,
+            128.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 228,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 625.1331065421255,
+    "bbox_min": [
+      -6.0,
+      -145.5,
+      117.0
+    ],
+    "bbox_max": [
+      6.0,
+      -135.5,
+      129.0
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 625.1331065421255,
+        "bounds": [
+          [
+            -6.0,
+            -145.5,
+            117.0
+          ],
+          [
+            6.0,
+            -135.5,
+            129.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 229,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 22.270359182585935,
+    "bbox_min": [
+      -5.5,
+      -146.0,
+      117.5
+    ],
+    "bbox_max": [
+      5.5,
+      -145.5,
+      128.5
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 22.270359182585935,
+        "bounds": [
+          [
+            -5.5,
+            -146.0,
+            117.5
+          ],
+          [
+            5.5,
+            -145.5,
+            128.5
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 300,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 27497.972625890747,
+    "bbox_min": [
+      35.672298431396484,
+      1.0,
+      89.0
+    ],
+    "bbox_max": [
+      63.672298431396484,
+      45.5,
+      137.5
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 27497.972625890747,
+        "bounds": [
+          [
+            35.672298431396484,
+            1.0,
+            89.0
+          ],
+          [
+            63.672298431396484,
+            45.5,
+            137.5
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 301,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 1546.3043676711968,
+    "bbox_min": [
+      40.207271575927734,
+      45.79999923706055,
+      113.53621673583984
+    ],
+    "bbox_max": [
+      59.1373291015625,
+      52.79999923706055,
+      132.4662628173828
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 1546.3043676711968,
+        "bounds": [
+          [
+            40.207271575927734,
+            45.79999923706055,
+            113.53621673583984
+          ],
+          [
+            59.1373291015625,
+            52.79999923706055,
+            132.4662628173828
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 307,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 6773.233292707025,
+    "bbox_min": [
+      -13.25,
+      66.0999984741211,
+      109.75
+    ],
+    "bbox_max": [
+      13.25,
+      79.75,
+      136.25
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 6773.233292707025,
+        "bounds": [
+          [
+            -13.25,
+            66.0999984741211,
+            109.75
+          ],
+          [
+            13.25,
+            79.75,
+            136.25
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 308,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 27497.972625890747,
+    "bbox_min": [
+      35.672298431396484,
+      -45.5,
+      89.0
+    ],
+    "bbox_max": [
+      63.672298431396484,
+      -1.0,
+      137.5
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 27497.972625890747,
+        "bounds": [
+          [
+            35.672298431396484,
+            -45.5,
+            89.0
+          ],
+          [
+            63.672298431396484,
+            -1.0,
+            137.5
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 309,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 1546.3043676711968,
+    "bbox_min": [
+      40.207271575927734,
+      -52.79999923706055,
+      113.53621673583984
+    ],
+    "bbox_max": [
+      59.1373291015625,
+      -45.79999923706055,
+      132.4662628173828
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 1546.3043676711968,
+        "bounds": [
+          [
+            40.207271575927734,
+            -52.79999923706055,
+            113.53621673583984
+          ],
+          [
+            59.1373291015625,
+            -45.79999923706055,
+            132.4662628173828
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 315,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 6773.233292707025,
+    "bbox_min": [
+      -13.25,
+      -79.75,
+      109.75
+    ],
+    "bbox_max": [
+      13.25,
+      -66.0999984741211,
+      136.25
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 6773.233292707025,
+        "bounds": [
+          [
+            -13.25,
+            -79.75,
+            109.75
+          ],
+          [
+            13.25,
+            -66.0999984741211,
+            136.25
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 316,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 2896.674946087165,
+    "bbox_min": [
+      35.672298431396484,
+      45.5,
+      89.0
+    ],
+    "bbox_max": [
+      63.672298431396484,
+      48.5,
+      137.5
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 2896.674946087165,
+        "bounds": [
+          [
+            35.672298431396484,
+            45.5,
+            89.0
+          ],
+          [
+            63.672298431396484,
+            48.5,
+            137.5
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 317,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 2896.674946087165,
+    "bbox_min": [
+      35.672298431396484,
+      -48.5,
+      89.0
+    ],
+    "bbox_max": [
+      63.672298431396484,
+      -45.5,
+      137.5
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 2896.674946087165,
+        "bounds": [
+          [
+            35.672298431396484,
+            -48.5,
+            89.0
+          ],
+          [
+            63.672298431396484,
+            -45.5,
+            137.5
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 338,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 2651.3472731036254,
+    "bbox_min": [
+      -10.5,
+      52.150001525878906,
+      112.5
+    ],
+    "bbox_max": [
+      10.5,
+      61.150001525878906,
+      133.5
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 2651.3472731036254,
+        "bounds": [
+          [
+            -10.5,
+            52.150001525878906,
+            112.5
+          ],
+          [
+            10.5,
+            61.150001525878906,
+            133.5
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 339,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 2651.3472731036254,
+    "bbox_min": [
+      -10.5,
+      -61.150001525878906,
+      112.5
+    ],
+    "bbox_max": [
+      10.5,
+      -52.150001525878906,
+      133.5
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 2651.3472731036254,
+        "bounds": [
+          [
+            -10.5,
+            -61.150001525878906,
+            112.5
+          ],
+          [
+            10.5,
+            -52.150001525878906,
+            133.5
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 340,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 103.24973517775834,
+    "bbox_min": [
+      -8.0,
+      61.150001525878906,
+      115.0
+    ],
+    "bbox_max": [
+      8.0,
+      61.849998474121094,
+      131.0
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 103.24973517775834,
+        "bounds": [
+          [
+            -8.0,
+            61.150001525878906,
+            115.0
+          ],
+          [
+            8.0,
+            61.849998474121094,
+            131.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 341,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 103.24973517775834,
+    "bbox_min": [
+      -8.0,
+      -61.849998474121094,
+      115.0
+    ],
+    "bbox_max": [
+      8.0,
+      -61.150001525878906,
+      131.0
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 103.24973517775834,
+        "bounds": [
+          [
+            -8.0,
+            -61.849998474121094,
+            115.0
+          ],
+          [
+            8.0,
+            -61.150001525878906,
+            131.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 342,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 157.98432272709525,
+    "bbox_min": [
+      -12.0,
+      61.849998474121094,
+      111.0
+    ],
+    "bbox_max": [
+      12.0,
+      62.25,
+      135.0
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 157.98432272709525,
+        "bounds": [
+          [
+            -12.0,
+            61.849998474121094,
+            111.0
+          ],
+          [
+            12.0,
+            62.25,
+            135.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 343,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 157.98432272709525,
+    "bbox_min": [
+      -12.0,
+      -62.25,
+      111.0
+    ],
+    "bbox_max": [
+      12.0,
+      -61.849998474121094,
+      135.0
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 157.98432272709525,
+        "bounds": [
+          [
+            -12.0,
+            -62.25,
+            111.0
+          ],
+          [
+            12.0,
+            -61.849998474121094,
+            135.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 344,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 392.30246416822956,
+    "bbox_min": [
+      -12.0,
+      62.25,
+      111.0
+    ],
+    "bbox_max": [
+      12.0,
+      63.25,
+      135.0
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 392.30246416822956,
+        "bounds": [
+          [
+            -12.0,
+            62.25,
+            111.0
+          ],
+          [
+            12.0,
+            63.25,
+            135.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 345,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 392.30246416822956,
+    "bbox_min": [
+      -12.0,
+      -63.25,
+      111.0
+    ],
+    "bbox_max": [
+      12.0,
+      -62.25,
+      135.0
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 392.30246416822956,
+        "bounds": [
+          [
+            -12.0,
+            -63.25,
+            111.0
+          ],
+          [
+            12.0,
+            -62.25,
+            135.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 346,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 157.98432272709525,
+    "bbox_min": [
+      -12.0,
+      63.25,
+      111.0
+    ],
+    "bbox_max": [
+      12.0,
+      63.650001525878906,
+      135.0
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 157.98432272709525,
+        "bounds": [
+          [
+            -12.0,
+            63.25,
+            111.0
+          ],
+          [
+            12.0,
+            63.650001525878906,
+            135.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 347,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 157.98432272709525,
+    "bbox_min": [
+      -12.0,
+      -63.650001525878906,
+      111.0
+    ],
+    "bbox_max": [
+      12.0,
+      -63.25,
+      135.0
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 157.98432272709525,
+        "bounds": [
+          [
+            -12.0,
+            -63.650001525878906,
+            111.0
+          ],
+          [
+            12.0,
+            -63.25,
+            135.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 348,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 631.9342776080563,
+    "bbox_min": [
+      -12.0,
+      63.650001525878906,
+      111.0
+    ],
+    "bbox_max": [
+      12.0,
+      65.25,
+      135.0
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 631.9342776080563,
+        "bounds": [
+          [
+            -12.0,
+            63.650001525878906,
+            111.0
+          ],
+          [
+            12.0,
+            65.25,
+            135.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 349,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 631.934277608056,
+    "bbox_min": [
+      -12.0,
+      -65.25,
+      111.0
+    ],
+    "bbox_max": [
+      12.0,
+      -63.650001525878906,
+      135.0
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 631.934277608056,
+        "bounds": [
+          [
+            -12.0,
+            -65.25,
+            111.0
+          ],
+          [
+            12.0,
+            -63.650001525878906,
+            135.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 356,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 56567.08633767437,
+    "bbox_min": [
+      -16.0,
+      -18.0,
+      44.0
+    ],
+    "bbox_max": [
+      16.0,
+      18.0,
+      139.0
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 56567.08633767437,
+        "bounds": [
+          [
+            -16.0,
+            -18.0,
+            44.0
+          ],
+          [
+            16.0,
+            18.0,
+            139.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 357,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 2297.3651402944242,
+    "bbox_min": [
+      -11.0,
+      8.0,
+      112.0
+    ],
+    "bbox_max": [
+      11.0,
+      15.0,
+      134.0
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 2297.3651402944242,
+        "bounds": [
+          [
+            -11.0,
+            8.0,
+            112.0
+          ],
+          [
+            11.0,
+            15.0,
+            134.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 358,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 2297.3651402944242,
+    "bbox_min": [
+      -11.0,
+      -15.0,
+      112.0
+    ],
+    "bbox_max": [
+      11.0,
+      -8.0,
+      134.0
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 2297.3651402944242,
+        "bounds": [
+          [
+            -11.0,
+            -15.0,
+            112.0
+          ],
+          [
+            11.0,
+            -8.0,
+            134.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 359,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 2297.3651402944242,
+    "bbox_min": [
+      -11.0,
+      151.0,
+      112.0
+    ],
+    "bbox_max": [
+      11.0,
+      158.0,
+      134.0
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 2297.3651402944242,
+        "bounds": [
+          [
+            -11.0,
+            151.0,
+            112.0
+          ],
+          [
+            11.0,
+            158.0,
+            134.0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "body_id": 360,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "volume_mm3": 2297.3651402944242,
+    "bbox_min": [
+      -11.0,
+      -158.0,
+      112.0
+    ],
+    "bbox_max": [
+      11.0,
+      -151.0,
+      134.0
+    ],
+    "components": [
+      {
+        "watertight": true,
+        "volume_mm3": 2297.3651402944242,
+        "bounds": [
+          [
+            -11.0,
+            -158.0,
+            112.0
+          ],
+          [
+            11.0,
+            -151.0,
+            134.0
+          ]
+        ]
+      }
+    ]
+  }
+]

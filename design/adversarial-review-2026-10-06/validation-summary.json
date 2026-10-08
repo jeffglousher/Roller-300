@@ -1,0 +1,289 @@
+{
+  "date": "2026-10-06",
+  "revision": "S20",
+  "cad_application": "Installed Limo CAD 0.2.2; native replay, exact BRep interference and native application captures",
+  "source": "Roller-300.nbcad",
+  "source_sha256": "bf4561cd9261083763b1f117bf14007dcaf6202b5efd19679aec39a4e36bd52b",
+  "geometry_signature_sha256": "8ac30ab683061a2555ed427565a26450f67db72996e31c5c70ffa256c1513f56",
+  "replay_file_sha256": "6fb191f273a06cd43c9c9e845dfef826b210ffe3f0cde302c762cf9ba3db29d7",
+  "replay_normalized_text_sha256": "1a637009676ab3f3f3fea84cbb672a2e26a9f75c83a8a66098b384a7eeeae67b",
+  "saved_native_geometry_matches_replay": true,
+  "features": 2015,
+  "feature_errors": 0,
+  "geometry_checks": 496,
+  "check_counts": {
+    "checks.json": 255,
+    "adversarial-checks.json": 109,
+    "capture-checks.json": 122,
+    "wall-section-checks.json": 10
+  },
+  "valid_connected_watertight_print_bodies": 22,
+  "native_interference": [
+    {
+      "report": "left-roof-open-native-interference.json",
+      "checked_body_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        9,
+        10,
+        11,
+        12,
+        13,
+        224,
+        301,
+        357,
+        367,
+        373,
+        376,
+        377,
+        378,
+        383,
+        387,
+        437,
+        445,
+        449,
+        451,
+        453,
+        457,
+        459
+      ],
+      "reported_pairs": 77,
+      "expected_reference_overlaps": [
+        {
+          "bodies": [
+            11,
+            9
+          ],
+          "volume_mm3": 237.2514912132792
+        },
+        {
+          "bodies": [
+            11,
+            10
+          ],
+          "volume_mm3": 89.91692597257081
+        },
+        {
+          "bodies": [
+            445,
+            12
+          ],
+          "volume_mm3": 5.351520532180527
+        }
+      ],
+      "unexpected_overlaps": 0,
+      "separately_probed_threaded_bodies": [
+        447,
+        448,
+        455,
+        456
+      ]
+    },
+    {
+      "report": "right-full-frame-native-interference.json",
+      "checked_body_ids": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        26,
+        27,
+        28,
+        29,
+        30,
+        227,
+        309,
+        358,
+        368,
+        32,
+        380,
+        381,
+        382,
+        384,
+        412,
+        440,
+        446,
+        450,
+        452,
+        454,
+        458,
+        460
+      ],
+      "reported_pairs": 77,
+      "expected_reference_overlaps": [
+        {
+          "bodies": [
+            28,
+            26
+          ],
+          "volume_mm3": 237.25149121327937
+        },
+        {
+          "bodies": [
+            28,
+            27
+          ],
+          "volume_mm3": 89.9169259725708
+        },
+        {
+          "bodies": [
+            446,
+            29
+          ],
+          "volume_mm3": 5.351520378663805
+        }
+      ],
+      "unexpected_overlaps": 0,
+      "separately_probed_threaded_bodies": [
+        447,
+        448,
+        455,
+        456
+      ]
+    }
+  ],
+  "interference_scope": "27 bodies per side; exact reported pairs. Dense threaded REX shaft/screw solids are separately probed in adversarial-checks.json. Expected simplified belt/tooth and spline-envelope overlaps remain; no belt mesh or thread-fit qualification.",
+  "print_meshes": [
+    {
+      "name": "one-drive-fit-section",
+      "body_id": 373,
+      "native_mesh_sha256": "48b12546e4859669dedd397ea22f59e7f2ec21f68d158b2cb1ed5515596bdc81",
+      "print_mesh_sha256": "73fb4706bf6cc1d8ae39189e9e3217fb188c6d6425f29dcf3a4c55809132bc02"
+    },
+    {
+      "name": "input-sliding-carrier",
+      "body_id": 437,
+      "native_mesh_sha256": "52e519b99b8fe3e65ccc18850068ff0342fdffd61d38c12a49dfdd960df690d1",
+      "print_mesh_sha256": "a336e39e24b92d059d95ade9b39da4371983994a4afb7f9f3fb005210fae6014"
+    },
+    {
+      "name": "rigid-output-pulley",
+      "body_id": 9,
+      "native_mesh_sha256": "5ef1c786dfbc9947e2a62efdabed6430e5be5f0af4d5dc9585eec755abbac3d4",
+      "print_mesh_sha256": "aa7eb558278c59f52d8c05405e865a8d495c8d4a217a6801fc3ea00e5d42023c"
+    },
+    {
+      "name": "servo-upper-bridge",
+      "body_id": 367,
+      "native_mesh_sha256": "3003fe739d8f14455ebea2d8af8cc2f89194eb4bca41ff21bc6f0617389e3bf9",
+      "print_mesh_sha256": "6d8e7de42879f5ba697aeb0d35a69a099446387bcb675e7c1c0254348fbfbc26"
+    },
+    {
+      "name": "servo-horn-rex-adapter",
+      "body_id": 301,
+      "native_mesh_sha256": "a0b30b6fc3bcdce9b5964ca5bd57c8680aefba06a6c77b9b7d77ddd0c39694b8",
+      "print_mesh_sha256": "856c602985f41c0c8a6bbd8416c309f2a9a06e5dbb562eb748dc0b075ec8277e"
+    },
+    {
+      "name": "input-rex-pulley",
+      "body_id": 10,
+      "native_mesh_sha256": "73e4a78c5899c1fca1bd8aa07c04f20782a53debef45f4cc749dd325b5720691",
+      "print_mesh_sha256": "a9f7deedf96fcef5bf5936fc9e23c86ec47a6fe1a1dc6f368c4678d60f7465b4"
+    },
+    {
+      "name": "mouth-bearing-retainer",
+      "body_id": 376,
+      "native_mesh_sha256": "550e86ba7be822fd7cfc3561e09da8c0e881a09152459cf1d06248300117d4ec",
+      "print_mesh_sha256": "c5b36e537e723bc1252d7c5dc69c0b49ea663eecb3fa408187df3cf8645abc86"
+    },
+    {
+      "name": "input-inboard-bearing-retainer",
+      "body_id": 377,
+      "native_mesh_sha256": "9fc13651aa069f6f052a0a4214c7c8ed0ceef14ab2a8cfcedbb03496e6834e41",
+      "print_mesh_sha256": "2035d59974b31b48e91e82fc636a21d0a27ae19bec269d6e8fc5e30a6e42a129"
+    },
+    {
+      "name": "input-outboard-bearing-retainer",
+      "body_id": 378,
+      "native_mesh_sha256": "6828c87621572fcb05e457229cfccf1c6716b6ce0aa1bb81cf41a485a72eaba8",
+      "print_mesh_sha256": "2bcfb106de5eb7d5eeebbad5e400d83b6e9ef23729c664598d5e2ec0dace5aa8"
+    },
+    {
+      "name": "center-bearing-retainer",
+      "body_id": 383,
+      "native_mesh_sha256": "00ef8aa54b4fde8df478c956b453059423d5b085f37b203edd88d09958a86eb2",
+      "print_mesh_sha256": "5b826492956dfbeb404e6d5008945af3dfb5a018ddb04e66eb09be44b3e2004d"
+    },
+    {
+      "name": "left-wheel-axle-vertical",
+      "body_id": 13,
+      "native_mesh_sha256": "e4a763e314079597f7c5abf406a2c47620173a8ea853159069d6a036e4c47b69",
+      "print_mesh_sha256": "ff7bedad2ac7ddbc8473b88f45cdecec78ac547c964b94a692974dc4754fe569"
+    }
+  ],
+  "bambu_project": "first-prints/bambu-adversarial-review-2026-10-06/Roller-300-REX-first-fit.3mf",
+  "bambu_project_sha256": "b50a4c09179d5573290e5d6bb95bfed23ae997a7d5be26d1e2eff8e313e404ef",
+  "bambu_project_meshes_match_current_prints": [
+    {
+      "name": "mouth-bearing-retainer",
+      "triangle_count": 3376,
+      "maximum_coordinate_difference_mm": 5.000000058430487e-08,
+      "passed": true
+    },
+    {
+      "name": "center-bearing-retainer",
+      "triangle_count": 3376,
+      "maximum_coordinate_difference_mm": 5.000000058430487e-08,
+      "passed": true
+    },
+    {
+      "name": "input-inboard-bearing-retainer",
+      "triangle_count": 4724,
+      "maximum_coordinate_difference_mm": 4.956054766580564e-08,
+      "passed": true
+    },
+    {
+      "name": "input-outboard-bearing-retainer",
+      "triangle_count": 4724,
+      "maximum_coordinate_difference_mm": 4.956054766580564e-08,
+      "passed": true
+    },
+    {
+      "name": "input-sliding-carrier",
+      "triangle_count": 11062,
+      "maximum_coordinate_difference_mm": 5.000000058430487e-08,
+      "passed": true
+    },
+    {
+      "name": "servo-upper-bridge",
+      "triangle_count": 1924,
+      "maximum_coordinate_difference_mm": 4.985351509390057e-08,
+      "passed": true
+    },
+    {
+      "name": "one-drive-fit-section",
+      "triangle_count": 9748,
+      "maximum_coordinate_difference_mm": 1.9479736295124894e-06,
+      "passed": true
+    },
+    {
+      "name": "rigid-output-pulley",
+      "triangle_count": 9232,
+      "maximum_coordinate_difference_mm": 4.995117208750344e-08,
+      "passed": true
+    },
+    {
+      "name": "input-rex-pulley",
+      "triangle_count": 4968,
+      "maximum_coordinate_difference_mm": 4.995117208750344e-08,
+      "passed": true
+    },
+    {
+      "name": "servo-horn-rex-adapter",
+      "triangle_count": 4368,
+      "maximum_coordinate_difference_mm": 4.956054766580564e-08,
+      "passed": true
+    }
+  ],
+  "individual_warning_free_slices": 11,
+  "review_plate_warning_free": true,
+  "native_named_views": 7,
+  "physical_test_performed": false,
+  "powered_release": false,
+  "whole_barrel_release": false,
+  "passed": true
+}

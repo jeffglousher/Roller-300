@@ -1,0 +1,195 @@
+{
+    "error_string": "Success.",
+    "export_time": 2280,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 129,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Bottom surface": 328.629150390625,
+                "Bridge": 700.6989135742188,
+                "Brim": 146.05470275878906,
+                "Custom": 282.2945556640625,
+                "Flush": 29.0,
+                "Gap infill": 1081.238525390625,
+                "Inner wall": 11912.255859375,
+                "Internal solid infill": 1788.68798828125,
+                "Outer wall": 3917.784912109375,
+                "Overhang wall": 1068.12841796875,
+                "Sparse infill": 1613.2388916015625,
+                "Support": 5470.61083984375,
+                "Support interface": 755.4064331054688,
+                "Support transition": 328.29766845703125,
+                "Top surface": 546.3527221679688,
+                "Travel": 4951.291015625,
+                "Undefined": 4948.57470703125
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFG99",
+                    "id": 1,
+                    "main_used_g": 294.1186828613281,
+                    "total_used_g": 294.1186828613281
+                }
+            ],
+            "generate_support_material_time": 1335,
+            "id": 1,
+            "infill_time": 1854,
+            "layer_filament_change": 0,
+            "main_predication": 34532.6953125,
+            "make_perimeters_time": 2194,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 44.0,
+                        "height": 4.5,
+                        "width": 44.0,
+                        "x": 23.0,
+                        "y": 28.0,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "mouth-bearing-retainer",
+                    "triangle_count": 3376
+                },
+                {
+                    "bbox": {
+                        "depth": 44.0,
+                        "height": 4.5,
+                        "width": 44.0,
+                        "x": 82.0,
+                        "y": 28.0,
+                        "z": 0.0
+                    },
+                    "id": 9,
+                    "name": "center-bearing-retainer",
+                    "triangle_count": 3376
+                },
+                {
+                    "bbox": {
+                        "depth": 51.97815704345703,
+                        "height": 4.6999969482421875,
+                        "width": 51.99160385131836,
+                        "x": 137.0041961669922,
+                        "y": 24.010921478271484,
+                        "z": -4.121093688524979e-09
+                    },
+                    "id": 13,
+                    "name": "input-inboard-bearing-retainer",
+                    "triangle_count": 4724
+                },
+                {
+                    "bbox": {
+                        "depth": 51.97815704345703,
+                        "height": 4.6999969482421875,
+                        "width": 51.99160385131836,
+                        "x": 196.0041961669922,
+                        "y": 24.010921478271484,
+                        "z": -4.121093688524979e-09
+                    },
+                    "id": 17,
+                    "name": "input-outboard-bearing-retainer",
+                    "triangle_count": 4724
+                },
+                {
+                    "bbox": {
+                        "depth": 90.0,
+                        "height": 59.14208984375,
+                        "width": 44.66891860961914,
+                        "x": 157.66554260253906,
+                        "y": 105.0,
+                        "z": -2.1874999589499566e-08
+                    },
+                    "id": 21,
+                    "name": "input-sliding-carrier",
+                    "triangle_count": 11062
+                },
+                {
+                    "bbox": {
+                        "depth": 9.998383522033691,
+                        "height": 9.449996948242188,
+                        "width": 41.0,
+                        "x": 159.5,
+                        "y": 220.0008087158203,
+                        "z": -4.121093688524979e-09
+                    },
+                    "id": 25,
+                    "name": "servo-upper-bridge",
+                    "triangle_count": 1924
+                },
+                {
+                    "bbox": {
+                        "depth": 101.99728393554688,
+                        "height": 105.0,
+                        "width": 99.9913330078125,
+                        "x": 25.00433349609375,
+                        "y": 88.00135803222656,
+                        "z": 0.0
+                    },
+                    "id": 29,
+                    "name": "one-drive-fit-section",
+                    "triangle_count": 9748
+                },
+                {
+                    "bbox": {
+                        "depth": 49.07461929321289,
+                        "height": 14.5,
+                        "width": 49.074623107910156,
+                        "x": 40.46268844604492,
+                        "y": 199.4626922607422,
+                        "z": 0.0
+                    },
+                    "id": 33,
+                    "name": "rigid-output-pulley",
+                    "triangle_count": 9232
+                },
+                {
+                    "bbox": {
+                        "depth": 26.15631103515625,
+                        "height": 19.60000228881836,
+                        "width": 26.15631103515625,
+                        "x": 101.92184448242188,
+                        "y": 214.92184448242188,
+                        "z": -4.4091787998468135e-09
+                    },
+                    "id": 37,
+                    "name": "input-rex-pulley",
+                    "triangle_count": 4968
+                },
+                {
+                    "bbox": {
+                        "depth": 33.200008392333984,
+                        "height": 12.200000762939453,
+                        "width": 33.20000457763672,
+                        "x": 213.39999389648438,
+                        "y": 133.39999389648438,
+                        "z": -1.4697265626750777e-09
+                    },
+                    "id": 41,
+                    "name": "servo-horn-rex-adapter",
+                    "triangle_count": 4368
+                }
+            ],
+            "sliced_time": 18656,
+            "sliced_time_with_cache": 11456,
+            "total_predication": 34870.2734375,
+            "triangle_count": 57502,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 15.0,
+    "upward_compatible_machine": [
+        "Bambu Lab A1 0.4 nozzle",
+        "Bambu Lab P2S 0.4 nozzle",
+        "Bambu Lab H2S 0.4 nozzle",
+        "Bambu Lab H2D 0.4 nozzle",
+        "Bambu Lab H2D Pro 0.4 nozzle",
+        "Bambu Lab H2C 0.4 nozzle",
+        "Bambu Lab A2L 0.4 nozzle"
+    ],
+    "wall_loops": 5
+}

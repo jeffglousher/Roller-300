@@ -1,0 +1,219 @@
+{
+  "date": "2026-10-03",
+  "servocity_catalog": [
+    {
+      "url": "https://www.servocity.com/8mm-x-150mm-stainless-steel-precision-shafting/",
+      "sku": "2100-0008-0150",
+      "name": "8mm Shaft (Stainless Steel, 150mm Length)",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "4.29",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.servocity.com/8mm-x-150mm-stainless-steel-precision-shafting/",
+        "priceValidUntil": "2027-10-04"
+      }
+    },
+    {
+      "url": "https://www.servocity.com/8mm-x-50mm-stainless-steel-precision-shafting/",
+      "sku": "2100-0008-0050",
+      "name": "8mm Shaft (Stainless Steel, 50mm Length)",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "2.79",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.servocity.com/8mm-x-50mm-stainless-steel-precision-shafting/",
+        "priceValidUntil": "2027-10-04"
+      }
+    },
+    {
+      "url": "https://www.servocity.com/1309-series-sonic-hub-8mm-bore/",
+      "sku": "1309-0016-0008",
+      "name": "1309 Series Sonic Hub (8mm Bore)",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "7.99",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.servocity.com/1309-series-sonic-hub-8mm-bore/",
+        "priceValidUntil": "2027-10-04"
+      }
+    },
+    {
+      "url": "https://www.servocity.com/1310-series-hyper-hub-8mm-bore/",
+      "sku": "1310-0016-0008",
+      "name": "1310 Series Hyper Hub (8mm Bore)",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "7.99",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.servocity.com/1310-series-hyper-hub-8mm-bore/",
+        "priceValidUntil": "2027-10-04"
+      }
+    },
+    {
+      "url": "https://www.servocity.com/2910-series-aluminum-clamping-collar-8mm-id-x-21mm-od-9mm-length/",
+      "sku": "2910-0921-0008",
+      "name": "2910 Series Aluminum Clamping Collar (8mm ID x 21mm OD, 9mm Length)",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "4.99",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.servocity.com/2910-series-aluminum-clamping-collar-8mm-id-x-21mm-od-9mm-length/",
+        "priceValidUntil": "2027-10-04"
+      }
+    },
+    {
+      "url": "https://www.servocity.com/1522-series-8mm-id-spacer-10mm-od-3mm-length-4-pack/",
+      "sku": "1522-0010-0030",
+      "name": "1522 Series 8mm ID Spacer (10mm OD, 3mm Length) - 4 Pack",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "2.99",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.servocity.com/1522-series-8mm-id-spacer-10mm-od-3mm-length-4-pack/",
+        "priceValidUntil": "2027-10-04"
+      }
+    },
+    {
+      "url": "https://www.servocity.com/8mm-id-x-22mm-od-non-flanged-ball-bearing-2-pack/",
+      "sku": "1600-0722-0008",
+      "name": "8mm ID Non-Flanged Ball Bearing (22mm OD, 7mm Thickness) - 2 Pack",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "3.99",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.servocity.com/8mm-id-x-22mm-od-non-flanged-ball-bearing-2-pack/",
+        "priceValidUntil": "2027-10-04"
+      }
+    },
+    {
+      "url": "https://www.servocity.com/compression-spring-6mm-id-x-8mm-od-2-3kg-max-load-16-25mm-length-2-pack/",
+      "sku": "2916-0001-0002",
+      "name": "Compression Spring (6mm ID x 8mm OD, 2.3kg Max Load, 16-25mm Length) - 2 Pack",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "3.99",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.servocity.com/compression-spring-6mm-id-x-8mm-od-2-3kg-max-load-16-25mm-length-2-pack/",
+        "priceValidUntil": "2027-10-04"
+      }
+    },
+    {
+      "url": "https://www.servocity.com/1906-series-lightweight-servo-hub-25-tooth-spline-32mm-diameter/",
+      "sku": "1906-0025-0032",
+      "name": "1906 Series Low-Profile Servo Hub (25 Tooth Spline, 32mm Diameter)",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "4.99",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.servocity.com/1906-series-lightweight-servo-hub-25-tooth-spline-32mm-diameter/",
+        "priceValidUntil": "2027-10-04"
+      }
+    },
+    {
+      "url": "https://www.servocity.com/2802-series-zinc-plated-steel-button-head-screw-m4-x-0-7mm-14mm-length-25-pack/",
+      "sku": "2802-0004-0014",
+      "name": "2802 Series Zinc-Plated Steel Button Head Screw (M4 x 0.7mm, 14mm Length) - 25 Pack",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "3.69",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.servocity.com/2802-series-zinc-plated-steel-button-head-screw-m4-x-0-7mm-14mm-length-25-pack/",
+        "priceValidUntil": "2027-10-04"
+      }
+    },
+    {
+      "url": "https://www.servocity.com/2802-series-zinc-plated-steel-button-head-screw-m4-x-0-7mm-8mm-length-25-pack/",
+      "sku": "2802-0004-0008",
+      "name": "2802 Series Zinc-Plated Steel Button Head Screw (M4 x 0.7mm, 8mm Length) - 25 Pack",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "3.19",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.servocity.com/2802-series-zinc-plated-steel-button-head-screw-m4-x-0-7mm-8mm-length-25-pack/",
+        "priceValidUntil": "2027-10-04"
+      }
+    },
+    {
+      "url": "https://www.servocity.com/m4-x-0-7mm-zinc-plated-socket-head-screw-10mm-length/",
+      "error": ""
+    },
+    {
+      "url": "https://www.servocity.com/zinc-plated-steel-socket-head-screw-m3-x-0-5mm-10mm-length-6-pack/",
+      "sku": "2800-0003-0010",
+      "name": "Zinc-Plated Steel Socket Head Screw (M3 x 0.5mm, 10mm Length) - 6 Pack",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "3.19",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.servocity.com/zinc-plated-steel-socket-head-screw-m3-x-0-5mm-10mm-length-6-pack/",
+        "priceValidUntil": "2027-10-04"
+      }
+    }
+  ],
+  "amazon": [
+    {
+      "asin": "B00ISC4PHG",
+      "price_usd": 7.97,
+      "pack_qty": 1,
+      "title": "D&D210-3M-09 HTD belt",
+      "stock_observed": true
+    },
+    {
+      "asin": "B0GV4G5DNP",
+      "price_usd": 8.98,
+      "pack_qty": 1,
+      "title": "Kernmax600pcs long M3 hardware kit",
+      "contents": "25 each M3x25/30/35/40/45/50;150 each nuts/flat/split washers",
+      "stock_observed": true
+    },
+    {
+      "asin": "B0F8MZVFBJ",
+      "title": "TOPDON TC002C Duo",
+      "scope": "Deferred; existing selected model, listing identity only"
+    }
+  ],
+  "cad_sha256": "767a8d32968bfef61b02556d5d433998c2c098d8567138aacf7163956c5e5773",
+  "orders_placed": false,
+  "cost_review_2026_10_04": {
+    "M3x12": {
+      "asin": "B08B1W1FHS",
+      "price_usd": 8.26,
+      "pack_qty": 100,
+      "head_diameter_mm": 5.5,
+      "head_height_mm": 2.93,
+      "pitch_mm": 0.5,
+      "length_mm": 12,
+      "stock_observed": true
+    },
+    "servo": {
+      "asin": "B0C9TM9X2C",
+      "price_usd": 22.98,
+      "stock_observed": true
+    },
+    "cad_geometry_changed": false
+  }
+}

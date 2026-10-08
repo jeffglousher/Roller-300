@@ -1,10 +1,11 @@
 """Offline X2D slice estimate, using installed vendor profiles. Never sends a print."""
 from pathlib import Path
 import json,subprocess,sys,struct,zipfile,os,xml.etree.ElementTree as ET
+from bambu_project_settings import preserve_process_overrides
 ROOT=Path(__file__).resolve().parents[1]
 PROFILE=Path(r'C:\Program Files\Bambu Studio\resources\profiles\BBL')
 PRINT_SET=os.environ.get('ROLLER_PRINT_SET','shell-first-review')
-if PRINT_SET not in ['drive-end-section','shell-first-review']:raise SystemExit('Unknown print set')
+if PRINT_SET not in ['drive-end-section','shell-first-review','native-fit-2026-10-03','drivetrain-fit-2026-10-03','rigid-belt-fit-2026-10-05','servo-horn-fit-2026-10-06','adversarial-fit-2026-10-06']:raise SystemExit('Unknown print set')
 PARTS=ROOT/'first-prints'/PRINT_SET
 OUT=PARTS/'slicer-check'/sys.argv[1];OUT.mkdir(parents=True,exist_ok=True)
 index={p.stem:p for p in PROFILE.rglob('*.json')}
@@ -21,7 +22,7 @@ process=flattened('0.20mm Standard @BBL X2D')
 part=sys.argv[1] if len(sys.argv)>1 else 'tpu-tread-246-fit'
 is_tpu=part.startswith('tpu')
 process.update(wall_loops='3' if is_tpu else '5',sparse_infill_density='15%',sparse_infill_pattern='gyroid',brim_width='3',brim_type='outer_only',enable_support='0' if is_tpu or 'retainer' in part else '1',support_type='normal(auto)',support_on_build_plate_only='1',enable_prime_tower='0')
-if PRINT_SET=='shell-first-review':process['support_on_build_plate_only']='0'
+if PRINT_SET in ['shell-first-review','native-fit-2026-10-03','drivetrain-fit-2026-10-03','rigid-belt-fit-2026-10-05','servo-horn-fit-2026-10-06','adversarial-fit-2026-10-06']:process['support_on_build_plate_only']='0'
 material=flattened(('Generic TPU' if is_tpu else 'Generic PETG')+' @BBL X2D 0.4 nozzle')
 mp=write('machine.json',machine);pp=write(part+'-process.json',process);fp=write(part+'-filament.json',material)
 args=[r'C:\Program Files\Bambu Studio\bambu-studio.exe','--debug','3','--arrange','1','--load-settings',str(mp)+';'+str(pp),'--load-filaments',str(fp),'--curr-bed-type','Textured PEI Plate','--slice','0','--export-3mf',str(OUT/(part+'-estimate.3mf')),'--export-settings',str(OUT/(part+'-used-settings.json')),'--outputdir',str(OUT),str(PARTS/(part+'.stl'))]
@@ -33,10 +34,17 @@ if True:  # Fixed center avoids the CLI arranger restricting this part to both n
  tag=lambda n:'{'+ns+'}'+n
  model=ET.Element(tag('model'),unit='millimeter');resources=ET.SubElement(model,tag('resources'));obj=ET.SubElement(resources,tag('object'),id='1',type='model');mesh=ET.SubElement(obj,tag('mesh'));vertices=ET.SubElement(mesh,tag('vertices'));triangles=ET.SubElement(mesh,tag('triangles'))
  data=(PARTS/(part+'.stl')).read_bytes();count=struct.unpack_from('<I',data,80)[0]
+ vertex_index={}
  for i in range(count):
   v=struct.unpack_from('<12fH',data,84+50*i)
-  for k in range(3):ET.SubElement(vertices,tag('vertex'),x=str(v[3+3*k]),y=str(v[4+3*k]),z=str(v[5+3*k]))
-  ET.SubElement(triangles,tag('triangle'),v1=str(3*i),v2=str(3*i+1),v3=str(3*i+2))
+  indices=[]
+  for k in range(3):
+   point=tuple(v[3+3*k:6+3*k])
+   if point not in vertex_index:
+    vertex_index[point]=len(vertex_index)
+    ET.SubElement(vertices,tag('vertex'),x=str(point[0]),y=str(point[1]),z=str(point[2]))
+   indices.append(vertex_index[point])
+  ET.SubElement(triangles,tag('triangle'),v1=str(indices[0]),v2=str(indices[1]),v3=str(indices[2]))
  build=ET.SubElement(model,tag('build'));ET.SubElement(build,tag('item'),objectid='1',transform='1 0 0 0 1 0 0 0 1 128 128 0')
  fixed=OUT/(part+'-placement.3mf')
  with zipfile.ZipFile(fixed,'w',zipfile.ZIP_DEFLATED) as z:
@@ -47,7 +55,15 @@ if True:  # Fixed center avoids the CLI arranger restricting this part to both n
 startup=subprocess.STARTUPINFO();startup.dwFlags|=subprocess.STARTF_USESHOWWINDOW;startup.wShowWindow=0
 result=subprocess.run(args,cwd=ROOT,stdout=subprocess.PIPE,stderr=subprocess.PIPE,creationflags=0x08000000,startupinfo=startup)
 (OUT/(part+'-stdout.txt')).write_bytes(result.stdout);(OUT/(part+'-stderr.txt')).write_bytes(result.stderr)
-report={'exit_code':result.returncode,'args':args,'output_exists':(OUT/(part+'-estimate.3mf')).exists(),'physical_print':False,'profile_basis':'Installed Bambu Studio 02.08.02.61; generic material, 0.4 mm nozzle, 0.2 mm layer, 15% gyroid. Actual filament/nozzle not confirmed.'}
+report={'exit_code':result.returncode,'args':args,'output_exists':(OUT/(part+'-estimate.3mf')).exists(),'physical_print':False,'profile_basis':'Installed Bambu Studio 02.08.02.61; Generic PETG, X2D 0.4 mm nozzle, 0.2 mm layer, 15% gyroid. User confirmed PETG and 0.4 mm; actual filament brand/profile calibration remains open.'}
+if result.returncode == 0 and report['output_exists'] and (OUT/'result.json').exists():
+ check=json.loads((OUT/'result.json').read_text())
+ if check.get('return_code') == 0:
+  report['project_settings_check']=preserve_process_overrides(OUT/(part+'-estimate.3mf'),process)
 write(part+'-result.json',report)
 if (OUT/'result.json').exists():write(part+'-slice-result.json',json.loads((OUT/'result.json').read_text()))
 print(json.dumps(report,indent=2))
+if result.returncode or not report['output_exists']:raise SystemExit(1)
+if (OUT/'result.json').exists():
+ check=json.loads((OUT/'result.json').read_text())
+ if check.get('return_code') or any(p.get('warning_message') or not p.get('filaments') for p in check.get('sliced_plates',[])):raise SystemExit(1)

@@ -1,29 +1,18 @@
 # Roller-300
 
-Indoor-first two-wheel roller with a round barrel exoskeleton. No caster. Mechanical development. Not physically validated. No print or powered-test release.
+Two-wheel indoor roller under mechanical development. Start the S21 rigid belt drivetrain with the **five-part receiving-fit test**, PETG /0.4mm on the X2D. The larger carrier/fixture and open-face wheel follow successful hardware fits. Whole-chassis fit remains incomplete: the historical hatch collides when restored and electronics mounts are inactive. Strength optimization and powered loads are deferred.
 
-- [PLAN.md](PLAN.md): mechanical decisions, assembly sequence, and release gates.
-- [parameters.json](parameters.json): dimensions and measurement gates.
-- [parts-sources.json](parts-sources.json) and [BOM.xlsx](BOM.xlsx): source record and purchase workbook, one populated drive first.
-- [test-record.json](test-record.json): CAD and slicer observations. Physical tests are recorded separately and none have been run.
-- [design/](design/README.md): VERSION 0.1 chapters, `design/design_v0_1_*.nbcad.jsonc`.
-- [Roller-300.nbcad](Roller-300.nbcad): native desktop model.
-- [checks/shell-first-checks.json](checks/shell-first-checks.json): preflight and exported mesh topology.
-- [checks/shell-slice-review.json](checks/shell-slice-review.json): offline X2D orientation comparison.
-- `first-prints/shell-first-review/`: review meshes from the native model.
-- `first-prints/coupons/`: fit coupons.
-- `first-prints/native-port/`: meshes replayed from the design chapters.
+- [Roller-300.nbcad](Roller-300.nbcad): current native CAD model,2,033 features and seven assembly Named Views.
+- [Whole-chassis fit review](design/chassis-fit-review-2026-10-07/README.md): native service/access fixes, open-face wheels, exact fit checks and remaining chassis gaps.
+- [Adversarial review](design/adversarial-review-2026-10-06/README.md): corrected defects, native images and validation scope.
+- [PLAN.md](PLAN.md): current dimensions, retention and assembly order.
+- [Small Bambu fit project](first-prints/receiving-fit-gate-2026-10-06/Roller-300-small-fit-gate.3mf): five interfaces, approximately25.48g /1h16m. Open this first.
+- [S21 open-face wheel fit project](first-prints/chassis-fit-2026-10-07/outboard-down/Roller-300-wheel-open-fit.3mf): approximately336.71g /8h38m; print after receiving fits pass. Supersedes the closed-wheel files.
+- [Fresh print decision](design/print-decision-2026-10-06/README.md): fresh native replay, actual toolpaths and corrected support/settings defects. The original ten-part review plate is superseded.
+- [Print set](first-prints/adversarial-fit-2026-10-06/README.md): all eleven pieces and individual slicer checks.
+- [BOM.xlsx](BOM.xlsx) and [parts-sources.json](parts-sources.json): current purchase workbook and source record.
+- [parameters.json](parameters.json) and [test-record.json](test-record.json): current nominal values, evidence and pending physical tests.
 
-The active model is the barrel skin and the load-path hardware. Internal saddles, carriage, hatch, and electronics mounts are suppressed until the structure is designed around those positions. Servo and horn mounting, input axial retention, clutch interfaces, measured battery, sensor, and cable sizes, and service access remain release gates. Nominal envelopes do not prove received-component fit or structural capacity.
+Geometry is authored/replayed and rendered by the installed native CAD application. STEP-based inspection probes and rigid print placement support validation. No print, powered test or purchase has been made. Historical chapter files and previous print folders are retained for reference.
 
-No print has been sent. Offline slices use the installed X2D profiles and do not send a print:
-
-```
-python tools/slice_fit.py main-shell-axle-vertical
-python tools/slice_fit.py main-shell-opening-down
-python tools/slice_fit.py curved-hatch-axle-vertical
-```
-
-The default print set is `shell-first-review`.
-
-The public repository is https://github.com/jeffglousher/Roller-300. No hardware or source license has been assigned; linked third-party material retains its own terms.
+The public repository is https://github.com/jeffglousher/Roller-300. No hardware/source license has been assigned; linked third-party material retains its own terms.

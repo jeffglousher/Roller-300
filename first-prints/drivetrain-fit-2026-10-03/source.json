@@ -1,0 +1,265 @@
+{
+  "source": "Roller-300.nbcad",
+  "source_sha256": "767a8d32968bfef61b02556d5d433998c2c098d8567138aacf7163956c5e5773",
+  "basis": "Native CAD STL exports; rigid rotation/translation only",
+  "material": "PETG",
+  "nozzle_mm": 0.4,
+  "whole_vehicle_release": false,
+  "powered": false,
+  "horn_adapter_release": false,
+  "scope": "Unpowered roof-open one-drive fit; clamp trial has no finalized horn interface",
+  "parts": [
+    {
+      "name": "one-drive-fit-section",
+      "body_id": 373,
+      "native_mesh_sha256": "f65e8317a41a20b033032e87e25002d71ac7c1b4c7fccaf164dc338833baf482",
+      "quantity": 1,
+      "bed_bounds_mm": [
+        [
+          -49.99566650390625,
+          -50.99863815307617,
+          0.0
+        ],
+        [
+          49.99566650390625,
+          50.99863815307618,
+          105.00000000000001
+        ]
+      ]
+    },
+    {
+      "name": "input-sliding-carrier",
+      "body_id": 437,
+      "native_mesh_sha256": "f456440a3e86a472e2ba87fc654e57a06368d0be26bf18e49b31787a0b864af8",
+      "quantity": 1,
+      "bed_bounds_mm": [
+        [
+          -22.157196044921875,
+          -45.0,
+          0.0
+        ],
+        [
+          22.157196044921875,
+          45.0,
+          56.14208984375
+        ]
+      ]
+    },
+    {
+      "name": "clutch-reaction-plate",
+      "body_id": 388,
+      "native_mesh_sha256": "d6b665ad14453d14e34370aa01210b5037922fedd325c223764924f713c94160",
+      "quantity": 1,
+      "bed_bounds_mm": [
+        [
+          -28.75,
+          -28.75,
+          0.0
+        ],
+        [
+          28.75,
+          28.75,
+          8.0
+        ]
+      ]
+    },
+    {
+      "name": "clutch-pressure-pad",
+      "body_id": 391,
+      "native_mesh_sha256": "93b00006c06325d7e781c7b609a98481e5e53f31bdafd729f4012fca5799b5a3",
+      "quantity": 2,
+      "bed_bounds_mm": [
+        [
+          -28.749303817749023,
+          -14.275001525878906,
+          0.0
+        ],
+        [
+          28.749303817749023,
+          14.275001525878906,
+          3.0
+        ]
+      ]
+    },
+    {
+      "name": "clutch-journal-bush",
+      "body_id": 307,
+      "native_mesh_sha256": "7eca6e813a4f2eac9f92240ea3274ca55bb1396f35471a70924151ab755dfc37",
+      "quantity": 1,
+      "bed_bounds_mm": [
+        [
+          -20.0,
+          -20.0,
+          0.0
+        ],
+        [
+          20.0,
+          20.0,
+          50.95000076293946
+        ]
+      ]
+    },
+    {
+      "name": "clutch-output-pulley",
+      "body_id": 9,
+      "native_mesh_sha256": "5f5c4995a55e1796f115a7f006a10c4aea6160c81142876def8e350e06c59949",
+      "quantity": 1,
+      "bed_bounds_mm": [
+        [
+          -24.537311553955078,
+          -24.537311553955078,
+          0.0
+        ],
+        [
+          24.537311553955078,
+          24.537311553955078,
+          46.95000076293946
+        ]
+      ]
+    },
+    {
+      "name": "servo-upper-bridge",
+      "body_id": 367,
+      "native_mesh_sha256": "b46d68e5a553b8e1e451a69684c6b8320b36bca4999e3aa409726b552c9f3b75",
+      "quantity": 1,
+      "bed_bounds_mm": [
+        [
+          -18.299999237060547,
+          -3.5,
+          0.0
+        ],
+        [
+          18.299999237060547,
+          3.5,
+          9.449996948242188
+        ]
+      ]
+    },
+    {
+      "name": "servo-shaft-clamp-trial",
+      "body_id": 301,
+      "native_mesh_sha256": "3fa506990d28c4a365b281a5f54df2d8e37a97d44c00fe6ff0ecf666d1023fc2",
+      "quantity": 1,
+      "bed_bounds_mm": [
+        [
+          -9.499935150146484,
+          -11.75,
+          0.0
+        ],
+        [
+          9.499935150146484,
+          11.75,
+          8.0
+        ]
+      ]
+    },
+    {
+      "name": "input-pulley-clamp-trial",
+      "body_id": 10,
+      "native_mesh_sha256": "1d745643abae2353ea26f74e6f84d38b1453608a7986c618a5b80e30240c8f07",
+      "quantity": 1,
+      "bed_bounds_mm": [
+        [
+          -13.078155517578125,
+          -13.539077758789062,
+          0.0
+        ],
+        [
+          13.078155517578125,
+          13.539077758789062,
+          17.000000000000007
+        ]
+      ]
+    },
+    {
+      "name": "mouth-bearing-retainer",
+      "body_id": 376,
+      "native_mesh_sha256": "d7b9eaf630f90bfaf564855908b598958246fe05447d776909b826cd651359aa",
+      "quantity": 1,
+      "bed_bounds_mm": [
+        [
+          -22.0,
+          -22.0,
+          0.0
+        ],
+        [
+          22.0,
+          22.0,
+          4.500000000000014
+        ]
+      ]
+    },
+    {
+      "name": "input-inboard-bearing-retainer",
+      "body_id": 377,
+      "native_mesh_sha256": "dca7b8e24fc850aed0559dfe0c102e9b6c6ecdacaaf1fe09280bd44bc57205f5",
+      "quantity": 1,
+      "bed_bounds_mm": [
+        [
+          -25.99579906463623,
+          -25.989078521728516,
+          0.0
+        ],
+        [
+          25.99579906463623,
+          25.989078521728516,
+          1.5
+        ]
+      ]
+    },
+    {
+      "name": "input-outboard-bearing-retainer",
+      "body_id": 378,
+      "native_mesh_sha256": "3ca9b1d02d4d50fddfbb8fd6ca7bd578ca957c49b581b67c432d8097341cc8be",
+      "quantity": 1,
+      "bed_bounds_mm": [
+        [
+          -25.99579906463623,
+          -25.989078521728516,
+          0.0
+        ],
+        [
+          25.99579906463623,
+          25.989078521728516,
+          1.5000000000000142
+        ]
+      ]
+    },
+    {
+      "name": "center-bearing-retainer",
+      "body_id": 383,
+      "native_mesh_sha256": "74ff84230a91766b45009e0eb953af37687b4a3d750fced13037ac007075e17c",
+      "quantity": 1,
+      "bed_bounds_mm": [
+        [
+          -22.0,
+          -22.0,
+          0.0
+        ],
+        [
+          22.0,
+          22.0,
+          4.500000000000002
+        ]
+      ]
+    },
+    {
+      "name": "left-wheel-axle-vertical",
+      "body_id": 13,
+      "native_mesh_sha256": "df4c6d6e04f9913ea851b79079a3da96c8c04d342274df83b5c2669cee62e29d",
+      "quantity": 1,
+      "bed_bounds_mm": [
+        [
+          -114.98755645751953,
+          -114.99377584457397,
+          0.0
+        ],
+        [
+          114.98755645751953,
+          114.99377584457397,
+          40.0
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "source_project": "first-prints\\corrected-full-fit-2026-10-06\\Roller-300-full-fit-corrected.3mf",
+  "source_project_sha256": "6626a9cc81481118260c532ed7a4b05731502549de653b899054fbff14f2dcd6",
+  "project_sha256": "e9e594cbadcb05bc3dd69df95a29f70676f9796038dc24e67cba1bd9a5220606",
+  "native_geometry_changed": false,
+  "normal_mesh_count": 1,
+  "support_blocker_count": 2,
+  "native_mesh_signature_sha256": "88f29d0b11c2584381c718a53a2bfc4fbb260bfdeaaa8bfcb78e80ebfd9d220f",
+  "physical_print": false,
+  "powered": false,
+  "settings_preservation": {
+    "project": "C:\\Users\\jeffg\\dev\\Roller-300\\first-prints\\carrier-roof-trial-2026-10-06\\Roller-300-carrier-roof-trial.3mf",
+    "process_override_keys": [
+      "wall_loops",
+      "enable_support",
+      "support_on_build_plate_only",
+      "support_type",
+      "sparse_infill_density",
+      "sparse_infill_pattern",
+      "brim_width",
+      "brim_type",
+      "enable_prime_tower"
+    ],
+    "process_values": {
+      "wall_loops": "5",
+      "enable_support": "1",
+      "support_on_build_plate_only": "0",
+      "support_type": "normal(auto)",
+      "sparse_infill_density": "15%",
+      "sparse_infill_pattern": "gyroid",
+      "brim_width": "3",
+      "brim_type": "outer_only",
+      "enable_prime_tower": "0"
+    },
+    "other_profile_override_slots_preserved": true,
+    "changed_entries": [
+      "Metadata/project_settings.config",
+      "Metadata/plate_1.gcode.md5",
+      "Metadata/plate_1.gcode"
+    ],
+    "plate_checks": [
+      {
+        "plate": "Metadata/plate_1.gcode",
+        "settings_match_gcode": true,
+        "override_slots_match_gcode": true,
+        "outside_config_block_sha256": "f8b7c2130ca2c59305fdad1edca4e803a79775e14d3a00b8f2cfd65cce82c1f7",
+        "gcode_md5": "AFF531E89B78F6FAF83E5E665F628D86"
+      }
+    ],
+    "project_sha256": "e9e594cbadcb05bc3dd69df95a29f70676f9796038dc24e67cba1bd9a5220606",
+    "passed": true
+  },
+  "slice_result": {
+    "error_string": "Success.",
+    "export_time": 2051,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 138,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bridge": 251.21151733398438,
+          "Custom": 284.578857421875,
+          "Flush": 29.0,
+          "Gap infill": 282.9893493652344,
+          "Inner wall": 2380.28759765625,
+          "Internal solid infill": 468.35662841796875,
+          "Outer wall": 1231.674072265625,
+          "Overhang wall": 437.0867614746094,
+          "Sparse infill": 218.5298614501953,
+          "Support": 1069.6019287109375,
+          "Support interface": 308.79681396484375,
+          "Support transition": 146.27459716796875,
+          "Top surface": 133.78665161132812,
+          "Travel": 1305.78662109375,
+          "Undefined": 1300.7806396484375
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFG99",
+            "id": 1,
+            "main_used_g": 55.04900360107422,
+            "total_used_g": 55.04900360107422
+          }
+        ],
+        "generate_support_material_time": 271,
+        "id": 1,
+        "infill_time": 99,
+        "layer_filament_change": 0,
+        "main_predication": 8206.2333984375,
+        "make_perimeters_time": 166,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 90.0,
+              "height": 59.14208984375,
+              "width": 44.66891860961914,
+              "x": 105.66554260253906,
+              "y": 83.0,
+              "z": 0.0
+            },
+            "id": 5,
+            "name": "input-sliding-carrier",
+            "triangle_count": 11062
+          }
+        ],
+        "sliced_time": 2397,
+        "sliced_time_with_cache": 1761,
+        "total_predication": 8543.806640625,
+        "triangle_count": 11062,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 15.0,
+    "wall_loops": 5
+  }
+}

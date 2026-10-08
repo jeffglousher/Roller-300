@@ -1,0 +1,130 @@
+{
+    "error_string": "Success.",
+    "export_time": 1337,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 116,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Bottom surface": 120.38970184326172,
+                "Bridge": 109.55892944335938,
+                "Brim": 66.40763092041016,
+                "Custom": 286.6119079589844,
+                "Flush": 29.0,
+                "Gap infill": 282.7573547363281,
+                "Inner wall": 1093.47998046875,
+                "Internal solid infill": 464.3349914550781,
+                "Outer wall": 470.8712463378906,
+                "Overhang wall": 147.0302276611328,
+                "Sparse infill": 150.31753540039063,
+                "Support": 282.25238037109375,
+                "Support interface": 75.35710144042969,
+                "Support transition": 42.141048431396484,
+                "Top surface": 131.8410186767578,
+                "Travel": 821.2845458984375,
+                "Undefined": 814.298583984375
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFG99",
+                    "id": 1,
+                    "main_used_g": 25.481285095214844,
+                    "total_used_g": 25.481285095214844
+                }
+            ],
+            "generate_support_material_time": 324,
+            "id": 1,
+            "infill_time": 413,
+            "layer_filament_change": 0,
+            "main_predication": 4229.4228515625,
+            "make_perimeters_time": 668,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 44.0,
+                        "height": 4.5,
+                        "width": 44.0,
+                        "x": 58.0,
+                        "y": 68.0,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "mouth-bearing-retainer",
+                    "triangle_count": 3376
+                },
+                {
+                    "bbox": {
+                        "depth": 51.978153228759766,
+                        "height": 4.6999969482421875,
+                        "width": 51.99160385131836,
+                        "x": 114.00419616699219,
+                        "y": 64.01092529296875,
+                        "z": -4.121093688524979e-09
+                    },
+                    "id": 9,
+                    "name": "input-inboard-bearing-retainer",
+                    "triangle_count": 4724
+                },
+                {
+                    "bbox": {
+                        "depth": 9.998383522033691,
+                        "height": 9.449996948242188,
+                        "width": 41.0,
+                        "x": 59.5,
+                        "y": 145.0008087158203,
+                        "z": -4.121093688524979e-09
+                    },
+                    "id": 13,
+                    "name": "servo-upper-bridge",
+                    "triangle_count": 1924
+                },
+                {
+                    "bbox": {
+                        "depth": 26.15631103515625,
+                        "height": 19.60000228881836,
+                        "width": 26.15631103515625,
+                        "x": 126.92184448242188,
+                        "y": 136.92184448242188,
+                        "z": -4.4091787998468135e-09
+                    },
+                    "id": 17,
+                    "name": "input-rex-pulley",
+                    "triangle_count": 4968
+                },
+                {
+                    "bbox": {
+                        "depth": 33.200008392333984,
+                        "height": 12.200000762939453,
+                        "width": 33.20000457763672,
+                        "x": 173.39999389648438,
+                        "y": 133.39999389648438,
+                        "z": -1.4697265626750777e-09
+                    },
+                    "id": 21,
+                    "name": "servo-horn-rex-adapter",
+                    "triangle_count": 4368
+                }
+            ],
+            "sliced_time": 4203,
+            "sliced_time_with_cache": 2380,
+            "total_predication": 4567.048828125,
+            "triangle_count": 19360,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 15.0,
+    "upward_compatible_machine": [
+        "Bambu Lab A1 0.4 nozzle",
+        "Bambu Lab P2S 0.4 nozzle",
+        "Bambu Lab H2S 0.4 nozzle",
+        "Bambu Lab H2D 0.4 nozzle",
+        "Bambu Lab H2D Pro 0.4 nozzle",
+        "Bambu Lab H2C 0.4 nozzle",
+        "Bambu Lab A2L 0.4 nozzle"
+    ],
+    "wall_loops": 5
+}

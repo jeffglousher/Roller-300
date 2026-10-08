@@ -1,5 +1,9 @@
 # design/
 
+## Current S20 drivetrain
+
+[Adversarial review](adversarial-review-2026-10-06/README.md) contains the current native captures, exact interference and geometry checks. [Canonical CAD](../Roller-300.nbcad) and [PLAN.md](../PLAN.md) define the current assembly. The chapter files below are historical baselines and do not regenerate S20.
+
 VERSION 0.1 chapters (`VERSION`, `gen_meta.json`). Filenames are `design_v0_1_<role>.nbcad.jsonc`. The `"version": 1` field inside each file is the script schema.
 
 Mechanical decisions are in [`../PLAN.md`](../PLAN.md). Dimensions are in [`../parameters.json`](../parameters.json). The native desktop model is [`../Roller-300.nbcad`](../Roller-300.nbcad).

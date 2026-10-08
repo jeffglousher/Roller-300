@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-07",
+  "revision": "S21",
+  "source": "Roller-300.nbcad",
+  "source_sha256": "dbb79ae72b28707accd399a6784c7ea76deb182d6314b5a6dd007a6c724e655f",
+  "features": 2033,
+  "feature_errors": 0,
+  "checks": "design/chassis-fit-review-2026-10-07/validation-summary.json",
+  "native_geometry_matches_saved_replay": true,
+  "inherited_drivetrain_review": "design/adversarial-review-2026-10-06/validation-summary.json",
+  "unchanged_current_fit_print_bodies": 10,
+  "wheel_cap_minimum_gap_at_axial_extreme_mm": 23.8,
+  "wheel_shell_minimum_gap_at_axial_extreme_mm": 28.3,
+  "whole_chassis_fit_released": false,
+  "powered_release": false,
+  "wheel_print_estimate": {
+    "project": "first-prints/chassis-fit-2026-10-07/outboard-down/Roller-300-wheel-open-fit.3mf",
+    "grams": 336.7090148925781,
+    "time_seconds": 31108.98046875,
+    "pose": "outboard_face_down",
+    "source_stl_sha256": "26a42cf367d89be68c3d39e977afccacaf44a4a1f6aa3805f8689134e0087fc5",
+    "settings_verified": true,
+    "release": "HOLD until receiving/carrier fits pass; unpowered fit candidate",
+    "canonical_source_geometry_verified": true
+  },
+  "review_completed": true,
+  "passed": true,
+  "passed_scope": "Saved native replay and unchanged10 current fit meshes; whole chassis remains incomplete",
+  "cad_executable_sha256": "8edc25d99bacf40ec7b3887805ae4f39e36db8d6b7a8f8f37738e155b36afd02",
+  "fixes": [
+    "Two D4.4 carrier driver service bores",
+    "Both wheel faces opened insideR108"
+  ],
+  "remaining": [
+    "Historical hatch reactivation collides",
+    "Electronics/optics/plug restraints inactive and unmeasured",
+    "Actual316mm shaft width exceeds300mm target",
+    "PETG/hardware receiving fits not performed"
+  ],
+  "physical_print": false
+}

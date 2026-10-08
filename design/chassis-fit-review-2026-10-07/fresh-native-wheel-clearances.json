@@ -1,0 +1,149 @@
+{
+  "date": "2026-10-07",
+  "source": "Roller-300.nbcad",
+  "source_sha256": "bf4561cd9261083763b1f117bf14007dcaf6202b5efd19679aec39a4e36bd52b",
+  "native_session": "63869793-b08d-4941-a4df-5cbab44727dd",
+  "tool_build_pair": {
+    "desktop": null,
+    "mcp": {
+      "channel": "development",
+      "modified": false,
+      "revision": "abf4667dade28faae3c837a2837f6aad45c65e72",
+      "version": "0.2.2"
+    },
+    "status": "unknown"
+  },
+  "qualification": "Live native exact check cross-referenced to isolated same-installed-application replay and canonical source inventory; build pair is not declared matched.",
+  "native_result": {
+    "_disclosure": {
+      "active_focus": "assembly",
+      "advertised": true,
+      "mode": "dynamic",
+      "pack": "document",
+      "state": "soft"
+    },
+    "exact": true,
+    "pairs": [
+      {
+        "below_clearance": true,
+        "body_a": 13,
+        "body_b": 32,
+        "closest_point_a": [
+          4.0000000000011,
+          110,
+          47.10533615595901
+        ],
+        "closest_point_b": [
+          4.0000000000011,
+          105,
+          47.10533615595901
+        ],
+        "interfering": false,
+        "minimum_clearance_mm": 5,
+        "occurrence_a": 26,
+        "occurrence_b": 86,
+        "overlap_volume_mm3": 0
+      },
+      {
+        "below_clearance": true,
+        "body_a": 13,
+        "body_b": 376,
+        "closest_point_a": [
+          18,
+          110,
+          123
+        ],
+        "closest_point_b": [
+          18,
+          109.50000000000001,
+          123
+        ],
+        "interfering": false,
+        "minimum_clearance_mm": 0.4999999999999858,
+        "occurrence_a": 26,
+        "occurrence_b": 182,
+        "overlap_volume_mm3": 0
+      },
+      {
+        "below_clearance": true,
+        "body_a": 30,
+        "body_b": 32,
+        "closest_point_a": [
+          4.0000000000011,
+          -110,
+          47.10533615595901
+        ],
+        "closest_point_b": [
+          4.0000000000011,
+          -105,
+          47.10533615595901
+        ],
+        "interfering": false,
+        "minimum_clearance_mm": 5,
+        "occurrence_a": 61,
+        "occurrence_b": 86,
+        "overlap_volume_mm3": 0
+      },
+      {
+        "below_clearance": true,
+        "body_a": 30,
+        "body_b": 380,
+        "closest_point_a": [
+          18,
+          -110,
+          123
+        ],
+        "closest_point_b": [
+          18,
+          -109.50000000000001,
+          123
+        ],
+        "interfering": false,
+        "minimum_clearance_mm": 0.4999999999999858,
+        "occurrence_a": 61,
+        "occurrence_b": 186,
+        "overlap_volume_mm3": 0
+      },
+      {
+        "below_clearance": true,
+        "body_a": 32,
+        "body_b": 376,
+        "closest_point_a": [
+          13.720815280171305,
+          105,
+          110.9791847198287
+        ],
+        "closest_point_b": [
+          13.720815280171305,
+          105,
+          110.9791847198287
+        ],
+        "interfering": false,
+        "minimum_clearance_mm": 0,
+        "occurrence_a": 86,
+        "occurrence_b": 182,
+        "overlap_volume_mm3": 0
+      },
+      {
+        "below_clearance": true,
+        "body_a": 32,
+        "body_b": 380,
+        "closest_point_a": [
+          13.720815280171305,
+          -105,
+          110.9791847198287
+        ],
+        "closest_point_b": [
+          13.720815280171305,
+          -105,
+          110.9791847198287
+        ],
+        "interfering": false,
+        "minimum_clearance_mm": 0,
+        "occurrence_a": 86,
+        "occurrence_b": 186,
+        "overlap_volume_mm3": 0
+      }
+    ]
+  }
+}

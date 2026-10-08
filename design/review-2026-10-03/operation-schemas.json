@@ -1,0 +1,160 @@
+[
+  {
+    "description": "Check retained native solids at solved occurrence poses. Reports exact overlap volumes and clearances after broad-phase culling. Empty occurrence_ids checks all visible occurrences; touching faces are not volumetric interference.",
+    "execution": "direct",
+    "group": "assembly/inspect",
+    "inputSchema": {
+      "additionalProperties": false,
+      "properties": {
+        "clearance_threshold_mm": {
+          "minimum": 0,
+          "type": "number"
+        },
+        "occurrence_ids": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array",
+          "uniqueItems": true
+        }
+      },
+      "required": [],
+      "type": "object"
+    },
+    "mutates": false,
+    "name": "assembly_interference_check",
+    "spine": false,
+    "title": "Inspect exact assembly interference"
+  },
+  {
+    "description": "Export selected or all active bodies as AP242 STEP bytes encoded in base64. Prefer solid_export_3mf for slicers.",
+    "execution": "direct",
+    "group": "document/export",
+    "inputSchema": {
+      "additionalProperties": false,
+      "properties": {
+        "body_ids": {
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "expected_model_json": {
+          "description": "Optional exact cad_project_model string. Rejects if the current model differs before exporting geometry.",
+          "type": "string"
+        },
+        "occurrences": {
+          "description": "Optional solved occurrence copies; omit for part-local geometry.",
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "body_id": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "component_id": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "name": {
+                "type": "string"
+              },
+              "occurrence_id": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "rotation": {
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 4,
+                "minItems": 4,
+                "type": "array"
+              },
+              "translation": {
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 3,
+                "minItems": 3,
+                "type": "array"
+              }
+            },
+            "required": [
+              "occurrence_id",
+              "component_id",
+              "body_id",
+              "translation",
+              "rotation"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "thread_metadata": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "type": "array"
+        }
+      },
+      "required": [],
+      "type": "object"
+    },
+    "mutates": false,
+    "name": "solid_export_step",
+    "spine": false,
+    "title": "Export STEP"
+  },
+  {
+    "description": "Tessellate active bodies and return binary STL (millimetres) as base64. Appearance is not included.",
+    "execution": "direct",
+    "group": "document/export",
+    "inputSchema": {
+      "additionalProperties": false,
+      "properties": {
+        "angular_deflection": {
+          "default": 0.35,
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        "body_ids": {
+          "description": "Empty exports every active body.",
+          "items": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "expected_model_json": {
+          "description": "Optional exact cad_project_model string captured before an interactive choice. Export rejects if the current model differs; no geometry is written.",
+          "type": "string"
+        },
+        "linear_deflection": {
+          "default": 0.15,
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        "scope": {
+          "default": "assembly",
+          "description": "Assembly exports visible solved occurrences. Definition exports each selected body once in its part coordinates.",
+          "enum": [
+            "assembly",
+            "definition"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [],
+      "type": "object"
+    },
+    "mutates": false,
+    "name": "solid_export_stl",
+    "spine": false,
+    "title": "Export STL"
+  }
+]

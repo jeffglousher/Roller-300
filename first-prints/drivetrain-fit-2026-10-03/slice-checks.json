@@ -1,0 +1,152 @@
+{
+  "source_sha256": "767a8d32968bfef61b02556d5d433998c2c098d8567138aacf7163956c5e5773",
+  "material": "PETG",
+  "nozzle_mm": 0.4,
+  "layer_height_mm": 0.2,
+  "wall_loops": 5,
+  "infill": "15% gyroid",
+  "physical_print": false,
+  "passed": true,
+  "parts": [
+    {
+      "part": "center-bearing-retainer",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 949.0658569335938,
+      "grams": 4.841744899749756,
+      "warnings": [],
+      "passed": true,
+      "native_mesh_sha256": "74ff84230a91766b45009e0eb953af37687b4a3d750fced13037ac007075e17c"
+    },
+    {
+      "part": "clutch-journal-bush",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 4300.2529296875,
+      "grams": 28.7611141204834,
+      "warnings": [],
+      "passed": true,
+      "native_mesh_sha256": "7eca6e813a4f2eac9f92240ea3274ca55bb1396f35471a70924151ab755dfc37"
+    },
+    {
+      "part": "clutch-output-pulley",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 6761.685546875,
+      "grams": 38.659732818603516,
+      "warnings": [],
+      "passed": true,
+      "native_mesh_sha256": "5f5c4995a55e1796f115a7f006a10c4aea6160c81142876def8e350e06c59949"
+    },
+    {
+      "part": "clutch-pressure-pad",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 667.41845703125,
+      "grams": 2.5936923027038574,
+      "warnings": [],
+      "native_mesh_sha256": "93b00006c06325d7e781c7b609a98481e5e53f31bdafd729f4012fca5799b5a3",
+      "passed": true
+    },
+    {
+      "part": "clutch-reaction-plate",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 2325.03466796875,
+      "grams": 11.652788162231445,
+      "warnings": [],
+      "passed": true,
+      "native_mesh_sha256": "d6b665ad14453d14e34370aa01210b5037922fedd325c223764924f713c94160"
+    },
+    {
+      "part": "input-inboard-bearing-retainer",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 699.731689453125,
+      "grams": 3.125544309616089,
+      "warnings": [],
+      "passed": true,
+      "native_mesh_sha256": "dca7b8e24fc850aed0559dfe0c102e9b6c6ecdacaaf1fe09280bd44bc57205f5"
+    },
+    {
+      "part": "input-outboard-bearing-retainer",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 699.731689453125,
+      "grams": 3.125544309616089,
+      "warnings": [],
+      "passed": true,
+      "native_mesh_sha256": "3ca9b1d02d4d50fddfbb8fd6ca7bd578ca957c49b581b67c432d8097341cc8be"
+    },
+    {
+      "part": "input-pulley-clamp-trial",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 2051.884033203125,
+      "grams": 7.328353404998779,
+      "warnings": [],
+      "passed": true,
+      "native_mesh_sha256": "1d745643abae2353ea26f74e6f84d38b1453608a7986c618a5b80e30240c8f07"
+    },
+    {
+      "part": "input-sliding-carrier",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 7784.68408203125,
+      "grams": 55.30887222290039,
+      "warnings": [],
+      "passed": true,
+      "native_mesh_sha256": "f456440a3e86a472e2ba87fc654e57a06368d0be26bf18e49b31787a0b864af8"
+    },
+    {
+      "part": "left-wheel-axle-vertical",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 56668.0546875,
+      "grams": 609.359619140625,
+      "warnings": [],
+      "native_mesh_sha256": "df4c6d6e04f9913ea851b79079a3da96c8c04d342274df83b5c2669cee62e29d",
+      "passed": true
+    },
+    {
+      "part": "mouth-bearing-retainer",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 955.0569458007812,
+      "grams": 4.881384372711182,
+      "warnings": [],
+      "passed": true,
+      "native_mesh_sha256": "d7b9eaf630f90bfaf564855908b598958246fe05447d776909b826cd651359aa"
+    },
+    {
+      "part": "one-drive-fit-section",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 18702.404296875,
+      "grams": 187.16932678222656,
+      "warnings": [],
+      "native_mesh_sha256": "f65e8317a41a20b033032e87e25002d71ac7c1b4c7fccaf164dc338833baf482",
+      "passed": true
+    },
+    {
+      "part": "servo-shaft-clamp-trial",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 886.0994262695312,
+      "grams": 2.115067720413208,
+      "warnings": [],
+      "passed": true,
+      "native_mesh_sha256": "3fa506990d28c4a365b281a5f54df2d8e37a97d44c00fe6ff0ecf666d1023fc2"
+    },
+    {
+      "part": "servo-upper-bridge",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 1058.4144287109375,
+      "grams": 2.5989017486572266,
+      "warnings": [],
+      "passed": true,
+      "native_mesh_sha256": "b46d68e5a553b8e1e451a69684c6b8320b36bca4999e3aa409726b552c9f3b75"
+    }
+  ]
+}

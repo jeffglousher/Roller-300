@@ -1,0 +1,7 @@
+# Reproducible intermediate geometry; PNGs and compact evidence remain visible.
+scene.json
+recompute.json
+body-*.step
+body-*-review.stl
+*-log.txt
+kernel-stderr.txt

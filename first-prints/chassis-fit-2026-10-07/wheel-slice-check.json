@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-07",
+  "native_source_project": ".local\\s21-chassis-access-replayed.nbcad",
+  "native_source_project_sha256": "f44c1acb824ed2a0a4b773db5265e754d7f9c1fd45e0c9c5e64d964533201312",
+  "native_body_id": 13,
+  "native_stl": "design\\chassis-fit-review-2026-10-07\\s21-access\\body-13.stl",
+  "native_stl_sha256": "26a42cf367d89be68c3d39e977afccacaf44a4a1f6aa3805f8689134e0087fc5",
+  "project": "first-prints\\chassis-fit-2026-10-07\\Roller-300-wheel-open-fit.3mf",
+  "project_sha256": "71f6ab77043624dff7aaaff6f0b3d6e475dafd742dbed99f05c44c95516aa2da",
+  "geometry_changed": false,
+  "triangle_count": 4064,
+  "maximum_placed_vertex_error_mm": 4.296261192478906e-06,
+  "native_triangle_connectivity_preserved": true,
+  "placed_geometry_signature_tolerance_mm": 0.0001,
+  "placed_geometry_signature_sha256": "dba1fee5dd9cb2f6d4feb4d6f2eb09e8cd98ec94018426ae07f046bbdfb9e964",
+  "normal_mesh_count": 1,
+  "support_blocker_count": 0,
+  "native_to_bed_map": "bed=(nativeX+128,251-nativeZ,nativeY-110); rigid +90deg X rotation and translation only",
+  "release": "HOLD until receiving hardware fits and support cleanup/driver access review",
+  "physical_print": false,
+  "powered": false,
+  "settings_preservation": {
+    "project": "C:\\Users\\jeffg\\dev\\Roller-300\\first-prints\\chassis-fit-2026-10-07\\Roller-300-wheel-open-fit.3mf",
+    "process_override_keys": [
+      "wall_loops",
+      "enable_support",
+      "support_on_build_plate_only",
+      "support_type",
+      "sparse_infill_density",
+      "sparse_infill_pattern",
+      "brim_width",
+      "brim_type",
+      "enable_prime_tower"
+    ],
+    "process_values": {
+      "wall_loops": "5",
+      "enable_support": "1",
+      "support_on_build_plate_only": "0",
+      "support_type": "normal(auto)",
+      "sparse_infill_density": "15%",
+      "sparse_infill_pattern": "gyroid",
+      "brim_width": "3",
+      "brim_type": "outer_only",
+      "enable_prime_tower": "0"
+    },
+    "other_profile_override_slots_preserved": true,
+    "changed_entries": [],
+    "plate_checks": [
+      {
+        "plate": "Metadata/plate_1.gcode",
+        "settings_match_gcode": true,
+        "override_slots_match_gcode": true,
+        "outside_config_block_sha256": "18c992edb0e43f628939f5ade2b537c50e1c17940120feea8612765e3660b4ae",
+        "gcode_md5": "1F460123CCE6A487C758E5089B9937F8"
+      }
+    ],
+    "project_sha256": "71f6ab77043624dff7aaaff6f0b3d6e475dafd742dbed99f05c44c95516aa2da",
+    "passed": true
+  },
+  "slice_result": {
+    "error_string": "Success.",
+    "export_time": 1964,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 67,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 154.1456756591797,
+          "Bridge": 3852.30810546875,
+          "Brim": 88.25790405273438,
+          "Custom": 285.4519348144531,
+          "Flush": 29.0,
+          "Gap infill": 21.069067001342773,
+          "Inner wall": 7365.208984375,
+          "Internal solid infill": 3479.61083984375,
+          "Outer wall": 1743.6602783203125,
+          "Overhang wall": 57.28676223754883,
+          "Sparse infill": 4355.0419921875,
+          "Support": 10357.2021484375,
+          "Support interface": 1046.2674560546875,
+          "Support transition": 834.8779907226562,
+          "Top surface": 753.5827026367188,
+          "Travel": 1145.6163330078125,
+          "Undefined": 1139.650390625
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFG99",
+            "id": 1,
+            "main_used_g": 398.7583312988281,
+            "total_used_g": 398.7583312988281
+          }
+        ],
+        "generate_support_material_time": 632,
+        "id": 1,
+        "infill_time": 1936,
+        "layer_filament_change": 0,
+        "main_predication": 35176.70703125,
+        "make_perimeters_time": 265,
+        "obj_cached_cnt": 0,
+        "sliced_time": 6492,
+        "sliced_time_with_cache": 3484,
+        "total_predication": 35514.19140625,
+        "triangle_count": 4064,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 15.0,
+    "wall_loops": 5
+  },
+  "mass_grams": 398.7583312988281,
+  "time_seconds": 35514.19140625
+}

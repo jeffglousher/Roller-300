@@ -1,0 +1,104 @@
+{
+  "project": "first-prints\\chassis-fit-2026-10-07\\Roller-300-wheel-open-fit.3mf",
+  "project_sha256": "71f6ab77043624dff7aaaff6f0b3d6e475dafd742dbed99f05c44c95516aa2da",
+  "limitations": "Deposited-path geometric inspection; not a physical adhesion or dimensional qualification.",
+  "plate": [
+    {
+      "name": "left-wheel-open-fit",
+      "id": 0,
+      "layer_z_values": 200,
+      "min_model_z": 0.2,
+      "max_model_z": 40.0,
+      "deposited_first_layer_model_area_mm2": 4666.558364022911,
+      "first_layer_components": 1,
+      "first_layer_model_bounds_mm": [
+        13.425,
+        13.406,
+        242.6,
+        242.594
+      ],
+      "first_layer_all_bounds_mm": [
+        10.411,
+        10.393,
+        245.613,
+        245.606
+      ],
+      "first_layer_all_deposited_bounds_mm": [
+        10.161000020875747,
+        10.143013206187405,
+        245.86294884399112,
+        245.85598651886716
+      ],
+      "total_extrusion_length_mm": 130538.92511,
+      "support_extrusion_length_mm": 48964.42083,
+      "support_z_mm": [
+        0.2,
+        23.4
+      ],
+      "min_outer_width_mm": 0.42,
+      "sub_0p2_wall_length_mm": 0,
+      "sub_0p2_gap_length_mm": 125.35883168114849,
+      "bridge_z_mm": [
+        23.8,
+        26.8,
+        39.2
+      ]
+    }
+  ],
+  "individuals": [],
+  "feature_regions": {},
+  "carrier_nut_roof_deposition": {},
+  "open_face_cleanup": {
+    "native_opening_diameter_mm": 216,
+    "retained_hub_web_bed_z_mm": [
+      23.5,
+      27.5
+    ],
+    "upper_cavity_now_open": true,
+    "support_deposition_above_web_path_mm": 0,
+    "support_deposition_above_web_z_mm": [],
+    "support_paths_in_pilot_through_web": 0,
+    "support_paths_in_four_M4_bores_through_web": 0,
+    "cleanup_assessment": "Support under the retained web is directly accessible through the D216 inboard face; outboard face is open to the screw heads and driver. Physical cleanup quality and PETG fits remain receiving tests."
+  },
+  "bed_fit": {
+    "main_nozzle_only": true,
+    "main_profile_bed_xy_mm": [
+      256,
+      256
+    ],
+    "first_layer_all_deposition_bounds_mm": [
+      10.161000020875747,
+      10.143013206187405,
+      245.86294884399112,
+      245.85598651886716
+    ],
+    "all_layer_deposition_bounds_mm": [
+      10.161,
+      10.143,
+      245.863,
+      245.856
+    ],
+    "min_first_layer_bed_margin_mm": 10.13705115600888,
+    "min_all_layer_bed_margin_mm": 10.137,
+    "model_first_layer_connected_components": 1,
+    "dual_nozzle_intersection_not_qualified": true
+  },
+  "material_and_time": {
+    "grams": 398.7583312988281,
+    "seconds": 35514.19140625,
+    "support_extrusion_mm": 48964.42083,
+    "all_extrusion_mm": 130538.92511,
+    "estimated_support_grams": 149.57202019804788,
+    "qualification": "Support grams estimated from actual extrusion fraction; all material/time estimates from fresh Bambu offline slice."
+  },
+  "native_provenance": {
+    "source_project": ".local\\s21-chassis-access-replayed.nbcad",
+    "source_project_sha256": "f44c1acb824ed2a0a4b773db5265e754d7f9c1fd45e0c9c5e64d964533201312",
+    "body_id": 13,
+    "native_stl_sha256": "26a42cf367d89be68c3d39e977afccacaf44a4a1f6aa3805f8689134e0087fc5",
+    "triangle_count": 4064,
+    "placed_geometry_signature": "dba1fee5dd9cb2f6d4feb4d6f2eb09e8cd98ec94018426ae07f046bbdfb9e964",
+    "geometry_modified_by_placement": false
+  }
+}

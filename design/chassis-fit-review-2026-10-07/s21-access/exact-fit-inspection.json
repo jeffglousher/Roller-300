@@ -1,0 +1,526 @@
+{
+  "qualification": "Exact STEP gauge inspection of native CAD-authored S21 geometry. Nominal fit only; not physical fit, material strength or motion qualification.",
+  "native_export_provenance": {
+    "source_archive_sha256": "bf4561cd9261083763b1f117bf14007dcaf6202b5efd19679aec39a4e36bd52b",
+    "cad_executable": "C:\\Users\\jeffg\\AppData\\Local\\limo-cad\\bevy\\Limo-CAD.exe",
+    "cad_executable_sha256": "8edc25d99bacf40ec7b3887805ae4f39e36db8d6b7a8f8f37738e155b36afd02",
+    "candidate": "C:\\Users\\jeffg\\dev\\Roller-300\\.local\\s21-chassis-access-replayed.nbcad",
+    "candidate_sha256": "f44c1acb824ed2a0a4b773db5265e754d7f9c1fd45e0c9c5e64d964533201312",
+    "replay_model_sha256": "ddfae51347b53bfe1fc3fbf56fbcd0bc6a0bd9a399b8967b3704a7404d36814e",
+    "feature_count": 2033,
+    "feature_errors": [],
+    "native_hashes": {
+      "32": {
+        "step": "939d1fdee46c53487002412b8827e149fd3099130872e5670880d95f25237b4a",
+        "stl": "d19073a8bbd824c86944997e74d060c1d66a9496b03c4d394af64bc174d804b6"
+      },
+      "30": {
+        "step": "ae19e98d22fdc322ff575948c431bb6689530d64a50da17112d4842bd06e4b16",
+        "stl": "f67e762f11799052b3ef281c0db871d634926a54ed9d021506e39ad6c17101b7"
+      },
+      "373": {
+        "step": "c0f85c60f2451af34edf988313291500c6617654e098e0681db0b256cbe96ee1",
+        "stl": "48b12546e4859669dedd397ea22f59e7f2ec21f68d158b2cb1ed5515596bdc81"
+      },
+      "437": {
+        "step": "8076fd0031a3d08ecf7856a8d6b075f7f6c386ee00a0fd83af0043e1ca0bec7c",
+        "stl": "52e519b99b8fe3e65ccc18850068ff0342fdffd61d38c12a49dfdd960df690d1"
+      },
+      "9": {
+        "step": "f415ee8fbc7317d7e06acffda6e1ef56137451a9b870ce18bfe6ffd268182476",
+        "stl": "5ef1c786dfbc9947e2a62efdabed6430e5be5f0af4d5dc9585eec755abbac3d4"
+      },
+      "367": {
+        "step": "f3ed6430109091d8b890bb6f488d5542da8bc5c4d69a3632edc96c0833743999",
+        "stl": "3003fe739d8f14455ebea2d8af8cc2f89194eb4bca41ff21bc6f0617389e3bf9"
+      },
+      "301": {
+        "step": "9695a9048bea060f4d86e807044ca7ca49743322bd87908e0fdaec236a073317",
+        "stl": "a0b30b6fc3bcdce9b5964ca5bd57c8680aefba06a6c77b9b7d77ddd0c39694b8"
+      },
+      "10": {
+        "step": "79cb4b2f6adb13b8180ecaa26fcaf169543a0d9d3b1a8062daeecc5c5dd18008",
+        "stl": "73e4a78c5899c1fca1bd8aa07c04f20782a53debef45f4cc749dd325b5720691"
+      },
+      "376": {
+        "step": "1914ffb18d179eb4435780e393ef51e84a7b2bc4c363bb3b30a4b6486e2cee8f",
+        "stl": "550e86ba7be822fd7cfc3561e09da8c0e881a09152459cf1d06248300117d4ec"
+      },
+      "377": {
+        "step": "16a4b088413d3bb7bca0625252b014e209dfd0a0705d5d27e0382e0305189e55",
+        "stl": "9fc13651aa069f6f052a0a4214c7c8ed0ceef14ab2a8cfcedbb03496e6834e41"
+      },
+      "378": {
+        "step": "afffe1d1b692be996dcde74d721b5c0066c4d3518df378db41343cb8fd84d143",
+        "stl": "6828c87621572fcb05e457229cfccf1c6716b6ce0aa1bb81cf41a485a72eaba8"
+      },
+      "383": {
+        "step": "f3f8d96dc8a65493090f58737b3d28b9bfd377f140d90b37cf7b09de23da8798",
+        "stl": "00ef8aa54b4fde8df478c956b453059423d5b085f37b203edd88d09958a86eb2"
+      },
+      "13": {
+        "step": "abd52781a450150e0792ef8164e959d1c4e5b467d859abed83fa7df7ae16c8ef",
+        "stl": "26a42cf367d89be68c3d39e977afccacaf44a4a1f6aa3805f8689134e0087fc5"
+      }
+    },
+    "unchanged_current_fit_parts": [
+      "one-drive-fit-section",
+      "input-sliding-carrier",
+      "rigid-output-pulley",
+      "servo-upper-bridge",
+      "servo-horn-rex-adapter",
+      "input-rex-pulley",
+      "mouth-bearing-retainer",
+      "input-inboard-bearing-retainer",
+      "input-outboard-bearing-retainer",
+      "center-bearing-retainer"
+    ],
+    "wheel_print_changed": true,
+    "canonical_unchanged": true
+  },
+  "body_validation": [
+    {
+      "body": 32,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -80.0000001,
+          -105.0000001,
+          42.9999999
+        ],
+        [
+          80.0000001,
+          105.0000001,
+          203.0000001
+        ]
+      ],
+      "volume_mm3": 515316.74398930214
+    },
+    {
+      "body": 13,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -115.0000001,
+          109.9999999,
+          7.9999999
+        ],
+        [
+          115.0000001,
+          150.0000001,
+          238.0000001
+        ]
+      ],
+      "volume_mm3": 341840.4665482043
+    },
+    {
+      "body": 30,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -115.0000001,
+          -150.0000001,
+          7.9999999
+        ],
+        [
+          115.0000001,
+          -109.9999999,
+          238.0000001
+        ]
+      ],
+      "volume_mm3": 341840.46654831205
+    }
+  ],
+  "wheel_access": [
+    {
+      "body": 13,
+      "bolt_center_xz": [
+        -8,
+        115
+      ],
+      "driver_diameter_mm": 3.5,
+      "driver_overlap_mm3": 0.0,
+      "head_diameter_mm": 7,
+      "head_insertion_sweep_overlap_mm3": 0.0,
+      "shank_diameter_mm": 4,
+      "shank_web_overlap_mm3": 0.0
+    },
+    {
+      "body": 13,
+      "bolt_center_xz": [
+        -8,
+        131
+      ],
+      "driver_diameter_mm": 3.5,
+      "driver_overlap_mm3": 0.0,
+      "head_diameter_mm": 7,
+      "head_insertion_sweep_overlap_mm3": 0.0,
+      "shank_diameter_mm": 4,
+      "shank_web_overlap_mm3": 0.0
+    },
+    {
+      "body": 13,
+      "bolt_center_xz": [
+        8,
+        115
+      ],
+      "driver_diameter_mm": 3.5,
+      "driver_overlap_mm3": 0.0,
+      "head_diameter_mm": 7,
+      "head_insertion_sweep_overlap_mm3": 0.0,
+      "shank_diameter_mm": 4,
+      "shank_web_overlap_mm3": 0.0
+    },
+    {
+      "body": 13,
+      "bolt_center_xz": [
+        8,
+        131
+      ],
+      "driver_diameter_mm": 3.5,
+      "driver_overlap_mm3": 0.0,
+      "head_diameter_mm": 7,
+      "head_insertion_sweep_overlap_mm3": 0.0,
+      "shank_diameter_mm": 4,
+      "shank_web_overlap_mm3": 0.0
+    },
+    {
+      "body": 30,
+      "bolt_center_xz": [
+        -8,
+        115
+      ],
+      "driver_diameter_mm": 3.5,
+      "driver_overlap_mm3": 0.0,
+      "head_diameter_mm": 7,
+      "head_insertion_sweep_overlap_mm3": 0.0,
+      "shank_diameter_mm": 4,
+      "shank_web_overlap_mm3": 0.0
+    },
+    {
+      "body": 30,
+      "bolt_center_xz": [
+        -8,
+        131
+      ],
+      "driver_diameter_mm": 3.5,
+      "driver_overlap_mm3": 0.0,
+      "head_diameter_mm": 7,
+      "head_insertion_sweep_overlap_mm3": 0.0,
+      "shank_diameter_mm": 4,
+      "shank_web_overlap_mm3": 0.0
+    },
+    {
+      "body": 30,
+      "bolt_center_xz": [
+        8,
+        115
+      ],
+      "driver_diameter_mm": 3.5,
+      "driver_overlap_mm3": 0.0,
+      "head_diameter_mm": 7,
+      "head_insertion_sweep_overlap_mm3": 0.0,
+      "shank_diameter_mm": 4,
+      "shank_web_overlap_mm3": 0.0
+    },
+    {
+      "body": 30,
+      "bolt_center_xz": [
+        8,
+        131
+      ],
+      "driver_diameter_mm": 3.5,
+      "driver_overlap_mm3": 0.0,
+      "head_diameter_mm": 7,
+      "head_insertion_sweep_overlap_mm3": 0.0,
+      "shank_diameter_mm": 4,
+      "shank_web_overlap_mm3": 0.0
+    }
+  ],
+  "preserved_wheel_regions": [
+    {
+      "body": 13,
+      "hub_web_axial_mm": [
+        133.5,
+        137.5
+      ],
+      "hub_web_original_volume_mm3": 146222.79112350795,
+      "hub_web_revised_volume_mm3": 146222.79112350795,
+      "rim_radial_mm": [
+        108,
+        115
+      ],
+      "rim_original_volume_mm3": 196161.045290094,
+      "rim_revised_volume_mm3": 196161.04529006127,
+      "added_material_mm3": 0.0,
+      "removed_material_mm3": 577644.6412155562,
+      "removed_material_bounds_mm": [
+        [
+          -108.00000010000007,
+          109.99999989999993,
+          14.999999899999937
+        ],
+        [
+          108.00000010000007,
+          150.00000010000005,
+          231.00000010000005
+        ]
+      ],
+      "nominal_open_face_diameter_mm": 216
+    },
+    {
+      "body": 30,
+      "hub_web_axial_mm": [
+        -133.5,
+        -137.5
+      ],
+      "hub_web_original_volume_mm3": 146222.79112350804,
+      "hub_web_revised_volume_mm3": 146222.79112350804,
+      "rim_radial_mm": [
+        108,
+        115
+      ],
+      "rim_original_volume_mm3": 196161.0452901987,
+      "rim_revised_volume_mm3": 196161.04529016616,
+      "added_material_mm3": 0.0,
+      "removed_material_mm3": 577644.6412155792,
+      "removed_material_bounds_mm": [
+        [
+          -108.00000010000001,
+          -150.00000010000002,
+          14.999999899999986
+        ],
+        [
+          108.00000010000001,
+          -109.99999989999999,
+          231.00000010000002
+        ]
+      ],
+      "nominal_open_face_diameter_mm": 216
+    }
+  ],
+  "driver_service": [
+    {
+      "side": "L",
+      "driver_diameter_mm": 3,
+      "service_bore_diameter_mm": 4.4,
+      "radial_clearance_mm": 0.7,
+      "old_driver_overlap_mm3": 56.548667764616276,
+      "new_driver_overlap_mm3": 0.0,
+      "removed_roof_mm3": 121.64246754699673,
+      "removed_roof_bounds_mm": [
+        [
+          28.2999999,
+          76.7999999,
+          155.9999999
+        ],
+        [
+          32.700000100000004,
+          81.2000001,
+          164.0000001
+        ]
+      ],
+      "adjacent_body_cutter_overlaps": [
+        {
+          "body": 9,
+          "volume_mm3": 0.0
+        },
+        {
+          "body": 10,
+          "volume_mm3": 0.0
+        },
+        {
+          "body": 367,
+          "volume_mm3": 0.0
+        },
+        {
+          "body": 301,
+          "volume_mm3": 0.0
+        },
+        {
+          "body": 376,
+          "volume_mm3": 0.0
+        },
+        {
+          "body": 377,
+          "volume_mm3": 0.0
+        },
+        {
+          "body": 378,
+          "volume_mm3": 0.0
+        },
+        {
+          "body": 383,
+          "volume_mm3": 0.0
+        },
+        {
+          "body": 437,
+          "volume_mm3": 0.0
+        },
+        {
+          "body": 12,
+          "volume_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "side": "R",
+      "driver_diameter_mm": 3,
+      "service_bore_diameter_mm": 4.4,
+      "radial_clearance_mm": 0.7,
+      "old_driver_overlap_mm3": 56.548667764616276,
+      "new_driver_overlap_mm3": 0.0,
+      "removed_roof_mm3": 121.64246754699673,
+      "removed_roof_bounds_mm": [
+        [
+          28.2999999,
+          -81.2000001,
+          155.9999999
+        ],
+        [
+          32.700000100000004,
+          -76.7999999,
+          164.0000001
+        ]
+      ],
+      "adjacent_body_cutter_overlaps": [
+        {
+          "body": 9,
+          "volume_mm3": 0.0
+        },
+        {
+          "body": 10,
+          "volume_mm3": 0.0
+        },
+        {
+          "body": 367,
+          "volume_mm3": 0.0
+        },
+        {
+          "body": 301,
+          "volume_mm3": 0.0
+        },
+        {
+          "body": 376,
+          "volume_mm3": 0.0
+        },
+        {
+          "body": 377,
+          "volume_mm3": 0.0
+        },
+        {
+          "body": 378,
+          "volume_mm3": 0.0
+        },
+        {
+          "body": 383,
+          "volume_mm3": 0.0
+        },
+        {
+          "body": 437,
+          "volume_mm3": 0.0
+        },
+        {
+          "body": 12,
+          "volume_mm3": 0.0
+        }
+      ]
+    }
+  ],
+  "nominal_clearances": [
+    {
+      "wheel": 13,
+      "other_body": 32,
+      "axial_shift_mm": -0.2,
+      "minimum_surface_gap_mm": 28.30000000000001,
+      "intersection_mm3": 0.0
+    },
+    {
+      "wheel": 13,
+      "other_body": 376,
+      "axial_shift_mm": -0.2,
+      "minimum_surface_gap_mm": 23.80000000000001,
+      "intersection_mm3": 0.0
+    },
+    {
+      "wheel": 13,
+      "other_body": 32,
+      "axial_shift_mm": 0,
+      "minimum_surface_gap_mm": 28.44292530665577,
+      "intersection_mm3": 0.0
+    },
+    {
+      "wheel": 13,
+      "other_body": 376,
+      "axial_shift_mm": 0,
+      "minimum_surface_gap_mm": 24.0,
+      "intersection_mm3": 0.0
+    },
+    {
+      "wheel": 13,
+      "other_body": 32,
+      "axial_shift_mm": 0.2,
+      "minimum_surface_gap_mm": 28.478764018124092,
+      "intersection_mm3": 0.0
+    },
+    {
+      "wheel": 13,
+      "other_body": 376,
+      "axial_shift_mm": 0.2,
+      "minimum_surface_gap_mm": 24.19999999999999,
+      "intersection_mm3": 0.0
+    },
+    {
+      "wheel": 30,
+      "other_body": 32,
+      "axial_shift_mm": -0.2,
+      "minimum_surface_gap_mm": 28.478764018124092,
+      "intersection_mm3": 0.0
+    },
+    {
+      "wheel": 30,
+      "other_body": 380,
+      "axial_shift_mm": -0.2,
+      "minimum_surface_gap_mm": 24.19999999999999,
+      "intersection_mm3": 0.0
+    },
+    {
+      "wheel": 30,
+      "other_body": 32,
+      "axial_shift_mm": 0,
+      "minimum_surface_gap_mm": 28.44292530665577,
+      "intersection_mm3": 0.0
+    },
+    {
+      "wheel": 30,
+      "other_body": 380,
+      "axial_shift_mm": 0,
+      "minimum_surface_gap_mm": 24.0,
+      "intersection_mm3": 0.0
+    },
+    {
+      "wheel": 30,
+      "other_body": 32,
+      "axial_shift_mm": 0.2,
+      "minimum_surface_gap_mm": 28.30000000000001,
+      "intersection_mm3": 0.0
+    },
+    {
+      "wheel": 30,
+      "other_body": 380,
+      "axial_shift_mm": 0.2,
+      "minimum_surface_gap_mm": 23.80000000000001,
+      "intersection_mm3": 0.0
+    }
+  ],
+  "all_checks_passed": true
+}

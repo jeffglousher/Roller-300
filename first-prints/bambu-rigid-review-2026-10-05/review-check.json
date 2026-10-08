@@ -1,0 +1,75 @@
+﻿{
+    "exit_code":  0,
+    "physical_print":  false,
+    "parts":  [
+                  "mouth-bearing-retainer",
+                  "center-bearing-retainer",
+                  "input-inboard-bearing-retainer",
+                  "input-outboard-bearing-retainer",
+                  "input-sliding-carrier",
+                  "servo-upper-bridge",
+                  "one-drive-fit-section",
+                  "rigid-output-pulley",
+                  "input-pulley-clamp-trial",
+                  "servo-shaft-clamp-trial"
+              ],
+    "slice_result":  {
+                         "error_string":  "Success.",
+                         "export_time":  3352,
+                         "layer_height":  0.20000000298023224,
+                         "plate_index":  0,
+                         "prepare_time":  751,
+                         "return_code":  0,
+                         "sliced_plates":  [
+                                               {
+                                                   "feature_type_times":  {
+                                                                              "Bottom surface":  400.8742980957031,
+                                                                              "Bridge":  593.1488647460938,
+                                                                              "Brim":  172.5232391357422,
+                                                                              "Custom":  282.2998962402344,
+                                                                              "Flush":  29.0,
+                                                                              "Gap infill":  1170.946533203125,
+                                                                              "Inner wall":  11833.94921875,
+                                                                              "Internal solid infill":  1708.326416015625,
+                                                                              "Outer wall":  3913.177734375,
+                                                                              "Overhang wall":  674.4439697265625,
+                                                                              "Sparse infill":  1616.1348876953125,
+                                                                              "Support":  5110.27978515625,
+                                                                              "Support interface":  614.25,
+                                                                              "Support transition":  233.62564086914062,
+                                                                              "Top surface":  514.8362426757812,
+                                                                              "Travel":  4785.97900390625,
+                                                                              "Undefined":  4783.2626953125
+                                                                          },
+                                                   "filament_change_times":  0,
+                                                   "filaments":  [
+                                                                     {
+                                                                         "filament_id":  "GFG99",
+                                                                         "id":  1,
+                                                                         "main_used_g":  290.1141357421875,
+                                                                         "total_used_g":  290.1141357421875
+                                                                     }
+                                                                 ],
+                                                   "generate_support_material_time":  1377,
+                                                   "id":  1,
+                                                   "infill_time":  2163,
+                                                   "layer_filament_change":  0,
+                                                   "main_predication":  33260.9921875,
+                                                   "make_perimeters_time":  2231,
+                                                   "obj_cached_cnt":  0,
+                                                   "sliced_time":  20899,
+                                                   "sliced_time_with_cache":  13319,
+                                                   "total_predication":  33598.57421875,
+                                                   "triangle_count":  51896,
+                                                   "warning_message":  ""
+                                               }
+                                           ],
+                         "sparse_infill_density":  15.0,
+                         "wall_loops":  5
+                     },
+    "source_sha256":  "3e821644be165bea088c78e695250cced656aa3d346235ddbf2620187cf7d788",
+    "project":  "C:\\Users\\jeffg\\dev\\Roller-300\\first-prints\\bambu-rigid-review-2026-10-05\\Roller-300-rigid-belt-first-fit.3mf",
+    "gui_open_verified":  true,
+    "gui_window_id":  1248542,
+    "gui_verified_date":  "2026-10-05"
+}

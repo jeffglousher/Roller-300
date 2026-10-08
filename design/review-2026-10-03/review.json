@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-03",
+  "source": "Roller-300.nbcad",
+  "source_sha256": "2647511d9e0afe7088e15740256838433ad171f3ae823793f93e14fe204cd41e",
+  "scope": "Unpowered one-drive fit and assembly article",
+  "printer_basis": "User-confirmed PETG, 0.4 mm nozzle on X2D",
+  "native_master_modified": false,
+  "fresh_native_recompute": {"active_bodies": 56, "kernel_errors": 0},
+  "readiness": "Structural and assembly corrections needed before a complete test article; fit coupons can precede it",
+  "confirmed_findings": [
+    {"priority": 1, "finding": "Shell body 32 is five native solids", "evidence": "exact-checks.json", "detail": "Two bridge blocks are 5 mm from the main solid; two input-bearing bosses touch it without being fused. Refined shell STL is non-watertight.", "needed": "Connect the supports with real load-carrying webs and positive overlap, fuse intentional connections, and verify one watertight structural part."},
+    {"priority": 1, "finding": "Both wheel outer-bearing bosses are disconnected", "evidence": "exact-checks.json", "detail": "Wheel bodies 13 and 30 each contain two native solids with a 1 mm gap.", "needed": "Connect each bearing boss to the wheel sidewall and verify a single solid."},
+    {"priority": 1, "finding": "New and old outer-bearing references overlap", "detail": "Each new Y151-158 bearing overlaps the original Y146-153 reference by 2 mm; exact overlap is 659.734 mm3 per side.", "needed": "Select one bearing station and correct bearing references, shaft engagement, spacers, shoulders, and retention together."},
+    {"priority": 1, "finding": "Center support and servo cradle have no complete shell attachment", "detail": "Center support body 356 is separate despite 1808.977 mm3 overlap with the shell. Servo cradle body 300 has face contact with the shell but zero volumetric overlap.", "needed": "Define intentional fusion or accessible positive fasteners for each separate part."},
+    {"priority": 2, "finding": "Right inboard spacer is not mirrored to the updated left station", "detail": "Left spacer body 224 is at Y95-98; right spacer body 227 remains at Y-47.5 to -44.5.", "needed": "Correct the right stack before a two-drive article."},
+    {"priority": 2, "finding": "Shaft coupling and retention remain incomplete", "detail": "Coupler and input-pulley clamp slits are modeled; complete clamp actuation, measured servo interface, input axial retention, and clutch preload/torque-transfer details remain unresolved.", "needed": "Use real fastening interfaces and verify assembly and belt-tension access. Clutch torque calibration can follow the unpowered fit stage."}
+  ],
+  "positive_checks": [
+    "Left input pulley to shell minimum nominal clearance: 2.25 mm",
+    "Left output pulley to shell minimum nominal clearance: 2.462688 mm",
+    "Left wheel to shell minimum nominal clearance: 5 mm",
+    "Both pulley prototypes are valid single native solids and have watertight scene meshes"
+  ],
+  "next_print_sequence": [
+    "Print PETG bearing-seat and shaft-bore coupons in the intended production orientation; measure fits with the actual bearings and shafts",
+    "Correct the structural connections, left bearing station, and hardware interfaces",
+    "Export and slice a left-drive shell section and its printed drive parts from the corrected master",
+    "Inspect first layers, bearing-seat toolpaths, bridges, supports and removal access before printing",
+    "Assemble by hand and record alignment, rotation, endplay, belt tracking, installation and service access"
+  ],
+  "limitations": [
+    "Renders use a review color palette and hide the upper shell or wheels in labeled cutaway views",
+    "Nominal static CAD checks do not establish PETG strength or received-part fit",
+    "Current review STL files are evidence exports, not released print files",
+    "No current corrected-article slice or physical test has been performed",
+    "Electronics integration and powered testing are outside this fit-article stage"
+  ]
+}

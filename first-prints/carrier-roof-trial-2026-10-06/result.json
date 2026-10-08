@@ -1,0 +1,67 @@
+{
+    "error_string": "Success.",
+    "export_time": 2051,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 138,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Bridge": 251.21151733398438,
+                "Custom": 284.578857421875,
+                "Flush": 29.0,
+                "Gap infill": 282.9893493652344,
+                "Inner wall": 2380.28759765625,
+                "Internal solid infill": 468.35662841796875,
+                "Outer wall": 1231.674072265625,
+                "Overhang wall": 437.0867614746094,
+                "Sparse infill": 218.5298614501953,
+                "Support": 1069.6019287109375,
+                "Support interface": 308.79681396484375,
+                "Support transition": 146.27459716796875,
+                "Top surface": 133.78665161132813,
+                "Travel": 1305.78662109375,
+                "Undefined": 1300.7806396484375
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFG99",
+                    "id": 1,
+                    "main_used_g": 55.04900360107422,
+                    "total_used_g": 55.04900360107422
+                }
+            ],
+            "generate_support_material_time": 271,
+            "id": 1,
+            "infill_time": 99,
+            "layer_filament_change": 0,
+            "main_predication": 8206.2333984375,
+            "make_perimeters_time": 166,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 90.0,
+                        "height": 59.14208984375,
+                        "width": 44.66891860961914,
+                        "x": 105.66554260253906,
+                        "y": 83.0,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "input-sliding-carrier",
+                    "triangle_count": 11062
+                }
+            ],
+            "sliced_time": 2397,
+            "sliced_time_with_cache": 1761,
+            "total_predication": 8543.806640625,
+            "triangle_count": 11062,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 15.0,
+    "wall_loops": 5
+}

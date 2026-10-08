@@ -1,0 +1,537 @@
+{
+  "source_sha256": "2116d4710816a3813e47cb6eb7cd25acef2e2f73d839accfd7bdcc78a5e8b5b2",
+  "basis": "STEP and STL exported through the attached CAD application; nominal geometry only",
+  "bodies": [
+    {
+      "body_id": 10,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          36.59410095214844,
+          62.75,
+          109.92184448242188
+        ],
+        [
+          62.75041198730469,
+          79.75,
+          137.0
+        ]
+      ]
+    },
+    {
+      "body_id": 13,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -114.97511291503906,
+          110.0,
+          8.00622272491455
+        ],
+        [
+          115.0,
+          153.0,
+          237.9937744140625
+        ]
+      ]
+    },
+    {
+      "body_id": 27,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          36.59410095214844,
+          -79.75,
+          109.92184448242188
+        ],
+        [
+          62.75041198730469,
+          -62.75,
+          137.0
+        ]
+      ]
+    },
+    {
+      "body_id": 30,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -114.97511291503906,
+          -153.0,
+          8.00622272491455
+        ],
+        [
+          115.0,
+          -110.0,
+          237.9937744140625
+        ]
+      ]
+    },
+    {
+      "body_id": 32,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -80.0,
+          -105.0,
+          43.024864196777344
+        ],
+        [
+          80.0,
+          105.0,
+          202.97544860839844
+        ]
+      ]
+    },
+    {
+      "body_id": 301,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          40.17231750488281,
+          45.79999923706055,
+          113.5
+        ],
+        [
+          59.17218780517578,
+          53.79999923706055,
+          137.0
+        ]
+      ]
+    },
+    {
+      "body_id": 309,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          40.17231750488281,
+          -53.79999923706055,
+          113.5
+        ],
+        [
+          59.17218780517578,
+          -45.79999923706055,
+          137.0
+        ]
+      ]
+    },
+    {
+      "body_id": 367,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          31.372299194335938,
+          22.700000762939453,
+          133.8000030517578
+        ],
+        [
+          67.97229766845703,
+          29.700000762939453,
+          143.25
+        ]
+      ]
+    },
+    {
+      "body_id": 368,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          31.372299194335938,
+          -29.700000762939453,
+          133.8000030517578
+        ],
+        [
+          67.97229766845703,
+          -22.700000762939453,
+          143.25
+        ]
+      ]
+    },
+    {
+      "body_id": 373,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -20.0,
+          0.0,
+          43.002723693847656
+        ],
+        [
+          79.9913330078125,
+          105.0,
+          145.0
+        ]
+      ]
+    },
+    {
+      "body_id": 374,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -35.0,
+          142.0,
+          88.0
+        ],
+        [
+          35.0,
+          153.0,
+          158.0
+        ]
+      ]
+    },
+    {
+      "body_id": 375,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -22.0,
+          153.0,
+          101.0
+        ],
+        [
+          22.0,
+          157.5,
+          145.0
+        ]
+      ]
+    },
+    {
+      "body_id": 376,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -22.0,
+          105.0,
+          101.0
+        ],
+        [
+          22.0,
+          109.5,
+          145.0
+        ]
+      ]
+    },
+    {
+      "body_id": 377,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          23.67246437072754,
+          61.0,
+          97.02031707763672
+        ],
+        [
+          75.6640625,
+          62.5,
+          148.99847412109375
+        ]
+      ]
+    },
+    {
+      "body_id": 378,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          23.67246437072754,
+          88.0,
+          97.02031707763672
+        ],
+        [
+          75.6640625,
+          89.5,
+          148.99847412109375
+        ]
+      ]
+    },
+    {
+      "body_id": 379,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -22.0,
+          -157.5,
+          101.0
+        ],
+        [
+          22.0,
+          -153.0,
+          145.0
+        ]
+      ]
+    },
+    {
+      "body_id": 380,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -22.0,
+          -109.5,
+          101.0
+        ],
+        [
+          22.0,
+          -105.0,
+          145.0
+        ]
+      ]
+    },
+    {
+      "body_id": 381,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          23.67246437072754,
+          -62.5,
+          97.02031707763672
+        ],
+        [
+          75.6640625,
+          -61.0,
+          148.99847412109375
+        ]
+      ]
+    },
+    {
+      "body_id": 382,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          23.67246437072754,
+          -89.5,
+          97.02031707763672
+        ],
+        [
+          75.6640625,
+          -88.0,
+          148.99847412109375
+        ]
+      ]
+    },
+    {
+      "body_id": 383,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -22.0,
+          15.0,
+          101.0
+        ],
+        [
+          22.0,
+          19.5,
+          145.0
+        ]
+      ]
+    },
+    {
+      "body_id": 384,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -22.0,
+          -19.5,
+          101.0
+        ],
+        [
+          22.0,
+          -15.0,
+          145.0
+        ]
+      ]
+    }
+  ],
+  "servo_vertical_insertion": [
+    {
+      "side": "L",
+      "lift_mm": 120,
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scope": "case and ear envelopes only; horn, cable and tool access require physical fit"
+    },
+    {
+      "side": "R",
+      "lift_mm": 120,
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scope": "case and ear envelopes only; horn, cable and tool access require physical fit"
+    }
+  ],
+  "clamp_rotation_clearance": [
+    {
+      "side": "L",
+      "part": "coupler",
+      "sweep_radius_mm": 15.24,
+      "shell_overlap_mm3": 0.0,
+      "scope": "conservative 360 degree envelope against stationary shell; excludes unknown horn and cable"
+    },
+    {
+      "side": "L",
+      "part": "coupler inner-race land",
+      "sweep_radius_mm": 5.5,
+      "shell_overlap_mm3": 0.0,
+      "scope": "conservative 360 degree envelope against stationary shell; excludes unknown horn and cable"
+    },
+    {
+      "side": "L",
+      "part": "input pulley",
+      "sweep_radius_mm": 15.24,
+      "shell_overlap_mm3": 0.0,
+      "scope": "conservative 360 degree envelope against stationary shell; excludes unknown horn and cable"
+    },
+    {
+      "side": "L",
+      "part": "outer collar hardware envelope",
+      "sweep_radius_mm": 13.65,
+      "shell_overlap_mm3": 0.0,
+      "scope": "conservative 360 degree envelope against stationary shell; excludes unknown horn and cable"
+    },
+    {
+      "side": "R",
+      "part": "coupler",
+      "sweep_radius_mm": 15.24,
+      "shell_overlap_mm3": 0.0,
+      "scope": "conservative 360 degree envelope against stationary shell; excludes unknown horn and cable"
+    },
+    {
+      "side": "R",
+      "part": "coupler inner-race land",
+      "sweep_radius_mm": 5.5,
+      "shell_overlap_mm3": 0.0,
+      "scope": "conservative 360 degree envelope against stationary shell; excludes unknown horn and cable"
+    },
+    {
+      "side": "R",
+      "part": "input pulley",
+      "sweep_radius_mm": 15.24,
+      "shell_overlap_mm3": 0.0,
+      "scope": "conservative 360 degree envelope against stationary shell; excludes unknown horn and cable"
+    },
+    {
+      "side": "R",
+      "part": "outer collar hardware envelope",
+      "sweep_radius_mm": 13.65,
+      "shell_overlap_mm3": 0.0,
+      "scope": "conservative 360 degree envelope against stationary shell; excludes unknown horn and cable"
+    }
+  ],
+  "retainer_assembly_overlap": [
+    {
+      "cap_body": 375,
+      "parent_body": 13,
+      "overlap_mm3": 0.0
+    },
+    {
+      "cap_body": 379,
+      "parent_body": 30,
+      "overlap_mm3": 0.0
+    },
+    {
+      "cap_body": 376,
+      "parent_body": 32,
+      "overlap_mm3": 0.0
+    },
+    {
+      "cap_body": 377,
+      "parent_body": 32,
+      "overlap_mm3": 0.0
+    },
+    {
+      "cap_body": 378,
+      "parent_body": 32,
+      "overlap_mm3": 0.0
+    },
+    {
+      "cap_body": 380,
+      "parent_body": 32,
+      "overlap_mm3": 0.0
+    },
+    {
+      "cap_body": 381,
+      "parent_body": 32,
+      "overlap_mm3": 0.0
+    },
+    {
+      "cap_body": 382,
+      "parent_body": 32,
+      "overlap_mm3": 0.0
+    },
+    {
+      "cap_body": 383,
+      "parent_body": 32,
+      "overlap_mm3": 0.0
+    },
+    {
+      "cap_body": 384,
+      "parent_body": 32,
+      "overlap_mm3": 0.0
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+[
+  {
+    "part": "one-drive-fit-section",
+    "seconds": 22967.30859375,
+    "grams": 230.5514678955078,
+    "warning": "",
+    "return_code": 0
+  },
+  {
+    "part": "outer-wheel-bearing-coupon",
+    "seconds": 2527.210693359375,
+    "grams": 19.253328323364258,
+    "warning": "",
+    "return_code": 0
+  },
+  {
+    "part": "servo-shaft-clamp-trial",
+    "seconds": 885.3516845703125,
+    "grams": 2.1043877601623535,
+    "warning": "",
+    "return_code": 0
+  },
+  {
+    "part": "input-pulley-clamp-trial",
+    "seconds": 2051.884033203125,
+    "grams": 7.328353404998779,
+    "warning": "",
+    "return_code": 0
+  },
+  {
+    "part": "servo-upper-bridge",
+    "seconds": 913.84716796875,
+    "grams": 2.6216583251953125,
+    "warning": "",
+    "return_code": 0
+  },
+  {
+    "part": "wheel-bearing-retainer",
+    "seconds": 955.94189453125,
+    "grams": 4.881414890289307,
+    "warning": "",
+    "return_code": 0
+  },
+  {
+    "part": "mouth-bearing-retainer",
+    "seconds": 955.0569458007812,
+    "grams": 4.881384372711182,
+    "warning": "",
+    "return_code": 0
+  },
+  {
+    "part": "input-inboard-bearing-retainer",
+    "seconds": 699.731689453125,
+    "grams": 3.125544309616089,
+    "warning": "",
+    "return_code": 0
+  },
+  {
+    "part": "input-outboard-bearing-retainer",
+    "seconds": 699.731689453125,
+    "grams": 3.125544309616089,
+    "warning": "",
+    "return_code": 0
+  },
+  {
+    "part": "center-bearing-retainer",
+    "seconds": 948.9627075195312,
+    "grams": 4.841744899749756,
+    "warning": "",
+    "return_code": 0
+  },
+  {
+    "part": "left-wheel-axle-vertical",
+    "seconds": 57378.875,
+    "grams": 612.7744750976562,
+    "warning": "",
+    "return_code": 0
+  }
+]

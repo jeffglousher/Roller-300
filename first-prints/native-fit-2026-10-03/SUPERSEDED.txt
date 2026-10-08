@@ -1,0 +1,3 @@
+Historical fit revision. Current drivetrain files are in ../drivetrain-fit-2026-10-03.
+The rotating wheel-bearing coupon and wheel-mounted bearing caps are retired.
+Use current PLAN.md, parameters.json and source.json; older slices do not validate the revised drivetrain.

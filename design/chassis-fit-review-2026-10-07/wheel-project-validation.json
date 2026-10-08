@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-07",
+  "passed": true,
+  "selected_project": "first-prints/chassis-fit-2026-10-07/outboard-down/Roller-300-wheel-open-fit.3mf",
+  "project_sha256": "49aff353152fd969ce95039b4033b7fee2abc18eb95a5ce0f70a2a688d776943",
+  "native_stl_sha256": "26a42cf367d89be68c3d39e977afccacaf44a4a1f6aa3805f8689134e0087fc5",
+  "reconciliation": {
+    "canonical_project": "Roller-300.nbcad",
+    "canonical_project_sha256": "dbb79ae72b28707accd399a6784c7ea76deb182d6314b5a6dd007a6c724e655f",
+    "candidate_project": "design/chassis-fit-review-2026-10-07/s21-access/native-replay.nbcad",
+    "candidate_project_sha256": "f44c1acb824ed2a0a4b773db5265e754d7f9c1fd45e0c9c5e64d964533201312",
+    "native_geometry_arrays_match": true,
+    "source_geometry_changed_by_native_save": false,
+    "note": "Wheel was sliced from the explicit native replay candidate. The saved canonical has identical geometry; file hashes differ because of save metadata."
+  },
+  "slice_check": "first-prints/chassis-fit-2026-10-07/outboard-down/wheel-slice-check.json",
+  "native_triangle_connectivity_preserved": true,
+  "gcode_md5_valid": true,
+  "process_settings_verified": true,
+  "physical_print": false,
+  "powered_release": false
+}

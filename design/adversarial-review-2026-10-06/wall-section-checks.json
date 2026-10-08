@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "scope": "Torque-bearing land, horn screw rim and Eclip annulus. Continuous wall gauges only; does not claim every cosmetic lip is >=1.2mm. Upper servo-nut lower lip is0.95mm with solid axial backing; receiving/physical fit test, no powered-load qualification.",
+  "checks": [
+    {
+      "body": 301,
+      "name": "REX bearing land",
+      "nominal_wall_mm": 1.2853430349157318,
+      "verified_continuous_gauge_width_mm": 1.2199999999999998,
+      "material_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "body": 301,
+      "name": "horn counterbore outer rim",
+      "nominal_wall_mm": 1.2862915010152403,
+      "verified_continuous_gauge_width_mm": 1.2100000000000009,
+      "material_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "body": 301,
+      "name": "Eclip pocket rear half annulus",
+      "nominal_wall_mm": 2.5,
+      "verified_continuous_gauge_width_mm": 2.3999999999999995,
+      "material_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "body": 309,
+      "name": "REX bearing land",
+      "nominal_wall_mm": 1.2853430349157318,
+      "verified_continuous_gauge_width_mm": 1.2199999999999998,
+      "material_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "body": 309,
+      "name": "horn counterbore outer rim",
+      "nominal_wall_mm": 1.2862915010152403,
+      "verified_continuous_gauge_width_mm": 1.2100000000000009,
+      "material_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "body": 309,
+      "name": "Eclip pocket rear half annulus",
+      "nominal_wall_mm": 2.5,
+      "verified_continuous_gauge_width_mm": 2.3999999999999995,
+      "material_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "body": 10,
+      "name": "pulley front race land",
+      "nominal_wall_mm": 1.2853430349157318,
+      "verified_continuous_gauge_width_mm": 1.22,
+      "material_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "body": 10,
+      "name": "pulley rear race land",
+      "nominal_wall_mm": 1.2853430349157318,
+      "verified_continuous_gauge_width_mm": 1.22,
+      "material_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "body": 27,
+      "name": "pulley front race land",
+      "nominal_wall_mm": 1.2853430349157318,
+      "verified_continuous_gauge_width_mm": 1.22,
+      "material_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "body": 27,
+      "name": "pulley rear race land",
+      "nominal_wall_mm": 1.2853430349157318,
+      "verified_continuous_gauge_width_mm": 1.22,
+      "material_fraction": 1.0,
+      "passed": true
+    }
+  ],
+  "source_sha256": "bf4561cd9261083763b1f117bf14007dcaf6202b5efd19679aec39a4e36bd52b",
+  "geometry_signature_sha256": "8ac30ab683061a2555ed427565a26450f67db72996e31c5c70ffa256c1513f56"
+}

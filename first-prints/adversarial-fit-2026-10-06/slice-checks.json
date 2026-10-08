@@ -1,0 +1,123 @@
+{
+  "source_sha256": "bf4561cd9261083763b1f117bf14007dcaf6202b5efd19679aec39a4e36bd52b",
+  "material": "PETG",
+  "nozzle_mm": 0.4,
+  "layer_height_mm": 0.2,
+  "wall_loops": 5,
+  "infill": "15% gyroid",
+  "physical_print": false,
+  "passed": true,
+  "parts": [
+    {
+      "part": "center-bearing-retainer",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 948.9627075195312,
+      "grams": 4.841744899749756,
+      "warnings": [],
+      "native_mesh_sha256": "00ef8aa54b4fde8df478c956b453059423d5b085f37b203edd88d09958a86eb2",
+      "passed": true
+    },
+    {
+      "part": "input-inboard-bearing-retainer",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 934.0863647460938,
+      "grams": 4.011123180389404,
+      "warnings": [],
+      "native_mesh_sha256": "9fc13651aa069f6f052a0a4214c7c8ed0ceef14ab2a8cfcedbb03496e6834e41",
+      "passed": true
+    },
+    {
+      "part": "input-outboard-bearing-retainer",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 934.0863647460938,
+      "grams": 4.011123180389404,
+      "warnings": [],
+      "native_mesh_sha256": "6828c87621572fcb05e457229cfccf1c6716b6ce0aa1bb81cf41a485a72eaba8",
+      "passed": true
+    },
+    {
+      "part": "input-rex-pulley",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 2152.828857421875,
+      "grams": 7.846209526062012,
+      "warnings": [],
+      "native_mesh_sha256": "73e4a78c5899c1fca1bd8aa07c04f20782a53debef45f4cc749dd325b5720691",
+      "passed": true
+    },
+    {
+      "part": "input-sliding-carrier",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 8814.2060546875,
+      "grams": 56.62248611450195,
+      "warnings": [],
+      "native_mesh_sha256": "52e519b99b8fe3e65ccc18850068ff0342fdffd61d38c12a49dfdd960df690d1",
+      "passed": true
+    },
+    {
+      "part": "left-wheel-axle-vertical",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 56668.05859375,
+      "grams": 609.359619140625,
+      "warnings": [],
+      "native_mesh_sha256": "e4a763e314079597f7c5abf406a2c47620173a8ea853159069d6a036e4c47b69",
+      "passed": true
+    },
+    {
+      "part": "mouth-bearing-retainer",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 955.1837768554688,
+      "grams": 4.881384372711182,
+      "warnings": [],
+      "native_mesh_sha256": "550e86ba7be822fd7cfc3561e09da8c0e881a09152459cf1d06248300117d4ec",
+      "passed": true
+    },
+    {
+      "part": "one-drive-fit-section",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 18574.64453125,
+      "grams": 185.97994995117188,
+      "warnings": [],
+      "native_mesh_sha256": "48b12546e4859669dedd397ea22f59e7f2ec21f68d158b2cb1ed5515596bdc81",
+      "passed": true
+    },
+    {
+      "part": "rigid-output-pulley",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 3493.673828125,
+      "grams": 18.76266860961914,
+      "warnings": [],
+      "native_mesh_sha256": "5ef1c786dfbc9947e2a62efdabed6430e5be5f0af4d5dc9585eec755abbac3d4",
+      "passed": true
+    },
+    {
+      "part": "servo-horn-rex-adapter",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 1545.551025390625,
+      "grams": 5.747139930725098,
+      "warnings": [],
+      "native_mesh_sha256": "a0b30b6fc3bcdce9b5964ca5bd57c8680aefba06a6c77b9b7d77ddd0c39694b8",
+      "passed": true
+    },
+    {
+      "part": "servo-upper-bridge",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 1056.511962890625,
+      "grams": 3.2165939807891846,
+      "warnings": [],
+      "native_mesh_sha256": "3003fe739d8f14455ebea2d8af8cc2f89194eb4bca41ff21bc6f0617389e3bf9",
+      "passed": true
+    }
+  ],
+  "geometry_signature_sha256": "8ac30ab683061a2555ed427565a26450f67db72996e31c5c70ffa256c1513f56"
+}

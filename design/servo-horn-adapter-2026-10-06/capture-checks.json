@@ -1,0 +1,979 @@
+{
+  "passed": true,
+  "basis": "Native application STEP/STL exports; nominal AF5.5/h2.4 M3 nuts and D5.5/h2.93 screw heads; physical PETG fit remains untested.",
+  "checks": [
+    {
+      "name": "native solid and print mesh",
+      "value": 32,
+      "passed": true,
+      "body_id": 32
+    },
+    {
+      "name": "native solid and print mesh",
+      "value": 373,
+      "passed": true,
+      "body_id": 373
+    },
+    {
+      "name": "native solid and print mesh",
+      "value": 377,
+      "passed": true,
+      "body_id": 377
+    },
+    {
+      "name": "native solid and print mesh",
+      "value": 378,
+      "passed": true,
+      "body_id": 378
+    },
+    {
+      "name": "native solid and print mesh",
+      "value": 381,
+      "passed": true,
+      "body_id": 381
+    },
+    {
+      "name": "native solid and print mesh",
+      "value": 382,
+      "passed": true,
+      "body_id": 382
+    },
+    {
+      "name": "native solid and print mesh",
+      "value": 437,
+      "passed": true,
+      "body_id": 437
+    },
+    {
+      "name": "native solid and print mesh",
+      "value": 440,
+      "passed": true,
+      "body_id": 440
+    },
+    {
+      "name": "mount roots inside barrel OD",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32
+    },
+    {
+      "name": "mount roots inside barrel OD",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 373
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": 97,
+      "hole": 0
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.7675619199278373,
+      "passed": true,
+      "body_id": 32,
+      "station": 97,
+      "hole": 0
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": 97,
+      "hole": 0,
+      "insertion": "back face"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": 97,
+      "hole": 1
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.7675619199366646,
+      "passed": true,
+      "body_id": 32,
+      "station": 97,
+      "hole": 1
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": 97,
+      "hole": 1,
+      "insertion": "back face"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": 97,
+      "hole": 2
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.7675619199366271,
+      "passed": true,
+      "body_id": 32,
+      "station": 97,
+      "hole": 2
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": 97,
+      "hole": 2,
+      "insertion": "back face"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": 97,
+      "hole": 3
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.767561919927787,
+      "passed": true,
+      "body_id": 32,
+      "station": 97,
+      "hole": 3
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": 97,
+      "hole": 3,
+      "insertion": "back face"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": 8,
+      "hole": 0
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.3835942986327144,
+      "passed": true,
+      "body_id": 32,
+      "station": 8,
+      "hole": 0
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": 8,
+      "hole": 0,
+      "insertion": "radial"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": 8,
+      "hole": 1
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.3835942986215622,
+      "passed": true,
+      "body_id": 32,
+      "station": 8,
+      "hole": 1
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": 8,
+      "hole": 1,
+      "insertion": "radial"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": 8,
+      "hole": 2
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.3835942986496226,
+      "passed": true,
+      "body_id": 32,
+      "station": 8,
+      "hole": 2
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": 8,
+      "hole": 2,
+      "insertion": "radial"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": 8,
+      "hole": 3
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.38359429864016603,
+      "passed": true,
+      "body_id": 32,
+      "station": 8,
+      "hole": 3
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": 8,
+      "hole": 3,
+      "insertion": "radial"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 437,
+      "station": 54,
+      "hole": 0
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.7675619199265412,
+      "passed": true,
+      "body_id": 437,
+      "station": 54,
+      "hole": 0
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 437,
+      "station": 54,
+      "hole": 0,
+      "insertion": "back face"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 437,
+      "station": 54,
+      "hole": 1
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.767561919926619,
+      "passed": true,
+      "body_id": 437,
+      "station": 54,
+      "hole": 1
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 437,
+      "station": 54,
+      "hole": 1,
+      "insertion": "back face"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 437,
+      "station": 54,
+      "hole": 2
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.7675619199265137,
+      "passed": true,
+      "body_id": 437,
+      "station": 54,
+      "hole": 2
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 437,
+      "station": 54,
+      "hole": 2,
+      "insertion": "back face"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 437,
+      "station": 54,
+      "hole": 3
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.7675619199264788,
+      "passed": true,
+      "body_id": 437,
+      "station": 54,
+      "hole": 3
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 437,
+      "station": 54,
+      "hole": 3,
+      "insertion": "back face"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 437,
+      "station": 81,
+      "hole": 0
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.7675619199265327,
+      "passed": true,
+      "body_id": 437,
+      "station": 81,
+      "hole": 0
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 437,
+      "station": 81,
+      "hole": 0,
+      "insertion": "back face"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 437,
+      "station": 81,
+      "hole": 1
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.7675619199266096,
+      "passed": true,
+      "body_id": 437,
+      "station": 81,
+      "hole": 1
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 437,
+      "station": 81,
+      "hole": 1,
+      "insertion": "back face"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 437,
+      "station": 81,
+      "hole": 2
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.767561919926504,
+      "passed": true,
+      "body_id": 437,
+      "station": 81,
+      "hole": 2
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 437,
+      "station": 81,
+      "hole": 2,
+      "insertion": "back face"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 437,
+      "station": 81,
+      "hole": 3
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.7675619199264695,
+      "passed": true,
+      "body_id": 437,
+      "station": 81,
+      "hole": 3
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 437,
+      "station": 81,
+      "hole": 3,
+      "insertion": "back face"
+    },
+    {
+      "name": "M3 socket head fits recess",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 377,
+      "hole": 0
+    },
+    {
+      "name": "M3 socket head fits recess",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 377,
+      "hole": 1
+    },
+    {
+      "name": "M3 socket head fits recess",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 377,
+      "hole": 2
+    },
+    {
+      "name": "M3 socket head fits recess",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 377,
+      "hole": 3
+    },
+    {
+      "name": "M3 socket head fits recess",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 378,
+      "hole": 0
+    },
+    {
+      "name": "M3 socket head fits recess",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 378,
+      "hole": 1
+    },
+    {
+      "name": "M3 socket head fits recess",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 378,
+      "hole": 2
+    },
+    {
+      "name": "M3 socket head fits recess",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 378,
+      "hole": 3
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": -97,
+      "hole": 0
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.7675619199278374,
+      "passed": true,
+      "body_id": 32,
+      "station": -97,
+      "hole": 0
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": -97,
+      "hole": 0,
+      "insertion": "back face"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": -97,
+      "hole": 1
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.7675619199366644,
+      "passed": true,
+      "body_id": 32,
+      "station": -97,
+      "hole": 1
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": -97,
+      "hole": 1,
+      "insertion": "back face"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": -97,
+      "hole": 2
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.7675619199366276,
+      "passed": true,
+      "body_id": 32,
+      "station": -97,
+      "hole": 2
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": -97,
+      "hole": 2,
+      "insertion": "back face"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": -97,
+      "hole": 3
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.7675619199277872,
+      "passed": true,
+      "body_id": 32,
+      "station": -97,
+      "hole": 3
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": -97,
+      "hole": 3,
+      "insertion": "back face"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": -8,
+      "hole": 0
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.3835942986327144,
+      "passed": true,
+      "body_id": 32,
+      "station": -8,
+      "hole": 0
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": -8,
+      "hole": 0,
+      "insertion": "radial"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": -8,
+      "hole": 1
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.38359429862156247,
+      "passed": true,
+      "body_id": 32,
+      "station": -8,
+      "hole": 1
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": -8,
+      "hole": 1,
+      "insertion": "radial"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": -8,
+      "hole": 2
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.3835942986496227,
+      "passed": true,
+      "body_id": 32,
+      "station": -8,
+      "hole": 2
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": -8,
+      "hole": 2,
+      "insertion": "radial"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": -8,
+      "hole": 3
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.38359429864016537,
+      "passed": true,
+      "body_id": 32,
+      "station": -8,
+      "hole": 3
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 32,
+      "station": -8,
+      "hole": 3,
+      "insertion": "radial"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 440,
+      "station": -54,
+      "hole": 0
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.767561919926541,
+      "passed": true,
+      "body_id": 440,
+      "station": -54,
+      "hole": 0
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 440,
+      "station": -54,
+      "hole": 0,
+      "insertion": "back face"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 440,
+      "station": -54,
+      "hole": 1
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.7675619199266175,
+      "passed": true,
+      "body_id": 440,
+      "station": -54,
+      "hole": 1
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 440,
+      "station": -54,
+      "hole": 1,
+      "insertion": "back face"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 440,
+      "station": -54,
+      "hole": 2
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.767561919926515,
+      "passed": true,
+      "body_id": 440,
+      "station": -54,
+      "hole": 2
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 440,
+      "station": -54,
+      "hole": 2,
+      "insertion": "back face"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 440,
+      "station": -54,
+      "hole": 3
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.7675619199264779,
+      "passed": true,
+      "body_id": 440,
+      "station": -54,
+      "hole": 3
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 440,
+      "station": -54,
+      "hole": 3,
+      "insertion": "back face"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 440,
+      "station": -81,
+      "hole": 0
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.7675619199265326,
+      "passed": true,
+      "body_id": 440,
+      "station": -81,
+      "hole": 0
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 440,
+      "station": -81,
+      "hole": 0,
+      "insertion": "back face"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 440,
+      "station": -81,
+      "hole": 1
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.7675619199266078,
+      "passed": true,
+      "body_id": 440,
+      "station": -81,
+      "hole": 1
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 440,
+      "station": -81,
+      "hole": 1,
+      "insertion": "back face"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 440,
+      "station": -81,
+      "hole": 2
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.7675619199265051,
+      "passed": true,
+      "body_id": 440,
+      "station": -81,
+      "hole": 2
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 440,
+      "station": -81,
+      "hole": 2,
+      "insertion": "back face"
+    },
+    {
+      "name": "M3 hex nut seats",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 440,
+      "station": -81,
+      "hole": 3
+    },
+    {
+      "name": "M3 nut cannot rotate thirty degrees",
+      "value": 0.7675619199264686,
+      "passed": true,
+      "body_id": 440,
+      "station": -81,
+      "hole": 3
+    },
+    {
+      "name": "M3 nut loading path",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 440,
+      "station": -81,
+      "hole": 3,
+      "insertion": "back face"
+    },
+    {
+      "name": "M3 socket head fits recess",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 381,
+      "hole": 0
+    },
+    {
+      "name": "M3 socket head fits recess",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 381,
+      "hole": 1
+    },
+    {
+      "name": "M3 socket head fits recess",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 381,
+      "hole": 2
+    },
+    {
+      "name": "M3 socket head fits recess",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 381,
+      "hole": 3
+    },
+    {
+      "name": "M3 socket head fits recess",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 382,
+      "hole": 0
+    },
+    {
+      "name": "M3 socket head fits recess",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 382,
+      "hole": 1
+    },
+    {
+      "name": "M3 socket head fits recess",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 382,
+      "hole": 2
+    },
+    {
+      "name": "M3 socket head fits recess",
+      "value": 0.0,
+      "passed": true,
+      "body_id": 382,
+      "hole": 3
+    }
+  ],
+  "source_sha256": "275c0ee72ed4d664b6b3e345c6845327a1078b50f98131b0f49352d2464567da"
+}

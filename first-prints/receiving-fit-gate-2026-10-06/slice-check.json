@@ -1,0 +1,198 @@
+{
+  "source_project": "first-prints\\bambu-adversarial-review-2026-10-06\\Roller-300-REX-first-fit.3mf",
+  "source_project_sha256": "b50a4c09179d5573290e5d6bb95bfed23ae997a7d5be26d1e2eff8e313e404ef",
+  "native_geometry_changed": false,
+  "physical_print": false,
+  "parts": [
+    "mouth-bearing-retainer",
+    "input-inboard-bearing-retainer",
+    "input-rex-pulley",
+    "servo-horn-rex-adapter",
+    "servo-upper-bridge"
+  ],
+  "support_blocker_bed_z_mm": [
+    7.8,
+    9.6
+  ],
+  "exit_code": 0,
+  "slice_result": {
+    "error_string": "Success.",
+    "export_time": 1337,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 116,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 120.38970184326172,
+          "Bridge": 109.55892944335938,
+          "Brim": 66.40763092041016,
+          "Custom": 286.6119079589844,
+          "Flush": 29.0,
+          "Gap infill": 282.7573547363281,
+          "Inner wall": 1093.47998046875,
+          "Internal solid infill": 464.3349914550781,
+          "Outer wall": 470.8712463378906,
+          "Overhang wall": 147.0302276611328,
+          "Sparse infill": 150.31753540039062,
+          "Support": 282.25238037109375,
+          "Support interface": 75.35710144042969,
+          "Support transition": 42.141048431396484,
+          "Top surface": 131.8410186767578,
+          "Travel": 821.2845458984375,
+          "Undefined": 814.298583984375
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFG99",
+            "id": 1,
+            "main_used_g": 25.481285095214844,
+            "total_used_g": 25.481285095214844
+          }
+        ],
+        "generate_support_material_time": 324,
+        "id": 1,
+        "infill_time": 413,
+        "layer_filament_change": 0,
+        "main_predication": 4229.4228515625,
+        "make_perimeters_time": 668,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 44.0,
+              "height": 4.5,
+              "width": 44.0,
+              "x": 58.0,
+              "y": 68.0,
+              "z": 0.0
+            },
+            "id": 5,
+            "name": "mouth-bearing-retainer",
+            "triangle_count": 3376
+          },
+          {
+            "bbox": {
+              "depth": 51.978153228759766,
+              "height": 4.6999969482421875,
+              "width": 51.99160385131836,
+              "x": 114.00419616699219,
+              "y": 64.01092529296875,
+              "z": -4.121093688524979e-09
+            },
+            "id": 9,
+            "name": "input-inboard-bearing-retainer",
+            "triangle_count": 4724
+          },
+          {
+            "bbox": {
+              "depth": 9.998383522033691,
+              "height": 9.449996948242188,
+              "width": 41.0,
+              "x": 59.5,
+              "y": 145.0008087158203,
+              "z": -4.121093688524979e-09
+            },
+            "id": 13,
+            "name": "servo-upper-bridge",
+            "triangle_count": 1924
+          },
+          {
+            "bbox": {
+              "depth": 26.15631103515625,
+              "height": 19.60000228881836,
+              "width": 26.15631103515625,
+              "x": 126.92184448242188,
+              "y": 136.92184448242188,
+              "z": -4.4091787998468135e-09
+            },
+            "id": 17,
+            "name": "input-rex-pulley",
+            "triangle_count": 4968
+          },
+          {
+            "bbox": {
+              "depth": 33.200008392333984,
+              "height": 12.200000762939453,
+              "width": 33.20000457763672,
+              "x": 173.39999389648438,
+              "y": 133.39999389648438,
+              "z": -1.4697265626750777e-09
+            },
+            "id": 21,
+            "name": "servo-horn-rex-adapter",
+            "triangle_count": 4368
+          }
+        ],
+        "sliced_time": 4203,
+        "sliced_time_with_cache": 2380,
+        "total_predication": 4567.048828125,
+        "triangle_count": 19360,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 15.0,
+    "upward_compatible_machine": [
+      "Bambu Lab A1 0.4 nozzle",
+      "Bambu Lab P2S 0.4 nozzle",
+      "Bambu Lab H2S 0.4 nozzle",
+      "Bambu Lab H2D 0.4 nozzle",
+      "Bambu Lab H2D Pro 0.4 nozzle",
+      "Bambu Lab H2C 0.4 nozzle",
+      "Bambu Lab A2L 0.4 nozzle"
+    ],
+    "wall_loops": 5
+  },
+  "gui_preserved_process_keys": [
+    "wall_loops",
+    "enable_support",
+    "support_on_build_plate_only",
+    "support_type",
+    "sparse_infill_density",
+    "sparse_infill_pattern",
+    "brim_width",
+    "brim_type",
+    "enable_prime_tower"
+  ],
+  "project_sha256": "f180923b46ecce317e92434c337b2a468cb258a4eff7e72ce8628ad95386ea88",
+  "gui_process_preservation": {
+    "project": "C:\\Users\\jeffg\\dev\\Roller-300\\first-prints\\receiving-fit-gate-2026-10-06\\Roller-300-small-fit-gate.3mf",
+    "process_override_keys": [
+      "wall_loops",
+      "enable_support",
+      "support_on_build_plate_only",
+      "support_type",
+      "sparse_infill_density",
+      "sparse_infill_pattern",
+      "brim_width",
+      "brim_type",
+      "enable_prime_tower"
+    ],
+    "process_values": {
+      "wall_loops": "5",
+      "enable_support": "1",
+      "support_on_build_plate_only": "0",
+      "support_type": "normal(auto)",
+      "sparse_infill_density": "15%",
+      "sparse_infill_pattern": "gyroid",
+      "brim_width": "3",
+      "brim_type": "outer_only",
+      "enable_prime_tower": "0"
+    },
+    "other_profile_override_slots_preserved": true,
+    "changed_entries": [],
+    "plate_checks": [
+      {
+        "plate": "Metadata/plate_1.gcode",
+        "settings_match_gcode": true,
+        "override_slots_match_gcode": true,
+        "outside_config_block_sha256": "223ca04339c1b7c5c6075c3e38c10fac67910d0fd9c709781a51360c0f2748e1",
+        "gcode_md5": "A9559CDB38160BA7114368ECCCEC0D11"
+      }
+    ],
+    "project_sha256": "f180923b46ecce317e92434c337b2a468cb258a4eff7e72ce8628ad95386ea88",
+    "passed": true
+  }
+}

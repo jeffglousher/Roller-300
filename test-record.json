@@ -1,32 +1,35 @@
 {
-  "date": "2026-09-12",
-  "status": "CAD development; no physical tests, no print or powered release",
-  "current_revision": "shell-first-2026-09-19",
+  "date": "2026-10-07",
+  "status": "S21 SMALL FIT GATE READY; OPEN-FACE WHEEL FIT CANDIDATE; FULL CHASSIS FIT INCOMPLETE",
+  "current_print_project": "first-prints/receiving-fit-gate-2026-10-06/Roller-300-small-fit-gate.3mf",
+  "current_print_decision": "design/chassis-fit-review-2026-10-07/README.md",
+  "print_release_note": "Five small interfaces first, then carrier roof/bearing trial. Existing three fit projects retain their exact native meshes. Old closed wheels are superseded; use the separately sliced S21 open-face wheel after hardware fits. Full chassis/hatch/electronics fit is incomplete.",
+  "current_revision": "chassis-fit-review-2026-10-07",
   "observations": [],
   "gates": {
-    "supplier_clutch_data": "OPEN",
-    "servo_model_and_permissible_envelope": "OPEN",
+    "supplier_clutch_data": "RETIRED: rigid belt drive has no mechanical clutch.",
+    "servo_model_and_permissible_envelope": "Nominal owned INJORA360/H25T interface defined from manufacturer spline specification and supplied case drawing; receiving fit and load qualification untested.",
     "numeric_voltage_and_current_limits": "OPEN - do not energize actuator fixture",
     "bearing_and_fastener_coupons": "NOT RUN",
-    "independent_bidirectional_clutch_calibration": "NOT RUN",
+    "independent_bidirectional_clutch_calibration": "RETIRED: rigid belt drive has no mechanical clutch.",
     "paired_timer_and_hard_cutoff_dummy_load_test": "NOT RUN",
-    "complete_one_side_detail_and_guarding": "Main shell/hatch and one-drive packaging modeled; horn, clutch, axial retention, hardware fit and assembly qualification remain HOLD.",
+    "complete_one_side_detail_and_guarding": "S21 service bores and open wheel faces validated nominally. Full hatch/electronics fit remains incomplete.",
     "drivetrain_feedback_shutdown": "DESIGNED IN PLAN; NOT IMPLEMENTED",
     "custom_PX4_pitch_control": "NOT BUILT OR FLASHED",
     "body_pitch_and_mass_measurements": "NOT RUN",
-    "whole_vehicle_trials": "NOT RELEASED",
+    "whole_vehicle_trials": "NOT RELEASED: inactive colliding historical hatch, inactive/unmeasured electronics and316mm hardware width",
     "target_obstacle_height_and_profile": "Approximately two inches rounded; height50.8 and roundover12.7 are placeholders, actual profile unmeasured",
-    "obstacle_normal_torque_and_limiter_selection": "OPEN - old PAO16/band withdrawn; SAO20 conditional on mass/load/torque and fit",
+    "obstacle_normal_torque_and_limiter_selection": "No mechanical limiter in S20. Mass, obstacle load and powered torque/reversal/shock tests remain open.",
     "loaded_body_clearance_and_crest_passage": "NOT RUN",
-    "new_clutch_retention_packaging": "Current ComInTec candidate envelope fits between output bearings; plate/bush/retention qualification still OPEN. Earlier overlap warning superseded.",
+    "new_clutch_retention_packaging": "RETIRED: rigid belt drive has no mechanical clutch.",
     "harness_connectors_bends_and_service_sweep": "General reserves only; guessed camera-specific routes withdrawn. Mated plugs, bends and removal paths remain unmodeled.",
-    "printer_slicer_footprint": "See shell-first evidence; earlier two-part slices are historical and do not qualify this housing.",
+    "printer_slicer_footprint": "Three existing fit projects rechecked against10 unchanged S21 native meshes. Closed S20 wheel projects superseded; fresh open-face wheel slice verified against saved canonical geometry.",
     "new_torque_shutdown_energy": "OPEN -old angle/time thresholds not qualified at new torque; no vehicle powered release",
     "indoor_acoustics": "NOT RUN - staged servo/transmission/rolling tests;35 dBA normal goal and45 dBA crossing-peak goal at1 m are provisional",
-    "normal_shock_envelope": "OPEN - repeated shocks are normal structural loads; measured force/torque/pulse/repetition envelope required",
+    "normal_shock_envelope": "UNTESTED: belt isolates some compliance but is not an overload release. Establish actual impulse/load/duty before powered qualification.",
     "feedback_architecture": "Two wheel encoders baseline; actual input reference needed to identify internal slip, or qualified worst permitted slip duty. No detection firmware implemented.",
     "outdoor_conversion": "DEFERRED until indoor proof; requalify material/environment/traction/load changes",
-    "cost_comparison": "OPEN - complete installed totals unknown; one purchased clutch route and one qualified RC-wear hybrid fallback",
+    "cost_comparison": "Current partial one/two-drive priced purchase subtotals in BOM.xlsx; whole-robot parts, tax, shipping, filament and unresolved hardware excluded.",
     "servo_feedback_interface": "PREFERRED; model, output-angle semantics, wrap, input rate/levels and fault tests open",
     "range_array": "Exact ACEIRMC20x12 outline verified; full hood/header/solder depth and mated connector UNKNOWN. No3D fit pass.",
     "floor_edge_detection": "Not implemented; forward sensors cannot authorize autonomous drop-edge operation",
@@ -34,7 +37,7 @@
     "pi_camera_inventory": "Not owned; choose actual forward camera before modeling.",
     "maintenance_retention": "Registered bolted panels planned; shock/panel cycles, joint torque and detailed openings not yet tested",
     "self_charging": "Pack-specific charger and reverse-blocked contacts planned; mechanical capture, charge limits and autonomous docking not implemented",
-    "transmission_choice": "Amazon210-3M-09 belt verified; preferred qualification route. Supported tensioner, pulley/carrier/clutch fit, loads and acoustics OPEN. Double-helical printed pair retained as sole gear fallback.",
+    "transmission_choice": "Rigid24T/48T2:1 belt drive; positive REX input, metal Sonic output hub. No clutch. Physical tooth fit, tension, loads and acoustics remain open.",
     "double_helical_mesh": "NOT GENERATED OR TESTED - transverse module/pressure angle fixed, opposed hands, relief, residual thrust and combined assembly/removal required"
   },
   "required_each_physical_test": [
@@ -48,32 +51,6 @@
     "actual torque/current/speed/temperature/slip-energy traces",
     "pass/fail and post-test inspection"
   ],
-  "cad_evidence": "See checks.json, cad-check.json and cad-reload-check.json; no implication of physical validation",
-  "cad_observations": {
-    "native_file_reopened": true,
-    "body_count": 73,
-    "timeline_errors": [],
-    "width_mm": 300,
-    "sections_visually_inspected": true,
-    "preview_source": "Native OCCT tessellation; cutaway visualization",
-    "validation_scope": "Native geometry rebuilt/reloaded, every box bound checked against source; installation reserves/harness boxes checked. Known clutch interference FAILS drive packaging. No physical validation, no finished gear/fastener/guard details.",
-    "revision": "floor-rise-246-wheels",
-    "checked_at_utc": "2026-09-13T02:27:26.520880+00:00",
-    "parameter_sha256": "5f4b6695f252150987463f2d492d4fe0096eafd22d74e3385832ad30af64f083",
-    "native_feature_count": 259,
-    "body_diameter_mm": 160,
-    "wheel_diameter_mm": 246,
-    "nominal_ground_clearance_mm": 43,
-    "reserve_overlap_pairs": [],
-    "application_open_confirmed": true,
-    "application_screenshots": [
-      "cad-246-overall.png",
-      "cad-246-clearance.png",
-      "cad-246-cutaway.png"
-    ],
-    "previous_application_screenshots": "All cad-160 and earlier screenshots are superseded; current model246 mm wheels.",
-    "box_parameter_mismatches": []
-  },
   "cad_builder_note": "Explicitly disabled grid snap for each sketch after the246 mm revision exposed snapping of a4 mm ledge to zero height. Rebuilt all geometry and verified every rectangular mesh bound within0.02 mm; prior screenshot geometry is superseded.",
   "requirements_revision": "amazon-belt-first-double-helical-fallback",
   "requirements_check": {
@@ -92,20 +69,6 @@
       "C power service fold - EMPTY HARNESS SPACE"
     ],
     "physical_tests_performed": false
-  },
-  "transmission_check": {
-    "checked_at_utc": "2026-09-13T03:11:18.222229+00:00",
-    "parameter_sha256": "9b2139badfa4e467d50a353ea9ca5c00d7ef77efd7bce617c63bd9d1f7a12e47",
-    "native_geometry_unchanged": true,
-    "native_source_objects": 73,
-    "amazon_belt_offer_verified": true,
-    "purchases_made": false,
-    "native_belt_or_helical_teeth_generated": false,
-    "physical_tests_performed": false,
-    "belt_ratio": 2.0,
-    "gear_fallback_centers_mm": 50.0,
-    "native_geometry_changed": true,
-    "native_geometry_status": "24/48 pitch cylinders and continuous 210-3M-09 loop envelopes; pulley tooth/flange, tension and carrier detailing still open"
   },
   "camera_packaging": {
     "status": "SUPERSEDED packaging experiment: guessed sensor boxes and optical ray origins withdrawn; not evidence of current fit.",
@@ -221,265 +184,11 @@
     "physical_measurements_received": false,
     "actuator_trade_status": "Published benchmarks only; no new physical validation"
   },
-  "current_print_release": false,
-  "new_cad_checks": {
-    "supplier_servo_step_imported": true,
-    "first_prints": "first-prints/checks.json",
-    "bom": "bom-check.json",
-    "assembly": "cad-reload-check.json",
-    "scope": "CAD/workbook only; no physical fit/torque evidence"
-  },
-  "current_CAD_checks": {
-    "article": "drive-end-section-checks.json",
-    "BOM": "bom-check.json",
-    "historical_whole_vehicle": "cad-reload-check.json"
-  },
+  "current_print_release": "Five small interfaces first, then carrier roof/bearing trial. Existing three fit projects retain their exact native meshes. Old closed wheels are superseded; use the separately sliced S21 open-face wheel after hardware fits. Full chassis/hatch/electronics fit is incomplete.",
   "owned_servo_identification": {
     "result": "INJORA INJS035-360 / B0C9TM9X2C;25T servo and reversible19x11 spool",
     "checked": "2026-09-13",
     "physical_measurement": false
-  },
-  "drive_article": {
-    "cad_check_file": "drive-article-checks.json",
-    "wheel_fit_prints": [
-      "first-prints/wheel-center-246-fit.stl",
-      "first-prints/wheel-bead-retainer-fit.stl",
-      "first-prints/tpu-tread-246-fit.stl"
-    ],
-    "powered_release": false,
-    "physical_tests": "NOT PERFORMED",
-    "blocked_interfaces": [
-      "servo ears/output offset/positive torque adapter",
-      "prepared input shaft retention",
-      "clutch driven plate/bush and permissible loads",
-      "pulley flange attachment and closed guarding"
-    ],
-    "superseded_print": "first-prints/servo-fit-gobilda25-2.stl",
-    "actual_CAD_checks": {
-      "initial_export_note": "Initial reload rejected duplicate component labels. Labels repaired before loading for clearance refinement.",
-      "physical_tests": "NOT PERFORMED",
-      "powered_release": false,
-      "stl": [
-        {
-          "file": "wheel-center-246-fit.stl",
-          "triangles": 13356,
-          "nonmanifold_edges": 0,
-          "solid_volume_mm3": 318962.02799450414,
-          "bounds_mm": [
-            [
-              -117.0,
-              -117.0,
-              0.0
-            ],
-            [
-              117.0,
-              117.0,
-              32.0
-            ]
-          ],
-          "connected_mesh_components": 1
-        },
-        {
-          "file": "wheel-bead-retainer-fit.stl",
-          "triangles": 7142,
-          "nonmanifold_edges": 0,
-          "solid_volume_mm3": 64598.200117480395,
-          "bounds_mm": [
-            [
-              -117.0,
-              -117.0,
-              0.0
-            ],
-            [
-              117.0,
-              117.0,
-              8.0
-            ]
-          ],
-          "connected_mesh_components": 1
-        },
-        {
-          "file": "tpu-tread-246-fit.stl",
-          "triangles": 2644,
-          "nonmanifold_edges": 0,
-          "solid_volume_mm3": 217633.67554440035,
-          "bounds_mm": [
-            [
-              -123.0,
-              -123.0,
-              0.0
-            ],
-            [
-              123.0,
-              123.0,
-              40.0
-            ]
-          ],
-          "connected_mesh_components": 1
-        }
-      ],
-      "refined_preflight": {
-        "_disclosure": {
-          "active_focus": "print",
-          "advertised": true,
-          "mode": "dynamic",
-          "pack": "print",
-          "state": "active"
-        },
-        "appearances_assigned": 71,
-        "bodies_missing_appearance": [],
-        "body_count": 71,
-        "body_ids": [
-          1,
-          41,
-          58,
-          77,
-          78,
-          79,
-          80,
-          81,
-          82,
-          83,
-          84,
-          85,
-          86,
-          87,
-          88,
-          89,
-          90,
-          91,
-          92,
-          93,
-          94,
-          95,
-          96,
-          97,
-          98,
-          99,
-          100,
-          101,
-          102,
-          103,
-          104,
-          105,
-          106,
-          107,
-          108,
-          109,
-          110,
-          111,
-          112,
-          113,
-          114,
-          115,
-          116,
-          123,
-          133,
-          143,
-          146,
-          152,
-          155,
-          161,
-          162,
-          163,
-          164,
-          165,
-          166,
-          167,
-          176,
-          177,
-          178,
-          179,
-          180,
-          181,
-          182,
-          197,
-          198,
-          199,
-          201,
-          202,
-          203,
-          204,
-          236
-        ],
-        "hints": [
-          "Ready for solid_export_3mf (preferred) or solid_export_stl / solid_export_step."
-        ],
-        "ok": true,
-        "timeline_errors": []
-      },
-      "known_clearance_corrections": [
-        "bearing-front pulley relief",
-        "outer input bearing and ring moved one mm",
-        "carriage rail relief and continuous sole",
-        "cover mating windows",
-        "schematic clutch journal/nut split",
-        "wheel captive-nut seats locally thickened to seven mm radius"
-      ],
-      "offline_slicer_estimates": {
-        "parts": [
-          {
-            "part": "wheel-center-246-fit",
-            "filament_g": 321.9554748535156,
-            "estimated_hours": 8.350365125868056,
-            "first_layer_xy_bounds_mm": [
-              8.15817,
-              8.15817,
-              247.84181,
-              247.84181
-            ],
-            "warning_message": ""
-          },
-          {
-            "part": "wheel-bead-retainer-fit",
-            "filament_g": 48.087955474853516,
-            "estimated_hours": 1.4767061360677083,
-            "first_layer_xy_bounds_mm": [
-              8.15817,
-              8.15817,
-              247.84181,
-              247.84181
-            ],
-            "warning_message": ""
-          },
-          {
-            "part": "tpu-tread-246-fit",
-            "filament_g": 134.36904907226562,
-            "estimated_hours": 10.132001953125,
-            "first_layer_xy_bounds_mm": [
-              2.15815,
-              2.15815,
-              253.84183000000002,
-              253.84183000000002
-            ],
-            "warning_message": ""
-          }
-        ],
-        "all_three_sliced": true,
-        "basis": "Installed X2D 0.4 mm profile; generic PETG/TPU, 0.2 mm layers, 15% gyroid; PETG five walls, TPU three. Explicit center (128,128), main nozzle only, 3 mm brim. Estimated consumption includes print aids. Actual nozzle/material and physical results unconfirmed.",
-        "toolpath_review": "First-layer bounds, generated support presence and native slicer thumbnails checked; not a complete layer-by-layer print qualification."
-      }
-    },
-    "sliced": true,
-    "archive": "first-prints/wheel-fit-set.zip"
-  },
-  "drive_end_section": {
-    "design": "Vehicle carrier and input spine; clamp via final body flange, retain for vehicle after qualification",
-    "current_native": "Roller-300.nbcad",
-    "wheel_tire_work": "DEFERRED by user",
-    "CAD_check_record": "drive-end-section-checks.json",
-    "physical_tests": "NOT PERFORMED",
-    "powered_release": false,
-    "resumed_check_date": "2026-09-19",
-    "mesh_checks": "Two exports each have one connected closed manifold mesh",
-    "radial_sweep": "Checked +/-1.5 mm; saddle corner relieved to clear proposed central wall. Full interference and tool sweep still open.",
-    "offline_sliced": true,
-    "live_clearance_review": "Six structural overlaps removed; full native check retains nine documented unresolved/envelope pairs. See drive-end-section-checks.json.",
-    "prior_estimated_grams": 194.3333969116211,
-    "prior_estimated_hours": 7.141419542100694,
-    "estimated_grams": 193.53534698486328,
-    "estimated_hours": 7.1223779296875005,
-    "servo_package_revision": "Servo, saddle, spool, clamp and adapter reserves shifted 3 mm inboard. Four spine M3 holes moved to Y9/39. Adapter clears post/cap by 1.5 mm. Matching body/carrier opening top raised from axle Z-17 to Z-14; selected structural pairs pass both +/-1.5 mm endpoints."
   },
   "workspace": {
     "master_cad": "Roller-300.nbcad",
@@ -1073,5 +782,1499 @@
     "historical_export_hashes_verified": true,
     "mass_partial_estimate_kg": 1.8126327875512263
   },
-  "historical_records_note": "Earlier revision entries below shell-first/current metadata are retained observations, not current geometry or release evidence."
+  "historical_records_note": "Older packaging, stage and slice entries are historical. current_native_fit and parameters.revision are the active drivetrain evidence; no physical test or print has been performed.",
+  "unpowered_coupon_files_ready": true,
+  "pending_physical_fit": [
+    "Received608 fit and free rotation after retainer tightening; remove supports without damaging seats",
+    "Received H25T spline/pilot seating and low-profile M3 center-screw length; seat without bottoming, nominal head-to-shaft gap1.25mm (conservative vendor STEP0.883mm)",
+    "PETG AF7.3 keyed bores on actual REX shaft; clip insertion, pocket fit and retention by hand",
+    "Input shaft nominal0.2mm endplay and pulley nominal0.4mm play; stops act on bearing inner races, no bearing preload",
+    "Received M3/M4 nuts, screws and driver access; bridge pan-head envelope and four servo ear mounts",
+    "Output hub pilot, clamp access, four M4x16 engagements and wheel hub rear abutment; stock6+2mm stop and measured wheel endplay",
+    "Carrier motion, belt installation, tooth seating, flange tracking and measured tension",
+    "Actual servo boot/cable clearance and full-barrel rear carrier screw access before any full-frame release",
+    "Supervised powered torque, reversal, shock and temperature qualification after electrical limits/cutoff established; no mechanical torque limiter"
+  ],
+  "historical_previous_native_fit": {
+    "date": "2026-10-03",
+    "source": "Roller-300.nbcad",
+    "source_sha256": "2116d4710816a3813e47cb6eb7cd25acef2e2f73d839accfd7bdcc78a5e8b5b2",
+    "features": 1208,
+    "checks": "design/native-fixes-2026-10-03/checks.json",
+    "print_candidates": "first-prints/native-fit-2026-10-03",
+    "shell_body": 32,
+    "fit_section_body": 373,
+    "wheel_bearing_coupon_body": 374,
+    "upper_bridges": [
+      367,
+      368
+    ],
+    "bearing_retainer_bodies": [
+      375,
+      376,
+      377,
+      378,
+      379,
+      380,
+      381,
+      382,
+      383,
+      384
+    ],
+    "changes": [
+      "Joined shell, cradle and bearing roots; restored mouth supports and overlapping wheel bosses",
+      "Provisional servo ear mounting and removable bridges; retired superseded front retainers",
+      "Coupler and input pulley M3x10 pinch bolts, head recesses and captive nuts; verified rotational clearance",
+      "Input bearing pair at |Y|54..61 and81..88; 8x25x6 metal collar at90..96 with2mm inner-race shim stack",
+      "Positive outer-race shoulders and removable bearing retainers, with spine reliefs and radial center nut access",
+      "Center web bore18 clears the rotating inner races; wheel caps remain inside uncut shaft tips",
+      "Native one-drive shell section and outer wheel bearing coupon; geometry unchanged in print preparation",
+      "Shared vertex references in slicer placement3MF; all eleven candidate slices succeed without warnings"
+    ],
+    "scope": "Unpowered fit and assembly; no powered or whole-vehicle release",
+    "physical_test_performed": false,
+    "unpowered_coupon_files_ready": true,
+    "full_assembly_requires": "Received hardware, coupon fits, actual servo/horn/cable measurements; full wheel print remains expensive",
+    "save_note": "Unchanged CAD-application model export packaged in native archive after native Save rejected its own snapshot. Original retained in .local. Native trial archives reopened and replayed in the CAD application."
+  },
+  "historical_previous_slice_estimates": [
+    {
+      "part": "one-drive-fit-section",
+      "seconds": 22967.30859375,
+      "grams": 230.5514678955078,
+      "warning": "",
+      "return_code": 0
+    },
+    {
+      "part": "outer-wheel-bearing-coupon",
+      "seconds": 2527.210693359375,
+      "grams": 19.253328323364258,
+      "warning": "",
+      "return_code": 0
+    },
+    {
+      "part": "servo-shaft-clamp-trial",
+      "seconds": 885.3516845703125,
+      "grams": 2.1043877601623535,
+      "warning": "",
+      "return_code": 0
+    },
+    {
+      "part": "input-pulley-clamp-trial",
+      "seconds": 2051.884033203125,
+      "grams": 7.328353404998779,
+      "warning": "",
+      "return_code": 0
+    },
+    {
+      "part": "servo-upper-bridge",
+      "seconds": 913.84716796875,
+      "grams": 2.6216583251953125,
+      "warning": "",
+      "return_code": 0
+    },
+    {
+      "part": "wheel-bearing-retainer",
+      "seconds": 955.94189453125,
+      "grams": 4.881414890289307,
+      "warning": "",
+      "return_code": 0
+    },
+    {
+      "part": "mouth-bearing-retainer",
+      "seconds": 955.0569458007812,
+      "grams": 4.881384372711182,
+      "warning": "",
+      "return_code": 0
+    },
+    {
+      "part": "input-inboard-bearing-retainer",
+      "seconds": 699.731689453125,
+      "grams": 3.125544309616089,
+      "warning": "",
+      "return_code": 0
+    },
+    {
+      "part": "input-outboard-bearing-retainer",
+      "seconds": 699.731689453125,
+      "grams": 3.125544309616089,
+      "warning": "",
+      "return_code": 0
+    },
+    {
+      "part": "center-bearing-retainer",
+      "seconds": 948.9627075195312,
+      "grams": 4.841744899749756,
+      "warning": "",
+      "return_code": 0
+    },
+    {
+      "part": "left-wheel-axle-vertical",
+      "seconds": 57378.875,
+      "grams": 612.7744750976562,
+      "warning": "",
+      "return_code": 0
+    }
+  ],
+  "cost_review_wheel_slice": {
+    "date": "2026-10-04",
+    "source": "first-prints/drivetrain-fit-2026-10-03/slice-checks.json",
+    "fresh_current_native_wheel_slice": {
+      "part": "left-wheel-axle-vertical",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 56668.0546875,
+      "grams": 609.359619140625,
+      "warnings": [],
+      "native_mesh_sha256": "df4c6d6e04f9913ea851b79079a3da96c8c04d342274df83b5c2669cee62e29d",
+      "passed": true
+    },
+    "physical_print": false
+  },
+  "mount_capture_revision": {
+    "date": "2026-10-04",
+    "source": "Roller-300.nbcad",
+    "source_sha256": "441bc32e6ac0362c42dfcf195f2f70daf509cefe7876bd109e4c9a1035d70bdf",
+    "features": 1625,
+    "checks": "design/mount-capture-2026-10-04/checks.json",
+    "print_candidates": "first-prints/drivetrain-fit-2026-10-04",
+    "shell_body": 32,
+    "fit_section_body": 373,
+    "carrier_bodies": [
+      437,
+      440
+    ],
+    "pressure_pad_bodies": [
+      391,
+      442,
+      416,
+      443
+    ],
+    "bearing_retainer_bodies": [
+      376,
+      377,
+      378,
+      380,
+      381,
+      382,
+      383,
+      384
+    ],
+    "physical_test_performed": false,
+    "unpowered_coupon_files_ready": true,
+    "scope": "Unpowered roof-open one-drive fit; horn interface, whole vehicle and powered release held",
+    "save_note": "Saved through native CAD File/Save; saved feature geometry exactly matches the validated native engine replay.",
+    "validation": {
+      "connected_valid_watertight_print_bodies": 30,
+      "nominal_clearance_checks": 167,
+      "mount_capture_checks": 122,
+      "warning_free_review_plate_slices": 1
+    },
+    "bambu_review_project": "first-prints/bambu-capture-review-2026-10-04/Roller-300-first-fit-review.3mf"
+  },
+  "mount_capture_physical_test": "NOT PERFORMED; verify received nut/head dimensions and PETG fits before assembly",
+  "rigid_belt_revision": {
+    "date": "2026-10-05",
+    "source": "Roller-300.nbcad",
+    "source_sha256": "3e821644be165bea088c78e695250cced656aa3d346235ddbf2620187cf7d788",
+    "features": 1657,
+    "checks": "design/rigid-belt-drive-2026-10-05/checks.json",
+    "print_candidates": "first-prints/rigid-belt-fit-2026-10-05",
+    "shell_body": 32,
+    "fit_section_body": 373,
+    "carrier_bodies": [
+      437,
+      440
+    ],
+    "output_pulley_bodies": [
+      9,
+      26
+    ],
+    "output_metal_hub_bodies": [
+      387,
+      412
+    ],
+    "bearing_retainer_bodies": [
+      376,
+      377,
+      378,
+      380,
+      381,
+      382,
+      383,
+      384
+    ],
+    "retired_clutch_bodies": [
+      307,
+      315,
+      388,
+      389,
+      390,
+      391,
+      442,
+      413,
+      414,
+      415,
+      416,
+      443,
+      392,
+      393,
+      394,
+      395,
+      396,
+      397,
+      398,
+      399,
+      400,
+      401,
+      402,
+      403,
+      404,
+      405,
+      406,
+      407,
+      408,
+      409,
+      410,
+      411,
+      417,
+      418,
+      419,
+      420,
+      421,
+      422,
+      423,
+      424,
+      425,
+      426,
+      427,
+      428,
+      429,
+      430,
+      431,
+      432,
+      433,
+      434,
+      435,
+      436
+    ],
+    "physical_test_performed": false,
+    "unpowered_coupon_files_ready": true,
+    "powered_release": false,
+    "scope": "Unpowered roof-open one-drive fit; final horn, physical fits and powered tests remain pending",
+    "save_note": "Saved through native Limo CAD File/Save. Saved solid feature geometry exactly equals validated native replay.",
+    "validation": {
+      "connected_valid_watertight_print_bodies": 22,
+      "nominal_clearance_checks": 167,
+      "mount_capture_checks": 122,
+      "warning_free_individual_slices": 11,
+      "warning_free_review_plate_slices": 1
+    },
+    "bambu_review_project": "first-prints/bambu-rigid-review-2026-10-05/Roller-300-rigid-belt-first-fit.3mf",
+    "native_named_views": 4
+  },
+  "current_native_fit_revision": {
+    "date": "2026-10-07",
+    "revision": "S21",
+    "source": "Roller-300.nbcad",
+    "source_sha256": "dbb79ae72b28707accd399a6784c7ea76deb182d6314b5a6dd007a6c724e655f",
+    "features": 2033,
+    "feature_errors": 0,
+    "checks": "design/chassis-fit-review-2026-10-07/validation-summary.json",
+    "native_geometry_matches_saved_replay": true,
+    "inherited_drivetrain_review": "design/adversarial-review-2026-10-06/validation-summary.json",
+    "unchanged_current_fit_print_bodies": 10,
+    "wheel_cap_minimum_gap_at_axial_extreme_mm": 23.8,
+    "wheel_shell_minimum_gap_at_axial_extreme_mm": 28.3,
+    "whole_chassis_fit_released": false,
+    "powered_release": false,
+    "wheel_print_estimate": {
+      "project": "first-prints/chassis-fit-2026-10-07/outboard-down/Roller-300-wheel-open-fit.3mf",
+      "grams": 336.7090148925781,
+      "time_seconds": 31108.98046875,
+      "pose": "outboard_face_down",
+      "source_stl_sha256": "26a42cf367d89be68c3d39e977afccacaf44a4a1f6aa3805f8689134e0087fc5",
+      "settings_verified": true,
+      "release": "HOLD until receiving/carrier fits pass; unpowered fit candidate",
+      "canonical_source_geometry_verified": true
+    }
+  },
+  "historical_pending_physical_fit_before_rigid_drive": [
+    "Bearing seats and free rotation after cap tightening; metal inner-race contacts",
+    "Metal wheel hub abutment, collar full engagement and measured endplay",
+    "M3/M4 nut insertion, screw head seating and driver access; support removal",
+    "Carrier motion under clamp loosening; belt installation and measured tension",
+    "Radial pressure-pad installation, even spring lengths16..18, actual liner stack",
+    "Servo/horn/grommet/cable measurements and final horn-adapter axial stack",
+    "Clutch grip/slip calibration, journal friction/wear and load tests before powered operation"
+  ],
+  "physical_test_performed": false,
+  "powered_release": false,
+  "servo_horn_revision": {
+    "date": "2026-10-06",
+    "revision": "S20",
+    "source": "Roller-300.nbcad",
+    "source_sha256": "bf4561cd9261083763b1f117bf14007dcaf6202b5efd19679aec39a4e36bd52b",
+    "features": 2015,
+    "checks": "design/adversarial-review-2026-10-06/validation-summary.json",
+    "print_candidates": "first-prints/adversarial-fit-2026-10-06",
+    "physical_test_performed": false,
+    "unpowered_coupon_files_ready": true,
+    "powered_release": false,
+    "whole_barrel_release": false,
+    "horn_adapter_nominal_design_complete": true,
+    "positive_rex_input": true,
+    "scope": "Unpowered one-drive roof-open receiving, fit and assembly test. PETG /0.4mm X2D. Powered loads, belt tooth fit and complete barrel service remain open.",
+    "validation": {
+      "connected_valid_watertight_print_bodies": 22,
+      "nominal_geometry_checks": 496,
+      "drivetrain_checks": 255,
+      "adversarial_assembly_checks": 109,
+      "mount_capture_checks": 122,
+      "wall_section_checks": 10,
+      "warning_free_individual_slices": 11,
+      "warning_free_review_plate_slices": 1
+    },
+    "bambu_review_project": "first-prints/receiving-fit-gate-2026-10-06/Roller-300-small-fit-gate.3mf",
+    "native_named_views": 7,
+    "save_note": "Native CAD File/Save; saved solid geometry exactly equals validated native replay. Seven recalled views preserve geometry.",
+    "staged_print_gate": true,
+    "full_fit_requires_small_hardware_pass": true,
+    "print_decision": "design/print-decision-2026-10-06/print-decision.json"
+  },
+  "historical_gates_before_servo_horn": {
+    "supplier_clutch_data": "OPEN",
+    "servo_model_and_permissible_envelope": "OPEN",
+    "numeric_voltage_and_current_limits": "OPEN - do not energize actuator fixture",
+    "bearing_and_fastener_coupons": "NOT RUN",
+    "independent_bidirectional_clutch_calibration": "NOT RUN",
+    "paired_timer_and_hard_cutoff_dummy_load_test": "NOT RUN",
+    "complete_one_side_detail_and_guarding": "Unpowered drivetrain CAD complete with purchased H25T horn; receiving fit, full-barrel guarding and powered qualification pending.",
+    "drivetrain_feedback_shutdown": "DESIGNED IN PLAN; NOT IMPLEMENTED",
+    "custom_PX4_pitch_control": "NOT BUILT OR FLASHED",
+    "body_pitch_and_mass_measurements": "NOT RUN",
+    "whole_vehicle_trials": "NOT RELEASED",
+    "target_obstacle_height_and_profile": "Approximately two inches rounded; height50.8 and roundover12.7 are placeholders, actual profile unmeasured",
+    "obstacle_normal_torque_and_limiter_selection": "OPEN - old PAO16/band withdrawn; SAO20 conditional on mass/load/torque and fit",
+    "loaded_body_clearance_and_crest_passage": "NOT RUN",
+    "new_clutch_retention_packaging": "Current custom printed clutch is a layout only. Historical ComInTec qualification statements are superseded.",
+    "harness_connectors_bends_and_service_sweep": "General reserves only; guessed camera-specific routes withdrawn. Mated plugs, bends and removal paths remain unmodeled.",
+    "printer_slicer_footprint": "See shell-first evidence; earlier two-part slices are historical and do not qualify this housing.",
+    "new_torque_shutdown_energy": "OPEN -old angle/time thresholds not qualified at new torque; no vehicle powered release",
+    "indoor_acoustics": "NOT RUN - staged servo/transmission/rolling tests;35 dBA normal goal and45 dBA crossing-peak goal at1 m are provisional",
+    "normal_shock_envelope": "OPEN - repeated shocks are normal structural loads; measured force/torque/pulse/repetition envelope required",
+    "feedback_architecture": "Two wheel encoders baseline; actual input reference needed to identify internal slip, or qualified worst permitted slip duty. No detection firmware implemented.",
+    "outdoor_conversion": "DEFERRED until indoor proof; requalify material/environment/traction/load changes",
+    "cost_comparison": "OPEN - complete installed totals unknown; one purchased clutch route and one qualified RC-wear hybrid fallback",
+    "servo_feedback_interface": "PREFERRED; model, output-angle semantics, wrap, input rate/levels and fault tests open",
+    "range_array": "Exact ACEIRMC20x12 outline verified; full hood/header/solder depth and mated connector UNKNOWN. No3D fit pass.",
+    "floor_edge_detection": "Not implemented; forward sensors cannot authorize autonomous drop-edge operation",
+    "thermal_pi_compatibility": "Electrical/software out of scope; mechanical device nominal envelope retained, actual mated connector and optics HOLD.",
+    "pi_camera_inventory": "Not owned; choose actual forward camera before modeling.",
+    "maintenance_retention": "Registered bolted panels planned; shock/panel cycles, joint torque and detailed openings not yet tested",
+    "self_charging": "Pack-specific charger and reverse-blocked contacts planned; mechanical capture, charge limits and autonomous docking not implemented",
+    "transmission_choice": "Amazon210-3M-09 belt verified; preferred qualification route. Supported tensioner, pulley/carrier/clutch fit, loads and acoustics OPEN. Double-helical printed pair retained as sole gear fallback.",
+    "double_helical_mesh": "NOT GENERATED OR TESTED - transverse module/pressure angle fixed, opposed hands, relief, residual thrust and combined assembly/removal required"
+  },
+  "historical_s19_current_native_fit": {
+    "date": "2026-10-03",
+    "source": "Roller-300.nbcad",
+    "source_sha256": "767a8d32968bfef61b02556d5d433998c2c098d8567138aacf7163956c5e5773",
+    "features": 1561,
+    "checks": "design\\drivetrain-revision-2026-10-03\\checks.json",
+    "print_candidates": "first-prints\\drivetrain-fit-2026-10-03",
+    "shell_body": 32,
+    "fit_section_body": 373,
+    "carrier_bodies": [
+      437,
+      440
+    ],
+    "pressure_pad_bodies": [
+      391,
+      442,
+      416,
+      443
+    ],
+    "bearing_retainer_bodies": [
+      376,
+      377,
+      378,
+      380,
+      381,
+      382,
+      383,
+      384
+    ],
+    "physical_test_performed": false,
+    "unpowered_coupon_files_ready": true,
+    "scope": "Unpowered roof-open one-drive fit; horn interface, whole vehicle and powered release held",
+    "save_note": "Saved through native CAD File/Save; saved feature geometry exactly matches the validated native engine replay.",
+    "validation": {
+      "connected_valid_watertight_print_bodies": 30,
+      "nominal_clearance_checks": 167,
+      "warning_free_offline_slices": 13
+    }
+  },
+  "historical_s19_current_CAD_checks": {
+    "source_sha256": "2116d4710816a3813e47cb6eb7cd25acef2e2f73d839accfd7bdcc78a5e8b5b2",
+    "features": 1208,
+    "tested_connected_valid_watertight_bodies": 21,
+    "servo_insertion": "120mm conservative case/ear lift clear; excludes unknown horn/cable",
+    "clamp_rotation": "360 degree envelopes clear shell and stationary retainers",
+    "retainer_assembly": "All ten retainers have zero volumetric overlap with their parent",
+    "slicing": "Eleven candidate parts; positive filament/time estimates, no warnings",
+    "physical_tests_performed": false
+  },
+  "historical_s19_drive_article": {
+    "cad_check_file": "drive-article-checks.json",
+    "wheel_fit_prints": [
+      "first-prints/wheel-center-246-fit.stl",
+      "first-prints/wheel-bead-retainer-fit.stl",
+      "first-prints/tpu-tread-246-fit.stl"
+    ],
+    "powered_release": false,
+    "physical_tests": "NOT PERFORMED",
+    "blocked_interfaces": [
+      "servo ears/output offset/positive torque adapter",
+      "prepared input shaft retention",
+      "clutch driven plate/bush and permissible loads",
+      "pulley flange attachment and closed guarding"
+    ],
+    "superseded_print": "first-prints/servo-fit-gobilda25-2.stl",
+    "actual_CAD_checks": {
+      "initial_export_note": "Initial reload rejected duplicate component labels. Labels repaired before loading for clearance refinement.",
+      "physical_tests": "NOT PERFORMED",
+      "powered_release": false,
+      "stl": [
+        {
+          "file": "wheel-center-246-fit.stl",
+          "triangles": 13356,
+          "nonmanifold_edges": 0,
+          "solid_volume_mm3": 318962.02799450414,
+          "bounds_mm": [
+            [
+              -117.0,
+              -117.0,
+              0.0
+            ],
+            [
+              117.0,
+              117.0,
+              32.0
+            ]
+          ],
+          "connected_mesh_components": 1
+        },
+        {
+          "file": "wheel-bead-retainer-fit.stl",
+          "triangles": 7142,
+          "nonmanifold_edges": 0,
+          "solid_volume_mm3": 64598.200117480395,
+          "bounds_mm": [
+            [
+              -117.0,
+              -117.0,
+              0.0
+            ],
+            [
+              117.0,
+              117.0,
+              8.0
+            ]
+          ],
+          "connected_mesh_components": 1
+        },
+        {
+          "file": "tpu-tread-246-fit.stl",
+          "triangles": 2644,
+          "nonmanifold_edges": 0,
+          "solid_volume_mm3": 217633.67554440035,
+          "bounds_mm": [
+            [
+              -123.0,
+              -123.0,
+              0.0
+            ],
+            [
+              123.0,
+              123.0,
+              40.0
+            ]
+          ],
+          "connected_mesh_components": 1
+        }
+      ],
+      "refined_preflight": {
+        "_disclosure": {
+          "active_focus": "print",
+          "advertised": true,
+          "mode": "dynamic",
+          "pack": "print",
+          "state": "active"
+        },
+        "appearances_assigned": 71,
+        "bodies_missing_appearance": [],
+        "body_count": 71,
+        "body_ids": [
+          1,
+          41,
+          58,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          123,
+          133,
+          143,
+          146,
+          152,
+          155,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          176,
+          177,
+          178,
+          179,
+          180,
+          181,
+          182,
+          197,
+          198,
+          199,
+          201,
+          202,
+          203,
+          204,
+          236
+        ],
+        "hints": [
+          "Ready for solid_export_3mf (preferred) or solid_export_stl / solid_export_step."
+        ],
+        "ok": true,
+        "timeline_errors": []
+      },
+      "known_clearance_corrections": [
+        "bearing-front pulley relief",
+        "outer input bearing and ring moved one mm",
+        "carriage rail relief and continuous sole",
+        "cover mating windows",
+        "schematic clutch journal/nut split",
+        "wheel captive-nut seats locally thickened to seven mm radius"
+      ],
+      "offline_slicer_estimates": {
+        "parts": [
+          {
+            "part": "wheel-center-246-fit",
+            "filament_g": 321.9554748535156,
+            "estimated_hours": 8.350365125868056,
+            "first_layer_xy_bounds_mm": [
+              8.15817,
+              8.15817,
+              247.84181,
+              247.84181
+            ],
+            "warning_message": ""
+          },
+          {
+            "part": "wheel-bead-retainer-fit",
+            "filament_g": 48.087955474853516,
+            "estimated_hours": 1.4767061360677083,
+            "first_layer_xy_bounds_mm": [
+              8.15817,
+              8.15817,
+              247.84181,
+              247.84181
+            ],
+            "warning_message": ""
+          },
+          {
+            "part": "tpu-tread-246-fit",
+            "filament_g": 134.36904907226562,
+            "estimated_hours": 10.132001953125,
+            "first_layer_xy_bounds_mm": [
+              2.15815,
+              2.15815,
+              253.84183000000002,
+              253.84183000000002
+            ],
+            "warning_message": ""
+          }
+        ],
+        "all_three_sliced": true,
+        "basis": "Installed X2D 0.4 mm profile; generic PETG/TPU, 0.2 mm layers, 15% gyroid; PETG five walls, TPU three. Explicit center (128,128), main nozzle only, 3 mm brim. Estimated consumption includes print aids. Actual nozzle/material and physical results unconfirmed.",
+        "toolpath_review": "First-layer bounds, generated support presence and native slicer thumbnails checked; not a complete layer-by-layer print qualification."
+      }
+    },
+    "sliced": true,
+    "archive": "first-prints/wheel-fit-set.zip"
+  },
+  "historical_s19_drive_end_section": {
+    "design": "Vehicle carrier and input spine; clamp via final body flange, retain for vehicle after qualification",
+    "current_native": "Roller-300.nbcad",
+    "wheel_tire_work": "DEFERRED by user",
+    "CAD_check_record": "drive-end-section-checks.json",
+    "physical_tests": "NOT PERFORMED",
+    "powered_release": false,
+    "resumed_check_date": "2026-09-19",
+    "mesh_checks": "Two exports each have one connected closed manifold mesh",
+    "radial_sweep": "Checked +/-1.5 mm; saddle corner relieved to clear proposed central wall. Full interference and tool sweep still open.",
+    "offline_sliced": true,
+    "live_clearance_review": "Six structural overlaps removed; full native check retains nine documented unresolved/envelope pairs. See drive-end-section-checks.json.",
+    "prior_estimated_grams": 194.3333969116211,
+    "prior_estimated_hours": 7.141419542100694,
+    "estimated_grams": 193.53534698486328,
+    "estimated_hours": 7.1223779296875005,
+    "servo_package_revision": "Servo, saddle, spool, clamp and adapter reserves shifted 3 mm inboard. Four spine M3 holes moved to Y9/39. Adapter clears post/cap by 1.5 mm. Matching body/carrier opening top raised from axle Z-17 to Z-14; selected structural pairs pass both +/-1.5 mm endpoints."
+  },
+  "historical_s19_fit_hardware": {
+    "bearing": "608 nominal8x22x7; supplier/fit to measure",
+    "pinch_clamps": "M3x10 plus M3 nuts; two for one drive",
+    "input_retainer_caps": "M3x12 plus M3 nuts; four per cap",
+    "mouth_and_center_caps": "M3x12 plus M3 nuts; four each",
+    "servo_mount": "Trial M3x12 ear bolts plus M3x25 vertical bridge bolts; verify actual ear/grommets and engagement",
+    "input_stop": "8x25x6 metal collar at89.7..95.7; 1.7 mm metal inner-race shims",
+    "shaft_stock": "150mm wheel and50mm input,8mm diameter, uncut",
+    "wheel_opposing_stop": "8x11x8 metal spacer; verify actual wheel hub abutment",
+    "carrier": "3 M4x14 + 9x4.3x0.8 washers + AF7/height3.2 M4 nuts; outer nut loads from inner side port",
+    "clutch": {
+      "hub": "goBILDA1309-0016-0008",
+      "source": "https://www.gobilda.com/1309-series-sonic-hub-8mm-bore/",
+      "reaction_plate_od_mm": 57.5,
+      "reaction_plate_y_left_mm": [
+        28.3,
+        32.3
+      ],
+      "rotor_y_left_mm": [
+        32.8,
+        34.8
+      ],
+      "pressure_pads_y_left_mm": [
+        35.3,
+        38.3
+      ],
+      "pressure_split_gap_mm": 0.4,
+      "pressure_pads_per_drive": 2,
+      "guide_pcd_mm": 48,
+      "adjuster": "4 x M3x35 ISO4762 + captive M3 nyloc",
+      "reaction_mount": "4 x M4x8 ISO7380-1; nominal thread engagement6.2 mm in purchased hub",
+      "journal_mount": "4 x M3x10 + captive M3 nuts; rear removable flange",
+      "spring": "4 x goBILDA2916-0001-0002; free25 mm, modeled18 mm; minimum guide length16 mm",
+      "spring_source": "https://www.gobilda.com/compression-spring-6mm-id-x-8mm-od-2-3kg-max-load-16-25mm-length-2-pack/",
+      "maximum_installed_length_mm": 18,
+      "minimum_installed_length_mm": 16,
+      "spring_guide": "Metal OD5, ID3.2, length16 mm; procurement/sample pending",
+      "liner": "Trial0.5 mm front annulus44x27.4; rear two half sheets44x33.4. Supplier/bonding/compressed thickness pending.",
+      "journal": "PETG trial OD26.5/ID8.2,32.8..79.75; friction/wear not qualified",
+      "release": "Unpowered assembly only; no calibrated torque claim"
+    }
+  },
+  "historical_s19_cad_evidence": "See checks.json, cad-check.json and cad-reload-check.json; no implication of physical validation",
+  "historical_s19_cad_observations": {
+    "native_file_reopened": true,
+    "body_count": 73,
+    "timeline_errors": [],
+    "width_mm": 300,
+    "sections_visually_inspected": true,
+    "preview_source": "Native OCCT tessellation; cutaway visualization",
+    "validation_scope": "Native geometry rebuilt/reloaded, every box bound checked against source; installation reserves/harness boxes checked. Known clutch interference FAILS drive packaging. No physical validation, no finished gear/fastener/guard details.",
+    "revision": "floor-rise-246-wheels",
+    "checked_at_utc": "2026-09-13T02:27:26.520880+00:00",
+    "parameter_sha256": "5f4b6695f252150987463f2d492d4fe0096eafd22d74e3385832ad30af64f083",
+    "native_feature_count": 259,
+    "body_diameter_mm": 160,
+    "wheel_diameter_mm": 246,
+    "nominal_ground_clearance_mm": 43,
+    "reserve_overlap_pairs": [],
+    "application_open_confirmed": true,
+    "application_screenshots": [
+      "cad-246-overall.png",
+      "cad-246-clearance.png",
+      "cad-246-cutaway.png"
+    ],
+    "previous_application_screenshots": "All cad-160 and earlier screenshots are superseded; current model246 mm wheels.",
+    "box_parameter_mismatches": []
+  },
+  "historical_s19_new_cad_checks": {
+    "supplier_servo_step_imported": true,
+    "first_prints": "first-prints/checks.json",
+    "bom": "bom-check.json",
+    "assembly": "cad-reload-check.json",
+    "scope": "CAD/workbook only; no physical fit/torque evidence"
+  },
+  "historical_s19_slice_estimates": [
+    {
+      "part": "center-bearing-retainer",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 949.0658569335938,
+      "grams": 4.841744899749756,
+      "warnings": [],
+      "passed": true,
+      "native_mesh_sha256": "74ff84230a91766b45009e0eb953af37687b4a3d750fced13037ac007075e17c"
+    },
+    {
+      "part": "clutch-journal-bush",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 4300.2529296875,
+      "grams": 28.7611141204834,
+      "warnings": [],
+      "passed": true,
+      "native_mesh_sha256": "7eca6e813a4f2eac9f92240ea3274ca55bb1396f35471a70924151ab755dfc37"
+    },
+    {
+      "part": "clutch-output-pulley",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 6761.685546875,
+      "grams": 38.659732818603516,
+      "warnings": [],
+      "passed": true,
+      "native_mesh_sha256": "5f5c4995a55e1796f115a7f006a10c4aea6160c81142876def8e350e06c59949"
+    },
+    {
+      "part": "clutch-pressure-pad",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 667.41845703125,
+      "grams": 2.5936923027038574,
+      "warnings": [],
+      "native_mesh_sha256": "93b00006c06325d7e781c7b609a98481e5e53f31bdafd729f4012fca5799b5a3",
+      "passed": true
+    },
+    {
+      "part": "clutch-reaction-plate",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 2325.03466796875,
+      "grams": 11.652788162231445,
+      "warnings": [],
+      "passed": true,
+      "native_mesh_sha256": "d6b665ad14453d14e34370aa01210b5037922fedd325c223764924f713c94160"
+    },
+    {
+      "part": "input-inboard-bearing-retainer",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 699.731689453125,
+      "grams": 3.125544309616089,
+      "warnings": [],
+      "passed": true,
+      "native_mesh_sha256": "dca7b8e24fc850aed0559dfe0c102e9b6c6ecdacaaf1fe09280bd44bc57205f5"
+    },
+    {
+      "part": "input-outboard-bearing-retainer",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 699.731689453125,
+      "grams": 3.125544309616089,
+      "warnings": [],
+      "passed": true,
+      "native_mesh_sha256": "3ca9b1d02d4d50fddfbb8fd6ca7bd578ca957c49b581b67c432d8097341cc8be"
+    },
+    {
+      "part": "input-pulley-clamp-trial",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 2051.884033203125,
+      "grams": 7.328353404998779,
+      "warnings": [],
+      "passed": true,
+      "native_mesh_sha256": "1d745643abae2353ea26f74e6f84d38b1453608a7986c618a5b80e30240c8f07"
+    },
+    {
+      "part": "input-sliding-carrier",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 7784.68408203125,
+      "grams": 55.30887222290039,
+      "warnings": [],
+      "passed": true,
+      "native_mesh_sha256": "f456440a3e86a472e2ba87fc654e57a06368d0be26bf18e49b31787a0b864af8"
+    },
+    {
+      "part": "left-wheel-axle-vertical",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 56668.0546875,
+      "grams": 609.359619140625,
+      "warnings": [],
+      "native_mesh_sha256": "df4c6d6e04f9913ea851b79079a3da96c8c04d342274df83b5c2669cee62e29d",
+      "passed": true
+    },
+    {
+      "part": "mouth-bearing-retainer",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 955.0569458007812,
+      "grams": 4.881384372711182,
+      "warnings": [],
+      "passed": true,
+      "native_mesh_sha256": "d7b9eaf630f90bfaf564855908b598958246fe05447d776909b826cd651359aa"
+    },
+    {
+      "part": "one-drive-fit-section",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 18702.404296875,
+      "grams": 187.16932678222656,
+      "warnings": [],
+      "native_mesh_sha256": "f65e8317a41a20b033032e87e25002d71ac7c1b4c7fccaf164dc338833baf482",
+      "passed": true
+    },
+    {
+      "part": "servo-shaft-clamp-trial",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 886.0994262695312,
+      "grams": 2.115067720413208,
+      "warnings": [],
+      "passed": true,
+      "native_mesh_sha256": "3fa506990d28c4a365b281a5f54df2d8e37a97d44c00fe6ff0ecf666d1023fc2"
+    },
+    {
+      "part": "servo-upper-bridge",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 1058.4144287109375,
+      "grams": 2.5989017486572266,
+      "warnings": [],
+      "passed": true,
+      "native_mesh_sha256": "b46d68e5a553b8e1e451a69684c6b8320b36bca4999e3aa409726b552c9f3b75"
+    }
+  ],
+  "historical_s19_transmission_check": {
+    "checked_at_utc": "2026-09-13T03:11:18.222229+00:00",
+    "parameter_sha256": "9b2139badfa4e467d50a353ea9ca5c00d7ef77efd7bce617c63bd9d1f7a12e47",
+    "native_geometry_unchanged": true,
+    "native_source_objects": 73,
+    "amazon_belt_offer_verified": true,
+    "purchases_made": false,
+    "native_belt_or_helical_teeth_generated": false,
+    "physical_tests_performed": false,
+    "belt_ratio": 2.0,
+    "gear_fallback_centers_mm": 50.0,
+    "native_geometry_changed": true,
+    "native_geometry_status": "24/48 pitch cylinders and continuous 210-3M-09 loop envelopes; pulley tooth/flange, tension and carrier detailing still open"
+  },
+  "historical_s19_native_fit_revision": {
+    "date": "2026-10-06",
+    "source": "Roller-300.nbcad",
+    "source_sha256": "275c0ee72ed4d664b6b3e345c6845327a1078b50f98131b0f49352d2464567da",
+    "features": 1740,
+    "checks": "design/servo-horn-adapter-2026-10-06/checks.json",
+    "print_candidates": "first-prints/servo-horn-fit-2026-10-06",
+    "physical_test_performed": false,
+    "unpowered_coupon_files_ready": true,
+    "powered_release": false,
+    "horn_adapter_nominal_design_complete": true,
+    "scope": "Unpowered one-drive fit; purchased horn interface defined, physical seating/retention and powered qualification pending",
+    "validation": {
+      "connected_valid_watertight_print_bodies": 22,
+      "nominal_clearance_checks": 245,
+      "mount_capture_checks": 122,
+      "warning_free_individual_slices": 11,
+      "warning_free_review_plate_slices": 1
+    },
+    "bambu_review_project": "first-prints/bambu-servo-horn-review-2026-10-06/Roller-300-servo-horn-first-fit.3mf",
+    "native_named_views": 5
+  },
+  "historical_gates_before_adversarial": {
+    "supplier_clutch_data": "RETIRED: rigid belt drive has no mechanical clutch.",
+    "servo_model_and_permissible_envelope": "Nominal owned INJORA360/H25T interface defined from manufacturer spline specification and supplied case drawing; receiving fit and load qualification untested.",
+    "numeric_voltage_and_current_limits": "OPEN - do not energize actuator fixture",
+    "bearing_and_fastener_coupons": "NOT RUN",
+    "independent_bidirectional_clutch_calibration": "RETIRED: rigid belt drive has no mechanical clutch.",
+    "paired_timer_and_hard_cutoff_dummy_load_test": "NOT RUN",
+    "complete_one_side_detail_and_guarding": "Unpowered drivetrain CAD complete with purchased H25T horn; receiving fit, full-barrel guarding and powered qualification pending.",
+    "drivetrain_feedback_shutdown": "DESIGNED IN PLAN; NOT IMPLEMENTED",
+    "custom_PX4_pitch_control": "NOT BUILT OR FLASHED",
+    "body_pitch_and_mass_measurements": "NOT RUN",
+    "whole_vehicle_trials": "NOT RELEASED",
+    "target_obstacle_height_and_profile": "Approximately two inches rounded; height50.8 and roundover12.7 are placeholders, actual profile unmeasured",
+    "obstacle_normal_torque_and_limiter_selection": "OPEN - old PAO16/band withdrawn; SAO20 conditional on mass/load/torque and fit",
+    "loaded_body_clearance_and_crest_passage": "NOT RUN",
+    "new_clutch_retention_packaging": "RETIRED: rigid belt drive has no mechanical clutch.",
+    "harness_connectors_bends_and_service_sweep": "General reserves only; guessed camera-specific routes withdrawn. Mated plugs, bends and removal paths remain unmodeled.",
+    "printer_slicer_footprint": "See shell-first evidence; earlier two-part slices are historical and do not qualify this housing.",
+    "new_torque_shutdown_energy": "OPEN -old angle/time thresholds not qualified at new torque; no vehicle powered release",
+    "indoor_acoustics": "NOT RUN - staged servo/transmission/rolling tests;35 dBA normal goal and45 dBA crossing-peak goal at1 m are provisional",
+    "normal_shock_envelope": "OPEN - repeated shocks are normal structural loads; measured force/torque/pulse/repetition envelope required",
+    "feedback_architecture": "Two wheel encoders baseline; actual input reference needed to identify internal slip, or qualified worst permitted slip duty. No detection firmware implemented.",
+    "outdoor_conversion": "DEFERRED until indoor proof; requalify material/environment/traction/load changes",
+    "cost_comparison": "OPEN - complete installed totals unknown; one purchased clutch route and one qualified RC-wear hybrid fallback",
+    "servo_feedback_interface": "PREFERRED; model, output-angle semantics, wrap, input rate/levels and fault tests open",
+    "range_array": "Exact ACEIRMC20x12 outline verified; full hood/header/solder depth and mated connector UNKNOWN. No3D fit pass.",
+    "floor_edge_detection": "Not implemented; forward sensors cannot authorize autonomous drop-edge operation",
+    "thermal_pi_compatibility": "Electrical/software out of scope; mechanical device nominal envelope retained, actual mated connector and optics HOLD.",
+    "pi_camera_inventory": "Not owned; choose actual forward camera before modeling.",
+    "maintenance_retention": "Registered bolted panels planned; shock/panel cycles, joint torque and detailed openings not yet tested",
+    "self_charging": "Pack-specific charger and reverse-blocked contacts planned; mechanical capture, charge limits and autonomous docking not implemented",
+    "transmission_choice": "Amazon210-3M-09 belt verified; preferred qualification route. Supported tensioner, pulley/carrier/clutch fit, loads and acoustics OPEN. Double-helical printed pair retained as sole gear fallback.",
+    "double_helical_mesh": "NOT GENERATED OR TESTED - transverse module/pressure angle fixed, opposed hands, relief, residual thrust and combined assembly/removal required"
+  },
+  "current_native_fit": {
+    "date": "2026-10-07",
+    "revision": "S21",
+    "source": "Roller-300.nbcad",
+    "source_sha256": "dbb79ae72b28707accd399a6784c7ea76deb182d6314b5a6dd007a6c724e655f",
+    "features": 2033,
+    "feature_errors": 0,
+    "checks": "design/chassis-fit-review-2026-10-07/validation-summary.json",
+    "native_geometry_matches_saved_replay": true,
+    "inherited_drivetrain_review": "design/adversarial-review-2026-10-06/validation-summary.json",
+    "unchanged_current_fit_print_bodies": 10,
+    "wheel_cap_minimum_gap_at_axial_extreme_mm": 23.8,
+    "wheel_shell_minimum_gap_at_axial_extreme_mm": 28.3,
+    "whole_chassis_fit_released": false,
+    "powered_release": false,
+    "wheel_print_estimate": {
+      "project": "first-prints/chassis-fit-2026-10-07/outboard-down/Roller-300-wheel-open-fit.3mf",
+      "grams": 336.7090148925781,
+      "time_seconds": 31108.98046875,
+      "pose": "outboard_face_down",
+      "source_stl_sha256": "26a42cf367d89be68c3d39e977afccacaf44a4a1f6aa3805f8689134e0087fc5",
+      "settings_verified": true,
+      "release": "HOLD until receiving/carrier fits pass; unpowered fit candidate",
+      "canonical_source_geometry_verified": true
+    }
+  },
+  "current_CAD_checks": {
+    "date": "2026-10-07",
+    "revision": "S21",
+    "source": "Roller-300.nbcad",
+    "source_sha256": "dbb79ae72b28707accd399a6784c7ea76deb182d6314b5a6dd007a6c724e655f",
+    "features": 2033,
+    "feature_errors": 0,
+    "checks": "design/chassis-fit-review-2026-10-07/validation-summary.json",
+    "native_geometry_matches_saved_replay": true,
+    "inherited_drivetrain_review": "design/adversarial-review-2026-10-06/validation-summary.json",
+    "unchanged_current_fit_print_bodies": 10,
+    "wheel_cap_minimum_gap_at_axial_extreme_mm": 23.8,
+    "wheel_shell_minimum_gap_at_axial_extreme_mm": 28.3,
+    "whole_chassis_fit_released": false,
+    "powered_release": false,
+    "wheel_print_estimate": {
+      "project": "first-prints/chassis-fit-2026-10-07/outboard-down/Roller-300-wheel-open-fit.3mf",
+      "grams": 336.7090148925781,
+      "time_seconds": 31108.98046875,
+      "pose": "outboard_face_down",
+      "source_stl_sha256": "26a42cf367d89be68c3d39e977afccacaf44a4a1f6aa3805f8689134e0087fc5",
+      "settings_verified": true,
+      "release": "HOLD until receiving/carrier fits pass; unpowered fit candidate",
+      "canonical_source_geometry_verified": true
+    }
+  },
+  "adversarial_revision": {
+    "date": "2026-10-06",
+    "revision": "S20",
+    "source": "Roller-300.nbcad",
+    "source_sha256": "bf4561cd9261083763b1f117bf14007dcaf6202b5efd19679aec39a4e36bd52b",
+    "features": 2015,
+    "checks": "design/adversarial-review-2026-10-06/validation-summary.json",
+    "print_candidates": "first-prints/adversarial-fit-2026-10-06",
+    "physical_test_performed": false,
+    "unpowered_coupon_files_ready": true,
+    "powered_release": false,
+    "whole_barrel_release": false,
+    "horn_adapter_nominal_design_complete": true,
+    "positive_rex_input": true,
+    "scope": "Unpowered one-drive roof-open receiving, fit and assembly test. PETG /0.4mm X2D. Powered loads, belt tooth fit and complete barrel service remain open.",
+    "validation": {
+      "connected_valid_watertight_print_bodies": 22,
+      "nominal_geometry_checks": 496,
+      "drivetrain_checks": 255,
+      "adversarial_assembly_checks": 109,
+      "mount_capture_checks": 122,
+      "wall_section_checks": 10,
+      "warning_free_individual_slices": 11,
+      "warning_free_review_plate_slices": 1
+    },
+    "bambu_review_project": "first-prints/receiving-fit-gate-2026-10-06/Roller-300-small-fit-gate.3mf",
+    "native_named_views": 7,
+    "save_note": "Native CAD File/Save; saved solid geometry exactly equals validated native replay. Seven recalled views preserve geometry.",
+    "staged_print_gate": true,
+    "full_fit_requires_small_hardware_pass": true,
+    "print_decision": "design/print-decision-2026-10-06/print-decision.json"
+  },
+  "cad_evidence": "design/adversarial-review-2026-10-06/validation-summary.json",
+  "slice_estimates": [
+    {
+      "part": "center-bearing-retainer",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 948.9627075195312,
+      "grams": 4.841744899749756,
+      "warnings": [],
+      "native_mesh_sha256": "00ef8aa54b4fde8df478c956b453059423d5b085f37b203edd88d09958a86eb2",
+      "passed": true
+    },
+    {
+      "part": "input-inboard-bearing-retainer",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 934.0863647460938,
+      "grams": 4.011123180389404,
+      "warnings": [],
+      "native_mesh_sha256": "9fc13651aa069f6f052a0a4214c7c8ed0ceef14ab2a8cfcedbb03496e6834e41",
+      "passed": true
+    },
+    {
+      "part": "input-outboard-bearing-retainer",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 934.0863647460938,
+      "grams": 4.011123180389404,
+      "warnings": [],
+      "native_mesh_sha256": "6828c87621572fcb05e457229cfccf1c6716b6ce0aa1bb81cf41a485a72eaba8",
+      "passed": true
+    },
+    {
+      "part": "input-rex-pulley",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 2152.828857421875,
+      "grams": 7.846209526062012,
+      "warnings": [],
+      "native_mesh_sha256": "73e4a78c5899c1fca1bd8aa07c04f20782a53debef45f4cc749dd325b5720691",
+      "passed": true
+    },
+    {
+      "part": "input-sliding-carrier",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 8814.2060546875,
+      "grams": 56.62248611450195,
+      "warnings": [],
+      "native_mesh_sha256": "52e519b99b8fe3e65ccc18850068ff0342fdffd61d38c12a49dfdd960df690d1",
+      "passed": true
+    },
+    {
+      "part": "left-wheel-axle-vertical",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 56668.05859375,
+      "grams": 609.359619140625,
+      "warnings": [],
+      "native_mesh_sha256": "e4a763e314079597f7c5abf406a2c47620173a8ea853159069d6a036e4c47b69",
+      "passed": true
+    },
+    {
+      "part": "mouth-bearing-retainer",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 955.1837768554688,
+      "grams": 4.881384372711182,
+      "warnings": [],
+      "native_mesh_sha256": "550e86ba7be822fd7cfc3561e09da8c0e881a09152459cf1d06248300117d4ec",
+      "passed": true
+    },
+    {
+      "part": "one-drive-fit-section",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 18574.64453125,
+      "grams": 185.97994995117188,
+      "warnings": [],
+      "native_mesh_sha256": "48b12546e4859669dedd397ea22f59e7f2ec21f68d158b2cb1ed5515596bdc81",
+      "passed": true
+    },
+    {
+      "part": "rigid-output-pulley",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 3493.673828125,
+      "grams": 18.76266860961914,
+      "warnings": [],
+      "native_mesh_sha256": "5ef1c786dfbc9947e2a62efdabed6430e5be5f0af4d5dc9585eec755abbac3d4",
+      "passed": true
+    },
+    {
+      "part": "servo-horn-rex-adapter",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 1545.551025390625,
+      "grams": 5.747139930725098,
+      "warnings": [],
+      "native_mesh_sha256": "a0b30b6fc3bcdce9b5964ca5bd57c8680aefba06a6c77b9b7d77ddd0c39694b8",
+      "passed": true
+    },
+    {
+      "part": "servo-upper-bridge",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 1056.511962890625,
+      "grams": 3.2165939807891846,
+      "warnings": [],
+      "native_mesh_sha256": "3003fe739d8f14455ebea2d8af8cc2f89194eb4bca41ff21bc6f0617389e3bf9",
+      "passed": true
+    }
+  ],
+  "fit_hardware": "Current parts-sources.json BOM rows and PLAN.md stack; no hardware purchased.",
+  "print_decision": {
+    "date": "2026-10-07",
+    "recommendation": "PRINT_SMALL_RECEIVING_FIT_GATE_FIRST",
+    "source_sha256": "dbb79ae72b28707accd399a6784c7ea76deb182d6314b5a6dd007a6c724e655f",
+    "native_geometry_changed": true,
+    "fresh_native_replay": "design/print-decision-2026-10-06/fresh-native-replay.json",
+    "native_application": "Installed Limo CAD0.2.2",
+    "features": 2033,
+    "fresh_native_exports_matching_prints": 10,
+    "feature_errors": 0,
+    "material": "PETG",
+    "nozzle_mm": 0.4,
+    "printer": "Bambu X2D",
+    "small_gate": {
+      "project": "first-prints/receiving-fit-gate-2026-10-06/Roller-300-small-fit-gate.3mf",
+      "sha256": "f180923b46ecce317e92434c337b2a468cb258a4eff7e72ce8628ad95386ea88",
+      "parts": [
+        "mouth-bearing-retainer",
+        "input-inboard-bearing-retainer",
+        "input-rex-pulley",
+        "servo-horn-rex-adapter",
+        "servo-upper-bridge"
+      ],
+      "grams": 25.481285095214844,
+      "seconds": 4567.048828125,
+      "zero_support_in_clip_pocket": true,
+      "physical_fit_pass": false
+    },
+    "gui_validation": {
+      "application": "Installed Bambu Studio02.08.02.61",
+      "reopened_wall_loops": 5,
+      "reopened_infill": "15% gyroid",
+      "support": "normal(auto), all regions with local clip blocker",
+      "fresh_gui_slice_grams": 25.48,
+      "fresh_gui_slice_time": "1h16m",
+      "clip_cavity_inspected_z_mm": 8.78,
+      "clip_roof_inspected_z_mm": 9.4
+    },
+    "independent_nominal_checks": {
+      "clip_radial_positions_mm": [
+        0,
+        1,
+        2,
+        4,
+        8,
+        12,
+        20
+      ],
+      "clip_path_clear_of_bench_module": true,
+      "flat_pusher_mm": [
+        0.8,
+        3
+      ],
+      "pusher_clear_on_bench": true,
+      "pusher_obstructed_by_installed_fixture": true,
+      "belt_pitch_line_length_mm": 210.000087,
+      "belt_length_at_minus_2mm_carrier_travel": 206.112576,
+      "shaft_end_bore_empty_depth_mm": 12,
+      "nominal_rear_screw_engagement_mm": 6.5
+    },
+    "superseded_project": "first-prints/bambu-adversarial-review-2026-10-06/Roller-300-REX-first-fit.3mf",
+    "superseded_project_status": "DO_NOT_PRINT: clip/channel support cleanup, edge brim and GUI process override defects",
+    "wheel_status": "S21 open-face wheel slice verified at336.71g/8h38m; S20 closed-wheel slice superseded; receiving/carrier fits must pass first",
+    "physical_print": false,
+    "powered_release": false,
+    "physical_small_gate_targets": [
+      "REX keyed-bore fit",
+      "Horn pilot and screws, actual center screw seating",
+      "Bridge nut/head fit and accessible support cleanup",
+      "Clip roof sag and actual clip insertion/retention",
+      "Both pulley bearing lands clean/flat"
+    ],
+    "later_carrier_fixture_targets": [
+      "Received608 housing seat fit and free rotation",
+      "Measured shaft/pulley endplay",
+      "Belt installation, tooth fit, tension and tracking"
+    ],
+    "corrected_full_fit": {
+      "project": "first-prints/corrected-full-fit-2026-10-06/Roller-300-full-fit-corrected.3mf",
+      "sha256": "6626a9cc81481118260c532ed7a4b05731502549de653b899054fbff14f2dcd6",
+      "grams": 294.1186828613281,
+      "seconds": 34870.2734375,
+      "status": "CONDITIONAL: SMALL HARDWARE FITS AND CARRIER ROOF/CAPTURE TRIAL FIRST",
+      "clip_and_bridge_nut_channels_support_free": true,
+      "unsupported_carrier_roof_runs_mm": [
+        9.116,
+        16.372
+      ],
+      "carrier_roof_physical_pass": false
+    },
+    "carrier_second_trial": {
+      "project": "first-prints/carrier-roof-trial-2026-10-06/Roller-300-carrier-roof-trial.3mf",
+      "sha256": "e9e594cbadcb05bc3dd69df95a29f70676f9796038dc24e67cba1bd9a5220606",
+      "grams": 55.04900360107422,
+      "seconds": 8543.806640625,
+      "status": "PHYSICAL ROOF, NUT AND BEARING-SEAT TRIAL; NOT YET TESTED"
+    },
+    "current_fit_project_geometry_changed": false,
+    "compatibility_evidence": "design/chassis-fit-review-2026-10-07/print-project-validation.json"
+  },
+  "historical_s20_before_chassis_access": {
+    "current_revision": "adversarial-review-2026-10-06",
+    "current_native_fit_revision": {
+      "date": "2026-10-06",
+      "revision": "S20",
+      "source": "Roller-300.nbcad",
+      "source_sha256": "bf4561cd9261083763b1f117bf14007dcaf6202b5efd19679aec39a4e36bd52b",
+      "features": 2015,
+      "checks": "design/adversarial-review-2026-10-06/validation-summary.json",
+      "print_candidates": "first-prints/adversarial-fit-2026-10-06",
+      "physical_test_performed": false,
+      "unpowered_coupon_files_ready": true,
+      "powered_release": false,
+      "whole_barrel_release": false,
+      "horn_adapter_nominal_design_complete": true,
+      "positive_rex_input": true,
+      "scope": "Unpowered one-drive roof-open receiving, fit and assembly test. PETG /0.4mm X2D. Powered loads, belt tooth fit and complete barrel service remain open.",
+      "validation": {
+        "connected_valid_watertight_print_bodies": 22,
+        "nominal_geometry_checks": 496,
+        "drivetrain_checks": 255,
+        "adversarial_assembly_checks": 109,
+        "mount_capture_checks": 122,
+        "wall_section_checks": 10,
+        "warning_free_individual_slices": 11,
+        "warning_free_review_plate_slices": 1
+      },
+      "bambu_review_project": "first-prints/receiving-fit-gate-2026-10-06/Roller-300-small-fit-gate.3mf",
+      "native_named_views": 7,
+      "save_note": "Native CAD File/Save; saved solid geometry exactly equals validated native replay. Seven recalled views preserve geometry.",
+      "staged_print_gate": true,
+      "full_fit_requires_small_hardware_pass": true,
+      "print_decision": "design/print-decision-2026-10-06/print-decision.json"
+    },
+    "current_native_fit": {
+      "date": "2026-10-06",
+      "revision": "S20",
+      "source": "Roller-300.nbcad",
+      "source_sha256": "bf4561cd9261083763b1f117bf14007dcaf6202b5efd19679aec39a4e36bd52b",
+      "features": 2015,
+      "checks": "design/adversarial-review-2026-10-06/validation-summary.json",
+      "print_candidates": "first-prints/adversarial-fit-2026-10-06",
+      "physical_test_performed": false,
+      "unpowered_coupon_files_ready": true,
+      "powered_release": false,
+      "whole_barrel_release": false,
+      "horn_adapter_nominal_design_complete": true,
+      "positive_rex_input": true,
+      "scope": "Unpowered one-drive roof-open receiving, fit and assembly test. PETG /0.4mm X2D. Powered loads, belt tooth fit and complete barrel service remain open.",
+      "validation": {
+        "connected_valid_watertight_print_bodies": 22,
+        "nominal_geometry_checks": 496,
+        "drivetrain_checks": 255,
+        "adversarial_assembly_checks": 109,
+        "mount_capture_checks": 122,
+        "wall_section_checks": 10,
+        "warning_free_individual_slices": 11,
+        "warning_free_review_plate_slices": 1
+      },
+      "bambu_review_project": "first-prints/receiving-fit-gate-2026-10-06/Roller-300-small-fit-gate.3mf",
+      "native_named_views": 7,
+      "save_note": "Native CAD File/Save; saved solid geometry exactly equals validated native replay. Seven recalled views preserve geometry.",
+      "staged_print_gate": true,
+      "full_fit_requires_small_hardware_pass": true,
+      "print_decision": "design/print-decision-2026-10-06/print-decision.json"
+    },
+    "current_CAD_checks": {
+      "date": "2026-10-06",
+      "revision": "S20",
+      "source": "Roller-300.nbcad",
+      "source_sha256": "bf4561cd9261083763b1f117bf14007dcaf6202b5efd19679aec39a4e36bd52b",
+      "features": 2015,
+      "checks": "design/adversarial-review-2026-10-06/validation-summary.json",
+      "print_candidates": "first-prints/adversarial-fit-2026-10-06",
+      "physical_test_performed": false,
+      "unpowered_coupon_files_ready": true,
+      "powered_release": false,
+      "whole_barrel_release": false,
+      "horn_adapter_nominal_design_complete": true,
+      "positive_rex_input": true,
+      "scope": "Unpowered one-drive roof-open receiving, fit and assembly test. PETG /0.4mm X2D. Powered loads, belt tooth fit and complete barrel service remain open.",
+      "validation": {
+        "connected_valid_watertight_print_bodies": 22,
+        "nominal_geometry_checks": 496,
+        "drivetrain_checks": 255,
+        "adversarial_assembly_checks": 109,
+        "mount_capture_checks": 122,
+        "wall_section_checks": 10,
+        "warning_free_individual_slices": 11,
+        "warning_free_review_plate_slices": 1
+      },
+      "bambu_review_project": "first-prints/receiving-fit-gate-2026-10-06/Roller-300-small-fit-gate.3mf",
+      "native_named_views": 7,
+      "save_note": "Native CAD File/Save; saved solid geometry exactly equals validated native replay. Seven recalled views preserve geometry.",
+      "staged_print_gate": true,
+      "full_fit_requires_small_hardware_pass": true,
+      "print_decision": "design/print-decision-2026-10-06/print-decision.json"
+    },
+    "print_decision": {
+      "date": "2026-10-06",
+      "recommendation": "PRINT_SMALL_RECEIVING_FIT_GATE_FIRST",
+      "source_sha256": "bf4561cd9261083763b1f117bf14007dcaf6202b5efd19679aec39a4e36bd52b",
+      "native_geometry_changed": false,
+      "fresh_native_replay": "design/print-decision-2026-10-06/fresh-native-replay.json",
+      "native_application": "Installed Limo CAD0.2.2",
+      "features": 2015,
+      "fresh_native_exports_matching_prints": 11,
+      "feature_errors": 0,
+      "material": "PETG",
+      "nozzle_mm": 0.4,
+      "printer": "Bambu X2D",
+      "small_gate": {
+        "project": "first-prints/receiving-fit-gate-2026-10-06/Roller-300-small-fit-gate.3mf",
+        "sha256": "f180923b46ecce317e92434c337b2a468cb258a4eff7e72ce8628ad95386ea88",
+        "parts": [
+          "mouth-bearing-retainer",
+          "input-inboard-bearing-retainer",
+          "input-rex-pulley",
+          "servo-horn-rex-adapter",
+          "servo-upper-bridge"
+        ],
+        "grams": 25.481285095214844,
+        "seconds": 4567.048828125,
+        "zero_support_in_clip_pocket": true,
+        "physical_fit_pass": false
+      },
+      "gui_validation": {
+        "application": "Installed Bambu Studio02.08.02.61",
+        "reopened_wall_loops": 5,
+        "reopened_infill": "15% gyroid",
+        "support": "normal(auto), all regions with local clip blocker",
+        "fresh_gui_slice_grams": 25.48,
+        "fresh_gui_slice_time": "1h16m",
+        "clip_cavity_inspected_z_mm": 8.78,
+        "clip_roof_inspected_z_mm": 9.4
+      },
+      "independent_nominal_checks": {
+        "clip_radial_positions_mm": [
+          0,
+          1,
+          2,
+          4,
+          8,
+          12,
+          20
+        ],
+        "clip_path_clear_of_bench_module": true,
+        "flat_pusher_mm": [
+          0.8,
+          3
+        ],
+        "pusher_clear_on_bench": true,
+        "pusher_obstructed_by_installed_fixture": true,
+        "belt_pitch_line_length_mm": 210.000087,
+        "belt_length_at_minus_2mm_carrier_travel": 206.112576,
+        "shaft_end_bore_empty_depth_mm": 12,
+        "nominal_rear_screw_engagement_mm": 6.5
+      },
+      "superseded_project": "first-prints/bambu-adversarial-review-2026-10-06/Roller-300-REX-first-fit.3mf",
+      "superseded_project_status": "DO_NOT_PRINT: clip/channel support cleanup, edge brim and GUI process override defects",
+      "wheel_status": "HOLD UNTIL SMALL FITS PASS: approximately609g/15h44m",
+      "physical_print": false,
+      "powered_release": false,
+      "physical_small_gate_targets": [
+        "REX keyed-bore fit",
+        "Horn pilot and screws, actual center screw seating",
+        "Bridge nut/head fit and accessible support cleanup",
+        "Clip roof sag and actual clip insertion/retention",
+        "Both pulley bearing lands clean/flat"
+      ],
+      "later_carrier_fixture_targets": [
+        "Received608 housing seat fit and free rotation",
+        "Measured shaft/pulley endplay",
+        "Belt installation, tooth fit, tension and tracking"
+      ],
+      "corrected_full_fit": {
+        "project": "first-prints/corrected-full-fit-2026-10-06/Roller-300-full-fit-corrected.3mf",
+        "sha256": "6626a9cc81481118260c532ed7a4b05731502549de653b899054fbff14f2dcd6",
+        "grams": 294.1186828613281,
+        "seconds": 34870.2734375,
+        "status": "CONDITIONAL: SMALL HARDWARE FITS AND CARRIER ROOF/CAPTURE TRIAL FIRST",
+        "clip_and_bridge_nut_channels_support_free": true,
+        "unsupported_carrier_roof_runs_mm": [
+          9.116,
+          16.372
+        ],
+        "carrier_roof_physical_pass": false
+      },
+      "carrier_second_trial": {
+        "project": "first-prints/carrier-roof-trial-2026-10-06/Roller-300-carrier-roof-trial.3mf",
+        "sha256": "e9e594cbadcb05bc3dd69df95a29f70676f9796038dc24e67cba1bd9a5220606",
+        "grams": 55.04900360107422,
+        "seconds": 8543.806640625,
+        "status": "PHYSICAL ROOF, NUT AND BEARING-SEAT TRIAL; NOT YET TESTED"
+      }
+    },
+    "status": "S20 SMALL RECEIVING-FIT GATE READY; FULL FIT AND WHEEL FOLLOW PHYSICAL FIT CHECKS"
+  },
+  "current_native_mesh_evidence": "design/chassis-fit-review-2026-10-07",
+  "chassis_access_revision": {
+    "date": "2026-10-07",
+    "revision": "S21",
+    "source": "Roller-300.nbcad",
+    "source_sha256": "dbb79ae72b28707accd399a6784c7ea76deb182d6314b5a6dd007a6c724e655f",
+    "features": 2033,
+    "feature_errors": 0,
+    "checks": "design/chassis-fit-review-2026-10-07/validation-summary.json",
+    "native_geometry_matches_saved_replay": true,
+    "inherited_drivetrain_review": "design/adversarial-review-2026-10-06/validation-summary.json",
+    "unchanged_current_fit_print_bodies": 10,
+    "wheel_cap_minimum_gap_at_axial_extreme_mm": 23.8,
+    "wheel_shell_minimum_gap_at_axial_extreme_mm": 28.3,
+    "whole_chassis_fit_released": false,
+    "powered_release": false,
+    "wheel_print_estimate": {
+      "project": "first-prints/chassis-fit-2026-10-07/outboard-down/Roller-300-wheel-open-fit.3mf",
+      "grams": 336.7090148925781,
+      "time_seconds": 31108.98046875,
+      "pose": "outboard_face_down",
+      "source_stl_sha256": "26a42cf367d89be68c3d39e977afccacaf44a4a1f6aa3805f8689134e0087fc5",
+      "settings_verified": true,
+      "release": "HOLD until receiving/carrier fits pass; unpowered fit candidate",
+      "canonical_source_geometry_verified": true
+    }
+  }
 }

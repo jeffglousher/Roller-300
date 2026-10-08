@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-06",
+  "recommendation": "PRINT_SMALL_RECEIVING_FIT_GATE_FIRST",
+  "source_sha256": "bf4561cd9261083763b1f117bf14007dcaf6202b5efd19679aec39a4e36bd52b",
+  "native_geometry_changed": false,
+  "fresh_native_replay": "design/print-decision-2026-10-06/fresh-native-replay.json",
+  "native_application": "Installed Limo CAD0.2.2",
+  "features": 2015,
+  "fresh_native_exports_matching_prints": 11,
+  "feature_errors": 0,
+  "material": "PETG",
+  "nozzle_mm": 0.4,
+  "printer": "Bambu X2D",
+  "small_gate": {
+    "project": "first-prints/receiving-fit-gate-2026-10-06/Roller-300-small-fit-gate.3mf",
+    "sha256": "f180923b46ecce317e92434c337b2a468cb258a4eff7e72ce8628ad95386ea88",
+    "parts": [
+      "mouth-bearing-retainer",
+      "input-inboard-bearing-retainer",
+      "input-rex-pulley",
+      "servo-horn-rex-adapter",
+      "servo-upper-bridge"
+    ],
+    "grams": 25.481285095214844,
+    "seconds": 4567.048828125,
+    "zero_support_in_clip_pocket": true,
+    "physical_fit_pass": false
+  },
+  "gui_validation": {
+    "application": "Installed Bambu Studio02.08.02.61",
+    "reopened_wall_loops": 5,
+    "reopened_infill": "15% gyroid",
+    "support": "normal(auto), all regions with local clip blocker",
+    "fresh_gui_slice_grams": 25.48,
+    "fresh_gui_slice_time": "1h16m",
+    "clip_cavity_inspected_z_mm": 8.78,
+    "clip_roof_inspected_z_mm": 9.4
+  },
+  "independent_nominal_checks": {
+    "clip_radial_positions_mm": [
+      0,
+      1,
+      2,
+      4,
+      8,
+      12,
+      20
+    ],
+    "clip_path_clear_of_bench_module": true,
+    "flat_pusher_mm": [
+      0.8,
+      3
+    ],
+    "pusher_clear_on_bench": true,
+    "pusher_obstructed_by_installed_fixture": true,
+    "belt_pitch_line_length_mm": 210.000087,
+    "belt_length_at_minus_2mm_carrier_travel": 206.112576,
+    "shaft_end_bore_empty_depth_mm": 12,
+    "nominal_rear_screw_engagement_mm": 6.5
+  },
+  "superseded_project": "first-prints/bambu-adversarial-review-2026-10-06/Roller-300-REX-first-fit.3mf",
+  "superseded_project_status": "DO_NOT_PRINT: clip/channel support cleanup, edge brim and GUI process override defects",
+  "wheel_status": "HOLD UNTIL SMALL FITS PASS: approximately609g/15h44m",
+  "physical_print": false,
+  "powered_release": false,
+  "physical_small_gate_targets": [
+    "REX keyed-bore fit",
+    "Horn pilot and screws, actual center screw seating",
+    "Bridge nut/head fit and accessible support cleanup",
+    "Clip roof sag and actual clip insertion/retention",
+    "Both pulley bearing lands clean/flat"
+  ],
+  "later_carrier_fixture_targets": [
+    "Received608 housing seat fit and free rotation",
+    "Measured shaft/pulley endplay",
+    "Belt installation, tooth fit, tension and tracking"
+  ],
+  "corrected_full_fit": {
+    "project": "first-prints/corrected-full-fit-2026-10-06/Roller-300-full-fit-corrected.3mf",
+    "sha256": "6626a9cc81481118260c532ed7a4b05731502549de653b899054fbff14f2dcd6",
+    "grams": 294.1186828613281,
+    "seconds": 34870.2734375,
+    "status": "CONDITIONAL: SMALL HARDWARE FITS AND CARRIER ROOF/CAPTURE TRIAL FIRST",
+    "clip_and_bridge_nut_channels_support_free": true,
+    "unsupported_carrier_roof_runs_mm": [
+      9.116,
+      16.372
+    ],
+    "carrier_roof_physical_pass": false
+  },
+  "carrier_second_trial": {
+    "project": "first-prints/carrier-roof-trial-2026-10-06/Roller-300-carrier-roof-trial.3mf",
+    "sha256": "e9e594cbadcb05bc3dd69df95a29f70676f9796038dc24e67cba1bd9a5220606",
+    "grams": 55.04900360107422,
+    "seconds": 8543.806640625,
+    "status": "PHYSICAL ROOF, NUT AND BEARING-SEAT TRIAL; NOT YET TESTED"
+  }
+}

@@ -1,0 +1,3598 @@
+{
+  "_disclosure": {
+    "active_focus": "assembly",
+    "advertised": true,
+    "mode": "dynamic",
+    "pack": "assembly",
+    "state": "active"
+  },
+  "component_structure": {
+    "definitions": [
+      {
+        "body_ids": [
+          1
+        ],
+        "id": 2,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF L output shaft HOLD",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          2
+        ],
+        "id": 4,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF L wheel bearings 608",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          3
+        ],
+        "id": 6,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF L output collars",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          4
+        ],
+        "id": 8,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF L HyperHub envelope",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          5
+        ],
+        "id": 10,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF L input bearings 608",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          6
+        ],
+        "id": 12,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF L input shaft retention HOLD",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          7
+        ],
+        "id": 14,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF L horn adapter and retention interfaces HOLD",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          8
+        ],
+        "id": 16,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF L ComInTec clutch schematic HOLD",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          9
+        ],
+        "id": 18,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF L output pulley prototype",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          10
+        ],
+        "id": 20,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF L input pulley prototype",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          11
+        ],
+        "id": 22,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF L accepted 210-3M-09 belt envelope",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          12
+        ],
+        "id": 24,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF L owned INJORA partial case",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          13
+        ],
+        "id": 26,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S05 \u2014 Print preparation / LEFT wheel with hub bolt pattern \u2014 prototype",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          14
+        ],
+        "id": 28,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF L tread allowance",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          15
+        ],
+        "id": 30,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF TOPDON TC002C Duo nominal device",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          16
+        ],
+        "id": 32,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF Pi Zero nominal bare board",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          17
+        ],
+        "id": 34,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF Battery UNMEASURED inherited allowance",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          18
+        ],
+        "id": 49,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF R output shaft HOLD",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          19
+        ],
+        "id": 50,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF R wheel bearings 608",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          20
+        ],
+        "id": 51,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF R output collars",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          21
+        ],
+        "id": 52,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF R HyperHub envelope",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          22
+        ],
+        "id": 53,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF R input bearings 608",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          23
+        ],
+        "id": 54,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF R input shaft retention HOLD",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          24
+        ],
+        "id": 55,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF R horn adapter and retention interfaces HOLD",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          25
+        ],
+        "id": 56,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF R ComInTec clutch schematic HOLD",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          26
+        ],
+        "id": 57,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF R output pulley prototype",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          27
+        ],
+        "id": 58,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF R input pulley prototype",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          28
+        ],
+        "id": 59,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF R accepted 210-3M-09 belt envelope",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          29
+        ],
+        "id": 60,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF R owned INJORA partial case",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          30
+        ],
+        "id": 61,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S05 \u2014 Print preparation / RIGHT wheel with hub bolt pattern \u2014 prototype",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          31
+        ],
+        "id": 62,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF R tread allowance",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          38
+        ],
+        "id": 65,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 \u2014 Primary barrel shell / P02 wheel bearing cap Y-99",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          47
+        ],
+        "id": 67,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 \u2014 Primary barrel shell / P02 wheel bearing cap Y-51",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          56
+        ],
+        "id": 69,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 \u2014 Primary barrel shell / P02 wheel bearing cap Y51",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          65
+        ],
+        "id": 71,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 \u2014 Primary barrel shell / P02 wheel bearing cap Y99",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          100
+        ],
+        "id": 76,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 \u2014 Primary barrel shell / P03 LEFT input bearing cap Y70",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          108
+        ],
+        "id": 78,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 \u2014 Primary barrel shell / P03 LEFT input bearing cap Y96",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          97
+        ],
+        "id": 79,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 \u2014 Primary barrel shell / P04 LEFT input carriage with direct servo locating lips - strap restraint, ears HOLD",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          122
+        ],
+        "id": 83,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 \u2014 Primary barrel shell / P04 RIGHT input carriage",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          123
+        ],
+        "id": 84,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 \u2014 Primary barrel shell / P03 RIGHT input bearing cap 1",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          124
+        ],
+        "id": 85,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 \u2014 Primary barrel shell / P03 RIGHT input bearing cap 2",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          32
+        ],
+        "id": 86,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 \u2014 Primary barrel shell / P01 single shell-first housing - native new structure",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          141
+        ],
+        "id": 133,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S03 \u2014 Structural access hatch / P05 curved structural hatch - eight radial M4 screws",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          224
+        ],
+        "id": 136,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 METAL LEFT inboard 3 mm 1522-0010-0030 - received fit HOLD",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          225
+        ],
+        "id": 138,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 METAL LEFT outboard 10 mm 1529-0012-0100 - received fit HOLD",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          226
+        ],
+        "id": 140,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 METAL LEFT outboard 0p5 shim 2807-0811-0500 - received fit HOLD",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          227
+        ],
+        "id": 144,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 METAL RIGHT inboard 3 mm 1522-0010-0030 - received fit HOLD",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          228
+        ],
+        "id": 145,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 METAL RIGHT outboard 10 mm 1529-0012-0100 - received fit HOLD",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          229
+        ],
+        "id": 146,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 METAL RIGHT outboard 0p5 shim 2807-0811-0500 - received fit HOLD",
+        "promoted": false
+      },
+      {
+        "body_ids": [
+          301
+        ],
+        "id": 149,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body301 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          309
+        ],
+        "id": 152,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body309 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          357
+        ],
+        "id": 169,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body357 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          358
+        ],
+        "id": 170,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body358 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          367
+        ],
+        "id": 173,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body367 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          368
+        ],
+        "id": 174,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body368 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          373
+        ],
+        "id": 179,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body373 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          374
+        ],
+        "id": 180,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body374 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          376
+        ],
+        "id": 182,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body376 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          377
+        ],
+        "id": 183,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body377 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          378
+        ],
+        "id": 184,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body378 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          380
+        ],
+        "id": 186,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body380 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          381
+        ],
+        "id": 187,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body381 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          382
+        ],
+        "id": 188,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body382 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          383
+        ],
+        "id": 189,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body383 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          384
+        ],
+        "id": 190,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body384 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          387
+        ],
+        "id": 193,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body387 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          412
+        ],
+        "id": 218,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body412 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          437
+        ],
+        "id": 243,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body437 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          440
+        ],
+        "id": 244,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body440 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          445
+        ],
+        "id": 247,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body445 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          446
+        ],
+        "id": 248,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body446 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          447
+        ],
+        "id": 249,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body447 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          448
+        ],
+        "id": 250,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body448 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          449
+        ],
+        "id": 251,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body449 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          450
+        ],
+        "id": 252,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body450 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          451
+        ],
+        "id": 253,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body451 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          452
+        ],
+        "id": 254,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body452 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          453
+        ],
+        "id": 255,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body453 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          454
+        ],
+        "id": 256,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body454 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          455
+        ],
+        "id": 257,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body455 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          456
+        ],
+        "id": 258,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body456 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          457
+        ],
+        "id": 259,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body457 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          458
+        ],
+        "id": 260,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body458 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          459
+        ],
+        "id": 261,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body459 Part",
+        "promoted": true
+      },
+      {
+        "body_ids": [
+          460
+        ],
+        "id": 262,
+        "local_coordinate_system": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body460 Part",
+        "promoted": true
+      }
+    ],
+    "next_component_id": 263,
+    "next_occurrence_id": 263,
+    "occurrences": [
+      {
+        "component_id": 2,
+        "grounded": false,
+        "id": 2,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF L output shaft HOLD",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 4,
+        "grounded": false,
+        "id": 4,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF L wheel bearings 608",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 6,
+        "grounded": false,
+        "id": 6,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF L output collars",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 8,
+        "grounded": false,
+        "id": 8,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF L HyperHub envelope",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 10,
+        "grounded": false,
+        "id": 10,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF L input bearings 608",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 12,
+        "grounded": false,
+        "id": 12,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF L input shaft retention HOLD",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 14,
+        "grounded": false,
+        "id": 14,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF L horn adapter and retention interfaces HOLD",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 16,
+        "grounded": false,
+        "id": 16,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF L ComInTec clutch schematic HOLD",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 18,
+        "grounded": false,
+        "id": 18,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF L output pulley prototype",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 20,
+        "grounded": false,
+        "id": 20,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF L input pulley prototype",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 22,
+        "grounded": false,
+        "id": 22,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF L accepted 210-3M-09 belt envelope",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 24,
+        "grounded": false,
+        "id": 24,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF L owned INJORA partial case",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 26,
+        "grounded": false,
+        "id": 26,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S05 \u2014 Print preparation / LEFT wheel with hub bolt pattern \u2014 prototype",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 28,
+        "grounded": false,
+        "id": 28,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF L tread allowance",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 30,
+        "grounded": false,
+        "id": 30,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF TOPDON TC002C Duo nominal device",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 32,
+        "grounded": false,
+        "id": 32,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF Pi Zero nominal bare board",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 34,
+        "grounded": false,
+        "id": 34,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF Battery UNMEASURED inherited allowance",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 49,
+        "grounded": false,
+        "id": 49,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF R output shaft HOLD",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 50,
+        "grounded": false,
+        "id": 50,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF R wheel bearings 608",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 51,
+        "grounded": false,
+        "id": 51,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF R output collars",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 52,
+        "grounded": false,
+        "id": 52,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF R HyperHub envelope",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 53,
+        "grounded": false,
+        "id": 53,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF R input bearings 608",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 54,
+        "grounded": false,
+        "id": 54,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF R input shaft retention HOLD",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 55,
+        "grounded": false,
+        "id": 55,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF R horn adapter and retention interfaces HOLD",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 56,
+        "grounded": false,
+        "id": 56,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF R ComInTec clutch schematic HOLD",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 57,
+        "grounded": false,
+        "id": 57,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF R output pulley prototype",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 58,
+        "grounded": false,
+        "id": 58,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF R input pulley prototype",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 59,
+        "grounded": false,
+        "id": 59,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF R accepted 210-3M-09 belt envelope",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 60,
+        "grounded": false,
+        "id": 60,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF R owned INJORA partial case",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 61,
+        "grounded": false,
+        "id": 61,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S05 \u2014 Print preparation / RIGHT wheel with hub bolt pattern \u2014 prototype",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 62,
+        "grounded": false,
+        "id": 62,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S01 REF R tread allowance",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 65,
+        "grounded": false,
+        "id": 65,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 \u2014 Primary barrel shell / P02 wheel bearing cap Y-99",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 67,
+        "grounded": false,
+        "id": 67,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 \u2014 Primary barrel shell / P02 wheel bearing cap Y-51",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 69,
+        "grounded": false,
+        "id": 69,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 \u2014 Primary barrel shell / P02 wheel bearing cap Y51",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 71,
+        "grounded": false,
+        "id": 71,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 \u2014 Primary barrel shell / P02 wheel bearing cap Y99",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 76,
+        "grounded": false,
+        "id": 76,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 \u2014 Primary barrel shell / P03 LEFT input bearing cap Y70",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 78,
+        "grounded": false,
+        "id": 78,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 \u2014 Primary barrel shell / P03 LEFT input bearing cap Y96",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 79,
+        "grounded": false,
+        "id": 79,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 \u2014 Primary barrel shell / P04 LEFT input carriage with direct servo locating lips - strap restraint, ears HOLD",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 83,
+        "grounded": false,
+        "id": 83,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 \u2014 Primary barrel shell / P04 RIGHT input carriage",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 84,
+        "grounded": false,
+        "id": 84,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 \u2014 Primary barrel shell / P03 RIGHT input bearing cap 1",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 85,
+        "grounded": false,
+        "id": 85,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 \u2014 Primary barrel shell / P03 RIGHT input bearing cap 2",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 86,
+        "grounded": false,
+        "id": 86,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 \u2014 Primary barrel shell / P01 single shell-first housing - native new structure",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 133,
+        "grounded": false,
+        "id": 133,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S03 \u2014 Structural access hatch / P05 curved structural hatch - eight radial M4 screws",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 136,
+        "grounded": false,
+        "id": 136,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 METAL LEFT inboard 3 mm 1522-0010-0030 - received fit HOLD",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 138,
+        "grounded": false,
+        "id": 138,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 METAL LEFT outboard 10 mm 1529-0012-0100 - received fit HOLD",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 140,
+        "grounded": false,
+        "id": 140,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 METAL LEFT outboard 0p5 shim 2807-0811-0500 - received fit HOLD",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 144,
+        "grounded": false,
+        "id": 144,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 METAL RIGHT inboard 3 mm 1522-0010-0030 - received fit HOLD",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 145,
+        "grounded": false,
+        "id": 145,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 METAL RIGHT outboard 10 mm 1529-0012-0100 - received fit HOLD",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 146,
+        "grounded": false,
+        "id": 146,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "S02 METAL RIGHT outboard 0p5 shim 2807-0811-0500 - received fit HOLD",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 149,
+        "grounded": false,
+        "id": 149,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body301",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 152,
+        "grounded": false,
+        "id": 152,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body309",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 169,
+        "grounded": false,
+        "id": 169,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body357",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 170,
+        "grounded": false,
+        "id": 170,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body358",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 173,
+        "grounded": false,
+        "id": 173,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body367",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 174,
+        "grounded": false,
+        "id": 174,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body368",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 179,
+        "grounded": false,
+        "id": 179,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body373",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 180,
+        "grounded": false,
+        "id": 180,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body374",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 182,
+        "grounded": false,
+        "id": 182,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body376",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 183,
+        "grounded": false,
+        "id": 183,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body377",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 184,
+        "grounded": false,
+        "id": 184,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body378",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 186,
+        "grounded": false,
+        "id": 186,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body380",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 187,
+        "grounded": false,
+        "id": 187,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body381",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 188,
+        "grounded": false,
+        "id": 188,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body382",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 189,
+        "grounded": false,
+        "id": 189,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body383",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 190,
+        "grounded": false,
+        "id": 190,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body384",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 193,
+        "grounded": false,
+        "id": 193,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body387",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 218,
+        "grounded": false,
+        "id": 218,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body412",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 243,
+        "grounded": false,
+        "id": 243,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body437",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 244,
+        "grounded": false,
+        "id": 244,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body440",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 247,
+        "grounded": false,
+        "id": 247,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body445",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 248,
+        "grounded": false,
+        "id": 248,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body446",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 249,
+        "grounded": false,
+        "id": 249,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body447",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 250,
+        "grounded": false,
+        "id": 250,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body448",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 251,
+        "grounded": false,
+        "id": 251,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body449",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 252,
+        "grounded": false,
+        "id": 252,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body450",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 253,
+        "grounded": false,
+        "id": 253,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body451",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 254,
+        "grounded": false,
+        "id": 254,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body452",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 255,
+        "grounded": false,
+        "id": 255,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body453",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 256,
+        "grounded": false,
+        "id": 256,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body454",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 257,
+        "grounded": false,
+        "id": 257,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body455",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 258,
+        "grounded": false,
+        "id": 258,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body456",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 259,
+        "grounded": false,
+        "id": 259,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body457",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 260,
+        "grounded": false,
+        "id": 260,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body458",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 261,
+        "grounded": false,
+        "id": 261,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body459",
+        "parent_occurrence_id": null,
+        "visible": true
+      },
+      {
+        "component_id": 262,
+        "grounded": false,
+        "id": 262,
+        "local_pose": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "name": "Body460",
+        "parent_occurrence_id": null,
+        "visible": true
+      }
+    ]
+  },
+  "contact_sets": [],
+  "gear_relations": [],
+  "grounded_body_id": null,
+  "joints": [],
+  "motion_studies": [],
+  "next_contact_set_id": 1,
+  "next_gear_relation_id": 1,
+  "next_joint_id": 1,
+  "next_motion_study_id": 1,
+  "next_position_id": 1,
+  "positions": []
+}

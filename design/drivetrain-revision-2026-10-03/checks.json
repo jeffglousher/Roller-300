@@ -1,0 +1,3023 @@
+{
+  "source_model_sha256": "b50150928aa83891df3546370f4cf657e402e280a15fc01d987c6ed9d7abc8d6",
+  "basis": "Native CAD replay and STEP/STL exports; nominal CAD clearances, not physical tolerances or load qualification.",
+  "print_scope": "Unpowered one-drive test in the roof-open section, not the complete barrel.",
+  "bodies": [
+    {
+      "body_id": 9,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -24.537311553955078,
+          32.79999923706055,
+          98.46268463134766
+        ],
+        [
+          24.537311553955078,
+          79.75,
+          147.5373077392578
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 10,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          36.59410095214844,
+          62.75,
+          109.92184448242188
+        ],
+        [
+          62.75041198730469,
+          79.75,
+          137.0
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 13,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -114.97511291503906,
+          110.0,
+          8.00622272491455
+        ],
+        [
+          115.0,
+          150.0,
+          237.9937744140625
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 26,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -24.537311553955078,
+          -79.75,
+          98.46268463134766
+        ],
+        [
+          24.537311553955078,
+          -32.79999923706055,
+          147.5373077392578
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 27,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          36.59410095214844,
+          -79.75,
+          109.92184448242188
+        ],
+        [
+          62.75041198730469,
+          -62.75,
+          137.0
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 30,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -114.97511291503906,
+          -150.0,
+          8.00622272491455
+        ],
+        [
+          115.0,
+          -110.0,
+          237.9937744140625
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 32,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -80.0,
+          -105.0,
+          43.024864196777344
+        ],
+        [
+          80.0,
+          105.0,
+          202.97544860839844
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 301,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          40.17231750488281,
+          45.79999923706055,
+          113.5
+        ],
+        [
+          59.17218780517578,
+          53.79999923706055,
+          137.0
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 307,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -20.0,
+          32.79999923706055,
+          103.0
+        ],
+        [
+          20.0,
+          83.75,
+          143.0
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 309,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          40.17231750488281,
+          -53.79999923706055,
+          113.5
+        ],
+        [
+          59.17218780517578,
+          -45.79999923706055,
+          137.0
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 315,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -20.0,
+          -83.75,
+          103.0
+        ],
+        [
+          20.0,
+          -32.79999923706055,
+          143.0
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 367,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          31.372299194335938,
+          22.700000762939453,
+          133.8000030517578
+        ],
+        [
+          67.97229766845703,
+          29.700000762939453,
+          143.25
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 368,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          31.372299194335938,
+          -29.700000762939453,
+          133.8000030517578
+        ],
+        [
+          67.97229766845703,
+          -22.700000762939453,
+          143.25
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 373,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -20.0,
+          0.0,
+          43.002723693847656
+        ],
+        [
+          79.9913330078125,
+          105.0,
+          145.0
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 376,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -22.0,
+          105.0,
+          101.0
+        ],
+        [
+          22.0,
+          109.5,
+          145.0
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 377,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          23.67246437072754,
+          61.0,
+          97.02031707763672
+        ],
+        [
+          75.6640625,
+          62.5,
+          148.99847412109375
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 378,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          23.67246437072754,
+          88.0,
+          97.02031707763672
+        ],
+        [
+          75.6640625,
+          89.5,
+          148.99847412109375
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 380,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -22.0,
+          -109.5,
+          101.0
+        ],
+        [
+          22.0,
+          -105.0,
+          145.0
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 381,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          23.67246437072754,
+          -62.5,
+          97.02031707763672
+        ],
+        [
+          75.6640625,
+          -61.0,
+          148.99847412109375
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 382,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          23.67246437072754,
+          -89.5,
+          97.02031707763672
+        ],
+        [
+          75.6640625,
+          -88.0,
+          148.99847412109375
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 383,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -22.0,
+          15.0,
+          101.0
+        ],
+        [
+          22.0,
+          19.5,
+          145.0
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 384,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -22.0,
+          -19.5,
+          101.0
+        ],
+        [
+          22.0,
+          -15.0,
+          145.0
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 388,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -28.75,
+          24.299999237060547,
+          94.25
+        ],
+        [
+          28.75,
+          32.29999923706055,
+          151.75
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 391,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -28.749303817749023,
+          35.29999923706055,
+          94.25
+        ],
+        [
+          28.749303817749023,
+          38.29999923706055,
+          122.80000305175781
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 413,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -28.75,
+          -32.29999923706055,
+          94.25
+        ],
+        [
+          28.75,
+          -24.299999237060547,
+          151.75
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 416,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -28.749303817749023,
+          -38.29999923706055,
+          94.25
+        ],
+        [
+          28.749303817749023,
+          -35.29999923706055,
+          122.80000305175781
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 437,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          25.5,
+          0.0,
+          87.0
+        ],
+        [
+          69.81439208984375,
+          90.0,
+          143.14208984375
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 440,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          25.5,
+          -90.0,
+          87.0
+        ],
+        [
+          69.81439208984375,
+          0.0,
+          143.14208984375
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 442,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -28.749303817749023,
+          35.29999923706055,
+          123.19999694824219
+        ],
+        [
+          28.749303817749023,
+          38.29999923706055,
+          151.75
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 443,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -28.749303817749023,
+          -38.29999923706055,
+          123.19999694824219
+        ],
+        [
+          28.749303817749023,
+          -35.29999923706055,
+          151.75
+        ]
+      ],
+      "passed": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "retainer seats",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "body_id": 376,
+      "parent": 32
+    },
+    {
+      "name": "retainer seats",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "body_id": 380,
+      "parent": 32
+    },
+    {
+      "name": "retainer seats",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "body_id": 383,
+      "parent": 32
+    },
+    {
+      "name": "retainer seats",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "body_id": 384,
+      "parent": 32
+    },
+    {
+      "name": "retainer seats",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "body_id": 377,
+      "parent": 437
+    },
+    {
+      "name": "retainer seats",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "body_id": 378,
+      "parent": 437
+    },
+    {
+      "name": "retainer seats",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "body_id": 381,
+      "parent": 440
+    },
+    {
+      "name": "retainer seats",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "body_id": 382,
+      "parent": 440
+    },
+    {
+      "name": "carrier captive nut insertion",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "anchor": [
+        32.5,
+        12
+      ],
+      "insertion": "10 mm lift from below; carrier removed"
+    },
+    {
+      "name": "carrier captive nut insertion",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "anchor": [
+        60,
+        50
+      ],
+      "insertion": "10 mm horizontal from inner cavity"
+    },
+    {
+      "name": "carrier captive nut insertion",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "anchor": [
+        30.5,
+        79
+      ],
+      "insertion": "10 mm lift from below; carrier removed"
+    },
+    {
+      "name": "carrier translation",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": -2
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "servo coupler",
+      "side": "L",
+      "dx_mm": -2
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "coupler race land",
+      "side": "L",
+      "dx_mm": -2
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "24T pulley",
+      "side": "L",
+      "dx_mm": -2
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "input collar screw envelope",
+      "side": "L",
+      "dx_mm": -2
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "reaction plate and captive bosses",
+      "side": "L",
+      "dx_mm": -2
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "pressure plate",
+      "side": "L",
+      "dx_mm": -2
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "spring sweep",
+      "side": "L",
+      "dx_mm": -2
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "adjuster washer and head sweep",
+      "side": "L",
+      "dx_mm": -2
+    },
+    {
+      "name": "carrier translation",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": -1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "servo coupler",
+      "side": "L",
+      "dx_mm": -1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "coupler race land",
+      "side": "L",
+      "dx_mm": -1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "24T pulley",
+      "side": "L",
+      "dx_mm": -1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "input collar screw envelope",
+      "side": "L",
+      "dx_mm": -1
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "reaction plate and captive bosses",
+      "side": "L",
+      "dx_mm": -1
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "pressure plate",
+      "side": "L",
+      "dx_mm": -1
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "spring sweep",
+      "side": "L",
+      "dx_mm": -1
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "adjuster washer and head sweep",
+      "side": "L",
+      "dx_mm": -1
+    },
+    {
+      "name": "carrier translation",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 0
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "servo coupler",
+      "side": "L",
+      "dx_mm": 0
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "coupler race land",
+      "side": "L",
+      "dx_mm": 0
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "24T pulley",
+      "side": "L",
+      "dx_mm": 0
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "input collar screw envelope",
+      "side": "L",
+      "dx_mm": 0
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "reaction plate and captive bosses",
+      "side": "L",
+      "dx_mm": 0
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "pressure plate",
+      "side": "L",
+      "dx_mm": 0
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "spring sweep",
+      "side": "L",
+      "dx_mm": 0
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "adjuster washer and head sweep",
+      "side": "L",
+      "dx_mm": 0
+    },
+    {
+      "name": "carrier translation",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "servo coupler",
+      "side": "L",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "coupler race land",
+      "side": "L",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "24T pulley",
+      "side": "L",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "input collar screw envelope",
+      "side": "L",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "reaction plate and captive bosses",
+      "side": "L",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "pressure plate",
+      "side": "L",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "spring sweep",
+      "side": "L",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "adjuster washer and head sweep",
+      "side": "L",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "carrier translation",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "servo coupler",
+      "side": "L",
+      "dx_mm": 1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "coupler race land",
+      "side": "L",
+      "dx_mm": 1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "24T pulley",
+      "side": "L",
+      "dx_mm": 1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "input collar screw envelope",
+      "side": "L",
+      "dx_mm": 1
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "reaction plate and captive bosses",
+      "side": "L",
+      "dx_mm": 1
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "pressure plate",
+      "side": "L",
+      "dx_mm": 1
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "spring sweep",
+      "side": "L",
+      "dx_mm": 1
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "adjuster washer and head sweep",
+      "side": "L",
+      "dx_mm": 1
+    },
+    {
+      "name": "servo vertical insertion",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": -2,
+      "scope": "case/ear envelopes; excludes cable and horn"
+    },
+    {
+      "name": "servo vertical insertion",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 0,
+      "scope": "case/ear envelopes; excludes cable and horn"
+    },
+    {
+      "name": "servo vertical insertion",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 1,
+      "scope": "case/ear envelopes; excludes cable and horn"
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": -2,
+      "anchor": [
+        32.5,
+        12
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": -2,
+      "anchor": [
+        32.5,
+        12
+      ],
+      "full_frame_overlap_mm3": 0.0,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": -2,
+      "anchor": [
+        60,
+        50
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": -2,
+      "anchor": [
+        60,
+        50
+      ],
+      "full_frame_overlap_mm3": 0.0,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": -2,
+      "anchor": [
+        30.5,
+        79
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": -2,
+      "anchor": [
+        30.5,
+        79
+      ],
+      "full_frame_overlap_mm3": 56.548667764616276,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 0,
+      "anchor": [
+        32.5,
+        12
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 0,
+      "anchor": [
+        32.5,
+        12
+      ],
+      "full_frame_overlap_mm3": 0.0,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 0,
+      "anchor": [
+        60,
+        50
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 0,
+      "anchor": [
+        60,
+        50
+      ],
+      "full_frame_overlap_mm3": 0.0,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 0,
+      "anchor": [
+        30.5,
+        79
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 0,
+      "anchor": [
+        30.5,
+        79
+      ],
+      "full_frame_overlap_mm3": 56.548667764616276,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 1,
+      "anchor": [
+        32.5,
+        12
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 1,
+      "anchor": [
+        32.5,
+        12
+      ],
+      "full_frame_overlap_mm3": 0.0,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 1,
+      "anchor": [
+        60,
+        50
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 1,
+      "anchor": [
+        60,
+        50
+      ],
+      "full_frame_overlap_mm3": 0.0,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 1,
+      "anchor": [
+        30.5,
+        79
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 1,
+      "anchor": [
+        30.5,
+        79
+      ],
+      "full_frame_overlap_mm3": 56.548667764616276,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier captive nut insertion",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "anchor": [
+        32.5,
+        -12
+      ],
+      "insertion": "10 mm lift from below; carrier removed"
+    },
+    {
+      "name": "carrier captive nut insertion",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "anchor": [
+        60,
+        -50
+      ],
+      "insertion": "10 mm horizontal from inner cavity"
+    },
+    {
+      "name": "carrier captive nut insertion",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "anchor": [
+        30.5,
+        -79
+      ],
+      "insertion": "10 mm lift from below; carrier removed"
+    },
+    {
+      "name": "carrier translation",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": -2
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "servo coupler",
+      "side": "R",
+      "dx_mm": -2
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "coupler race land",
+      "side": "R",
+      "dx_mm": -2
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "24T pulley",
+      "side": "R",
+      "dx_mm": -2
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "input collar screw envelope",
+      "side": "R",
+      "dx_mm": -2
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "reaction plate and captive bosses",
+      "side": "R",
+      "dx_mm": -2
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "pressure plate",
+      "side": "R",
+      "dx_mm": -2
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "spring sweep",
+      "side": "R",
+      "dx_mm": -2
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "adjuster washer and head sweep",
+      "side": "R",
+      "dx_mm": -2
+    },
+    {
+      "name": "carrier translation",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": -1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "servo coupler",
+      "side": "R",
+      "dx_mm": -1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "coupler race land",
+      "side": "R",
+      "dx_mm": -1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "24T pulley",
+      "side": "R",
+      "dx_mm": -1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "input collar screw envelope",
+      "side": "R",
+      "dx_mm": -1
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "reaction plate and captive bosses",
+      "side": "R",
+      "dx_mm": -1
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "pressure plate",
+      "side": "R",
+      "dx_mm": -1
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "spring sweep",
+      "side": "R",
+      "dx_mm": -1
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "adjuster washer and head sweep",
+      "side": "R",
+      "dx_mm": -1
+    },
+    {
+      "name": "carrier translation",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 0
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "servo coupler",
+      "side": "R",
+      "dx_mm": 0
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "coupler race land",
+      "side": "R",
+      "dx_mm": 0
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "24T pulley",
+      "side": "R",
+      "dx_mm": 0
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "input collar screw envelope",
+      "side": "R",
+      "dx_mm": 0
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "reaction plate and captive bosses",
+      "side": "R",
+      "dx_mm": 0
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "pressure plate",
+      "side": "R",
+      "dx_mm": 0
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "spring sweep",
+      "side": "R",
+      "dx_mm": 0
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "adjuster washer and head sweep",
+      "side": "R",
+      "dx_mm": 0
+    },
+    {
+      "name": "carrier translation",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "servo coupler",
+      "side": "R",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "coupler race land",
+      "side": "R",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "24T pulley",
+      "side": "R",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "input collar screw envelope",
+      "side": "R",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "reaction plate and captive bosses",
+      "side": "R",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "pressure plate",
+      "side": "R",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "spring sweep",
+      "side": "R",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "adjuster washer and head sweep",
+      "side": "R",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "carrier translation",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "servo coupler",
+      "side": "R",
+      "dx_mm": 1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "coupler race land",
+      "side": "R",
+      "dx_mm": 1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "24T pulley",
+      "side": "R",
+      "dx_mm": 1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "input collar screw envelope",
+      "side": "R",
+      "dx_mm": 1
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "reaction plate and captive bosses",
+      "side": "R",
+      "dx_mm": 1
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "pressure plate",
+      "side": "R",
+      "dx_mm": 1
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "spring sweep",
+      "side": "R",
+      "dx_mm": 1
+    },
+    {
+      "name": "clutch rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "adjuster washer and head sweep",
+      "side": "R",
+      "dx_mm": 1
+    },
+    {
+      "name": "servo vertical insertion",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": -2,
+      "scope": "case/ear envelopes; excludes cable and horn"
+    },
+    {
+      "name": "servo vertical insertion",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 0,
+      "scope": "case/ear envelopes; excludes cable and horn"
+    },
+    {
+      "name": "servo vertical insertion",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 1,
+      "scope": "case/ear envelopes; excludes cable and horn"
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": -2,
+      "anchor": [
+        32.5,
+        -12
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": -2,
+      "anchor": [
+        32.5,
+        -12
+      ],
+      "full_frame_overlap_mm3": 0.0,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": -2,
+      "anchor": [
+        60,
+        -50
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": -2,
+      "anchor": [
+        60,
+        -50
+      ],
+      "full_frame_overlap_mm3": 0.0,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": -2,
+      "anchor": [
+        30.5,
+        -79
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": -2,
+      "anchor": [
+        30.5,
+        -79
+      ],
+      "full_frame_overlap_mm3": 56.548667764616276,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 0,
+      "anchor": [
+        32.5,
+        -12
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 0,
+      "anchor": [
+        32.5,
+        -12
+      ],
+      "full_frame_overlap_mm3": 0.0,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 0,
+      "anchor": [
+        60,
+        -50
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 0,
+      "anchor": [
+        60,
+        -50
+      ],
+      "full_frame_overlap_mm3": 0.0,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 0,
+      "anchor": [
+        30.5,
+        -79
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 0,
+      "anchor": [
+        30.5,
+        -79
+      ],
+      "full_frame_overlap_mm3": 56.548667764616276,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 1,
+      "anchor": [
+        32.5,
+        -12
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 1,
+      "anchor": [
+        32.5,
+        -12
+      ],
+      "full_frame_overlap_mm3": 0.0,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 1,
+      "anchor": [
+        60,
+        -50
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 1,
+      "anchor": [
+        60,
+        -50
+      ],
+      "full_frame_overlap_mm3": 0.0,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 1,
+      "anchor": [
+        30.5,
+        -79
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 1,
+      "anchor": [
+        30.5,
+        -79
+      ],
+      "full_frame_overlap_mm3": 56.548667764616276,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "clutch assembly interference",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "bodies": [
+        9,
+        307
+      ]
+    },
+    {
+      "name": "clutch assembly interference",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "bodies": [
+        9,
+        388
+      ]
+    },
+    {
+      "name": "clutch assembly interference",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "bodies": [
+        9,
+        391
+      ]
+    },
+    {
+      "name": "clutch assembly interference",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "bodies": [
+        26,
+        315
+      ]
+    },
+    {
+      "name": "clutch assembly interference",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "bodies": [
+        26,
+        413
+      ]
+    },
+    {
+      "name": "clutch assembly interference",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "bodies": [
+        26,
+        416
+      ]
+    },
+    {
+      "name": "clutch assembly interference",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "bodies": [
+        388,
+        387
+      ]
+    },
+    {
+      "name": "clutch assembly interference",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "bodies": [
+        413,
+        412
+      ]
+    },
+    {
+      "name": "clutch assembly interference",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "bodies": [
+        9,
+        442
+      ]
+    },
+    {
+      "name": "clutch assembly interference",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "bodies": [
+        26,
+        443
+      ]
+    },
+    {
+      "name": "clutch assembly interference",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "bodies": [
+        391,
+        442
+      ]
+    },
+    {
+      "name": "clutch assembly interference",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "bodies": [
+        416,
+        443
+      ]
+    },
+    {
+      "name": "clutch assembly interference",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "bodies": [
+        388,
+        32
+      ]
+    },
+    {
+      "name": "clutch assembly interference",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "bodies": [
+        391,
+        32
+      ]
+    },
+    {
+      "name": "clutch assembly interference",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "bodies": [
+        413,
+        32
+      ]
+    },
+    {
+      "name": "clutch assembly interference",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "bodies": [
+        416,
+        32
+      ]
+    },
+    {
+      "name": "pressure pad radial insertion",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "body_id": 391
+    },
+    {
+      "name": "pressure pad radial insertion",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "body_id": 442
+    },
+    {
+      "name": "pressure pad radial insertion",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "body_id": 416
+    },
+    {
+      "name": "pressure pad radial insertion",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "body_id": 443
+    },
+    {
+      "name": "bench-assembled clutch lowers into roof-open fixture",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "scope": "Conservative round-part sweep by axial section; input carrier removed, wheel shaft inserted afterwards; excludes unknown servo horn"
+    }
+  ],
+  "passed": true,
+  "source": "Roller-300.nbcad",
+  "source_sha256": "767a8d32968bfef61b02556d5d433998c2c098d8567138aacf7163956c5e5773",
+  "saved_native_geometry_matches_validated_replay": true
+}

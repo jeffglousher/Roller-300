@@ -1,0 +1,22 @@
+{
+  "_disclosure": {
+    "active_focus": "print",
+    "advertised": true,
+    "mode": "dynamic",
+    "pack": "print",
+    "state": "active"
+  },
+  "appearances_assigned": 0,
+  "bodies_missing_appearance": [
+    1
+  ],
+  "body_count": 1,
+  "body_ids": [
+    1
+  ],
+  "hints": [
+    "Ready for solid_export_3mf (preferred) or solid_export_stl / solid_export_step."
+  ],
+  "ok": true,
+  "timeline_errors": []
+}

@@ -1,0 +1,1589 @@
+{
+  "_disclosure": {
+    "active_focus": "assembly",
+    "advertised": false,
+    "mode": "dynamic",
+    "pack": "document",
+    "state": "hidden_but_callable"
+  },
+  "exact": true,
+  "pairs": [
+    {
+      "below_clearance": true,
+      "body_a": 30,
+      "body_b": 380,
+      "closest_point_a": [
+        18.0,
+        -110.0,
+        123.0
+      ],
+      "closest_point_b": [
+        18.0,
+        -109.50000000000001,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.4999999999999858,
+      "occurrence_a": 61,
+      "occurrence_b": 186,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 30,
+      "body_b": 21,
+      "closest_point_a": [
+        -5.8,
+        -133.5,
+        131.0
+      ],
+      "closest_point_b": [
+        -5.8,
+        -133.5,
+        131.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 61,
+      "occurrence_b": 52,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": false,
+      "body_a": 30,
+      "body_b": 458,
+      "closest_point_a": [
+        18.0,
+        -110.0,
+        123.0
+      ],
+      "closest_point_b": [
+        4.975,
+        -110.0,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 13.025,
+      "occurrence_a": 61,
+      "occurrence_b": 260,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": false,
+      "body_a": 30,
+      "body_b": 460,
+      "closest_point_a": [
+        -2.894620769417946e-15,
+        -112.9,
+        141.0
+      ],
+      "closest_point_b": [
+        -6.092617825758082e-16,
+        -112.9,
+        127.975
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 13.025,
+      "occurrence_a": 61,
+      "occurrence_b": 262,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 30,
+      "body_b": 18,
+      "closest_point_a": [
+        4.5,
+        -142.0,
+        123.0
+      ],
+      "closest_point_b": [
+        4.0,
+        -142.0,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.5,
+      "occurrence_a": 61,
+      "occurrence_b": 49,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": false,
+      "body_a": 32,
+      "body_b": 28,
+      "closest_point_a": [
+        -0.18845253742,
+        -77.0,
+        96.0
+      ],
+      "closest_point_b": [
+        -0.18845253742,
+        -77.0,
+        98.482412446985
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 2.482412446984995,
+      "occurrence_a": 86,
+      "occurrence_b": 59,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": false,
+      "body_a": 32,
+      "body_b": 26,
+      "closest_point_a": [
+        -3.552713678800501e-15,
+        -65.25,
+        96.0
+      ],
+      "closest_point_b": [
+        -4.507431054293873e-15,
+        -65.25,
+        98.462688194767
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 2.462688194766997,
+      "occurrence_a": 86,
+      "occurrence_b": 57,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 32,
+      "body_b": 380,
+      "closest_point_a": [
+        13.720815280171305,
+        -105.0,
+        110.9791847198287
+      ],
+      "closest_point_b": [
+        13.720815280171305,
+        -105.0,
+        110.9791847198287
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 86,
+      "occurrence_b": 186,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 32,
+      "body_b": 384,
+      "closest_point_a": [
+        13.720815280171305,
+        -15.0,
+        110.9791847198287
+      ],
+      "closest_point_b": [
+        13.720815280171305,
+        -15.0,
+        110.9791847198287
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 86,
+      "occurrence_b": 190,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": false,
+      "body_a": 32,
+      "body_b": 412,
+      "closest_point_a": [
+        -3.552713678800501e-15,
+        -65.25,
+        96.0
+      ],
+      "closest_point_b": [
+        -4.532431118118384e-15,
+        -65.24999987554119,
+        107.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 11.0,
+      "occurrence_a": 86,
+      "occurrence_b": 218,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 32,
+      "body_b": 19,
+      "closest_point_a": [
+        9.0,
+        -98.0,
+        123.0
+      ],
+      "closest_point_b": [
+        9.0,
+        -98.0,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 86,
+      "occurrence_b": 50,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 32,
+      "body_b": 358,
+      "closest_point_a": [
+        9.0,
+        -8.0,
+        123.0
+      ],
+      "closest_point_b": [
+        9.0,
+        -8.0,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 86,
+      "occurrence_b": 170,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": false,
+      "body_a": 32,
+      "body_b": 20,
+      "closest_point_a": [
+        9.0,
+        -97.0,
+        123.0
+      ],
+      "closest_point_b": [
+        9.0,
+        -94.8,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 2.200000000000003,
+      "occurrence_a": 86,
+      "occurrence_b": 51,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": false,
+      "body_a": 32,
+      "body_b": 227,
+      "closest_point_a": [
+        9.0,
+        -97.0,
+        123.0
+      ],
+      "closest_point_b": [
+        5.0,
+        -97.0,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 3.9999999999999845,
+      "occurrence_a": 86,
+      "occurrence_b": 144,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": false,
+      "body_a": 32,
+      "body_b": 458,
+      "closest_point_a": [
+        11.1,
+        -105.0,
+        123.0
+      ],
+      "closest_point_b": [
+        4.975,
+        -105.1,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 6.125816272138743,
+      "occurrence_a": 86,
+      "occurrence_b": 260,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": false,
+      "body_a": 32,
+      "body_b": 18,
+      "closest_point_a": [
+        9.0,
+        -8.0,
+        123.0
+      ],
+      "closest_point_b": [
+        4.0,
+        -8.0,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 5.0,
+      "occurrence_a": 86,
+      "occurrence_b": 49,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 32,
+      "body_b": 381,
+      "closest_point_a": [
+        76.0,
+        -62.5,
+        123.0
+      ],
+      "closest_point_b": [
+        75.6723,
+        -62.5,
+        123.00000000000001
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.327699999999993,
+      "occurrence_a": 86,
+      "occurrence_b": 187,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 32,
+      "body_b": 382,
+      "closest_point_a": [
+        76.0,
+        -89.5,
+        123.0
+      ],
+      "closest_point_b": [
+        75.6723,
+        -89.5,
+        123.00000000000001
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.327699999999993,
+      "occurrence_a": 86,
+      "occurrence_b": 188,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 32,
+      "body_b": 440,
+      "closest_point_a": [
+        50.4,
+        -90.0,
+        107.0
+      ],
+      "closest_point_b": [
+        50.4,
+        -90.0,
+        107.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 86,
+      "occurrence_b": 244,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": false,
+      "body_a": 32,
+      "body_b": 368,
+      "closest_point_a": [
+        73.02037830368955,
+        -21.7,
+        144.07188535433087
+      ],
+      "closest_point_b": [
+        70.1723,
+        -21.7,
+        143.25
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 2.964295120194805,
+      "occurrence_a": 86,
+      "occurrence_b": 174,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": false,
+      "body_a": 32,
+      "body_b": 309,
+      "closest_point_a": [
+        76.0,
+        -41.599999999999994,
+        123.0
+      ],
+      "closest_point_b": [
+        66.2723,
+        -41.599999999999994,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 9.727699999999999,
+      "occurrence_a": 86,
+      "occurrence_b": 152,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": false,
+      "body_a": 32,
+      "body_b": 446,
+      "closest_point_a": [
+        76.0,
+        -41.47500000000002,
+        123.0
+      ],
+      "closest_point_b": [
+        65.6723,
+        -41.47500000000001,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 10.327699999999993,
+      "occurrence_a": 86,
+      "occurrence_b": 248,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": false,
+      "body_a": 32,
+      "body_b": 27,
+      "closest_point_a": [
+        49.672255240905,
+        -90.0,
+        107.0
+      ],
+      "closest_point_b": [
+        49.672255240905,
+        -79.5,
+        109.921844097384
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 10.89895283637,
+      "occurrence_a": 86,
+      "occurrence_b": 58,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": false,
+      "body_a": 32,
+      "body_b": 22,
+      "closest_point_a": [
+        49.672255240905,
+        -90.0,
+        107.0
+      ],
+      "closest_point_b": [
+        49.672255240905,
+        -88.0,
+        112.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 5.385164807134504,
+      "occurrence_a": 86,
+      "occurrence_b": 53,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 32,
+      "body_b": 29,
+      "closest_point_a": [
+        59.6723,
+        -28.2,
+        85.25
+      ],
+      "closest_point_b": [
+        59.6723,
+        -27.9,
+        85.25
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.3000000000000007,
+      "occurrence_a": 86,
+      "occurrence_b": 60,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": false,
+      "body_a": 32,
+      "body_b": 452,
+      "closest_point_a": [
+        49.6723,
+        -92.5,
+        107.0
+      ],
+      "closest_point_b": [
+        49.6723,
+        -94.0,
+        117.5
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 10.606601717798213,
+      "occurrence_a": 86,
+      "occurrence_b": 254,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": false,
+      "body_a": 32,
+      "body_b": 454,
+      "closest_point_a": [
+        49.6723,
+        -92.5,
+        107.0
+      ],
+      "closest_point_b": [
+        49.6723,
+        -94.5,
+        117.55
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 10.737900167164899,
+      "occurrence_a": 86,
+      "occurrence_b": 256,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": false,
+      "body_a": 32,
+      "body_b": 450,
+      "closest_point_a": [
+        49.6723,
+        -90.0,
+        107.0
+      ],
+      "closest_point_b": [
+        49.6723,
+        -90.0,
+        118.025
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 11.025000000000006,
+      "occurrence_a": 86,
+      "occurrence_b": 252,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 28,
+      "body_b": 26,
+      "closest_point_a": [
+        -15.955547258129014,
+        -77.0,
+        137.86708288671866
+      ],
+      "closest_point_b": [
+        -15.955547258129014,
+        -77.0,
+        137.86708288671866
+      ],
+      "interfering": true,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 59,
+      "occurrence_b": 57,
+      "overlap_volume_mm3": 237.25149121327937
+    },
+    {
+      "below_clearance": false,
+      "body_a": 28,
+      "body_b": 18,
+      "closest_point_a": [
+        -14.03373835147427,
+        -77.0,
+        106.30680070752483
+      ],
+      "closest_point_b": [
+        -2.5739995380754426,
+        -77.0,
+        119.93821516464867
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 17.808455120333797,
+      "occurrence_a": 59,
+      "occurrence_b": 49,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": false,
+      "body_a": 28,
+      "body_b": 440,
+      "closest_point_a": [
+        45.30630423775723,
+        -77.0,
+        108.54369597207622
+      ],
+      "closest_point_b": [
+        45.6723,
+        -77.0,
+        107.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 1.5864898840471744,
+      "occurrence_a": 59,
+      "occurrence_b": 244,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 28,
+      "body_b": 27,
+      "closest_point_a": [
+        51.60288549831632,
+        -77.0,
+        133.18859531837356
+      ],
+      "closest_point_b": [
+        51.60288549831632,
+        -77.0,
+        133.18859531837356
+      ],
+      "interfering": true,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 59,
+      "occurrence_b": 58,
+      "overlap_volume_mm3": 89.9169259725708
+    },
+    {
+      "below_clearance": false,
+      "body_a": 28,
+      "body_b": 22,
+      "closest_point_a": [
+        54.642271746836,
+        -77.0,
+        132.08906193979
+      ],
+      "closest_point_b": [
+        54.642271746836,
+        -81.0,
+        132.08906193979
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 4.0,
+      "occurrence_a": 59,
+      "occurrence_b": 53,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 26,
+      "body_b": 412,
+      "closest_point_a": [
+        -5.75,
+        -65.25,
+        131.0
+      ],
+      "closest_point_b": [
+        -5.75,
+        -65.24999987554119,
+        131.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 1.1222940088373434e-07,
+      "occurrence_a": 57,
+      "occurrence_b": 218,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 26,
+      "body_b": 18,
+      "closest_point_a": [
+        4.2,
+        -79.75,
+        123.0
+      ],
+      "closest_point_b": [
+        4.0,
+        -79.75,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.19999999999999318,
+      "occurrence_a": 57,
+      "occurrence_b": 49,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": false,
+      "body_a": 26,
+      "body_b": 381,
+      "closest_point_a": [
+        24.537311805233,
+        -65.25,
+        123.0
+      ],
+      "closest_point_b": [
+        24.537311805233,
+        -62.49999999999999,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 2.75,
+      "occurrence_a": 57,
+      "occurrence_b": 187,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 380,
+      "body_b": 19,
+      "closest_point_a": [
+        9.0,
+        -105.0,
+        123.0
+      ],
+      "closest_point_b": [
+        9.0,
+        -105.0,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 186,
+      "occurrence_b": 50,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": false,
+      "body_a": 380,
+      "body_b": 458,
+      "closest_point_a": [
+        9.0,
+        -109.5,
+        123.0
+      ],
+      "closest_point_b": [
+        4.975,
+        -109.5,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 4.025,
+      "occurrence_a": 186,
+      "occurrence_b": 260,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": false,
+      "body_a": 380,
+      "body_b": 18,
+      "closest_point_a": [
+        9.0,
+        -105.0,
+        123.0
+      ],
+      "closest_point_b": [
+        4.0,
+        -105.0,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 5.0,
+      "occurrence_a": 186,
+      "occurrence_b": 49,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 384,
+      "body_b": 358,
+      "closest_point_a": [
+        9.0,
+        -15.0,
+        123.0
+      ],
+      "closest_point_b": [
+        9.0,
+        -15.0,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 190,
+      "occurrence_b": 170,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": false,
+      "body_a": 384,
+      "body_b": 18,
+      "closest_point_a": [
+        9.0,
+        -15.0,
+        123.0
+      ],
+      "closest_point_b": [
+        4.0,
+        -15.0,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 4.999999999999996,
+      "occurrence_a": 190,
+      "occurrence_b": 49,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 21,
+      "body_b": 460,
+      "closest_point_a": [
+        0.0,
+        -113.0,
+        127.125
+      ],
+      "closest_point_b": [
+        0.0,
+        -113.0,
+        127.125
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 52,
+      "occurrence_b": 262,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 21,
+      "body_b": 18,
+      "closest_point_a": [
+        4.0,
+        -133.5,
+        123.0
+      ],
+      "closest_point_b": [
+        4.0,
+        -133.5,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 52,
+      "occurrence_b": 49,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 412,
+      "body_b": 18,
+      "closest_point_a": [
+        3.9999999999999964,
+        -67.24999987554119,
+        123.0
+      ],
+      "closest_point_b": [
+        4.0,
+        -67.24999987554119,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 8.881784197001252e-16,
+      "occurrence_a": 218,
+      "occurrence_b": 49,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 19,
+      "body_b": 227,
+      "closest_point_a": [
+        4.0,
+        -98.0,
+        123.0
+      ],
+      "closest_point_b": [
+        4.0,
+        -97.8,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.20000000000000284,
+      "occurrence_a": 50,
+      "occurrence_b": 144,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 19,
+      "body_b": 458,
+      "closest_point_a": [
+        0.0,
+        -105.0,
+        118.875
+      ],
+      "closest_point_b": [
+        0.0,
+        -105.0,
+        118.875
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 50,
+      "occurrence_b": 260,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 19,
+      "body_b": 18,
+      "closest_point_a": [
+        4.0,
+        -105.0,
+        123.0
+      ],
+      "closest_point_b": [
+        4.0,
+        -105.0,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 50,
+      "occurrence_b": 49,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 358,
+      "body_b": 18,
+      "closest_point_a": [
+        4.0,
+        -8.0,
+        123.0
+      ],
+      "closest_point_b": [
+        4.0,
+        -8.0,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 170,
+      "occurrence_b": 49,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 20,
+      "body_b": 227,
+      "closest_point_a": [
+        4.0,
+        -94.8,
+        123.0
+      ],
+      "closest_point_b": [
+        4.0,
+        -94.8,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 51,
+      "occurrence_b": 144,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 20,
+      "body_b": 18,
+      "closest_point_a": [
+        4.0,
+        -94.8,
+        123.0
+      ],
+      "closest_point_b": [
+        4.0,
+        -94.8,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 51,
+      "occurrence_b": 49,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 227,
+      "body_b": 18,
+      "closest_point_a": [
+        4.0,
+        -97.8,
+        123.0
+      ],
+      "closest_point_b": [
+        4.0,
+        -97.8,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 144,
+      "occurrence_b": 49,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 458,
+      "body_b": 460,
+      "closest_point_a": [
+        0.0,
+        -111.0,
+        127.125
+      ],
+      "closest_point_b": [
+        -5.051668046482832e-16,
+        -111.0,
+        127.125
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 5.051668046482832e-16,
+      "occurrence_a": 260,
+      "occurrence_b": 262,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 458,
+      "body_b": 18,
+      "closest_point_a": [
+        -4.929203366568097e-16,
+        -110.9,
+        127.025
+      ],
+      "closest_point_b": [
+        -6.432490598706546e-16,
+        -110.9,
+        127.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.02499999999999315,
+      "occurrence_a": 260,
+      "occurrence_b": 49,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 460,
+      "body_b": 18,
+      "closest_point_a": [
+        -4.929203366568097e-16,
+        -112.9,
+        127.025
+      ],
+      "closest_point_b": [
+        -6.432490598706546e-16,
+        -112.9,
+        127.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.025000000000000355,
+      "occurrence_a": 262,
+      "occurrence_b": 49,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 381,
+      "body_b": 440,
+      "closest_point_a": [
+        37.23016437626905,
+        -61.0,
+        137.14213562373095
+      ],
+      "closest_point_b": [
+        37.23016437626905,
+        -61.0,
+        137.14213562373095
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 187,
+      "occurrence_b": 244,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": false,
+      "body_a": 381,
+      "body_b": 27,
+      "closest_point_a": [
+        58.6723,
+        -62.5,
+        123.0
+      ],
+      "closest_point_b": [
+        57.6723,
+        -62.75,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 1.0307764064044151,
+      "occurrence_a": 187,
+      "occurrence_b": 58,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 381,
+      "body_b": 22,
+      "closest_point_a": [
+        58.6723,
+        -61.0,
+        123.0
+      ],
+      "closest_point_b": [
+        58.6723,
+        -61.0,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 187,
+      "occurrence_b": 53,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 382,
+      "body_b": 440,
+      "closest_point_a": [
+        37.23016437626905,
+        -88.0,
+        137.14213562373095
+      ],
+      "closest_point_b": [
+        37.23016437626905,
+        -88.0,
+        137.14213562373095
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 188,
+      "occurrence_b": 244,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 382,
+      "body_b": 22,
+      "closest_point_a": [
+        58.6723,
+        -88.0,
+        123.0
+      ],
+      "closest_point_b": [
+        58.6723,
+        -88.0,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 188,
+      "occurrence_b": 53,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": false,
+      "body_a": 382,
+      "body_b": 450,
+      "closest_point_a": [
+        58.6723,
+        -89.5,
+        123.0
+      ],
+      "closest_point_b": [
+        54.6473,
+        -89.5,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 4.024999999999992,
+      "occurrence_a": 188,
+      "occurrence_b": 252,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 440,
+      "body_b": 368,
+      "closest_point_a": [
+        35.8723,
+        -21.7,
+        133.8
+      ],
+      "closest_point_b": [
+        35.8723,
+        -21.7,
+        133.8
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 244,
+      "occurrence_b": 174,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": false,
+      "body_a": 440,
+      "body_b": 309,
+      "closest_point_a": [
+        58.6723,
+        -53.8,
+        123.0
+      ],
+      "closest_point_b": [
+        58.6723,
+        -52.79999999999999,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 1.0,
+      "occurrence_a": 244,
+      "occurrence_b": 152,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 440,
+      "body_b": 446,
+      "closest_point_a": [
+        39.285814613495454,
+        -37.599999999999994,
+        133.38648538650455
+      ],
+      "closest_point_b": [
+        39.285814613495454,
+        -38.1,
+        133.38648538650455
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.5000000000000071,
+      "occurrence_a": 244,
+      "occurrence_b": 248,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 440,
+      "body_b": 27,
+      "closest_point_a": [
+        58.6723,
+        -80.0,
+        123.0
+      ],
+      "closest_point_b": [
+        58.6723,
+        -79.5,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.5,
+      "occurrence_a": 244,
+      "occurrence_b": 58,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 440,
+      "body_b": 22,
+      "closest_point_a": [
+        58.6723,
+        -81.0,
+        123.0
+      ],
+      "closest_point_b": [
+        58.6723,
+        -81.0,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 244,
+      "occurrence_b": 53,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 440,
+      "body_b": 29,
+      "closest_point_a": [
+        41.20819838486224,
+        -25.2,
+        88.75
+      ],
+      "closest_point_b": [
+        41.20819838486224,
+        -25.200000000000003,
+        88.75
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 244,
+      "occurrence_b": 60,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": false,
+      "body_a": 440,
+      "body_b": 450,
+      "closest_point_a": [
+        60.7723,
+        -88.0,
+        123.0
+      ],
+      "closest_point_b": [
+        54.6473,
+        -88.1,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 6.1258162721387555,
+      "occurrence_a": 244,
+      "occurrence_b": 252,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 368,
+      "body_b": 29,
+      "closest_point_a": [
+        42.5723,
+        -25.2,
+        141.25
+      ],
+      "closest_point_b": [
+        42.5723,
+        -25.2,
+        141.25
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 174,
+      "occurrence_b": 60,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 309,
+      "body_b": 446,
+      "closest_point_a": [
+        59.9223,
+        -41.599999999999994,
+        131.0
+      ],
+      "closest_point_b": [
+        59.9223,
+        -41.6,
+        131.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 152,
+      "occurrence_b": 248,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 309,
+      "body_b": 22,
+      "closest_point_a": [
+        45.45764303491573,
+        -53.8,
+        123.0
+      ],
+      "closest_point_b": [
+        45.45764303491573,
+        -54.0,
+        123.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.20000000000000284,
+      "occurrence_a": 152,
+      "occurrence_b": 53,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": false,
+      "body_a": 309,
+      "body_b": 29,
+      "closest_point_a": [
+        46.51130727618679,
+        -44.4,
+        121.175
+      ],
+      "closest_point_b": [
+        47.1175250588359,
+        -42.0,
+        121.525
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 2.4999999999999996,
+      "occurrence_a": 152,
+      "occurrence_b": 60,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 446,
+      "body_b": 29,
+      "closest_point_a": [
+        47.25780889762596,
+        -42.0,
+        124.20840089231868
+      ],
+      "closest_point_b": [
+        47.25780889762596,
+        -42.0,
+        124.20840089231868
+      ],
+      "interfering": true,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 248,
+      "occurrence_b": 60,
+      "overlap_volume_mm3": 5.351520378663805
+    },
+    {
+      "below_clearance": true,
+      "body_a": 27,
+      "body_b": 22,
+      "closest_point_a": [
+        51.53978493969813,
+        -80.8,
+        119.34999999999995
+      ],
+      "closest_point_b": [
+        51.53978493969813,
+        -81.0,
+        119.34999999999995
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.19999999999999574,
+      "occurrence_a": 58,
+      "occurrence_b": 53,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 22,
+      "body_b": 450,
+      "closest_point_a": [
+        49.6723,
+        -88.0,
+        118.875
+      ],
+      "closest_point_b": [
+        49.6723,
+        -88.0,
+        118.875
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 53,
+      "occurrence_b": 252,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 452,
+      "body_b": 454,
+      "closest_point_a": [
+        49.6723,
+        -94.5,
+        119.0
+      ],
+      "closest_point_b": [
+        49.6723,
+        -94.5,
+        119.0
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 254,
+      "occurrence_b": 256,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 452,
+      "body_b": 450,
+      "closest_point_a": [
+        49.6723,
+        -94.0,
+        127.125
+      ],
+      "closest_point_b": [
+        49.6723,
+        -94.0,
+        127.125
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.0,
+      "occurrence_a": 254,
+      "occurrence_b": 252,
+      "overlap_volume_mm3": 0.0
+    },
+    {
+      "below_clearance": true,
+      "body_a": 454,
+      "body_b": 450,
+      "closest_point_a": [
+        49.6723,
+        -94.5,
+        127.125
+      ],
+      "closest_point_b": [
+        49.6723,
+        -94.0,
+        127.125
+      ],
+      "interfering": false,
+      "minimum_clearance_mm": 0.5,
+      "occurrence_a": 256,
+      "occurrence_b": 252,
+      "overlap_volume_mm3": 0.0
+    }
+  ],
+  "source_model_sha256": "1a637009676ab3f3f3fea84cbb672a2e26a9f75c83a8a66098b384a7eeeae67b",
+  "body_ids_checked": [
+    18,
+    19,
+    20,
+    21,
+    22,
+    26,
+    27,
+    28,
+    29,
+    30,
+    227,
+    309,
+    358,
+    368,
+    32,
+    380,
+    381,
+    382,
+    384,
+    412,
+    440,
+    446,
+    450,
+    452,
+    454,
+    458,
+    460
+  ],
+  "separately_inspected_threaded_bodies": [
+    447,
+    448,
+    455,
+    456
+  ],
+  "separate_geometry_report": "adversarial-checks.json"
+}

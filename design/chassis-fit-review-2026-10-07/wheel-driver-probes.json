@@ -1,0 +1,199 @@
+{
+  "date": "2026-10-07",
+  "source": "Fresh current native wheel STEP exports",
+  "qualification": "Exact local OpenCascade boolean probes; tools are inspection gauges, not authored geometry or motion qualification.",
+  "probes": [
+    {
+      "body": 13,
+      "kind": "driver",
+      "center_x_z": [
+        -8,
+        115
+      ],
+      "start_y": 141.6,
+      "radius_mm": 1.75,
+      "height_mm": 36.4,
+      "intersection_volume_mm3": 76.96902001294995
+    },
+    {
+      "body": 13,
+      "kind": "bolt_head",
+      "center_x_z": [
+        -8,
+        115
+      ],
+      "start_y": 137.5,
+      "radius_mm": 3.5,
+      "height_mm": 4.0,
+      "intersection_volume_mm3": 0.0
+    },
+    {
+      "body": 13,
+      "kind": "driver",
+      "center_x_z": [
+        -8,
+        131
+      ],
+      "start_y": 141.6,
+      "radius_mm": 1.75,
+      "height_mm": 36.4,
+      "intersection_volume_mm3": 76.96902001294995
+    },
+    {
+      "body": 13,
+      "kind": "bolt_head",
+      "center_x_z": [
+        -8,
+        131
+      ],
+      "start_y": 137.5,
+      "radius_mm": 3.5,
+      "height_mm": 4.0,
+      "intersection_volume_mm3": 0.0
+    },
+    {
+      "body": 13,
+      "kind": "driver",
+      "center_x_z": [
+        8,
+        115
+      ],
+      "start_y": 141.6,
+      "radius_mm": 1.75,
+      "height_mm": 36.4,
+      "intersection_volume_mm3": 76.96902001294995
+    },
+    {
+      "body": 13,
+      "kind": "bolt_head",
+      "center_x_z": [
+        8,
+        115
+      ],
+      "start_y": 137.5,
+      "radius_mm": 3.5,
+      "height_mm": 4.0,
+      "intersection_volume_mm3": 0.0
+    },
+    {
+      "body": 13,
+      "kind": "driver",
+      "center_x_z": [
+        8,
+        131
+      ],
+      "start_y": 141.6,
+      "radius_mm": 1.75,
+      "height_mm": 36.4,
+      "intersection_volume_mm3": 76.96902001294995
+    },
+    {
+      "body": 13,
+      "kind": "bolt_head",
+      "center_x_z": [
+        8,
+        131
+      ],
+      "start_y": 137.5,
+      "radius_mm": 3.5,
+      "height_mm": 4.0,
+      "intersection_volume_mm3": 0.0
+    },
+    {
+      "body": 30,
+      "kind": "driver",
+      "center_x_z": [
+        -8,
+        115
+      ],
+      "start_y": -141.6,
+      "radius_mm": 1.75,
+      "height_mm": 36.4,
+      "intersection_volume_mm3": 76.96902001294995
+    },
+    {
+      "body": 30,
+      "kind": "bolt_head",
+      "center_x_z": [
+        -8,
+        115
+      ],
+      "start_y": -137.5,
+      "radius_mm": 3.5,
+      "height_mm": 4.0,
+      "intersection_volume_mm3": 0.0
+    },
+    {
+      "body": 30,
+      "kind": "driver",
+      "center_x_z": [
+        -8,
+        131
+      ],
+      "start_y": -141.6,
+      "radius_mm": 1.75,
+      "height_mm": 36.4,
+      "intersection_volume_mm3": 76.96902001294995
+    },
+    {
+      "body": 30,
+      "kind": "bolt_head",
+      "center_x_z": [
+        -8,
+        131
+      ],
+      "start_y": -137.5,
+      "radius_mm": 3.5,
+      "height_mm": 4.0,
+      "intersection_volume_mm3": 0.0
+    },
+    {
+      "body": 30,
+      "kind": "driver",
+      "center_x_z": [
+        8,
+        115
+      ],
+      "start_y": -141.6,
+      "radius_mm": 1.75,
+      "height_mm": 36.4,
+      "intersection_volume_mm3": 76.96902001294995
+    },
+    {
+      "body": 30,
+      "kind": "bolt_head",
+      "center_x_z": [
+        8,
+        115
+      ],
+      "start_y": -137.5,
+      "radius_mm": 3.5,
+      "height_mm": 4.0,
+      "intersection_volume_mm3": 0.0
+    },
+    {
+      "body": 30,
+      "kind": "driver",
+      "center_x_z": [
+        8,
+        131
+      ],
+      "start_y": -141.6,
+      "radius_mm": 1.75,
+      "height_mm": 36.4,
+      "intersection_volume_mm3": 76.96902001294994
+    },
+    {
+      "body": 30,
+      "kind": "bolt_head",
+      "center_x_z": [
+        8,
+        131
+      ],
+      "start_y": -137.5,
+      "radius_mm": 3.5,
+      "height_mm": 4.0,
+      "intersection_volume_mm3": 0.0
+    }
+  ]
+}

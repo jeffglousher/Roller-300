@@ -1,0 +1,3568 @@
+{
+  "source_model_sha256": "6e106017a6bd124f9aebd33b18e59397928dbfb9fceca2cfca48a01ec56db760",
+  "basis": "Native CAD replay and STEP/STL exports; nominal CAD clearances, not physical tolerances or load qualification.",
+  "print_scope": "Unpowered one-drive test in the roof-open section, not the complete barrel.",
+  "bodies": [
+    {
+      "body_id": 9,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -24.537311553955078,
+          65.25,
+          98.46268463134766
+        ],
+        [
+          24.537311553955078,
+          79.75,
+          147.5373077392578
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 10,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          36.59410095214844,
+          62.75,
+          109.92184448242188
+        ],
+        [
+          62.75041198730469,
+          79.75,
+          137.0
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 13,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -114.97511291503906,
+          110.0,
+          8.00622272491455
+        ],
+        [
+          115.0,
+          150.0,
+          237.9937744140625
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 26,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -24.537311553955078,
+          -79.75,
+          98.46268463134766
+        ],
+        [
+          24.537311553955078,
+          -65.25,
+          147.5373077392578
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 27,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          36.59410095214844,
+          -79.75,
+          109.92184448242188
+        ],
+        [
+          62.75041198730469,
+          -62.75,
+          137.0
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 30,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -114.97511291503906,
+          -150.0,
+          8.00622272491455
+        ],
+        [
+          115.0,
+          -110.0,
+          237.9937744140625
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 32,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -80.0,
+          -105.0,
+          43.024864196777344
+        ],
+        [
+          80.0,
+          105.0,
+          202.97544860839844
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 301,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          33.07229995727539,
+          42.099998474121094,
+          106.4000015258789
+        ],
+        [
+          66.27230072021484,
+          53.79999923706055,
+          141.5
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 309,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          33.07229995727539,
+          -53.79999923706055,
+          106.4000015258789
+        ],
+        [
+          66.27230072021484,
+          -42.099998474121094,
+          141.5
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 367,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          31.372299194335938,
+          18.700000762939453,
+          133.8000030517578
+        ],
+        [
+          67.97229766845703,
+          25.700000762939453,
+          143.25
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 368,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          31.372299194335938,
+          -25.700000762939453,
+          133.8000030517578
+        ],
+        [
+          67.97229766845703,
+          -18.700000762939453,
+          143.25
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 373,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -20.0,
+          0.0,
+          43.002723693847656
+        ],
+        [
+          79.9913330078125,
+          105.0,
+          145.0
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 376,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -22.0,
+          105.0,
+          101.0
+        ],
+        [
+          22.0,
+          109.5,
+          145.0
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 377,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          23.67246437072754,
+          61.0,
+          97.02031707763672
+        ],
+        [
+          75.6640625,
+          65.69999694824219,
+          148.99847412109375
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 378,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          23.67246437072754,
+          88.0,
+          97.02031707763672
+        ],
+        [
+          75.6640625,
+          92.69999694824219,
+          148.99847412109375
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 380,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -22.0,
+          -109.5,
+          101.0
+        ],
+        [
+          22.0,
+          -105.0,
+          145.0
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 381,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          23.67246437072754,
+          -65.69999694824219,
+          97.02031707763672
+        ],
+        [
+          75.6640625,
+          -61.0,
+          148.99847412109375
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 382,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          23.67246437072754,
+          -92.69999694824219,
+          97.02031707763672
+        ],
+        [
+          75.6640625,
+          -88.0,
+          148.99847412109375
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 383,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -22.0,
+          15.0,
+          101.0
+        ],
+        [
+          22.0,
+          19.5,
+          145.0
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 384,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          -22.0,
+          -19.5,
+          101.0
+        ],
+        [
+          22.0,
+          -15.0,
+          145.0
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 437,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          25.5,
+          0.0,
+          87.0
+        ],
+        [
+          69.81439208984375,
+          90.0,
+          143.14208984375
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "body_id": 440,
+      "valid_brep": true,
+      "solid_count": 1,
+      "watertight_mesh": true,
+      "mesh_components": 1,
+      "bounds_mm": [
+        [
+          25.5,
+          -90.0,
+          87.0
+        ],
+        [
+          69.81439208984375,
+          0.0,
+          143.14208984375
+        ]
+      ],
+      "passed": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "retainer seats",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "body_id": 376,
+      "parent": 32
+    },
+    {
+      "name": "retainer seats",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "body_id": 380,
+      "parent": 32
+    },
+    {
+      "name": "retainer seats",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "body_id": 383,
+      "parent": 32
+    },
+    {
+      "name": "retainer seats",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "body_id": 384,
+      "parent": 32
+    },
+    {
+      "name": "retainer seats",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "body_id": 377,
+      "parent": 437
+    },
+    {
+      "name": "retainer seats",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "body_id": 378,
+      "parent": 437
+    },
+    {
+      "name": "retainer seats",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "body_id": 381,
+      "parent": 440
+    },
+    {
+      "name": "retainer seats",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "body_id": 382,
+      "parent": 440
+    },
+    {
+      "name": "carrier captive nut insertion",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "anchor": [
+        32.5,
+        12
+      ],
+      "insertion": "10 mm lift from below; carrier removed"
+    },
+    {
+      "name": "carrier captive nut insertion",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "anchor": [
+        60,
+        50
+      ],
+      "insertion": "10 mm horizontal from inner cavity"
+    },
+    {
+      "name": "carrier captive nut insertion",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "anchor": [
+        30.5,
+        79
+      ],
+      "insertion": "10 mm lift from below; carrier removed"
+    },
+    {
+      "name": "carrier translation",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": -2
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "metal horn",
+      "side": "L",
+      "dx_mm": -2
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "horn flange",
+      "side": "L",
+      "dx_mm": -2
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "shaft clamp",
+      "side": "L",
+      "dx_mm": -2
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "coupler race land",
+      "side": "L",
+      "dx_mm": -2
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "24T pulley",
+      "side": "L",
+      "dx_mm": -2
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "input collar screw envelope",
+      "side": "L",
+      "dx_mm": -2
+    },
+    {
+      "name": "carrier translation",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": -1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "metal horn",
+      "side": "L",
+      "dx_mm": -1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "horn flange",
+      "side": "L",
+      "dx_mm": -1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "shaft clamp",
+      "side": "L",
+      "dx_mm": -1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "coupler race land",
+      "side": "L",
+      "dx_mm": -1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "24T pulley",
+      "side": "L",
+      "dx_mm": -1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "input collar screw envelope",
+      "side": "L",
+      "dx_mm": -1
+    },
+    {
+      "name": "carrier translation",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 0
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "metal horn",
+      "side": "L",
+      "dx_mm": 0
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "horn flange",
+      "side": "L",
+      "dx_mm": 0
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "shaft clamp",
+      "side": "L",
+      "dx_mm": 0
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "coupler race land",
+      "side": "L",
+      "dx_mm": 0
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "24T pulley",
+      "side": "L",
+      "dx_mm": 0
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "input collar screw envelope",
+      "side": "L",
+      "dx_mm": 0
+    },
+    {
+      "name": "carrier translation",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "metal horn",
+      "side": "L",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "horn flange",
+      "side": "L",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "shaft clamp",
+      "side": "L",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "coupler race land",
+      "side": "L",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "24T pulley",
+      "side": "L",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "input collar screw envelope",
+      "side": "L",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "carrier translation",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "metal horn",
+      "side": "L",
+      "dx_mm": 1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "horn flange",
+      "side": "L",
+      "dx_mm": 1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "shaft clamp",
+      "side": "L",
+      "dx_mm": 1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "coupler race land",
+      "side": "L",
+      "dx_mm": 1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "24T pulley",
+      "side": "L",
+      "dx_mm": 1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "input collar screw envelope",
+      "side": "L",
+      "dx_mm": 1
+    },
+    {
+      "name": "servo vertical insertion",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": -2,
+      "scope": "case/ear envelopes; excludes cable and horn"
+    },
+    {
+      "name": "servo vertical insertion",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 0,
+      "scope": "case/ear envelopes; excludes cable and horn"
+    },
+    {
+      "name": "servo vertical insertion",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 1,
+      "scope": "case/ear envelopes; excludes cable and horn"
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": -2,
+      "anchor": [
+        32.5,
+        12
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": -2,
+      "anchor": [
+        32.5,
+        12
+      ],
+      "full_frame_overlap_mm3": 0.0,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": -2,
+      "anchor": [
+        60,
+        50
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": -2,
+      "anchor": [
+        60,
+        50
+      ],
+      "full_frame_overlap_mm3": 0.0,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": -2,
+      "anchor": [
+        30.5,
+        79
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": -2,
+      "anchor": [
+        30.5,
+        79
+      ],
+      "full_frame_overlap_mm3": 56.548667764616276,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 0,
+      "anchor": [
+        32.5,
+        12
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 0,
+      "anchor": [
+        32.5,
+        12
+      ],
+      "full_frame_overlap_mm3": 0.0,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 0,
+      "anchor": [
+        60,
+        50
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 0,
+      "anchor": [
+        60,
+        50
+      ],
+      "full_frame_overlap_mm3": 0.0,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 0,
+      "anchor": [
+        30.5,
+        79
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 0,
+      "anchor": [
+        30.5,
+        79
+      ],
+      "full_frame_overlap_mm3": 56.548667764616276,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 1,
+      "anchor": [
+        32.5,
+        12
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 1,
+      "anchor": [
+        32.5,
+        12
+      ],
+      "full_frame_overlap_mm3": 0.0,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 1,
+      "anchor": [
+        60,
+        50
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 1,
+      "anchor": [
+        60,
+        50
+      ],
+      "full_frame_overlap_mm3": 0.0,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 1,
+      "anchor": [
+        30.5,
+        79
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 1,
+      "anchor": [
+        30.5,
+        79
+      ],
+      "full_frame_overlap_mm3": 56.548667764616276,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier captive nut insertion",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "anchor": [
+        32.5,
+        -12
+      ],
+      "insertion": "10 mm lift from below; carrier removed"
+    },
+    {
+      "name": "carrier captive nut insertion",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "anchor": [
+        60,
+        -50
+      ],
+      "insertion": "10 mm horizontal from inner cavity"
+    },
+    {
+      "name": "carrier captive nut insertion",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "anchor": [
+        30.5,
+        -79
+      ],
+      "insertion": "10 mm lift from below; carrier removed"
+    },
+    {
+      "name": "carrier translation",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": -2
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "metal horn",
+      "side": "R",
+      "dx_mm": -2
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "horn flange",
+      "side": "R",
+      "dx_mm": -2
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "shaft clamp",
+      "side": "R",
+      "dx_mm": -2
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "coupler race land",
+      "side": "R",
+      "dx_mm": -2
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "24T pulley",
+      "side": "R",
+      "dx_mm": -2
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "input collar screw envelope",
+      "side": "R",
+      "dx_mm": -2
+    },
+    {
+      "name": "carrier translation",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": -1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "metal horn",
+      "side": "R",
+      "dx_mm": -1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "horn flange",
+      "side": "R",
+      "dx_mm": -1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "shaft clamp",
+      "side": "R",
+      "dx_mm": -1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "coupler race land",
+      "side": "R",
+      "dx_mm": -1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "24T pulley",
+      "side": "R",
+      "dx_mm": -1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "input collar screw envelope",
+      "side": "R",
+      "dx_mm": -1
+    },
+    {
+      "name": "carrier translation",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 0
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "metal horn",
+      "side": "R",
+      "dx_mm": 0
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "horn flange",
+      "side": "R",
+      "dx_mm": 0
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "shaft clamp",
+      "side": "R",
+      "dx_mm": 0
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "coupler race land",
+      "side": "R",
+      "dx_mm": 0
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "24T pulley",
+      "side": "R",
+      "dx_mm": 0
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "input collar screw envelope",
+      "side": "R",
+      "dx_mm": 0
+    },
+    {
+      "name": "carrier translation",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "metal horn",
+      "side": "R",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "horn flange",
+      "side": "R",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "shaft clamp",
+      "side": "R",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "coupler race land",
+      "side": "R",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "24T pulley",
+      "side": "R",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "input collar screw envelope",
+      "side": "R",
+      "dx_mm": 0.5
+    },
+    {
+      "name": "carrier translation",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "metal horn",
+      "side": "R",
+      "dx_mm": 1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "horn flange",
+      "side": "R",
+      "dx_mm": 1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "shaft clamp",
+      "side": "R",
+      "dx_mm": 1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "coupler race land",
+      "side": "R",
+      "dx_mm": 1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "24T pulley",
+      "side": "R",
+      "dx_mm": 1
+    },
+    {
+      "name": "input rotation",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "part": "input collar screw envelope",
+      "side": "R",
+      "dx_mm": 1
+    },
+    {
+      "name": "servo vertical insertion",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": -2,
+      "scope": "case/ear envelopes; excludes cable and horn"
+    },
+    {
+      "name": "servo vertical insertion",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 0,
+      "scope": "case/ear envelopes; excludes cable and horn"
+    },
+    {
+      "name": "servo vertical insertion",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 1,
+      "scope": "case/ear envelopes; excludes cable and horn"
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": -2,
+      "anchor": [
+        32.5,
+        -12
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": -2,
+      "anchor": [
+        32.5,
+        -12
+      ],
+      "full_frame_overlap_mm3": 0.0,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": -2,
+      "anchor": [
+        60,
+        -50
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": -2,
+      "anchor": [
+        60,
+        -50
+      ],
+      "full_frame_overlap_mm3": 0.0,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": -2,
+      "anchor": [
+        30.5,
+        -79
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": -2,
+      "anchor": [
+        30.5,
+        -79
+      ],
+      "full_frame_overlap_mm3": 56.548667764616276,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 0,
+      "anchor": [
+        32.5,
+        -12
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 0,
+      "anchor": [
+        32.5,
+        -12
+      ],
+      "full_frame_overlap_mm3": 0.0,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 0,
+      "anchor": [
+        60,
+        -50
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 0,
+      "anchor": [
+        60,
+        -50
+      ],
+      "full_frame_overlap_mm3": 0.0,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 0,
+      "anchor": [
+        30.5,
+        -79
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 0,
+      "anchor": [
+        30.5,
+        -79
+      ],
+      "full_frame_overlap_mm3": 56.548667764616276,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 1,
+      "anchor": [
+        32.5,
+        -12
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 1,
+      "anchor": [
+        32.5,
+        -12
+      ],
+      "full_frame_overlap_mm3": 0.0,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 1,
+      "anchor": [
+        60,
+        -50
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 1,
+      "anchor": [
+        60,
+        -50
+      ],
+      "full_frame_overlap_mm3": 0.0,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "carrier mounting screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 1,
+      "anchor": [
+        30.5,
+        -79
+      ],
+      "hardware": "M4x14 ISO7380-1; DIN125 washer 9x4.3x0.8; nut AF7 height3.2"
+    },
+    {
+      "name": "roof-open fixture mounting screw driver access",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 1,
+      "anchor": [
+        30.5,
+        -79
+      ],
+      "full_frame_overlap_mm3": 56.548667764616276,
+      "limitation": "Existing upper guard blocks the rear straight driver in the whole frame; service access remains held for the barrel revision."
+    },
+    {
+      "name": "rigid pulley clears metal hub",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L"
+    },
+    {
+      "name": "rigid pulley clears wheel shaft",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L"
+    },
+    {
+      "name": "M4x16 recessed screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 0,
+      "thread_engagement_mm": 6.2,
+      "remaining_pulley_floor_mm": 9.8
+    },
+    {
+      "name": "metal hub tapped hole centers align",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 0
+    },
+    {
+      "name": "metal surrounds mounting thread engagement",
+      "side": "L",
+      "hole": 0,
+      "material_fraction": 0.9963350524724766,
+      "passed": true
+    },
+    {
+      "name": "pulley mounting screw bench driver access",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 0,
+      "assembly": "Bolt pulley to hub on bench before fitting stationary center bearing"
+    },
+    {
+      "name": "M4x16 recessed screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 1,
+      "thread_engagement_mm": 6.2,
+      "remaining_pulley_floor_mm": 9.8
+    },
+    {
+      "name": "metal hub tapped hole centers align",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 1
+    },
+    {
+      "name": "metal surrounds mounting thread engagement",
+      "side": "L",
+      "hole": 1,
+      "material_fraction": 0.9897725802239592,
+      "passed": true
+    },
+    {
+      "name": "pulley mounting screw bench driver access",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 1,
+      "assembly": "Bolt pulley to hub on bench before fitting stationary center bearing"
+    },
+    {
+      "name": "M4x16 recessed screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 2,
+      "thread_engagement_mm": 6.2,
+      "remaining_pulley_floor_mm": 9.8
+    },
+    {
+      "name": "metal hub tapped hole centers align",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 2
+    },
+    {
+      "name": "metal surrounds mounting thread engagement",
+      "side": "L",
+      "hole": 2,
+      "material_fraction": 0.9897766985053905,
+      "passed": true
+    },
+    {
+      "name": "pulley mounting screw bench driver access",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 2,
+      "assembly": "Bolt pulley to hub on bench before fitting stationary center bearing"
+    },
+    {
+      "name": "M4x16 recessed screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 3,
+      "thread_engagement_mm": 6.2,
+      "remaining_pulley_floor_mm": 9.8
+    },
+    {
+      "name": "metal hub tapped hole centers align",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 3
+    },
+    {
+      "name": "metal surrounds mounting thread engagement",
+      "side": "L",
+      "hole": 3,
+      "material_fraction": 0.9963348223207658,
+      "passed": true
+    },
+    {
+      "name": "pulley mounting screw bench driver access",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 3,
+      "assembly": "Bolt pulley to hub on bench before fitting stationary center bearing"
+    },
+    {
+      "name": "rigid output full rotation clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": -2,
+      "part": "metal hub"
+    },
+    {
+      "name": "rigid output full rotation clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": -2,
+      "part": "rigid output pulley"
+    },
+    {
+      "name": "rigid output full rotation clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": -1,
+      "part": "metal hub"
+    },
+    {
+      "name": "rigid output full rotation clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": -1,
+      "part": "rigid output pulley"
+    },
+    {
+      "name": "rigid output full rotation clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 0,
+      "part": "metal hub"
+    },
+    {
+      "name": "rigid output full rotation clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 0,
+      "part": "rigid output pulley"
+    },
+    {
+      "name": "rigid output full rotation clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 0.5,
+      "part": "metal hub"
+    },
+    {
+      "name": "rigid output full rotation clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 0.5,
+      "part": "rigid output pulley"
+    },
+    {
+      "name": "rigid output full rotation clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 1,
+      "part": "metal hub"
+    },
+    {
+      "name": "rigid output full rotation clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 1,
+      "part": "rigid output pulley"
+    },
+    {
+      "name": "output assembly clears retained axial stops",
+      "overlap_mm3": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L"
+    },
+    {
+      "name": "rigid pulley clears metal hub",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R"
+    },
+    {
+      "name": "rigid pulley clears wheel shaft",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R"
+    },
+    {
+      "name": "M4x16 recessed screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 0,
+      "thread_engagement_mm": 6.2,
+      "remaining_pulley_floor_mm": 9.8
+    },
+    {
+      "name": "metal hub tapped hole centers align",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 0
+    },
+    {
+      "name": "metal surrounds mounting thread engagement",
+      "side": "R",
+      "hole": 0,
+      "material_fraction": 0.9963350627819586,
+      "passed": true
+    },
+    {
+      "name": "pulley mounting screw bench driver access",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 0,
+      "assembly": "Bolt pulley to hub on bench before fitting stationary center bearing"
+    },
+    {
+      "name": "M4x16 recessed screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 1,
+      "thread_engagement_mm": 6.2,
+      "remaining_pulley_floor_mm": 9.8
+    },
+    {
+      "name": "metal hub tapped hole centers align",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 1
+    },
+    {
+      "name": "metal surrounds mounting thread engagement",
+      "side": "R",
+      "hole": 1,
+      "material_fraction": 0.9897639100575479,
+      "passed": true
+    },
+    {
+      "name": "pulley mounting screw bench driver access",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 1,
+      "assembly": "Bolt pulley to hub on bench before fitting stationary center bearing"
+    },
+    {
+      "name": "M4x16 recessed screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 2,
+      "thread_engagement_mm": 6.2,
+      "remaining_pulley_floor_mm": 9.8
+    },
+    {
+      "name": "metal hub tapped hole centers align",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 2
+    },
+    {
+      "name": "metal surrounds mounting thread engagement",
+      "side": "R",
+      "hole": 2,
+      "material_fraction": 0.9897702721743215,
+      "passed": true
+    },
+    {
+      "name": "pulley mounting screw bench driver access",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 2,
+      "assembly": "Bolt pulley to hub on bench before fitting stationary center bearing"
+    },
+    {
+      "name": "M4x16 recessed screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 3,
+      "thread_engagement_mm": 6.2,
+      "remaining_pulley_floor_mm": 9.8
+    },
+    {
+      "name": "metal hub tapped hole centers align",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 3
+    },
+    {
+      "name": "metal surrounds mounting thread engagement",
+      "side": "R",
+      "hole": 3,
+      "material_fraction": 0.9963350547089836,
+      "passed": true
+    },
+    {
+      "name": "pulley mounting screw bench driver access",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 3,
+      "assembly": "Bolt pulley to hub on bench before fitting stationary center bearing"
+    },
+    {
+      "name": "rigid output full rotation clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": -2,
+      "part": "metal hub"
+    },
+    {
+      "name": "rigid output full rotation clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": -2,
+      "part": "rigid output pulley"
+    },
+    {
+      "name": "rigid output full rotation clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": -1,
+      "part": "metal hub"
+    },
+    {
+      "name": "rigid output full rotation clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": -1,
+      "part": "rigid output pulley"
+    },
+    {
+      "name": "rigid output full rotation clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 0,
+      "part": "metal hub"
+    },
+    {
+      "name": "rigid output full rotation clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 0,
+      "part": "rigid output pulley"
+    },
+    {
+      "name": "rigid output full rotation clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 0.5,
+      "part": "metal hub"
+    },
+    {
+      "name": "rigid output full rotation clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 0.5,
+      "part": "rigid output pulley"
+    },
+    {
+      "name": "rigid output full rotation clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 1,
+      "part": "metal hub"
+    },
+    {
+      "name": "rigid output full rotation clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 1,
+      "part": "rigid output pulley"
+    },
+    {
+      "name": "output assembly clears retained axial stops",
+      "overlap_mm3": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R"
+    },
+    {
+      "name": "bench-assembled rigid hub and pulley lower into roof-open fixture",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "assembly": "Input carrier removed; wheel shaft inserted through hub afterwards"
+    },
+    {
+      "name": "obsolete long pulley sleeve removed",
+      "body_id": 9,
+      "pulley_axial_length_mm": 14.5,
+      "passed": true
+    },
+    {
+      "name": "obsolete long pulley sleeve removed",
+      "body_id": 26,
+      "pulley_axial_length_mm": 14.5,
+      "passed": true
+    },
+    {
+      "name": "purchased horn clears printed adapter",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L"
+    },
+    {
+      "name": "horn adapter clears shaft and input bearings",
+      "overlap_mm3": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L"
+    },
+    {
+      "name": "metal horn clears supplied drawing case envelope",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L"
+    },
+    {
+      "name": "servo center screw head clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "maximum_head_height_mm": 1.65,
+      "shaft_gap_mm": 0.25
+    },
+    {
+      "name": "servo center screw accessible before input shaft",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "assembly": "Fit center retaining screw through adapter bore before inserting the independent shaft"
+    },
+    {
+      "name": "raised M3 shaft pinch screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L"
+    },
+    {
+      "name": "horn M4x6 recessed screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 0,
+      "thread_engagement_mm": 2.5
+    },
+    {
+      "name": "horn screws clear raised shaft pinch screw",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 0
+    },
+    {
+      "name": "manufacturer STEP tapped centers match adapter",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 0
+    },
+    {
+      "name": "horn metal thread engagement land",
+      "side": "L",
+      "hole": 0,
+      "material_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "name": "horn mounting screw bench driver access",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 0
+    },
+    {
+      "name": "horn M4x6 recessed screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 1,
+      "thread_engagement_mm": 2.5
+    },
+    {
+      "name": "horn screws clear raised shaft pinch screw",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 1
+    },
+    {
+      "name": "manufacturer STEP tapped centers match adapter",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 1
+    },
+    {
+      "name": "horn metal thread engagement land",
+      "side": "L",
+      "hole": 1,
+      "material_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "name": "horn mounting screw bench driver access",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 1
+    },
+    {
+      "name": "horn M4x6 recessed screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 2,
+      "thread_engagement_mm": 2.5
+    },
+    {
+      "name": "horn screws clear raised shaft pinch screw",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 2
+    },
+    {
+      "name": "manufacturer STEP tapped centers match adapter",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 2
+    },
+    {
+      "name": "horn metal thread engagement land",
+      "side": "L",
+      "hole": 2,
+      "material_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "name": "horn mounting screw bench driver access",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 2
+    },
+    {
+      "name": "horn M4x6 recessed screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 3,
+      "thread_engagement_mm": 2.5
+    },
+    {
+      "name": "horn screws clear raised shaft pinch screw",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 3
+    },
+    {
+      "name": "manufacturer STEP tapped centers match adapter",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 3
+    },
+    {
+      "name": "horn metal thread engagement land",
+      "side": "L",
+      "hole": 3,
+      "material_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "name": "horn mounting screw bench driver access",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "hole": 3
+    },
+    {
+      "name": "complete horn adapter assembly stationary clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": -2
+    },
+    {
+      "name": "complete horn adapter assembly stationary clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 0
+    },
+    {
+      "name": "complete horn adapter assembly stationary clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx_mm": 1
+    },
+    {
+      "name": "purchased horn clears printed adapter",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R"
+    },
+    {
+      "name": "horn adapter clears shaft and input bearings",
+      "overlap_mm3": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R"
+    },
+    {
+      "name": "metal horn clears supplied drawing case envelope",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R"
+    },
+    {
+      "name": "servo center screw head clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "maximum_head_height_mm": 1.65,
+      "shaft_gap_mm": 0.25
+    },
+    {
+      "name": "servo center screw accessible before input shaft",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "assembly": "Fit center retaining screw through adapter bore before inserting the independent shaft"
+    },
+    {
+      "name": "raised M3 shaft pinch screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R"
+    },
+    {
+      "name": "horn M4x6 recessed screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 0,
+      "thread_engagement_mm": 2.5
+    },
+    {
+      "name": "horn screws clear raised shaft pinch screw",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 0
+    },
+    {
+      "name": "manufacturer STEP tapped centers match adapter",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 0
+    },
+    {
+      "name": "horn metal thread engagement land",
+      "side": "R",
+      "hole": 0,
+      "material_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "name": "horn mounting screw bench driver access",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 0
+    },
+    {
+      "name": "horn M4x6 recessed screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 1,
+      "thread_engagement_mm": 2.5
+    },
+    {
+      "name": "horn screws clear raised shaft pinch screw",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 1
+    },
+    {
+      "name": "manufacturer STEP tapped centers match adapter",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 1
+    },
+    {
+      "name": "horn metal thread engagement land",
+      "side": "R",
+      "hole": 1,
+      "material_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "name": "horn mounting screw bench driver access",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 1
+    },
+    {
+      "name": "horn M4x6 recessed screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 2,
+      "thread_engagement_mm": 2.5
+    },
+    {
+      "name": "horn screws clear raised shaft pinch screw",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 2
+    },
+    {
+      "name": "manufacturer STEP tapped centers match adapter",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 2
+    },
+    {
+      "name": "horn metal thread engagement land",
+      "side": "R",
+      "hole": 2,
+      "material_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "name": "horn mounting screw bench driver access",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 2
+    },
+    {
+      "name": "horn M4x6 recessed screw fit",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 3,
+      "thread_engagement_mm": 2.5
+    },
+    {
+      "name": "horn screws clear raised shaft pinch screw",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 3
+    },
+    {
+      "name": "manufacturer STEP tapped centers match adapter",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 3
+    },
+    {
+      "name": "horn metal thread engagement land",
+      "side": "R",
+      "hole": 3,
+      "material_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "name": "horn mounting screw bench driver access",
+      "overlap_mm3": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "hole": 3
+    },
+    {
+      "name": "complete horn adapter assembly stationary clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": -2
+    },
+    {
+      "name": "complete horn adapter assembly stationary clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 0
+    },
+    {
+      "name": "complete horn adapter assembly stationary clearance",
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx_mm": 1
+    }
+  ],
+  "passed": true,
+  "source_sha256": "275c0ee72ed4d664b6b3e345c6845327a1078b50f98131b0f49352d2464567da"
+}

@@ -1,0 +1,1245 @@
+{
+  "date": "2026-10-07",
+  "source_sha256": "bf4561cd9261083763b1f117bf14007dcaf6202b5efd19679aec39a4e36bd52b",
+  "scope": "Current native history/register/BOM fitment inspection; no strength or physical receiving qualification.",
+  "active_shell32_extrudes": [
+    {
+      "feature_id": 565,
+      "operation": "join",
+      "sketch_name": "S02 L wheel bearing boss",
+      "extent": {
+        "type": "distance",
+        "distance": 8.0
+      }
+    },
+    {
+      "feature_id": 568,
+      "operation": "cut",
+      "sketch_name": "S02 L wheel bearing seat",
+      "extent": {
+        "type": "distance",
+        "distance": 8.0
+      }
+    },
+    {
+      "feature_id": 571,
+      "operation": "join",
+      "sketch_name": "S02 L wheel bearing web",
+      "extent": {
+        "type": "distance",
+        "distance": 8.0
+      }
+    },
+    {
+      "feature_id": 574,
+      "operation": "join",
+      "sketch_name": "S02 L input bearing boss",
+      "extent": {
+        "type": "distance",
+        "distance": 7.0
+      }
+    },
+    {
+      "feature_id": 577,
+      "operation": "cut",
+      "sketch_name": "S02 L input bearing seat",
+      "extent": {
+        "type": "distance",
+        "distance": 7.0
+      }
+    },
+    {
+      "feature_id": 580,
+      "operation": "join",
+      "sketch_name": "S02 L input bearing web",
+      "extent": {
+        "type": "distance",
+        "distance": 7.0
+      }
+    },
+    {
+      "feature_id": 583,
+      "operation": "join",
+      "sketch_name": "S02 L servo foot",
+      "extent": {
+        "type": "distance",
+        "distance": 40.5
+      }
+    },
+    {
+      "feature_id": 586,
+      "operation": "join",
+      "sketch_name": "S02 R wheel bearing boss",
+      "extent": {
+        "type": "distance",
+        "distance": 8.0
+      }
+    },
+    {
+      "feature_id": 589,
+      "operation": "cut",
+      "sketch_name": "S02 R wheel bearing seat",
+      "extent": {
+        "type": "distance",
+        "distance": 8.0
+      }
+    },
+    {
+      "feature_id": 592,
+      "operation": "join",
+      "sketch_name": "S02 R wheel bearing web",
+      "extent": {
+        "type": "distance",
+        "distance": 8.0
+      }
+    },
+    {
+      "feature_id": 595,
+      "operation": "join",
+      "sketch_name": "S02 R input bearing boss",
+      "extent": {
+        "type": "distance",
+        "distance": 7.0
+      }
+    },
+    {
+      "feature_id": 598,
+      "operation": "cut",
+      "sketch_name": "S02 R input bearing seat",
+      "extent": {
+        "type": "distance",
+        "distance": 7.0
+      }
+    },
+    {
+      "feature_id": 601,
+      "operation": "join",
+      "sketch_name": "S02 R input bearing web",
+      "extent": {
+        "type": "distance",
+        "distance": 7.0
+      }
+    },
+    {
+      "feature_id": 604,
+      "operation": "join",
+      "sketch_name": "S02 R servo foot",
+      "extent": {
+        "type": "distance",
+        "distance": 40.5
+      }
+    },
+    {
+      "feature_id": 607,
+      "operation": "join",
+      "sketch_name": "S02 L input spine",
+      "extent": {
+        "type": "distance",
+        "distance": 47.0
+      }
+    },
+    {
+      "feature_id": 610,
+      "operation": "join",
+      "sketch_name": "S02 L inboard input bearing boss",
+      "extent": {
+        "type": "distance",
+        "distance": 7.0
+      }
+    },
+    {
+      "feature_id": 613,
+      "operation": "cut",
+      "sketch_name": "S02 L inboard input bearing seat",
+      "extent": {
+        "type": "distance",
+        "distance": 7.0
+      }
+    },
+    {
+      "feature_id": 619,
+      "operation": "join",
+      "sketch_name": "S02 R input spine",
+      "extent": {
+        "type": "distance",
+        "distance": 47.0
+      }
+    },
+    {
+      "feature_id": 622,
+      "operation": "join",
+      "sketch_name": "S02 R inboard input bearing boss",
+      "extent": {
+        "type": "distance",
+        "distance": 7.0
+      }
+    },
+    {
+      "feature_id": 625,
+      "operation": "cut",
+      "sketch_name": "S02 R inboard input bearing seat",
+      "extent": {
+        "type": "distance",
+        "distance": 7.0
+      }
+    },
+    {
+      "feature_id": 836,
+      "operation": "join",
+      "sketch_name": "S04 L wheel pulley cradle",
+      "extent": {
+        "type": "distance",
+        "distance": 14.5
+      }
+    },
+    {
+      "feature_id": 842,
+      "operation": "join",
+      "sketch_name": "S04 R wheel pulley cradle",
+      "extent": {
+        "type": "distance",
+        "distance": 14.5
+      }
+    },
+    {
+      "feature_id": 848,
+      "operation": "join",
+      "sketch_name": "S04 L belt cover",
+      "extent": {
+        "type": "distance",
+        "distance": 36.0
+      }
+    },
+    {
+      "feature_id": 851,
+      "operation": "join",
+      "sketch_name": "S04 R belt cover",
+      "extent": {
+        "type": "distance",
+        "distance": 36.0
+      }
+    },
+    {
+      "feature_id": 886,
+      "operation": "join",
+      "sketch_name": "S07 L inboard bearing root repair",
+      "extent": {
+        "type": "distance",
+        "distance": 7.0
+      }
+    },
+    {
+      "feature_id": 888,
+      "operation": "join",
+      "sketch_name": "S07 R inboard bearing root repair",
+      "extent": {
+        "type": "distance",
+        "distance": 7.0
+      }
+    },
+    {
+      "feature_id": 892,
+      "operation": "join",
+      "sketch_name": "S07 L servo cradle root",
+      "extent": {
+        "type": "distance",
+        "distance": 37.5
+      }
+    },
+    {
+      "feature_id": 894,
+      "operation": "join",
+      "sketch_name": "S07 R servo cradle root",
+      "extent": {
+        "type": "distance",
+        "distance": 37.5
+      }
+    },
+    {
+      "feature_id": 898,
+      "operation": "cut",
+      "sketch_name": "S07 L servo ear insertion clearance",
+      "extent": {
+        "type": "distance",
+        "distance": 15.8
+      }
+    },
+    {
+      "feature_id": 900,
+      "operation": "join",
+      "sketch_name": "S07 L servo ear mounting pads",
+      "extent": {
+        "type": "distance",
+        "distance": 5.0
+      }
+    },
+    {
+      "feature_id": 902,
+      "operation": "cut",
+      "sketch_name": "S07 L servo ear M3 clearance provisional",
+      "extent": {
+        "type": "distance",
+        "distance": 5.0
+      }
+    },
+    {
+      "feature_id": 907,
+      "operation": "cut",
+      "sketch_name": "S07 R servo ear insertion clearance",
+      "extent": {
+        "type": "distance",
+        "distance": 15.8
+      }
+    },
+    {
+      "feature_id": 909,
+      "operation": "join",
+      "sketch_name": "S07 R servo ear mounting pads",
+      "extent": {
+        "type": "distance",
+        "distance": 5.0
+      }
+    },
+    {
+      "feature_id": 911,
+      "operation": "cut",
+      "sketch_name": "S07 R servo ear M3 clearance provisional",
+      "extent": {
+        "type": "distance",
+        "distance": 5.0
+      }
+    },
+    {
+      "feature_id": 916,
+      "operation": "cut",
+      "sketch_name": "S07 open both cradles for vertical servo insertion",
+      "extent": {
+        "type": "distance",
+        "distance": 10.2
+      }
+    },
+    {
+      "feature_id": 1058,
+      "operation": "join",
+      "sketch_name": "S10 L mouth bearing M3 mounting pads",
+      "extent": {
+        "type": "distance",
+        "distance": 8.0
+      }
+    },
+    {
+      "feature_id": 1061,
+      "operation": "join",
+      "sketch_name": "S10 L mouth bearing outer race shoulder",
+      "extent": {
+        "type": "distance",
+        "distance": 1.0
+      }
+    },
+    {
+      "feature_id": 1066,
+      "operation": "cut",
+      "sketch_name": "S10 L mouth bearing M3 body holes",
+      "extent": {
+        "type": "distance",
+        "distance": 8.0
+      }
+    },
+    {
+      "feature_id": 1070,
+      "operation": "cut",
+      "sketch_name": "S10 L mouth bearing captive M3 nuts",
+      "extent": {
+        "type": "distance",
+        "distance": 2.8
+      }
+    },
+    {
+      "feature_id": 1076,
+      "operation": "join",
+      "sketch_name": "S10 L input inboard bearing M3 mounting pads",
+      "extent": {
+        "type": "distance",
+        "distance": 7.0
+      }
+    },
+    {
+      "feature_id": 1079,
+      "operation": "join",
+      "sketch_name": "S10 L input inboard bearing outer race shoulder",
+      "extent": {
+        "type": "distance",
+        "distance": 1.0
+      }
+    },
+    {
+      "feature_id": 1084,
+      "operation": "cut",
+      "sketch_name": "S10 L input inboard bearing M3 body holes",
+      "extent": {
+        "type": "distance",
+        "distance": 7.0
+      }
+    },
+    {
+      "feature_id": 1088,
+      "operation": "cut",
+      "sketch_name": "S10 L input inboard bearing captive M3 nuts",
+      "extent": {
+        "type": "distance",
+        "distance": 2.8
+      }
+    },
+    {
+      "feature_id": 1091,
+      "operation": "join",
+      "sketch_name": "S10 L input outboard bearing M3 mounting pads",
+      "extent": {
+        "type": "distance",
+        "distance": 7.0
+      }
+    },
+    {
+      "feature_id": 1094,
+      "operation": "join",
+      "sketch_name": "S10 L input outboard bearing outer race shoulder",
+      "extent": {
+        "type": "distance",
+        "distance": 1.0
+      }
+    },
+    {
+      "feature_id": 1099,
+      "operation": "cut",
+      "sketch_name": "S10 L input outboard bearing M3 body holes",
+      "extent": {
+        "type": "distance",
+        "distance": 7.0
+      }
+    },
+    {
+      "feature_id": 1103,
+      "operation": "cut",
+      "sketch_name": "S10 L input outboard bearing captive M3 nuts",
+      "extent": {
+        "type": "distance",
+        "distance": 2.8
+      }
+    },
+    {
+      "feature_id": 1124,
+      "operation": "join",
+      "sketch_name": "S10 R mouth bearing M3 mounting pads",
+      "extent": {
+        "type": "distance",
+        "distance": 8.0
+      }
+    },
+    {
+      "feature_id": 1127,
+      "operation": "join",
+      "sketch_name": "S10 R mouth bearing outer race shoulder",
+      "extent": {
+        "type": "distance",
+        "distance": 1.0
+      }
+    },
+    {
+      "feature_id": 1132,
+      "operation": "cut",
+      "sketch_name": "S10 R mouth bearing M3 body holes",
+      "extent": {
+        "type": "distance",
+        "distance": 8.0
+      }
+    },
+    {
+      "feature_id": 1136,
+      "operation": "cut",
+      "sketch_name": "S10 R mouth bearing captive M3 nuts",
+      "extent": {
+        "type": "distance",
+        "distance": 2.8
+      }
+    },
+    {
+      "feature_id": 1142,
+      "operation": "join",
+      "sketch_name": "S10 R input inboard bearing M3 mounting pads",
+      "extent": {
+        "type": "distance",
+        "distance": 7.0
+      }
+    },
+    {
+      "feature_id": 1145,
+      "operation": "join",
+      "sketch_name": "S10 R input inboard bearing outer race shoulder",
+      "extent": {
+        "type": "distance",
+        "distance": 1.0
+      }
+    },
+    {
+      "feature_id": 1150,
+      "operation": "cut",
+      "sketch_name": "S10 R input inboard bearing M3 body holes",
+      "extent": {
+        "type": "distance",
+        "distance": 7.0
+      }
+    },
+    {
+      "feature_id": 1154,
+      "operation": "cut",
+      "sketch_name": "S10 R input inboard bearing captive M3 nuts",
+      "extent": {
+        "type": "distance",
+        "distance": 2.8
+      }
+    },
+    {
+      "feature_id": 1157,
+      "operation": "join",
+      "sketch_name": "S10 R input outboard bearing M3 mounting pads",
+      "extent": {
+        "type": "distance",
+        "distance": 7.0
+      }
+    },
+    {
+      "feature_id": 1160,
+      "operation": "join",
+      "sketch_name": "S10 R input outboard bearing outer race shoulder",
+      "extent": {
+        "type": "distance",
+        "distance": 1.0
+      }
+    },
+    {
+      "feature_id": 1165,
+      "operation": "cut",
+      "sketch_name": "S10 R input outboard bearing M3 body holes",
+      "extent": {
+        "type": "distance",
+        "distance": 7.0
+      }
+    },
+    {
+      "feature_id": 1169,
+      "operation": "cut",
+      "sketch_name": "S10 R input outboard bearing captive M3 nuts",
+      "extent": {
+        "type": "distance",
+        "distance": 2.8
+      }
+    },
+    {
+      "feature_id": 1172,
+      "operation": "join",
+      "sketch_name": "S11 L center bearing M3 mounting pads",
+      "extent": {
+        "type": "distance",
+        "distance": 7.0
+      }
+    },
+    {
+      "feature_id": 1178,
+      "operation": "cut",
+      "sketch_name": "S11 L center bearing M3 body through holes",
+      "extent": {
+        "type": "distance",
+        "distance": 12.0
+      }
+    },
+    {
+      "feature_id": 1182,
+      "operation": "cut",
+      "sketch_name": "S11 L center bearing M3 hex nut pockets",
+      "extent": {
+        "type": "distance",
+        "distance": 2.8
+      }
+    },
+    {
+      "feature_id": 1184,
+      "operation": "cut",
+      "sketch_name": "S11 L center bearing radial nut insertion ports",
+      "extent": {
+        "type": "distance",
+        "distance": 2.8
+      }
+    },
+    {
+      "feature_id": 1190,
+      "operation": "join",
+      "sketch_name": "S11 R center bearing M3 mounting pads",
+      "extent": {
+        "type": "distance",
+        "distance": 7.0
+      }
+    },
+    {
+      "feature_id": 1196,
+      "operation": "cut",
+      "sketch_name": "S11 R center bearing M3 body through holes",
+      "extent": {
+        "type": "distance",
+        "distance": 12.0
+      }
+    },
+    {
+      "feature_id": 1200,
+      "operation": "cut",
+      "sketch_name": "S11 R center bearing M3 hex nut pockets",
+      "extent": {
+        "type": "distance",
+        "distance": 2.8
+      }
+    },
+    {
+      "feature_id": 1202,
+      "operation": "cut",
+      "sketch_name": "S11 R center bearing radial nut insertion ports",
+      "extent": {
+        "type": "distance",
+        "distance": 2.8
+      }
+    },
+    {
+      "feature_id": 1416,
+      "operation": "cut",
+      "sketch_name": "S15 L detach input supports from fixed frame",
+      "extent": {
+        "type": "distance",
+        "distance": 90.0
+      }
+    },
+    {
+      "feature_id": 1419,
+      "operation": "cut",
+      "sketch_name": "S15 R detach input supports from fixed frame",
+      "extent": {
+        "type": "distance",
+        "distance": 90.0
+      }
+    },
+    {
+      "feature_id": 1428,
+      "operation": "cut",
+      "sketch_name": "S15 L support separation clearance",
+      "extent": {
+        "type": "distance",
+        "distance": 90.0
+      }
+    },
+    {
+      "feature_id": 1431,
+      "operation": "cut",
+      "sketch_name": "S15 R support separation clearance",
+      "extent": {
+        "type": "distance",
+        "distance": 90.0
+      }
+    },
+    {
+      "feature_id": 1514,
+      "operation": "cut",
+      "sketch_name": "S15 L completed-frame bolt clearance1",
+      "extent": {
+        "type": "distance",
+        "distance": 9.1
+      }
+    },
+    {
+      "feature_id": 1517,
+      "operation": "cut",
+      "sketch_name": "S15 L completed-frame nut clearance1",
+      "extent": {
+        "type": "distance",
+        "distance": 3.4
+      }
+    },
+    {
+      "feature_id": 1520,
+      "operation": "cut",
+      "sketch_name": "S15 L completed-frame bolt clearance2",
+      "extent": {
+        "type": "distance",
+        "distance": 9.1
+      }
+    },
+    {
+      "feature_id": 1523,
+      "operation": "cut",
+      "sketch_name": "S15 L completed-frame nut clearance2",
+      "extent": {
+        "type": "distance",
+        "distance": 3.4
+      }
+    },
+    {
+      "feature_id": 1526,
+      "operation": "cut",
+      "sketch_name": "S15 L outer anchor nut loading port",
+      "extent": {
+        "type": "distance",
+        "distance": 7.6
+      }
+    },
+    {
+      "feature_id": 1529,
+      "operation": "cut",
+      "sketch_name": "S15 L completed-frame bolt clearance3",
+      "extent": {
+        "type": "distance",
+        "distance": 9.1
+      }
+    },
+    {
+      "feature_id": 1532,
+      "operation": "cut",
+      "sketch_name": "S15 L completed-frame nut clearance3",
+      "extent": {
+        "type": "distance",
+        "distance": 3.4
+      }
+    },
+    {
+      "feature_id": 1535,
+      "operation": "cut",
+      "sketch_name": "S15 R completed-frame bolt clearance1",
+      "extent": {
+        "type": "distance",
+        "distance": 9.1
+      }
+    },
+    {
+      "feature_id": 1538,
+      "operation": "cut",
+      "sketch_name": "S15 R completed-frame nut clearance1",
+      "extent": {
+        "type": "distance",
+        "distance": 3.4
+      }
+    },
+    {
+      "feature_id": 1541,
+      "operation": "cut",
+      "sketch_name": "S15 R completed-frame bolt clearance2",
+      "extent": {
+        "type": "distance",
+        "distance": 9.1
+      }
+    },
+    {
+      "feature_id": 1544,
+      "operation": "cut",
+      "sketch_name": "S15 R completed-frame nut clearance2",
+      "extent": {
+        "type": "distance",
+        "distance": 3.4
+      }
+    },
+    {
+      "feature_id": 1547,
+      "operation": "cut",
+      "sketch_name": "S15 R outer anchor nut loading port",
+      "extent": {
+        "type": "distance",
+        "distance": 7.6
+      }
+    },
+    {
+      "feature_id": 1550,
+      "operation": "cut",
+      "sketch_name": "S15 R completed-frame bolt clearance3",
+      "extent": {
+        "type": "distance",
+        "distance": 9.1
+      }
+    },
+    {
+      "feature_id": 1553,
+      "operation": "cut",
+      "sketch_name": "S15 R completed-frame nut clearance3",
+      "extent": {
+        "type": "distance",
+        "distance": 3.4
+      }
+    },
+    {
+      "feature_id": 1825,
+      "operation": "cut",
+      "sketch_name": "S20 L lower ear pad bed travel clearance",
+      "extent": {
+        "type": "distance",
+        "distance": 8.3
+      }
+    },
+    {
+      "feature_id": 1952,
+      "operation": "cut",
+      "sketch_name": "S20 R lower ear pad bed travel clearance",
+      "extent": {
+        "type": "distance",
+        "distance": 8.3
+      }
+    }
+  ],
+  "active_shell32_body_features": [
+    {
+      "type": "combine",
+      "feature_id": 299,
+      "name": "Combine5",
+      "target_body_id": 32,
+      "tool_body_ids": [
+        143
+      ],
+      "operation": "cut",
+      "keep_tools": false
+    },
+    {
+      "type": "combine",
+      "feature_id": 889,
+      "name": "Combine21",
+      "target_body_id": 32,
+      "tool_body_ids": [
+        356
+      ],
+      "operation": "join",
+      "keep_tools": false
+    },
+    {
+      "type": "combine",
+      "feature_id": 895,
+      "name": "Combine22",
+      "target_body_id": 32,
+      "tool_body_ids": [
+        300,
+        308
+      ],
+      "operation": "join",
+      "keep_tools": false
+    },
+    {
+      "type": "move_copy",
+      "feature_id": 1023,
+      "name": "S09 unpowered one-drive shell section",
+      "body_ids": [
+        32
+      ],
+      "translation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "pivot": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 123.0
+      },
+      "copy": true,
+      "result_body_ids": [
+        373
+      ]
+    },
+    {
+      "type": "move_copy",
+      "feature_id": 1409,
+      "name": "S15 copy L input support for sliding carrier",
+      "body_ids": [
+        32
+      ],
+      "translation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "pivot": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 123.0
+      },
+      "copy": true,
+      "result_body_ids": [
+        437
+      ]
+    },
+    {
+      "type": "combine",
+      "feature_id": 1511,
+      "name": "S15 integrate fixed drivetrain slide beds",
+      "target_body_id": 32,
+      "tool_body_ids": [
+        439,
+        441
+      ],
+      "operation": "join",
+      "keep_tools": false
+    },
+    {
+      "type": "combine",
+      "feature_id": 1634,
+      "name": "S17 trim protruding mounting roots to barrel OD",
+      "target_body_id": 32,
+      "tool_body_ids": [
+        444
+      ],
+      "operation": "intersect",
+      "keep_tools": false
+    }
+  ],
+  "active_packaging_label_matches": [
+    {
+      "collection": "sketches",
+      "feature_id": 297,
+      "label": "S03 B hatch opening with 0p3 perimeter clearance"
+    },
+    {
+      "collection": "extrudes",
+      "feature_id": 298,
+      "label": "S03 B hatch opening with 0p3 perimeter clearance"
+    }
+  ],
+  "suppressed_original_mount_extrudes": [
+    {
+      "feature_id": 347,
+      "sketch_name": "S04 A battery support rib Y-17"
+    },
+    {
+      "feature_id": 350,
+      "sketch_name": "S04 A battery support rib Y17"
+    },
+    {
+      "feature_id": 353,
+      "sketch_name": "S04 B battery platform for UNMEASURED allowance"
+    },
+    {
+      "feature_id": 356,
+      "sketch_name": "S04 C battery strap passage (-40, -19.5)"
+    },
+    {
+      "feature_id": 359,
+      "sketch_name": "S04 C battery strap passage (-40, 19.5)"
+    },
+    {
+      "feature_id": 362,
+      "sketch_name": "S04 C battery strap passage (5, -19.5)"
+    },
+    {
+      "feature_id": 365,
+      "sketch_name": "S04 C battery strap passage (5, 19.5)"
+    },
+    {
+      "feature_id": 368,
+      "sketch_name": "S04 D battery lateral stop Y-20"
+    },
+    {
+      "feature_id": 371,
+      "sketch_name": "S04 D battery lateral stop Y18.5"
+    },
+    {
+      "feature_id": 375,
+      "sketch_name": "S04 E Pi support bridge -79"
+    },
+    {
+      "feature_id": 378,
+      "sketch_name": "S04 E Pi support bridge -24"
+    },
+    {
+      "feature_id": 381,
+      "sketch_name": "S04 F Pi integral shelf"
+    },
+    {
+      "feature_id": 384,
+      "sketch_name": "S04 G Pi edge registration -31"
+    },
+    {
+      "feature_id": 387,
+      "sketch_name": "S04 G Pi edge registration -0.0"
+    },
+    {
+      "feature_id": 390,
+      "sketch_name": "S04 H Pixracer support bridge 49"
+    },
+    {
+      "feature_id": 393,
+      "sketch_name": "S04 H Pixracer support bridge 79"
+    },
+    {
+      "feature_id": 396,
+      "sketch_name": "S04 I original Pixracer shelf - height and retainers HOLD"
+    },
+    {
+      "feature_id": 399,
+      "sketch_name": "S04 I2 inner wheel-cap driver access through board shelves"
+    },
+    {
+      "feature_id": 405,
+      "sketch_name": "S04 J thermal cradle shell rib -34"
+    },
+    {
+      "feature_id": 408,
+      "sketch_name": "S04 J thermal cradle shell rib 34"
+    },
+    {
+      "feature_id": 411,
+      "sketch_name": "S04 K thermal cradle base"
+    },
+    {
+      "feature_id": 414,
+      "sketch_name": "S04 L thermal side registration -37"
+    },
+    {
+      "feature_id": 417,
+      "sketch_name": "S04 L thermal side registration 35.8"
+    },
+    {
+      "feature_id": 420,
+      "sketch_name": "S04 M thermal rear registration"
+    },
+    {
+      "feature_id": 423,
+      "sketch_name": "S04 M2 thermal strap passage (25.5, -20)"
+    },
+    {
+      "feature_id": 426,
+      "sketch_name": "S04 M2 thermal strap passage (25.5, 20)"
+    },
+    {
+      "feature_id": 429,
+      "sketch_name": "S04 M2 thermal strap passage (42.5, -20)"
+    },
+    {
+      "feature_id": 432,
+      "sketch_name": "S04 M2 thermal strap passage (42.5, 20)"
+    },
+    {
+      "feature_id": 435,
+      "sketch_name": "S04 N sensor locating rail Z109"
+    },
+    {
+      "feature_id": 438,
+      "sketch_name": "S04 N sensor locating rail Z127"
+    },
+    {
+      "feature_id": 449,
+      "sketch_name": "S04 O harness saddle -65"
+    },
+    {
+      "feature_id": 452,
+      "sketch_name": "S04 P harness tie passage -65"
+    },
+    {
+      "feature_id": 455,
+      "sketch_name": "S04 O harness saddle 0"
+    },
+    {
+      "feature_id": 458,
+      "sketch_name": "S04 P harness tie passage 0"
+    },
+    {
+      "feature_id": 461,
+      "sketch_name": "S04 O harness saddle 65"
+    },
+    {
+      "feature_id": 464,
+      "sketch_name": "S04 P harness tie passage 65"
+    },
+    {
+      "feature_id": 467,
+      "sketch_name": "S04 Q trim direct mounts at outside barrel surface"
+    }
+  ],
+  "status": {
+    "nominal_drivetrain": "Current native/export geometry checked separately by root; current register corrected.",
+    "whole_chassis": "Incomplete fit assembly: hatch closure/electronics mounts suppressed, connector/retention and service interfaces unresolved.",
+    "hatch": "Original body141 creator291 and closurefeatures302..344 suppressed; shellopening297..299 active.",
+    "wheel": "Nominal fourD4.4 bores/16square and4mmweb yield6mm thread engagement withM4x10 versus8mm nominal hubthreaddepth; actualhead/pilot/clampaccess and receivedthread engagement unmeasured.",
+    "hardware_width": "Fresh native bbox evidence reports316mm overallshaftwidth versus300mmtarget;8mmprotrusionpastouterwheelplanes.",
+    "electronics": "No active replacement battery/Pi/Pixracer/thermal/ToF/harness/hatch features found by full historylabel/targetaudit. Actualpartsandconnectorsunmeasured.",
+    "strength": "Deferred by user."
+  },
+  "register_fixes": {
+    "wheel_collars": [
+      85.8,
+      94.8
+    ],
+    "servo_main_case_min": [
+      39.6723,
+      0.5,
+      93
+    ],
+    "servo_main_case_size": [
+      20,
+      37.5,
+      40.5
+    ],
+    "current_bearing_screws_per_drive": 16,
+    "current_servo_ear_screws_per_drive": 4,
+    "current_m3_nuts_per_drive": 22,
+    "historic_mounts_and_hatch_marked_inactive": true
+  },
+  "purchasing_gaps": [
+    {
+      "id": "H04",
+      "item": "Wheel-to-hub socket screws",
+      "stage": "HOLD PRICE",
+      "notes": "Exact 2800-0004-0010 catalog candidate. Pack/price not exposed by current variant page; verify before ordering. Four wheel hub screws per drive, nominal 6 mm engagement."
+    },
+    {
+      "id": "H19",
+      "item": "Carrier metal washers",
+      "stage": "HOLD SOURCE",
+      "notes": "Amazon preferred; exact listing pending. ServoCity4x8 washer differs from modeled9x4.3x0.8; no silent replacement."
+    },
+    {
+      "id": "H23",
+      "item": "Servo center retention screw",
+      "stage": "RECEIVING FIT",
+      "notes": "Use a compatible low-profile center screw from servo/horn hardware if it seats without bottoming. Head seatY43.6; D5.7 x1.65 head ends45.25; nominal shaft begins46.5 (1.25mm gap, conservative vendor STEP gap0.883mm). Length/thread depth remain a receiving check. Install before input shaft."
+    },
+    {
+      "id": "H27",
+      "item": "Servo-ear mounting screws",
+      "stage": "HOLD SOURCE",
+      "notes": "Four M3x10 per drive, matching current S20 ear stack and assembly plan. Reuses an existing catalog reference formerly attached to retired pinch screws. Price, pack and current availability have not been freshly verified. Check received socket-head envelope, actual thread engagement and servo grommet/eyelet fit. H08 M3x12 screws are for bearing retainers."
+    }
+  ],
+  "physical_measurement_gates": [
+    "Battery body and lead/plug envelope",
+    "Pixracer case, total height and mated connectors",
+    "Pi exact variant/accessories, connectors and card removal",
+    "ToF optical hood/PCB/solder depth and pigtail",
+    "Thermal contour, lens center and mated USB-C extension",
+    "Selected visible camera full envelope",
+    "Positive restraints, optical openings and harness service routing",
+    "Actual wheel fastener heads, hub threads and driver access"
+  ],
+  "verified_bom": {
+    "date": "2026-10-07",
+    "subtotal_usd": 100.12,
+    "independent_subtotal_usd": 100.12,
+    "two_drive_purchase_subtotal_usd": 173.58999999999997,
+    "independent_two_drive_subtotal_usd": 173.58999999999997,
+    "material_consumed_estimate_usd": 22.63200107216835,
+    "owned_quantity_edit_check": true,
+    "two_pack_rounding_check": true,
+    "kit_charged_once_check": true,
+    "preferred_vendor_check": true,
+    "bearing_and_servo_ear_screw_separation_check": true,
+    "formula_errors": [],
+    "rows": 64,
+    "unresolved_source_rows": [
+      "P04",
+      "H04",
+      "H19",
+      "H23",
+      "H27"
+    ],
+    "inspect": {
+      "recordCount": 1,
+      "truncated": false,
+      "metadata": {
+        "revision": "tmgrwn",
+        "target": {
+          "id": "wb/liz8vx",
+          "beforeLines": 0,
+          "afterLines": 0
+        },
+        "kind": {
+          "requested": "region",
+          "tokens": [
+            "region"
+          ]
+        },
+        "include": {
+          "tokens": []
+        },
+        "exclude": {
+          "tokens": []
+        },
+        "notices": []
+      }
+    }
+  },
+  "cad_mutations_by_this_agent": false,
+  "s21_bom_followup": {
+    "canonical_sha256": "dbb79ae72b28707accd399a6784c7ea76deb182d6314b5a6dd007a6c724e655f",
+    "source_revision": "S21",
+    "wheel": {
+      "project": "first-prints\\chassis-fit-2026-10-07\\outboard-down\\Roller-300-wheel-open-fit.3mf",
+      "slice_check": "first-prints/chassis-fit-2026-10-07/outboard-down/wheel-slice-check.json",
+      "grams": 336.7090148925781,
+      "time_seconds": 31108.98046875,
+      "pose": "outboard_face_down",
+      "source_stl_sha256": "26a42cf367d89be68c3d39e977afccacaf44a4a1f6aa3805f8689134e0087fc5",
+      "release": "HOLD receiving fit; no print or strength qualification",
+      "settings_verified": true
+    },
+    "current_fit_plate_reference_grams": 294.1186828613281,
+    "one_drive_reference_grams": 630.8276977539062,
+    "verified_bom": {
+      "date": "2026-10-07",
+      "subtotal_usd": 100.12,
+      "independent_subtotal_usd": 100.12,
+      "two_drive_purchase_subtotal_usd": 173.58999999999997,
+      "independent_two_drive_subtotal_usd": 173.58999999999997,
+      "material_consumed_estimate_usd": 15.770692443847656,
+      "owned_quantity_edit_check": true,
+      "two_pack_rounding_check": true,
+      "kit_charged_once_check": true,
+      "preferred_vendor_check": true,
+      "bearing_and_servo_ear_screw_separation_check": true,
+      "formula_errors": [],
+      "rows": 64,
+      "unresolved_source_rows": [
+        "P04",
+        "H04",
+        "H19",
+        "H23",
+        "H27"
+      ],
+      "inspect": {
+        "recordCount": 1,
+        "truncated": false,
+        "metadata": {
+          "revision": "ryf1bn",
+          "target": {
+            "id": "wb/fq4aua",
+            "beforeLines": 0,
+            "afterLines": 0
+          },
+          "kind": {
+            "requested": "region",
+            "tokens": [
+              "region"
+            ]
+          },
+          "include": {
+            "tokens": []
+          },
+          "exclude": {
+            "tokens": []
+          },
+          "notices": []
+        }
+      }
+    },
+    "P06_unique_print_piece_accounting": "Eight support/interface prints + two pulleys + one wheel = eleven unique pieces.",
+    "physical_release": "Small receiving-fit gate first; wheel remains held pending receiving fits."
+  }
+}

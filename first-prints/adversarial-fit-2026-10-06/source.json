@@ -1,0 +1,213 @@
+{
+  "source": "Roller-300.nbcad",
+  "source_sha256": "bf4561cd9261083763b1f117bf14007dcaf6202b5efd19679aec39a4e36bd52b",
+  "basis": "Native CAD STL exports; rigid rotation/translation only",
+  "material": "PETG",
+  "nozzle_mm": 0.4,
+  "whole_vehicle_release": false,
+  "powered": false,
+  "horn_adapter_release": true,
+  "positive_rex_input": true,
+  "scope": "Unpowered roof-open one-drive fit; nominal purchased H25T horn interface defined",
+  "parts": [
+    {
+      "name": "one-drive-fit-section",
+      "body_id": 373,
+      "native_mesh_sha256": "48b12546e4859669dedd397ea22f59e7f2ec21f68d158b2cb1ed5515596bdc81",
+      "quantity": 1,
+      "bed_bounds_mm": [
+        [
+          -49.99566650390625,
+          -50.99863815307617,
+          0.0
+        ],
+        [
+          49.99566650390625,
+          50.99863815307618,
+          105.00000000000001
+        ]
+      ]
+    },
+    {
+      "name": "input-sliding-carrier",
+      "body_id": 437,
+      "native_mesh_sha256": "52e519b99b8fe3e65ccc18850068ff0342fdffd61d38c12a49dfdd960df690d1",
+      "quantity": 1,
+      "bed_bounds_mm": [
+        [
+          -22.334461212158203,
+          -45.0,
+          0.0
+        ],
+        [
+          22.334461212158203,
+          45.0,
+          59.14208984375
+        ]
+      ]
+    },
+    {
+      "name": "rigid-output-pulley",
+      "body_id": 9,
+      "native_mesh_sha256": "5ef1c786dfbc9947e2a62efdabed6430e5be5f0af4d5dc9585eec755abbac3d4",
+      "quantity": 1,
+      "bed_bounds_mm": [
+        [
+          -24.537311553955078,
+          -24.537311553955078,
+          0.0
+        ],
+        [
+          24.537311553955078,
+          24.537311553955078,
+          14.500000000000014
+        ]
+      ]
+    },
+    {
+      "name": "servo-upper-bridge",
+      "body_id": 367,
+      "native_mesh_sha256": "3003fe739d8f14455ebea2d8af8cc2f89194eb4bca41ff21bc6f0617389e3bf9",
+      "quantity": 1,
+      "bed_bounds_mm": [
+        [
+          -20.500000953674316,
+          -4.999192237854004,
+          0.0
+        ],
+        [
+          20.500000953674316,
+          4.999192237854004,
+          9.449996948242188
+        ]
+      ]
+    },
+    {
+      "name": "servo-horn-rex-adapter",
+      "body_id": 301,
+      "native_mesh_sha256": "a0b30b6fc3bcdce9b5964ca5bd57c8680aefba06a6c77b9b7d77ddd0c39694b8",
+      "quantity": 1,
+      "bed_bounds_mm": [
+        [
+          -16.600000381469727,
+          -16.60000228881836,
+          0.0
+        ],
+        [
+          16.600000381469727,
+          16.60000228881836,
+          12.200000762939453
+        ]
+      ]
+    },
+    {
+      "name": "input-rex-pulley",
+      "body_id": 10,
+      "native_mesh_sha256": "73e4a78c5899c1fca1bd8aa07c04f20782a53debef45f4cc749dd325b5720691",
+      "quantity": 1,
+      "bed_bounds_mm": [
+        [
+          -13.078155517578125,
+          -13.078155517578125,
+          0.0
+        ],
+        [
+          13.078155517578125,
+          13.078155517578125,
+          19.600002288818366
+        ]
+      ]
+    },
+    {
+      "name": "mouth-bearing-retainer",
+      "body_id": 376,
+      "native_mesh_sha256": "550e86ba7be822fd7cfc3561e09da8c0e881a09152459cf1d06248300117d4ec",
+      "quantity": 1,
+      "bed_bounds_mm": [
+        [
+          -22.0,
+          -22.0,
+          0.0
+        ],
+        [
+          22.0,
+          22.0,
+          4.500000000000014
+        ]
+      ]
+    },
+    {
+      "name": "input-inboard-bearing-retainer",
+      "body_id": 377,
+      "native_mesh_sha256": "9fc13651aa069f6f052a0a4214c7c8ed0ceef14ab2a8cfcedbb03496e6834e41",
+      "quantity": 1,
+      "bed_bounds_mm": [
+        [
+          -25.99579906463623,
+          -25.989078521728516,
+          0.0
+        ],
+        [
+          25.99579906463623,
+          25.989078521728516,
+          4.699996948242195
+        ]
+      ]
+    },
+    {
+      "name": "input-outboard-bearing-retainer",
+      "body_id": 378,
+      "native_mesh_sha256": "6828c87621572fcb05e457229cfccf1c6716b6ce0aa1bb81cf41a485a72eaba8",
+      "quantity": 1,
+      "bed_bounds_mm": [
+        [
+          -25.99579906463623,
+          -25.989078521728516,
+          0.0
+        ],
+        [
+          25.99579906463623,
+          25.989078521728516,
+          4.699996948242202
+        ]
+      ]
+    },
+    {
+      "name": "center-bearing-retainer",
+      "body_id": 383,
+      "native_mesh_sha256": "00ef8aa54b4fde8df478c956b453059423d5b085f37b203edd88d09958a86eb2",
+      "quantity": 1,
+      "bed_bounds_mm": [
+        [
+          -22.0,
+          -22.0,
+          0.0
+        ],
+        [
+          22.0,
+          22.0,
+          4.500000000000002
+        ]
+      ]
+    },
+    {
+      "name": "left-wheel-axle-vertical",
+      "body_id": 13,
+      "native_mesh_sha256": "e4a763e314079597f7c5abf406a2c47620173a8ea853159069d6a036e4c47b69",
+      "quantity": 1,
+      "bed_bounds_mm": [
+        [
+          -114.98755645751953,
+          -114.99377584457397,
+          0.0
+        ],
+        [
+          114.98755645751953,
+          114.99377584457399,
+          40.00000000000003
+        ]
+      ]
+    }
+  ],
+  "geometry_signature_sha256": "8ac30ab683061a2555ed427565a26450f67db72996e31c5c70ffa256c1513f56"
+}

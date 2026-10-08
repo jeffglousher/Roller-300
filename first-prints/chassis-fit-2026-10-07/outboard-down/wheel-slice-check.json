@@ -1,0 +1,134 @@
+{
+  "date": "2026-10-07",
+  "native_source_project": ".local\\s21-chassis-access-replayed.nbcad",
+  "native_source_project_sha256": "f44c1acb824ed2a0a4b773db5265e754d7f9c1fd45e0c9c5e64d964533201312",
+  "native_body_id": 13,
+  "native_stl": "design\\chassis-fit-review-2026-10-07\\s21-access\\body-13.stl",
+  "native_stl_sha256": "26a42cf367d89be68c3d39e977afccacaf44a4a1f6aa3805f8689134e0087fc5",
+  "project": "first-prints\\chassis-fit-2026-10-07\\outboard-down\\Roller-300-wheel-open-fit.3mf",
+  "project_sha256": "49aff353152fd969ce95039b4033b7fee2abc18eb95a5ce0f70a2a688d776943",
+  "geometry_changed": false,
+  "triangle_count": 4064,
+  "maximum_placed_vertex_error_mm": 4.296261192478906e-06,
+  "native_triangle_connectivity_preserved": true,
+  "placed_geometry_signature_tolerance_mm": 0.0001,
+  "placed_geometry_signature_sha256": "736e1f3191f3c986a7fe6a900899f060301b2f7b7d0d120efed835f3b5977594",
+  "normal_mesh_count": 1,
+  "support_blocker_count": 0,
+  "print_pose": "outboard_face_down",
+  "retained_hub_web_bed_z_mm": [
+    12.5,
+    16.5
+  ],
+  "native_to_bed_map": "bed=(nativeX+128,nativeZ+5,150-nativeY); rigid -90deg X rotation and translation only",
+  "release": "HOLD until receiving hardware fits and support cleanup/driver access review",
+  "physical_print": false,
+  "powered": false,
+  "settings_preservation": {
+    "project": "C:\\Users\\jeffg\\dev\\Roller-300\\first-prints\\chassis-fit-2026-10-07\\outboard-down\\Roller-300-wheel-open-fit.3mf",
+    "process_override_keys": [
+      "wall_loops",
+      "enable_support",
+      "support_on_build_plate_only",
+      "support_type",
+      "sparse_infill_density",
+      "sparse_infill_pattern",
+      "brim_width",
+      "brim_type",
+      "enable_prime_tower"
+    ],
+    "process_values": {
+      "wall_loops": "5",
+      "enable_support": "1",
+      "support_on_build_plate_only": "0",
+      "support_type": "normal(auto)",
+      "sparse_infill_density": "15%",
+      "sparse_infill_pattern": "gyroid",
+      "brim_width": "3",
+      "brim_type": "outer_only",
+      "enable_prime_tower": "0"
+    },
+    "other_profile_override_slots_preserved": true,
+    "changed_entries": [
+      "Metadata/project_settings.config",
+      "Metadata/plate_1.gcode.md5",
+      "Metadata/plate_1.gcode"
+    ],
+    "plate_checks": [
+      {
+        "plate": "Metadata/plate_1.gcode",
+        "settings_match_gcode": true,
+        "override_slots_match_gcode": true,
+        "outside_config_block_sha256": "5bb01a41aac06f4c035ddaa34970ee396be805fcbf011c981421944f50544ded",
+        "gcode_md5": "9663D36FF953B9B7BF26F7C83A676FEF"
+      }
+    ],
+    "project_sha256": "49aff353152fd969ce95039b4033b7fee2abc18eb95a5ce0f70a2a688d776943",
+    "passed": true
+  },
+  "slice_result": {
+    "error_string": "Success.",
+    "export_time": 1273,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 41,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 154.1450653076172,
+          "Bridge": 3857.063720703125,
+          "Brim": 88.25934600830078,
+          "Custom": 285.4519348144531,
+          "Flush": 29.0,
+          "Gap infill": 16.06479835510254,
+          "Inner wall": 7367.93408203125,
+          "Internal solid infill": 3480.165771484375,
+          "Outer wall": 1743.668701171875,
+          "Overhang wall": 57.28851318359375,
+          "Sparse infill": 4370.99609375,
+          "Support": 6000.32861328125,
+          "Support interface": 1046.2674560546875,
+          "Support transition": 834.8753662109375,
+          "Top surface": 753.608642578125,
+          "Travel": 1103.030029296875,
+          "Undefined": 1097.0640869140625
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFG99",
+            "id": 1,
+            "main_used_g": 336.7090148925781,
+            "total_used_g": 336.7090148925781
+          }
+        ],
+        "generate_support_material_time": 284,
+        "id": 1,
+        "infill_time": 1748,
+        "layer_filament_change": 0,
+        "main_predication": 30771.494140625,
+        "make_perimeters_time": 222,
+        "obj_cached_cnt": 0,
+        "sliced_time": 5129,
+        "sliced_time_with_cache": 2739,
+        "total_predication": 31108.98046875,
+        "triangle_count": 4064,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 15.0,
+    "wall_loops": 5
+  },
+  "mass_grams": 336.7090148925781,
+  "time_seconds": 31108.98046875,
+  "canonical_native_save_reconciliation": {
+    "canonical_project": "Roller-300.nbcad",
+    "canonical_project_sha256": "dbb79ae72b28707accd399a6784c7ea76deb182d6314b5a6dd007a6c724e655f",
+    "candidate_project": "design/chassis-fit-review-2026-10-07/s21-access/native-replay.nbcad",
+    "candidate_project_sha256": "f44c1acb824ed2a0a4b773db5265e754d7f9c1fd45e0c9c5e64d964533201312",
+    "native_geometry_arrays_match": true,
+    "source_geometry_changed_by_native_save": false,
+    "note": "Wheel was sliced from the explicit native replay candidate. The saved canonical has identical geometry; file hashes differ because of save metadata."
+  }
+}

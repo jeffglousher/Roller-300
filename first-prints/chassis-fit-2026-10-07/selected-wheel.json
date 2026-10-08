@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-07",
+  "selected_project": "first-prints/chassis-fit-2026-10-07/outboard-down/Roller-300-wheel-open-fit.3mf",
+  "selected_project_sha256": "49aff353152fd969ce95039b4033b7fee2abc18eb95a5ce0f70a2a688d776943",
+  "inspection_alternate": "first-prints/chassis-fit-2026-10-07/Roller-300-wheel-open-fit.3mf",
+  "selection_reason": "Identical native geometry; outboard-down pose shortens supports below web from23.5 mm to12.5 mm while preserving connected first-layer ring and bed margins.",
+  "grams": 336.7090148925781,
+  "seconds": 31108.98046875,
+  "savings_vs_inboard_grams": 62.04931640625,
+  "savings_vs_inboard_seconds": 4405.2109375,
+  "release": "HOLD after receiving/carrier gates; unpowered fit candidate",
+  "native_source_project_sha256": "f44c1acb824ed2a0a4b773db5265e754d7f9c1fd45e0c9c5e64d964533201312",
+  "native_stl_sha256": "26a42cf367d89be68c3d39e977afccacaf44a4a1f6aa3805f8689134e0087fc5",
+  "maximum_vertex_error_mm": 4.296261192478906e-06,
+  "native_triangle_connectivity_preserved": true,
+  "actual_package_checks": {
+    "normal_parts": 1,
+    "support_blockers": 0,
+    "face_count": 4064,
+    "mesh_repairs": 0,
+    "gcode_md5_valid": true,
+    "extruder": 1
+  },
+  "toolpath_audit": "design/chassis-fit-review-2026-10-07/s21-wheel-outboard-toolpaths.json",
+  "canonical_native_save_reconciliation": {
+    "canonical_project": "Roller-300.nbcad",
+    "canonical_project_sha256": "dbb79ae72b28707accd399a6784c7ea76deb182d6314b5a6dd007a6c724e655f",
+    "candidate_project": "design/chassis-fit-review-2026-10-07/s21-access/native-replay.nbcad",
+    "candidate_project_sha256": "f44c1acb824ed2a0a4b773db5265e754d7f9c1fd45e0c9c5e64d964533201312",
+    "native_geometry_arrays_match": true,
+    "source_geometry_changed_by_native_save": false,
+    "note": "Wheel was sliced from the explicit native replay candidate. The saved canonical has identical geometry; file hashes differ because of save metadata."
+  }
+}

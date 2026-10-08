@@ -1,0 +1,122 @@
+{
+  "source_sha256": "3e821644be165bea088c78e695250cced656aa3d346235ddbf2620187cf7d788",
+  "material": "PETG",
+  "nozzle_mm": 0.4,
+  "layer_height_mm": 0.2,
+  "wall_loops": 5,
+  "infill": "15% gyroid",
+  "physical_print": false,
+  "passed": true,
+  "parts": [
+    {
+      "part": "center-bearing-retainer",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 948.9627075195312,
+      "grams": 4.841744899749756,
+      "warnings": [],
+      "native_mesh_sha256": "00ef8aa54b4fde8df478c956b453059423d5b085f37b203edd88d09958a86eb2",
+      "passed": true
+    },
+    {
+      "part": "input-inboard-bearing-retainer",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 934.0863647460938,
+      "grams": 4.011123180389404,
+      "warnings": [],
+      "native_mesh_sha256": "9fc13651aa069f6f052a0a4214c7c8ed0ceef14ab2a8cfcedbb03496e6834e41",
+      "passed": true
+    },
+    {
+      "part": "input-outboard-bearing-retainer",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 934.0863647460938,
+      "grams": 4.011123180389404,
+      "warnings": [],
+      "native_mesh_sha256": "6828c87621572fcb05e457229cfccf1c6716b6ce0aa1bb81cf41a485a72eaba8",
+      "passed": true
+    },
+    {
+      "part": "input-pulley-clamp-trial",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 2051.883056640625,
+      "grams": 7.328353404998779,
+      "warnings": [],
+      "native_mesh_sha256": "9f6a59f653409a907a744c2e4f252f706ef9359da443aba376cc290bece79ccb",
+      "passed": true
+    },
+    {
+      "part": "input-sliding-carrier",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 7786.77880859375,
+      "grams": 55.3115348815918,
+      "warnings": [],
+      "native_mesh_sha256": "3d09f5e2f0abca9471da9e2d232d3b6ce51de4f704ce1c935e0da5ef66534807",
+      "passed": true
+    },
+    {
+      "part": "left-wheel-axle-vertical",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 56668.05859375,
+      "grams": 609.359619140625,
+      "warnings": [],
+      "native_mesh_sha256": "e4a763e314079597f7c5abf406a2c47620173a8ea853159069d6a036e4c47b69",
+      "passed": true
+    },
+    {
+      "part": "mouth-bearing-retainer",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 955.2343139648438,
+      "grams": 4.881384372711182,
+      "warnings": [],
+      "native_mesh_sha256": "550e86ba7be822fd7cfc3561e09da8c0e881a09152459cf1d06248300117d4ec",
+      "passed": true
+    },
+    {
+      "part": "one-drive-fit-section",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 18576.330078125,
+      "grams": 186.2628936767578,
+      "warnings": [],
+      "native_mesh_sha256": "a08f40e70dd4e1073d924213785c4ae6cf7436f817a01d76dc60a7d19396bdc4",
+      "passed": true
+    },
+    {
+      "part": "rigid-output-pulley",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 3511.074462890625,
+      "grams": 18.798389434814453,
+      "warnings": [],
+      "native_mesh_sha256": "5ef1c786dfbc9947e2a62efdabed6430e5be5f0af4d5dc9585eec755abbac3d4",
+      "passed": true
+    },
+    {
+      "part": "servo-shaft-clamp-trial",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 886.0994262695312,
+      "grams": 2.115067720413208,
+      "warnings": [],
+      "native_mesh_sha256": "9d593c04ca1175f907cb12a650cd64bf48e013b8531007d889d37b007d375713",
+      "passed": true
+    },
+    {
+      "part": "servo-upper-bridge",
+      "exit_code": 0,
+      "return_code": 0,
+      "seconds": 1058.4144287109375,
+      "grams": 2.5989017486572266,
+      "warnings": [],
+      "native_mesh_sha256": "a4c48d9406dbaa259a397e79ed0b9595ba2140e898a04d8ec86bac1cc3f094e0",
+      "passed": true
+    }
+  ]
+}

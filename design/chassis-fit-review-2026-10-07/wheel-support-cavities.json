@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-07",
+  "project": "first-prints\\adversarial-fit-2026-10-06\\slicer-check\\left-wheel-axle-vertical\\left-wheel-axle-vertical-estimate.3mf",
+  "project_sha256": "669fc5808b9bc5ddd12f6f1c855ffa43cbba70ee6b5feacabebb07d17b4cdeb4",
+  "historical_status": "Superseded once S21 access ports are committed; historical deposition remains evidence of support extraction risk, not a current slice approval.",
+  "mass_grams": 609.359619140625,
+  "total_extrusion_mm": 199482.11690982233,
+  "support_regions": {
+    "other_support": {
+      "extrusion_mm": 562.5016000000005,
+      "z_min_mm": 0.2,
+      "z_max_mm": 27.4588,
+      "estimated_grams_ratio_of_total": 1.7182781396737574
+    },
+    "lower_closed_cavity": {
+      "extrusion_mm": 34670.73589000025,
+      "z_min_mm": 8.12667,
+      "z_max_mm": 23.4,
+      "estimated_grams_ratio_of_total": 105.90897442103231
+    },
+    "upper_closed_cavity": {
+      "extrusion_mm": 13868.40451000008,
+      "z_min_mm": 27.7294,
+      "z_max_mm": 31.8,
+      "estimated_grams_ratio_of_total": 42.36392625671832
+    }
+  },
+  "qualification": "Support extrusion is attributed by bed Z only; mass ratio estimate uses total sliced mass and extrusion length. No physical support removal test performed.",
+  "native_voids": {
+    "lower_y_mm": [
+      118,
+      133.5
+    ],
+    "upper_y_mm": [
+      137.5,
+      142
+    ],
+    "cavity_diameter_mm": 216,
+    "inner_access_diameter_mm": 36,
+    "original_outer_access_diameter_mm": 9
+  }
+}

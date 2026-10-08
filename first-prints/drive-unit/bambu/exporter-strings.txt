@@ -1,0 +1,24 @@
+="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/>
+  <Default Extension="config" ContentType="application/octet-stream"/>
+  <Default Extension="json" ContentType="application/json"/>
+noBS CADnoBS CAD (Bambu-compatible)noBS CAD (Orca-compatible)noBS CAD (PrusaSlicer-compatible)noBS CAD (Cura-compatible)
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<model unit="millimeter" xml:lang="en-US"
+  xmlns="http://schemas.microsoft.com/3dmanufacturing/core/2015/02">
+  <metadata name="Application">
+N</metadata>
+  <metadata name="Title">noBS CAD export</metadata>
+  <resources>
+
+    <basematerials id="1">
+      <base name="
+
+" displaycolor="
+
+"/>
+    </basematerials>
+  </resources>
+  <build>
+  </buil

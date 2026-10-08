@@ -1,0 +1,5 @@
+*.step
+*.stl
+*.base64
+scene.json
+live-model.json

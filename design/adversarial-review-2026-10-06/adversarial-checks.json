@@ -1,0 +1,1143 @@
+{
+  "passed": true,
+  "source_model_sha256": "6fb191f273a06cd43c9c9e845dfef826b210ffe3f0cde302c762cf9ba3db29d7",
+  "basis": "Exact OCP probes of native CAD application STEP exports; nominal dimensions, unpowered test only. Nut and fastener tolerance must be checked on receipt.",
+  "checks": [
+    {
+      "name": "servo ear nut seating",
+      "value": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "body": 437,
+      "x": 44.6723,
+      "z": 88.75
+    },
+    {
+      "name": "servo ear nut cannot rotate",
+      "value": 0.7675619199265209,
+      "passed": true,
+      "side": "L",
+      "body": 437,
+      "x": 44.6723,
+      "z": 88.75
+    },
+    {
+      "name": "servo ear nut loading before servo",
+      "value": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "body": 437,
+      "x": 44.6723,
+      "z": 88.75
+    },
+    {
+      "name": "servo M3x10 bolt reaches nut",
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "body": 437,
+      "x": 44.6723,
+      "z": 88.75
+    },
+    {
+      "name": "servo ear driver access before belt carrier installation",
+      "value": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "body": 437,
+      "x": 44.6723,
+      "z": 88.75
+    },
+    {
+      "name": "servo ear nut seating",
+      "value": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "body": 367,
+      "x": 44.6723,
+      "z": 137.75
+    },
+    {
+      "name": "servo ear nut cannot rotate",
+      "value": 0.7675619199265729,
+      "passed": true,
+      "side": "L",
+      "body": 367,
+      "x": 44.6723,
+      "z": 137.75
+    },
+    {
+      "name": "servo ear nut loading before servo",
+      "value": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "body": 367,
+      "x": 44.6723,
+      "z": 137.75
+    },
+    {
+      "name": "servo M3x10 bolt reaches nut",
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "body": 367,
+      "x": 44.6723,
+      "z": 137.75
+    },
+    {
+      "name": "servo ear driver access before belt carrier installation",
+      "value": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "body": 367,
+      "x": 44.6723,
+      "z": 137.75
+    },
+    {
+      "name": "servo ear nut seating",
+      "value": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "body": 437,
+      "x": 54.6723,
+      "z": 88.75
+    },
+    {
+      "name": "servo ear nut cannot rotate",
+      "value": 0.7675619199265049,
+      "passed": true,
+      "side": "L",
+      "body": 437,
+      "x": 54.6723,
+      "z": 88.75
+    },
+    {
+      "name": "servo ear nut loading before servo",
+      "value": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "body": 437,
+      "x": 54.6723,
+      "z": 88.75
+    },
+    {
+      "name": "servo M3x10 bolt reaches nut",
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "body": 437,
+      "x": 54.6723,
+      "z": 88.75
+    },
+    {
+      "name": "servo ear driver access before belt carrier installation",
+      "value": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "body": 437,
+      "x": 54.6723,
+      "z": 88.75
+    },
+    {
+      "name": "servo ear nut seating",
+      "value": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "body": 367,
+      "x": 54.6723,
+      "z": 137.75
+    },
+    {
+      "name": "servo ear nut cannot rotate",
+      "value": 0.7675619199265452,
+      "passed": true,
+      "side": "L",
+      "body": 367,
+      "x": 54.6723,
+      "z": 137.75
+    },
+    {
+      "name": "servo ear nut loading before servo",
+      "value": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "body": 367,
+      "x": 54.6723,
+      "z": 137.75
+    },
+    {
+      "name": "servo M3x10 bolt reaches nut",
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "body": 367,
+      "x": 54.6723,
+      "z": 137.75
+    },
+    {
+      "name": "servo ear driver access before belt carrier installation",
+      "value": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "body": 367,
+      "x": 54.6723,
+      "z": 137.75
+    },
+    {
+      "name": "bridge nut seating",
+      "value": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "x": 34.1723
+    },
+    {
+      "name": "bridge nut rotation blocked",
+      "value": 0.5117079466178468,
+      "passed": true,
+      "side": "L",
+      "x": 34.1723
+    },
+    {
+      "name": "bridge nut side loading",
+      "value": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "x": 34.1723
+    },
+    {
+      "name": "M3x16 bridge bolt passage",
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "x": 34.1723,
+      "head_envelope": "D6 x2.5; pan head receiving fit"
+    },
+    {
+      "name": "bridge screw driver access",
+      "value": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "x": 34.1723
+    },
+    {
+      "name": "bridge nut seating",
+      "value": [
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "x": 65.1723
+    },
+    {
+      "name": "bridge nut rotation blocked",
+      "value": 0.5117079466178044,
+      "passed": true,
+      "side": "L",
+      "x": 65.1723
+    },
+    {
+      "name": "bridge nut side loading",
+      "value": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "x": 65.1723
+    },
+    {
+      "name": "M3x16 bridge bolt passage",
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "x": 65.1723,
+      "head_envelope": "D6 x2.5; pan head receiving fit"
+    },
+    {
+      "name": "bridge screw driver access",
+      "value": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "x": 65.1723
+    },
+    {
+      "name": "actual REX shaft and clip clear keyed printed parts",
+      "value": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L"
+    },
+    {
+      "name": "input pulley axial travel clears stationary housing and caps",
+      "value": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dy": -0.2,
+      "total_nominal_play": 0.4
+    },
+    {
+      "name": "input pulley axial travel clears stationary housing and caps",
+      "value": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dy": 0,
+      "total_nominal_play": 0.4
+    },
+    {
+      "name": "input pulley axial travel clears stationary housing and caps",
+      "value": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dy": 0.2,
+      "total_nominal_play": 0.4
+    },
+    {
+      "name": "integral pulley lands stop further axial travel",
+      "value": 4.208230069764468,
+      "passed": true,
+      "side": "L",
+      "dy": -0.3,
+      "stop": "Bearing inner race, R5.5 land; no stationary plastic contact"
+    },
+    {
+      "name": "integral pulley lands stop further axial travel",
+      "value": 4.208230069764507,
+      "passed": true,
+      "side": "L",
+      "dy": 0.3,
+      "stop": "Bearing inner race, R5.5 land; no stationary plastic contact"
+    },
+    {
+      "name": "positive hex drive blocks thirty degree shaft turn",
+      "value": 9.15028298183508,
+      "passed": true,
+      "side": "L",
+      "body": 301
+    },
+    {
+      "name": "positive hex drive blocks thirty degree shaft turn",
+      "value": 26.37143893310658,
+      "passed": true,
+      "side": "L",
+      "body": 10
+    },
+    {
+      "name": "Eclip radial access window",
+      "value": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "limitation": "Checks printed access. Spring clip elastically expands over the shaft; rotate clip mouth toward shaft before installation."
+    },
+    {
+      "name": "input shaft clip has nominal 0.2mm axial travel",
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L"
+    },
+    {
+      "name": "input shaft forward travel stops at clip pocket",
+      "value": 5.064797926552833,
+      "passed": true,
+      "side": "L",
+      "dy": 0.3
+    },
+    {
+      "name": "input shaft rear stop can move outward",
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L"
+    },
+    {
+      "name": "input shaft inward travel stops on rear inner race",
+      "value": 2.403318379996885,
+      "passed": true,
+      "side": "L",
+      "dy": -0.1
+    },
+    {
+      "name": "rear spacer and shim clear bearing cap",
+      "value": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L"
+    },
+    {
+      "name": "rear stop clears shaft material",
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L"
+    },
+    {
+      "name": "rear spacer seats on bearing",
+      "value": 0.0,
+      "passed": true,
+      "side": "L"
+    },
+    {
+      "name": "rear retention stack contacts",
+      "value": 0.0,
+      "passed": true,
+      "side": "L",
+      "bodies": [
+        449,
+        451
+      ]
+    },
+    {
+      "name": "rear retention stack contacts",
+      "value": 0.0,
+      "passed": true,
+      "side": "L",
+      "bodies": [
+        451,
+        453
+      ]
+    },
+    {
+      "name": "rear retention stack contacts",
+      "value": 0.0,
+      "passed": true,
+      "side": "L",
+      "bodies": [
+        453,
+        455
+      ]
+    },
+    {
+      "name": "rear end screw driver corridor",
+      "value": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L"
+    },
+    {
+      "name": "actual servo and bridge clear frame at carrier travel",
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx": -2
+    },
+    {
+      "name": "actual servo and bridge clear frame at carrier travel",
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx": 0
+    },
+    {
+      "name": "actual servo and bridge clear frame at carrier travel",
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "L",
+      "dx": 1
+    },
+    {
+      "name": "servo ear nut seating",
+      "value": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "body": 440,
+      "x": 44.6723,
+      "z": 88.75
+    },
+    {
+      "name": "servo ear nut cannot rotate",
+      "value": 0.7675619199265202,
+      "passed": true,
+      "side": "R",
+      "body": 440,
+      "x": 44.6723,
+      "z": 88.75
+    },
+    {
+      "name": "servo ear nut loading before servo",
+      "value": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "body": 440,
+      "x": 44.6723,
+      "z": 88.75
+    },
+    {
+      "name": "servo M3x10 bolt reaches nut",
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "body": 440,
+      "x": 44.6723,
+      "z": 88.75
+    },
+    {
+      "name": "servo ear driver access before belt carrier installation",
+      "value": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "body": 440,
+      "x": 44.6723,
+      "z": 88.75
+    },
+    {
+      "name": "servo ear nut seating",
+      "value": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "body": 368,
+      "x": 44.6723,
+      "z": 137.75
+    },
+    {
+      "name": "servo ear nut cannot rotate",
+      "value": 0.7675619199265726,
+      "passed": true,
+      "side": "R",
+      "body": 368,
+      "x": 44.6723,
+      "z": 137.75
+    },
+    {
+      "name": "servo ear nut loading before servo",
+      "value": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "body": 368,
+      "x": 44.6723,
+      "z": 137.75
+    },
+    {
+      "name": "servo M3x10 bolt reaches nut",
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "body": 368,
+      "x": 44.6723,
+      "z": 137.75
+    },
+    {
+      "name": "servo ear driver access before belt carrier installation",
+      "value": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "body": 368,
+      "x": 44.6723,
+      "z": 137.75
+    },
+    {
+      "name": "servo ear nut seating",
+      "value": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "body": 440,
+      "x": 54.6723,
+      "z": 88.75
+    },
+    {
+      "name": "servo ear nut cannot rotate",
+      "value": 0.7675619199265045,
+      "passed": true,
+      "side": "R",
+      "body": 440,
+      "x": 54.6723,
+      "z": 88.75
+    },
+    {
+      "name": "servo ear nut loading before servo",
+      "value": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "body": 440,
+      "x": 54.6723,
+      "z": 88.75
+    },
+    {
+      "name": "servo M3x10 bolt reaches nut",
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "body": 440,
+      "x": 54.6723,
+      "z": 88.75
+    },
+    {
+      "name": "servo ear driver access before belt carrier installation",
+      "value": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "body": 440,
+      "x": 54.6723,
+      "z": 88.75
+    },
+    {
+      "name": "servo ear nut seating",
+      "value": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "body": 368,
+      "x": 54.6723,
+      "z": 137.75
+    },
+    {
+      "name": "servo ear nut cannot rotate",
+      "value": 0.7675619199265451,
+      "passed": true,
+      "side": "R",
+      "body": 368,
+      "x": 54.6723,
+      "z": 137.75
+    },
+    {
+      "name": "servo ear nut loading before servo",
+      "value": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "body": 368,
+      "x": 54.6723,
+      "z": 137.75
+    },
+    {
+      "name": "servo M3x10 bolt reaches nut",
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "body": 368,
+      "x": 54.6723,
+      "z": 137.75
+    },
+    {
+      "name": "servo ear driver access before belt carrier installation",
+      "value": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "body": 368,
+      "x": 54.6723,
+      "z": 137.75
+    },
+    {
+      "name": "bridge nut seating",
+      "value": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "x": 34.1723
+    },
+    {
+      "name": "bridge nut rotation blocked",
+      "value": 0.5117079466393016,
+      "passed": true,
+      "side": "R",
+      "x": 34.1723
+    },
+    {
+      "name": "bridge nut side loading",
+      "value": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "x": 34.1723
+    },
+    {
+      "name": "M3x16 bridge bolt passage",
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "x": 34.1723,
+      "head_envelope": "D6 x2.5; pan head receiving fit"
+    },
+    {
+      "name": "bridge screw driver access",
+      "value": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "x": 34.1723
+    },
+    {
+      "name": "bridge nut seating",
+      "value": [
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "x": 65.1723
+    },
+    {
+      "name": "bridge nut rotation blocked",
+      "value": 0.5117079466392925,
+      "passed": true,
+      "side": "R",
+      "x": 65.1723
+    },
+    {
+      "name": "bridge nut side loading",
+      "value": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "x": 65.1723
+    },
+    {
+      "name": "M3x16 bridge bolt passage",
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "x": 65.1723,
+      "head_envelope": "D6 x2.5; pan head receiving fit"
+    },
+    {
+      "name": "bridge screw driver access",
+      "value": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "x": 65.1723
+    },
+    {
+      "name": "actual REX shaft and clip clear keyed printed parts",
+      "value": [
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R"
+    },
+    {
+      "name": "input pulley axial travel clears stationary housing and caps",
+      "value": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dy": -0.2,
+      "total_nominal_play": 0.4
+    },
+    {
+      "name": "input pulley axial travel clears stationary housing and caps",
+      "value": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dy": 0,
+      "total_nominal_play": 0.4
+    },
+    {
+      "name": "input pulley axial travel clears stationary housing and caps",
+      "value": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dy": 0.2,
+      "total_nominal_play": 0.4
+    },
+    {
+      "name": "integral pulley lands stop further axial travel",
+      "value": 4.208230069765768,
+      "passed": true,
+      "side": "R",
+      "dy": -0.3,
+      "stop": "Bearing inner race, R5.5 land; no stationary plastic contact"
+    },
+    {
+      "name": "integral pulley lands stop further axial travel",
+      "value": 4.208230069765647,
+      "passed": true,
+      "side": "R",
+      "dy": 0.3,
+      "stop": "Bearing inner race, R5.5 land; no stationary plastic contact"
+    },
+    {
+      "name": "positive hex drive blocks thirty degree shaft turn",
+      "value": 9.150232254927666,
+      "passed": true,
+      "side": "R",
+      "body": 309
+    },
+    {
+      "name": "positive hex drive blocks thirty degree shaft turn",
+      "value": 26.37143893311039,
+      "passed": true,
+      "side": "R",
+      "body": 27
+    },
+    {
+      "name": "Eclip radial access window",
+      "value": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "limitation": "Checks printed access. Spring clip elastically expands over the shaft; rotate clip mouth toward shaft before installation."
+    },
+    {
+      "name": "input shaft clip has nominal 0.2mm axial travel",
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R"
+    },
+    {
+      "name": "input shaft forward travel stops at clip pocket",
+      "value": 5.064797926211438,
+      "passed": true,
+      "side": "R",
+      "dy": 0.3
+    },
+    {
+      "name": "input shaft rear stop can move outward",
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R"
+    },
+    {
+      "name": "input shaft inward travel stops on rear inner race",
+      "value": 2.403318379996885,
+      "passed": true,
+      "side": "R",
+      "dy": -0.1
+    },
+    {
+      "name": "rear spacer and shim clear bearing cap",
+      "value": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R"
+    },
+    {
+      "name": "rear stop clears shaft material",
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R"
+    },
+    {
+      "name": "rear spacer seats on bearing",
+      "value": 0.0,
+      "passed": true,
+      "side": "R"
+    },
+    {
+      "name": "rear retention stack contacts",
+      "value": 0.0,
+      "passed": true,
+      "side": "R",
+      "bodies": [
+        450,
+        452
+      ]
+    },
+    {
+      "name": "rear retention stack contacts",
+      "value": 0.0,
+      "passed": true,
+      "side": "R",
+      "bodies": [
+        452,
+        454
+      ]
+    },
+    {
+      "name": "rear retention stack contacts",
+      "value": 0.0,
+      "passed": true,
+      "side": "R",
+      "bodies": [
+        454,
+        456
+      ]
+    },
+    {
+      "name": "rear end screw driver corridor",
+      "value": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R"
+    },
+    {
+      "name": "actual servo and bridge clear frame at carrier travel",
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx": -2
+    },
+    {
+      "name": "actual servo and bridge clear frame at carrier travel",
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx": 0
+    },
+    {
+      "name": "actual servo and bridge clear frame at carrier travel",
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true,
+      "side": "R",
+      "dx": 1
+    },
+    {
+      "name": "stock threaded hardware retains handedness",
+      "value": "move_copy",
+      "passed": true,
+      "body": 446
+    },
+    {
+      "name": "stock threaded hardware retains handedness",
+      "value": "move_copy",
+      "passed": true,
+      "body": 448
+    },
+    {
+      "name": "stock threaded hardware retains handedness",
+      "value": "move_copy",
+      "passed": true,
+      "body": 456
+    }
+  ],
+  "source_sha256": "bf4561cd9261083763b1f117bf14007dcaf6202b5efd19679aec39a4e36bd52b",
+  "geometry_signature_sha256": "8ac30ab683061a2555ed427565a26450f67db72996e31c5c70ffa256c1513f56"
+}

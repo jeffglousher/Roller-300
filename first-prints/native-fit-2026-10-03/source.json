@@ -1,0 +1,9 @@
+{
+  "source": "Roller-300.nbcad",
+  "sha256": "2116d4710816a3813e47cb6eb7cd25acef2e2f73d839accfd7bdcc78a5e8b5b2",
+  "basis": "Application native STL exports, rigid rotation and placement only",
+  "release": false,
+  "material": "PETG",
+  "nozzle_mm": 0.4,
+  "powered": false
+}

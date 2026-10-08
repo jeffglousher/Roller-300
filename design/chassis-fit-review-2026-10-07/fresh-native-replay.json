@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-07",
+  "source_sha256": "dbb79ae72b28707accd399a6784c7ea76deb182d6314b5a6dd007a6c724e655f",
+  "features": 2033,
+  "feature_errors": [],
+  "native_geometry_changed": true,
+  "native_change_scope": "Shell rear driver bores and open-face wheels only",
+  "current_fit_project_geometry_changed": false,
+  "parts": [
+    {
+      "body_id": 373,
+      "name": "one-drive-fit-section",
+      "sha256": "48b12546e4859669dedd397ea22f59e7f2ec21f68d158b2cb1ed5515596bdc81",
+      "current_native_mesh_matches_print": true
+    },
+    {
+      "body_id": 437,
+      "name": "input-sliding-carrier",
+      "sha256": "52e519b99b8fe3e65ccc18850068ff0342fdffd61d38c12a49dfdd960df690d1",
+      "current_native_mesh_matches_print": true
+    },
+    {
+      "body_id": 9,
+      "name": "rigid-output-pulley",
+      "sha256": "5ef1c786dfbc9947e2a62efdabed6430e5be5f0af4d5dc9585eec755abbac3d4",
+      "current_native_mesh_matches_print": true
+    },
+    {
+      "body_id": 367,
+      "name": "servo-upper-bridge",
+      "sha256": "3003fe739d8f14455ebea2d8af8cc2f89194eb4bca41ff21bc6f0617389e3bf9",
+      "current_native_mesh_matches_print": true
+    },
+    {
+      "body_id": 301,
+      "name": "servo-horn-rex-adapter",
+      "sha256": "a0b30b6fc3bcdce9b5964ca5bd57c8680aefba06a6c77b9b7d77ddd0c39694b8",
+      "current_native_mesh_matches_print": true
+    },
+    {
+      "body_id": 10,
+      "name": "input-rex-pulley",
+      "sha256": "73e4a78c5899c1fca1bd8aa07c04f20782a53debef45f4cc749dd325b5720691",
+      "current_native_mesh_matches_print": true
+    },
+    {
+      "body_id": 376,
+      "name": "mouth-bearing-retainer",
+      "sha256": "550e86ba7be822fd7cfc3561e09da8c0e881a09152459cf1d06248300117d4ec",
+      "current_native_mesh_matches_print": true
+    },
+    {
+      "body_id": 377,
+      "name": "input-inboard-bearing-retainer",
+      "sha256": "9fc13651aa069f6f052a0a4214c7c8ed0ceef14ab2a8cfcedbb03496e6834e41",
+      "current_native_mesh_matches_print": true
+    },
+    {
+      "body_id": 378,
+      "name": "input-outboard-bearing-retainer",
+      "sha256": "6828c87621572fcb05e457229cfccf1c6716b6ce0aa1bb81cf41a485a72eaba8",
+      "current_native_mesh_matches_print": true
+    },
+    {
+      "body_id": 383,
+      "name": "center-bearing-retainer",
+      "sha256": "00ef8aa54b4fde8df478c956b453059423d5b085f37b203edd88d09958a86eb2",
+      "current_native_mesh_matches_print": true
+    }
+  ],
+  "changed_wheel_bodies": [
+    13,
+    30
+  ],
+  "changed_shell_body": 32,
+  "native_replay_export": "s21-access/native-replay-export.json",
+  "passed": true
+}

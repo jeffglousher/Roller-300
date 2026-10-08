@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-07",
+  "application": "Bambu Studio",
+  "project": "first-prints/chassis-fit-2026-10-07/outboard-down/Roller-300-wheel-open-fit.3mf",
+  "project_sha256": "49aff353152fd969ce95039b4033b7fee2abc18eb95a5ce0f70a2a688d776943",
+  "reopened_project_settings_observed": {
+    "printer": "Bambu Lab X2D",
+    "main_nozzle_mm": 0.4,
+    "filament": "Generic PETG",
+    "layer_height_mm": 0.2,
+    "wall_loops": 5,
+    "sparse_infill_density_percent": 15,
+    "sparse_infill_pattern": "Gyroid",
+    "support_enabled": true,
+    "support_type": "normal(auto)",
+    "support_on_build_plate_only": false
+  },
+  "native_gui_fresh_slice_completed": true,
+  "preview_mass_grams_displayed": 336.71,
+  "preview_time_displayed": "8h38m",
+  "matches_audited_project_estimate": true,
+  "optional_printer_sync": "Later selected; reviewed project profile retained",
+  "project_file_changed": false,
+  "print_sent": false,
+  "scope": "Reopen-persistence and fresh native GUI slice verification; physical fits and support removal remain untested"
+}
